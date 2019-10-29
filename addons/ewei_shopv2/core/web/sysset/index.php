@@ -451,7 +451,8 @@ class Index_EweiShopV2Page extends WebPage
 
         $pay_type = [
             array("name"=>"AliPay","type"=>"ALIPAY_CN","img"=>"alipay.png"),
-            array("name"=>"WechatPay","type"=>"WECHATPAY","img"=>"wechat.png"),
+            array("name"=>"WechatPay(China)","type"=>"WECHATPAY_CN","img"=>"wechat.png"),
+            array("name"=>"WechatPay(Malaysia)","type"=>"WECHATPAY_MY","img"=>"wechat.png"),
             array("name"=>"Presto","type"=>"PRESTO_MY","img"=>"presto.png"),
             array("name"=>"Boost","type"=>"BOOST_MY","img"=>"boost.png"),
             array("name"=>'GrabPay',"type"=>"GRABPAY_MY","img"=>"grab.png"),
