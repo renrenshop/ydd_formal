@@ -1,0 +1,34 @@
+<?php
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_0'] = '全部商户';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_1'] = '搜索';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_2'] = '输入关键字';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_3'] = '附近';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_4'] = '分类';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_5'] = '智能排序';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_6'] = '附近';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_7'] = '附近';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_8'] = '米';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_9'] = '米';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_10'] = '米';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_11'] = '米';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_12'] = '米';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_13'] = '米';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_14'] = '米';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_15'] = '米';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_16'] = '米以上';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_17'] = '米以上';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_18'] = '全部分类';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_19'] = '全部分类';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_20'] = '距离最近';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_21'] = '距离最近';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_22'] = '最新入驻';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_23'] = '最新入驻';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_24'] = '推荐商家';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_25'] = '暂时没有商家';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_26'] = '到处逛逛';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_27'] = '正在加载';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_28'] = '地址';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_29'] = '电话';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_30'] = '分类';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_31'] = '距离您';
+?>

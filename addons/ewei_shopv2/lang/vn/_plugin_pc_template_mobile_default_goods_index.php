@@ -1,0 +1,37 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_goods_index_0'] = ' Tại duyệt';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_1'] = '¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_2'] = ' Tất cả lịch sử duyệt web';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_3'] = ' Sắp xếp theo:';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_4'] = ' mặc định sắp xếp';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_5'] = ' mặc định';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_6'] = ' Bấm vào để đặt hàng từ cao đến thấp của doanh số bán hàng';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_7'] = ' Bán hàng';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_8'] = ' Nhấn vào đây để đặt hàng từ cao đến thấp theo giá';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_9'] = ' Giá';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_10'] = ' Giá thấp nhất';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_11'] = ' Giá cao nhất';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_12'] = ' OK';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_13'] = ' Các bảng liệt kê mới';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_14'] = ' Nóng sản phẩm';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_15'] = ' Đề nghị ghi';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_16'] = ' Mục quảng cáo';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_17'] = ' Danh sách hàng hóa Looping';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_18'] = ' Hạn chế giới hạn giảm giá';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_19'] = ' Mall giá:¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_20'] = '¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_21'] = ' Giá thị trường:¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_22'] = '¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_23'] = ' Rất hài lòng';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_24'] = ' Rất hài lòng';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_25'] = ' Rất hài lòng';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_26'] = ' Rất hài lòng';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_27'] = ' Rất hài lòng';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_28'] = ' Rất hài lòng';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_29'] = ' Hàng hóa bán hàng';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_30'] = ' Trang chủ';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_31'] = ' trước đó';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_32'] = ' Tiếp theo';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_33'] = ' trang cuối';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_34'] = ' đoán bạn thích';
+?>

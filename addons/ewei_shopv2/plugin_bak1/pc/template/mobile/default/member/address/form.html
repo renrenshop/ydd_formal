@@ -1,0 +1,23 @@
+<form method='post' class='form-ajax' >
+    <input type='hidden' name='id' value="{$address['id']}"/>
+    <div class='fui-cell-group'>
+	<div class='fui-cell'>
+	    <div class='fui-cell-label'>{php echo $lang['lang_plugin_pc_template_mobile_default_member_address_form_0']}</div>
+	    <div class='fui-cell-info'><input type="text"  name='realname' value="{$address['realname']}" class="fui-input" placeholder="{php echo $lang['lang_plugin_pc_template_mobile_default_member_address_form_1']}"/></div>
+	</div>
+	<div class='fui-cell'>
+	    <div class='fui-cell-label'>{php echo $lang['lang_plugin_pc_template_mobile_default_member_address_form_2']}</div>
+	    <div class='fui-cell-info'><input type="tel"  name='mobile' value="{$address['mobile']}" class="fui-input" placeholder="{php echo $lang['lang_plugin_pc_template_mobile_default_member_address_form_3']}"/></div>
+	</div>
+	<div class='fui-cell'>
+	    <div class='fui-cell-label'>{php echo $lang['lang_plugin_pc_template_mobile_default_member_address_form_4']}</div>
+	    <div class='fui-cell-info'><input type="text"  name='address' value="{$address['mobile']}" class="fui-input" placeholder="{php echo $lang['lang_plugin_pc_template_mobile_default_member_address_form_5']}"/></div>
+	</div>
+	<div class='fui-cell'>
+	    <div class='fui-cell-label'>{php echo $lang['lang_plugin_pc_template_mobile_default_member_address_form_6']}</div>
+	    <div class='fui-cell-info'><input type="text" name='mobile' value="{$address['address']}" class="fui-input" placeholder='{php echo $lang['lang_plugin_pc_template_mobile_default_member_address_form_7']}({php echo $lang['lang_plugin_pc_template_mobile_default_member_address_form_8']})'/></div>
+	</div>
+    </div>
+    
+    <button class='btn btn-danger'>{php echo $lang['lang_plugin_pc_template_mobile_default_member_address_form_9']}</button>
+    </form>

@@ -1,0 +1,83 @@
+{template '_header'}
+<link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/template/account/default/style.css?v=2.0.0">
+<style type="text/css">
+    .account-top .logo img { border:2px solid {$set['wap']['color']};}
+    .account-login-link { color:{$set['wap']['color']};  }
+    .fui-cell-group .fui-cell-info .fui-input { color:{$set['wap']['color']}; }
+    .btn.account-btn { border:1px solid {$set['wap']['color']};color:{$set['wap']['color']};}
+    .fui-cell-group .fui-cell:before {
+    border-top: 1px solid{$set['wap']['color']};
+    color: {$set['wap']['color']};
+    }
+</style>
+<div class="fui-page">
+    {if is_h5app()}
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back"> </a>
+        </div>
+        <div class="title">{if empty($type)}{php echo $lang['lang_template_account_rf_0']}{else}{php echo $lang['lang_template_account_rf_1']}{/if}</div>
+        <div class="fui-header-right" data-nomenu="true"></div>
+    </div>
+    {/if}
+    <div class="fui-content">
+
+        <div class="account-bg">
+            <img src="{php echo empty($set['wap']['bg'])?'../addons/ewei_shopv2/static/images/wapbg.jpg':tomedia($set['wap']['bg'])}" />
+        </div>
+
+        <div class="account-top">
+            <div class="logo">
+                <img src="{php echo tomedia($set['shop']['logo'])}" />
+            </div>
+        </div>
+        <div class="fui-cell-group fui-cell-group-o account-cell-group">
+            <div class="fui-cell">
+                <div class="fui-cell-info account-cell">
+                    <input type="text" value="+60" disabled style="width: 30px;">
+                    <input type="tel" class="fui-input" name="mobile" id="mobile" placeholder="{php echo $lang['lang_template_account_rf_2']}" value="{php echo trim($_GPC['mobile'])}" maxlength="10" />
+                </div>
+            </div>
+            {if !empty($set['wap']['smsimgcode'])}
+                <div class="fui-cell">
+                    <div class="fui-cell-info account-cell"><input type="tel" class="fui-input" name="verifycode" id="verifycode2" placeholder="{php echo $lang['lang_template_account_rf_3']}" maxlength="4" /></div>
+                    <div class="fui-cell-remark noremark">
+                        <img src="../web/index.php?c=utility&a=code&r={php echo time()}" style="width: 4.5rem; vertical-align: middle;" id="btnCode2">
+                    </div>
+                </div>
+            {/if}
+            <div class="fui-cell" id="cell-verifycode">
+                <div class="fui-cell-info account-cell">
+                    <input type="tel" class="fui-input" name="verifycode" id="verifycode" placeholder="5{php echo $lang['lang_template_account_rf_4']}" maxlength="5" />
+                </div>
+                <div class="fui-cell-remark noremark"><a class="btn btn-default btn-default-o  btn-sm account-btn" id="btnCode" >{php echo $lang['lang_template_account_rf_5']}</a></div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-info account-cell"><input type="password" class="fui-input"  name="pwd" id="pwd" placeholder="{php echo $lang['lang_template_account_rf_6']}" value=""/></div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-info account-cell"><input type="password" class="fui-input"  name="pwd1" id="pwd1" placeholder="{php echo $lang['lang_template_account_rf_7']}" value=""/></div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-info ">
+                    <div class="btn btn-default btn-default-o block account-btn" id="btnSubmit">{if empty($type)}{php echo $lang['lang_template_account_rf_8']}{else}{php echo $lang['lang_template_account_rf_9']}{/if}</div>
+                </div>
+            </div>
+            <div class="fui-cell-title" style="padding:0rem 1rem;;">
+                <a href="{$set['wap']['loginurl']}" class="account-login-link external pull-right">{php echo $lang['lang_template_account_rf_10']}</a>
+                {if empty($type)}
+                    <a href="{$set['wap']['forgeturl']}" class="account-login-link  external">{php echo $lang['lang_template_account_rf_11']} </a>
+                {else}
+                    <a href="{$set['wap']['regurl']}" class="account-login-link  external">{php echo $lang['lang_template_account_rf_12']} </a>
+                {/if}
+            </div>
+
+        </div>
+        <script language='javascript'>
+            require(['biz/member/account'], function (modal) {
+                modal.initRf({backurl:'{$backurl}', type: {php echo intval($type)}, endtime: {php echo intval($endtime)}, imgcode: {php echo intval($set['wap']['smsimgcode'])}});
+            });
+        </script>
+    </div>
+</div>
+{template '_footer'}

@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_0'] = ' Penilaian kini:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_1'] = ' Ahli-ahli biasa';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_2'] = ' minit';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_3'] = ' Mata saya';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_4'] = ' kira-kira';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_5'] = ' Baucar disediakan';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_6'] = ' yang';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_7'] = ' Ditebus item';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_8'] = ' Menebus rekod';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_9'] = ' Layari sekarang';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_10'] = ' Ketahui lebih lanjut tentang keahlian maklumat';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_11'] = ' Baucer kedai';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_12'] = ' Dalam Pertukaran untuk baucer kedai untuk membeli barang-barang lebih kos-efektif';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_13'] = ' Menebus hadiah';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_14'] = ' Nilai-untuk-wang Hadiah boleh ditebus menggunakan mata';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_15'] = ' Log masuk ahli';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_16'] = ' Mata di tengah-tengah senarai laman iklan bit';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_17'] = ' Penebusan baucer';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_18'] = ' Pertukaran';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_19'] = ' lebih banyak';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_20'] = ' perlu';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_21'] = ' mata';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_22'] = ' Menebus sekarang';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_23'] = ' Pertukaran fizikal';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_24'] = ' Pertukaran fizikal';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_25'] = ' lebih banyak';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_26'] = ' Menebus:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_27'] = ' mata';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_28'] = ' Menebus sekarang';
+?>

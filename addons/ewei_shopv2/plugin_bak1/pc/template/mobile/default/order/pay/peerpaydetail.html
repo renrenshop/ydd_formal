@@ -1,0 +1,115 @@
+{template '_header'}
+<link rel="stylesheet" href="../addons/ewei_shopv2/static/js/app/biz/sale/peerpay.css?v={php echo time();}">
+<div class="fui-page  fui-page-current">
+    <div class="fui-content">
+        <div class="fui-payfor-header">
+                <span class="fui-payfor-header-user">
+                    <i class="fui-payfor-user"><img src="{$member['avatar']}" alt=""></i>
+                </span>
+            <div class="fui-payfor-header-title">{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_0']}...</div>
+            <i class="fui-payfor-header-down"></i>
+        </div>
+        <div class="fui-payfor-speed">
+
+            <div class="fui-list fui-payfor-speed-bot" style="padding:0.2rem 0;">
+                <div class="fui-list-inner">{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_1']}<span class="price">{$rate}%</span></div>
+                <div class="fui-list-inner" style="text-align: right;">{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_2']}<span class="price">{$rate_price}{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_3']}</span></div>
+            </div>
+
+            <div class="fui-payfor-speed-top">
+                <i class="fui-payfor-speed-top-inner" style="width:{$rate}%"></i>
+            </div>
+        </div>
+        <div class="blank"></div>
+
+        <div class="fui-list-group-title fui-payfor-group-title">{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_4']}{$member['nickname']}{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_5']}</div>
+        <div class="fui-list fui-payfor-list">
+            <div class="fui-list-media">
+                <img src="{php echo tomedia($goods['thumb'])}" alt="{$goods['title']}">
+            </div>
+            <div class="fui-list-inner fui-payfor-info">
+                <span class="fui-payfor-info-title">{$goods['title']}</span>
+                <div class="fui-list" style="padding:0;">
+                    <div class="fui-list-inner">
+                        <span>{$address['realname']} &nbsp;{php echo substr_replace($address['mobile'],'****',-4)}</span>
+                        <span>{$address['province']}  {$address['city']}  {$address['area']} ****</span>
+                        <span class="fui-payfor-info-price">&yen;{$peerpay['peerpay_realprice']}</span>
+                    </div>
+                    <div class="fui-list-media">
+                        <a href="{php echo mobileUrl('goods/detail',array('id'=>$goods['id']))}" class="btn btn-sm btn-default fui-payfor-btn">{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_6']}</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+{if $peerpay['peerpay_type'] == 1}
+        {loop $message $mk $mv}
+        <div class="peerpay-message-box">
+            <div class="peerpay-message-from">
+                <div class="peepay-message-headimg">
+                    <img src="{$mv['headimg']}">
+                </div>
+                <div class="peepay-message-nickname">{$mv['uname']}{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_7']} <span style="color:red">{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_8']}{$mv['price']}</span></div>
+                <div class="peepay-message-floor">{php echo $mk+1;}F</div>
+                <div class="peepay-message-time">{php echo date('m-d H:i');}</div>
+            </div>
+            <div class="peerpay-message-content">{$mv['usay']}</div>
+        </div>
+        {/loop}
+        {if !empty($message)}
+        <div style="float:left;height: 10px;width: 100%;background-color: #ededed;margin-top: -1px"></div>
+        {/if}
+        <div class="fui-text fui-cell-group" style="width: 100%;left: 0;background-color: #fff">
+            {if $rate_price > 0}
+            <div class="fui-cell">
+                <div class="fui-cell-info">
+                    <textarea rows="3" placeholder="{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_9']}TA{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_10']}" maxlength="200" id="peerpaymessage">{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_11']}!</textarea>
+                    <!--<div class="textarea_counter"><span>0</span>/200</div>-->
+                </div>
+            </div>
+            {/if}
+        </div>
+{/if}
+
+        {if $rate_price > 0}<div class="fui-text fui-cell-group"  style="width: 100%;left: 0;background-color: #fff">
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_12']}</div>
+                <div class="fui-cell-info fui-payfor-input-price">&yen;&nbsp;
+                    <input type="text" placeholder="" class="fui-input payfor-price-input" value="{$price}" id="peerprice" {if $peerpay['peerpay_type'] == 0}readonly="readonly"{/if}>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="btn btn-danger paynow" style="display: block;">{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_13']}</a>{/if}
+        <a href="{php echo mobileUrl()}" class="btn btn-danger-o" style="display: block;">{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_14']}</a>
+        <a class="btn btn-success-o" style="display: block;" onclick="$('.alert-mask').show()">{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_15']}TA{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_16']}</a>
+    </div>
+</div>
+<div class="alert-mask" style="position: absolute;background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;width: 100%;height: 100%;left: 0;top: 0;z-index: 1000;-moz-transition-duration: 400ms;-webkit-transition-duration: 400ms;transition-duration: 400ms;display: none" onclick="$('.alert-mask').hide()">
+    <img src="../addons/ewei_shopv2/static/images/peerpayshare.png" alt="" width="100%" >
+    <div style='font-family: "Microsoft YaHei UI", "{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_17']}", "{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_18']}";color: #fff;text-align: center;'>{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_19']}</div>
+</div>
+<script>
+    $(function(){
+        $('.paynow').click(function () {
+
+            var total = {$rate_price};
+            var peerprice = $('#peerprice').val();
+            var maxpeerpay = {$peerpay['peerpay_selfpay']};
+            maxpeerpay = parseFloat(maxpeerpay);
+            var peerpaytype = {$peerpay['peerpay_type']};
+            var message = $('#peerpaymessage').val();
+            if (peerprice<=0){
+                FoxUI.alert('','{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_20']}');
+                return;
+            } else if (peerpaytype!=0 && peerprice > maxpeerpay && maxpeerpay>0){
+                FoxUI.alert('','{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_21']}'+maxpeerpay+'{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_22']}');
+                return;
+            }else if(peerprice>total){
+                FoxUI.alert('','{php echo $lang['lang_plugin_pc_template_mobile_default_order_pay_peerpaydetail_23']}');
+                return;
+            }
+            location.href = "{php echo mobileUrl('order/pay',array('id'=>$peerpay['oid']),1);}&peerprice="+peerprice+"&peerpaymessage="+message;
+        });
+    });
+</script>
+{template '_footer'}

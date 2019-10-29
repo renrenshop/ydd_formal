@@ -1,0 +1,56 @@
+{template '_header'}
+<div class="fui-page order-express-page">
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_template_mobile_order_refundexpress_0']}</div>
+        <div class="fui-header-right">&nbsp;</div>
+    </div>
+    <div class='fui-content'>
+        <div class="fui-list-group info-list">
+            <div class="fui-list">
+                <!--<a class="fui-list-media back">-->
+                    <!--<img src="{php echo tomedia($goods[0]['thumb'])}">-->
+                    <!--<div class="title">{php echo count($goods)}{php echo $lang['lang_template_mobile_order_refundexpress_1']}</div>-->
+                <!--</a>-->
+                <div class="fui-list-inner">
+                    <div class="title state">{php echo $lang['lang_template_mobile_order_refundexpress_2']}
+                        {if !empty($expresslist)}
+                        {if strexists($expresslist[0]['step'],$lang['lang_template_mobile_order_refundexpress_3'])}
+                        <span class="text-danger">{php echo $lang['lang_template_mobile_order_refundexpress_4']}</span></div>
+                    {elseif count($expresslist)<=2}
+                    <span class="text-primary">{php echo $lang['lang_template_mobile_order_refundexpress_5']}</span></div>
+                {else}
+                <span class="text-success">{php echo $lang['lang_template_mobile_order_refundexpress_6']}</span></div>
+            {/if}
+            {/if}
+            <div class="text expcom">
+                <p>{php echo $lang['lang_template_mobile_order_refundexpress_7']}{$expresscom}</p>
+                <p>{php echo $lang['lang_template_mobile_order_refundexpress_8']}{$expresssn}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{if empty($expresslist)}
+<div class='content-empty'>
+    <i class='icon icon-deliver1'></i><br/><span class='text'>{php echo $lang['lang_template_mobile_order_refundexpress_9']}</span>
+</div>
+{else}
+<div class="fui-list-group express-list" style="margin-top: 0.5rem;">
+    {loop $expresslist $k $ex}
+    <div class="fui-list {if $k==0}current{/if}">
+        <div class="fui-list-inner">
+            <div class="text step">{$ex['step']}</div>
+            <div class="text time">{$ex['time']}</div>
+        </div>
+    </div>
+    {/loop}
+</div>
+{/if}
+
+
+</div>
+</div>
+{template '_footer'}

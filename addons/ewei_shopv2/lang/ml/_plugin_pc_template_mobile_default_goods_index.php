@@ -1,0 +1,37 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_goods_index_0'] = ' Melayari hari';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_1'] = '¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_2'] = ' Semua sejarah penyemakan';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_3'] = ' Menyusun oleh:';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_4'] = ' lalai semacam';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_5'] = ' lalai';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_6'] = ' Klik untuk pesanan daripada tinggi ke rendah oleh jualan';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_7'] = ' Jualan';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_8'] = ' Klik untuk pesanan daripada tinggi ke rendah mengikut harga';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_9'] = ' Harga';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_10'] = ' Harga terendah';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_11'] = ' Harga tertinggi';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_12'] = ' OK';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_13'] = ' Penyenaraian baru';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_14'] = ' Panas produk';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_15'] = ' Disyorkan barang-barang';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_16'] = ' Barangan promosi';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_17'] = ' Menggelung senarai komoditi';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_18'] = ' Diskaun terhad had';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_19'] = ' Mall harga:¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_20'] = '¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_21'] = ' Harga pasaran:¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_22'] = '¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_23'] = ' Sangat berpuas hati';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_24'] = ' Sangat berpuas hati';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_25'] = ' Sangat berpuas hati';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_26'] = ' Sangat berpuas hati';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_27'] = ' Sangat berpuas hati';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_28'] = ' Sangat berpuas hati';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_29'] = ' Barangan jualan';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_30'] = ' Utama';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_31'] = ' sebelumnya';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_32'] = ' Seterusnya';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_33'] = ' halaman terakhir';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_34'] = ' rasa yang anda suka';
+?>

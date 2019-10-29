@@ -1,0 +1,101 @@
+<div class="left-layout">
+
+  <div class="ncm-l-top">
+
+    <h2><a href="{php echo mobileUrl('pc')}" title="{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_0']}">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_1']}</a></h2>
+
+    <div class="set-container-arrow"></div>
+
+  </div>
+
+  <div class="ncm-user-info">
+
+    <div class="avatar">
+      {php $user=check_login()}
+      <img src={if empty($user['avatar'])}"/addons/ewei_shopv2/plugin/pc/template/web/static/images/default_user_portrait.gif"{else}
+      "{$user['avatar']}"{/if}>
+
+      <div class="frame"></div>
+
+    </div>
+
+    <div class="handle">
+      <br/>
+      <a href="{php echo mobileUrl('pc.member.info')}" title="{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_2']}">
+        <i class="icon-pencil"></i>{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_3']}</a>
+      <a href="{php echo mobileUrl("pc.account.logout")}" title="{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_4']}">
+        <i class="icon-off"></i>{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_5']}</a></div>
+    <div class="name">&nbsp;
+
+    </div>
+
+  </div>
+
+  <ul class="ncm-sidebar ncm-quick-menu">
+
+    <li class="side-menu-quick" nctype="commonOperations" style="display: none;"><a href="javascript:void(0)">
+
+        <h3>{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_6']}</h3>
+
+      </a>
+
+      <ul>
+
+      </ul>
+
+    </li>
+
+  </ul>
+
+  <ul id="sidebarMenu" class="ncm-sidebar">
+
+    <li class="side-menu"><a href="javascript:void(0)" key="trade">
+
+        <h3>{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_7']}</h3>
+
+      </a>
+
+      <ul>
+        <li {if $_W['action']=='member.cart'}class="selected" {/if}><a href="{php echo mobileUrl('pc.member.cart')}">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_8']}</a></li>
+
+        <li {if $_W['action']=='order'}class="selected" {/if}><a href="{php echo mobileUrl('pc.order')}">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_9']}</a></li>
+
+        <li {if $_W['action']=='member.favorite'}class="selected" {/if}><a href="{php echo mobileUrl('pc.member.favorite')}">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_10']}</a></li>
+
+        <!--<li><a href="/web/web.php?i=1&act=predeposit&op=pd_log_list">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_11']}</a></li>-->
+        <li {if $_W['action']=='member.info'}class="selected" {/if}><a href="{php echo mobileUrl('pc.member.info')}">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_12']}</a></li>
+        <li {if $_W['action']=='member.log'}class="selected" {/if}><a href="{php echo mobileUrl('pc.member.log')}">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_13']}</a></li>
+        <li {if $_W['action']=='member.address'}class="selected" {/if}><a href="{php echo mobileUrl('pc.member.address')}">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_14']}</a></li>
+
+        <li {if $_W['action']=='member.history'}class="selected" {/if}><a href="{php echo mobileUrl('pc.member.history')}">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_15']}</a></li>
+
+      </ul>
+
+    </li>
+
+    <li class="side-menu"><a href="javascript:void(0)" key="serv">
+
+      <h3>{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_16']}</h3>
+
+    </a>
+
+      <ul>
+
+        <li {if $_W['action']=='shop.notice'}class="selected" {/if}><a href="{php echo mobileUrl('pc.shop.notice')}">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_17']}</a></li>
+        <li {if $_W['action']=='qa.qa'}class="selected" {/if}><a href="{php echo mobileUrl('pc.qa.qa')}">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_18']}</a></li>
+
+        <!--<li><a href="/web/web.php?i=1&act=member_complain&op=index">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_19']}</a></li>
+
+        <li><a href="/web/web.php?i=1&act=member_consult&op=my_consult">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_20']}</a></li>
+
+        <li><a href="/web/web.php?i=1&act=member_inform&op=index">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_21']}</a></li>
+
+        <li><a href="/web/web.php?i=1&act=member_mallconsult&op=index">{php echo $lang['lang_plugin_pc_template_mobile_default_layout_member_left-layout_22']}</a></li>-->
+
+      </ul>
+
+    </li>
+
+  </ul>
+
+</div>

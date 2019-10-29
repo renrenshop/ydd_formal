@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_groups_core_mobile_orders_0'] = ' 注文は宅配便フォームではなく、物流情報を表示できません。';
+$lang['lang_plugin_groups_core_mobile_orders_1'] = ' 注文まだ出荷、物流情報を表示できません。';
+$lang['lang_plugin_groups_core_mobile_orders_2'] = ' 注文が見つかりません';
+$lang['lang_plugin_groups_core_mobile_orders_3'] = ' 注文をキャンセルすることはできません。';
+$lang['lang_plugin_groups_core_mobile_orders_4'] = ' 注文が見つかりません';
+$lang['lang_plugin_groups_core_mobile_orders_5'] = ' 削除できません。';
+$lang['lang_plugin_groups_core_mobile_orders_6'] = ' キャンセル';
+$lang['lang_plugin_groups_core_mobile_orders_7'] = ' 保留中の支払い';
+$lang['lang_plugin_groups_core_mobile_orders_8'] = ' 保留中の配信';
+$lang['lang_plugin_groups_core_mobile_orders_9'] = ' 支払われる';
+$lang['lang_plugin_groups_core_mobile_orders_10'] = ' 保留中の配信';
+$lang['lang_plugin_groups_core_mobile_orders_11'] = ' 完成品';
+$lang['lang_plugin_groups_core_mobile_orders_12'] = ' 製品を選択しては棚をされている、してください他の商品を見るまたは業務連絡! ';
+$lang['lang_plugin_groups_core_mobile_orders_13'] = ' 私たちの公共の数に注意を払う、"OK"をクリックして、その後、それを購入する必要がありますこの製品を購入したい場合';
+$lang['lang_plugin_groups_core_mobile_orders_14'] = ' このアイテムの購入上限に達している、してくださいその他の商品を閲覧または加盟店にお問い合わせください! ';
+$lang['lang_plugin_groups_core_mobile_orders_15'] = ' ご注文は、既に存在する、できるだけ早く支払いを完了してください! ';
+$lang['lang_plugin_groups_core_mobile_orders_16'] = ' あなたが持っている連隊に参加、購入するスペルが終了するまでお待ちください! ';
+$lang['lang_plugin_groups_core_mobile_orders_17'] = ' グループが上限に達している、他の商品を参照ください業務連絡! ';
+$lang['lang_plugin_groups_core_mobile_orders_18'] = ' 、その他の商品を参照か商人に問い合わせてください、このアクティビティの期限が切れている! ';
+$lang['lang_plugin_groups_core_mobile_orders_19'] = ' このアクティビティが終了したその他の商品を参照してくださいしたり、加盟店にお問い合わせください! ';
+$lang['lang_plugin_groups_core_mobile_orders_20'] = ' このアクティビティは、正常にされている組織、その他の商品または取引先担当者のビジネスを参照してください! ';
+$lang['lang_plugin_groups_core_mobile_orders_21'] = ' ご連絡いただくか携帯電話を空にすることはできません! ';
+$lang['lang_plugin_groups_core_mobile_orders_22'] = ' アドレスが見つかりません';
+$lang['lang_plugin_groups_core_mobile_orders_23'] = ' 地方の情報を選択してくださいアドレス';
+$lang['lang_plugin_groups_core_mobile_orders_24'] = ' は、順序を生成に失敗しました! ';
+$lang['lang_plugin_groups_core_mobile_orders_25'] = ' 注文が見つかりません';
+$lang['lang_plugin_groups_core_mobile_orders_26'] = ' 注文は、領収書を確認できません。';
+?>

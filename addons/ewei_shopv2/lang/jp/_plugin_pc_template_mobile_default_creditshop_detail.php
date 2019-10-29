@@ -1,0 +1,32 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_0'] = ' 製品';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_1'] = ' クーポン';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_2'] = ' バランス';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_3'] = ' 赤い封筒';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_4'] = ' 元';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_5'] = ' 価格:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_6'] = ' ポイントを必要な:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_7'] = ' 償還の妥当性:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_8'] = ' 償還日から';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_9'] = ' に';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_10'] = ' のみ:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_11'] = ' コピー';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_12'] = ' 参加しました。';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_13'] = ' 回';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_14'] = ' 切手';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_15'] = ' 元';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_16'] = ' パッケージ';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_17'] = ' 仕様を選択';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_18'] = ' 仕様を選択';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_19'] = ' 今を描く';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_20'] = ' 今すぐ交換';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_21'] = ' モールは、';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_22'] = ' ギフトの数:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_23'] = ' 時間を追加:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_24'] = ' 訪問者:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_25'] = ' レコードを交換';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_26'] = ' への参加を記録しない! ';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_27'] = ' 人気の贈り物';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_28'] = ' ギフト紹介';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_29'] = ' 製品詳細';
+?>

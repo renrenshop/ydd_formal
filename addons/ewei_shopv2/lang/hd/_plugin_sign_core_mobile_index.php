@@ -1,0 +1,33 @@
+<?php
+$lang['lang_plugin_sign_core_mobile_index_0'] = 'नहींखोलें';
+$lang['lang_plugin_sign_core_mobile_index_1'] = 'उपयोगकर्ताजानकारीप्राप्तकरनेमेंविफल';
+$lang['lang_plugin_sign_core_mobile_index_2'] = 'गलतअनुरोध';
+$lang['lang_plugin_sign_core_mobile_index_3'] = 'नहींखोलें';
+$lang['lang_plugin_sign_core_mobile_index_4'] = 'वर्तमानमाहसेकममाह';
+$lang['lang_plugin_sign_core_mobile_index_5'] = 'पहलेसेही';
+$lang['lang_plugin_sign_core_mobile_index_6'] = ', मतदोहराना';
+$lang['lang_plugin_sign_core_mobile_index_7'] = 'ओह';
+$lang['lang_plugin_sign_core_mobile_index_8'] = 'दिनांकवर्तमानदिनांकसेअधिकहै';
+$lang['lang_plugin_sign_core_mobile_index_9'] = 'दैनिक';
+$lang['lang_plugin_sign_core_mobile_index_10'] = 'पहले';
+$lang['lang_plugin_sign_core_mobile_index_11'] = 'विफल';
+$lang['lang_plugin_sign_core_mobile_index_12'] = 'अपने';
+$lang['lang_plugin_sign_core_mobile_index_13'] = 'अपर्याप्त';
+$lang['lang_plugin_sign_core_mobile_index_14'] = 'नहींकरसकता';
+$lang['lang_plugin_sign_core_mobile_index_15'] = 'काटेंगे';
+$lang['lang_plugin_sign_core_mobile_index_16'] = 'विफल';
+$lang['lang_plugin_sign_core_mobile_index_17'] = 'अपने';
+$lang['lang_plugin_sign_core_mobile_index_18'] = 'अपर्याप्त';
+$lang['lang_plugin_sign_core_mobile_index_19'] = 'नहींकरसकता';
+$lang['lang_plugin_sign_core_mobile_index_20'] = 'काटेंगे';
+$lang['lang_plugin_sign_core_mobile_index_21'] = 'सफल';
+$lang['lang_plugin_sign_core_mobile_index_22'] = 'गलतअनुरोध';
+$lang['lang_plugin_sign_core_mobile_index_23'] = 'अनुरोधपैरामीटरत्रुटि';
+$lang['lang_plugin_sign_core_mobile_index_24'] = 'नहींखोलें';
+$lang['lang_plugin_sign_core_mobile_index_25'] = 'यहपुरस्कारप्राप्तहुआहै';
+$lang['lang_plugin_sign_core_mobile_index_26'] = 'कृपयासंग्रहनदोहराएं';
+$lang['lang_plugin_sign_core_mobile_index_27'] = 'सतत';
+$lang['lang_plugin_sign_core_mobile_index_28'] = 'कुल';
+$lang['lang_plugin_sign_core_mobile_index_29'] = 'दिनपुरस्कृतहो';
+$lang['lang_plugin_sign_core_mobile_index_30'] = 'सफलतापूर्वकएकत्रितकरें';
+?>

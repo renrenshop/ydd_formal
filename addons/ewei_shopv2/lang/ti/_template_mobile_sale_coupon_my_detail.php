@@ -1,0 +1,36 @@
+<?php
+$lang['lang_template_mobile_sale_coupon_my_detail_0'] = ' รายละเอียด';
+$lang['lang_template_mobile_sale_coupon_my_detail_1'] = ' ยืนหลัง';
+$lang['lang_template_mobile_sale_coupon_my_detail_2'] = ' ยอดดุลหยวน';
+$lang['lang_template_mobile_sale_coupon_my_detail_3'] = ' จุด';
+$lang['lang_template_mobile_sale_coupon_my_detail_4'] = ' ซองจดหมาย Meta';
+$lang['lang_template_mobile_sale_coupon_my_detail_5'] = ' ถูกต้องอย่างถาวร';
+$lang['lang_template_mobile_sale_coupon_my_detail_6'] = ' นั่นคือ';
+$lang['lang_template_mobile_sale_coupon_my_detail_7'] = ' วัน';
+$lang['lang_template_mobile_sale_coupon_my_detail_8'] = ' วันที่ถูกต้อง';
+$lang['lang_template_mobile_sale_coupon_my_detail_9'] = ' ใช้ร้าน';
+$lang['lang_template_mobile_sale_coupon_my_detail_10'] = ' ซื้อจำกัด';
+$lang['lang_template_mobile_sale_coupon_my_detail_11'] = ' สินค้าที่ร้าน';
+$lang['lang_template_mobile_sale_coupon_my_detail_12'] = ' คำแนะนำการใช้งาน';
+$lang['lang_template_mobile_sale_coupon_my_detail_13'] = ' หมดอายุ';
+$lang['lang_template_mobile_sale_coupon_my_detail_14'] = ' ถูกต้องอย่างถาวร';
+$lang['lang_template_mobile_sale_coupon_my_detail_15'] = ' นั่นคือ';
+$lang['lang_template_mobile_sale_coupon_my_detail_16'] = ' วัน';
+$lang['lang_template_mobile_sale_coupon_my_detail_17'] = ' วันที่ถูกต้อง';
+$lang['lang_template_mobile_sale_coupon_my_detail_18'] = ' ระยะเวลา';
+$lang['lang_template_mobile_sale_coupon_my_detail_19'] = ' ซื้อจำกัด';
+$lang['lang_template_mobile_sale_coupon_my_detail_20'] = ' สินค้าที่ร้าน';
+$lang['lang_template_mobile_sale_coupon_my_detail_21'] = ' ข้อจำกัดในการใช้';
+$lang['lang_template_mobile_sale_coupon_my_detail_22'] = ' คูปองนี้สามารถใช้ได้ที่แคชเชียร์เท่านั้น';
+$lang['lang_template_mobile_sale_coupon_my_detail_23'] = ' ไม่อนุญาตให้มีการใช้โปรโมชั่นในเวลาเดียวกัน';
+$lang['lang_template_mobile_sale_coupon_my_detail_24'] = ' ไม่อนุญาตให้ใช้งานพร้อมกับส่วนลดสมาชิก';
+$lang['lang_template_mobile_sale_coupon_my_detail_25'] = ' ไม่อนุญาตให้พร้อมโปรโมชั่นและส่วนลดสมาชิก';
+$lang['lang_template_mobile_sale_coupon_my_detail_26'] = ' อนุญาตต่อไปนี้จะใช้';
+$lang['lang_template_mobile_sale_coupon_my_detail_27'] = ' ทำให้สินค้าประเภทต่อไปที่จะใช้';
+$lang['lang_template_mobile_sale_coupon_my_detail_28'] = ' ไม่มี';
+$lang['lang_template_mobile_sale_coupon_my_detail_29'] = ' ใช้';
+$lang['lang_template_mobile_sale_coupon_my_detail_30'] = ' หมดอายุ';
+$lang['lang_template_mobile_sale_coupon_my_detail_31'] = ' ไปยังรายการตอนนี้จะใช้';
+$lang['lang_template_mobile_sale_coupon_my_detail_32'] = ' ชาร์จไฟทันที';
+$lang['lang_template_mobile_sale_coupon_my_detail_33'] = ' คูปองของฉันกลับ';
+?>

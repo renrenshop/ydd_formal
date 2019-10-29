@@ -1,0 +1,55 @@
+{template '_header'}
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/sns/template/mobile/default/images/common.css"/>
+<div class='fui-page fui-page-current  fui-page-current sns-board-page'>
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back"></a>
+        </div>
+        <div class="title">{if $openid==$_W['openid']}{php echo $lang['lang_plugin_sns_template_mobile_default_user_boards_0']}{else}TA{php echo $lang['lang_plugin_sns_template_mobile_default_user_boards_1']}{/if}{php echo $lang['lang_plugin_sns_template_mobile_default_user_boards_2']}</div>
+        <div class="fui-header-right btn-edit">&nbsp;</div>
+    </div>
+    <div class="fui-content">
+
+        <div class="fui-list-group" id="user-boards-list" style="margin-top:0"></div>
+        <div class="empty" style="display:none;"><i class="icon icon-cascades" style="font-size:4rem;color:#ccc;"></i> <br/>{php echo $lang['lang_plugin_sns_template_mobile_default_user_boards_3']}</div>
+        <div class='infinite-loading'><span class='fui-preloader'></span><span class='text'> {php echo $lang['lang_plugin_sns_template_mobile_default_user_boards_4']}...</span></div>
+    </div>
+
+    <script language='javascript'>
+        require(['../addons/ewei_shopv2/plugin/sns/static/js/user_boards.js'], function (modal) {
+            modal.init({ id: "{$member['id']}"});
+        });
+    </script>
+
+</div>
+
+
+
+</div>
+
+ <script type="text/html" id="tpl_user_board_list">
+
+ <%each list as value%>
+
+ <a class="fui-list" href="{php echo mobileUrl('sns/board')}&id=<%value.id%>&page=1" data-nocache="true">
+     <div class="fui-list-media">
+         <img data-lazy="<%value.logo%>" class="round">
+     </div>
+     <div class="fui-list-inner">
+         <div class="row">
+             <div class="row-text"><%value.title%></div>
+             <div class="angle"></div>
+         </div>
+         <div class='text'>{php echo $lang['lang_plugin_sns_template_mobile_default_user_boards_5']}: <span class='text-danger'><%value.postcount%></span> {php echo $lang['lang_plugin_sns_template_mobile_default_user_boards_6']}:<span class="text-danger"><%value.followcount%></span></div>
+         <div class="text"><%value.desc%></div>
+     </div>
+ </a>
+
+ <%/each%>
+
+</script>
+
+
+
+
+{template '_footer'}

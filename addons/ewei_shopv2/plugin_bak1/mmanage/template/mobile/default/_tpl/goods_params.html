@@ -1,0 +1,260 @@
+<div class='fui-content params-block'>
+    <div class="inner">
+
+        <div class="param-item param-type">
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_0']}</div>
+            <div class="fui-cell-group fui-cell-click">
+                <div class="fui-cell submit-params" data-value="1">
+                    <div class="fui-cell-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_1']}</div>
+                    <div class="fui-cell-remark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_2']}</div>
+                </div>
+                <div class="fui-cell submit-params" data-value="2">
+                    <div class="fui-cell-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_3']}</div>
+                    <div class="fui-cell-remark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_4']}</div>
+                </div>
+                <div class="fui-cell submit-params" data-value="3">
+                    <div class="fui-cell-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_5']}({php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_6']})</div>
+                    <div class="fui-cell-remark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_7']}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="param-item param-cate">
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_8']}({php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_9']})</div>
+            <div class="cate-list" data-catlevel="{$catlevel}">
+                <div class="item" data-level="1">
+                    {loop $allcategory['parent'] $category_item}
+                        <nav data-id="{$category_item['id']}">{$category_item['name']}</nav>
+                    {/loop}
+                </div>
+                {if $catlevel>=2}
+                <div class="item" data-level="2">
+                        <div class="empty">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_10']}</div>
+                    </div>
+                {/if}
+                {if $catlevel>=3}
+                    <div class="item" data-level="3">
+                        <div class="empty">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_11']}</div>
+                    </div>
+                {/if}
+            </div>
+            <div class="btn btn-success btn-sm block btn-choose-cate">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_12']}</div>
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_13']}</div>
+            <div class="small-block">
+                {loop $category $category_item}
+                    {if is_array($cates) &&  in_array($category_item['id'],$cates)}
+                        <span class="item" data-cateid="{$category_item['id']}">{$category_item['name']} <i class="icon icon-close"></i></span>
+                    {/if}
+                {/loop}
+            </div>
+        </div>
+
+        <div class="param-item param-totalcnf">
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_14']}</div>
+            <div class="fui-cell-group fui-cell-click">
+                <div class="fui-cell submit-params" data-value="0">
+                    <div class="fui-cell-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_15']}</div>
+                    <div class="fui-cell-remark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_16']}</div>
+                </div>
+                <div class="fui-cell submit-params" data-value="1">
+                    <div class="fui-cell-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_17']}</div>
+                    <div class="fui-cell-remark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_18']}</div>
+                </div>
+                <div class="fui-cell submit-params" data-value="2">
+                    <div class="fui-cell-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_19']}</div>
+                    <div class="fui-cell-remark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_20']}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="param-item param-prop">
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_21']}</div>
+            <div class="fui-cell-group">
+                <div class="fui-cell ">
+                    <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_22']}</div>
+                    <div class="fui-cell-info">
+                        <input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right param-child" id="isrecommand" data-text="{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_23']}" {if !empty($item['isrecommand'])}checked="checked"{/if} />
+                    </div>
+                </div>
+                <div class="fui-cell ">
+                    <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_24']}</div>
+                    <div class="fui-cell-info">
+                        <input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right param-child" id="isnew" data-text="{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_25']}" {if !empty($item['isnew'])}checked="checked"{/if} />
+                    </div>
+                </div>
+                <div class="fui-cell ">
+                    <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_26']}</div>
+                    <div class="fui-cell-info">
+                        <input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right param-child" id="ishot" data-text="{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_27']}" {if !empty($item['ishot'])}checked="checked"{/if} />
+                    </div>
+                </div>
+                <div class="fui-cell ">
+                    <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_28']}</div>
+                    <div class="fui-cell-info">
+                        <input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right param-child" id="issendfree" data-text="{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_29']}" {if !empty($item['issendfree'])}checked="checked"{/if} />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="param-item param-viewlevel">
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_30']}({php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_31']})</div>
+            <div class="fui-list-group">
+                {loop $levels $level_item}
+                    <div class="fui-list bindclick">
+                        <div class="fui-list-media">
+                            <input type="checkbox" class="param-child fui-radio fui-radio-success" name="viewlevel" value="{$level_item['id']}" data-text="{$level_item['levelname']}" {if !empty($level_item['checked_view'])}checked="checked"{/if} />
+                        </div>
+                        <div class="fui-list-inner">
+                            <div class="subtitle">{$level_item['levelname']}</div>
+                        </div>
+                    </div>
+                {/loop}
+            </div>
+        </div>
+
+        <div class="param-item param-viewgroup">
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_32']}({php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_33']})</div>
+            <div class="fui-list-group">
+                {loop $groups $group_item}
+                    <div class="fui-list bindclick">
+                        <div class="fui-list-media">
+                            <input type="checkbox" class="param-child fui-radio fui-radio-success" name="viewgroup" value="{$group_item['id']}" data-text="{$group_item['groupname']}" {if !empty($group_item['checked_view'])}checked="checked"{/if} />
+                        </div>
+                        <div class="fui-list-inner">
+                            <div class="subtitle">{$group_item['groupname']}</div>
+                        </div>
+                    </div>
+                {/loop}
+            </div>
+        </div>
+
+        <div class="param-item param-buylevel">
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_34']}({php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_35']})</div>
+            <div class="fui-list-group">
+                {loop $levels $level_item}
+                <div class="fui-list bindclick">
+                    <div class="fui-list-media">
+                        <input type="checkbox" class="param-child fui-radio fui-radio-success" name="viewlevel" value="{$level_item['id']}" data-text="{$level_item['levelname']}" {if !empty($level_item['checked_buy'])}checked="checked"{/if} />
+                    </div>
+                    <div class="fui-list-inner">
+                        <div class="subtitle">{$level_item['levelname']}</div>
+                    </div>
+                </div>
+                {/loop}
+            </div>
+        </div>
+        <div class="param-item param-buygroup">
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_36']}({php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_37']})</div>
+            <div class="fui-list-group">
+                {loop $groups $group_item}
+                <div class="fui-list bindclick">
+                    <div class="fui-list-media">
+                        <input type="checkbox" class="param-child fui-radio fui-radio-success" name="viewgroup" value="{$group_item['id']}" data-text="{$group_item['groupname']}" {if !empty($group_item['checked_buy'])}checked="checked"{/if} />
+                    </div>
+                    <div class="fui-list-inner">
+                        <div class="subtitle">{$group_item['groupname']}</div>
+                    </div>
+                </div>
+                {/loop}
+            </div>
+        </div>
+
+        <div class="param-item param-diypage">
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_38']}</div>
+            <div class="fui-cell-group fui-cell-click">
+                <div class="fui-cell submit-params" data-id="0">
+                    <div class="fui-cell-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_39']}</div>
+                    <div class="fui-cell-remark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_40']}</div>
+                </div>
+                {loop $diypage $diypage_item}
+                    <div class="fui-cell submit-params" data-id="{$diypage_item['id']}">
+                        <div class="fui-cell-text">{$diypage_item['name']}</div>
+                        <div class="fui-cell-remark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_41']}</div>
+                    </div>
+                {/loop}
+            </div>
+        </div>
+
+        <div class="param-item param-diyform">
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_42']}</div>
+            <div class="fui-cell-group fui-cell-click">
+                <div class="fui-cell submit-params" data-id="0">
+                    <div class="fui-cell-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_43']}</div>
+                    <div class="fui-cell-remark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_44']}</div>
+                </div>
+            </div>
+            <div class="fui-cell-group fui-cell-click">
+                {loop $diyform $diyform_item}
+                <div class="fui-cell submit-params" data-id="{$diyform_item['id']}">
+                    <div class="fui-cell-text">{$diyform_item['title']}</div>
+                    <div class="fui-cell-remark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_45']}</div>
+                </div>
+                {/loop}
+            </div>
+        </div>
+
+        <div class="param-item param-dispatch">
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_46']}</div>
+            <div class="fui-list-group">
+                <div class="fui-list bindclick" data-show="dispatchtype_0" data-hide="dispatchtype_1">
+                    <div class="fui-list-media">
+                        <input type="radio" class="fui-radio fui-radio-success" name="dispatchtype" value="0" id="dispatchtype_0" {if empty($item['dispatchtype'])}checked="checked"{/if} />
+                    </div>
+                    <label class="fui-list-inner">
+                        <div class="subtitle">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_47']}</div>
+                    </label>
+                </div>
+                <div class="fui-list bindclick" data-show="dispatchtype_1" data-hide="dispatchtype_0">
+                    <div class="fui-list-media">
+                        <input type="radio" class="fui-radio fui-radio-success" name="dispatchtype" value="1" {if !empty($item['dispatchtype'])}checked="checked"{/if} />
+                    </div>
+                    <label class="fui-list-inner">
+                        <div class="subtitle">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_48']}</div>
+                    </label>
+                </div>
+            </div>
+            <div class="dispatchtype_0" style="display: {if empty($item['dispatchtype'])}block{else}none{/if};">
+                <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_49']}</div>
+                <div class="fui-list-group">
+                    <div class="fui-list bindclick">
+                        <div class="fui-list-media">
+                            <input type="radio" class="fui-radio fui-radio-success" name="dispatchid" value="0" {if empty($item['dispatchid'])}checked="checked"{/if} />
+                        </div>
+                        <div class="fui-list-inner">
+                            <div class="subtitle">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_50']}</div>
+                        </div>
+                    </div>
+                    {loop $dispatch_data $dispatch_item}
+                        <div class="fui-list bindclick">
+                            <div class="fui-list-media">
+                                <input type="radio" class="fui-radio fui-radio-success" name="dispatchid" value="{$dispatch_item['id']}" {if $item['dispatchid']==$dispatch_item['id']}checked="checked"{/if} />
+                            </div>
+                            <div class="fui-list-inner">
+                                <div class="subtitle">{$dispatch_item['dispatchname']}</div>
+                            </div>
+                        </div>
+                    {/loop}
+                </div>
+            </div>
+            <div class="dispatchtype_1" style="display: {if !empty($item['dispatchtype'])}block{else}none{/if};">
+                <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_51']}</div>
+                <div class="fui-cell-group">
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_52']}</div>
+                        <div class="fui-cell-info">
+                            <input type="number" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_53']}" class="fui-input" value="{$item['dispatchprice']}" id="dispatchprice" />
+                        </div>
+                        <div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_54']}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="fui-navbar">
+        <div class="nav-item btn btn-success submit-params">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_55']}</div>
+        <div class="nav-item btn btn-gray cancel-params">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_goods_params_56']}</div>
+    </div>
+</div>

@@ -1,0 +1,33 @@
+<?php
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_0'] = 'संचईआमंत्रण';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_1'] = 'लोगोंकोस्कैनयापोस्टरदेखना';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_2'] = 'बोनसअंक';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_3'] = 'राशिपुरस्कार';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_4'] = 'बोनसबोनस';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_5'] = 'कूपनपुरस्कार';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_6'] = 'विशेषपेशकशपुरस्कार';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_7'] = 'कोईलक्ष्यसंख्यानहीं';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_8'] = 'कोईपुरस्कार';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_9'] = 'कोईपुरस्कार';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_10'] = 'विचार';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_11'] = 'कोईनोट';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_12'] = 'अबउठाओ';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_13'] = 'मुझेफिरसेदेखनेदो';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_14'] = 'बधाई';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_15'] = 'उठाओ';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_16'] = 'कार्यसफल';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_17'] = 'अपनाकार्यपोस्टरदेखनेकेलिएकृपयासार्वजनिकसंख्यापरलौटें';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_18'] = 'ठीक';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_19'] = 'बहुतखेद';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_20'] = 'आपयहकार्यनहींउठासकते';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_21'] = 'आपकोउसीप्रकारकाकार्यप्राप्तहुआहै';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_22'] = 'ठीकहै, मुझेपताहै।';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_23'] = 'सफलतापूर्वकएकत्रितकरें';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_24'] = 'बधाई';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_25'] = 'उठाओ';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_26'] = 'कार्यसफल';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_27'] = 'पिकअपविफल';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_28'] = 'प्राप्तनहींकरसकता';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_29'] = 'कार्यजानकारीनहींमिलीहै';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_30'] = 'कोईकार्यजानकारीनहींमिली';
+?>

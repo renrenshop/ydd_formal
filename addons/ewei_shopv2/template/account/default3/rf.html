@@ -1,0 +1,94 @@
+{template '_header'}
+<link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/template/account/default3/style.css?v=2.0.0">
+<style type="text/css">
+    .header {background-image: url("{php echo empty($set['wap']['bg'])?'../addons/ewei_shopv2/template/account/default3/bg.jpg':tomedia($set['wap']['bg'])}"); background-repeat: n}
+    .btn {background: {if !empty($set['wap']['color'])}{$set['wap']['color']}{else}#43afcf{/if};}
+    .text a {color: {if !empty($set['wap']['color'])}{$set['wap']['color']}{else}#43afcf{/if};}
+</style>
+<div class="fui-page">
+    {if is_h5app()}
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back"> </a>
+        </div>
+        <div class="title">{if empty($type)}{php echo $lang['lang_template_account_rf_0']}{else}{php echo $lang['lang_template_account_rf_1']}{/if}</div>
+        <div class="fui-header-right" data-nomenu="true"></div>
+    </div>
+    {/if}
+    <div class="fui-content" >
+        <div class="header" style="">
+            <div class="logo">
+                <img src="{php echo tomedia($set['shop']['logo'])}" />
+            </div>
+            <div class="name">{$set['shop']['name']}</div>
+        </div>
+
+            <div class="fui-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-icon">
+                        <i class="icon icon-people"></i>
+                    </div>
+                    <div class="fui-cell-info">
+                        <input type="tel" placeholder="{php echo $lang['lang_template_account_rf_2']}" class="fui-input" maxlength="11" name="mobile" id="mobile" value="{php echo trim($_GPC['mobile'])}" />
+                    </div>
+                </div>
+
+                <div class="fui-cell">
+                    <div class="fui-cell-icon">
+                        <i class="icon icon-email"></i>
+                    </div>
+                    <div class="fui-cell-info account-cell">
+                        <input type="tel" class="fui-input" name="email" id="email" placeholder="{php echo $lang['lang_template_account_rf_13']}" value="{php echo trim($_GPC['email'])}" />
+                    </div>
+                </div>
+                {if !empty($set['wap']['smsimgcode'])}
+                    <div class="fui-cell">
+                        <div class="fui-cell-icon">
+                            <i class="icon icon-safe"></i>
+                        </div>
+                        <div class="fui-cell-info">
+                            <input type="tel" placeholder="{php echo $lang['lang_template_account_rf_3']}" class="fui-input" maxlength="4" name="verifycode2" id="verifycode2">
+                        </div>
+                        <img class="fui-cell-remark noremark" src="../web/index.php?c=utility&a=code&r={php echo time()}" style="width: 5rem" id="btnCode2">
+                    </div>
+                {/if}
+                <div class="fui-cell">
+                    <div class="fui-cell-icon">
+                        <i class="icon icon-email"></i>
+                    </div>
+                    <div class="fui-cell-info">
+                        <input type="tel" placeholder="5{php echo $lang['lang_template_account_rf_4']}" class="fui-input" maxlength="5" name="verifycode" id="verifycode">
+                    </div>
+                    <a class="fui-cell-remark noremark" href="javascript:;" id="btnCode">{php echo $lang['lang_template_account_rf_5']}</a>
+                </div>
+                <div class="fui-cell">
+                    <div class="fui-cell-icon">
+                        <i class="icon icon-lock"></i>
+                    </div>
+                    <div class="fui-cell-info">
+                        <input type="password" placeholder="{php echo $lang['lang_template_account_rf_6']}" class="fui-input" name="pwd" id="pwd" />
+                    </div>
+                </div>
+                <div class="fui-cell">
+                    <div class="fui-cell-icon">
+                        <i class="icon icon-lock"></i>
+                    </div>
+                    <div class="fui-cell-info">
+                        <input type="password" placeholder="{php echo $lang['lang_template_account_rf_7']}" class="fui-input" name="pwd1" id="pwd1">
+                    </div>
+                </div>
+            </div>
+
+        <div class="btn" id="btnSubmit">{if empty($type)}{php echo $lang['lang_template_account_rf_8']}{else}{php echo $lang['lang_template_account_rf_9']}{/if}</div>
+        <div class="text">
+            <p>{php echo $lang['lang_template_account_rf_14']}? <a href="{$set['wap']['loginurl']}">{php echo $lang['lang_template_account_rf_10']}</a></p>
+        </div>
+
+        <script language='javascript'>
+            require(['biz/member/account'], function (modal) {
+                modal.initRf({backurl:'{$backurl}', type: {php echo intval($type)}, endtime: {php echo intval($endtime)}, imgcode: {php echo intval($set['wap']['smsimgcode'])}});
+            });
+        </script>
+    </div>
+</div>
+{template '_footer'}

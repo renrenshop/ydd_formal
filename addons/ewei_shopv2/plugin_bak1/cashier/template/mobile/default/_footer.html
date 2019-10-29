@@ -1,0 +1,105 @@
+<script language='javascript'>
+	$(function(){
+		$.ajax({
+			url: "{php echo mobileUrl('util/task')}",
+			cache:false
+		});
+	})
+</script>
+
+<script language="javascript">require(['init']);</script>
+
+
+{if is_h5app()}
+	{php $this->shopShare()}
+	<script language='javascript'>
+		require(['biz/h5app'], function (modal) {
+			modal.init({
+				share: {php echo json_encode($_W['shopshare'])},
+				backurl: "{$_GPC['backurl']}",
+				statusbar: "{php echo intval($_W['shopset']['wap']['statusbar'])}",
+				payinfo: {php echo json_encode($payinfo)}
+			});
+			{if $initWX}
+			modal.initWX();
+			{/if}
+		});
+	</script>
+	{template 'headmenu'}
+{/if}
+
+<script language="javascript">
+	window.shareData = {php echo json_encode($_W['shopshare'])};
+	jssdkconfig = {php echo json_encode($_W['account']['jssdkconfig']);} || { jsApiList:[] };
+	jssdkconfig.debug = false;
+	jssdkconfig.jsApiList = ['checkJsApi','onMenuShareTimeline','onMenuShareAppMessage','onMenuShareQQ','onMenuShareWeibo','showOptionMenu', 'hideMenuItems', 'onMenuShareQZone','scanQRCode'];
+	wx.config(jssdkconfig);
+	wx.ready(function () {
+		wx.showOptionMenu();
+
+		{if !empty($_W['shopshare']['hideMenus'])}
+		wx.hideMenuItems({
+			menuList: {php echo  json_encode($_W['shopshare']['hideMenus'])}
+	});
+		{/if}
+		wx.onMenuShareAppMessage(window.shareData);
+		wx.onMenuShareTimeline(window.shareData);
+		wx.onMenuShareQQ(window.shareData);
+		wx.onMenuShareWeibo(window.shareData);
+		wx.onMenuShareQZone(window.shareData);
+		$("#btn-pay").on('click',function () {
+			var money = $.trim( $("#money").val() );
+			if (isNaN(money) || money<=0){
+				FoxUI.toast.show('{php echo $lang['lang_plugin_cashier_template_mobile_default__footer_0']}!');
+				return;
+			}
+			FoxUI.confirm('{php echo $lang['lang_plugin_cashier_template_mobile_default__footer_1']}: ' + money + " {php echo $lang['lang_plugin_cashier_template_mobile_default__footer_2']}?",'{php echo $lang['lang_plugin_cashier_template_mobile_default__footer_3']}',function(){
+                wx.scanQRCode({
+                    needResult: 1, // {php echo $lang['lang_plugin_cashier_template_mobile_default__footer_4']}0{php echo $lang['lang_plugin_cashier_template_mobile_default__footer_5']}1{php echo $lang['lang_plugin_cashier_template_mobile_default__footer_6']}
+                    scanType: ["qrCode","barCode"], // {php echo $lang['lang_plugin_cashier_template_mobile_default__footer_7']}
+                    success: function (res) {
+						FoxUI.defaults.loaderText = '{php echo $lang['lang_plugin_cashier_template_mobile_default__footer_8']}!';
+						FoxUI.loader.show('loading');
+						var result = res.resultStr.replace('CODE_128,',''); // {php echo $lang['lang_plugin_cashier_template_mobile_default__footer_9']}needResult {php echo $lang['lang_plugin_cashier_template_mobile_default__footer_10']} 1 {php echo $lang['lang_plugin_cashier_template_mobile_default__footer_11']}
+                        $.post("{php echo mobileUrl('cashier/collection',array('cashierid'=>$_W['cashierid']))}",{money:money,auth_code:result},function (data) {
+                            if(data.status == 0)
+                            {
+                            	nul = setInterval(function () {
+									$.getJSON("{php echo mobileUrl('cashier/pay/orderquery',array('cashierid'=>$_W['cashierid']))}"+"&orderid="+data.result.message,function (order) {
+										if (order.status == 1){
+											location.href = "{php echo mobileUrl('cashier/pay/success',array('cashierid'=>$_W['cashierid']))}"+"&orderid="+data.result.message;
+										}
+									})
+								},5000);
+                            }else if (data.status == 1){
+                            	location.href = "{php echo mobileUrl('cashier/pay/success',array('cashierid'=>$_W['cashierid']))}"+"&orderid="+data.result.message;
+                            }else if (data.status == -101){
+								FoxUI.loader.hide();
+								FoxUI.alert(data.result.message);
+							}
+                        },'json')
+                    }
+                });
+			});
+		});
+	});
+
+	{if !empty($_W['shopset']['wap']['open']) && !is_weixin()}
+	//	Share to qq
+	require(['//qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js'], function(setShareInfo) {
+		setShareInfo({
+			title: "{$_W['shopshare']['title']}",
+			summary: "{$_W['shopshare']['desc']}",
+			pic: "{$_W['shopshare']['imgUrl']}",
+			url: "{$_W['shopshare']['link']}"
+		});
+	});
+	{/if}
+</script>
+
+{php $this->diyLayer(true, $diypage)}
+
+{php $this->wapQrcode()}
+<span style="display:none">{$_W['shopset']['shop']['diycode']}</span>
+</body>
+</html>

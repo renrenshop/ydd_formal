@@ -1,0 +1,20 @@
+<?php
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_0'] = 'Butiran setiap isu';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_1'] = 'Tidak bermula';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_2'] = 'Sedang berjalan';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_3'] = 'Selesai';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_4'] = 'Bilangan perkhidmatan';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_5'] = 'Pertama';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_6'] = 'Tempoh / jumlah';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_7'] = 'Tempoh';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_8'] = 'Tarikh penerimaan';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_9'] = 'Alamat penghantaran';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_10'] = 'Maklumat logistik';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_11'] = 'Tidak dihantar';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_12'] = 'Ubah suai tarikh penerimaan';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_13'] = 'Resit kelewatan';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_14'] = 'Ubah suai alamat';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_15'] = 'Ubah suai alamat';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_16'] = 'Sahkan resit';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_17'] = 'Batalkan';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_18'] = 'Ubah suai';

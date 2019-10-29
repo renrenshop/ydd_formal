@@ -1,0 +1,109 @@
+{template '_header'}
+<script>document.title = "{php echo $lang['lang_plugin_exchange_template_mobile_default_common_0']}"; </script>
+
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/exchange/static/css/common.css?v={php echo time()}">
+
+<div class='fui-page fui-page-current'>
+
+    <div class="fui-content">
+{if !empty($banner)}
+        <div class='fui-swipe' data-transition="500" data-gap="1">
+            <div class='fui-swipe-wrapper' style="height: 220px">
+                {loop $banner $k $v}
+                <a class='fui-swipe-item external' href="">
+                    <img src="{php echo urldecode(tomedia($v));}" height="100%" width="100%"/>
+                </a>
+                {/loop}
+            </div>
+            <div class='fui-swipe-page'></div>
+        </div>
+{/if}
+        <!--<div class="block-text"></div>-->
+
+        <div class="block-exchange">
+            <div class="title">
+                <p class="text">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_1']}</p>
+                <p class="text2" style="display: none;">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_2']}: D123456</p>
+                <p class="num">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_3']}<span id="num">1</span>{php echo $lang['lang_plugin_exchange_template_mobile_default_common_4']}</p>
+            </div>
+            <div class="input">
+                <input placeholder="{php echo $lang['lang_plugin_exchange_template_mobile_default_common_5']}" id="exchangeno" value="{$key}"/>
+            </div>
+            <div class="list">
+                <div class="item balance" style="display: none">
+                    <div class="ico money"></div>
+                    <div class="info">
+                        <p class="t1">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_6']}</p>
+                        <p class="t2">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_7']}1000{php echo $lang['lang_plugin_exchange_template_mobile_default_common_8']}</p>
+                    </div>
+                    <div class="btn-exc btn btn-danger btn-sm" id="balance">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_9']}</div>
+                </div>
+                <div class="item score" style="display: none">
+                    <div class="ico credit"></div>
+                    <div class="info">
+                        <p class="t1">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_10']}</p>
+                        <p class="t2">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_11']}1000{php echo $lang['lang_plugin_exchange_template_mobile_default_common_12']}</p>
+                    </div>
+                    <div class="btn-exc btn btn-danger btn-sm" id="score">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_13']}</div>
+                </div>
+                <div class="item coupon" style="display: none">
+                    <div class="ico coupon"></div>
+                    <div class="info">
+                        <p class="t1">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_14']}</p>
+                        <p class="t2">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_15']}1000{php echo $lang['lang_plugin_exchange_template_mobile_default_common_16']}</p>
+                    </div>
+                    <div class="btn-exc btn btn-danger btn-sm" id="coupon">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_17']}</div>
+                </div>
+                <div class="item red" style="display: none">
+                    <div class="ico redbag"></div>
+                    <div class="info">
+                        <p class="t1">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_18']}</p>
+                        <p class="t2">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_19']}1000{php echo $lang['lang_plugin_exchange_template_mobile_default_common_20']}</p>
+                    </div>
+                    <div class="btn-exc btn btn-danger btn-sm" id="red">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_21']}</div>
+                </div>
+                <div class="item goods" style="display: none">
+                    <div class="ico goods"></div>
+                    <div class="info">
+                        <p class="t1">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_22']}</p>
+                        <p class="t2">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_23']}1000{php echo $lang['lang_plugin_exchange_template_mobile_default_common_24']}</p>
+                    </div>
+                    <div class="btn-exc btn btn-danger btn-sm" id="goods">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_25']}</div>
+                </div>
+            </div>
+            <div class="btn btn-danger block" id="exchange">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_26']}</div>
+            <div class="btn btn-default block" id="reset">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_27']}</div>
+        </div>
+
+        <div class="block-info">
+            <div class="head">
+                <div class="title">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_28']}</div>
+            </div>
+            <div class="info">
+                <p><b>{php echo $lang['lang_plugin_exchange_template_mobile_default_common_29']}{php echo htmlspecialchars_decode($res['rule']);}</b></p>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="alert-success-outer" style="display: none;">
+            <div class="alert-success">
+                <div class="text" id="status1">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_30']}</div>
+                <div class="btn btn-warning">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_31']}</div>
+            </div>
+        </div>
+
+        <div class="alert-error-outer" style="display: none;">
+            <div class="alert-error">
+                <div class="text" id="status0">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_32']}</div>
+                <div class="btn btn-warning">{php echo $lang['lang_plugin_exchange_template_mobile_default_common_33']}</div>
+            </div>
+        </div>
+
+    </div>
+    <input type="hidden" name="url" value="{php echo mobileUrl('exchange',array(),1);}" id="url">
+</div>
+
+<script language='javascript'>require(['../addons/ewei_shopv2/plugin/exchange/static/js/common.js'],function(modal){modal.init({style:{}});});</script>
+
+
+{template '_footer'}

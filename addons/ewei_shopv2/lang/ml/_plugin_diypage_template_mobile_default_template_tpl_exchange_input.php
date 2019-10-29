@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_0'] = ' Pusat penebusan';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_1'] = ' Menebus kod';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_2'] = ' Pertukaran Kod ini telah bertanya';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_3'] = ' Times';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_4'] = ' Masukkan kod Pertukaran anda';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_5'] = ' Pertukaran baki';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_6'] = ' nilai tara:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_7'] = ' Yuan';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_8'] = ' Pertukaran';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_9'] = ' Menebus';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_10'] = ' nilai tara:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_11'] = ' Yuan';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_12'] = ' Pertukaran';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_13'] = ' Penebusan kupon';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_14'] = ' nilai tara:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_15'] = ' Yuan';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_16'] = ' Pertukaran';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_17'] = ' Sampul merah penebusan';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_18'] = ' nilai tara:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_19'] = ' Yuan';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_20'] = ' Pertukaran';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_21'] = ' Bursa Komoditi';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_22'] = ' nilai tara:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_23'] = ' Yuan';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_24'] = ' Pertukaran';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_25'] = ' Menebus sekarang';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_26'] = ' Kembali ke memasukkan semula kod Pertukaran';
+?>

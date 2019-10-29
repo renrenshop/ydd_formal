@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_groups_template_mobile_default_orders_index_0'] = 'मेरेआदेश';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_1'] = 'सभी';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_2'] = 'भुगतानलंबित';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_3'] = 'लंबितवितरण';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_4'] = 'लंबितवितरण';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_5'] = 'पूर्ण';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_6'] = 'ऑर्डरलोडहोरहाहै';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_7'] = 'अस्थाईरूपसेकोईआदेशनहीं।';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_8'] = 'क्रमसंख्या';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_9'] = ' ¥ ';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_10'] = 'मोहरे';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_11'] = 'भाड़ा';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_12'] = ' ¥ ';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_13'] = 'युआन';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_14'] = 'कुल';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_15'] = 'आइटम';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_16'] = 'कुल';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_17'] = ' ¥ ';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_18'] = 'युआन';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_19'] = 'ऑर्डररद्दकरें';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_20'] = 'रद्दनहींकियागया';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_21'] = 'मैंइसेखरीदनानहींचाहता।';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_22'] = 'मैंइसेखरीदनानहींचाहता।';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_23'] = 'जानकारीभरनेमेंत्रुटि, पुनःपैट';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_24'] = 'जानकारीभरनेमेंत्रुटि, पुनःपैट';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_25'] = 'शहरकेसाथबैठक';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_26'] = 'शहरकेसाथबैठक';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_27'] = 'अंयकारण';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_28'] = 'अंयकारण';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_29'] = 'भुगतानकेलिए';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_30'] = 'आदेशहटाएं';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_31'] = 'प्राप्तिकीपुष्टिकरें';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_32'] = 'मैंउपयोगकरनाचाहतेहैं';
+?>

@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_0'] = '当前等级：';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_1'] = '普通会员';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_2'] = '分';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_3'] = '我的积分';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_4'] = '张';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_5'] = '可用代金券';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_6'] = '个';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_7'] = '已兑换礼品';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_8'] = '积分兑换记录';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_9'] = '立即登录';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_10'] = '获知会员信息详情';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_11'] = '店铺代金券';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_12'] = '换取店铺代金券购买商品更划算';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_13'] = '积分兑换礼品';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_14'] = '可使用积分兑换商城超值礼品';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_15'] = '会员登录';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_16'] = '积分列表页中部广告位';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_17'] = '兑换券';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_18'] = '兑换';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_19'] = '更多';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_20'] = '需';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_21'] = '积分';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_22'] = '立即兑换';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_23'] = '实物兑换';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_24'] = '实物兑换';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_25'] = '更多';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_26'] = '积分兑换：';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_27'] = '积分';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_28'] = '立即兑换';
+?>

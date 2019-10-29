@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_pc_core_mobile_order_index_0'] = ' บ้าน';
+$lang['lang_plugin_pc_core_mobile_order_index_1'] = ' ห้างสรรพสินค้าของฉัน';
+$lang['lang_plugin_pc_core_mobile_order_index_2'] = ' ธุรกรรมใบสั่ง';
+$lang['lang_plugin_pc_core_mobile_order_index_3'] = ' รายการใบสั่ง';
+$lang['lang_plugin_pc_core_mobile_order_index_4'] = ' ถังรีไซเคิล';
+$lang['lang_plugin_pc_core_mobile_order_index_5'] = ' การคืนเงิน';
+$lang['lang_plugin_pc_core_mobile_order_index_6'] = ' กลับคืน';
+$lang['lang_plugin_pc_core_mobile_order_index_7'] = ' อัตราแลกเปลี่ยน';
+$lang['lang_plugin_pc_core_mobile_order_index_8'] = ' ยกเลิก';
+$lang['lang_plugin_pc_core_mobile_order_index_9'] = ' รอจัดส่ง';
+$lang['lang_plugin_pc_core_mobile_order_index_10'] = ' การชำระเงินที่ค้างอยู่';
+$lang['lang_plugin_pc_core_mobile_order_index_11'] = ' ในการใช้';
+$lang['lang_plugin_pc_core_mobile_order_index_12'] = ' จะนำมาใช้';
+$lang['lang_plugin_pc_core_mobile_order_index_13'] = ' รอจัดส่ง';
+$lang['lang_plugin_pc_core_mobile_order_index_14'] = ' รอจัดส่ง';
+$lang['lang_plugin_pc_core_mobile_order_index_15'] = ' เสร็จสมบูรณ์';
+$lang['lang_plugin_pc_core_mobile_order_index_16'] = ' ในการประเมิน';
+$lang['lang_plugin_pc_core_mobile_order_index_17'] = ' เสร็จสมบูรณ์';
+$lang['lang_plugin_pc_core_mobile_order_index_18'] = ' ธุรกรรมที่เสร็จสมบูรณ์';
+$lang['lang_plugin_pc_core_mobile_order_index_19'] = ' การ';
+$lang['lang_plugin_pc_core_mobile_order_index_20'] = ' บ้าน';
+$lang['lang_plugin_pc_core_mobile_order_index_21'] = ' ห้างสรรพสินค้าของฉัน';
+$lang['lang_plugin_pc_core_mobile_order_index_22'] = ' ธุรกรรมใบสั่ง';
+$lang['lang_plugin_pc_core_mobile_order_index_23'] = ' รายละเอียดใบสั่ง';
+$lang['lang_plugin_pc_core_mobile_order_index_24'] = ' รายการใบสั่ง';
+$lang['lang_plugin_pc_core_mobile_order_index_25'] = ' รายละเอียดใบสั่ง';
+$lang['lang_plugin_pc_core_mobile_order_index_26'] = ' ลบลำดับ';
+$lang['lang_plugin_pc_core_mobile_order_index_27'] = ' สั่งเป็น courier ใช่ ไม่สามารถดูข้อมูลของโลจิสติกส์';
+$lang['lang_plugin_pc_core_mobile_order_index_28'] = ' สั่งซื้อจัดส่งไม่ได้ ไม่สามารถดูข้อมูลของโลจิสติกส์';
+?>

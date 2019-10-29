@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_app_core_mobile_order_pay_0'] = ' đơn đặt hàng';
+$lang['lang_plugin_app_core_mobile_order_pay_1'] = ' Xuống kệ';
+$lang['lang_plugin_app_core_mobile_order_pay_2'] = ' miếng';
+$lang['lang_plugin_app_core_mobile_order_pay_3'] = ' Bắt đầu bán';
+$lang['lang_plugin_app_core_mobile_order_pay_4'] = ' một thời gian giới hạn mua hàng';
+$lang['lang_plugin_app_core_mobile_order_pay_5'] = ' Giới hạn mua hàng';
+$lang['lang_plugin_app_core_mobile_order_pay_6'] = ' hạn chế mua thời gian không đạt';
+$lang['lang_plugin_app_core_mobile_order_pay_7'] = ' thời hạn đã được mua';
+$lang['lang_plugin_app_core_mobile_order_pay_8'] = ' mức độ thành viên của bạn không thể mua';
+$lang['lang_plugin_app_core_mobile_order_pay_9'] = ' nhóm thành viên của bạn không thể mua';
+$lang['lang_plugin_app_core_mobile_order_pay_10'] = ' Không đủ hàng tồn kho';
+$lang['lang_plugin_app_core_mobile_order_pay_11'] = ' Không đủ hàng tồn kho';
+$lang['lang_plugin_app_core_mobile_order_pay_12'] = ' Mở cửa giao hàng tận nơi thanh toán';
+$lang['lang_plugin_app_core_mobile_order_pay_13'] = ' Mở số dư thanh toán';
+$lang['lang_plugin_app_core_mobile_order_pay_14'] = ' Số lượng lỗi';
+$lang['lang_plugin_app_core_mobile_order_pay_15'] = ' Không đủ số dư';
+$lang['lang_plugin_app_core_mobile_order_pay_16'] = ' Nạp tiền';
+$lang['lang_plugin_app_core_mobile_order_pay_17'] = ' tiêu thụ';
+$lang['lang_plugin_app_core_mobile_order_pay_18'] = ' Thanh toán mở Micro thư';
+$lang['lang_plugin_app_core_mobile_order_pay_19'] = ' gói hàng của bạn đã sẵn sàng';
+$lang['lang_plugin_app_core_mobile_order_pay_20'] = ' bạn có thể chọn lựa chọn của bạn từ điểm đón.';
+$lang['lang_plugin_app_core_mobile_order_pay_21'] = ' bạn có thể sử dụng các cửa hàng áp dụng.';
+$lang['lang_plugin_app_core_mobile_order_pay_22'] = ' mục bạn mua đã được vận chuyển tự động';
+$lang['lang_plugin_app_core_mobile_order_pay_23'] = ' mục bạn mua đã được vận chuyển tự động';
+$lang['lang_plugin_app_core_mobile_order_pay_24'] = ' bạn đã thanh toán thành công';
+$lang['lang_plugin_app_core_mobile_order_pay_25'] = ' Thứ tự nộp hồ sơ thanh toán';
+$lang['lang_plugin_app_core_mobile_order_pay_26'] = ' Thứ tự thanh toán thành công';
+$lang['lang_plugin_app_core_mobile_order_pay_27'] = ' phải trả tiền';
+$lang['lang_plugin_app_core_mobile_order_pay_28'] = ' Thực tế phải trả số tiền';
+?>

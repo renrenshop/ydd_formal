@@ -1,0 +1,34 @@
+<?php
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_0'] = 'सभीव्यापारी';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_1'] = 'खोज';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_2'] = 'कोईकीवर्डदर्जकरें';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_3'] = 'निकट';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_4'] = 'श्रेणीबद्धकरना';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_5'] = 'स्मार्टसॉर्ट';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_6'] = 'निकट';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_7'] = 'निकट';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_8'] = 'मी';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_9'] = 'मी';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_10'] = 'मी';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_11'] = 'मी';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_12'] = 'मी';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_13'] = 'मी';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_14'] = 'मी';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_15'] = 'मी';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_16'] = 'ऊपरमीटर';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_17'] = 'ऊपरमीटर';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_18'] = 'सभीकोश्रेणीबद्ध';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_19'] = 'सभीकोश्रेणीबद्ध';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_20'] = 'निकटतमदूरी';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_21'] = 'निकटतमदूरी';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_22'] = 'नवीनतमबसे';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_23'] = 'नवीनतमबसे';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_24'] = 'अनुशंसितव्यवसाय';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_25'] = 'कोईव्यापारीअस्थाईरूपसे';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_26'] = 'इधर-उधरघूमते';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_27'] = 'लोडहोरहाहै';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_28'] = 'पता';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_29'] = 'फोन';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_30'] = 'श्रेणीबद्धकरना';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_31'] = 'आपसेदूरी';
+?>

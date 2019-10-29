@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_0'] = ' จุด';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_1'] = ' โบนัส';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_2'] = ' ซองจดหมายสีแดง';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_3'] = ' โปรโมชั่น';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_4'] = ' คูปอง';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_5'] = ' สารสกัดจาก';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_6'] = ' เวลา';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_7'] = ' ระเบียนที่ไม่ชนะ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_8'] = ' วาดตอนนี้';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_9'] = ' จำนวนที่เหลือชิงโชค';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_10'] = ' ครั้ง';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_11'] = ' รายละเอียดรางวัล';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_12'] = ' เรกคอร์ดของฉันชนะ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_13'] = ' ไม่ได้ใช้งาน';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_14'] = ' ขอแสดงความยินดี';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_15'] = ' เลือก';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_16'] = ' งานประสบความสำเร็จ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_17'] = ' ตกลง';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_18'] = ' ขออภัย';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_19'] = ' คุณไม่สามารถรับงานนี้';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_20'] = ' ตกลง ฉันรู้.';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_21'] = ' รางวัล';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_22'] = ' รวบรวมเสร็จเรียบร้อยแล้ว';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_23'] = ' ไม่ได้รับรางวัล';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_24'] = ' ที่หมุนอยู่ในขณะนี้';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_25'] = ' วิธีการหลายตำแหน่งจะมีทั้งหมด';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_26'] = ' ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_27'] = ' ใช้';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_28'] = ' ชัดเจน';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_29'] = ' เริ่มต้นหมุนเร็ว';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_30'] = ' จำนวนหมุนเวียน';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_31'] = ' หมุนเวลาพื้นฐาน: คือ จำนวนครั้งที่คุณต้องการหมุนน้อยก่อนหวย?';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_32'] = ' ชนะตำแหน่ง';
+?>

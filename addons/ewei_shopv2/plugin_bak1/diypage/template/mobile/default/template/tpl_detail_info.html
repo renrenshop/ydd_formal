@@ -1,0 +1,143 @@
+<!-- {php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_0']} -->
+<div class="fui-cell-group fui-detail-group" style="margin-top: {$diyitem['style']['margintop']}px; margin-bottom: {$diyitem['style']['marginbottom']}px; background: {$diyitem['style']['background']};" >
+    <div class="fui-cell">
+        <div class="fui-cell-text name" style="color: {$diyitem['style']['titlecolor']};">{if $goods['ispresell']==1}<i class="fui-tag fui-tag-danger" style="vertical-align: bottom;">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_1']}</i> {/if}{$goods['title']}</div>
+        {if empty($diyitem['params']['hideshare'])}
+            <a class="fui-cell-remark share"  {if !empty($diyitem['params']['share_link'])}href="{$diyitem['params']['share_link']}" data-nocache="true"{elseif !empty($goods['sharebtn']) && $member['isagent']==1 && $member['status']==1} href="{php echo mobileUrl('commission/qrcode', array('goodsid'=>$goods['id']))}" {else} id='btn-share' {/if}>
+            <i class="icon {php echo empty($diyitem['params']['share_icon'])?'icon-share':$diyitem['params']['share_icon']}"></i><p>{php echo !empty($diyitem['params']['share'])?$diyitem['params']['share']:"{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_2']}"}</p>
+            </a>
+        {/if}
+    </div>
+    {if !empty($goods['subtitle'])}
+    <div class="fui-cell goods-subtitle">
+        <span class='text-danger' style="color: {$diyitem['style']['subtitlecolor']};">{$goods['subtitle']}</span>
+    </div>
+    {/if}
+
+    {if $goods['type']==4}
+        <!--{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_3']}-->
+        <div class="fui-cell goods-bulk">
+            <div class="fui-cell-text  flex">
+                {if $goods['intervalfloor']>0}
+                <span>
+                        <p class="price" style="color: {$diyitem['style']['pricecolor']};"><small>{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_4']}</small>{$goods['intervalprice1']}</p>
+                        <p>{$goods['intervalnum1']} {if $goods['intervalfloor']>1}-{php echo intval($goods['intervalnum2'])-1}{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_5']}{else}{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_6']}{/if}</p>
+                    </span>
+                {/if}
+                {if $goods['intervalfloor']>1}
+                <span>
+                        <p class="price" style="color: {$diyitem['style']['pricecolor']};"><small>{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_7']}</small>{$goods['intervalprice2']}</p>
+                        <p>{$goods['intervalnum2']}{if $goods['intervalfloor']>2}-{php echo intval($goods['intervalnum3'])-1}{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_8']}{else}{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_9']}{/if}</p>
+                    </span>
+                {/if}
+                {if $goods['intervalfloor']>2}
+                <span>
+                        <p class="price" style="color: {$diyitem['style']['pricecolor']};"><small>{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_10']}</small>{$goods['intervalprice3']}</p>
+                        <p>>{$goods['intervalnum3']}{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_11']}</p>
+                    </span>
+                {/if}
+            </div>
+        </div>
+    {/if}
+
+    {if empty($seckillinfo) && $goods['type']!=4}
+    <div class="fui-cell">
+        <div class="fui-cell-text price">
+			<span class="text-danger" style="color: {$diyitem['style']['pricecolor']};">
+			{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_12']}{if $goods['ispresell']>0 && ($goods['preselltimeend'] == 0 || $goods['preselltimeend'] > time())}{$goods['presellprice']}
+                {else}
+                    {if $goods['minprice']==$goods['maxprice']}{$goods['minprice']}{else}{$goods['minprice']}~{$goods['maxprice']}{/if}
+                {/if}
+			{if $goods['isdiscount'] && $goods['isdiscount_time']>=time()}
+			     <span class="original">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_13']}{$goods['productprice']}</span>
+			{else}
+			{if $goods['productprice']>0}<span  class="original">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_14']}{$goods['productprice']}</span>{/if}
+			{/if}
+			</span>
+        </div>
+    </div>
+
+
+        {if $goods['isdiscount'] && $goods['isdiscount_time']>=time()}
+        <div class="row row-time">
+            <div id='discount-container' class='fui-labeltext fui-labeltext-danger' style="border-color: {$diyitem['style']['timecolor']};"
+                 data-now="{php echo date('Y-m-d H:i:s')}"
+                 data-end="{php echo date('Y-m-d H:i:s', $goods['isdiscount_time'])}"
+                 data-end-label='{php echo empty($goods['isdiscount_title'])?$lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_15']:$goods['isdiscount_title']}' >
+            <div class='label' style="background: {$diyitem['style']['timecolor']};">{php echo empty($goods['isdiscount_title'])?$lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_16']:$goods['isdiscount_title']}</div>
+            <div class='text'><span class="day number text-danger" style="color: {$diyitem['style']['timetextcolor']};">-</span><span class="time">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_17']}</span><span class="hour number text-danger" style="color: {$diyitem['style']['timetextcolor']};">-</span><span class="time">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_18']}</span><span class="minute number text-danger" style="color: {$diyitem['style']['timetextcolor']};">-</span><span class="time">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_19']}</span><span class="second number text-danger" style="color: {$diyitem['style']['timetextcolor']};">-</span><span class="time">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_20']}</span>
+            </div>
+        </div>
+    </div>
+    {/if}
+
+
+{if $goods['istime']}
+<div class="row row-time">
+    <div id='time-container' class='fui-labeltext fui-labeltext-danger' style="border-color: {$diyitem['style']['timecolor']}";
+         data-now="{php echo date('Y-m-d H:i:s')}"
+         data-start-label='{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_21']}'
+         data-end-label='{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_22']}'
+         data-end-text='{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_23']}~'
+         data-start="{php echo date('Y-m-d H:i:s', $goods['timestart'])}"
+         data-end="{php echo date('Y-m-d H:i:s', $goods['timeend'])}">
+        <div class='label' style="background: {$diyitem['style']['timecolor']};">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_24']}</div>
+        <div class='text'>
+            <span class="day number" style="color: {$diyitem['style']['timetextcolor']};"></span>
+            <span class="time">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_25']}</span>
+            <span class="hour number" style="color: {$diyitem['style']['timetextcolor']};"></span>
+            <span class="time">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_26']}</span>
+            <span class="minute number" style="color: {$diyitem['style']['timetextcolor']};"></span>
+            <span class="time">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_27']}</span>
+            <span class="second number" style="color: {$diyitem['style']['timetextcolor']};"></span>
+            <span class="time">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_28']}</span>
+        </div>
+    </div>
+</div>
+{/if}
+{/if}
+
+{if $goods['ispresell']==1 && ($goods['preselltimestart'] > time() || $goods['preselltimeend'] > time())}
+<div class="row row-time">
+    <div id='time-presell' class='fui-labeltext fui-labeltext-danger'
+         data-now="{php echo date('Y-m-d H:i:s')}"
+         data-start-label='{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_29']}'
+         data-end-label='{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_30']}'
+         data-end-text='{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_31']}~'
+         data-start="{php echo date('Y-m-d H:i:s', $goods['preselltimestart'])}"
+         data-end="{php echo date('Y-m-d H:i:s', $goods['preselltimeend'])}" style="border-color: {$diyitem['style']['timecolor']}">
+        <div class='label' style="background: {$diyitem['style']['timecolor']};">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_32']}</div>
+        <div class='text'>
+            <span class="day number" style="color: {$diyitem['style']['timetextcolor']};"></span><span class="time">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_33']}</span><span class="hour number" style="color: {$diyitem['style']['timetextcolor']};"></span><span class="time">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_34']}</span><span class="minute number" style="color: {$diyitem['style']['timetextcolor']};"></span><span class="time">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_35']}</span><span class="second number" style="color: {$diyitem['style']['timetextcolor']};"></span><span class="time">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_36']}</span>
+        </div>
+    </div>
+</div>
+{/if}
+
+<div class="fui-cell">
+    <div class="fui-cell-text flex">
+        {if is_array($goods['dispatchprice'])}
+            {if $goods['type']==1 && $goods['isverify']!=2}
+                <span style="color: {$diyitem['style']['textcolor']};">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_37']}:  {php echo number_format($goods['dispatchprice']['min'],2)} ~ {php echo number_format($goods['dispatchprice']['max'],2)}</span>
+            {/if}
+        {else}
+            {if $goods['type']==1 && $goods['isverify']!=2}
+                <span style="color: {$diyitem['style']['textcolor']};">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_38']}:  {php echo $goods['dispatchprice'] == 0 ? $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_39'] : number_format($goods['dispatchprice'],2)}</span>
+            {/if}
+        {/if}
+        {if $seckillinfo==false || ( $seckillinfo && $seckillinfo.status==1)}
+            {if $goods['showtotal'] == 1}
+            <span style="color: {$diyitem['style']['textcolor']};">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_40']}:  {$goods['total']}</span>
+            {/if}
+            <span style="color: {$diyitem['style']['textcolor']};">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_41']}:  {php echo number_format($goods['sales'],0)} {$goods['unit']}</span>
+        {else}
+            <span></span>
+            <span></span>
+        {/if}
+        {if $goods['province'] != $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_42'] && $goods['city'] != $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_info_43']}
+            <span style="color: {$diyitem['style']['textcolor']};">{$goods['province']} {$goods['city']}</span>
+        {/if}
+    </div>
+</div>
+
+</div>

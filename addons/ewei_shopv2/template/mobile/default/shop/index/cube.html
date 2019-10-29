@@ -1,0 +1,177 @@
+{if !empty($cubes)}
+<!-- <div class="fui-cube">
+    {if count($cubes)==1}
+        <img data-lazy="{php echo tomedia($cubes[0]['img'])}" {if !empty($cubes[0]['url'])}onclick="location.href='{$cubes[0]['url']}'"{/if} />
+    {/if}
+
+    {if count($cubes)>1}
+        <div class="fui-cube-left">
+            <img data-lazy="{php echo tomedia($cubes[0]['img'])}" {if !empty($cubes[0]['url'])}onclick="location.href='{$cubes[0]['url']}'"{/if} />
+        </div>
+        <div class="fui-cube-right">
+            {if count($cubes)==2}
+                <img data-lazy="{php echo tomedia($cubes[1]['img'])}" {if !empty($cubes[1]['url'])}onclick="location.href='{$cubes[1]['url']}'"{/if} />
+            {/if}
+            {if count($cubes)>2}
+                <div class="fui-cube-right1">
+                    <img data-lazy="{php echo tomedia($cubes[1]['img'])}" {if !empty($cubes[1]['url'])}onclick="location.href='{$cubes[1]['url']}'"{/if} />
+                </div>
+                <div class="fui-cube-right2">
+                    {if count($cubes)==3}
+                        <img data-lazy="{php echo tomedia($cubes[2]['img'])}" {if !empty($cubes[2]['url'])}onclick="location.href='{$cubes[2]['url']}'"{/if} />
+                    {/if}
+                    {if count($cubes)>3}
+                        <div class="left">
+                            <img data-lazy="{php echo tomedia($cubes[2]['img'])}" {if !empty($cubes[2]['url'])}onclick="location.href='{$cubes[2]['url']}'"{/if} />
+                        </div>
+                    {/if}
+                    {if !empty($cubes[3]['img'])}
+                        <div class="right">
+                            <img data-lazy="{php echo tomedia($cubes[3]['img'])}" {if !empty($cubes[3]['url'])}onclick="location.href='{$cubes[3]['url']}'"{/if} />
+                        </div>
+                    {/if}
+                </div>
+            {/if}
+        </div>
+    {/if}
+</div>
+{if count($cubes) > 4}
+<div class="fui-cube">
+    {if count($cubes)==5}
+        <img data-lazy="{php echo tomedia($cubes[4]['img'])}" {if !empty($cubes[4]['url'])}onclick="location.href='{$cubes[4]['url']}'"{/if} />
+    {/if}
+
+    {if count($cubes)>5}
+        <div class="fui-cube-left">
+            <img data-lazy="{php echo tomedia($cubes[4]['img'])}" {if !empty($cubes[4]['url'])}onclick="location.href='{$cubes[4]['url']}'"{/if} />
+        </div>
+        <div class="fui-cube-right">
+            {if count($cubes)==6}
+                <img data-lazy="{php echo tomedia($cubes[5]['img'])}" {if !empty($cubes[5]['url'])}onclick="location.href='{$cubes[5]['url']}'"{/if} />
+            {/if}
+            {if count($cubes)>6}
+                <div class="fui-cube-right1">
+                    <img data-lazy="{php echo tomedia($cubes[5]['img'])}" {if !empty($cubes[5]['url'])}onclick="location.href='{$cubes[5]['url']}'"{/if} />
+                </div>
+                <div class="fui-cube-right2">
+                    {if count($cubes)==7}
+                        <img data-lazy="{php echo tomedia($cubes[6]['img'])}" {if !empty($cubes[6]['url'])}onclick="location.href='{$cubes[6]['url']}'"{/if} />
+                    {/if}
+                    {if count($cubes)>7}
+                        <div class="left">
+                            <img data-lazy="{php echo tomedia($cubes[6]['img'])}" {if !empty($cubes[6]['url'])}onclick="location.href='{$cubes[6]['url']}'"{/if} />
+                        </div>
+                    {/if}
+                    {if count($cubes)==8}
+                        <div class="right">
+                            <img data-lazy="{php echo tomedia($cubes[7]['img'])}" {if !empty($cubes[7]['url'])}onclick="location.href='{$cubes[7]['url']}'"{/if} />
+                        </div>
+                    {/if}
+                </div>
+            {/if}
+        </div>
+    {/if}
+</div>
+{/if} -->
+<style type="text/css">
+	.wrap{
+		display: flex;
+		flex-direction: wrap;
+	}
+	.div{
+		flex: 4;
+		border:0.1rem solid #f4f4f4;
+	}
+	.div>img{
+		width: 100%;
+	}
+	.m-title{
+		width:100%;
+		border-top:0.2rem solid #f4f4f4;
+		border-bottom:0.1rem solid #f4f4f4;
+		text-align:center;
+		height:52px;
+	}
+	.m-title p{
+		font-size:16px;
+		color:#E1454C;
+	}
+	.m-title span{
+		font-size:12px;
+	}
+</style>
+
+{if count($cubes) > 0}
+<div class="m-title"><p>— {$cube_title} —</p><span>{$cube_title_s}</span></div>
+{/if}
+
+<div class="wrap">
+	{if count($cubes) == 1}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[0]['img'])}" {if !empty($cubes[0]['url'])}onclick="location.href='{$cubes[0]['url']}'"{/if} /></div>
+	{/if}
+	{if count($cubes)>1}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[0]['img'])}" {if !empty($cubes[0]['url'])}onclick="location.href='{$cubes[0]['url']}'"{/if} /></div>
+	{if count($cubes) == 2}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[1]['img'])}" {if !empty($cubes[1]['url'])}onclick="location.href='{$cubes[1]['url']}'"{/if} /></div>
+	{/if}
+	{if count($cubes) > 2}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[1]['img'])}" {if !empty($cubes[1]['url'])}onclick="location.href='{$cubes[1]['url']}'"{/if} /></div>
+	{if count($cubes) == 3}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[2]['img'])}" {if !empty($cubes[2]['url'])}onclick="location.href='{$cubes[2]['url']}'"{/if} /></div>
+	{/if}
+	{if count($cubes) > 3}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[2]['img'])}" {if !empty($cubes[2]['url'])}onclick="location.href='{$cubes[2]['url']}'"{/if} /></div>
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[3]['img'])}" {if !empty($cubes[3]['url'])}onclick="location.href='{$cubes[3]['url']}'"{/if} /></div>
+	{/if}
+	{/if}
+	{/if}
+</div>
+{if count($cubes) > 4}
+<div class="wrap">
+	{if count($cubes) == 5}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[4]['img'])}" {if !empty($cubes[4]['url'])}onclick="location.href='{$cubes[4]['url']}'"{/if} /></div>
+	{/if}
+	{if count($cubes)>5}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[4]['img'])}" {if !empty($cubes[4]['url'])}onclick="location.href='{$cubes[4]['url']}'"{/if} /></div>
+	{if count($cubes) == 6}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[5]['img'])}" {if !empty($cubes[5]['url'])}onclick="location.href='{$cubes[5]['url']}'"{/if} /></div>
+	{/if}
+	{if count($cubes) > 6}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[5]['img'])}" {if !empty($cubes[5]['url'])}onclick="location.href='{$cubes[5]['url']}'"{/if} /></div>
+	{if count($cubes) == 7}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[6]['img'])}" {if !empty($cubes[6]['url'])}onclick="location.href='{$cubes[6]['url']}'"{/if} /></div>
+	{/if}
+	{if count($cubes) > 7}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[6]['img'])}" {if !empty($cubes[6]['url'])}onclick="location.href='{$cubes[6]['url']}'"{/if} /></div>
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[7]['img'])}" {if !empty($cubes[7]['url'])}onclick="location.href='{$cubes[7]['url']}'"{/if} /></div>
+	{/if}
+	{/if}
+	{/if}
+</div>
+{/if}
+{if count($cubes) > 8}
+<div class="wrap">
+	{if count($cubes) == 9}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[8]['img'])}" {if !empty($cubes[8]['url'])}onclick="location.href='{$cubes[8]['url']}'"{/if} /></div>
+	{/if}
+	{if count($cubes)>9}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[8]['img'])}" {if !empty($cubes[8]['url'])}onclick="location.href='{$cubes[8]['url']}'"{/if} /></div>
+	{if count($cubes) == 10}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[9]['img'])}" {if !empty($cubes[9]['url'])}onclick="location.href='{$cubes[9]['url']}'"{/if} /></div>
+	{/if}
+	{if count($cubes) > 10}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[9]['img'])}" {if !empty($cubes[9]['url'])}onclick="location.href='{$cubes[9]['url']}'"{/if} /></div>
+	{if count($cubes) == 11}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[10]['img'])}" {if !empty($cubes[10]['url'])}onclick="location.href='{$cubes[10]['url']}'"{/if} /></div>
+	{/if}
+	{if count($cubes) > 11}
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[10]['img'])}" {if !empty($cubes[10]['url'])}onclick="location.href='{$cubes[10]['url']}'"{/if} /></div>
+	<div class="div"><img data-lazy="{php echo tomedia($cubes[11]['img'])}" {if !empty($cubes[11]['url'])}onclick="location.href='{$cubes[11]['url']}'"{/if} /></div>
+	{/if}
+	{/if}
+	{/if}
+</div>
+{/if}
+
+{/if}
+

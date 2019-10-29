@@ -1,0 +1,36 @@
+<?php
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_0'] = 'भुगतानत्रुटिआई, कृपयापुन: प्रयासकरें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_1'] = 'भुगतानत्रुटिआई, कृपयापुन: प्रयासकरें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_2'] = 'Alipay भुगतानखोलें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_3'] = 'भुगतानस्थितिदेखनेकेलिएसूक्ष्म-पत्रपरलौटें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_4'] = 'भुगतानसफल';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_5'] = 'भुगतानकीस्थितिदेखनेकेलिएकृपयामॉलपरलौटें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_6'] = 'भुगतानसफल';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_7'] = 'भुगतानत्रुटिआई, कृपयापुन: प्रयासकरें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_8'] = 'भुगतानमांयताविफल';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_9'] = 'भुगतानत्रुटिआई, कृपयापुन: प्रयासकरें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_10'] = 'भुगतानमांयताविफल';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_11'] = 'भुगतानत्रुटिआई, कृपयापुन: प्रयासकरें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_12'] = 'भुगतानकीस्थितिदेखनेकेलिएकृपयामाइक्रो-पत्रपरलौटें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_13'] = 'भुगतानसफलता';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_14'] = 'भुगतानकीस्थितिदेखनेकेलिएकृपयामॉलमेंलौटें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_15'] = 'भुगतानसफलता';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_16'] = 'भुगतानत्रुटिआई, कृपयापुन: प्रयासकरें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_17'] = 'भुगतानत्रुटिआई, कृपयापुन: प्रयासकरें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_18'] = 'भुगतानत्रुटिआई, कृपयापुन: प्रयासकरें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_19'] = 'भुगतानत्रुटिआई, कृपयापुन: प्रयासकरें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_20'] = 'भुगतानमांयताविफल';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_21'] = 'भुगतानत्रुटिआई, कृपयापुन: प्रयासकरें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_22'] = 'Alipay भुगतानखोलें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_23'] = 'भुगतानकीस्थितिदेखनेकेलिएकृपयामाइक्रो-पत्रपरलौटें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_24'] = 'भुगतानसफलता';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_25'] = 'भुगतानकीस्थितिदेखनेकेलिएकृपयामॉलमेंलौटें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_26'] = 'भुगतानसफलता';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_27'] = 'भुगतानत्रुटिआई, कृपयापुन: प्रयासकरें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_28'] = 'भुगतानमांयताविफल';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_29'] = 'सदस्यरिचार्ज';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_30'] = 'भुगतानकीस्थितिदेखनेकेलिएकृपयामाइक्रो-पत्रपरलौटें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_31'] = 'भुगतानसफलता';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_32'] = 'भुगतानकीस्थितिदेखनेकेलिएकृपयामॉलमेंलौटें';
+$lang['lang_plugin_pc_core_mobile_order_pay_alipay_33'] = 'भुगतानसफलता';
+?>

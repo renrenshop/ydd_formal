@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_0'] = 'विमोचनकेंद्र';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_1'] = 'कोडरिडीम';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_2'] = 'इसएक्सचेंजकोडक्वेरीकियागयाहै';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_3'] = 'बार';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_4'] = 'अपनाExchange कोडदर्जकरें';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_5'] = 'बैलेंसएक्सचेंज';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_6'] = 'par value:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_7'] = 'युआन';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_8'] = 'Exchange';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_9'] = 'रिडीम';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_10'] = 'par value:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_11'] = 'युआन';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_12'] = 'Exchange';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_13'] = 'कूपनकाविमोचन';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_14'] = 'par value:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_15'] = 'युआन';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_16'] = 'रिडीम';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_17'] = 'लाललिफाफाविमोचन';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_18'] = 'par value:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_19'] = 'युआन';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_20'] = 'रिडीम';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_21'] = 'कमोडिटीएक्सचेंज';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_22'] = 'par value:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_23'] = 'युआन';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_24'] = 'रिडीम';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_25'] = 'अभीरिडीम';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_26'] = 'Exchange कोडफिरसेदर्जकरनेकेलिएलौटें';
+?>

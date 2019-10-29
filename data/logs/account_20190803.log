@@ -1,0 +1,4 @@
+[2019-08-03 01:00:43] info  /app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=account.verifycode mobile=01115933019; imgcode=0; temp=sms_reg; 
+mobile=00601115933019; code=42248; time=2019-08-03 01:00:43; 
+[2019-08-03 01:02:16] info  /app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=account.verifycode mobile=01115933019; imgcode=0; temp=sms_reg; 
+mobile=00601115933019; code=88219; time=2019-08-03 01:02:16; 

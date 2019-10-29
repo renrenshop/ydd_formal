@@ -1,0 +1,32 @@
+<?php
+$lang['lang_template_mobile_member_notice_0'] = '메시지알림설정';
+$lang['lang_template_mobile_member_notice_1'] = ' Order 클래스';
+$lang['lang_template_mobile_member_notice_2'] = '주문제출';
+$lang['lang_template_mobile_member_notice_3'] = '자기순서';
+$lang['lang_template_mobile_member_notice_4'] = '주문취소';
+$lang['lang_template_mobile_member_notice_5'] = '구매성공';
+$lang['lang_template_mobile_member_notice_6'] = '주문문제';
+$lang['lang_template_mobile_member_notice_7'] = '주문확인';
+$lang['lang_template_mobile_member_notice_8'] = '환불요청';
+$lang['lang_template_mobile_member_notice_9'] = '환불진행';
+$lang['lang_template_mobile_member_notice_10'] = '결과환불';
+$lang['lang_template_mobile_member_notice_11'] = '환불실패';
+$lang['lang_template_mobile_member_notice_12'] = '회원클래스';
+$lang['lang_template_mobile_member_notice_13'] = '회원업그레이드';
+$lang['lang_template_mobile_member_notice_14'] = '재충전클래스';
+$lang['lang_template_mobile_member_notice_15'] = '성공적인충전';
+$lang['lang_template_mobile_member_notice_16'] = '충전환불';
+$lang['lang_template_mobile_member_notice_17'] = '클래스를언급';
+$lang['lang_template_mobile_member_notice_18'] = '응용프로그램제출';
+$lang['lang_template_mobile_member_notice_19'] = '성공언급';
+$lang['lang_template_mobile_member_notice_20'] = '실패를언급';
+$lang['lang_template_mobile_member_notice_21'] = '배포클래스';
+$lang['lang_template_mobile_member_notice_22'] = '되';
+$lang['lang_template_mobile_member_notice_23'] = '레벨상승';
+$lang['lang_template_mobile_member_notice_24'] = '새로운';
+$lang['lang_template_mobile_member_notice_25'] = '지불';
+$lang['lang_template_mobile_member_notice_26'] = '영수증';
+$lang['lang_template_mobile_member_notice_27'] = '응용프로그램제출';
+$lang['lang_template_mobile_member_notice_28'] = '처리를언급';
+$lang['lang_template_mobile_member_notice_29'] = '가맹점현금으로게임';
+?>

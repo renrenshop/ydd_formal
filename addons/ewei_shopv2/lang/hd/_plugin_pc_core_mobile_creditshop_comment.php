@@ -1,0 +1,10 @@
+<?php
+$lang['lang_plugin_pc_core_mobile_creditshop_comment_0'] = 'टिप्पणियोंकीअनुमतिनदें';
+$lang['lang_plugin_pc_core_mobile_creditshop_comment_1'] = 'क्रमपूर्णनहींहुआ, मूल्यांकितनहींकियाजासकता';
+$lang['lang_plugin_pc_core_mobile_creditshop_comment_2'] = 'क्रमपूर्णनहींहुआ, मूल्यांकितनहींकियाजासकता';
+$lang['lang_plugin_pc_core_mobile_creditshop_comment_3'] = 'क्रमपूर्णनहींहुआ, मूल्यांकितनहींकियाजासकता';
+$lang['lang_plugin_pc_core_mobile_creditshop_comment_4'] = 'क्रमपूर्णनहींहुआ, मूल्यांकितनहींकियाजासकता';
+$lang['lang_plugin_pc_core_mobile_creditshop_comment_5'] = 'आपपहलेसेहीमूल्यांकनकियाहै';
+$lang['lang_plugin_pc_core_mobile_creditshop_comment_6'] = 'विमोचनकारिकॉर्डनहींमिला';
+$lang['lang_plugin_pc_core_mobile_creditshop_comment_7'] = 'डेटात्रुटि, कृपयापुन: प्रयासकरें';
+?>

@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_sns_template_mobile_default_board_index_0'] = ' หัวข้อ';
+$lang['lang_plugin_sns_template_mobile_default_board_index_1'] = ' ความกังวล';
+$lang['lang_plugin_sns_template_mobile_default_board_index_2'] = ' ความกังวล';
+$lang['lang_plugin_sns_template_mobile_default_board_index_3'] = ' ความกังวล';
+$lang['lang_plugin_sns_template_mobile_default_board_index_4'] = ' ไม่ได้เข้าสู่';
+$lang['lang_plugin_sns_template_mobile_default_board_index_5'] = ' บ้าน';
+$lang['lang_plugin_sns_template_mobile_default_board_index_6'] = ' พื้นที่สาระสำคัญ';
+$lang['lang_plugin_sns_template_mobile_default_board_index_7'] = ' ส่วนเกี่ยวข้อง';
+$lang['lang_plugin_sns_template_mobile_default_board_index_8'] = ' เหนียว';
+$lang['lang_plugin_sns_template_mobile_default_board_index_9'] = ' ไม่มีหัวข้อในขณะ';
+$lang['lang_plugin_sns_template_mobile_default_board_index_10'] = ' โหลด';
+$lang['lang_plugin_sns_template_mobile_default_board_index_11'] = ' ยกเลิก';
+$lang['lang_plugin_sns_template_mobile_default_board_index_12'] = ' หัวข้อโพสต์';
+$lang['lang_plugin_sns_template_mobile_default_board_index_13'] = ' คำอธิบายเฉพาะ';
+$lang['lang_plugin_sns_template_mobile_default_board_index_14'] = ' คำ';
+$lang['lang_plugin_sns_template_mobile_default_board_index_15'] = ' เนื้อหา';
+$lang['lang_plugin_sns_template_mobile_default_board_index_16'] = ' คำ';
+$lang['lang_plugin_sns_template_mobile_default_board_index_17'] = ' เผยแพร่';
+$lang['lang_plugin_sns_template_mobile_default_board_index_18'] = ' ข้อร้องเรียน';
+$lang['lang_plugin_sns_template_mobile_default_board_index_19'] = ' ยกเลิก';
+$lang['lang_plugin_sns_template_mobile_default_board_index_20'] = ' ข้อร้องเรียน';
+$lang['lang_plugin_sns_template_mobile_default_board_index_21'] = ' สิ่งที่อยากจะบ่นเกี่ยวกับคือ';
+$lang['lang_plugin_sns_template_mobile_default_board_index_22'] = ' ';
+$lang['lang_plugin_sns_template_mobile_default_board_index_23'] = ' กรุณาเลือกประเภทเรื่องร้องเรียน:';
+$lang['lang_plugin_sns_template_mobile_default_board_index_24'] = ' อื่น ๆ';
+$lang['lang_plugin_sns_template_mobile_default_board_index_25'] = ' เนื้อหา';
+$lang['lang_plugin_sns_template_mobile_default_board_index_26'] = ' คำ';
+$lang['lang_plugin_sns_template_mobile_default_board_index_27'] = ' ส่ง';
+$lang['lang_plugin_sns_template_mobile_default_board_index_28'] = ' ข้อร้องเรียน';
+?>

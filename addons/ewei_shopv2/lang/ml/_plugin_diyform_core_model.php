@@ -1,0 +1,32 @@
+<?php
+$lang['lang_plugin_diyform_core_model_0'] = ' satu baris teks';
+$lang['lang_plugin_diyform_core_model_1'] = ' Multiline teks';
+$lang['lang_plugin_diyform_core_model_2'] = ' Drop-down Peti';
+$lang['lang_plugin_diyform_core_model_3'] = ' Berbilang Marquee';
+$lang['lang_plugin_diyform_core_model_4'] = ' Gambar';
+$lang['lang_plugin_diyform_core_model_5'] = ' Nombor ID';
+$lang['lang_plugin_diyform_core_model_6'] = ' Tarikh';
+$lang['lang_plugin_diyform_core_model_7'] = ' Julat tarikh';
+$lang['lang_plugin_diyform_core_model_8'] = ' Bandar';
+$lang['lang_plugin_diyform_core_model_9'] = ' Mengesahkan teks';
+$lang['lang_plugin_diyform_core_model_10'] = ' Masa';
+$lang['lang_plugin_diyform_core_model_11'] = ' Julat masa';
+$lang['lang_plugin_diyform_core_model_12'] = ' Mesej segera';
+$lang['lang_plugin_diyform_core_model_13'] = ' Adat';
+$lang['lang_plugin_diyform_core_model_14'] = ' Nama';
+$lang['lang_plugin_diyform_core_model_15'] = ' Telefon';
+$lang['lang_plugin_diyform_core_model_16'] = ' Mikro-isyarat';
+$lang['lang_plugin_diyform_core_model_17'] = ' Isikan tarikh';
+$lang['lang_plugin_diyform_core_model_18'] = ' Tarikh tertentu';
+$lang['lang_plugin_diyform_core_model_19'] = ' Pilih Wilayah';
+$lang['lang_plugin_diyform_core_model_20'] = ' Pilih bandar';
+$lang['lang_plugin_diyform_core_model_21'] = ' Sila isi';
+$lang['lang_plugin_diyform_core_model_22'] = ' Pilih';
+$lang['lang_plugin_diyform_core_model_23'] = ' Pilih';
+$lang['lang_plugin_diyform_core_model_24'] = ' Pilih';
+$lang['lang_plugin_diyform_core_model_25'] = ' Pilih Wilayah';
+$lang['lang_plugin_diyform_core_model_26'] = ' Pilih bandar';
+$lang['lang_plugin_diyform_core_model_27'] = ' Pilih zon';
+$lang['lang_plugin_diyform_core_model_28'] = ' Pilih';
+$lang['lang_plugin_diyform_core_model_29'] = ' Masukkan';
+?>

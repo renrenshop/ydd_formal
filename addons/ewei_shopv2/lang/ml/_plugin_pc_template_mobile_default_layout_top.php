@@ -1,0 +1,33 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_layout_top_0'] = ' Saya';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_1'] = ' Nama sebenar:';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_2'] = ' Nombor telefon:';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_3'] = ' Layari sekarang';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_4'] = ' Troli';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_5'] = ' Atas';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_6'] = ' Perbandingan produk';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_7'] = ' Sembunyi';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_8'] = ' Troli Membeli-belah';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_9'] = ' Sembunyi';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_10'] = ' Hello';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_11'] = ' Selamat datang kembali,';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_12'] = ' Utama';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_13'] = ' Utama';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_14'] = ' Jalan keluar';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_15'] = ' Selamat datang ke';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_16'] = ' Utama';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_17'] = ' Utama';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_18'] = ' Pusat membeli-belah';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_19'] = ' rakam Masuk';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_20'] = ' Pendaftaran percuma';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_21'] = ' Pesanan saya';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_22'] = ' Perintah-perintah Untuk Dibayar';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_23'] = ' Resit untuk mengesahkan';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_24'] = ' Siap urus niaga';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_25'] = ' Kegemaran saya';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_26'] = ' Perkhidmatan pelanggan';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_27'] = ' kembali ke atas';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_28'] = ' Kawasan kandungan sidebar bernyawa';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_29'] = ' Hak';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_30'] = ' Maklumat pengguna';
+?>

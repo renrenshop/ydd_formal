@@ -1,0 +1,32 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_0'] = 'उत्पाद';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_1'] = 'कूपन';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_2'] = 'शेष';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_3'] = 'लाललिफाफे';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_4'] = 'मूल';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_5'] = 'मूल्य:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_6'] = 'आवश्यकबिंदु:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_7'] = 'मोचनवैधता:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_8'] = 'विमोचनकीतिथिसे';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_9'] = 'को';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_10'] = 'केवल:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_11'] = 'प्रतिलिपिबनाएं';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_12'] = 'घेतला';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_13'] = 'बार';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_14'] = 'डाक';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_15'] = 'युआन';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_16'] = 'पैकेज';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_17'] = 'किसीविनिर्देशकाचयनकरें';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_18'] = 'किसीविनिर्देशकाचयनकरें';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_19'] = 'अबआरेखितकरना';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_20'] = 'अभीरिडीम';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_21'] = 'मॉलऑफर';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_22'] = 'उपहारसंख्या:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_23'] = 'समयजोड़ें:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_24'] = 'आगंतुकों:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_25'] = 'रिकॉर्डरिडीम';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_26'] = 'कोईभागीदारीरिकॉर्ड! ';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_27'] = 'लोकप्रियउपहार';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_28'] = 'उपहारपरिचय';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_29'] = 'कोईउत्पादविवरणनहीं';
+?>

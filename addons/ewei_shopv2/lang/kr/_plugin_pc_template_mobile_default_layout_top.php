@@ -1,0 +1,33 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_layout_top_0'] = ' 나';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_1'] = ' 진짜이름:';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_2'] = ' 전화번호:';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_3'] = ' 지금로그온';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_4'] = ' 쇼핑카트';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_5'] = ' 탑';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_6'] = ' 제품비교';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_7'] = ' 숨기기';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_8'] = ' 내쇼핑카트';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_9'] = ' 숨기기';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_10'] = ' 안녕하세요';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_11'] = ' 다시, 환영';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_12'] = ' 홈';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_13'] = ' 홈';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_14'] = ' 출구';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_15'] = ' 환영합니다,';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_16'] = ' 홈';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_17'] = ' 홈';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_18'] = ' 몰';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_19'] = ' 에로그인';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_20'] = ' 무료등록';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_21'] = ' 내주문';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_22'] = ' 보류중인지불주문';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_23'] = ' 영수증확인';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_24'] = ' 거래완료';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_25'] = ' 내즐겨찾기';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_26'] = ' 고객서비스';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_27'] = ' 맨위로돌아가기';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_28'] = ' 애니메이션사이드바콘텐츠영역';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_29'] = ' 오른쪽';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_30'] = ' 사용자정보';
+?>

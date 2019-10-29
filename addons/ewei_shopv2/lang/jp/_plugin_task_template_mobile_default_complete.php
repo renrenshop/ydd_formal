@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_task_template_mobile_default_complete_0'] = '完成品';
+$lang['lang_plugin_task_template_mobile_default_complete_1'] = '累積的な招待状';
+$lang['lang_plugin_task_template_mobile_default_complete_2'] = 'スキャンの人々またはポスターを見る';
+$lang['lang_plugin_task_template_mobile_default_complete_3'] = '作業報酬';
+$lang['lang_plugin_task_template_mobile_default_complete_4'] = 'ボーナスポイント';
+$lang['lang_plugin_task_template_mobile_default_complete_5'] = 'ポイント';
+$lang['lang_plugin_task_template_mobile_default_complete_6'] = '発行';
+$lang['lang_plugin_task_template_mobile_default_complete_7'] = '賞を受賞';
+$lang['lang_plugin_task_template_mobile_default_complete_8'] = '励起';
+$lang['lang_plugin_task_template_mobile_default_complete_9'] = 'バランスボーナス';
+$lang['lang_plugin_task_template_mobile_default_complete_10'] = '元';
+$lang['lang_plugin_task_template_mobile_default_complete_11'] = '発行';
+$lang['lang_plugin_task_template_mobile_default_complete_12'] = '賞を受賞';
+$lang['lang_plugin_task_template_mobile_default_complete_13'] = '励起';
+$lang['lang_plugin_task_template_mobile_default_complete_14'] = 'ボーナスボーナス';
+$lang['lang_plugin_task_template_mobile_default_complete_15'] = '元';
+$lang['lang_plugin_task_template_mobile_default_complete_16'] = '発行';
+$lang['lang_plugin_task_template_mobile_default_complete_17'] = '賞を受賞';
+$lang['lang_plugin_task_template_mobile_default_complete_18'] = '励起';
+$lang['lang_plugin_task_template_mobile_default_complete_19'] = 'クーポン特典';
+$lang['lang_plugin_task_template_mobile_default_complete_20'] = 'クーポン';
+$lang['lang_plugin_task_template_mobile_default_complete_21'] = '発行';
+$lang['lang_plugin_task_template_mobile_default_complete_22'] = '賞を受賞';
+$lang['lang_plugin_task_template_mobile_default_complete_23'] = '励起';
+$lang['lang_plugin_task_template_mobile_default_complete_24'] = '優遇商品報酬';
+$lang['lang_plugin_task_template_mobile_default_complete_25'] = 'スペシャル';
+$lang['lang_plugin_task_template_mobile_default_complete_26'] = '首輪';
+$lang['lang_plugin_task_template_mobile_default_complete_27'] = 'フェッチ';
+$lang['lang_plugin_task_template_mobile_default_complete_28'] = '賞を受賞';
+$lang['lang_plugin_task_template_mobile_default_complete_29'] = '励起';
+$lang['lang_plugin_task_template_mobile_default_complete_30'] = 'メモ';
+$lang['lang_plugin_task_template_mobile_default_complete_31'] = 'タスク情報が見つからない';
+$lang['lang_plugin_task_template_mobile_default_complete_32'] = 'タスクの情報がありませんが見つかった';
+?>

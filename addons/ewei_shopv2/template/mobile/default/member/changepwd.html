@@ -1,0 +1,61 @@
+{template '_header'}
+<div class='fui-page  fui-page-current'>
+    <div class="fui-header">
+		<div class="fui-header-left">
+			<a class="back" onclick='location.back()'></a>
+		</div>
+		<div class="title">{php echo $lang['lang_template_mobile_member_changepwd_0']}</div>
+		<div class="fui-header-right">&nbsp;</div>
+	</div>
+
+	<div class='fui-content' style='margin-top:5px;'>
+
+		<div class="fui-cell-group">
+
+			<div class="fui-cell must">
+				<div class="fui-cell-label">{php echo $lang['lang_template_mobile_member_changepwd_1']}</div>
+				<div class="fui-cell-info">{$member['mobile']}</div>
+				<input type="hidden" id="mobile" value="{$member['mobile']}" />
+			</div>
+
+			{if !empty($wapset['smsimgcode'])}
+			<div class="fui-cell must">
+				<div class="fui-cell-label">{php echo $lang['lang_template_mobile_member_changepwd_2']}</div>
+				<div class="fui-cell-info">
+					<input type="tel" class="fui-input" value="" placeholder="{php echo $lang['lang_template_mobile_member_changepwd_3']}" name="verifycode2" id="verifycode2" maxlength="4" />
+				</div>
+				<div class="remark noremark">
+					<img src="../web/index.php?c=utility&a=code&r={php echo time()}" style="width: 3.5rem; height: 1.5rem; vertical-align: middle;" id="btnCode2">
+				</div>
+			</div>
+			{/if}
+
+			<div class="fui-cell must">
+				<div class="fui-cell-label">{php echo $lang['lang_template_mobile_member_changepwd_4']}</div>
+				<div class="fui-cell-info"><input type="tel" class='fui-input' id='verifycode' name='verifycode' placeholder="5{php echo $lang['lang_template_mobile_member_changepwd_5']}"  value="" maxlength="5" /></div>
+				<div class="fui-cell-remark noremark"><a class="btn btn-default btn-default-o btn-sm" id="btnCode">{php echo $lang['lang_template_mobile_member_changepwd_6']}</a></div>
+			</div>
+
+			<div class="fui-cell must">
+				<div class="fui-cell-label">{php echo $lang['lang_template_mobile_member_changepwd_7']}</div>
+				<div class="fui-cell-info"><input type="password" class='fui-input' id='pwd' name='pwd' placeholder="{php echo $lang['lang_template_mobile_member_changepwd_8']}"  value="" /></div>
+			</div>
+			<div class="fui-cell must">
+				<div class="fui-cell-label">{php echo $lang['lang_template_mobile_member_changepwd_9']}</div>
+				<div class="fui-cell-info"><input type="password" class='fui-input' id='pwd1' name='pwd1' placeholder="{php echo $lang['lang_template_mobile_member_changepwd_10']}"  value="" /></div>
+			</div>
+
+		</div>
+
+		<a href='#' id='btnSubmit' class='btn btn-success block'>{php echo $lang['lang_template_mobile_member_changepwd_11']}</a>
+	</div>
+	<script language='javascript'>
+		require(['biz/member/account'], function (modal) {
+		  	modal.initChange({endtime: {php echo intval($endtime)}});
+		});
+</script>
+
+</div>
+{template '_footer'}
+
+

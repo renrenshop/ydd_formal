@@ -1,0 +1,21 @@
+<?php
+$lang['lang_plugin_groups_template_mobile_default_goods_index_0'] = ' Chi tiết sản phẩm';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_1'] = ' người thành một nhóm';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_2'] = ' Yêu thích';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_3'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_4'] = ' miếng';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_5'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_6'] = ' sẵn có';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_7'] = ' Nhân sâm Group, khối lượng bán hàng';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_8'] = ' Đầu cung cấp';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_9'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_10'] = ' Gấp';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_11'] = ' ';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_12'] = ' Nhiệm vụ mở và lời mời';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_13'] = ' Nhân sâm Trung đoàn, không đủ số lượng tự động hoàn trả, xem';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_14'] = ' Nhóm chơi';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_15'] = ' Thông tin chi tiết văn bản';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_16'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_17'] = ' Mua một cách riêng biệt';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_18'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_goods_index_19'] = ' người thành một nhóm';

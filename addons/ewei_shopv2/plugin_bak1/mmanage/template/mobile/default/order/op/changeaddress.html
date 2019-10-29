@@ -1,0 +1,99 @@
+{template 'mmanage/common'}
+
+<div class='fui-page fui-page-current order-detail-page'>
+    <div class="fui-header fui-header-success">
+        <div class="fui-header-left">
+            <a class="back btn-back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_0']}</div>
+        <div class="fui-header-right"></div>
+    </div>
+    <div class='fui-content navbar'>
+
+        <div class="fui-cell-group nomargin hasborder">
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_1']}: </div>
+                <div class="fui-cell-info">
+                    <input type="text" class="fui-input" value="{$user['realname']}" id="sel-realname"/>
+                </div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_2']}: </div>
+                <div class="fui-cell-info">
+                    <input type="text" class="fui-input" value="{$user['mobile']}" id="sel-mobile"/>
+                </div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_3']}: </div>
+                <div class="fui-cell-info newline">{$user['address']}</div>
+            </div>
+        </div>
+
+        <div class="fui-cell-group">
+            <div class="fui-cell ">
+                <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_4']}</div>
+                <div class="fui-cell-info">
+                    <input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right toggle" data-toggle-check="true" data-show="address" id="changead" />
+                </div>
+            </div>
+        </div>
+        <div class="fui-cell-group nomargin address" style="display: none;">
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_5']}: </div>
+                <div class="fui-cell-info">
+                    <select id="sel-provance" onchange="selectCity()">
+                        <option value="" selected="true">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_6']}/{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_7']}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_8']}: </div>
+                <div class="fui-cell-info">
+                    <select id="sel-city" onchange="selectcounty(0)">
+                        <option value="" selected="true">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_9']}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_10']}: </div>
+                <div class="fui-cell-info newline">
+                    <select id="sel-area" onchange="selectstreet(0)">
+                        <option value="" selected="true">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_11']}</option>
+                    </select>
+                </div>
+            </div>
+            {if !empty($new_area) && !empty($address_street)}
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_12']}: </div>
+                <div class="fui-cell-info newline">
+                    <select id="sel-street">
+                        <option value="">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_13']}</option>
+                    </select>
+                </div>
+            </div>
+            {/if}
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_14']}: </div>
+                <div class="fui-cell-info newline">
+                    <input type="text" class="fui-input" id="sel-address" value="{$address_info}" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_15']}" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="fui-navbar">
+        <div class="nav-item btn btn-gray cancel-params">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_16']}</div>
+        <div class="nav-item btn btn-success submit-params">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_op_changeaddress_17']}</div>
+    </div>
+
+    <script type="text/javascript" src="../addons/ewei_shopv2/static/js/dist/area/cascade.js"></script>
+    <script language="javascript">
+        cascdeInit("{php echo $new_area}","{php echo $address_street}","{php echo isset($user['province'])?$user['province']:''}","{php echo isset($user['city'])?$user['city']:''}","{php echo isset($user['area'])?$user['area']:''}","{php echo isset($user['street'])?$user['street']:''}");
+    </script>
+    <script language="javascript">
+        require(['../addons/ewei_shopv2/plugin/mmanage/static/js/order-op.js'],function(modal){
+            modal.initAddress({orderid: "{$orderid}"});
+        });
+    </script>
+</div>
+{template '_footer'}

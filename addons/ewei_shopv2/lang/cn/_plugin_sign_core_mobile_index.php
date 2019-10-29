@@ -1,0 +1,33 @@
+<?php
+$lang['lang_plugin_sign_core_mobile_index_0'] = '未开启';
+$lang['lang_plugin_sign_core_mobile_index_1'] = '获取用户信息失败';
+$lang['lang_plugin_sign_core_mobile_index_2'] = '错误的请求';
+$lang['lang_plugin_sign_core_mobile_index_3'] = '未开启';
+$lang['lang_plugin_sign_core_mobile_index_4'] = '月份小于当前月份';
+$lang['lang_plugin_sign_core_mobile_index_5'] = '已经';
+$lang['lang_plugin_sign_core_mobile_index_6'] = '，不要重复';
+$lang['lang_plugin_sign_core_mobile_index_7'] = '哦';
+$lang['lang_plugin_sign_core_mobile_index_8'] = '日期大于当前日期';
+$lang['lang_plugin_sign_core_mobile_index_9'] = '日常';
+$lang['lang_plugin_sign_core_mobile_index_10'] = '首次';
+$lang['lang_plugin_sign_core_mobile_index_11'] = '失败';
+$lang['lang_plugin_sign_core_mobile_index_12'] = '您的';
+$lang['lang_plugin_sign_core_mobile_index_13'] = '不足';
+$lang['lang_plugin_sign_core_mobile_index_14'] = '无法';
+$lang['lang_plugin_sign_core_mobile_index_15'] = '扣除';
+$lang['lang_plugin_sign_core_mobile_index_16'] = '失败';
+$lang['lang_plugin_sign_core_mobile_index_17'] = '您的';
+$lang['lang_plugin_sign_core_mobile_index_18'] = '不足';
+$lang['lang_plugin_sign_core_mobile_index_19'] = '无法';
+$lang['lang_plugin_sign_core_mobile_index_20'] = '扣除';
+$lang['lang_plugin_sign_core_mobile_index_21'] = '成功';
+$lang['lang_plugin_sign_core_mobile_index_22'] = '错误的请求';
+$lang['lang_plugin_sign_core_mobile_index_23'] = '请求参数错误';
+$lang['lang_plugin_sign_core_mobile_index_24'] = '未开启';
+$lang['lang_plugin_sign_core_mobile_index_25'] = '此奖励已经领取';
+$lang['lang_plugin_sign_core_mobile_index_26'] = '请不要重复领取';
+$lang['lang_plugin_sign_core_mobile_index_27'] = '连续';
+$lang['lang_plugin_sign_core_mobile_index_28'] = '总';
+$lang['lang_plugin_sign_core_mobile_index_29'] = '天获得奖励';
+$lang['lang_plugin_sign_core_mobile_index_30'] = '领取成功';
+?>

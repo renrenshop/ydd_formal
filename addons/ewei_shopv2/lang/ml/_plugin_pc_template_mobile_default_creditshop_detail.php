@@ -1,0 +1,32 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_0'] = ' Produk';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_1'] = ' Kupon';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_2'] = ' Baki';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_3'] = ' Sampul merah';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_4'] = ' Asal';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_5'] = ' Harga:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_6'] = ' Mata yang diperlukan:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_7'] = ' Kesahan penebusan:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_8'] = ' dari tarikh penebusan';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_9'] = ' untuk';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_10'] = ' Terhad kepada:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_11'] = ' Salinan';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_12'] = ' mengambil bahagian';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_13'] = ' Times';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_14'] = ' bayaran pos';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_15'] = ' Yuan';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_16'] = ' Pakej';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_17'] = ' Pilih satu spesifikasi';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_18'] = ' Pilih satu spesifikasi';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_19'] = ' Menarik sekarang';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_20'] = ' Menebus sekarang';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_21'] = ' Menawarkan pusat membeli-belah';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_22'] = ' Hadiah nombor:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_23'] = ' Tambah masa:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_24'] = ' Pengunjung:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_25'] = ' Menebus rekod';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_26'] = ' Penyertaan tiada rekod! ';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_27'] = ' Hadiah yang popular';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_28'] = ' Pengenalan Hadiah';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_29'] = ' Tiada butiran produk';
+?>

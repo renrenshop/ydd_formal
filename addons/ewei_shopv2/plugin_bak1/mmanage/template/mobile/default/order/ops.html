@@ -1,0 +1,70 @@
+{ifp 'order.op.remarksaler'}
+    <a class="btn btn-sm btn-default order-btn" data-action="remarksaler" data-orderid="{$item['id']}"><i class="text-success icon icon-pin" {if empty($item['remarksaler'])}style="display: none;{/if}"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_0']}</a>
+{/if}
+
+{if $item['status'] ==0 && $item['ispackage']==0}
+    {ifp 'order.op.changeprice'}
+        <!--
+        <a class="btn btn-sm btn-success" data-nocache="true" href="{php echo mobileUrl('mmanage/order/op/changeprice', array('id'=>$item['id']))}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_1']}</a>
+        -->
+    {/if}
+{/if}
+
+<!--{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_2']}-->
+{if empty($item['statusvalue'])}
+    {ifp 'order.op.pay'}
+        {if $item['paytypevalue']==3}
+            <a class="btn btn-success btn-sm order-btn" data-action="send" data-orderid="{$item['id']}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_3']}</a>
+        {else}
+            {if $item['ismerch'] == 0}
+                <a class="btn btn-sm btn-success order-btn" data-action="payorder" data-orderid="{$item['id']}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_4']}</a>
+            {/if}
+        {/if}
+    {/if}
+
+<!--{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_5']}-->
+{elseif $item['statusvalue'] == 1}
+    {if !empty($item['addressid']) }
+        <!--{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_6']} {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_7']}-->
+        {ifp 'order.op.send'}
+            <a class="btn btn-success btn-sm order-btn" data-action="send" data-orderid="{$item['id']}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_8']}</a>
+        {/if}
+    {else}
+        {if $item['isverify']==1}
+            <!--{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_9']} {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_10']}-->
+            {ifp 'order.op.verify'}
+                <a class="btn btn-sm btn-success order-btn" data-action="fetch" data-orderid="{$item['id']}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_11']}</a>
+            {/if}
+        {else}
+            <!--{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_12']} {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_13']}-->
+            {ifp 'order.op.fetch'}
+                <a class="btn btn-sm btn-success order-btn" data-action="fetch" data-orderid="{$item['id']}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_14']}{if !empty($item['ccard'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_15']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_16']}{/if}</a>
+            {/if}
+        {/if}
+    {/if}
+
+    {if $item['sendtype'] > 0}
+        {ifp 'order.op.sendcancel'}
+            <a class="btn btn-success btn-sm order-btn" data-action="sendcancel" data-orderid="{$item['id']}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_17']}</a>
+        {/if}
+    {/if}
+
+<!--{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_18']}-->
+{elseif $item['statusvalue'] == 2 }
+    {if !empty($item['addressid'])}
+        {ifp 'order.op.send'}
+            <a class="btn btn-sm btn-success" data-nocache="changeexpress" href="{php echo mobileUrl('mmanage/order/op/changeexpress', array('id'=>$item['id']))}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_19']}</a>
+        {/if}
+        {ifp 'order.op.finish'}
+            <a class="btn btn-sm btn-success order-btn" data-action="finish" data-orderid="{$item['id']}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_20']}</a>
+        {/if}
+        {ifp 'order.op.sendcancel'}
+            <a class="btn btn-success btn-sm order-btn" data-action="sendcancel" data-orderid="{$item['id']}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_21']}</a>
+        {/if}
+
+    {/if}
+{/if}
+
+{if !empty($item['refundid'])}
+    <a class="btn btn-success btn-sm order-btn" data-action="refund" data-orderid="{$item['id']}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_22']}{if $item['refundstate']>0}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_23']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_ops_24']}{/if}</a>
+{/if}

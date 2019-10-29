@@ -1,0 +1,36 @@
+<?php
+$lang['lang_template_mobile_sale_coupon_my_detail_0'] = 'विवरण';
+$lang['lang_template_mobile_sale_coupon_my_detail_1'] = 'वापसखड़ेहोजाओ';
+$lang['lang_template_mobile_sale_coupon_my_detail_2'] = 'युआनबैलेंस';
+$lang['lang_template_mobile_sale_coupon_my_detail_3'] = 'अंक';
+$lang['lang_template_mobile_sale_coupon_my_detail_4'] = 'मेटालिफाफे';
+$lang['lang_template_mobile_sale_coupon_my_detail_5'] = 'स्थाईरूपसेमांय';
+$lang['lang_template_mobile_sale_coupon_my_detail_6'] = 'है';
+$lang['lang_template_mobile_sale_coupon_my_detail_7'] = 'दिन';
+$lang['lang_template_mobile_sale_coupon_my_detail_8'] = 'दिनमांय';
+$lang['lang_template_mobile_sale_coupon_my_detail_9'] = 'उपयोगकीदुकान';
+$lang['lang_template_mobile_sale_coupon_my_detail_10'] = 'खरीदकीसीमा';
+$lang['lang_template_mobile_sale_coupon_my_detail_11'] = 'आइटमसंग्रहीत';
+$lang['lang_template_mobile_sale_coupon_my_detail_12'] = 'उपयोगकेनिर्देश';
+$lang['lang_template_mobile_sale_coupon_my_detail_13'] = 'समयसीमासमाप्ति';
+$lang['lang_template_mobile_sale_coupon_my_detail_14'] = 'स्थाईरूपसेमांय';
+$lang['lang_template_mobile_sale_coupon_my_detail_15'] = 'है';
+$lang['lang_template_mobile_sale_coupon_my_detail_16'] = 'दिन';
+$lang['lang_template_mobile_sale_coupon_my_detail_17'] = 'दिनमांय';
+$lang['lang_template_mobile_sale_coupon_my_detail_18'] = 'वैधताअवधि';
+$lang['lang_template_mobile_sale_coupon_my_detail_19'] = 'खरीदकीसीमा';
+$lang['lang_template_mobile_sale_coupon_my_detail_20'] = 'आइटमसंग्रहीत';
+$lang['lang_template_mobile_sale_coupon_my_detail_21'] = 'प्रतिबंधोंकाउपयोगकरें';
+$lang['lang_template_mobile_sale_coupon_my_detail_22'] = 'यहकूपनकेवलcheckout काउंटरपरइस्तेमालकियाजासकताहै।';
+$lang['lang_template_mobile_sale_coupon_my_detail_23'] = 'एकहीसमयमेंप्रोमोशनलप्रस्तावोंकेउपयोगकीअनुमतिनहींदेते';
+$lang['lang_template_mobile_sale_coupon_my_detail_24'] = 'सदस्यछूटकेसाथएकसाथउपयोगकीअनुमतिनदें';
+$lang['lang_template_mobile_sale_coupon_my_detail_25'] = 'एकहीसमयमेंप्रोमोशनलऑफरऔरसदस्यताछूटकेउपयोगकीअनुमतिनदें';
+$lang['lang_template_mobile_sale_coupon_my_detail_26'] = 'निंनआइटमोंकाउपयोगकरनेकीअनुमतिदें';
+$lang['lang_template_mobile_sale_coupon_my_detail_27'] = 'मालकीनिम्नश्रेणियोंकाउपयोगकरनेकीअनुमतिदें';
+$lang['lang_template_mobile_sale_coupon_my_detail_28'] = 'कोईनहीं';
+$lang['lang_template_mobile_sale_coupon_my_detail_29'] = 'इस्तेमालकिया';
+$lang['lang_template_mobile_sale_coupon_my_detail_30'] = 'समयसीमासमाप्तहोगई';
+$lang['lang_template_mobile_sale_coupon_my_detail_31'] = 'अबउपयोगकरनेकेलिएआइटमपरजाएं';
+$lang['lang_template_mobile_sale_coupon_my_detail_32'] = 'अबरिचार्ज';
+$lang['lang_template_mobile_sale_coupon_my_detail_33'] = 'मेराकूपनलौटें';
+?>

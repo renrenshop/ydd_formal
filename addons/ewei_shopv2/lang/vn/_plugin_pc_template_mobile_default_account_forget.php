@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_account_forget_0'] = ' Chào mừng đến với';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_1'] = ' không phải là một thành viên của trang web này? Ngay lập tức';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_2'] = ' Đăng nhập vào';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_3'] = ' Đăng ký bây giờ';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_4'] = ' Tìm thấy bây giờ';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_5'] = ' Số điện thoại:';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_6'] = ' số điện thoại của bạn';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_7'] = ' Với mã xác thực mã:';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_8'] = ' bit với mã xác thực';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_9'] = ' Nhận Captcha';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_10'] = ' Nhấp vào';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_11'] = ' Gửi tin nhắn SMS xác thực';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_12'] = ' , và nhận được tin nhắn điện thoại di động của bạn "';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_13'] = ' chút năng động mã đầu vào để xác minh qua SMS trước khi gửi. ';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_14'] = ' Đặt mật khẩu:';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_15'] = ' Chữ hoa và chữ thường, ký hiệu, hoặc số điện thoại';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_16'] = ' Xác nhận mật khẩu:';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_17'] = ' Nhập lại mật khẩu đăng nhập của bạn';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_18'] = ' Đăng ký bây giờ';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_19'] = ' Tìm thấy bây giờ';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_20'] = ' Quên mật khẩu';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_21'] = ' Đăng ký bây giờ';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_22'] = ' sau khi đăng ký bạn có thể';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_23'] = ' mua các hàng hoá để thanh toán đơn hàng';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_24'] = ' Thu thập các sản phẩm cửa hàng chú ý';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_25'] = ' An toàn giao dịch toàn vẹn không phải lo lắng';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_26'] = ' nhận được ưu đãi mua sắm cho các khoản tín dụng';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_27'] = ' Thành viên đặc quyền đặc quyền';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_28'] = ' Giá các mặt trời đứng bên ngoài chia sẻ';
+?>

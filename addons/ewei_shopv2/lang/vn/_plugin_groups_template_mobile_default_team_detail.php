@@ -1,0 +1,43 @@
+<?php
+$lang['lang_plugin_groups_template_mobile_default_team_detail_0'] = ' Trung đoàn thông tin chi tiết';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_1'] = ' Nhóm thành công';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_2'] = ' chờ đợi cho một nhóm';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_3'] = ' Nhóm mua hàng thất bại';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_4'] = ' Nhóm giá:¥';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_5'] = ' miếng';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_6'] = ' Trò chơi còn lại';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_7'] = ' bắt đầu với khoảng cách';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_8'] = ' ngày';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_9'] = ' giờ';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_10'] = ' phút';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_11'] = ' giây';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_12'] = ' Xấu';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_13'] = ' người';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_14'] = ' mời bạn bè tham gia đội ngũ! ';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_15'] = ' Nhóm mua đóng cửa';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_16'] = ' Chi tiết nhóm';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_17'] = ' Chi tiết sản phẩm';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_18'] = ' Xem tất cả các chi tiết nhóm';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_19'] = ' Mở cửa trung đoàn';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_20'] = ' Vô danh';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_21'] = ' Tham gia nhóm';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_22'] = ' Không có thông tin chi tiết sản phẩm';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_23'] = ' Nhóm chơi';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_24'] = ' Xem chi tiết';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_25'] = ' Chọn';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_26'] = ' Mục yêu thích';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_27'] = ' Trả tiền cho một nhóm';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_28'] = ' hoặc một nhóm người tham gia';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_29'] = ' Mời bạn bè';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_30'] = ' Nhóm thanh toán';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_31'] = ' số người đạt';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_32'] = ' Nhóm mua hàng thành công';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_33'] = ' Nhóm mua thành công';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_34'] = ' Nhóm mua thành công';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_35'] = ' mời bạn bè tham gia vào nhóm bây giờ.';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_36'] = ' Tôi muốn gia nhập trung đoàn';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_37'] = ' Sứ mệnh này đã hết hạn';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_38'] = ' Trang chủ';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_39'] = ' hoạt động kết thúc';
+?>
+

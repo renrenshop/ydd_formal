@@ -1,0 +1,86 @@
+{template '_header'}
+{template 'commission/common'}
+<div class="fui-page page-commission-index ">
+    <div class="headinfo">
+        <div class="userinfo">
+            <div class="face"><img src="{$member['avatar']}" /></div>
+            <div class="setbtn"><i class="fa fa-cog"></i></div>
+            <div class="name" {if $this->set['levelurl']!=''}onclick='location.href="{php echo $this->set['levelurl']}"'{/if}>{$member['nickname']}<span class="level">
+
+                [{php echo empty($level) ? ( empty($this->set['levelname'])?$lang['lang_plugin_mc_template_mobile_default_index_0']:$this->set['levelname'] ) : $level['levelname'];}]
+
+            </span></div>
+        </div>
+        <div class="userblock">
+            <div class="line total">
+                <div class="title">{php echo $lang['lang_plugin_mc_template_mobile_default_index_1']}({php echo $lang['lang_plugin_mc_template_mobile_default_index_2']})</div>
+                <div class="num">{$member['commission_total']}</div>
+            </div>
+            <div class="line usable">
+                <div class="btn">{php echo $lang['lang_plugin_mc_template_mobile_default_index_3']}</div>
+                <div class="text">
+                    <div class="title">{php echo $lang['lang_plugin_mc_template_mobile_default_index_4']}({php echo $lang['lang_plugin_mc_template_mobile_default_index_5']})</div>
+                    <div class="num">{$member['commission_ok']}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fui-block-group">
+        <div class="fui-block-line">
+            <a class="fui-block-child" href="{php echo mobileUrl('commission/withdraw');}">
+                <div class="icon text-yellow"><i class="fa fa-file-archive-o "></i></div>
+                <div class="title">{php echo $lang['lang_plugin_mc_template_mobile_default_index_6']}</div>
+                <div class="text"><span>{$member['commission1']}</span>{php echo $lang['lang_plugin_mc_template_mobile_default_index_7']}</div>
+            </a>
+            <a class="fui-block-child" href="#">
+                <div class="icon text-blue"><i class="fa fa-files-o"></i></div>
+                <div class="title">{php echo $lang['lang_plugin_mc_template_mobile_default_index_8']}</div>
+                <div class="text"><span>{$member['ordercount0']}</span>{php echo $lang['lang_plugin_mc_template_mobile_default_index_9']}</div>
+            </a>
+            <a class="fui-block-child" href="#">
+                <div class="icon text-orange"><i class="fa fa-file-text-o"></i></div>
+                <div class="title">{php echo $lang['lang_plugin_mc_template_mobile_default_index_10']}</div>
+                <div class="text"></div>
+            </a>
+        </div>
+        <div class="fui-block-line">
+            <a class="fui-block-child" href="#">
+                <div class="icon text-blue"><i class="fa fa-user"></i></div>
+                <div class="title">{php echo $lang['lang_plugin_mc_template_mobile_default_index_11']}</div>
+                <div class="text"><span>{$member['agentcount']}</span>{php echo $lang['lang_plugin_mc_template_mobile_default_index_12']}</div>
+            </a>
+            <a class="fui-block-child" href="#">
+                <div class="icon text-orange"><i class="fa fa-users "></i></div>
+                <div class="title">{php echo $lang['lang_plugin_mc_template_mobile_default_index_13']}</div>
+                <div class="text"><span>{$member['customercount']}</span>{php echo $lang['lang_plugin_mc_template_mobile_default_index_14']}</div>
+            </a>
+            <a class="fui-block-child" href="#">
+                <div class="icon text-yellow"><i class="fa fa-qrcode"></i></div>
+                <div class="title">{php echo $lang['lang_plugin_mc_template_mobile_default_index_15']}</div>
+                <div class="text"></div>
+            </a>
+        </div>
+        <div class="fui-block-dots">
+            <a href="javascript:;" class="on"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </div>
+
+    <div class="fui-cell-group fui-cell-click">
+        <a class="fui-cell" href="#">
+            <div class="fui-cell-icon"><i class="fa fa-rmb"></i></div>
+            <div class="fui-cell-text"><p>{php echo $lang['lang_plugin_mc_template_mobile_default_index_16']}</p></div>
+            <div class="fui-cell-remark"></div>
+        </a>
+        <a class="fui-cell" href="#">
+            <div class="fui-cell-icon"><i class="fa fa-file-text-o"></i></div>
+            <div class="fui-cell-text"><p>{php echo $lang['lang_plugin_mc_template_mobile_default_index_17']}</p></div>
+            <div class="fui-cell-remark"></div>
+        </a>
+    </div>
+
+</div>
+
+{template '_footer'}

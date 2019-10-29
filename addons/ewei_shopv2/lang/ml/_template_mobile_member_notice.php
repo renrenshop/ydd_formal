@@ -1,0 +1,32 @@
+<?php
+$lang['lang_template_mobile_member_notice_0'] = ' Tetapan mesej peringatan';
+$lang['lang_template_mobile_member_notice_1'] = ' Susunan kelas';
+$lang['lang_template_mobile_member_notice_2'] = ' Penyerahan perintah';
+$lang['lang_template_mobile_member_notice_3'] = ' Arahan diri';
+$lang['lang_template_mobile_member_notice_4'] = ' Pembatalan perintah';
+$lang['lang_template_mobile_member_notice_5'] = ' Kejayaan pembelian';
+$lang['lang_template_mobile_member_notice_6'] = ' Mengeluarkan perintah';
+$lang['lang_template_mobile_member_notice_7'] = ' Resit pesanan';
+$lang['lang_template_mobile_member_notice_8'] = ' Permintaan bayaran balik';
+$lang['lang_template_mobile_member_notice_9'] = ' Membayar balik kemajuan';
+$lang['lang_template_mobile_member_notice_10'] = ' Bayaran balik hasil';
+$lang['lang_template_mobile_member_notice_11'] = ' Bayaran balik gagal';
+$lang['lang_template_mobile_member_notice_12'] = ' ahli kelas';
+$lang['lang_template_mobile_member_notice_13'] = ' menaik taraf ahli';
+$lang['lang_template_mobile_member_notice_14'] = ' Cas semula kelas';
+$lang['lang_template_mobile_member_notice_15'] = ' Cas berjaya';
+$lang['lang_template_mobile_member_notice_16'] = ' top-up balik';
+$lang['lang_template_mobile_member_notice_17'] = ' nyatakan kelas';
+$lang['lang_template_mobile_member_notice_18'] = ' Mengemukakan permohonan';
+$lang['lang_template_mobile_member_notice_19'] = ' menyebut kejayaan';
+$lang['lang_template_mobile_member_notice_20'] = ' menyebut gagal';
+$lang['lang_template_mobile_member_notice_21'] = ' Pengagihan kelas';
+$lang['lang_template_mobile_member_notice_22'] = ' menjadi';
+$lang['lang_template_mobile_member_notice_23'] = ' tahap ketinggian';
+$lang['lang_template_mobile_member_notice_24'] = ' Baru';
+$lang['lang_template_mobile_member_notice_25'] = ' Pembayaran';
+$lang['lang_template_mobile_member_notice_26'] = ' Resit';
+$lang['lang_template_mobile_member_notice_27'] = ' Mengemukakan permohonan';
+$lang['lang_template_mobile_member_notice_28'] = ' lagi pemprosesan';
+$lang['lang_template_mobile_member_notice_29'] = ' Saudagar Main wang';
+?>

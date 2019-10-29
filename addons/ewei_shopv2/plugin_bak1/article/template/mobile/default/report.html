@@ -1,0 +1,55 @@
+{template '_header'}
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/article/template/mobile/default/images/mobile.css" />
+<div class='fui-page  fui-page-current article-report-page'>
+
+	{if is_h5app()}
+	<div class="fui-header">
+		<div class="fui-header-left">
+			<a class="back"></a>
+		</div>
+		<div class="title">{php echo $lang['lang_plugin_article_template_mobile_default_report_0']}</div>
+		<div class="fui-header-right"></div>
+	</div>
+	{/if}
+
+	<div class='fui-content'>
+	
+		<div class="fui-cell-title ">{php echo $lang['lang_plugin_article_template_mobile_default_report_1']}</div>
+		
+		<div class="fui-cell-group">
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_article_template_mobile_default_report_2']}</div>
+				<div class="fui-cell-info">
+					<select name="cate" id="report_cate">
+						<option value="">{php echo $lang['lang_plugin_article_template_mobile_default_report_3']}</option> 
+						<option value="{php echo $lang['lang_plugin_article_template_mobile_default_report_4']}">{php echo $lang['lang_plugin_article_template_mobile_default_report_5']}</option>
+						<option value="{php echo $lang['lang_plugin_article_template_mobile_default_report_6']}">{php echo $lang['lang_plugin_article_template_mobile_default_report_7']}</option>
+						<option value="{php echo $lang['lang_plugin_article_template_mobile_default_report_8']}">{php echo $lang['lang_plugin_article_template_mobile_default_report_9']}</option>
+						<option value="{php echo $lang['lang_plugin_article_template_mobile_default_report_10']}">{php echo $lang['lang_plugin_article_template_mobile_default_report_11']}</option>
+						<option value="{php echo $lang['lang_plugin_article_template_mobile_default_report_12']}">{php echo $lang['lang_plugin_article_template_mobile_default_report_13']}</option>
+						<option value="{php echo $lang['lang_plugin_article_template_mobile_default_report_14']}">{php echo $lang['lang_plugin_article_template_mobile_default_report_15']}</option>
+						<option value="{php echo $lang['lang_plugin_article_template_mobile_default_report_16']}">{php echo $lang['lang_plugin_article_template_mobile_default_report_17']}</option>
+						<option value="{php echo $lang['lang_plugin_article_template_mobile_default_report_18']}">{php echo $lang['lang_plugin_article_template_mobile_default_report_19']}</option>
+					</select>
+				</div>
+			</div>
+			<div class="fui-cell fui-cell-textarea">
+				<div class="fui-cell-label ">{php echo $lang['lang_plugin_article_template_mobile_default_report_20']}</div>
+				<div class="fui-cell-info">
+					<textarea rows="5" placeholder="{php echo $lang['lang_plugin_article_template_mobile_default_report_21']}" id="report_content"></textarea>
+					<div class="textarea_counter text-danger"><span class="">0</span>/200</div>
+				</div>
+			</div>
+		</div>
+		<div class="fui-cell-title ">{php echo $lang['lang_plugin_article_template_mobile_default_report_22']}</div>
+		
+		<a class="btn btn-success sub" id="sub">{php echo $lang['lang_plugin_article_template_mobile_default_report_23']}</a>
+		
+		
+	</div>
+	<script language="javascript">
+	     require(['../addons/ewei_shopv2/plugin/article/static/js/report.js'],function(modal){ 
+	     	modal.init({aid: "{$aid}"});
+	     });
+	</script>
+</div>

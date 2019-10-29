@@ -1,0 +1,50 @@
+{template 'pc/layout/_header'}
+<div class="ncm-container">
+    {template 'pc/layout/member/left-layout'}
+    <div class="right-layout">
+        <div class="wrap">
+            {template 'pc/layout/member/tabmenu'}
+            
+            <div class="fui-content fui-page">
+                <div class="fui-cell-group">
+                    <div class="fui-cell must">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_member_info_0']}</div>
+                        <div class="fui-cell-info">{if empty($member['mobile'])}{php echo $lang['lang_plugin_pc_template_mobile_default_member_info_1']}{else}{$member['mobile']}{/if}{if !empty($member['mobileverify'])}({php echo $lang['lang_plugin_pc_template_mobile_default_member_info_2']}){/if}</div>
+                        <a class="fui-cell-remark external"
+                           href="{php echo mobileUrl('pc.member.bind')}">{php echo $lang['lang_plugin_pc_template_mobile_default_member_info_3']}</a>
+                    </div>
+                </div>
+
+
+                <div class="fui-cell-group">
+                    <div class="fui-cell must ">
+                        <div class="fui-cell-label ">{php echo $lang['lang_plugin_pc_template_mobile_default_member_info_4']}</div>
+                        <div class="fui-cell-info"><input type="text" class="fui-input" id="realname" name="realname"
+                                                          placeholder="{php echo $lang['lang_plugin_pc_template_mobile_default_member_info_5']}" value="{$member['realname']}"></div>
+                    </div>
+
+
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_member_info_6']}</div>
+                        <div class="fui-cell-info"><input type="text" class="fui-input" id="weixin" name="weixin"
+                                                          placeholder="{php echo $lang['lang_plugin_pc_template_mobile_default_member_info_7']}" value="{$member['weixin']}"></div>
+                    </div>
+
+                </div>
+                <br/>
+                <a href="#" id="btn-submit" class="btn btn-success" style="margin-left: 120px">{php echo $lang['lang_plugin_pc_template_mobile_default_member_info_8']}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script language='javascript'>
+require(['../addons/ewei_shopv2/plugin/pc/biz/member/info.js'], function (modal) {
+  	modal.init({
+	    returnurl:"{$returnurl}",
+	    template_flag: {php echo intval($template_flag)},
+		wapopen: {php echo intval($wapset['open'])}
+	});
+});
+</script>
+{template 'pc/layout/_footer'}

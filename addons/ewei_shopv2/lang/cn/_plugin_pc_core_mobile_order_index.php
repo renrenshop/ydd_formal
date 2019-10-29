@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_pc_core_mobile_order_index_0'] = '首页';
+$lang['lang_plugin_pc_core_mobile_order_index_1'] = '我的商城';
+$lang['lang_plugin_pc_core_mobile_order_index_2'] = '交易订单';
+$lang['lang_plugin_pc_core_mobile_order_index_3'] = '订单列表';
+$lang['lang_plugin_pc_core_mobile_order_index_4'] = '回收站';
+$lang['lang_plugin_pc_core_mobile_order_index_5'] = '退款';
+$lang['lang_plugin_pc_core_mobile_order_index_6'] = '退货退款';
+$lang['lang_plugin_pc_core_mobile_order_index_7'] = '换货';
+$lang['lang_plugin_pc_core_mobile_order_index_8'] = '已取消';
+$lang['lang_plugin_pc_core_mobile_order_index_9'] = '待发货';
+$lang['lang_plugin_pc_core_mobile_order_index_10'] = '待付款';
+$lang['lang_plugin_pc_core_mobile_order_index_11'] = '使用中';
+$lang['lang_plugin_pc_core_mobile_order_index_12'] = '待取货';
+$lang['lang_plugin_pc_core_mobile_order_index_13'] = '待发货';
+$lang['lang_plugin_pc_core_mobile_order_index_14'] = '待收货';
+$lang['lang_plugin_pc_core_mobile_order_index_15'] = '已完成';
+$lang['lang_plugin_pc_core_mobile_order_index_16'] = '待评价';
+$lang['lang_plugin_pc_core_mobile_order_index_17'] = '已完成';
+$lang['lang_plugin_pc_core_mobile_order_index_18'] = '交易完成';
+$lang['lang_plugin_pc_core_mobile_order_index_19'] = '待';
+$lang['lang_plugin_pc_core_mobile_order_index_20'] = '首页';
+$lang['lang_plugin_pc_core_mobile_order_index_21'] = '我的商城';
+$lang['lang_plugin_pc_core_mobile_order_index_22'] = '交易订单';
+$lang['lang_plugin_pc_core_mobile_order_index_23'] = '订单详情';
+$lang['lang_plugin_pc_core_mobile_order_index_24'] = '订单列表';
+$lang['lang_plugin_pc_core_mobile_order_index_25'] = '订单详情';
+$lang['lang_plugin_pc_core_mobile_order_index_26'] = '订单已经被删除';
+$lang['lang_plugin_pc_core_mobile_order_index_27'] = '订单非快递单，无法查看物流信息';
+$lang['lang_plugin_pc_core_mobile_order_index_28'] = '订单未发货，无法查看物流信息';
+?>

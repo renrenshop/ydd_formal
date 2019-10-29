@@ -1,0 +1,34 @@
+<?php
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_0'] = ' Semua pedagang';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_1'] = ' Cari';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_2'] = ' Masukkan kata kunci';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_3'] = ' berhampiran';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_4'] = ' Mengkategorikan';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_5'] = ' Bijak semacam';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_6'] = ' berhampiran';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_7'] = ' berhampiran';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_8'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_9'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_10'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_11'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_12'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_13'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_14'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_15'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_16'] = ' meter di atas';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_17'] = ' meter di atas';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_18'] = ' Kategori';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_19'] = ' Kategori';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_20'] = ' Jarak terdekat';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_21'] = ' Jarak terdekat';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_22'] = ' Newest diselesaikan';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_23'] = ' Newest diselesaikan';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_24'] = ' Disyorkan perniagaan';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_25'] = ' Peniaga-peniaga tiada buat sementara waktu';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_26'] = ' Bersiar-siar sekitar';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_27'] = ' Memuatkan';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_28'] = ' Alamat';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_29'] = ' Telefon';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_30'] = ' Mengkategorikan';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_31'] = ' Jarak dari anda';
+?>

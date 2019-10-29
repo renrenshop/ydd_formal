@@ -1,0 +1,37 @@
+<?php
+$lang['lang_plugin_lottery_core_model_0'] = ' Giải thưởng đã hết hạn';
+$lang['lang_plugin_lottery_core_model_1'] = ' tiêu thụ đầy đủ';
+$lang['lang_plugin_lottery_core_model_2'] = ' Nhân dân tệ';
+$lang['lang_plugin_lottery_core_model_3'] = ' Quà tặng';
+$lang['lang_plugin_lottery_core_model_4'] = ' Thời gian';
+$lang['lang_plugin_lottery_core_model_5'] = ' Check - in đầy đủ';
+$lang['lang_plugin_lottery_core_model_6'] = ' ngày';
+$lang['lang_plugin_lottery_core_model_7'] = ' Quà tặng';
+$lang['lang_plugin_lottery_core_model_8'] = ' Thời gian';
+$lang['lang_plugin_lottery_core_model_9'] = ' hoàn thành một nhiệm vụ poster';
+$lang['lang_plugin_lottery_core_model_10'] = ' Quà tặng';
+$lang['lang_plugin_lottery_core_model_11'] = ' Thời gian';
+$lang['lang_plugin_lottery_core_model_12'] = ' hoàn thành một nhiệm vụ poster';
+$lang['lang_plugin_lottery_core_model_13'] = ' Quà tặng';
+$lang['lang_plugin_lottery_core_model_14'] = ' Thời gian';
+$lang['lang_plugin_lottery_core_model_15'] = ' Tên hoạt động';
+$lang['lang_plugin_lottery_core_model_16'] = ' Bấm vào để vẽ';
+$lang['lang_plugin_lottery_core_model_17'] = ' chúc mừng bạn đã may mắn của bạn vẽ cơ hội';
+$lang['lang_plugin_lottery_core_model_18'] = ' chúc mừng bạn đã may mắn của bạn vẽ cơ hội';
+$lang['lang_plugin_lottery_core_model_19'] = ' Có được cơ hội xổ số kiến thiết';
+$lang['lang_plugin_lottery_core_model_20'] = ' xin chúc mừng về cơ hội của bạn để vẽ!! ';
+$lang['lang_plugin_lottery_core_model_21'] = ' nên quét mã chú ý điểm';
+$lang['lang_plugin_lottery_core_model_22'] = ' Nhiệm vụ hoạt động giới thiệu giải thưởng';
+$lang['lang_plugin_lottery_core_model_23'] = ' Được đề nghị phần thưởng';
+$lang['lang_plugin_lottery_core_model_24'] = ' Được đề nghị phần thưởng';
+$lang['lang_plugin_lottery_core_model_25'] = ' Được đề nghị phần thưởng';
+$lang['lang_plugin_lottery_core_model_26'] = ' điểm';
+$lang['lang_plugin_lottery_core_model_27'] = ' Tiền thưởng';
+$lang['lang_plugin_lottery_core_model_28'] = ' Nhân dân tệ';
+$lang['lang_plugin_lottery_core_model_29'] = ' Phong bì màu đỏ';
+$lang['lang_plugin_lottery_core_model_30'] = ' Nhân dân tệ';
+$lang['lang_plugin_lottery_core_model_31'] = ' Sản phẩm đặc biệt';
+$lang['lang_plugin_lottery_core_model_32'] = ' một';
+$lang['lang_plugin_lottery_core_model_33'] = ' Phiếu giảm giá';
+$lang['lang_plugin_lottery_core_model_34'] = ' tờ';
+?>

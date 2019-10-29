@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_bargain_template_mobile_default_detail_0'] = ' ต่อรองราคารายละเอียดสินค้า';
+$lang['lang_plugin_bargain_template_mobile_default_detail_1'] = ' ไม่เริ่มต้น';
+$lang['lang_plugin_bargain_template_mobile_default_detail_2'] = ' ปิด';
+$lang['lang_plugin_bargain_template_mobile_default_detail_3'] = ' ที่เหลืออยู่';
+$lang['lang_plugin_bargain_template_mobile_default_detail_4'] = ' วัน';
+$lang['lang_plugin_bargain_template_mobile_default_detail_5'] = ' ชั่วโมง';
+$lang['lang_plugin_bargain_template_mobile_default_detail_6'] = ' นาที';
+$lang['lang_plugin_bargain_template_mobile_default_detail_7'] = ' วินาที';
+$lang['lang_plugin_bargain_template_mobile_default_detail_8'] = ' ต่อรองราคารายละเอียดสินค้า';
+$lang['lang_plugin_bargain_template_mobile_default_detail_9'] = ' ราคาล่าง:';
+$lang['lang_plugin_bargain_template_mobile_default_detail_10'] = ' ราคาเดิม:';
+$lang['lang_plugin_bargain_template_mobile_default_detail_11'] = ' ราคาเดิม:';
+$lang['lang_plugin_bargain_template_mobile_default_detail_12'] = ' ผู้ที่เกี่ยวข้อง';
+$lang['lang_plugin_bargain_template_mobile_default_detail_13'] = ' กฎ';
+$lang['lang_plugin_bargain_template_mobile_default_detail_14'] = ' กระบวนการเจรจาต่อรอง';
+$lang['lang_plugin_bargain_template_mobile_default_detail_15'] = ' เลือกสินค้า';
+$lang['lang_plugin_bargain_template_mobile_default_detail_16'] = ' เชิญเพื่อนที่จะต่อรอง';
+$lang['lang_plugin_bargain_template_mobile_default_detail_17'] = ' จ่ายหลังจากตัดราคาต่ำสุด';
+$lang['lang_plugin_bargain_template_mobile_default_detail_18'] = ' รายละเอียดข้อความ';
+$lang['lang_plugin_bargain_template_mobile_default_detail_19'] = ' บ้าน';
+$lang['lang_plugin_bargain_template_mobile_default_detail_20'] = ' ซื้อราคาเดิม';
+$lang['lang_plugin_bargain_template_mobile_default_detail_21'] = ' คุณเป็นคนเริ่มต่อรองราคาสำหรับผลิตภัณฑ์นี้.';
+$lang['lang_plugin_bargain_template_mobile_default_detail_22'] = ' อยากดูตอนนี้ ';
+$lang['lang_plugin_bargain_template_mobile_default_detail_23'] = ' คำแนะนำในการต่อรอง';
+$lang['lang_plugin_bargain_template_mobile_default_detail_24'] = ' ต่อรองตอนนี้';
+$lang['lang_plugin_bargain_template_mobile_default_detail_25'] = ' ไม่เริ่มต้น';
+$lang['lang_plugin_bargain_template_mobile_default_detail_26'] = ' ปิด';
+$lang['lang_plugin_bargain_template_mobile_default_detail_27'] = ' สินค้าคงคลังไม่เพียงพอ';
+$lang['lang_plugin_bargain_template_mobile_default_detail_28'] = ' ของฉัน';
+?>

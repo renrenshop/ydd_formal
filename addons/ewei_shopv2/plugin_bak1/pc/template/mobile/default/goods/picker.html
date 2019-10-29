@@ -1,0 +1,51 @@
+<script type="text/html" id="option-picker">
+    <div class="option-picker">
+
+        <div class="option-picker-inner" style="max-width:800px;margin: 0px auto">
+            <div class="option-picker-cell goodinfo">
+                <div class="closebtn"><i class="icon icon-roundclose"></i></div>
+                <div class="img"><img class='thumb' src="<%goods.thumb%>"/></div>
+                <div class="info info-price text-danger"><span>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_picker_0']}<span class='price'><%if goods.maxprice == goods.minprice%><%goods.minprice%><%else%><%goods.minprice%>~<%goods.maxprice%><%/if%></span></span>
+                </div>
+                <div class="info info-total">
+                    <%if goods.showtotal != 0%>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_picker_1']} <span class='total text-danger'><%goods.total%></span> {php echo $lang['lang_plugin_pc_template_mobile_default_goods_picker_2']}<%/if%>
+                </div>
+                <div class="info info-titles"><%if specs.length>0%>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_picker_3']}<%/if%></div>
+            </div>
+            <div class="option-picker-options">
+                <%each specs as spec%>
+                <div class="option-picker-cell option spec">
+                    <div class="title"><%spec.title%></div>
+                    <div class="select">
+                        <%each spec.items as item%>
+                        <a href="javascript:;" class="btn btn-default btn-sm nav spec-item" data-id="<%item.id%>"
+                           data-thumb="<%item.thumb%>"> <%item.title%> </a>
+                        <%/each%>
+                    </div>
+                </div>
+                <%/each%>
+                <%=diyformhtml%>
+                <div class="fui-cell-group">
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_picker_4']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-mask noremark">
+                            <div class="fui-number">
+                                <div class="minus">-</div>
+                                <input class="num" type="tel" name="" value="1"/>
+                                <div class="plus ">+</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="fui-navbar" style="max-width:800px">
+                <a href="javascript:;" class="nav-item btn cartbtn" style='display:none'>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_picker_5']}</a>
+                <a href="javascript:;" class="nav-item btn buybtn" style='display:none'>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_picker_6']}</a>
+                <a href="javascript:;" class="nav-item btn confirmbtn" style='display:none'>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_picker_7']}</a>
+            </div>
+        </div>
+    </div>
+</script>

@@ -1,0 +1,195 @@
+<div class='fui-content params-block'>
+    <div class="inner">
+
+        <div class="param-item param-pricelist">
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_0']}</div>
+            <div class="fui-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_1']}</div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_2']}{php echo price_format($item['goodsprice'])}</div>
+                </div>
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_3']}</div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_4']}{php echo price_format($item['olddispatchprice'])}</div>
+                </div>
+                {if $item['taskdiscountprice']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_5']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_6']}{php echo price_format( $item['taskdiscountprice'])}</div>
+                    </div>
+                {/if}
+                {if $item['lotterydiscountprice']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_7']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_8']}{php echo price_format( $item['lotterydiscountprice'])}</div>
+                    </div>
+                {/if}
+                {if $item['discountprice']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_9']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_10']}{php echo price_format( $item['discountprice'])}</div>
+                    </div>
+                {/if}
+                {if $item['deductprice']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_11']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_12']}{php echo price_format( $item['deductprice'])}</div>
+                    </div>
+                {/if}
+                {if $item['deductcredit2']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_13']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_14']}{php echo price_format( $item['deductcredit2'])}</div>
+                    </div>
+                {/if}
+                {if $item['deductenough']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_15']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_16']}{php echo price_format( $item['deductenough'])}</div>
+                    </div>
+                {/if}
+                {if $item['couponprice']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_17']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_18']}{php echo price_format( $item['couponprice'])}</div>
+                    </div>
+                {/if}
+                {if intval($item['changeprice'])!=0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_19']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">
+                            <span style='{if 0<$item['changeprice']}color:green{else}color:red{/if}'>{if 0<$item['changeprice']}+{else}-{/if}{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_20']}{php echo price_format(abs($item['changeprice']))}</span>
+                        </div>
+                    </div>
+                {/if}
+                {if intval($item['changedispatchprice'])!=0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_21']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">
+                            <span style='{if 0<$item['changedispatchprice']}color:green{else}color:red{/if}'>{if 0<$item['changedispatchprice']}+{else}-{/if}{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_22']}{php echo abs($item['changedispatchprice'])}</span>
+                        </div>
+                    </div>
+                {/if}
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_23']}</div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_24']}{php echo price_format($item['price'],2)}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="param-item param-submit">
+            <div class="fui-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_25']}</div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark noremark">{$r_type[$refund['rtype']]}</div>
+                </div>
+            </div>
+
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_26']}({php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_27']})</div>
+            <div class="fui-list-group radio-group">
+                {if ($refund['status'] < 4)}
+                    <div class="fui-list">
+                        <div class="fui-list-media">
+                            <input type="radio" class="fui-radio  fui-radio-success" name="refundstatus" value="-1" />
+                        </div>
+                        <div class="fui-list-inner">
+                            <div class="subtitle">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_28']}</div>
+                        </div>
+                    </div>
+                {/if}
+
+                {if ($refund['rtype'] == 1 || $refund['rtype'] == 2)}
+                    {if $refund['status'] < 3}
+                        <div class="fui-list">
+                            <div class="fui-list-media">
+                                <input type="radio" class="fui-radio  fui-radio-success" name="refundstatus" value="3" {if $refund['status']==3 || $refund['status']==4}checked="checked"{/if} />
+                            </div>
+                            <div class="fui-list-inner">
+                                <div class="subtitle">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_29']}({php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_30']})</div>
+                            </div>
+                        </div>
+                    {/if}
+                {/if}
+
+                {if ($refund['rtype'] == 0 || $refund['rtype'] == 1)}
+                    <div class="fui-list">
+                        <div class="fui-list-media">
+                            <input type="radio" class="fui-radio  fui-radio-success" name="refundstatus" value="1" />
+                        </div>
+                        <div class="fui-list-inner">
+                            <div class="subtitle">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_31']}{if $refund['rtype'] == 1 }({if $refund['status'] <3}{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_32']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_33']}{/if}){/if}</div>
+                        </div>
+                    </div>
+                    <div class="fui-list">
+                        <div class="fui-list-media">
+                            <input type="radio" class="fui-radio  fui-radio-success" name="refundstatus" value="2" />
+                        </div>
+                        <div class="fui-list-inner">
+                            <div class="subtitle">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_34']}</div>
+                        </div>
+                    </div>
+                {/if}
+
+                {if $refund['rtype'] == 2}
+                    <div class="fui-list">
+                        <div class="fui-list-media">
+                            <input type="radio" class="fui-radio  fui-radio-success" name="refundstatus" value="5"  {if $refund['status']==5}checked="checked"{/if} />
+                        </div>
+                        <div class="fui-list-inner">
+                            <div class="subtitle">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_35']}</div>
+                        </div>
+                    </div>
+                    {if $refund['status'] == 5}
+                        <div class="fui-list">
+                            <div class="fui-list-media">
+                                <input type="radio" class="fui-radio  fui-radio-success" name="refundstatus" value="10" />
+                            </div>
+                            <div class="fui-list-inner">
+                                <div class="subtitle">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_36']}</div>
+                            </div>
+                        </div>
+                    {/if}
+                {/if}
+            </div>
+
+            <div class="help-group" style="display: none;">
+                <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_37']} {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_38']}({php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_39']})</div>
+                <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_40']} {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_41']}({php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_42']})</div>
+                <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_43']} {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_44']}</div>
+                <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_45']} {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_46']}</div>
+                <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_47']} {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_48']}</div>
+            </div>
+
+            <div class="refuse-group" style="display: none;">
+                <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_49']}</div>
+                <div class="fui-cell-group">
+                    <div class="fui-cell fui-cell-textarea">
+                        <div class="fui-cell-info">
+                            <textarea rows="6" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_50']}" id="refundcontent">{$item['remarksaler']}</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="fui-navbar params">
+        <div class="nav-item btn btn-gray cancel-params">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_51']}</div>
+        <div class="nav-item btn btn-success submit-params">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_refund_52']}</div>
+    </div>
+</div>

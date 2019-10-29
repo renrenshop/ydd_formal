@@ -1,0 +1,29 @@
+{if $goods['canbuy']}
+    {if $goods['type']!=4}
+        <div class="fui-cell-group fui-cell-click" style="margin-top: {$diyitem['style']['margintop']}px; margin-bottom: {$diyitem['style']['marginbottom']}px; background: {$diyitem['style']['background']}">
+            <div class="fui-cell">
+                <div class="fui-cell-text option-selector" style="color: {$diyitem['style']['textcolor']}">{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_spec_0']}{if empty($spec_titles)}{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_spec_1']}{else}{$spec_titles}{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_spec_2']}{/if}</div>
+                <div class="fui-cell-remark"></div>
+            </div>
+        </div>
+    {/if}
+{else}
+<div class="fui-cell-group fui-cell-click">
+    <div class="fui-cell">
+        <div class="fui-cell-text">
+            {if $goods['userbuy']==0}
+            {php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_spec_3']}{$goods['usermaxbuy']}{php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_spec_4']}
+            {else if $goods['levelbuy']==0}
+            {php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_spec_5']}
+            {else if $goods['groupbuy']==0}
+            {php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_spec_6']}
+            {else if $goods['timebuy'] ==-1}
+            {php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_spec_7']}!
+            {else if $goods['timebuy'] ==1}
+            {php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_spec_8']}!
+            {else if $goods['total'] <=0}
+            {php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_detail_spec_9']}!
+            {/if}</div>
+    </div>
+</div>
+{/if}

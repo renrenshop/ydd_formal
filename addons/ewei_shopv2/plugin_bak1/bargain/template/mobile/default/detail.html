@@ -1,0 +1,151 @@
+{template '_header'}
+<script>document.title = "{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_0']}"; </script>
+    <link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/plugin/bargain/static/css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/plugin/bargain/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/plugin/bargain/static/css/bargain.css">
+    <script language="javascript" type="text/javascript">
+        var interval = 1000;
+        function ShowCountDown(year,month,day,hour,minute,second,status,divname)
+        {
+            var now = new Date();
+            var endDate = new Date(year, month-1, day,hour,minute,second);
+            var leftTime=endDate.getTime()-now.getTime();
+            var leftsecond = parseInt(leftTime/1000);
+            //var day1=parseInt(leftsecond/(24*60*60*6));
+            var day1=Math.floor(leftsecond/(60*60*24));
+            var hour=Math.floor((leftsecond-day1*24*60*60)/3600);
+            var minute=Math.floor((leftsecond-day1*24*60*60-hour*3600)/60);
+            var second=Math.floor(leftsecond-day1*24*60*60-hour*3600-minute*60);
+            var cc = document.getElementById(divname);
+            if (status == 0) {
+                cc.innerHTML = "{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_1']}";
+                return;
+            }else if(status == 1){
+                cc.innerHTML = "{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_2']}";
+                return;
+            }else{
+                cc.innerHTML = "{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_3']}:"+day1+"{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_4']}"+hour+"{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_5']}"+minute+"{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_6']}"+second+"{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_7']}";
+            }
+        }
+        window.setInterval(function(){ShowCountDown({$year},{$month},{$day},{$hour},{$minute},{$second},{$status},'divdown2');}, interval);
+    </script>
+
+
+<div class='fui-page-group'>
+    <div class='fui-page fui-page-current'>
+        {if is_h5app()}
+        <div class="fui-header">
+            <div class="fui-header-left">
+                <a class="back"></a>
+            </div>
+            <div class="title">{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_8']}</div>
+            <div class="fui-header-right"></div>
+        </div>
+        {/if}
+        <div class='fui-content'>
+            <div class='fui-swipe' data-speed='5000' data-gap ='2'>
+                <div class='fui-swipe-wrapper'>
+                    {if $ewei_detail['thumb']}<div class="fui-swipe-item"><img src="{php echo tomedia($ewei_detail['thumb']);}" alt=""></div>{/if}
+                    {loop $res['images'] $key}
+                    <div class="fui-swipe-item"><img src="{php echo tomedia($key);}" alt=""></div>
+                    {/loop}
+                </div>
+                <div class="swipe-info" style="color: {$res['custom']['countdown_color']};">
+                    <font style="font-size: 20px;float: left;">{$res['custom']['countdown']}</font> <font id="divdown2" style="float: right"></font>
+                </div>
+
+            </div>
+            <div class="lynn_goods_head">
+                <div class="lynn-goods-head-top fui-list">
+                    {if $res['type']==1}
+                    <div class="fui-list-inner">
+                        {php echo $lang['lang_plugin_bargain_template_mobile_default_detail_9']}&yen;<strong>{$res['end_price']}</strong> {php echo $lang['lang_plugin_bargain_template_mobile_default_detail_10']}<del>{$res['start_price']}</del>
+                    </div>
+                    {/if}
+                    {if $res['type']==0}
+                    <div class="fui-list-inner">
+                        {php echo $lang['lang_plugin_bargain_template_mobile_default_detail_11']}&yen; <strong>{$res['start_price']}</strong><span style="color:{$res['custom']['cutmore_color']}">{$res['custom']['cutmore']}</span>
+                    </div>
+                    {/if}
+                    <div class="fui-list-media">
+                        <i>{$res['act_times']}{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_12']}</i>
+                    </div>
+                </div>
+                <div class="lynn-goods-head-title fui-list">
+                    <div class="fui-list-inner">
+                        <h2>{$res['title']}</h2>
+                        <p>{$res['title2']}</p>
+                    </div>
+
+                    <div class="fui-list-media">
+                        <a href="{php echo mobileUrl('bargain/rule',array('id'=>$id))}" data-nocache="true"><i class="icon icon-menu"></i><p>{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_13']}</p></a>
+                    </div>
+                </div>
+
+                <div class="lynn-goods-head-user">
+                    <div class="lynn-goods-head-user-top fui-list">
+                </div>
+                    <div class="detail-rule">
+                        <div class="detail-tule-top fui-list">
+                            <div class="fui-list-inner"><i></i>{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_14']}</div>
+
+                        </div>
+                        <div class="detail-tule-bot fui-list">
+                            <div class="fui-list-inner active"><i>1</i><p><span>{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_15']}</span></p></div>
+                            <div class="fui-list-media"><i class="icon icon-right"></i></div>
+                            <div class="fui-list-inner"><i>2</i><p><span>{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_16']}</span></p></div>
+                            <div class="fui-list-media"><i class="icon icon-right"></i></div>
+                            <div class="fui-list-inner"><i>3</i><p><span>{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_17']}</span></p></div>
+                        </div>
+                    </div>
+
+
+                <div class="detail-info content content-images">
+
+                    <div class="detail-info-title"><span>{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_18']}</span></div>
+
+                    <div class="detail-info-content">
+                        {php echo htmlspecialchars_decode($res['content']);}
+
+                    </div>
+                    {template '_copyright'}
+                </div>
+
+            </div>
+
+            <div style="height:2.5rem;"></div>
+
+        </div>
+
+
+
+    </div>
+        <div class="fui-navbar footer-nav bordert" style="z-index:10;padding:0;">
+            <a href="{php echo mobileurl(bargain);}" class="nav-item home-btn" data-nocache="true">
+                <span class="icon icon-home1"></span>
+                <span class="label">{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_19']}</span>
+            </a>
+            <a href="{php echo mobileUrl('order/create',array('id'=>$res['goods_id']));}" class="nav-item lynn-bargain-a lynn-bargain-now-a" data-nocache="true"><span>{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_20']}</span></a>
+            {if $swi==0}
+            <a {if !$act_swi['id']}href="{php echo mobileurl('bargain/join',array('goods'=>$res['id']));}"{else}onclick="FoxUI.confirm('{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_21']},{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_22']}','{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_23']}',callback)"{/if} class="nav-item lynn-bargain-a lynn-bargain-share-a external"><span style="border: 1px solid {$res['custom']['btn_color']};background-color: {$res['custom']['btn_color']}" data-nocache="true">{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_24']}</span></a>{/if}
+
+            {if $swi==1}<a class="nav-item lynn-bargain-a lynn-bargain-now-a"><span style="color: #ccc">{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_25']}</span></a>{/if}
+            {if $swi==2}<a href="" class="nav-item lynn-bargain-a lynn-bargain-now-a"><span style="color: #ccc">{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_26']}</span></a>{/if}
+            {if $swi==3}<a href="" class="nav-item lynn-bargain-a lynn-bargain-now-a"><span style="color: #ccc">{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_27']}</span></a>{/if}
+            <a href="{php echo mobileurl('bargain/act');}" class="nav-item home-btn">
+                <span class="icon icon-my1"></span>
+                <span class="label">{php echo $lang['lang_plugin_bargain_template_mobile_default_detail_28']}</span>
+            </a>
+        </div>
+</div>
+
+    <script>
+
+        function callback() {
+            window.location.href = "{php echo mobileUrl('bargain/bargain',array('id'=>$act_swi['id']))}";
+        }
+    </script>
+
+
+
+{template '_footer'}

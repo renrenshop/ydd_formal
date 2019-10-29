@@ -1,0 +1,34 @@
+<?php
+$lang['lang_template_mobile_member_index_0'] = 'सदस्यकेंद्र';
+$lang['lang_template_mobile_member_index_1'] = 'रिचार्ज';
+$lang['lang_template_mobile_member_index_2'] = 'आमसदस्य';
+$lang['lang_template_mobile_member_index_3'] = 'Exchange';
+$lang['lang_template_mobile_member_index_4'] = 'फ़ोननंबरबाइंड';
+$lang['lang_template_mobile_member_index_5'] = 'यदिआपफोननंबरकेद्वाराएकसदस्यपंजीकृतहैयायदिआपमाइक्रोमेलकेमाध्यमसेखरीदारीजानाचाहतेहैं, तोकृपयाअपनेफोननंबरबाइंड।';
+$lang['lang_template_mobile_member_index_6'] = 'वर्तमानउपयोगकर्ताऑपरेटरकेलिएबाध्यहै, आपफोनसेमॉलकाप्रबंधनकरसकतेहैं';
+$lang['lang_template_mobile_member_index_7'] = 'मेरेआदेश';
+$lang['lang_template_mobile_member_index_8'] = 'सभीऑर्डरदेखें';
+$lang['lang_template_mobile_member_index_9'] = 'भुगतानलंबित';
+$lang['lang_template_mobile_member_index_10'] = 'लंबितवितरण';
+$lang['lang_template_mobile_member_index_11'] = 'लंबितवितरण';
+$lang['lang_template_mobile_member_index_12'] = 'रिटर्न';
+$lang['lang_template_mobile_member_index_13'] = 'कार्यकेंद्र';
+$lang['lang_template_mobile_member_index_14'] = 'कूपनप्राप्त';
+$lang['lang_template_mobile_member_index_15'] = 'मेराकूपन';
+$lang['lang_template_mobile_member_index_16'] = 'सूचीमेंवापसपंक्तिबद्ध';
+$lang['lang_template_mobile_member_index_17'] = 'रैंक';
+$lang['lang_template_mobile_member_index_18'] = 'उपभोक्तारैंकिंग';
+$lang['lang_template_mobile_member_index_19'] = 'मेरीखरीदारीकीटोकरी';
+$lang['lang_template_mobile_member_index_20'] = 'मेरीचिंताओं';
+$lang['lang_template_mobile_member_index_21'] = 'मेरेपदचिह्न';
+$lang['lang_template_mobile_member_index_22'] = 'संदेशअनुस्मारकसेटिंग';
+$lang['lang_template_mobile_member_index_23'] = 'मेरीपूरीवापसी';
+$lang['lang_template_mobile_member_index_24'] = 'अबउल्लेख';
+$lang['lang_template_mobile_member_index_25'] = 'विवरण';
+$lang['lang_template_mobile_member_index_26'] = 'रिचार्जरिकॉर्ड';
+$lang['lang_template_mobile_member_index_27'] = 'वितरणपताप्रबंधन';
+$lang['lang_template_mobile_member_index_28'] = 'सहायताकेंद्र';
+$lang['lang_template_mobile_member_index_29'] = 'पासवर्डसंशोधितकरें';
+$lang['lang_template_mobile_member_index_30'] = 'लॉगिनसेबाहरनिकलें';
+$lang['lang_template_mobile_member_index_31'] = 'मैंनेपढ़ाहै';
+?>

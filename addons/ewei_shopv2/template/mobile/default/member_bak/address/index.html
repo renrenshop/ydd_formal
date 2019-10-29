@@ -1,0 +1,85 @@
+{template '_header'}
+<div class='fui-page  fui-page-current'>
+    <div class="fui-header">
+	<div class="fui-header-left">
+	    <a class="back"></a>
+	</div>
+	<div class="title">{php echo $lang['lang_template_mobile_member_address_index_0']}</div> 
+	<div class="fui-header-right">&nbsp;</div>
+    </div>
+    <div class='fui-content navbar' >
+
+	
+	<div class='content-empty' {if !empty($list)}style='display:none'{/if}>
+	    <i class='icon icon-location'></i>
+	    <br/>{php echo $lang['lang_template_mobile_member_address_index_1']}
+	</div>
+	
+	{loop $list $address}
+	<div class="fui-list-group address-item" style='margin-top:5px;'
+	     data-addressid="{$address['id']}">
+	    <div  class="fui-list" >
+		<div class="fui-list-inner">
+		    <div class="title"><span class='realname'>{$address['realname']}</span> <span class='mobile'>{$address['mobile']}</span></div>
+		    <div class="text">
+			<span class='address'>{$address['province']}{$address['city']}{$address['area']}{if !empty($new_area) && !empty($address_street)} {$address['street']}{/if} {$address['address']}</span>
+		    </div>
+		    <div class='bar' >
+			<span class='pull-right'>
+			    <a class="external" href="{php echo mobileUrl('member/address/post',array('id'=>$address['id']))}" data-nocache="true">
+				<i class='icon icon-edit2'></i> {php echo $lang['lang_template_mobile_member_address_index_2']}
+			    </a>
+			    &nbsp;&nbsp;
+			    <a data-toggle='delete' class='external'>
+				<i class='icon icon-delete'></i> {php echo $lang['lang_template_mobile_member_address_index_3']}
+			    </a>
+			</span>
+
+			<label class='radio-inline'>
+			    <input type="radio" name='setdefault' data-toggle='setdefault'  class="fui-radio  fui-radio-danger" {if $address['isdefault']}checked{/if} /> {php echo $lang['lang_template_mobile_member_address_index_4']}
+			</label>
+		    </div>
+		</div>
+	    </div>
+	</div> 
+	{/loop}
+
+    </div>
+    <div class='fui-navbar'>
+	<a href="{php echo mobileUrl('member/address/post')}" class='nav-item btn btn-danger external' data-nocache="true"><i class="icon icon-add"></i> {php echo $lang['lang_template_mobile_member_address_index_5']}</a>
+    </div>
+    <script id="tpl_address_item" type="text/html">
+	<div class="fui-list-group address-item" style='margin-top:5px;' data-addressid="<%address.id%>">
+	    <div  class="fui-list" >
+		<div class="fui-list-inner">
+		    <div class="title"><span class='realname'><%address.realname%></span> <span class='mobile'><%address.mobile%></span></div>
+		    <div class="text">
+			<span class='address'><%address.areas%> <%address.address%></span>
+		    </div>
+		    <div class='bar' >
+			<span class='pull-right'>
+			    <a class="external" href="{php echo mobileUrl('member/address/post')}&id=<%address.id%>" data-nocache='true'>
+				<i class='icon icon-edit'></i> {php echo $lang['lang_template_mobile_member_address_index_6']} 
+			    </a>
+			    &nbsp;&nbsp;
+			    <a data-toggle='delete' class='external'>
+				<i class='icon icon-delete'></i> {php echo $lang['lang_template_mobile_member_address_index_7']}
+			    </a>
+			</span>
+
+			<label class='radio-inline'>
+			    <input type="radio" data-toggle='setdefault' class="fui-radio  fui-radio-danger" <%if address.isdefault==1%>checked<%/if%> /> {php echo $lang['lang_template_mobile_member_address_index_8']}
+			</label>
+		    </div>
+		</div>
+	    </div>
+	</div> 
+   </script>
+    <script language='javascript'>
+    	require(['biz/member/address'], function (modal) {
+                modal.initList();
+        
+        });
+    </script>
+</div> 
+{template '_footer'}

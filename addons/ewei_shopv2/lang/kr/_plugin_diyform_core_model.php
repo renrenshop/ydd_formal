@@ -1,0 +1,32 @@
+<?php
+$lang['lang_plugin_diyform_core_model_0'] = ' 한줄텍스트';
+$lang['lang_plugin_diyform_core_model_1'] = ' 여러줄텍스트';
+$lang['lang_plugin_diyform_core_model_2'] = ' 드롭-다운상자';
+$lang['lang_plugin_diyform_core_model_3'] = ' 여러선택윤곽';
+$lang['lang_plugin_diyform_core_model_4'] = ' 그림';
+$lang['lang_plugin_diyform_core_model_5'] = ' ID 번호';
+$lang['lang_plugin_diyform_core_model_6'] = ' 날짜';
+$lang['lang_plugin_diyform_core_model_7'] = ' 날짜범위';
+$lang['lang_plugin_diyform_core_model_8'] = ' 도시';
+$lang['lang_plugin_diyform_core_model_9'] = ' 텍스트를확인';
+$lang['lang_plugin_diyform_core_model_10'] = ' 시간';
+$lang['lang_plugin_diyform_core_model_11'] = ' 시간범위';
+$lang['lang_plugin_diyform_core_model_12'] = ' 프롬프트텍스트';
+$lang['lang_plugin_diyform_core_model_13'] = ' 사용자정의';
+$lang['lang_plugin_diyform_core_model_14'] = ' 이름';
+$lang['lang_plugin_diyform_core_model_15'] = ' 전화';
+$lang['lang_plugin_diyform_core_model_16'] = ' 마이크로-신호';
+$lang['lang_plugin_diyform_core_model_17'] = ' 날작성';
+$lang['lang_plugin_diyform_core_model_18'] = ' 특정날짜';
+$lang['lang_plugin_diyform_core_model_19'] = ' 선택지역';
+$lang['lang_plugin_diyform_core_model_20'] = ' 선택시';
+$lang['lang_plugin_diyform_core_model_21'] = ' 입력해주세요.';
+$lang['lang_plugin_diyform_core_model_22'] = ' 선택';
+$lang['lang_plugin_diyform_core_model_23'] = ' 선택';
+$lang['lang_plugin_diyform_core_model_24'] = ' 선택';
+$lang['lang_plugin_diyform_core_model_25'] = ' 선택지역';
+$lang['lang_plugin_diyform_core_model_26'] = ' 선택시';
+$lang['lang_plugin_diyform_core_model_27'] = ' 영역선택';
+$lang['lang_plugin_diyform_core_model_28'] = ' 선택';
+$lang['lang_plugin_diyform_core_model_29'] = ' 제발입력';
+?>

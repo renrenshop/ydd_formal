@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_0'] = '订单管理';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_1'] = '更多';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_2'] = '顶部';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_3'] = '维权申请';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_4'] = '维权完成';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_5'] = '待发货';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_6'] = '待付款';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_7'] = '待收货';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_8'] = '已完成';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_9'] = '已关闭';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_10'] = '搜索框';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_11'] = '订单号';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_12'] = '会员信息';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_13'] = '收件人信息';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_14'] = '地址信息';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_15'] = '快递单号';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_16'] = '商品名称';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_17'] = '商品编码';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_18'] = '核销员';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_19'] = '核销门店';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_20'] = '商户名称';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_21'] = '输入关键字';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_22'] = '搜索';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_23'] = '订单列表';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_24'] = '加载更多';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_25'] = '没有数据';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_26'] = '没有更多了';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_27'] = '普通订单';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_28'] = '维权订单';
+?>

@@ -1,0 +1,31 @@
+<?php
+$lang['lang_module_sale_coupon_detail_0'] = 'पूर्ण';
+$lang['lang_module_sale_coupon_detail_1'] = 'मेटाउपलब्ध';
+$lang['lang_module_sale_coupon_detail_2'] = 'कोईराशिथ्रेशोल्डनहीं';
+$lang['lang_module_sale_coupon_detail_3'] = 'रिचार्जपूर्ण';
+$lang['lang_module_sale_coupon_detail_4'] = 'मेटाउपलब्ध';
+$lang['lang_module_sale_coupon_detail_5'] = 'कोईराशिथ्रेशोल्डनहीं';
+$lang['lang_module_sale_coupon_detail_6'] = 'पूर्ण';
+$lang['lang_module_sale_coupon_detail_7'] = 'मेटाउपलब्ध';
+$lang['lang_module_sale_coupon_detail_8'] = 'कोईराशिथ्रेशोल्डनहीं';
+$lang['lang_module_sale_coupon_detail_9'] = 'RM';
+$lang['lang_module_sale_coupon_detail_10'] = 'गुना';
+$lang['lang_module_sale_coupon_detail_11'] = 'युआनबैलेंस';
+$lang['lang_module_sale_coupon_detail_12'] = 'अंक';
+$lang['lang_module_sale_coupon_detail_13'] = 'मेटालिफाफे';
+$lang['lang_module_sale_coupon_detail_14'] = 'सामांयस्तर';
+$lang['lang_module_sale_coupon_detail_15'] = 'सामांयस्तर';
+$lang['lang_module_sale_coupon_detail_16'] = 'सामांयस्तर';
+$lang['lang_module_sale_coupon_detail_17'] = 'सामांयस्तर';
+$lang['lang_module_sale_coupon_detail_18'] = 'नहींकरसकता';
+$lang['lang_module_sale_coupon_detail_19'] = 'अपर्याप्तकूपनगणना';
+$lang['lang_module_sale_coupon_detail_20'] = 'आपपारकरचुकेहै';
+$lang['lang_module_sale_coupon_detail_21'] = 'संख्यासीमा';
+$lang['lang_module_sale_coupon_detail_22'] = 'अपनेअंककेलिएसक्षमहोनेकेलिएपर्याप्तनहींकररहेहैं';
+$lang['lang_module_sale_coupon_detail_23'] = 'गैर-माइक्रो-विश्वासवातावरण';
+$lang['lang_module_sale_coupon_detail_24'] = 'नहींखुलासूक्ष्मपत्रभुगतान';
+$lang['lang_module_sale_coupon_detail_25'] = 'कूपनरसीद';
+$lang['lang_module_sale_coupon_detail_26'] = 'माइक्रो-पत्रभुगतानपैरामीटरत्रुटि';
+$lang['lang_module_sale_coupon_detail_27'] = 'आदेशनहींमिला';
+$lang['lang_module_sale_coupon_detail_28'] = 'भुगतानअसफल';
+?>

@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_0'] = '积分';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_1'] = '奖金';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_2'] = '红包';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_3'] = '特惠商品';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_4'] = '优惠券';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_5'] = '抽到';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_6'] = '时间';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_7'] = '暂无中奖记录';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_8'] = '立即抽奖';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_9'] = '剩余抽奖次数';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_10'] = '次';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_11'] = '奖励说明';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_12'] = '我的中奖记录';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_13'] = '无活动';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_14'] = '恭喜您';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_15'] = '领取';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_16'] = '任务成功';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_17'] = '好的';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_18'] = '很遗憾';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_19'] = '您无法领取该任务';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_20'] = '好的，我知道了';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_21'] = '发奖';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_22'] = '领取成功';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_23'] = '无奖励';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_24'] = '当前转动到哪个位置';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_25'] = '总共有多少个位置';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_26'] = '的';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_27'] = '，用';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_28'] = '清除';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_29'] = '初始转动速度';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_30'] = '转动次数';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_31'] = '转动基本次数：即至少需要转动多少次再进入抽奖环节';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_32'] = '中奖位置';
+?>

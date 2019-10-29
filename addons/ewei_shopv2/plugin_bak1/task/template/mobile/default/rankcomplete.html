@@ -1,0 +1,124 @@
+{template '_header'}
+{if !empty($taskinfo)}
+<script>document.title = "{$taskinfo['title']}"; </script>
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/task/static/style/common.css" />
+
+<div class='fui-page  fui-page-current task-detail-page'>
+
+    <div class="fui-content">
+        <div class="detail-head">
+            {if !empty($taskinfo['poster_banner']) }
+            <img src="{$taskinfo['poster_banner']}" />
+            {else}
+            <img src="../addons/ewei_shopv2/plugin/task/static/images/detail-head.jpg" />
+            {/if}
+        </div>
+
+        <div class="detail-list-title"><i class="icon icon-form"></i> {$taskinfo['title']}</div>
+        <div class="detail-list">
+            {if !empty($taskinfo['reward_data']) }
+            {loop $taskinfo['reward_data'] $key $value}
+            {if !empty($value)}
+            <div class="list-item">
+                <div class="inner">
+                    <div class="basic">
+                        <div class="name">{$rankinfo[$key]}</div>
+                        <div class="desc">{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_0']}{$value['needcount']}{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_1']}</div>
+                    </div>
+                    <div class="reward">
+                        {if isset($value['credit'])&&$value['credit']>0}
+                        <div class="reward-item">
+                            <div class="reward-info">{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_2']} <span>{$value['credit']}</span></div>
+                            <div class="reward-btn disabled">{if $value['needcount']>$taskinfo['completecount']}{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_3']} {php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_4']}{else}{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_5']}{/if}</div>
+                        </div>
+                        {/if}
+                        {if isset($value['money'])&&$value['money']>0}
+                        <div class="reward-item">
+                            <div class="reward-info">{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_6']} <span>{$value['money']['num']}</span></div>
+                            <div class="reward-btn disabled">{if $value['needcount']>$taskinfo['completecount']}{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_7']} {php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_8']}{else}{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_9']}{/if}</div>
+                        </div>
+                        {/if}
+                        {if isset($value['bribery'])&&$value['bribery']>0}
+                        <div class="reward-item">
+                            <div class="reward-info">{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_10']} <span>{$value['bribery']}</span></div>
+                            <div class="reward-btn disabled">{if $value['needcount']>$taskinfo['completecount']}{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_11']} {php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_12']}{else}{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_13']}{/if}</div>
+                        </div>
+                        {/if}
+                        {if isset($value['coupon']['total'])&&$value['coupon']['total']>0}
+                        <div class="reward-item">
+                            <div class="reward-info">{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_14']} <span>{$value['coupon']['total']}</span></div>
+                            <div class="reward-btn disabled">{if $value['needcount']>$taskinfo['completecount']}{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_15']} {php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_16']}{else}{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_17']}{/if}</div>
+                        </div>
+                        {/if}
+                        {if isset($value['goods'])&&count($value['goods'])>0}
+                        <div class="reward-item">
+                            <div class="reward-info">{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_18']} <span>{php echo count($value['goods']);}</span></div>
+                            {if $value['needcount']>$taskinfo['completecount']}<div class="reward-btn disabled">{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_19']} {php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_20']}</div>{else}<a href="{php echo mobileUrl('task/goodslist',array('id'=>$taskinfo['join_id']),true);}"><div class="reward-btn ">{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_21']} {php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_22']}</div></a>{/if}
+                        </div>
+                        {/if}
+                    </div>
+                </div>
+                {if $value['needcount']>$taskinfo['completecount']}
+                <div class="status">
+                    <div class="text">
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_23']}</p>
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_24']}</p>
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_25']}</p>
+                    </div>
+                </div>
+                {else}
+                <div class="status red">
+                    <div class="text">
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_26']}</p>
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_27']}</p>
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_28']}</p>
+                    </div>
+                </div>
+                {/if}
+            </div>
+            {else}
+            <div class="list-item">
+                <div class="inner">
+                    <div class="basic">
+                        <div class="name">{$rankinfo[1]}</div>
+                        <div class="desc">{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_29']}</div>
+                    </div>
+                    <div class="reward">
+                        <div class="reward-item">
+                            <div class="reward-info">{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_30']}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="text">
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_31']}</p>
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_32']}</p>
+                    </div>
+                </div>
+            </div>
+            {/if}
+            {/loop}
+            {else}
+            <div class="list-item">
+               <p class="text-center">{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_33']}</p>
+            </div>
+            {/if}
+        </div>
+
+        <div class="detail-list-title"><i class="icon icon-information"></i> {php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_34']}</div>
+
+        <div class="detail-text">{if !empty($res['taskinfo'])}{php $taskinfo = unserialize($res['taskinfo']); echo htmlspecialchars_decode($taskinfo);}{else}{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_35']}{/if}</div>
+
+    </div>
+
+</div>
+{else}
+<script>document.title = '{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_36']}'; </script>
+<div class='fui-page  fui-page-current'>
+    <div class="fui-content ">
+        <h3 class="text-center">{php echo $lang['lang_plugin_task_template_mobile_default_rankcomplete_37']}</h3>
+    </div>
+</div>
+{/if}
+
+{template '_footer'}

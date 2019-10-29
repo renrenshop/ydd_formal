@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_account_forget_0'] = ' Selamat datang ke';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_1'] = ' bukan merupakan seorang ahli Laman web ini? Dengan serta-merta';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_2'] = ' Log';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_3'] = ' Daftar sekarang';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_4'] = ' Cari sekarang';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_5'] = ' Nombor telefon:';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_6'] = ' nombor telefon anda';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_7'] = ' Authenticode Kod:';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_8'] = ' agak Authenticode';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_9'] = ' Mendapatkan Captcha';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_10'] = ' Klik';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_11'] = ' Hantar SMS pengesahan';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_12'] = ' , dan menerima mesej telefon anda "';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_13'] = ' agak dinamik kod input kepada SMS pengesahan sebelum menghantar. ';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_14'] = ' Menetapkan kata laluan:';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_15'] = ' Huruf besar dan huruf kecil, simbol, atau nombor';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_16'] = ' Sahkan kata laluan:';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_17'] = ' Memasukkan semula kata laluan log masuk anda';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_18'] = ' Daftar sekarang';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_19'] = ' Cari sekarang';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_20'] = ' Lupa kata laluan';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_21'] = ' Daftar sekarang';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_22'] = ' selepas mendaftar anda boleh';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_23'] = ' membeli barang-barang untuk membayar pesanan';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_24'] = ' Mengumpul produk kedai perhatian';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_25'] = ' Menjamin transaksi integriti tidak perlu risau';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_26'] = ' mendapat keutamaan membeli kredit';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_27'] = ' Keistimewaan keistimewaan keahlian';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_28'] = ' Menilai matahari-berdiri di luar perkongsian';
+?>

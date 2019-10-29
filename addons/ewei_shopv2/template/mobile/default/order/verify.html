@@ -1,0 +1,14 @@
+<div class="order-verify-hidden" style="display: none;">
+	<div class="verify-pop">
+	    <div class="close" {if is_h5app()}style="top: 2rem;"{/if}><i class="icon icon-roundclose"></i></div>
+	    <div class="qrcode">
+		<div class="loading"><i class="icon icon-qrcode1"></i> {php echo $lang['lang_template_mobile_order_verify_0']}</div>
+		<img class="qrimg" src="" />
+	    </div>
+	    <div class="tip">
+	    	<p>{php echo $lang['lang_template_mobile_order_verify_1']}?</p>
+	    	<p>{php echo $lang['lang_template_mobile_order_verify_2']}</p>
+	    	<p>({php echo $lang['lang_template_mobile_order_verify_3']})</p>
+	    </div>
+	</div>
+</div>

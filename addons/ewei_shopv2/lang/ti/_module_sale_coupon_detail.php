@@ -1,0 +1,31 @@
+<?php
+$lang['lang_module_sale_coupon_detail_0'] = ' เต็มรูปแบบ';
+$lang['lang_module_sale_coupon_detail_1'] = ' มีเมตา';
+$lang['lang_module_sale_coupon_detail_2'] = ' ไม่มีขีดจำกัดยอดเงิน';
+$lang['lang_module_sale_coupon_detail_3'] = ' ชาร์จเต็ม';
+$lang['lang_module_sale_coupon_detail_4'] = ' มีเมตา';
+$lang['lang_module_sale_coupon_detail_5'] = ' ไม่มีขีดจำกัดยอดเงิน';
+$lang['lang_module_sale_coupon_detail_6'] = ' เต็มรูปแบบ';
+$lang['lang_module_sale_coupon_detail_7'] = ' มีเมตา';
+$lang['lang_module_sale_coupon_detail_8'] = ' ไม่มีขีดจำกัดยอดเงิน';
+$lang['lang_module_sale_coupon_detail_9'] = ' RM';
+$lang['lang_module_sale_coupon_detail_10'] = ' พับ';
+$lang['lang_module_sale_coupon_detail_11'] = ' ยอดดุลหยวน';
+$lang['lang_module_sale_coupon_detail_12'] = ' จุด';
+$lang['lang_module_sale_coupon_detail_13'] = ' ซองจดหมาย Meta';
+$lang['lang_module_sale_coupon_detail_14'] = ' ระดับปกติ';
+$lang['lang_module_sale_coupon_detail_15'] = ' ระดับปกติ';
+$lang['lang_module_sale_coupon_detail_16'] = ' ระดับปกติ';
+$lang['lang_module_sale_coupon_detail_17'] = ' ระดับปกติ';
+$lang['lang_module_sale_coupon_detail_18'] = ' ไม่สามารถ';
+$lang['lang_module_sale_coupon_detail_19'] = ' คูปองเพียงพอปริมาณ';
+$lang['lang_module_sale_coupon_detail_20'] = ' คุณได้เกิน';
+$lang['lang_module_sale_coupon_detail_21'] = ' จำนวนจำกัด';
+$lang['lang_module_sale_coupon_detail_22'] = ' คะแนนของคุณจะไม่เพียงพอที่จะสามารถ';
+$lang['lang_module_sale_coupon_detail_23'] = ' สภาพแวดล้อมที่ไม่ใช่ไมโครไว้วางใจ';
+$lang['lang_module_sale_coupon_detail_24'] = ' เปิดการชำระเงินจดหมายไมโคร';
+$lang['lang_module_sale_coupon_detail_25'] = ' หมายเลขการรับคูปอง';
+$lang['lang_module_sale_coupon_detail_26'] = ' ไมโครจดหมายข้อผิดพลาดพารามิเตอร์การชำระเงิน';
+$lang['lang_module_sale_coupon_detail_27'] = ' ไม่พบใบสั่ง';
+$lang['lang_module_sale_coupon_detail_28'] = ' การชำระเงินไม่สำเร็จ';
+?>

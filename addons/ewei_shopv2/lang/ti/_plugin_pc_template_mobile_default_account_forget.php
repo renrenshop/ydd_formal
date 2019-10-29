@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_account_forget_0'] = ' ยินดีต้อนรับสู่';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_1'] = ' ไม่ได้เป็นสมาชิกของเว็บไซต์นี้หรือไม่ ทันที';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_2'] = ' ที่บันทึกบน';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_3'] = ' ลงทะเบียนตอนนี้';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_4'] = ' ค้นหาเดี๋ยวนี้';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_5'] = ' หมายเลขโทรศัพท์:';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_6'] = ' หมายเลขโทรศัพท์';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_7'] = ' Authenticode รหัส:';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_8'] = ' บิต Authenticode';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_9'] = ' รับ Captcha';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_10'] = ' คลิก';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_11'] = ' ส่ง SMS รับรองความถูกต้อง';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_12'] = ' และได้รับข้อความโทรศัพท์มือถือของคุณ "';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_13'] = ' บิตยืนยัน SMS ก่อนที่จะส่งข้อมูลเข้ารหัสแบบไดนามิก ';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_14'] = ' ตั้งค่ารหัสผ่าน:';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_15'] = ' ตัวพิมพ์ใหญ่และตัวพิมพ์เล็ก สัญลักษณ์ หรือหมายเลข';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_16'] = ' ยืนยันรหัสผ่าน:';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_17'] = ' ใส่รหัสผ่านของคุณ';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_18'] = ' ลงทะเบียนตอนนี้';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_19'] = ' ค้นหาเดี๋ยวนี้';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_20'] = ' ลืมรหัสผ่าน';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_21'] = ' ลงทะเบียนตอนนี้';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_22'] = ' หลังจากลงทะเบียนคุณสามารถ';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_23'] = ' ซื้อสินค้าการชำระเงินใบสั่ง';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_24'] = ' รวบรวมผลิตภัณฑ์ร้านสนใจ';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_25'] = ' ธุรกรรมที่สมบูรณ์อย่างปลอดภัยไม่ต้องกังวล';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_26'] = ' รับสิทธิพิเศษซื้อเครดิต';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_27'] = ' สิทธิประโยชน์สิทธิพิเศษสมาชิก';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_28'] = ' กประเมินยืนอาบแดดภายนอกร่วมกัน';
+?>

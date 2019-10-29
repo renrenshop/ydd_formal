@@ -1,0 +1,500 @@
+{template 'pc/layout/_header'}
+<div class="ncm-container">
+    {template 'pc/layout/member/left-layout'}
+    <div class="right-layout">
+        <div class="wrap">
+            {template 'pc/layout/member/tabmenu'}
+            <div class='fui-page order-detail-page'>
+                {if count($carrier_list)>0 && !$isverify && !$isvirtual}
+                <div id="carrierTab" class="fui-tab fui-tab-danger">
+                    <a href="#tab1"  class="external active">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_0']}</a>
+                    <a href="#tab2" class='external'>{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_1']}</a>
+                </div>
+                {/if}
+                <div class='fui-content navbar'>
+
+                    <div class='fui-list-group result-list'>
+                        <div class='fui-list order-status'>
+
+                            <div class='fui-list-inner'>
+                                <div class='title'>
+                                    {if empty($order['status'])}
+                                    {if $order['paytype']==3}
+                                    {php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_2']}
+                                    {else}
+                                    {php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_3']}
+                                    {/if}
+                                    {elseif $order['status']==1}
+                                    {php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_4']}
+                                    {elseif $order['status']==2}
+                                    {php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_5']}
+                                    {elseif $order['status']==3}
+                                    {php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_6']}
+                                    {elseif $order['status']==-1}
+                                    {php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_7']}
+                                    {/if}
+
+                                    {if $order['refundstate'] > 0}
+                                    ({if $order['status'] ==1}{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_8']}{else}{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_9']}{/if}{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_10']})
+                                    {/if}
+                                </div>
+                                <div class='text'>{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_11']}({php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_12']}): {php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_13']}{$order['price']}<span></div>
+                            </div>
+                            <div class='fui-list-media'>
+                                {if empty($order['status'])}
+                                {if $order['paytype']==3}
+                                <i class='icon icon-deliver'></i>
+                                {else}
+                                <i class='icon icon-information'></i>
+                                {/if}
+                                {elseif $order['status']==1}
+                                <i class='icon icon-money'></i>
+                                {elseif $order['status']==2}
+                                <i class='icon icon-deliver'></i>
+                                {elseif $order['status']==3}
+                                <i class='icon icon-check'></i>
+                                {elseif $order['status']==-1}
+                                <i class='icon icon-roundclose'></i>
+                                {/if}
+
+                            </div>
+                        </div>
+                    </div>
+
+                    {if !empty($address)}
+                    <div class='fui-list-group' style='margin-top:5px;'>
+
+                        {if $order['status'] > 1}
+                        <a href="{php echo mobileUrl('pc.order/express',array('id'=>$order['id']))}">
+                            <div class='fui-list'>
+                                <div class='fui-list-media'><i class='icon icon-deliver'></i></div>
+                                <div class='fui-list-inner'>
+                                    {if empty($express)}
+                                    <div class='text'><span>{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_14']}:{$order['expresscom']}</span></div>
+                                    <div class='text'><span>{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_15']}:{$order['expresssn']}</span></div>
+                                    {else}
+                                    <div class='text'><span {if $express && strexists($express['step'],$lang['lang_plugin_pc_template_mobile_default_order_detail_16'])}class='text-danger'{/if}>{$express['step']}</span></div>
+                                    <div class='text'><span {if $express && strexists($express['step'],$lang['lang_plugin_pc_template_mobile_default_order_detail_17'])}class='text-danger'{/if}>{$express['time']}</span></div>
+                                    {/if}
+                                </div>
+                                <div class='fui-list-angle'><span class='angle'></span></div>
+                            </div>
+                        </a>
+                        {/if}
+
+
+                        <div class='fui-list'>
+                            <div class='fui-list-media'><i class='icon icon-location'></i></div>
+                            <div class='fui-list-inner'>
+                                <div class='title'>{$address['realname']} {$address['mobile']}</div>
+                                <div class='text'>{$address['province']}{$address['city']}{$address['area']} {$address['address']}</div>
+                            </div>
+                        </div>
+                    </div>
+                    {/if}
+                    {if !empty($carrier) ||!empty($store)}
+
+                    <div class='fui-list-group' style='margin-top:5px;'>
+
+                        <div class='fui-list'>
+                            <div class='fui-list-media'><i class='icon icon-person2'></i></div>
+                            <div class='fui-list-inner'>
+                                <div class='title'>{$carrier['carrier_realname']} {$carrier['carrier_mobile']}</div>
+                            </div>
+                        </div>
+
+                        {if !empty($store)}
+
+
+                        <div  class="fui-list store-item" >
+                            <div class="fui-list-media">
+                                <i class='icon icon-shop'></i>
+                            </div>
+                            <div class="fui-list-inner store-inner">
+                                <div class="title"> <span class='storename'>{$store['storename']}</span></div>
+                                <div class="text">
+                                    <span class='realname'>{$store['realname']}</span> <span class='mobile'>{$store['mobile']}</span>
+                                </div>
+                                <div class="text">
+                                    <span class='address'>{$store['address']}</span>
+                                </div>
+                            </div>
+                            <div class="fui-list-angle ">
+                                {if !empty($store['tel'])}<a href="tel:{$store['tel']}" class='external '><i class=' icon icon-phone' style='color:green'></i></a>{/if}
+                                <a href="{php echo mobileUrl('pc.store/map',array('id'=>$store['id'],'merchid'=>$store['merchid']))}" class='external' ><i class='icon icon-location' style='color:#f90'></i></a>
+                            </div>
+                        </div>
+
+                        {/if}
+                    </div>
+                    {/if}
+
+
+
+
+
+                    <div class="fui-list-group goods-list-group">
+
+                        <div class="fui-list-group-title"><i class="icon icon-shop"></i> {$shopname}</div>
+                        {php $i=0;}
+                        {loop $goods $g}
+                        <a href="{php echo mobileUrl('pc.goods/detail',array('id'=>$g['goodsid']))}">
+
+                            <div class="fui-list goods-list">
+                                <div class="fui-list-media">
+                                    <img src="{php echo tomedia($g['thumb'])}" class="round">
+                                </div>
+                                <div class="fui-list-inner">
+                                    <div class="text goodstitle">{$g['title']}</div>
+                                    {if !empty($g['optionid'])}<div class='subtitle'>{$g['optiontitle']}</div>{/if}
+
+                                </div>
+                                <div class='fui-list-angle'>
+                                    {php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_18']}<span class='marketprice'>{$g['price']}<br/>   x{$g['total']}
+                                </div>
+
+                            </div>
+                        </a>
+
+                        {if !empty($g['diyformdata']) && $g['diyformdata'] != 'false'}
+                        <div class="fui-list">
+                            <div class="fui-list-inner">
+                                <div class="text text-right">
+                                    <div class="btn btn-default btn-sm look-diyinfo" hide="1" data="{$i}">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_19']}</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="fui-cell-group price-cell-group diyinfo_{$i}" style="display: none;">
+                            {php $datas = $g['diyformdata']}
+                            {loop $g['diyformfields'] $key $value}
+
+                            <div class="fui-cell" >
+                                <div class="fui-cell-label">{php echo $value['tp_name']}</div>
+                                <div class="fui-cell-info"></div>
+                                <div class="fui-cell-remark noremark">{template 'diyform/mdiyform'}</div>
+                            </div>
+
+                            {/loop}
+                        </div>
+                        {/if}
+                        {php $i++;}
+                        {/loop}
+                    </div>
+
+                    {if !empty($order['virtual']) && !empty($order['virtual_str'])}
+                    <div class='fui-according-group'>
+                        <div class='fui-according expanded'>
+                            <div class='fui-according-header'>
+                                <i class='icon icon-productfeatures'></i>
+                                <span class="text">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_20']}</span>
+                                <span class="remark"></span>
+                            </div>
+                            <div class="fui-according-content">
+                                <div class='content-block'>
+                                    {$order['virtual_str']}
+                                </div>
+                            </div>
+
+                        </div></div>
+                    {/if}
+
+                    {if !empty($order['isvirtualsend']) && !empty($order['virtualsend_info'])}
+                    <div class='fui-according-group'>
+                        <div class='fui-according expanded'>
+                            <div class='fui-according-header'>
+                                <i class='icon icon-productfeatures'></i>
+                                <span class="text">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_21']}</span>
+                                <span class="remark"></span>
+                            </div>
+                            <div class="fui-according-content">
+                                <div class='content-block'>
+                                    {$order['virtualsend_info']}
+                                </div>
+                            </div>
+
+                        </div></div>
+                    {/if}
+
+                    {if $order['showverify']}
+
+                    <div class='fui-according-group {if count($verifyinfo)<=3}expanded{/if} verify-container' data-verifytype="{$order['verifytype']}" data-orderid="{$order['id']}">
+                        <div class='fui-according'>
+                            <div class='fui-according-header'>
+
+                                <i class='icon icon-list'></i>
+
+                                <span class="text">{if $order['dispatchtype']}{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_22']}{else}{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_23']}{/if}</span>
+                                <span class="remark"><div class="badge">{php echo count($verifyinfo)}</div></span>
+                            </div>
+                            <div class="fui-according-content verifycode-container">
+                                {if $order['status']>0}
+                                <div class='fui-cell-group'>
+                                    {loop $verifyinfo $v}
+                                    <div class='fui-cell verify-cell' data-verifycode="{$v['verifycode']}">
+                                        <div class='fui-cell-label' style='width:auto'>
+                                            {$v['verifycode']}
+                                        </div>
+                                        <div class='fui-cell-info'></div>
+                                        <div class='fui-cell-remark noremark'>
+                                            {if $v['verified']}
+                                            <div class='fui-label fui-label-danger' >{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_24']}</div>
+                                            {else}
+                                            {if $order['dispatchtype']}
+                                            <div class='fui-label fui-label-default' >{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_25']}</div>
+                                            {else}
+                                            {if $order['verifytype']==1}
+                                            <div class='fui-label fui-label-default' >{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_26']}{php echo $goods[0]['total']-count($vs)} {php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_27']}</div>
+                                            {else}
+                                            <div class='fui-label fui-label-default' >{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_28']}</div>
+                                            {/if}
+                                            {/if}
+                                            {/if}
+                                        </div>
+                                    </div>
+                                    {/loop}
+                                </div>
+                                {else}
+                                <div class='fui-cell-group'>
+                                    <div class='fui-cell verify-cell'>
+                                        <div class='fui-cell-label' style='width:auto;color: #ff0011;'>
+                                            {php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_29']}!
+                                        </div>
+                                    </div>
+                                </div>
+                                {/if}
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    {/if}
+
+                    {if !empty($stores)}
+                    <script language='javascript' src='http://api.map.baidu.com/api?v=2.0&ak=ZQiFErjQB7inrGpx27M1GR5w3TxZ64k7'></script>
+                    <div class='fui-according-group'>
+                        <div class='fui-according'>
+                            <div class='fui-according-header'>
+                                <i class='icon icon-shop'></i>
+                                <span class="text">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_30']}</span>
+                                <span class="remark"><div class="badge">{php echo count($stores)}</div></span>
+                            </div>
+                            <div class="fui-according-content store-container">
+                                {loop $stores $item}
+                                <div  class="fui-list store-item"
+
+                                      data-lng="{php echo floatval($item['lng'])}"
+                                      data-lat="{php echo floatval($item['lat'])}">
+                                    <div class="fui-list-media">
+                                        <i class='icon icon-shop'></i>
+                                    </div>
+                                    <div class="fui-list-inner store-inner">
+                                        <div class="title"> <span class='storename'>{$item['storename']}</span></div>
+                                        <div class="text">
+                                            {php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_31']}: <span class='realname'>{$item['address']}</span>
+                                        </div>
+                                        <div class="text">
+                                            {php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_32']}: <span class='address'>{$item['tel']}</span>
+                                        </div>
+                                        <div class="text location" style="color:green;display:none">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_33']}...</div>
+                                    </div>
+                                    <div class="fui-list-angle ">
+                                        {if !empty($item['tel'])}<a href="tel:{$item['tel']}" class='external '><i class=' icon icon-phone' style='color:green'></i></a>{/if}
+                                        <a href="{php echo mobileUrl('pc.store/map',array('id'=>$item['id'],'merchid'=>$item['merchid']))}" class='external' ><i class='icon icon-location' style='color:#f90'></i></a>
+                                    </div>
+                                </div>
+                                {/loop}
+                            </div>
+
+                            <div id="nearStore" style="display:none">
+
+                                <div class='fui-list store-item'  id='nearStoreHtml'></div>
+                            </div>
+                        </div></div>
+                    {/if}
+
+
+
+
+                    <div class='fui-cell-group price-cell-group'>
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_34']}</div>
+                            <div class="fui-cell-info"></div>
+                            <div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_35']}{$order['goodsprice']}</div>
+                        </div>
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_36']}</div>
+                            <div class="fui-cell-info"></div>
+                            <div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_37']}{$order['dispatchprice']}</div>
+                        </div>
+
+                        {if $order['deductenough']>0}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_38']}</div>
+                            <div class="fui-cell-info"></div>
+                            <div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_39']}{$order['deductenough']}</div>
+                        </div>
+                        {/if}
+
+                        {if $order['couponprice']>0}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label"  style='width:auto;'>{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_40']}</div>
+                            <div class="fui-cell-info"></div>
+                            <div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_41']}{$order['couponprice']}</div>
+                        </div>
+                        {/if}
+
+                        {if $order['discountprice']>0}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_42']}</div>
+                            <div class="fui-cell-info"></div>
+                            <div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_43']}{$order['discountprice']}</div>
+                        </div>
+                        {/if}
+                        {if $order['isdiscountprice']>0}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_44']}</div>
+                            <div class="fui-cell-info"></div>
+                            <div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_45']}{$order['isdiscountprice']}</div>
+                        </div>
+                        {/if}
+                        {if $order['deductprice']>0}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{$_W['shopset']['trade']['credittext']}{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_46']}</div>
+                            <div class="fui-cell-info"></div>
+                            <div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_47']}{$order['deductprice']}</div>
+                        </div>
+                        {/if}
+                        {if $order['deductcredit2']>0}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{$_W['shopset']['trade']['moneytext']}{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_48']}</div>
+                            <div class="fui-cell-info"></div>
+                            <div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_49']}{$order['deductcredit2']}</div>
+                        </div>
+                        {/if}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label" style='width:auto;'>{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_50']}({php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_51']})</div>
+                            <div class="fui-cell-info"></div>
+                            <div class="fui-cell-remark noremark"><span class='text-danger'>{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_52']}<span style='font-size:.8rem'>{$order['price']}</span></span></div>
+                        </div>
+                    </div>
+
+                    <div class="fui-cell-group info-cell-group">
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_53']}:</div>
+                            <div class="fui-cell-info">{$order['ordersn']}</div>
+                        </div>
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_54']}:</div>
+                            <div class="fui-cell-info">{php echo date('Y-m-d H:i:s', $order['createtime'])}</div>
+                        </div>
+                        {if $order['status']>=1 && $order['paytime'] > 0}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_55']}: </div>
+                            <div class="fui-cell-info">{php echo date('Y-m-d H:i:s', $order['paytime'])}</div>
+                        </div>
+                        {/if}
+                        {if $order['status']>=2}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_56']}: </div>
+                            <div class="fui-cell-info">{php echo date('Y-m-d H:i:s', $order['sendtime'])}</div>
+                        </div>
+                        {/if}
+                        {if $order['status']==3}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_57']}: </div>
+                            <div class="fui-cell-info">{php echo date('Y-m-d H:i:s', $order['createtime'])}</div>
+                        </div>
+                        {/if}
+                    </div>
+
+                    {if !empty($order_fields) && !empty($order_data)}
+                    <div class="fui-list-group goods-list-group">
+                        <div class='fui-cell-group price-cell-group'>
+                            {php $datas = $order_data}
+                            {loop $order_fields $key $value}
+                            <div class="fui-cell">
+                                <div class="fui-cell-label">{php echo $value['tp_name']}</div>
+                                <div class="fui-cell-info"></div>
+                                <div class="fui-cell-remark noremark">{template 'diyform/mdiyform'}</div>
+                            </div>
+                            {/loop}
+                        </div>
+                    </div>
+                    {/if}
+                    {template '_copyright'}
+                </div>
+
+                {if $order['canverify']}
+                {template 'order/verify'}
+                {/if}
+
+                <div class='fui-footer'>
+                    {if $order['userdeleted']==0}
+                    {if $order['status']==0}
+                    <div class="btn btn-default btn-default-o order-cancel">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_58']}
+                        <select data-orderid="{$order['id']}">
+
+                            <option value="">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_59']}</option>
+                            <option value="{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_60']}">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_61']}</option>
+                            <option value="{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_62']}">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_63']}</option>
+                            <option value="{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_64']}">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_65']}</option>
+                            <option value="{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_66']}">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_67']}</option>
+                        </select>
+                    </div>
+                    {if is_mobile()}
+                    {if $order['paytype']!=3}
+                    <a class="btn btn-danger" href="{php echo mobileUrl('pc.order/pay',array('id'=>$order['id']))}">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_68']}</a>
+                    {/if}
+                    {/if}
+                    {/if}
+                    {if $order['canverify']&&$order['status']!=-1&&$order['status']!=0}
+                    <div class="btn btn-default btn-default-o pull-left order-verify" data-orderid="{$order['id']}" data-verifytype="{$order['verifytype']}" style="margin-left:.5rem;" >
+                        <i class="icon icon-qrcode"></i>
+                        <span>{if $order['dispatchtype']}{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_69']}{else}{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_70']}{/if}</span>
+                    </div>
+                    {/if}
+
+                    {if $order['status']==3 || $order['status']==-1}
+                    <div class="btn btn-default btn-default-o order-delete" data-orderid="{$order['id']}">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_71']}</div>
+                    {/if}
+
+
+               <!--     {if $order['status']==3 && $order['iscomment']==1}
+                    <a class="btn btn-default btn-default-o" href="{php echo mobileUrl('pc.order/comment',array('id'=>$order['id']))}">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_72']}</a>
+                    {/if}
+                    {if $order['status']==3 && $order['iscomment']==0 && empty($_W['shopset']['trade']['closecomment'])}
+                    <a class="btn btn-default btn-default-o" href="{php echo mobileUrl('pc.order/comment',array('id'=>$order['id']))}">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_73']}</a>
+                    {/if}-->
+                    {if $order['status']==2}
+                    <div class="btn btn-default btn-default-o order-finish" data-orderid="{$order['id']}">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_74']}</div>
+                    {/if}
+
+                    {if $order['canrefund']}
+                    <a data-nocache="true" class="btn btn-default" href="{php echo mobileUrl('pc.order/refund',array('id'=>$order['id']))}">{if $order['status'] ==1}{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_75']}{else}{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_76']}{/if}{if !empty($order['refundstate'])}{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_77']}{/if}</a>
+                    {/if}
+
+                    {if $order['refundstate'] > 0 && $refund['status']!=5}
+                    <a class='btn btn-default-o btn-cancel'>{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_78']}</a>
+                    {/if}
+                    {else if $order['userdeleted']==1}
+                    <div class="btn btn-default btn-default-o order-deleted" data-orderid="{$order['id']}">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_79']}</div>
+
+                    <div class="btn btn-default btn-default-o order-recover" data-orderid="{$order['id']}">{php echo $lang['lang_plugin_pc_template_mobile_default_order_detail_80']}</div>
+                    {/if}
+                </div>
+                <script language='javascript'>
+                    require(['../addons/ewei_shopv2/plugin/pc/biz/order/detail.js'], function (modal) {
+                        FoxUI.according.init();
+                        modal.init({orderid: "{$orderid}",fromDetail:true});
+                    });
+
+                </script>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{template 'pc/layout/_footer'}

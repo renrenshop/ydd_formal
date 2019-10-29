@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_groups_template_mobile_default_orders_index_0'] = ' Pesanan saya';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_1'] = ' Semua';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_2'] = ' Untuk Dibayar';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_3'] = ' Untuk Dihantar';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_4'] = ' Untuk Diterima';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_5'] = ' siap dibina';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_6'] = ' Memuatkan pesanan';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_7'] = ' tiada pesanan buat sementara waktu .';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_8'] = ' Nombor pesanan';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_9'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_10'] = ' keping';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_11'] = ' Pengangkutan';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_12'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_13'] = ' Yuan';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_14'] = ' Jumlah';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_15'] = ' Item-item';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_16'] = ' Jumlah';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_17'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_18'] = ' Yuan';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_19'] = ' Membatalkan perintah';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_20'] = ' tidak dibatalkan';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_21'] = ' Saya tidak mahu beli itu';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_22'] = ' Saya tidak mahu beli itu';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_23'] = ' maklumat masukkan ralat, semula pat';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_24'] = ' maklumat masukkan ralat, semula pat';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_25'] = ' perjumpaan dengan bandar';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_26'] = ' perjumpaan dengan bandar';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_27'] = ' Sebab-sebab lain';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_28'] = ' Sebab-sebab lain';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_29'] = ' untuk membayar';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_30'] = ' Padam perintah';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_31'] = ' Mengesahkan penerimaan';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_32'] = ' Saya ingin menggunakan';
+?>

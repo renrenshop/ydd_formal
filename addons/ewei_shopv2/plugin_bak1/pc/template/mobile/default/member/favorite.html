@@ -1,0 +1,71 @@
+{template 'pc/layout/_header'}
+<div class="ncm-container">
+
+    {template 'pc/layout/member/left-layout'}
+    <div class="right-layout">
+        <div class="wrap">
+            {template 'pc/layout/member/tabmenu'}
+            <div class="fui-page member-cart-page" style="background-color: #fff">
+                <div class='fui-content ' >
+                {if empty($list)}
+                <div class='content-empty' >
+                    <i class='icon icon-like'></i><br/>{php echo $lang['lang_plugin_pc_template_mobile_default_member_favorite_0']}~<br/><a href="{php echo mobileUrl('pc')}" class='btn btn-default-o external'>{php echo $lang['lang_plugin_pc_template_mobile_default_member_favorite_1']}~</a>
+                </div>
+                {else}
+                    {loop $list $g}
+                    <div class='fui-list-group container' >
+                        {if empty($g['merchid'])}
+                        <div class="fui-list-group-title text-cancel">{php echo $lang['lang_plugin_pc_template_mobile_default_member_favorite_2']}</div>
+                        {else}
+                        <div class="fui-list-group-title text-cancel">{$g['merchname']}</div>
+                        {/if}
+                        <div class="fui-list goods-item align-start" data-id="{$g['id']}" data-goodsid="{$g['goodsid']}">
+                            <div class="fui-list-media editmode" >
+                                <input type="checkbox" name="checkbox" class="fui-radio fui-radio-danger edit-item"/>
+                            </div>
+                            <div class="fui-list-media image-media">
+                                <a href="{php echo mobileUrl('pc.goods.detail')}&id={$g['goodsid']}">
+                                    <img src="{$g['thumb']}" class="round">
+                                </a>
+                            </div>
+                            <div class="fui-list-inner">
+                                <a href="{php echo mobileUrl('pc.goods.detail')}&id={$g['goodsid']}">
+                                    <div class="text">
+                                        {$g['title']}
+                                    </div>
+                                </a>
+                                <div class="text"><span class="text-danger">{php echo $lang['lang_plugin_pc_template_mobile_default_member_favorite_3']}{$g['marketprice']}{if $g['marketprice']>0}</span> <span class='oldprice'>{php echo $lang['lang_plugin_pc_template_mobile_default_member_favorite_4']}{$g['marketprice']}</span>{/if}</div>
+                            </div>
+                            <a style="float: right" href="{php echo mobileUrl('pc.goods.detail')}&id={$g['goodsid']}">
+                                <div class="btn  btn-danger btn-sm" >{php echo $lang['lang_plugin_pc_template_mobile_default_member_favorite_5']}</div>
+                            </a>
+                        </div>
+                    </div>
+                    {/loop}
+                {/if}
+
+            </div>
+                {if !empty($list)}
+                <div class="fui-footer editmode" style="position:relative;">
+                    <div class="fui-list noclick">
+                        <div class="fui-list-media">
+                            <label class="checkbox-inline editcheckall"><input type="checkbox" name="checkbox" class="fui-radio fui-radio-danger " />&nbsp;{php echo $lang['lang_plugin_pc_template_mobile_default_member_favorite_6']}</label>
+                        </div>
+
+                        <div class='fui-list-angle'>
+                            <div class="btn  btn-danger-o btn-delete  disabled">{php echo $lang['lang_plugin_pc_template_mobile_default_member_favorite_7']}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn  btn-danger-o btn-edit" >{php echo $lang['lang_plugin_pc_template_mobile_default_member_favorite_8']}</div>
+                {/if}
+            </div>
+
+            <script language='javascript'>require(['../addons/ewei_shopv2/plugin/pc/biz/member/favorite.js'], function (modal) {
+                modal.init();
+            });</script>
+        </div>
+    </div>
+</div>
+
+{template 'pc/layout/_footer'}

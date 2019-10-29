@@ -1,0 +1,46 @@
+<style>
+    .fui-navbar{
+        height: auto;
+    }
+    .fui-navbar .nav-item{
+        vertical-align: top;
+    }
+</style>
+<div class="fui-navbar">
+
+    <a href="{if empty($_GPC['merchid'])}{php echo mobileUrl()}{else}{php echo mobileUrl('merch')}{/if}" class="external nav-item {if $_W['routes']=='' ||  $_W['routes']=='shop' ||  $_W['routes']=='commission.myshop'}active{/if}">
+        <span class="icon icon-homefill"></span>
+        <span class="label">{php echo $lang['lang_template_mobile__menu_0']}</span>
+    </a>
+    
+    {if intval($_W['shopset']['category']['level'])!=-1}
+    <a href="{php echo mobileUrl('shop/category')}" class="external nav-item {if $_W['routes']=='shop.category'}active{/if}" >
+        <span class="icon icon-liebiao"></span>
+        <span class="label">{php echo $lang['lang_template_mobile__menu_1']}</span>
+    </a>
+    {else}
+    <a href="{php echo mobileUrl('goods')}" class="external nav-item {if $_W['routes']=='goods'}active{/if}" >
+        <span class="icon icon-liebiao"></span>
+        <span class="label">{php echo $lang['lang_template_mobile__menu_2']}</span>
+    </a>
+    {/if}
+    
+    {if !empty($commission)}
+    <a href="{$commission['url']}" class="external nav-item {if $_W['routes']=='commission.register'}active{/if}">
+        <span class="icon icon-friendfill"></span>
+        <!--<span class="label">Distribution Center</span>-->
+        <!--<span class="label">{$commission['text']}</span>-->
+        <span class="label">{php echo $lang['lang_template_mobile__menu_5']}</span>
+    </a>
+    {/if}
+    
+    <a href="{php echo mobileUrl('member/cart')}" class="external nav-item {if $_W['routes']=='member.cart'}active{/if}" id="menucart">
+        <span class="icon icon-cartfill"></span>
+        <span class="label">{php echo $lang['lang_template_mobile__menu_3']}</span>
+        {if $cartcount>0}<span class="badge">{$cartcount}</span>{/if}
+    </a>
+    <a href="{php echo mobileUrl('member')}" class="external nav-item  {if $_W['routes']=='member'}active{/if}">
+        <span class="icon icon-peoplefill"></span>
+        <span class="label">{php echo $lang['lang_template_mobile__menu_4']}</span>
+    </a>
+</div>

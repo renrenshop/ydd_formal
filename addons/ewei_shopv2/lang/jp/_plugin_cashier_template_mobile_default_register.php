@@ -1,0 +1,34 @@
+<?php
+$lang['lang_plugin_cashier_template_mobile_default_register_0'] = ' アプリケーションが解任された:';
+$lang['lang_plugin_cashier_template_mobile_default_register_1'] = ' 再送信する情報を変更することもできます。';
+$lang['lang_plugin_cashier_template_mobile_default_register_2'] = ' 情報をいただいた、連絡をお待ちください。';
+$lang['lang_plugin_cashier_template_mobile_default_register_3'] = ' 再送信する情報を変更することもできます。';
+$lang['lang_plugin_cashier_template_mobile_default_register_4'] = ' レジ係名';
+$lang['lang_plugin_cashier_template_mobile_default_register_5'] = ' レジ係名';
+$lang['lang_plugin_cashier_template_mobile_default_register_6'] = ' 現金レジスタアドレス';
+$lang['lang_plugin_cashier_template_mobile_default_register_7'] = ' 連絡先';
+$lang['lang_plugin_cashier_template_mobile_default_register_8'] = ' あなたのあいさつ文';
+$lang['lang_plugin_cashier_template_mobile_default_register_9'] = ' 電話番号';
+$lang['lang_plugin_cashier_template_mobile_default_register_10'] = ' あなたの電話番号';
+$lang['lang_plugin_cashier_template_mobile_default_register_11'] = ' ください慎重に連絡先フォームに記入、保証する我々はできるだけ早くあなたを連絡することが';
+$lang['lang_plugin_cashier_template_mobile_default_register_12'] = ' ID フロント';
+$lang['lang_plugin_cashier_template_mobile_default_register_13'] = ' ID 戻って';
+$lang['lang_plugin_cashier_template_mobile_default_register_14'] = ' ログオンユーザー名';
+$lang['lang_plugin_cashier_template_mobile_default_register_15'] = ' 背景ログオンユーザー名';
+$lang['lang_plugin_cashier_template_mobile_default_register_16'] = ' ログオンパスワード';
+$lang['lang_plugin_cashier_template_mobile_default_register_17'] = ' それがすでにいっぱいの場合';
+$lang['lang_plugin_cashier_template_mobile_default_register_18'] = ' 空白のまま残す';
+$lang['lang_plugin_cashier_template_mobile_default_register_19'] = ' ください慎重に連絡先フォームに記入、保証する我々はできるだけ早くあなたを連絡することが';
+$lang['lang_plugin_cashier_template_mobile_default_register_20'] = ' リファラー';
+$lang['lang_plugin_cashier_template_mobile_default_register_21'] = ' 背景ログオンユーザー名';
+$lang['lang_plugin_cashier_template_mobile_default_register_22'] = ' 人の携帯電話をお勧めします';
+$lang['lang_plugin_cashier_template_mobile_default_register_23'] = ' 背景のログオンパスワード';
+$lang['lang_plugin_cashier_template_mobile_default_register_24'] = ' ください慎重に連絡先フォームに記入、保証する我々はできるだけ早くあなたを連絡することが';
+$lang['lang_plugin_cashier_template_mobile_default_register_25'] = ' 私を読み、理解します。';
+$lang['lang_plugin_cashier_template_mobile_default_register_26'] = ' 同意書を請求';
+$lang['lang_plugin_cashier_template_mobile_default_register_27'] = ' 。';
+$lang['lang_plugin_cashier_template_mobile_default_register_28'] = ' これらが承認されました。';
+$lang['lang_plugin_cashier_template_mobile_default_register_29'] = ' 今すぐ申し込む';
+$lang['lang_plugin_cashier_template_mobile_default_register_30'] = ' 要求を再提出';
+$lang['lang_plugin_cashier_template_mobile_default_register_31'] = ' 私が読んだ';
+?>

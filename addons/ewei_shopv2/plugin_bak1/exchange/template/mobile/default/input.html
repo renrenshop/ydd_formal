@@ -1,0 +1,58 @@
+{template '_header'}
+    <title>{php echo $lang['lang_plugin_exchange_template_mobile_default_input_0']}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <base target="_self">
+    <link rel="stylesheet" href="../addons/ewei_shopv2/plugin/exchange/static/css/input.css">
+<div id="couponsWrap" style="height: 100%;background-color: #cf3e4e;">
+    <div class="bagWrap">
+        <div>
+            <img src="{php echo tomedia(urldecode($banner[0]));}" width="100%" id="pic" style="display: none">
+            <!--<div style="height: 150px;width: 100%;background-color: #cf3e4e"></div>-->
+            <img src="../addons/ewei_shopv2/plugin/exchange/static/img/input.jpg" width="100%">
+        </div>
+        <div class="firstStep">
+            <span class="inputWrap" id="inputWrap">
+                <label>
+                    <span>{php echo $lang['lang_plugin_exchange_template_mobile_default_input_1']}</span>
+                    <em>
+                        <input id="codeNumber" type="text" placeholder="{php echo $lang['lang_plugin_exchange_template_mobile_default_input_2']}" required="required" value="">
+                        <i class="clearMsg"></i>
+                    </em>
+                </label>
+                </span>
+            <br>
+            <span class="btn-submit" style="position: absolute;z-index: 100" onclick="cli()">
+                <a id="toChange" class="couponsSubmit sure">{php echo $lang['lang_plugin_exchange_template_mobile_default_input_3']}</a>
+            </span>
+            <br>
+            <br>
+        </div>
+        <div class="secondStep" style="display: none;">
+            <ul class="coupons">
+            </ul>
+            <p class="couponintro">{php echo $lang['lang_plugin_exchange_template_mobile_default_input_4']}<em class="telNum"></em>{php echo $lang['lang_plugin_exchange_template_mobile_default_input_5']}</p>
+            <span class="btn-submit">
+                <a id="toUse" class="couponsSubmit sure" href="">{php echo $lang['lang_plugin_exchange_template_mobile_default_input_6']}</a>
+            </span>
+        </div>
+        <div><img src="../addons/ewei_shopv2/plugin/exchange/static/img/bottom_bg.jpg" width="100%"><p class="coupons-desc" style="text-align: center">{php echo $lang['lang_plugin_exchange_template_mobile_default_input_7']}</p></div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#pic').show();
+        var base = "{php echo mobileUrl('exchange/index');}";
+        $(".btn-submit").click(function () {
+            var key = $("#codeNumber").val();
+
+            if(key.length>2){
+                window.location.href =base+"&key="+key;
+            }else{
+                FoxUI.alert('{php echo $lang['lang_plugin_exchange_template_mobile_default_input_8']}');
+            }
+        });
+    });
+</script>
+
+<div class=""></div>
+{template '_footer'}

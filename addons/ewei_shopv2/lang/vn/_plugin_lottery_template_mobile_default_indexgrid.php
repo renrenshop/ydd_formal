@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_0'] = ' điểm';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_1'] = ' Tiền thưởng';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_2'] = ' Phong bì màu đỏ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_3'] = ' Sản phẩm đặc biệt';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_4'] = ' Phiếu giảm giá';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_5'] = ' Giải nén';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_6'] = ' Thời gian';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_7'] = ' không có hồ sơ chiến thắng';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_8'] = ' Vẽ bây giờ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_9'] = ' Số còn lại rút thăm trúng thưởng';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_10'] = ' Thời gian';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_11'] = ' Mô tả phần thưởng';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_12'] = ' hồ sơ chiến thắng của tôi';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_13'] = ' Không hoạt động';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_14'] = ' Xin chúc mừng';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_15'] = ' Chọn lên';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_16'] = ' Nhiệm vụ thành công';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_17'] = ' OK';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_18'] = ' rất tiếc';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_19'] = ' Bạn không thể nhận nhiệm vụ này';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_20'] = ' OK, tôi biết.';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_21'] = ' Giải thưởng';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_22'] = ' Thu thập thành công';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_23'] = ' Không có phần thưởng';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_24'] = ' nơi để xoay hiện nay';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_25'] = ' Làm thế nào nhiều địa điểm là trong tổng số';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_26'] = ' ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_27'] = ' bằng cách sử dụng';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_28'] = ' Rõ ràng';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_29'] = ' Ban đầu xoay tốc độ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_30'] = ' Số lượng các phép quay';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_31'] = ' Xoay cơ bản thời gian: có nghĩa là, bao nhiêu lần bạn cần phải xoay ít trước khi vào xổ số?';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_32'] = ' Giành vị trí';
+?>

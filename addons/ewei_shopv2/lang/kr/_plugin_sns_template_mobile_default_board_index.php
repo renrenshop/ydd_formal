@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_sns_template_mobile_default_board_index_0'] = '주제';
+$lang['lang_plugin_sns_template_mobile_default_board_index_1'] = '우려';
+$lang['lang_plugin_sns_template_mobile_default_board_index_2'] = '우려';
+$lang['lang_plugin_sns_template_mobile_default_board_index_3'] = '우려';
+$lang['lang_plugin_sns_template_mobile_default_board_index_4'] = '로그온하지않은';
+$lang['lang_plugin_sns_template_mobile_default_board_index_5'] = '홈';
+$lang['lang_plugin_sns_template_mobile_default_board_index_6'] = '본질영역';
+$lang['lang_plugin_sns_template_mobile_default_board_index_7'] = '관련된섹션';
+$lang['lang_plugin_sns_template_mobile_default_board_index_8'] = '끈적';
+$lang['lang_plugin_sns_template_mobile_default_board_index_9'] = '아니주제는순간';
+$lang['lang_plugin_sns_template_mobile_default_board_index_10'] = '로드';
+$lang['lang_plugin_sns_template_mobile_default_board_index_11'] = '취소';
+$lang['lang_plugin_sns_template_mobile_default_board_index_12'] = '포스트주제';
+$lang['lang_plugin_sns_template_mobile_default_board_index_13'] = '캡션';
+$lang['lang_plugin_sns_template_mobile_default_board_index_14'] = '단어';
+$lang['lang_plugin_sns_template_mobile_default_board_index_15'] = '콘텐츠';
+$lang['lang_plugin_sns_template_mobile_default_board_index_16'] = '단어';
+$lang['lang_plugin_sns_template_mobile_default_board_index_17'] = '게시';
+$lang['lang_plugin_sns_template_mobile_default_board_index_18'] = '불만';
+$lang['lang_plugin_sns_template_mobile_default_board_index_19'] = '취소';
+$lang['lang_plugin_sns_template_mobile_default_board_index_20'] = '불만';
+$lang['lang_plugin_sns_template_mobile_default_board_index_21'] = '에대해불평하고싶은것은';
+$lang['lang_plugin_sns_template_mobile_default_board_index_22'] = '';
+$lang['lang_plugin_sns_template_mobile_default_board_index_23'] = '불만카테고리를선택하십시오:';
+$lang['lang_plugin_sns_template_mobile_default_board_index_24'] = '다른';
+$lang['lang_plugin_sns_template_mobile_default_board_index_25'] = '콘텐츠';
+$lang['lang_plugin_sns_template_mobile_default_board_index_26'] = '단어';
+$lang['lang_plugin_sns_template_mobile_default_board_index_27'] = '제출';
+$lang['lang_plugin_sns_template_mobile_default_board_index_28'] = '불만';
+?>

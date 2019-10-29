@@ -1,0 +1,75 @@
+2018-12-20 18:37:44 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ffb9862d4c99]]></ToUserName>
+<FromUserName><![CDATA[o3Omm1bXokG-kQlRP6R5TQ-C26mI]]></FromUserName>
+<CreateTime>1545302264</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2018-12-20 18:37:45 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ffb9862d4c99',
+    'fromusername' => 'o3Omm1bXokG-kQlRP6R5TQ-C26mI',
+    'createtime' => '1545302264',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'o3Omm1bXokG-kQlRP6R5TQ-C26mI',
+    'to' => 'gh_ffb9862d4c99',
+    'time' => '1545302264',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2018-12-20 18:37:45 response :
+------------
+
+2018-12-20 18:38:45 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ffb9862d4c99]]></ToUserName>
+<FromUserName><![CDATA[o3Omm1Ts2klEK9zH4eQ38ogWN6EE]]></FromUserName>
+<CreateTime>1545302325</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[测试？]]></Content>
+<MsgId>6637022948771685971</MsgId>
+</xml>
+
+2018-12-20 18:38:45 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ffb9862d4c99',
+    'fromusername' => 'o3Omm1Ts2klEK9zH4eQ38ogWN6EE',
+    'createtime' => '1545302325',
+    'msgtype' => 'text',
+    'content' => '测试？',
+    'msgid' => '6637022948771685971',
+    'from' => 'o3Omm1Ts2klEK9zH4eQ38ogWN6EE',
+    'to' => 'gh_ffb9862d4c99',
+    'time' => '1545302325',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2018-12-20 18:38:45 response :
+------------
+

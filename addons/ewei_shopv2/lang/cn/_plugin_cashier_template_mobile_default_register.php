@@ -1,0 +1,34 @@
+<?php
+$lang['lang_plugin_cashier_template_mobile_default_register_0'] = '您的申请被驳回：';
+$lang['lang_plugin_cashier_template_mobile_default_register_1'] = '您也可以修改信息重新提交';
+$lang['lang_plugin_cashier_template_mobile_default_register_2'] = '您已经提交了信息，请等待我们联系您';
+$lang['lang_plugin_cashier_template_mobile_default_register_3'] = '您也可以修改信息重新提交';
+$lang['lang_plugin_cashier_template_mobile_default_register_4'] = '收银台名称';
+$lang['lang_plugin_cashier_template_mobile_default_register_5'] = '收银台名称';
+$lang['lang_plugin_cashier_template_mobile_default_register_6'] = '收银台地址';
+$lang['lang_plugin_cashier_template_mobile_default_register_7'] = '联系人';
+$lang['lang_plugin_cashier_template_mobile_default_register_8'] = '您的称呼';
+$lang['lang_plugin_cashier_template_mobile_default_register_9'] = '手机号';
+$lang['lang_plugin_cashier_template_mobile_default_register_10'] = '您的手机号';
+$lang['lang_plugin_cashier_template_mobile_default_register_11'] = '请仔细填写联系方式，保证我们能尽快联系到您';
+$lang['lang_plugin_cashier_template_mobile_default_register_12'] = '身份证正面';
+$lang['lang_plugin_cashier_template_mobile_default_register_13'] = '身份证背面';
+$lang['lang_plugin_cashier_template_mobile_default_register_14'] = '登录用户名';
+$lang['lang_plugin_cashier_template_mobile_default_register_15'] = '后台登录用户名';
+$lang['lang_plugin_cashier_template_mobile_default_register_16'] = '登录密码';
+$lang['lang_plugin_cashier_template_mobile_default_register_17'] = '如果已经填写过';
+$lang['lang_plugin_cashier_template_mobile_default_register_18'] = '留空为不更改';
+$lang['lang_plugin_cashier_template_mobile_default_register_19'] = '请仔细填写联系方式，保证我们能尽快联系到您';
+$lang['lang_plugin_cashier_template_mobile_default_register_20'] = '推荐人';
+$lang['lang_plugin_cashier_template_mobile_default_register_21'] = '后台登录用户名';
+$lang['lang_plugin_cashier_template_mobile_default_register_22'] = '推荐人手机';
+$lang['lang_plugin_cashier_template_mobile_default_register_23'] = '后台登录密码';
+$lang['lang_plugin_cashier_template_mobile_default_register_24'] = '请仔细填写联系方式，保证我们能尽快联系到您';
+$lang['lang_plugin_cashier_template_mobile_default_register_25'] = '我已经阅读并了解了';
+$lang['lang_plugin_cashier_template_mobile_default_register_26'] = '【申请协议】';
+$lang['lang_plugin_cashier_template_mobile_default_register_27'] = '。';
+$lang['lang_plugin_cashier_template_mobile_default_register_28'] = '已经审核通过';
+$lang['lang_plugin_cashier_template_mobile_default_register_29'] = '立即申请入驻';
+$lang['lang_plugin_cashier_template_mobile_default_register_30'] = '重新提交申请';
+$lang['lang_plugin_cashier_template_mobile_default_register_31'] = '我已阅读';
+?>

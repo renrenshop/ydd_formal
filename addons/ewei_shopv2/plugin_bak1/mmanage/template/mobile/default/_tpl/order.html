@@ -1,0 +1,138 @@
+<script type="text/html" id="tpl_order">
+    <%each list as item%>
+        <%if item.merchname && item.merchid>0%>
+            <div class="fui-title small"><i class="icon icon-shop"></i> <%item.merchname%></div>
+        <%/if%>
+        <div class="fui-list-group <%if item.merchname && item.merchid>0%>nomargin<%/if%>" data-order="<%item.id%>">
+
+            <a class="fui-list order-list title-b" href="{php echo mobileUrl('mmanage/order/detail')}&id=<%item.id%>" data-nocache="true">
+                <div class="fui-list-media">
+                    <span class="fui-label fui-label-danger round"><%if item.statusvalue==0%><%if item.paytypevalue!=3%>{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_0']}<%else%>{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_1']}<%/if%><%else%><%item.paytype%><%/if%></span>
+                </div>
+                <div class="fui-list-inner">
+                    <div class="row">
+                        <div class="row-text" style="font-size: 0.7rem; color: #666"><%item.ordersn%></div>
+                    </div>
+                    <div class="row gary">
+                        <div class="row-text"><%item.createtime%></div>
+                    </div>
+                </div>
+                <div class="angle"></div>
+            </a>
+            <%each item.goods as g%>
+                <div class="fui-list goods-list">
+                    <div class="fui-list-media">
+                        <img class="round" src="<%g.thumb%>" onerror="this.src='../addons/ewei_shopv2/static/images/nopic100.jpg';" />
+                    </div>
+                    <div class="fui-list-inner">
+                        <div class="title"><%g.title%></div>
+                        <div class="subtitle">
+                            <div class="total">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_2']}: <%g.optiontitle||"{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_3']}"%> {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_4']}: <%g.goodssn||"{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_5']}"%></div>
+                        </div>
+                    </div>
+                    <div class="fui-list-angle auto">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_6']}<span class="marketprice"><%g.realprice/g.total%><br> x<%g.total%></span></div>
+                </div>
+            <%/each%>
+            <div class="fui-list log-list noclick">
+                <div class="fui-list-inner">
+                    <div class="row log-row order">
+                        <div class="row-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_7']}</div>
+                        <div class="row-remark"><span class="text-danger"><%item.status%></span></div>
+                    </div>
+                    <%if item.refundstate>0%>
+                        <div class="row log-row order">
+                            <div class="row-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_8']}</div>
+                            <div class="row-remark">
+                                <%if item.rtype=='0'%>{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_9']}<%/if%>
+                                <%if item.rtype=='1'%>{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_10']}<%/if%>
+                                <%if item.rtype=='2'%>{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_11']}<%/if%>
+                                <%if item.refundstate=='4'%>({php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_12']})<%/if%>
+                            </div>
+                        </div>
+                    <%/if%>
+                    <%if item.merchname && item.merchid%>
+                        <div class="row log-row order">
+                            <div class="row-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_13']}</div>
+                            <div class="row-remark"><%item.merchname%></div>
+                        </div>
+                    <%/if%>
+                    <div class="row log-row order">
+                        <div class="row-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_14']}</div>
+                        <div class="row-remark"><%item.nickname||'{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_15']}'%></div>
+                    </div>
+                    <div class="row log-row order">
+                        <div class="row-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_16']}</div>
+                        <div class="row-remark"><span class="text-success"><%item.dispatchname%></span></div>
+                    </div>
+                    <%if item.remark%>
+                        <div class="row log-row order">
+                            <div class="row-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_17']}</div>
+                            <div class="row-remark"><%item.remark%></div>
+                        </div>
+                    <%/if%>
+                </div>
+            </div>
+
+            <div class="fui-list-group-title text-right">
+                <small class="status">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_18']}<span class="text-success"><%item.goodscount%></span>{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_19']} {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_20']}:<span class="text-success">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_21']}<%item.price%></span> <%if item.dispatchprice!='0.00'%>({php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_22']}: {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_23']}<%item.dispatchprice%>{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_24']})<%/if%></small>
+            </div>
+
+            <div class="fui-list-group-title text-right big">
+                <!-- {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_25']} -->
+                <%if item.refundid>0%>
+                    <a class="btn btn-success btn-sm order-btn" data-action="refund" data-orderid="<%item.id%>">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_26']}<%item.refundstate>0?"{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_27']}":"{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_28']}"%></a>
+                <%/if%>
+                <!-- {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_29']} -->
+                <%if item.statusvalue==0%>
+                    <%if item.paytypevalue==3%>
+                        <a class="btn btn-success btn-sm order-btn" data-action="send" data-orderid="<%item.id%>">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_30']}</a>
+                    <%else%>
+                        <%if item.ismerch==0%>
+                            <a class="btn btn-sm btn-success order-btn" data-action="payorder" data-orderid="<%item.id%>">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_31']}</a>
+                        <%/if%>
+                    <%/if%>
+                <%/if%>
+
+                <!-- {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_32']} -->
+                <%if item.statusvalue==1%>
+                    <%if item.addressid>0%>
+                        {ifp 'order.op.send'}
+                            <!-- {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_33']} -->
+                            <a class="btn btn-success btn-sm order-btn" data-action="send" data-orderid="<%item.id%>">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_34']}</a>
+                        {/if}
+                    <%else%>
+                        <%if item.isverify==1%>
+                            {ifp 'order.op.verify'}
+                                <!--{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_35']} {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_36']}-->
+                                <a class="btn btn-success btn-sm order-btn" data-action="fetch" data-orderid="<%item.id%>">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_37']}</a>
+                            {/if}
+                        <%else%>
+                            {ifp 'order.op.fetch'}
+                                <!--{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_38']} {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_39']}-->
+                                <a class="btn btn-success btn-sm order-btn" data-action="fetch" data-orderid="<%item.id%>">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_40']}<%item.ccard>0?"{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_41']}":"{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_42']}"%></a>
+                            {/if}
+                        <%/if%>
+                    <%/if%>
+                    <%if item.sendtype>0%>
+                        {ifp 'order.op.sendcancel'}
+                            <!--{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_43']}-->
+                            <a class="btn btn-success btn-sm order-btn" data-action="sendcancel" data-orderid="<%item.id%>">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_44']}</a>
+                        {/if}
+                    <%/if%>
+                <%/if%>
+
+                <!-- {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_45']} -->
+                <%if item.statusvalue==2%>
+                    {ifp 'order.op.sendcancel'}
+                        <a class="btn btn-success btn-sm order-btn" data-action="sendcancel" data-orderid="<%item.id%>">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_46']}</a>
+                    {/if}
+                    {ifp 'order.op.send'}
+                        <a class="btn btn-success btn-sm order-btn" data-action="finish" data-orderid="<%item.id%>">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_47']}</a>
+                    {/if}
+                <%/if%>
+                <a class="btn btn-sm btn-default order-btn" data-action="remarksaler" data-orderid="<%item.id%>"><i class="text-success icon icon-pin" style="font-size: 0.65rem; <%if !item.remarksaler%>display: none;<%/if%>"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_48']}</a>
+                <a class="btn btn-default btn-sm" href="{php echo mobileUrl('mmanage/order/detail')}&id=<%item.id%>">{php echo $lang['lang_plugin_mmanage_template_mobile_default__tpl_order_49']}</a>
+            </div>
+        </div>
+    <%/each%>
+</script>

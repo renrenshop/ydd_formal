@@ -1,0 +1,325 @@
+{template 'mmanage/common'}
+
+<div class='fui-page fui-page-current'>
+    <div class="fui-header fui-header-success">
+        <div class="fui-header-left">
+            <a class="back btn-back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_0']}</div>
+        <div class="fui-header-right"></div>
+    </div>
+
+    <!-- {php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_1']}tab -->
+    <div id="tab" class="fui-tab fui-tab-success fixed">
+        <a data-tab="basic" class="active">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_2']}</a>
+        <a data-tab="trade">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_3']}</a>
+        {if $hascommission}
+            <a data-tab="commission">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_4']}</a>
+        {/if}
+    </div>
+    <div class='fui-content navbar'>
+
+        {ifp 'member.list.edit'}
+            <input type="hidden" id="mid" value="{$member['id']}" />
+            <input type="hidden" id="level" value="{$member['level']}" />
+            <input type="hidden" id="group" value="{$member['groupid']}" />
+            <input type="hidden" id="agentlevel" value="{$member['agentlevel']}" />
+            <input type="hidden" id="agentselectgoods" value="{$member['agentselectgoods']}" />
+        {/if}
+
+        <div class="tab-content " id="tab_basic" style="display: block">
+            <div class="fui-list-group">
+                <div class="fui-list">
+                    <div class="fui-list-media external">
+                        <img src="{$member['avatar']}" class="round">
+                    </div>
+                    <div class="fui-list-inner">
+                        <div class="title">{php echo empty($member['nickname'])?"{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_5']}":$member['nickname']}</div>
+                        <div class="subtitle">
+                            {if !$followed}
+                                {if empty($member['uid'])}
+                                    <label class='fui-label fui-label-default'>{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_6']}</label>
+                                {else}
+                                    <label class='fui-label fui-label-warning'>{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_7']}</label>
+                                {/if}
+                            {else}
+                                <label class='fui-label fui-label-success'>{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_8']}</label>
+                            {/if}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fui-cell-group fui-cell-click">
+                <div class="fui-cell {ifp 'member.list.edit'}check-param{/if}" data-action="level">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_9']}</div>
+                    <div class="fui-cell-info">{$level_title}</div>
+                    {ifp 'member.list.edit'}
+                        <div class="fui-cell-remark"></div>
+                    {/if}
+                </div>
+                <div class="fui-cell {ifp 'member.list.edit'}check-param{/if}" data-action="group">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_10']}</div>
+                    <div class="fui-cell-info">{$group_title}</div>
+                    {ifp 'member.list.edit'}
+                        <div class="fui-cell-remark"></div>
+                    {/if}
+                </div>
+            </div>
+
+            <div class="fui-cell-group fui-cell-click">
+                <a class="fui-cell external" href="{ifp 'finance.recharge.credit2'}{php echo mobileUrl('mmanage/finance/recharge', array('type'=>0, 'id'=>$member['id']))}{else}javascript:;{/if}">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_11']}</div>
+                    <div class="fui-cell-info">{$member['credit2']}</div>
+                    {ifp 'finance.recharge.credit2'}
+                        <div class="fui-cell-remark">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_12']}</div>
+                    {/if}
+                </a>
+                <a class="fui-cell external" href="{ifp 'finance.recharge.credit1'}{php echo mobileUrl('mmanage/finance/recharge', array('type'=>1, 'id'=>$member['id']))}{else}javascript:;{/if}">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_13']}</div>
+                    <div class="fui-cell-info">{$member['credit1']}</div>
+                    {ifp 'finance.recharge.credit1'}
+                        <div class="fui-cell-remark">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_14']}</div>
+                    {/if}
+                </a>
+            </div>
+
+            <div class="fui-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_15']}</div>
+                    <div class="fui-cell-info">
+                        {ifp 'member.list.edit'}
+                            <input type="text" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_16']}" class="fui-input" value="{$member['realname']}" id="realname" />
+                        {else}
+                            {$member['realname']}
+                        {/if}
+                    </div>
+                </div>
+                {if empty($openbind)}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_17']}</div>
+                        <div class="fui-cell-info">
+                            {ifp 'member.list.edit'}
+                                <input type="tel" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_18']}" class="fui-input" value="{$member['mobile']}" maxlength="11" id="mobile" />
+                            {else}
+                                {$member['mobile']}
+                            {/if}
+                        </div>
+                    </div>
+                {/if}
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_19']}</div>
+                    <div class="fui-cell-info">
+                        {ifp 'member.list.edit'}
+                            <input type="text" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_20']}" class="fui-input" value="{$member['weixin']}" id="weixin" />
+                        {else}
+                            {$member['weixin']}
+                        {/if}
+                    </div>
+                </div>
+            </div>
+            {if !empty($openbind)}
+                <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_21']}</div>
+                <div class="fui-cell-group">
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_22']}</div>
+                        <div class="fui-cell-info">
+                            {ifp 'member.list.edit'}
+                                <input type="tel" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_23']}" class="fui-input" value="{$member['mobile']}" maxlength="11" id="mobile" {if !empty($member['mobile']) && !empty($member['mobileverify'])}disabled="disabled"{/if} />
+                            {else}
+                                {$member['mobile']}
+                            {/if}
+                        </div>
+                    </div>
+
+                    <div class="fui-cell ">
+                        <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_24']}</div>
+                        <div class="fui-cell-info">
+                            {ifp 'member.list.edit'}
+                                {if empty($member['mobileverify']) || empty($member['mobile'])}
+                                    <input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right" id="mobileverify">
+                                {else}
+                                    {php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_25']}
+                                {/if}
+                            {else}
+                                {if empty($member['mobileverify']) || empty($member['mobile'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_26']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_27']}{/if}
+                            {/if}
+                        </div>
+                    </div>
+
+                    {ifp 'member.list.edit'}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_28']}</div>
+                            <div class="fui-cell-info">
+                                <input type="text" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_29']}({php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_30']})" class="fui-input" value="" maxlength="11" id="password" />
+                            </div>
+                        </div>
+                    {/if}
+                </div>
+            {/if}
+
+            <div class="fui-cell-group">
+                <div class="fui-cell ">
+                    <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_31']}</div>
+                    <div class="fui-cell-info">
+                        {ifp 'member.list.edit'}
+                            <input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right" id="isblack" {if !empty($member['isblack'])}checked="checked"{/if}>
+                        {else}
+                            {if !empty($member['isblack'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_32']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_33']}{/if}
+                        {/if}
+                    </div>
+                </div>
+            </div>
+
+            <div class="fui-cell-group">
+                <div class="fui-cell fui-cell-textarea">
+                    <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_34']}</div>
+                    <div class="fui-cell-info">
+                        <textarea rows="3" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_35']}" {ifp 'member.list.edit'}id="content"{else} disabled{/if}>{$member['content']}</textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fui-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_36']}</div>
+                    <div class="fui-cell-info">{php echo date("Y-m-d H:i:s",$member['createtime'])}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content " id="tab_trade">
+            <div class="fui-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_37']}</div>
+                    <div class="fui-cell-info">{$member['self_ordercount']} {php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_38']}</div>
+                </div>
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_39']}</div>
+                    <div class="fui-cell-info">{php echo round($member['self_ordermoney'],2)} {php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_40']}</div>
+                </div>
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_41']}</div>
+                    <div class="fui-cell-info">{$member['last_ordertime']}</div>
+                </div>
+            </div>
+        </div>
+
+        {if $hascommission}
+            <div class="tab-content " id="tab_commission">
+                {if !empty($parentagent)}
+                    <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_42']}(PC{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_43']})</div>
+                    <div class="fui-list-group">
+                        <a class="fui-list" href="{php echo mobileUrl('mmanage/member/detail', array('id'=>$parentagent['id']))}" data-nocache="true">
+                            <div class="fui-list-media">
+                                <img src="{$parentagent['avatar']}" class="round">
+                            </div>
+                            <div class="fui-list-inner">
+                                <div class="title">{$parentagent['nickname']}{if !empty($parentagent['realname'])}({$parentagent['realname']}){/if}</div>
+                                <div class="subtitle">
+                                    <div class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_44']}: {php echo empty($parentagent['mobile'])?"{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_45']}":$parentagent['mobile']}</div>
+                                    <div class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_46']}: {php echo empty($parentagent['weixin'])?"{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_47']}":$parentagent['weixin']}</div>
+                                </div>
+                            </div>
+                            <div class="angle"></div>
+                        </a>
+                    </div>
+                {/if}
+
+                <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_48']}</div>
+                <div class="fui-cell-group fui-cell-click">
+                    <div class="fui-cell noactive">
+                        <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_49']}</div>
+                        <div class="fui-cell-info">
+                            {ifp 'commission.agent.changeagent&commission.agent.check'}
+                                <input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right" id="fixagentid" {if !empty($member['fixagentid'])}checked="checked"{/if}>
+                            {else}
+                                {if !empty($member['fixagentid'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_50']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_51']}{/if}
+                            {/if}
+                        </div>
+                    </div>
+                    <div class="fui-cell noactive">
+                        <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_52']}</div>
+                        <div class="fui-cell-info">
+                            {ifp 'commission.agent.check'}
+                                <input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right" id="isagent" {if !empty($member['isagent'])}checked="checked"{/if}>
+                            {else}
+                                {if !empty($member['isagent'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_53']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_54']}{/if}
+                            {/if}
+                        </div>
+                    </div>
+                    <div class="fui-cell noactive">
+                        <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_55']}</div>
+                        <div class="fui-cell-info">
+                            {ifp 'commission.agent.check'}
+                                <input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right" id="status" {if !empty($member['status'])}checked="checked"{/if}>
+                            {else}
+                                {if !empty($member['status'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_56']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_57']}{/if}
+                            {/if}
+                        </div>
+                    </div>
+                    <div class="fui-cell noactive">
+                        <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_58']}</div>
+                        <div class="fui-cell-info">
+                            {ifp 'commission.agent.check'}
+                                <input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right" id="agentnotupgrade" {if empty($member['agentnotupgrade'])}checked="checked"{/if}>
+                            {else}
+                                {if empty($member['agentnotupgrade'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_59']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_60']}{/if}
+                            {/if}
+                        </div>
+                    </div>
+                    <div class="fui-cell {ifp 'commission.agent.check'}check-param{/if}" data-action="agentlevel">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_61']}</div>
+                        <div class="fui-cell-info">{$comlevel_title}</div>
+                        {ifp 'commission.agent.check'}
+                            <div class="fui-cell-remark"></div>
+                        {/if}
+                    </div>
+                    <div class="fui-cell {ifp 'commission.agent.check'}check-param{/if}" data-action="goods">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_62']}</div>
+                        <div class="fui-cell-info"></div>
+                        {ifp 'commission.agent.check'}
+                            <div class="fui-cell-remark">{$goods_title}</div>
+                        {else}
+                            <div class="fui-cell-remark noremark">{$goods_title}</div>
+                        {/if}
+                    </div>
+                </div>
+                {if $hascommission && $member['status']==1 && $member['isagent']==1}
+                <div class="fui-cell-group">
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_63']}</div>
+                        <div class="fui-cell-info">{$member['commission_total']}</div>
+                    </div>
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_64']}</div>
+                        <div class="fui-cell-info">{$member['commission_pay']}</div>
+                    </div>
+                    {if $member['agenttime']}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_65']}</div>
+                            <div class="fui-cell-info">{$member['agenttime']}</div>
+                        </div>
+                    {/if}
+                </div>
+                {/if}
+            </div>
+        {/if}
+
+        {ifp 'member.list.edit'}
+            <div class="btn btn-success block" id="btn-submit">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_66']}</div>
+        {/if}
+        <div class="fui-title center">{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_67']}PC{php echo $lang['lang_plugin_mmanage_template_mobile_default_member_detail_68']}</div>
+    </div>
+
+    {template 'mmanage/_tpl/member_params'}
+
+    <script language="javascript">
+        require(['../addons/ewei_shopv2/plugin/mmanage/static/js/member-detail.js'],function(modal){
+            modal.initDetail({$json});
+        });
+    </script>
+
+</div>
+{php $this->footerMenus(null, $texts)}
+{template '_footer'}

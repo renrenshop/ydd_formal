@@ -1,0 +1,30 @@
+<?php
+$lang['lang_template_mobile_member_log_0'] = ' Butir-butir';
+$lang['lang_template_mobile_member_log_1'] = ' Cas semula rekod-rekod';
+$lang['lang_template_mobile_member_log_2'] = ' Cas semula rekod-rekod';
+$lang['lang_template_mobile_member_log_3'] = ' rekod kehadiran';
+$lang['lang_template_mobile_member_log_4'] = ' Tiada rekod buat sementara waktu';
+$lang['lang_template_mobile_member_log_5'] = ' Memuatkan';
+$lang['lang_template_mobile_member_log_6'] = ' penambahan jumlah';
+$lang['lang_template_mobile_member_log_7'] = ' Jumlah yang hadir';
+$lang['lang_template_mobile_member_log_8'] = ' Pembayaran komisen';
+$lang['lang_template_mobile_member_log_9'] = ' Yuan';
+$lang['lang_template_mobile_member_log_10'] = ' mod yang hadir';
+$lang['lang_template_mobile_member_log_11'] = ' sebenar';
+$lang['lang_template_mobile_member_log_12'] = ' ke akaun';
+$lang['lang_template_mobile_member_log_13'] = ' Jumlah';
+$lang['lang_template_mobile_member_log_14'] = ' Yuan';
+$lang['lang_template_mobile_member_log_15'] = ' Yuran';
+$lang['lang_template_mobile_member_log_16'] = ' RM';
+$lang['lang_template_mobile_member_log_17'] = ' tidak dicaj semula';
+$lang['lang_template_mobile_member_log_18'] = ' dalam permintaan';
+$lang['lang_template_mobile_member_log_19'] = ' berjaya';
+$lang['lang_template_mobile_member_log_20'] = ' gagal';
+$lang['lang_template_mobile_member_log_21'] = ' Membayar balik';
+$lang['lang_template_mobile_member_log_22'] = 'Caj semula WeChat';
+$lang['lang_template_mobile_member_log_23'] = 'Alipay menghidupkan';
+$lang['lang_template_mobile_member_log_24'] = 'Mengisi semula latar belakang';
+$lang['lang_template_mobile_member_log_25'] = 'Pusat Penebusan';
+$lang['lang_template_mobile_member_log_26'] = 'Penebusan mata';
+$lang['lang_template_mobile_member_log_27'] = 'Tarik balik';
+?>

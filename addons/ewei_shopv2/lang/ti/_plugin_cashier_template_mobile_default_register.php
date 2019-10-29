@@ -1,0 +1,34 @@
+<?php
+$lang['lang_plugin_cashier_template_mobile_default_register_0'] = ' ถูกไล่โปรแกรมประยุกต์ของคุณ:';
+$lang['lang_plugin_cashier_template_mobile_default_register_1'] = ' นอกจากนี้คุณยังสามารถแก้ไขข้อมูลที่ต้องการส่งอีกครั้ง';
+$lang['lang_plugin_cashier_template_mobile_default_register_2'] = ' คุณได้ส่งข้อมูล กรุณารอเราติดต่อคุณ';
+$lang['lang_plugin_cashier_template_mobile_default_register_3'] = ' นอกจากนี้คุณยังสามารถแก้ไขข้อมูลที่ต้องการส่ง';
+$lang['lang_plugin_cashier_template_mobile_default_register_4'] = ' ชื่อแคชเชียร์';
+$lang['lang_plugin_cashier_template_mobile_default_register_5'] = ' ชื่อแคชเชียร์';
+$lang['lang_plugin_cashier_template_mobile_default_register_6'] = ' พนักงานเก็บเงินอยู่';
+$lang['lang_plugin_cashier_template_mobile_default_register_7'] = ' ติดต่อ';
+$lang['lang_plugin_cashier_template_mobile_default_register_8'] = ' ทักทายคุณ';
+$lang['lang_plugin_cashier_template_mobile_default_register_9'] = ' หมายเลขโทรศัพท์';
+$lang['lang_plugin_cashier_template_mobile_default_register_10'] = ' หมายเลขโทรศัพท์';
+$lang['lang_plugin_cashier_template_mobile_default_register_11'] = ' กรุณากรอกข้อมูลในแบบฟอร์มอย่างรอบคอบ รับประกันได้ว่า เราสามารถติดต่อคุณโดยเร็วที่สุด';
+$lang['lang_plugin_cashier_template_mobile_default_register_12'] = ' หน้า ID';
+$lang['lang_plugin_cashier_template_mobile_default_register_13'] = ' รหัสกลับมา';
+$lang['lang_plugin_cashier_template_mobile_default_register_14'] = ' ชื่อผู้ใช้เข้าสู่ระบบ';
+$lang['lang_plugin_cashier_template_mobile_default_register_15'] = ' พื้นหลังเข้าสู่ระบบชื่อผู้ใช้';
+$lang['lang_plugin_cashier_template_mobile_default_register_16'] = ' รหัสผ่านเข้าสู่ระบบ';
+$lang['lang_plugin_cashier_template_mobile_default_register_17'] = ' ถ้ามันเต็มไปแล้วใน';
+$lang['lang_plugin_cashier_template_mobile_default_register_18'] = ' ปล่อยให้ว่างเปล่าไม่เปลี่ยนแปลง';
+$lang['lang_plugin_cashier_template_mobile_default_register_19'] = ' กรุณากรอกข้อมูลในแบบฟอร์มอย่างรอบคอบ รับประกันได้ว่า เราสามารถติดต่อคุณโดยเร็วที่สุด';
+$lang['lang_plugin_cashier_template_mobile_default_register_20'] = ' อ้างอิง';
+$lang['lang_plugin_cashier_template_mobile_default_register_21'] = ' พื้นหลังเข้าสู่ระบบชื่อผู้ใช้';
+$lang['lang_plugin_cashier_template_mobile_default_register_22'] = ' แนะนำให้ท่านโทรศัพท์';
+$lang['lang_plugin_cashier_template_mobile_default_register_23'] = ' พื้นหลังเข้าสู่ระบบรหัสผ่าน';
+$lang['lang_plugin_cashier_template_mobile_default_register_24'] = ' กรุณากรอกข้อมูลในแบบฟอร์มอย่างรอบคอบ รับประกันได้ว่า เราสามารถติดต่อคุณโดยเร็วที่สุด';
+$lang['lang_plugin_cashier_template_mobile_default_register_25'] = ' ผมเคยอ่าน และเข้าใจ';
+$lang['lang_plugin_cashier_template_mobile_default_register_26'] = ' ขอตกลง';
+$lang['lang_plugin_cashier_template_mobile_default_register_27'] = ' ';
+$lang['lang_plugin_cashier_template_mobile_default_register_28'] = ' อนุมัติผ่าน';
+$lang['lang_plugin_cashier_template_mobile_default_register_29'] = ' สมัครตอนนี้';
+$lang['lang_plugin_cashier_template_mobile_default_register_30'] = ' ส่งคำขอใหม่';
+$lang['lang_plugin_cashier_template_mobile_default_register_31'] = ' ผมได้อ่าน';
+?>

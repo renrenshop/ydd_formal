@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_commission_template_mobile_default_index_0'] = ' Paras normal';
+$lang['lang_plugin_commission_template_mobile_default_index_1'] = ' Ibu Pejabat ';
+$lang['lang_plugin_commission_template_mobile_default_index_2'] = ' Penuh';
+$lang['lang_plugin_commission_template_mobile_default_index_3'] = ' untuk membentangkan';
+$lang['lang_plugin_commission_template_mobile_default_index_4'] = ' Pen';
+$lang['lang_plugin_commission_template_mobile_default_index_5'] = ' Pen';
+$lang['lang_plugin_commission_template_mobile_default_index_6'] = ' orang';
+$lang['lang_plugin_commission_template_mobile_default_index_7'] = ' Dianugerahkan Anugerah pasukan';
+$lang['lang_plugin_commission_template_mobile_default_index_8'] = ' Yuan';
+//$lang['lang_plugin_commission_template_mobile_default_index_9'] = ' mempromosi dua dimensi';
+$lang['lang_plugin_commission_template_mobile_default_index_9'] = ' kod';
+$lang['lang_plugin_commission_template_mobile_default_index_10'] = ' Seting stor';
+$lang['lang_plugin_commission_template_mobile_default_index_11'] = ' Item pilihan';
+$lang['lang_plugin_commission_template_mobile_default_index_12'] = ' Pangkat';
+$lang['lang_plugin_commission_template_mobile_default_index_13'] = 'Penjual semula';
+$lang['lang_plugin_commission_template_mobile_default_index_14'] = 'berjaya meningkatkan arus';
+$lang['lang_plugin_commission_template_mobile_default_index_15'] = 'MYR';
+$lang['lang_plugin_commission_template_mobile_default_index_16'] = 'Suruhanjaya yang disediakan';
+$lang['lang_plugin_commission_template_mobile_default_index_17'] = 'MYR';
+$lang['lang_plugin_commission_template_mobile_default_index_18'] = 'Mention';
+$lang['lang_plugin_commission_template_mobile_default_index_19'] = 'Menyebut';
+$lang['lang_plugin_commission_template_mobile_default_index_20'] = 'MYR';
+$lang['lang_plugin_commission_template_mobile_default_index_21'] = 'Pengedaran';
+$lang['lang_plugin_commission_template_mobile_default_index_22'] = 'MYR';
+$lang['lang_plugin_commission_template_mobile_default_index_23'] = 'Butiran terperinci';
+$lang['lang_plugin_commission_template_mobile_default_index_24'] = 'Pesanan Pengedaran';
+$lang['lang_plugin_commission_template_mobile_default_index_25'] = 'Offline saya';
+?>

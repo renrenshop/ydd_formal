@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_app_core_mobile_order_pay_0'] = ' 주문';
+$lang['lang_plugin_app_core_mobile_order_pay_1'] = ' 선반아래';
+$lang['lang_plugin_app_core_mobile_order_pay_2'] = ' 조각';
+$lang['lang_plugin_app_core_mobile_order_pay_3'] = ' 판매시작';
+$lang['lang_plugin_app_core_mobile_order_pay_4'] = ' 1 제한시간구입';
+$lang['lang_plugin_app_core_mobile_order_pay_5'] = ' 도구입';
+$lang['lang_plugin_app_core_mobile_order_pay_6'] = ' 제한시간에도달하지구입';
+$lang['lang_plugin_app_core_mobile_order_pay_7'] = ' 제한시간을구입했습니다';
+$lang['lang_plugin_app_core_mobile_order_pay_8'] = ' 회원레벨을구입할수없습니다';
+$lang['lang_plugin_app_core_mobile_order_pay_9'] = ' 회원그룹을구입할수없습니다';
+$lang['lang_plugin_app_core_mobile_order_pay_10'] = ' 부족재고';
+$lang['lang_plugin_app_core_mobile_order_pay_11'] = ' 부족재고';
+$lang['lang_plugin_app_core_mobile_order_pay_12'] = ' 결제오픈배달';
+$lang['lang_plugin_app_core_mobile_order_pay_13'] = ' 오픈잔액결제';
+$lang['lang_plugin_app_core_mobile_order_pay_14'] = ' 금액오류';
+$lang['lang_plugin_app_core_mobile_order_pay_15'] = ' 부족한균형';
+$lang['lang_plugin_app_core_mobile_order_pay_16'] = ' 충전';
+$lang['lang_plugin_app_core_mobile_order_pay_17'] = ' 소비';
+$lang['lang_plugin_app_core_mobile_order_pay_18'] = ' 열지마이크로편지지불';
+$lang['lang_plugin_app_core_mobile_order_pay_19'] = ' 패키지가준비';
+$lang['lang_plugin_app_core_mobile_order_pay_20'] = ' 당신의후비는물건을선택할수있습니다를픽업포인트에서.';
+$lang['lang_plugin_app_core_mobile_order_pay_21'] = ' 는해당저장소를사용할수있습니다.';
+$lang['lang_plugin_app_core_mobile_order_pay_22'] = ' 구입한항목을자동으로배송';
+$lang['lang_plugin_app_core_mobile_order_pay_23'] = ' 구입한항목을자동으로배송';
+$lang['lang_plugin_app_core_mobile_order_pay_24'] = ' 당신이성공적으로지불';
+$lang['lang_plugin_app_core_mobile_order_pay_25'] = ' 주문제출지불';
+$lang['lang_plugin_app_core_mobile_order_pay_26'] = ' 주문결제성공';
+$lang['lang_plugin_app_core_mobile_order_pay_27'] = ' 지불';
+$lang['lang_plugin_app_core_mobile_order_pay_28'] = ' 실제지불금액';
+?>

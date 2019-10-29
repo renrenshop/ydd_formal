@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_0'] = ' Pengurusan perintah';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_1'] = ' lebih banyak';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_2'] = ' Atas';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_3'] = ' Menuntut hak';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_4'] = ' Hak-hak yang lengkap';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_5'] = ' Untuk Dihantar';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_6'] = ' Untuk Dibayar';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_7'] = ' Untuk Diterima';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_8'] = ' siap dibina';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_9'] = ' ditutup';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_10'] = ' Kotak carian';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_11'] = ' Nombor pesanan';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_12'] = ' Maklumat keahlian';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_13'] = ' Maklumat penerima';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_14'] = ' Maklumat alamat';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_15'] = ' Nombor Daftar';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_16'] = ' Nama produk';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_17'] = ' Pengekodan komoditi';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_18'] = ' Kerani pelupusan';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_19'] = ' Stor pelupusan';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_20'] = ' Nama Saudagar';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_21'] = ' Masukkan kata kunci';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_22'] = ' Cari';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_23'] = ' Senarai pesanan';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_24'] = ' memuatkan lebih';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_25'] = ' Tiada Data';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_26'] = ' lagi.';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_27'] = ' Perintah biasa';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_28'] = ' Aktivis pesanan';
+?>

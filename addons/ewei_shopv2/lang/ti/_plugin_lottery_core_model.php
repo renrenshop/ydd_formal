@@ -1,0 +1,37 @@
+<?php
+$lang['lang_plugin_lottery_core_model_0'] = ' รางวัลที่ได้หมดอายุแล้ว';
+$lang['lang_plugin_lottery_core_model_1'] = ' การใช้เต็มรูปแบบ';
+$lang['lang_plugin_lottery_core_model_2'] = ' หยวน';
+$lang['lang_plugin_lottery_core_model_3'] = ' ของขวัญ';
+$lang['lang_plugin_lottery_core_model_4'] = ' ครั้ง';
+$lang['lang_plugin_lottery_core_model_5'] = ' กาอินเต็ม';
+$lang['lang_plugin_lottery_core_model_6'] = ' วัน';
+$lang['lang_plugin_lottery_core_model_7'] = ' ของขวัญ';
+$lang['lang_plugin_lottery_core_model_8'] = ' ครั้ง';
+$lang['lang_plugin_lottery_core_model_9'] = ' ทำโปสเตอร์งาน';
+$lang['lang_plugin_lottery_core_model_10'] = ' ของขวัญ';
+$lang['lang_plugin_lottery_core_model_11'] = ' ครั้ง';
+$lang['lang_plugin_lottery_core_model_12'] = ' ทำโปสเตอร์งาน';
+$lang['lang_plugin_lottery_core_model_13'] = ' ของขวัญ';
+$lang['lang_plugin_lottery_core_model_14'] = ' ครั้ง';
+$lang['lang_plugin_lottery_core_model_15'] = ' ชื่อกิจกรรม';
+$lang['lang_plugin_lottery_core_model_16'] = ' คลิกเพื่อวาด';
+$lang['lang_plugin_lottery_core_model_17'] = ' แสดงความยินดีกับคุณโชควาดโอกาส';
+$lang['lang_plugin_lottery_core_model_18'] = ' แสดงความยินดีกับคุณโชควาดโอกาส';
+$lang['lang_plugin_lottery_core_model_19'] = ' ได้รับโอกาสในการจับสลาก';
+$lang['lang_plugin_lottery_core_model_20'] = ' ขอแสดงความยินดีในโอกาสที่คุณจะวาด!! ';
+$lang['lang_plugin_lottery_core_model_21'] = ' แนะนำจุดสนใจรหัสกวาด';
+$lang['lang_plugin_lottery_core_model_22'] = ' งานกิจกรรมแนะนำรางวัล';
+$lang['lang_plugin_lottery_core_model_23'] = ' รางวัลที่แนะนำ';
+$lang['lang_plugin_lottery_core_model_24'] = ' รางวัลที่แนะนำ';
+$lang['lang_plugin_lottery_core_model_25'] = ' รางวัลที่แนะนำ';
+$lang['lang_plugin_lottery_core_model_26'] = ' จุด';
+$lang['lang_plugin_lottery_core_model_27'] = ' โบนัส';
+$lang['lang_plugin_lottery_core_model_28'] = ' หยวน';
+$lang['lang_plugin_lottery_core_model_29'] = ' ซองจดหมายสีแดง';
+$lang['lang_plugin_lottery_core_model_30'] = ' หยวน';
+$lang['lang_plugin_lottery_core_model_31'] = ' โปรโมชั่น';
+$lang['lang_plugin_lottery_core_model_32'] = ' มี';
+$lang['lang_plugin_lottery_core_model_33'] = ' คูปอง';
+$lang['lang_plugin_lottery_core_model_34'] = ' แผ่น';
+?>

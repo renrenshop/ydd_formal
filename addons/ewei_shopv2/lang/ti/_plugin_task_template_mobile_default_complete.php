@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_task_template_mobile_default_complete_0'] = ' เสร็จสมบูรณ์';
+$lang['lang_plugin_task_template_mobile_default_complete_1'] = ' เชิญสะสม';
+$lang['lang_plugin_task_template_mobile_default_complete_2'] = ' คนสแกน หรือดูโปสเตอร์';
+$lang['lang_plugin_task_template_mobile_default_complete_3'] = ' รางวัลภารกิจ';
+$lang['lang_plugin_task_template_mobile_default_complete_4'] = ' คะแนนโบนัส';
+$lang['lang_plugin_task_template_mobile_default_complete_5'] = ' จุด';
+$lang['lang_plugin_task_template_mobile_default_complete_6'] = ' ออก';
+$lang['lang_plugin_task_template_mobile_default_complete_7'] = ' รางวัล';
+$lang['lang_plugin_task_template_mobile_default_complete_8'] = ' การกระตุ้น';
+$lang['lang_plugin_task_template_mobile_default_complete_9'] = ' ยอดเงินโบนัส';
+$lang['lang_plugin_task_template_mobile_default_complete_10'] = ' หยวน';
+$lang['lang_plugin_task_template_mobile_default_complete_11'] = ' ออก';
+$lang['lang_plugin_task_template_mobile_default_complete_12'] = ' รางวัล';
+$lang['lang_plugin_task_template_mobile_default_complete_13'] = ' การกระตุ้น';
+$lang['lang_plugin_task_template_mobile_default_complete_14'] = ' โบนัสโบนัส';
+$lang['lang_plugin_task_template_mobile_default_complete_15'] = ' หยวน';
+$lang['lang_plugin_task_template_mobile_default_complete_16'] = ' ออก';
+$lang['lang_plugin_task_template_mobile_default_complete_17'] = ' รางวัล';
+$lang['lang_plugin_task_template_mobile_default_complete_18'] = ' การกระตุ้น';
+$lang['lang_plugin_task_template_mobile_default_complete_19'] = ' คูปองรางวัล';
+$lang['lang_plugin_task_template_mobile_default_complete_20'] = ' คูปอง';
+$lang['lang_plugin_task_template_mobile_default_complete_21'] = ' ออก';
+$lang['lang_plugin_task_template_mobile_default_complete_22'] = ' รางวัล';
+$lang['lang_plugin_task_template_mobile_default_complete_23'] = ' การกระตุ้น';
+$lang['lang_plugin_task_template_mobile_default_complete_24'] = ' รางวัลพิเศษสินค้า';
+$lang['lang_plugin_task_template_mobile_default_complete_25'] = ' โปรโมชั่น';
+$lang['lang_plugin_task_template_mobile_default_complete_26'] = ' ปลอกคอ';
+$lang['lang_plugin_task_template_mobile_default_complete_27'] = ' นำมาใช้';
+$lang['lang_plugin_task_template_mobile_default_complete_28'] = ' รางวัล';
+$lang['lang_plugin_task_template_mobile_default_complete_29'] = ' การกระตุ้น';
+$lang['lang_plugin_task_template_mobile_default_complete_30'] = ' หมายเหตุ:ไม่มี';
+$lang['lang_plugin_task_template_mobile_default_complete_31'] = ' ไม่พบข้อมูลงาน';
+$lang['lang_plugin_task_template_mobile_default_complete_32'] = ' ไม่งานพบข้อมูล';
+?>

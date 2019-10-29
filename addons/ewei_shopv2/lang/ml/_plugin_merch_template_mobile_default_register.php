@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_merch_template_mobile_default_register_0'] = ' permohonan anda telah ditolak:';
+$lang['lang_plugin_merch_template_mobile_default_register_1'] = ' Anda juga boleh mengubah suai maklumat untuk menghantar semula.';
+$lang['lang_plugin_merch_template_mobile_default_register_2'] = ' anda telah menghantar maklumat tersebut, sila tunggu untuk kami menghubungi anda';
+$lang['lang_plugin_merch_template_mobile_default_register_3'] = ' Anda juga boleh mengubah suai maklumat untuk menghantar semula.';
+$lang['lang_plugin_merch_template_mobile_default_register_4'] = ' Nama Saudagar';
+$lang['lang_plugin_merch_template_mobile_default_register_5'] = ' Nama Saudagar';
+$lang['lang_plugin_merch_template_mobile_default_register_6'] = ' Projek utama yang';
+$lang['lang_plugin_merch_template_mobile_default_register_7'] = ' seperti Kasut dan topi';
+$lang['lang_plugin_merch_template_mobile_default_register_8'] = ' Kosmetik, dan sebagainya';
+$lang['lang_plugin_merch_template_mobile_default_register_9'] = ' Pengenalan ringkas';
+$lang['lang_plugin_merch_template_mobile_default_register_10'] = ' Pengenalan ringkas kepada peniaga-peniaga';
+$lang['lang_plugin_merch_template_mobile_default_register_11'] = ' Orang hubungan';
+$lang['lang_plugin_merch_template_mobile_default_register_12'] = ' Berkat anda';
+$lang['lang_plugin_merch_template_mobile_default_register_13'] = ' Nombor telefon';
+$lang['lang_plugin_merch_template_mobile_default_register_14'] = ' nombor telefon anda';
+$lang['lang_plugin_merch_template_mobile_default_register_15'] = ' Sila isi borang dengan berhati-hati, menjamin bahawa kami boleh menghubungi anda secepat mungkin';
+$lang['lang_plugin_merch_template_mobile_default_register_16'] = ' Nombor akaun';
+$lang['lang_plugin_merch_template_mobile_default_register_17'] = ' Nombor akaun';
+$lang['lang_plugin_merch_template_mobile_default_register_18'] = ' Kata laluan';
+$lang['lang_plugin_merch_template_mobile_default_register_19'] = ' Kata laluan';
+$lang['lang_plugin_merch_template_mobile_default_register_20'] = ' Log masuk ke beberapa latar belakang Saudagar';
+$lang['lang_plugin_merch_template_mobile_default_register_21'] = ' Sila isi dengan berhati-hati';
+$lang['lang_plugin_merch_template_mobile_default_register_22'] = ' saya telah membaca dan memahami.';
+$lang['lang_plugin_merch_template_mobile_default_register_23'] = ' ';
+$lang['lang_plugin_merch_template_mobile_default_register_24'] = ' ';
+$lang['lang_plugin_merch_template_mobile_default_register_25'] = ' . ';
+$lang['lang_plugin_merch_template_mobile_default_register_26'] = ' Mohon sekarang';
+$lang['lang_plugin_merch_template_mobile_default_register_27'] = ' Menghantar semula permintaan';
+$lang['lang_plugin_merch_template_mobile_default_register_28'] = ' Saya telah membaca';
+?>

@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_account_register_0'] = ', आपकास्वागतहै';
+$lang['lang_plugin_pc_template_mobile_default_account_register_1'] = 'इससाइटकासदस्यनहींहै?तुरंत';
+$lang['lang_plugin_pc_template_mobile_default_account_register_2'] = 'लॉगऑनकरें';
+$lang['lang_plugin_pc_template_mobile_default_account_register_3'] = 'अभीपंजीकृतकरें';
+$lang['lang_plugin_pc_template_mobile_default_account_register_4'] = 'अभीढूंढें';
+$lang['lang_plugin_pc_template_mobile_default_account_register_5'] = 'फ़ोननंबर:';
+$lang['lang_plugin_pc_template_mobile_default_account_register_6'] = 'आपकाफ़ोननंबर';
+$lang['lang_plugin_pc_template_mobile_default_account_register_7'] = 'ऑथेंटिकोडकोड:';
+$lang['lang_plugin_pc_template_mobile_default_account_register_8'] = 'बिटऑथेंटिकोड';
+$lang['lang_plugin_pc_template_mobile_default_account_register_9'] = 'कैप्चाप्राप्तकरें';
+$lang['lang_plugin_pc_template_mobile_default_account_register_10'] = 'क्लिककरें';
+$lang['lang_plugin_pc_template_mobile_default_account_register_11'] = 'SMS प्रमाणनभेजें';
+$lang['lang_plugin_pc_template_mobile_default_account_register_12'] = ', औरअपनेसेलफोनसंदेशप्राप्त "';
+$lang['lang_plugin_pc_template_mobile_default_account_register_13'] = 'बिटगतिशीलकोडप्रस्तुतकरनेसेपहलेएसएमएससत्यापनकेलिएइनपुट।';
+$lang['lang_plugin_pc_template_mobile_default_account_register_14'] = 'पासवर्डसेटकरें:';
+$lang['lang_plugin_pc_template_mobile_default_account_register_15'] = 'अपरकेसऔरलोअरकेसअक्षर, प्रतीक, यासंख्याएं';
+$lang['lang_plugin_pc_template_mobile_default_account_register_16'] = 'पासवर्डकीपुष्टिकरें:';
+$lang['lang_plugin_pc_template_mobile_default_account_register_17'] = 'अपनालॉगिनपासवर्डफिरसेदर्जकरें';
+$lang['lang_plugin_pc_template_mobile_default_account_register_18'] = 'अभीपंजीकृतकरें';
+$lang['lang_plugin_pc_template_mobile_default_account_register_19'] = 'अभीढूंढें';
+$lang['lang_plugin_pc_template_mobile_default_account_register_20'] = 'पासवर्डभूलगए';
+$lang['lang_plugin_pc_template_mobile_default_account_register_21'] = 'अभीपंजीकृतकरें';
+$lang['lang_plugin_pc_template_mobile_default_account_register_22'] = 'दर्जकरनेकेबादआपकरसकतेहैं';
+$lang['lang_plugin_pc_template_mobile_default_account_register_23'] = 'मालखरीदनेकेलिएभुगतानकेआदेश';
+$lang['lang_plugin_pc_template_mobile_default_account_register_24'] = 'उत्पादध्यानदुकानलीजिए';
+$lang['lang_plugin_pc_template_mobile_default_account_register_25'] = 'सुरक्षितलेनदेनअखंडताकोईचिंतानहीं';
+$lang['lang_plugin_pc_template_mobile_default_account_register_26'] = 'क्रेडिटकेलिएअधिमानीखरीदारीप्राप्तकरें';
+$lang['lang_plugin_pc_template_mobile_default_account_register_27'] = 'सदस्यताविशेषाधिकारविशेषाधिकार';
+$lang['lang_plugin_pc_template_mobile_default_account_register_28'] = 'सूर्य-स्टैंडकेबाहरसाझाकरणकामूल्यांकनकरें';
+?>

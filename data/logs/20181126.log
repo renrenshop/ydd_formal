@@ -1,0 +1,40 @@
+2018-11-26 15:20:54 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_beb5adfd77ba]]></ToUserName>
+<FromUserName><![CDATA[o22qy1R_m_xYc5gKs1v50N951g7E]]></FromUserName>
+<CreateTime>1543216854</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=1&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>462400649</MenuId>
+</xml>
+
+2018-11-26 15:20:54 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_beb5adfd77ba',
+    'fromusername' => 'o22qy1R_m_xYc5gKs1v50N951g7E',
+    'createtime' => '1543216854',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=1&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '462400649',
+    'from' => 'o22qy1R_m_xYc5gKs1v50N951g7E',
+    'to' => 'gh_beb5adfd77ba',
+    'time' => '1543216854',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=1&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2018-11-26 15:20:54 response :
+------------
+

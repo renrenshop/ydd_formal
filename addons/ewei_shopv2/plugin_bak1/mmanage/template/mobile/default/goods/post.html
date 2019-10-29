@@ -1,0 +1,311 @@
+{template 'mmanage/common'}
+
+<div class='fui-page fui-page-current'>
+    <div class="fui-header fui-header-success">
+        <div class="fui-header-left">
+            <a class="back btn-back">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_0']}</a>
+            <a class="btn-cancel cancel-params">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_1']}</a>
+        </div>
+        <div class="title">{if !empty($item)}{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_2']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_3']}{/if}</div>
+        <div class="fui-header-right"></div>
+    </div>
+    <div class='fui-content navbar'>
+
+        <input type="hidden" id="id" value="{$item['id']}" />
+        <input type="hidden" id="type" value="{$item['type']}" />
+        <input type="hidden" id="cates" value="{$item['cates']}" />
+        <input type="hidden" id="hasoption" value="{$item['hasoption']}" />
+        <input type="hidden" id="totalcnf" value="{$item['totalcnf']}" />
+        <input type="hidden" id="showlevels" value="{$item['showlevels']}" />
+        <input type="hidden" id="showgroups" value="{$item['showgroups']}" />
+        <input type="hidden" id="buylevels" value="{$item['buylevels']}" />
+        <input type="hidden" id="buygroups" value="{$item['buygroups']}" />
+
+        <input type="hidden" id="diypage" value="{$item['diypage']}" />
+        <input type="hidden" id="diyformid" value="{$item['diyformid']}" />
+
+        {if !empty($merch_user)}
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_4']}: {$merch_user['merchname']}</div>
+        {/if}
+
+        <div class="fui-cell-group">
+            <div class="fui-cell fui-cell-textarea">
+                <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_5']}</div>
+                <div class="fui-cell-info">
+                    <textarea rows="3" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_6']}" id="title">{$item['title']}</textarea>
+                </div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_7']}</div>
+                <div class="fui-cell-info">
+                    <input type="text" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_8']}" class="fui-input" value="{$item['subtitle']}" id="subtitle" />
+                </div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_9']}</div>
+                <div class="fui-cell-info">
+                    <input type="text" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_10']}" class="fui-input" value="{$item['unit']}" id="unit" />
+                </div>
+            </div>
+        </div>
+        <div class="fui-cell-group">
+            <div class="fui-cell borderb noactive">
+                <div class="fui-cell-info">
+                    <ul class="fui-images" id="thumbs">
+                        {loop $piclist $picitem}
+                            <li style="background-image:url({php echo tomedia($picitem)})" class="image" data-filename="{$picitem}">
+                                <span class="image-remove">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_11']}</span>
+                            </li>
+                        {/loop}
+                    </ul>
+                    <div class="fui-uploader" data-count="{php echo count($piclist)}" data-max="10" data-name="images[]" {if count($piclist)>=10}style="display: none;"{/if}>
+                        <input type="file" name='imgFile0[]' id='imgFile0' multiple="" accept="image/*" >
+                    </div>
+                </div>
+            </div>
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_12']}({php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_13']})</div>
+        </div>
+
+        <div class="fui-cell-group fui-cell-click" id="thumbs3">
+            {if empty($item)}
+                <div class="fui-cell check-param" data-action="type" id="sss">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_14']}</div>
+                    <div class="fui-cell-info">{$type_title}</div>
+                    <div class="fui-cell-remark"></div>
+                </div>
+            {else}
+                <div class="fui-cell noactive">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_15']}</div>
+                    <div class="fui-cell-info">{$type_title}</div>
+                    <div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_16']}</div>
+                </div>
+            {/if}
+            {if $catlevel!=-1}
+                <div class="fui-cell check-param" data-action="cate">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_17']}</div>
+                    <div class="fui-cell-info">{$category_title}</div>
+                    <div class="fui-cell-remark"></div>
+                </div>
+            {/if}
+            <div class="fui-cell check-param" data-action="prop">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_18']}</div>
+                <div class="fui-cell-info">{$prop_title}</div>
+                <div class="fui-cell-remark">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_19']}</div>
+            </div>
+        </div>
+
+        {if !empty($item['hasoption'])}
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_20']}PC{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_21']}</div>
+            <div class="fui-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_22']}</div>
+                    <div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_23']}PC{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_24']}</div>
+                </div>
+            </div>
+        {else}
+        {if empty($item)}
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_25']}PC{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_26']}</div>
+        {/if}
+        <div class="fui-cell-group">
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_27']}</div>
+                <div class="fui-cell-info">
+                    <input type="number" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_28']}" class="fui-input" value="{php echo empty($item['productprice'])?0:$item['productprice']}" id="productprice" />
+                </div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_29']}</div>
+                <div class="fui-cell-info">
+                    <input type="number" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_30']}" class="fui-input" value="{php echo empty($item['marketprice'])?0:$item['marketprice']}" id="marketprice" />
+                </div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_31']}</div>
+                <div class="fui-cell-info">
+                    <input type="number" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_32']}" class="fui-input" value="{php echo empty($item['costprice'])?0:$item['costprice']}" id="costprice" />
+                </div>
+            </div>
+        </div>
+        <div class="fui-cell-group fui-cell-click">
+            <div class="fui-cell noactive">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_33']}</div>
+                {if empty($item['hasoption'])}
+                    <div class="fui-cell-info">
+                        <input type="tel" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_34']}" class="fui-input" value="{php echo intval($item['total'])}" id="total" />
+                    </div>
+                {else}
+                    <div class="fui-cell-info">{$item['total']}</div>
+                    <div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_35']}</div>
+                {/if}
+            </div>
+            <div class="fui-cell check-param" data-action="totalcnf">
+                <div class="fui-cell-text">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_36']}</div>
+                <div class="fui-cell-remark">{$totalcnf_title}</div>
+            </div>
+            <div class="fui-cell noactive">
+                <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_37']}</div>
+                <div class="fui-cell-info"><input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right" id="showtotal" {if !empty($item['showtotal'])}checked="checked"{/if}></div>
+            </div>
+            {if empty($item['hasoption'])}
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_38']}</div>
+                    <div class="fui-cell-info">
+                        <input type="number" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_39']}" class="fui-input" value="{$item['weight']}" id="weight" />
+                    </div>
+                </div>
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_40']}</div>
+                    <div class="fui-cell-info">
+                        <input type="number" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_41']}" class="fui-input" value="{$item['goodssn']}" id="goodssn" />
+                    </div>
+                </div>
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_42']}</div>
+                    <div class="fui-cell-info">
+                        <input type="number" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_43']}" class="fui-input" value="{$item['productsn']}" id="productsn" />
+                    </div>
+                </div>
+            {/if}
+        </div>
+        {/if}
+
+        <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_44']}</div>
+        <div class="fui-cell-group fui-cell-click">
+            <div class="fui-cell check-param" data-action="viewlevel">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_45']}</div>
+                <div class="fui-cell-info">{$viewlevel_title}</div>
+                <div class="fui-cell-remark"></div>
+            </div>
+            <div class="fui-cell check-param" data-action="viewgroup">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_46']}</div>
+                <div class="fui-cell-info">{$viewgroup_title}</div>
+                <div class="fui-cell-remark"></div>
+            </div>
+        </div>
+
+        <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_47']}</div>
+        <div class="fui-cell-group fui-cell-click">
+            <div class="fui-cell check-param" data-action="buylevel">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_48']}</div>
+                <div class="fui-cell-info">{$buylevel_title}</div>
+                <div class="fui-cell-remark"></div>
+            </div>
+            <div class="fui-cell check-param" data-action="buygroup">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_49']}</div>
+                <div class="fui-cell-info">{$buygroup_title}</div>
+                <div class="fui-cell-remark"></div>
+            </div>
+        </div>
+        <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_50']}(0{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_51']})</div>
+        <div class="fui-cell-group fui-cell-click">
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_52']}</div>
+                <div class="fui-cell-info">
+                    <input type="number" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_53']}" class="fui-input" value="{php echo intval($item['maxbuy'])}" id="maxbuy" />
+                </div>
+                <div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_54']}</div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_55']}</div>
+                <div class="fui-cell-info">
+                    <input type="number" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_56']}" class="fui-input" value="{php echo intval($item['minbuy'])}" id="minbuy" />
+                </div>
+                <div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_57']}</div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_58']}</div>
+                <div class="fui-cell-info">
+                    <input type="number" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_59']}" class="fui-input" value="{php echo intval($item['usermaxbuy'])}" id="usermaxbuy" />
+                </div>
+                <div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_60']}</div>
+            </div>
+        </div>
+
+        <div class="fui-cell-group fui-cell-click">
+            <div class="fui-cell noactive">
+                <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_61']}</div>
+                <div class="fui-cell-info"><input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right" id="isnodiscount" {if empty($item['isnodiscount'])}checked="checked"{/if}></div>
+            </div>
+            <div class="fui-cell noactive">
+                <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_62']}</div>
+                <div class="fui-cell-info"><input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right" id="nocommission" {if empty($item['nocommission'])}checked="checked"{/if}></div>
+            </div>
+            {if p('diyform')}
+                {if !empty($diyform) || $item['diyformtype']==2}
+                    {if $item['diyformtype']==2}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_63']}</div>
+                            <div class="fui-cell-info">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_64']}</div>
+                            <div class="fui-cell-remark noremark">PC{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_65']}</div>
+                        </div>
+                    {elseif !empty($diyform)}
+                        <div class="fui-cell check-param" data-action="diyform">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_66']}</div>
+                            <div class="fui-cell-info">{$diyform_title}</div>
+                            <div class="fui-cell-remark"></div>
+                        </div>
+                    {/if}
+                {/if}
+            {/if}
+            {if $diypage}
+                <div class="fui-cell check-param" data-action="diypage">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_67']}</div>
+                    <div class="fui-cell-info">{$diypage_title}</div>
+                    <div class="fui-cell-remark"></div>
+                </div>
+            {/if}
+        </div>
+
+        <div class="fui-cell-group">
+            <div class="fui-cell ">
+                <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_68']}</div>
+                <div class="fui-cell-info"><input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right" id="cash" {if $item['cash']==2}checked="checked"{/if}></div>
+            </div>
+            <div class="fui-cell ">
+                <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_69']}</div>
+                <div class="fui-cell-info"><input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right" id="invoice" {if !empty($item['invoice'])}checked="checked"{/if}></div>
+            </div>
+        </div>
+
+
+        <div class="fui-cell-group fui-cell-click">
+            <div class="fui-cell check-param" data-action="dispatch">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_70']}</div>
+                <div class="fui-cell-info">{$dispatch_title}</div>
+                <div class="fui-cell-remark"></div>
+            </div>
+        </div>
+
+        <div class="fui-cell-group fui-cell-click">
+            <div class="fui-cell noactive">
+                <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_71']}</div>
+                <div class="fui-cell-info"><input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right" id="status" {if !empty($item['status'])}checked="checked"{/if}></div>
+            </div>
+        </div>
+
+        <div class="fui-cell-group">
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_72']}</div>
+                <div class="fui-cell-info">
+                    <input type="number" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_73']}" class="fui-input" value="{$item['displayorder']}" id="displayorder" />
+                </div>
+            </div>
+        </div>
+
+        <div class="fui-title center">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_74']}PC{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_75']}</div>
+
+    </div>
+
+    {template 'mmanage/_tpl/goods_params'}
+
+    <div class="fui-navbar">
+        <div class="nav-item btn btn-success btn-submit">{php echo $lang['lang_plugin_mmanage_template_mobile_default_goods_post_76']}</div>
+    </div>
+
+    <script language="javascript">
+        require(['../addons/ewei_shopv2/plugin/mmanage/static/js/goods-detail.js'],function(modal){
+            modal.initDetail({category: {$category_json}});
+        });
+    </script>
+</div>
+{template '_footer'}

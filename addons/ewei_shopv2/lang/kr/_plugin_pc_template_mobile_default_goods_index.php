@@ -1,0 +1,37 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_goods_index_0'] = ' 최근탐색';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_1'] = '엔';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_2'] = ' 모든검색기록';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_3'] = ' 에의해정렬:';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_4'] = ' 기본정렬';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_5'] = ' 기본';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_6'] = ' 높은매출액순에서주문하려면클릭';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_7'] = ' 판매';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_8'] = ' 높은가격순에서주문하려면클릭';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_9'] = ' 가격';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_10'] = ' 최저가격';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_11'] = ' 최고가격';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_12'] = ' 확인';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_13'] = ' 새로운목록';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_14'] = ' 핫제품';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_15'] = ' 추천항목';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_16'] = ' 프로모션상품';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_17'] = ' 상품목록반복';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_18'] = ' 제한한도할인';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_19'] = ' 쇼핑몰가격:¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_20'] = '엔';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_21'] = ' 시장가격:¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_22'] = '엔';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_23'] = ' 매우만족';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_24'] = ' 매우만족';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_25'] = ' 매우만족';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_26'] = ' 매우만족';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_27'] = ' 매우만족';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_28'] = ' 매우만족';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_29'] = ' 판매상품';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_30'] = ' 홈';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_31'] = ' 이전';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_32'] = ' 다음';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_33'] = ' 마지막페이지';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_34'] = ' 당신이좋아하는것같아요';
+?>

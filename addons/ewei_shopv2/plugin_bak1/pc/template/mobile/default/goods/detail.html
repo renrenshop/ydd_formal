@@ -1,0 +1,543 @@
+{template 'pc/layout/_header'}
+<link href="../addons/ewei_shopv2/plugin/pc/template/mobile/default/static/css/home_goods.css" rel="stylesheet"
+      type="text/css">
+<script type="text/javascript"
+        src="../addons/ewei_shopv2/plugin/pc/template/mobile/default/static/js/cloudzoom.js"></script>
+<style type="text/css">
+    .ncs-goods-picture .levelB, .ncs-goods-picture .levelC {
+        cursor: url("../addons/ewei_shopv2/plugin/pc/template/mobile/default/static/images/shop/zoom.cur"), pointer;
+    }
+
+    .ncs-goods-picture .levelD {
+        cursor: url("../addons/ewei_shopv2/plugin/pc/template/mobile/default/static/images/shop/hand.cur"), move \9;
+    }
+
+    .nch-sidebar-all-viewed {
+        display: block;
+        height: 20px;
+        text-align: center;
+        padding: 9px 0;
+    }
+</style>
+
+<div class="wrapper pr fui-page">
+    <input type="hidden" id="lockcompare" value="unlock"/>
+    <div class="ncs-detail ownshop">
+        <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_0']} -->
+
+        <div id="ncs-goods-picture" class="ncs-goods-picture">
+            <div class="gallery_wrap">
+                <div class="gallery"><img title="{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_1']}~" src="{$goods['thumb']}"
+                                          class="cloudzoom"
+                                          data-cloudzoom="zoomImage: '{$goods['thumb']}'"></div>
+            </div>
+            <div class="controller_wrap">
+                <div class="controller">
+                    <ul>
+                        {loop $thumbs $thumb}
+                            <li><img title="{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_2']}~" class='cloudzoom-gallery'
+                                     src="{php echo tomedia($thumb)}"
+                                     data-cloudzoom="useZoom: '.cloudzoom', image: '{php echo tomedia($thumb)}', zoomImage: '{php echo tomedia($thumb)}' "
+                                " width="60" height="60">
+                            </li>
+                        {/loop}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_3']} -->
+        <div class="ncs-goods-summary">
+            <div class="name">
+                <h1>{$goods['title']}</h1>
+                <strong>{$goods['subtitle']}</strong></div>
+            <div class="ncs-meta">
+
+                <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_4']} -->
+                <dl>
+                    <dt>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_5']}&nbsp;{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_6']}&nbsp;{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_7']}</dt>
+                    <dd class="cost-price"><strong>&yen;{$goods['productprice']}</strong></dd>
+                </dl>
+                <!-- E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_8']} -->
+                <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_9']} -->
+                <dl>
+                    <dt>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_10']}&nbsp;{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_11']}&nbsp;{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_12']}</dt>
+                    <dd class="price">
+                        <strong>&yen;{if $goods['minprice']==$goods['maxprice']}{$goods['minprice']}{else}{$goods['minprice']}~{$goods['maxprice']}{/if}</strong>
+                    </dd>
+                </dl>
+                <dl class="rate">
+                    <dt>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_13']}</dt>
+                    <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_14']} -->
+                    <dd><span class="raty" data-score="5"></span><a href="#ncGoodsRate">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_15']}{$commons['count']['all']}
+                            {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_16']}</a></dd>
+                    <!-- E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_17']} -->
+                </dl>
+                <!-- E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_18']} -->
+                <div class="ncs-goods-code"></div>
+            </div>
+            {if $goods['isdiscount'] && $goods['isdiscount_time']>=time()}
+                <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_19']} -->
+                <div class="ncs-sale">
+                    <dl>
+                        <dt>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_20']}&#12288;&#12288;{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_21']}</dt>
+                        <dd class="promotion-info">
+                            <span class="sale-name">{php echo empty($goods['isdiscount_title'])?$lang['lang_plugin_pc_template_mobile_default_goods_detail_22']:$goods['isdiscount_title']}</span>
+                            <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_23']} -->
+                        <span class="sale-rule w400">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_24']}<em>&yen;41.00</em>
+                        {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_25']}2{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_26']}                        </span>
+                            <!-- E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_27']}  -->
+                            <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_28']}-->
+                            <!-- E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_29']} -->
+                            <!--S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_30']} -->
+                            <!--E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_31']} -->
+
+                        </dd>
+                    </dl>
+                    <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_32']} -->
+                    <!-- E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_33']} -->
+                </div>
+                <!-- E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_34']} -->
+            {/if}
+            <!--{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_35']} begin  -->
+            <!--{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_36']} end  -->
+            <div class="ncs-key" style="padding: 10px 30px">
+                {if $hasServices}
+                    {if $goods['cash']==2}<i class='icon icon-roundcheck text-danger '></i>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_37']}{/if}
+                    {if $goods['quality']}<i class='icon icon-roundcheck text-danger '></i>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_38']}{/if}
+                    {if $goods['repair']}<i class='icon icon-roundcheck text-danger'></i>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_39']}{/if}
+                    {if $goods['invoice']}<i class='icon icon-roundcheck text-danger'></i>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_40']}{/if}
+                    {if $goods['seven']}<i class='icon icon-roundcheck text-danger'></i>7{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_41']}{/if}
+                {/if}
+            </div>
+
+
+            <div class="ncs-logistics"><!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_42']}  -->
+                <dl id="ncs-freight" class="ncs-freight">
+
+                    <dd class="ncs-freight_box">
+                        <div id="ncs-freight-selector" class="ncs-freight-select">
+
+
+                            <div id="ncs-freight-prompt" style="padding-left: 120px"><strong>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_43']}</strong>
+                                {if is_array($goods['dispatchprice'])}
+                                    {if $goods['type']==1}
+                                        <span>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_44']}: {php echo number_format($goods['dispatchprice']['min'],2)}
+                                            ~ {php echo number_format($goods['dispatchprice']['max'],2)}</span>
+                                    {/if}
+                                {else}
+                                    {if $goods['type']==1}
+                                        <span>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_45']}: {php echo $goods['dispatchprice'] == 0 ? $lang['lang_plugin_pc_template_mobile_default_goods_detail_46'] : number_format($goods['dispatchprice'],2)}</span>
+                                    {/if}
+                                {/if}</div>
+                    </dd>
+                </dl>
+                <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_47']}  -->
+            </div>
+
+            <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_48']} -->
+            {if $goods['canbuy']}
+                <div class="ncs-buy">
+
+                    <div class="ncs-figure-input">
+                        <input name="" type="tel" id="quantity" value="1" size="3" maxlength="6" class="input-text num">
+                        <a href="javascript:void(0)" class="increase plus">&nbsp;</a>
+                        <a  href="javascript:void(0)" class="decrease minus">&nbsp;</a>
+                    </div>
+
+                    <div class="ncs-point" style="display: none;"><i></i>
+                        <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_49']} -->
+                        <span>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_50']}<strong nctype="goods_stock">55</strong>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_51']}
+                        <!-- E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_52']} -->
+                    </div>
+
+                    <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_53']} -->
+                    <!-- E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_54']} -->
+                    <div class="ncs-btn">
+                        <!-- v3-b10 {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_55']}-->
+                        {if $canAddCart}
+                            <!-- {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_56']}-->
+                            <a href="javascript:void(0);" nctype="addcart_submit" class="addcart cartbtn" title="{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_57']}"><i
+                                        class="icon-shopping-cart"></i>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_58']}</a>
+                        {/if}
+                        <!-- {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_59']}-->
+                        <a href="javascript:void(0);" nctype="buynow_submit" class="buynow " title="{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_60']}">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_61']}</a>
+
+                        <!-- v3-b10 end-->
+
+                        <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_62']} -->
+                        <div class="ncs-cart-popup">
+                            <dl>
+                                <dt>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_63']}<a title="{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_64']}" onClick="$('.ncs-cart-popup').css({'display':'none'});">X</a>
+                                </dt>
+                                <dd>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_65']} <strong id="bold_num"></strong> {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_66']} {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_67']}<em id="bold_mly" class="saleP"></em>
+                                </dd>
+                                <dd class="btns">
+                                    <a href="javascript:void(0);" class="ncs-btn-mini ncs-btn-green"
+                                                    onclick="location.href='/index.php?act=cart'">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_68']}</a>
+                                    <a href="javascript:void(0);" class="ncs-btn-mini" value=""
+                                       onclick="$('.ncs-cart-popup').css({'display':'none'});">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_69']}</a>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_70']} -->
+                    </div>
+                    <!-- E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_71']} -->
+                </div>
+            {else}
+                <div class="fui-cell-group fui-cell-click">
+                    <div class="fui-cell">
+                        <div class="fui-cell-text">
+                            {if $goods['userbuy']==0}
+                                {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_72']}{$goods['usermaxbuy']}{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_73']}
+                            {else if $goods['levelbuy']==0}
+                                {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_74']}
+                            {else if $goods['groupbuy']==0}
+                                {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_75']}
+                            {else if $goods['timebuy'] ==-1}
+                                {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_76']}!
+                            {else if $goods['timebuy'] ==1}
+                                {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_77']}!
+                            {else if $goods['total'] <=0}
+                                {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_78']}!
+                            {/if}</div>
+                    </div>
+                </div>
+
+            {/if}
+            <!-- E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_79']} -->
+
+            <!--E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_80']} -->
+        </div>
+        <!-- E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_81']} -->
+        <div class="ncs-handle">
+            <!-- S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_82']} -->
+            <a class="nav-item favorite-item {if $isFavorite}active{/if}"data-isfavorite="{php echo intval($isFavorite)}">
+                <span class="icon {if $isFavorite}icon-likefill{else}icon-like{/if}"></span>
+                <span class="label" style="font-size: 16px;line-height: 16px;">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_83']}</span>
+            </a>
+
+        </div>
+
+        <!--S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_84']}-->
+        <div style="position: absolute; z-index: 2; top: -1px; right: -1px;">
+            <!--{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_85']} S-->
+            <div class="ncs-info">
+                <div class="title">
+                    <h4>{$shop['name']}</h4>
+                </div>
+                <div class="content">
+
+
+                    <dl class="messenger">
+                        <dt>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_86']}</dt>
+                        <dd><span member_id="1"></span>
+                        </dd>
+                    </dl>
+                    <!--{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_87']} by 9yetech.com -->
+
+                    <!--{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_88']}-->
+
+                    <div class="goto"><a href="{$shop['uro']}&r=pc">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_89']}</a><a
+                                href="javascript:collect_store('1','count','store_collect')">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_90']}<em
+                                    nctype="store_collect">0</em></a></div>
+                    <div class="shop-other" id="shop-other">
+                        <ul>
+                            <li class="ncs-info-btn-map"><a href="javascript:void(0)"
+                                                            class="pngFix"><span>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_91']}</span><b></b> <!-- {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_92']} -->
+                                    <div class="ncs-info-map" id="map_container"
+                                         style="width:208px;height:208px;"></div>
+                                </a></li>
+                            <li class="ncs-info-btn-qrcode"><a href="javascript:void(0)"
+                                                               class="pngFix"><span>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_93']}</span><b></b>
+                                    <p class="ncs-info-qrcode"></p>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--S {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_94']} -->
+            <div class="ncs-lal">
+                <div class="title">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_95']}</div>
+                <div class="content">
+                    <ul>
+                        {loop $history $_g}
+                            <li>
+                                <div class="goods-pic"><a title="{$_g['title']}"
+                                                          href="{php echo mobileUrl('pc.goods.detail',array('id'=>$_g['goodsid']))}">
+                                        <img alt="" src="{$_g['thumb']}" rel="lazy"
+                                             data-url="{$_g['thumb']}"/>
+                                    </a></div>
+                                <div class="goods-price">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_96']}{$_g['marketprice']}</div>
+                            </li>
+                        {/loop}
+
+                    </ul>
+                </div>
+            </div>
+            <!--E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_97']} -- >
+           </div>
+        <!--E {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_98']} -->
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div id="content" class="ncs-goods-layout expanded">
+        <div class="ncs-goods-main" id="main-nav-holder">
+            <div class="tabbar pngFix" id="main-nav">
+                <div class="ncs-goods-title-nav">
+                    <ul id="categorymenu">
+                        <li class="current"><a id="tabGoodsIntro" href="#">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_99']}</a></li>
+                        <li><a id="tabGoodsRate" href="#">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_100']}<em>({$commons['count']['all']})</em></a></li>
+                    </ul>
+                    <div class="switch-bar"><a href="javascript:void(0)" id="fold">&nbsp;</a></div>
+                </div>
+            </div>
+            {if count($params)>0}
+            {/if}
+            <div class="ncs-intro">
+                <div class="content bd" id="ncGoodsIntro">
+                    <ul class="nc-goods-sort">
+                        {if !empty($params)}
+                            {loop $params $p}
+                                <li>{$p['title']}{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_101']}{$p['value']}</li>
+                            {/loop}
+                        {else}
+                            <div class="fui-cell-info text-align">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_102']}</div>
+                        {/if}
+                    </ul>
+                    <div class="ncs-goods-info-content">
+                        <div class="default">
+                            {$goods['content']}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ncs-comment">
+                <div class="ncs-goods-title-bar hd">
+                    <h4><a href="javascript:void(0);">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_103']}</a></h4>
+                </div>
+                <div class="ncs-goods-info-content bd" id="ncGoodsRate">
+                    <div class="top">
+                        <div class="rate">
+                            <p><strong>{$commons['percent']}</strong><sub>%</sub>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_104']}</p>
+                            <span>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_105']}{$commons['count']['all']}{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_106']}</span></div>
+                        <div class="percent">
+                            <dl>
+                                <dt>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_107']}<em>({$commons['percent']}%)</em></dt>
+                                <dd><i style="width: {$commons['percent']}%"></i></dd>
+                            </dl>
+                            <dl>
+                                <dt>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_108']}<em>({php echo intval($commons['count']['normal']/$commons['count']['all']* 100)}
+                                        %)</em></dt>
+                                <dd>
+                                    <i style="width: {php echo intval($commons['count']['normal']/$commons['count']['all']* 100)}%"></i>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_109']}<em>({php echo intval($commons['count']['bad']/$commons['count']['all']* 100)}
+                                        %)</em></dt>
+                                <dd>
+                                    <i style="width: {php echo intval($commons['count']['bad']/$commons['count']['all']* 100)}%"></i>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="btns"><span>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_110']}</span>
+                            <p><a href="<?php echo mobileUrl('pc.order') ?>"
+                                  class="ncs-btn ncs-btn-red" target="_blank"><i class="icon-comment-alt"></i>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_111']}</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ncs-goods-title-nav">
+                        <ul id="comment_tab">
+                            <li data-type="all" class="current"><a
+                                        href="javascript:void(0);">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_112']}({$commons['count']['all']})</a></li>
+                            <li data-type="good"><a href="javascript:void(0);">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_113']}({$commons['count']['good']})</a></li>
+                            <li data-type="normal"><a href="javascript:void(0);">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_114']}({$commons['count']['normal']})</a>
+                            </li>
+                            <li data-type="bad"><a href="javascript:void(0);">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_115']}({$commons['count']['bad']})</a></li>
+                        </ul>
+                    </div>
+                    <!-- {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_116']} -->
+                    <div id="goodscomments" class="ncs-commend-main"></div>
+                </div>
+            </div>
+
+            <div class="ncg-salelog">
+            </div>
+
+            <div class="ncs-recommend">
+            </div>
+        </div>
+        <div class="ncs-sidebar">
+            <div class="ncs-message-bar">
+                <div class="default">
+                    <h5><a href="{$shop['url']}&r=pc"
+                           title="{$shop['name']}">{$shop['name']}</a></h5>
+                    <span member_id="1"></span>
+                </div>
+            </div>
+
+            <div class="ncs-sidebar-container ncs-top-bar">
+                <div class="title">
+                    <h4>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_117']}</h4>
+                </div>
+                <div class="content">
+                    <ul class="ncs-top-tab pngFix">
+                        <li id="hot_sales_tab" class="current"><a href="#">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_118']}</a></li>
+                    </ul>
+                    <div id="hot_sales_list" class="ncs-top-panel">
+                        <ol>
+                            {loop $hotList['list'] $_g}
+                                <li>
+                                    <dl>
+                                        <dt>
+                                            <a href="{php echo mobileUrl('pc.goods.detail',array('id'=>$_g['id'])) }">{$_g['title']}</a>
+                                        </dt>
+                                        <dd class="goods-pic">
+                                            <a href="{php echo mobileUrl('pc.goods.detail',array('id'=>$_g['id'])) }">
+                                            <span class="thumb size40"><i></i>
+                                                <img src="{$_g['thumb']}"
+                                                     onload="javascript:DrawImage(this,40,40);"></span>
+                                            </a>
+                                            <p>
+                                            <span class="thumb size100"><i></i>
+                                                <img src="{$_g['thumb']}" onload="javascript:DrawImage(this,100,100);"
+                                                     title="{$_g['title']}">
+                                            </span>
+                                            </p>
+                                        </dd>
+                                        <dd class="price pngFix">{$_g['marketprice']}</dd>
+                                        <dd class="selled pngFix">{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_119']}<strong>{$_g['sales']}</strong>{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_120']}</dd>
+                                    </dl>
+                                </li>
+                            {/loop}
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{template 'pc/goods/picker'}
+
+<script type="text/javascript" src="../addons/ewei_shopv2/static/js/dist/jquery/jquery.qrcode.min.js"></script>
+
+<script type="text/javascript">
+    goodsid:"{$goods['id']}";
+    $(function () {
+        $(".ncs-goods-code").html('')
+        $(".ncs-goods-code").qrcode({
+            typeNumber: 0,      //{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_121']}
+            correctLevel: 0,//{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_122']}
+            width: 100,
+            height: 100,
+            text: "{php echo $_W['siteroot'].'app/'.mobileUrl('goods/detail', array('id'=>$goods['id']))}"/*{php echo $_W['siteroot'].'app/'.mobileUrl('goods/detail', array('id'=>$goods['id']))}*/
+        });
+
+        // {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_123']} {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_124']}
+        CloudZoom.quickStart();
+
+        // {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_125']}
+        $(".controller li").first().addClass('current');
+        $('.controller').find('li').mouseover(function () {
+            $(this).first().addClass("current").siblings().removeClass("current");
+        });
+
+        // {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_126']}Tab{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_127']}
+        $('#categorymenu').find("li").click(function () {
+            $('#categorymenu').find("li").removeClass('current');
+            $(this).addClass('current');
+        });
+        // {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_128']}
+        $('#tabGoodsIntro').click(function () {
+            $('.bd').css('display', '');
+            $('.hd').css('display', '');
+        });
+        // {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_129']}
+        $('#tabStoreMap').click(function () {
+            $('.bd').css('display', 'none');
+            $('#ncStoreMap').css('display', '');
+            $('.hd').css('display', 'none');
+        });
+        // {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_130']}
+        $('#tabGoodsRate').click(function () {
+            $('.bd').css('display', 'none');
+            $('#ncGoodsRate').css('display', '');
+            $('.hd').css('display', 'none');
+        });
+        // {php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_131']}
+        $('#tabGoodsTraded').click(function () {
+            $('.bd').css('display', 'none');
+            $('#ncGoodsTraded').css('display', '');
+            $('.hd').css('display', 'none');
+        });
+
+        //{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_132']}
+        $('#comment_tab').on('click', 'li', function () {
+            $('#comment_tab li').removeClass('current');
+            $(this).addClass('current');
+            load_comments($(this).attr('data-type'));
+        });
+    });
+
+    function load_comments(level) {
+        //console.info(level);
+        var url = '{php echo mobileUrl('pc.goods.detail.get_comment_list', array('id' =>$goods['id'],'mid' => $_GPC['mid'],'page'=>1,'getcount'=>1))}';
+        url += '&level=' + level;
+
+        $("#goodscomments").load(url, function () {
+
+        });
+    }
+
+    load_comments('all');
+</script>
+<script language="javascript">
+ require(['../addons/ewei_shopv2/static/js/app/biz/goods/detail.js'], function (modal) {
+ 
+    modal.init({
+            goodsid: "{$goods['id']}"
+        });
+ });
+</script>
+<script language="javascript">
+    require(['../addons/ewei_shopv2/plugin/pc/biz/goods/detail.js'], function (modal) {
+
+        modal.init({
+            goodsid: "{$goods['id']}"
+        });
+        core.json('goods/picker', {
+            id: modal.goodsid
+        }, function(ret) {
+            if (ret.status == 0) {
+                FoxUI.toast.show('{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_133']}!');
+                return
+            }
+            modal.goods = ret.result.goods;
+            modal.specs = ret.result.specs;
+            modal.options = ret.result.options;
+            if (modal.goods.unit == '') {
+                modal.goods.unit = '{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_134']}'
+            }
+            $('.ncs-figure-input', $('.ncs-buy')).numbers({
+                value: modal.total,
+                max: modal.goods.maxbuy,
+                min: modal.goods.minbuy,
+                minToast: "{min}" + modal.goods.unit + "{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_135']}",
+                maxToast: "{php echo $lang['lang_plugin_pc_template_mobile_default_goods_detail_136']}{max}" + modal.goods.unit,
+                callback: function(num) {
+                    modal.total = num
+                }
+            });
+
+        }, true, false);
+
+
+    });
+</script>
+
+{template 'pc/layout/_footer'}

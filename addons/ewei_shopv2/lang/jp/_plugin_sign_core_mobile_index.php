@@ -1,0 +1,33 @@
+<?php
+$lang['lang_plugin_sign_core_mobile_index_0'] = '開けません';
+$lang['lang_plugin_sign_core_mobile_index_1'] = 'ユーザー情報を取得できませんでした。';
+$lang['lang_plugin_sign_core_mobile_index_2'] = '不正な要求';
+$lang['lang_plugin_sign_core_mobile_index_3'] = '開けません';
+$lang['lang_plugin_sign_core_mobile_index_4'] = '月現在より';
+$lang['lang_plugin_sign_core_mobile_index_5'] = '既に';
+$lang['lang_plugin_sign_core_mobile_index_6'] = '繰り返してはいけない、';
+$lang['lang_plugin_sign_core_mobile_index_7'] = 'ああ';
+$lang['lang_plugin_sign_core_mobile_index_8'] = '日付が現在の日付より大きい';
+$lang['lang_plugin_sign_core_mobile_index_9'] = '毎日';
+$lang['lang_plugin_sign_core_mobile_index_10'] = '最初';
+$lang['lang_plugin_sign_core_mobile_index_11'] = '失敗しました';
+$lang['lang_plugin_sign_core_mobile_index_12'] = 'あなた';
+$lang['lang_plugin_sign_core_mobile_index_13'] = '不足しています。';
+$lang['lang_plugin_sign_core_mobile_index_14'] = 'できません。';
+$lang['lang_plugin_sign_core_mobile_index_15'] = '控除';
+$lang['lang_plugin_sign_core_mobile_index_16'] = '失敗しました';
+$lang['lang_plugin_sign_core_mobile_index_17'] = 'あなた';
+$lang['lang_plugin_sign_core_mobile_index_18'] = '不足しています。';
+$lang['lang_plugin_sign_core_mobile_index_19'] = 'できません。';
+$lang['lang_plugin_sign_core_mobile_index_20'] = '控除';
+$lang['lang_plugin_sign_core_mobile_index_21'] = '成功しました。';
+$lang['lang_plugin_sign_core_mobile_index_22'] = '不正な要求';
+$lang['lang_plugin_sign_core_mobile_index_23'] = '要求パラメーターエラー';
+$lang['lang_plugin_sign_core_mobile_index_24'] = '開けません';
+$lang['lang_plugin_sign_core_mobile_index_25'] = 'この受賞';
+$lang['lang_plugin_sign_core_mobile_index_26'] = 'コレクションを繰り返さないでください';
+$lang['lang_plugin_sign_core_mobile_index_27'] = '継続的です';
+$lang['lang_plugin_sign_core_mobile_index_28'] = '合計';
+$lang['lang_plugin_sign_core_mobile_index_29'] = '日の報酬を得';
+$lang['lang_plugin_sign_core_mobile_index_30'] = '正常に収集';
+?>

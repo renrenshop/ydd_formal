@@ -1,0 +1,32 @@
+<?php
+$lang['lang_plugin_diyform_core_model_0'] = 'एकल-पंक्तिपाठ';
+$lang['lang_plugin_diyform_core_model_1'] = 'पंक्तिपाठ';
+$lang['lang_plugin_diyform_core_model_2'] = 'ड्रॉप-डाउनबॉक्स';
+$lang['lang_plugin_diyform_core_model_3'] = 'एकाधिकमार्की';
+$lang['lang_plugin_diyform_core_model_4'] = 'चित्र';
+$lang['lang_plugin_diyform_core_model_5'] = 'ID संख्या';
+$lang['lang_plugin_diyform_core_model_6'] = 'दिनांक';
+$lang['lang_plugin_diyform_core_model_7'] = 'दिनांकसीमा';
+$lang['lang_plugin_diyform_core_model_8'] = 'शहर';
+$lang['lang_plugin_diyform_core_model_9'] = 'पाठकीपुष्टिकरें';
+$lang['lang_plugin_diyform_core_model_10'] = 'समय';
+$lang['lang_plugin_diyform_core_model_11'] = 'समयसीमा';
+$lang['lang_plugin_diyform_core_model_12'] = 'संकेतपाठ';
+$lang['lang_plugin_diyform_core_model_13'] = 'कस्टम';
+$lang['lang_plugin_diyform_core_model_14'] = 'नाम';
+$lang['lang_plugin_diyform_core_model_15'] = 'फोन';
+$lang['lang_plugin_diyform_core_model_16'] = 'माइक्रो-सिग्नल';
+$lang['lang_plugin_diyform_core_model_17'] = 'दिनभर';
+$lang['lang_plugin_diyform_core_model_18'] = 'विशिष्टदिनांक';
+$lang['lang_plugin_diyform_core_model_19'] = 'प्रांतोंकाचयनकरें';
+$lang['lang_plugin_diyform_core_model_20'] = 'शहरकाचयनकरें';
+$lang['lang_plugin_diyform_core_model_21'] = 'कृपयाभरें';
+$lang['lang_plugin_diyform_core_model_22'] = 'काचयनकरें';
+$lang['lang_plugin_diyform_core_model_23'] = 'काचयनकरें';
+$lang['lang_plugin_diyform_core_model_24'] = 'काचयनकरें';
+$lang['lang_plugin_diyform_core_model_25'] = 'प्रांतोंकाचयनकरें';
+$lang['lang_plugin_diyform_core_model_26'] = 'शहरकाचयनकरें';
+$lang['lang_plugin_diyform_core_model_27'] = 'किसीज़ोनकाचयनकरें';
+$lang['lang_plugin_diyform_core_model_28'] = 'काचयनकरें';
+$lang['lang_plugin_diyform_core_model_29'] = 'दर्जकरें';
+?>

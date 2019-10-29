@@ -1,0 +1,37 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_goods_index_0'] = ' 最近の履歴';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_1'] = '¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_2'] = ' すべての閲覧履歴';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_3'] = ' を並べ替える:';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_4'] = ' 既定の並べ替え';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_5'] = ' デフォルト';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_6'] = ' 売り上げ高低高から注文するをクリックして';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_7'] = ' 売り上げ高';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_8'] = ' 低価格で高いから注文するをクリックして';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_9'] = ' 価格';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_10'] = ' 最低価格';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_11'] = ' 最高の価格';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_12'] = ' [Ok]';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_13'] = ' 新規上場';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_14'] = ' ホット商品';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_15'] = ' おすすめアイテム';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_16'] = ' プロモーションアイテム';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_17'] = ' 商品リストのループ';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_18'] = ' 限られた制限割引';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_19'] = ' モールの価格:¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_20'] = '¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_21'] = ' 市場価格:¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_22'] = '¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_23'] = ' 非常に満足';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_24'] = ' 非常に満足';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_25'] = ' 非常に満足';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_26'] = ' 非常に満足';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_27'] = ' 非常に満足';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_28'] = ' 非常に満足';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_29'] = ' 商品の販売';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_30'] = ' ホーム';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_31'] = ' 前のページ';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_32'] = ' 次';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_33'] = ' 最後のページ';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_34'] = ' あなたのように推測';
+?>

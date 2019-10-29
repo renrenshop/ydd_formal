@@ -1,0 +1,11 @@
+<div class="head-menu-mask"></div>
+<div class="head-menu">
+    {if empty($_W['shopset']['wap']['inh5app'])}
+        <nav data-type="share"><i class="icon icon-share"></i> {php echo $lang['lang_template_mobile_headmenu_0']}</nav>
+    {/if}
+    <nav data-type="reload"><i class="icon icon-refresh"></i> {php echo $lang['lang_template_mobile_headmenu_1']}</nav>
+    <nav data-type="eraser"><i class="icon icon-eraser"></i> {php echo $lang['lang_template_mobile_headmenu_2']}</nav>
+    {if is_h5app() && !is_ios()}
+        <nav data-type="exitapp"><i class="icon icon-roundclose"></i> {php echo $lang['lang_template_mobile_headmenu_3']}</nav>
+    {/if}
+</div>

@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_sns_template_mobile_default_board_index_0'] = '话题';
+$lang['lang_plugin_sns_template_mobile_default_board_index_1'] = '关注';
+$lang['lang_plugin_sns_template_mobile_default_board_index_2'] = '已关注';
+$lang['lang_plugin_sns_template_mobile_default_board_index_3'] = '关注';
+$lang['lang_plugin_sns_template_mobile_default_board_index_4'] = '未登录';
+$lang['lang_plugin_sns_template_mobile_default_board_index_5'] = '首页';
+$lang['lang_plugin_sns_template_mobile_default_board_index_6'] = '精华区';
+$lang['lang_plugin_sns_template_mobile_default_board_index_7'] = '相关版块';
+$lang['lang_plugin_sns_template_mobile_default_board_index_8'] = '置顶';
+$lang['lang_plugin_sns_template_mobile_default_board_index_9'] = '暂时没有任何话题';
+$lang['lang_plugin_sns_template_mobile_default_board_index_10'] = '正在加载';
+$lang['lang_plugin_sns_template_mobile_default_board_index_11'] = '取消';
+$lang['lang_plugin_sns_template_mobile_default_board_index_12'] = '发表话题';
+$lang['lang_plugin_sns_template_mobile_default_board_index_13'] = '标题';
+$lang['lang_plugin_sns_template_mobile_default_board_index_14'] = '个字';
+$lang['lang_plugin_sns_template_mobile_default_board_index_15'] = '内容';
+$lang['lang_plugin_sns_template_mobile_default_board_index_16'] = '个字';
+$lang['lang_plugin_sns_template_mobile_default_board_index_17'] = '发表';
+$lang['lang_plugin_sns_template_mobile_default_board_index_18'] = '投诉';
+$lang['lang_plugin_sns_template_mobile_default_board_index_19'] = '取消';
+$lang['lang_plugin_sns_template_mobile_default_board_index_20'] = '投诉';
+$lang['lang_plugin_sns_template_mobile_default_board_index_21'] = '我要投诉的是';
+$lang['lang_plugin_sns_template_mobile_default_board_index_22'] = '的';
+$lang['lang_plugin_sns_template_mobile_default_board_index_23'] = '请您选择投诉类别：';
+$lang['lang_plugin_sns_template_mobile_default_board_index_24'] = '其他';
+$lang['lang_plugin_sns_template_mobile_default_board_index_25'] = '内容';
+$lang['lang_plugin_sns_template_mobile_default_board_index_26'] = '个字';
+$lang['lang_plugin_sns_template_mobile_default_board_index_27'] = '提交';
+$lang['lang_plugin_sns_template_mobile_default_board_index_28'] = '投诉';
+?>

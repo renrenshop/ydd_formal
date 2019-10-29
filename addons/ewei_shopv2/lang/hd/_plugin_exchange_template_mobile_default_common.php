@@ -1,0 +1,36 @@
+<?php
+$lang['lang_plugin_exchange_template_mobile_default_common_0'] = 'विमोचनकेंद्र';
+$lang['lang_plugin_exchange_template_mobile_default_common_1'] = 'विमोचनकेंद्र';
+$lang['lang_plugin_exchange_template_mobile_default_common_2'] = 'कोडरिडीम';
+$lang['lang_plugin_exchange_template_mobile_default_common_3'] = 'इसएक्सचेंजकोडक्वेरीकियागयाहै';
+$lang['lang_plugin_exchange_template_mobile_default_common_4'] = 'बार';
+$lang['lang_plugin_exchange_template_mobile_default_common_5'] = 'अपनाExchange कोडदर्जकरें';
+$lang['lang_plugin_exchange_template_mobile_default_common_6'] = 'बैलेंसएक्सचेंज';
+$lang['lang_plugin_exchange_template_mobile_default_common_7'] = 'par value:';
+$lang['lang_plugin_exchange_template_mobile_default_common_8'] = 'युआन';
+$lang['lang_plugin_exchange_template_mobile_default_common_9'] = 'Exchange';
+$lang['lang_plugin_exchange_template_mobile_default_common_10'] = 'रिडीम';
+$lang['lang_plugin_exchange_template_mobile_default_common_11'] = 'par value:';
+$lang['lang_plugin_exchange_template_mobile_default_common_12'] = 'युआन';
+$lang['lang_plugin_exchange_template_mobile_default_common_13'] = 'Exchange';
+$lang['lang_plugin_exchange_template_mobile_default_common_14'] = 'कूपनकाविमोचन';
+$lang['lang_plugin_exchange_template_mobile_default_common_15'] = 'par value:';
+$lang['lang_plugin_exchange_template_mobile_default_common_16'] = 'युआन';
+$lang['lang_plugin_exchange_template_mobile_default_common_17'] = 'Exchange';
+$lang['lang_plugin_exchange_template_mobile_default_common_18'] = 'लाललिफाफाविमोचन';
+$lang['lang_plugin_exchange_template_mobile_default_common_19'] = 'par value:';
+$lang['lang_plugin_exchange_template_mobile_default_common_20'] = 'युआन';
+$lang['lang_plugin_exchange_template_mobile_default_common_21'] = 'Exchange';
+$lang['lang_plugin_exchange_template_mobile_default_common_22'] = 'कमोडिटीएक्सचेंज';
+$lang['lang_plugin_exchange_template_mobile_default_common_23'] = 'par value:';
+$lang['lang_plugin_exchange_template_mobile_default_common_24'] = 'युआन';
+$lang['lang_plugin_exchange_template_mobile_default_common_25'] = 'Exchange';
+$lang['lang_plugin_exchange_template_mobile_default_common_26'] = 'अभीरिडीम';
+$lang['lang_plugin_exchange_template_mobile_default_common_27'] = 'Exchange कोडफिरसेदर्जकरनेकेलिएलौटें';
+$lang['lang_plugin_exchange_template_mobile_default_common_28'] = 'विमोचनकेंद्र';
+$lang['lang_plugin_exchange_template_mobile_default_common_29'] = 'विनिमयनियम';
+$lang['lang_plugin_exchange_template_mobile_default_common_30'] = 'बधाईहो! मुद्रासफलता! ';
+$lang['lang_plugin_exchange_template_mobile_default_common_31'] = 'ठीक';
+$lang['lang_plugin_exchange_template_mobile_default_common_32'] = 'मुझेखेदहै! exchange कोडकीसमयसीमासमाप्तहोगईहै! ';
+$lang['lang_plugin_exchange_template_mobile_default_common_33'] = 'पता';
+?>

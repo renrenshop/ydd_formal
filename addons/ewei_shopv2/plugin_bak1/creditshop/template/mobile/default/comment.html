@@ -1,0 +1,103 @@
+{template '_header'}
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/creditshop/static/css/common.css" />
+<div class='fui-page  fui-page-current order-comment-page'>
+    <div class="fui-header">
+		<div class="fui-header-left">
+			<a class="back"></a>
+		</div>
+		<div class="title">{if $log['iscomment']>0}{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_0']}{/if}{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_1']}</div>
+		<div class="fui-header-right">&nbsp;</div>
+    </div>
+	<div class='fui-content margin navbar'>
+		<div class="fui-list-group goods-list-group">
+			<div class="fui-list-group-title">
+				<i class="icon icon-shop"></i> {$_W['shopset']['shop']['name']}
+			</div>
+			<div class="fui-list goods-list" data-goodsid="{$log['goodsid']}">
+				<a class="fui-list-media" href="{php echo mobileUrl('creditshop/detail',array('id'=>$log['goodsid']))}">
+					<img src="{php echo tomedia($log['thumb'])}" class="round">
+				</a>
+				<a class="fui-list-inner" href="{php echo mobileUrl('creditshop/detail',array('id'=>$log['goodsid']))}">
+					<div class="text goodstitle">{$log['title']}</div>
+					{if !empty($log['optionid'])}<div class='subtitle'>{$log['optiontitle']}</div>{/if}
+				</a>
+				<div class='fui-list-angle'>
+                    <span class="price" style="text-align: left;font-size:0.6rem;color:#f60;">
+                        <span class="big">{$log['credit']}</span>{$_W['shopset']['trade']['credittext']}
+                        {if $log['money'] == 0}
+                            <span class="fui-text text-danger" style="width: auto;">{$log['money']}{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_2']}{if $log['type']==1}{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_3']}{/if}{if $log['type']==0}{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_4']}{/if}</span>
+                        {else}
+                            <span class="fui-text text-success" style="width: auto;">{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_5']}{$log['money']}{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_6']}{if $log['type']==1}{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_7']}{/if}{if $log['type']==0}{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_8']}{/if}</span>
+                        {/if}
+                    </span>
+				</div>
+			</div>
+			<div class="fui-cell-group goods-comment-cell">
+				{if $log['iscomment']==0}
+				<div class='fui-cell'>
+					<div class='fui-cell-label'>{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_9']}</div>
+					<div class='fui-cell-info'>
+						<div class='fui-stars warning' data-value='0'>
+							<span class='stars'></span>
+							<span class='fui-label fui-default'>{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_10']}</span>
+							<i class='icon icon-roundclose clear'></i>
+						</div>
+					</div>
+				</div>
+				{/if}
+				<div class='fui-cell'>
+					<div class='fui-cell-label'>{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_11']}</div>
+					<div class='fui-cell-info'>
+						<ul class="fui-images fui-images-sm"></ul>
+						<div class="fui-uploader fui-uploader-sm" data-max="5" data-count="0">
+							<input type="file" name='imgFile{$log['id']}' id='imgFile{$log['id']}' multiple="" accept="image/*" >
+						</div>
+					</div>
+				</div>
+				<div class='fui-cell'>
+					<div class='fui-cell-label'>{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_12']}</div>
+					<div class='fui-cell-info'><textarea rows="3" placeholder="{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_13']}"></textarea></div>
+				</div>
+			</div>
+		</div>
+		<div class="fui-title">{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_14']}</div>
+		<div class="fui-cell-group">
+			{if $log['iscomment']==0}
+			<div class='fui-cell must'>
+				<div class='fui-cell-label'>{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_15']}</div>
+				<div class='fui-cell-info'>
+					<div class='fui-stars warning'  data-value='0'>
+						<span class='stars'></span>
+						<span class='fui-label fui-default'>{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_16']}</span>
+						<i class='icon icon-roundclose clear'></i>
+					</div>
+				</div>
+			</div>
+			{/if}
+			<div class='fui-cell'>
+				<div class='fui-cell-label'>{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_17']}</div>
+				<div class='fui-cell-info'>
+					<ul class="fui-images fui-images-sm" id="images"></ul>
+					<div class="fui-uploader fui-uploader-sm" data-max="5" data-count="0">
+						<input type="file" name='imgFile0' id='imgFile0' multiple="" accept="image/*" >
+					</div>
+				</div>
+			</div>
+			<div class='fui-cell must'>
+				<div class='fui-cell-label '>{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_18']}</div>
+				<div class='fui-cell-info'><textarea rows="3" placeholder="{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_19']}" id='comment'></textarea></div>
+			</div>
+		</div>
+	</div>
+	<div class='fui-footer'>
+		<a class='btn btn-danger btn-submit block'>{php echo $lang['lang_plugin_creditshop_template_mobile_default_comment_20']}</a>
+	</div>
+    <script language='javascript'>require(['../addons/ewei_shopv2/plugin/creditshop/static/js/comment.js'], function (modal) {
+		modal.init({
+			logid: {php echo intval($log['id'])} ,
+			iscomment: {php echo intval($log['iscomment'])}
+		}); 
+	});
+	</script>
+</div> 
+{template '_footer'}

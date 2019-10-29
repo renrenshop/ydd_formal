@@ -1,0 +1,76 @@
+{template '_header'}
+<div class='fui-page order-pay-page'>
+	<div class="fui-header">
+		<div class="fui-header-left">
+			<a class="back" onclick='history.back()'></a>
+		</div>
+		<div class="title" style='margin-right:-2rem;'>{php echo $lang['lang_plugin_groups_template_mobile_default_pay_0']}</div>
+		<div class="fui-header-right">
+			<a href="{php echo mobileUrl('groups/orders')}">{if !is_h5app()}{php echo $lang['lang_plugin_groups_template_mobile_default_pay_1']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_pay_2']}</a>
+		</div>
+	</div>
+	<div class='fui-content margin'>
+		<div class="fui-cell-group">
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_pay_3']}</div>
+				<div class="fui-cell-info"></div>
+				<div class="fui-cell-remark noremark">{$order['orderno']}</div>
+			</div>
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_pay_4']}</div>
+				<div class="fui-cell-info"></div>
+				<div class="fui-cell-remark noremark"><span class='text-danger'>{php echo $lang['lang_plugin_groups_template_mobile_default_pay_5']} {php echo number_format($order['price'] - $order['creditmoney'] + $order['freight'],2)}</span></div>
+			</div>
+		</div>
+
+
+		<div class='fui-list-group' style="margin-top:10px;">
+			{if $wechat['success'] || (is_h5app() && $payinfo['wechat'])}
+			<div class='fui-list pay-btn' data-type='wechat'>
+				<div class='fui-list-media'>
+					<i class='icon icon-wechat wechat'></i>
+				</div>
+				<div class='fui-list-inner'>
+					<div class="title">{php echo $lang['lang_plugin_groups_template_mobile_default_pay_6']}</div>
+					<div class="subtitle">{php echo $lang['lang_plugin_groups_template_mobile_default_pay_7']}</div>
+				</div>
+				<div class='fui-list-angle'><span class="angle"></span></div>
+			</div>
+			{/if}
+			{if $credit['success']}
+			<div class='fui-list pay-btn' data-type='credit'>
+				<div class='fui-list-media'>
+					<i class='icon icon-money credit'></i>
+				</div>
+				<div class='fui-list-inner'>
+					<div class="title">{php echo $lang['lang_plugin_groups_template_mobile_default_pay_8']}</div>
+					<div class="subtitle">{php echo $lang['lang_plugin_groups_template_mobile_default_pay_9']}: <span class='text-danger'>{php echo $lang['lang_plugin_groups_template_mobile_default_pay_10']} {php echo number_format($member['credit2'],2)}</span></div>
+				</div>
+				<div class='fui-list-angle'>
+		    <span class="angle">
+
+		    </span>
+				</div>
+			</div>
+			{/if}
+			{if $cash['success']}
+			<div class='fui-list pay-btn' data-type='cash'>
+				<div class='fui-list-media'>
+					<i class='icon icon-deliver1 cash'></i>
+				</div>
+				<div class='fui-list-inner'>
+					<div class="title">{php echo $lang['lang_plugin_groups_template_mobile_default_pay_11']}</div>
+					<div class="subtitle">{php echo $lang['lang_plugin_groups_template_mobile_default_pay_12']}</div>
+				</div>
+				<div class='fui-list-angle'><span class="angle"></span></div>
+			</div>
+			{/if}
+
+		</div>
+	</div>
+	{template 'order/pay/wechat_jie'}
+	<script language='javascript'>
+		require(['../addons/ewei_shopv2/plugin/groups/static/js/pay.js'], function (modal) {modal.init({php echo json_encode($payinfo)}); });
+	</script>
+</div>
+{template '_footer'}

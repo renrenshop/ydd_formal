@@ -1,0 +1,37 @@
+<?php
+$lang['lang_plugin_lottery_core_model_0'] = ' Anugerah telah tamat tempoh';
+$lang['lang_plugin_lottery_core_model_1'] = ' penggunaan sepenuhnya';
+$lang['lang_plugin_lottery_core_model_2'] = ' Yuan';
+$lang['lang_plugin_lottery_core_model_3'] = ' Hadiah';
+$lang['lang_plugin_lottery_core_model_4'] = ' Times';
+$lang['lang_plugin_lottery_core_model_5'] = ' Daftar - masuk yang penuh';
+$lang['lang_plugin_lottery_core_model_6'] = ' hari';
+$lang['lang_plugin_lottery_core_model_7'] = ' Hadiah';
+$lang['lang_plugin_lottery_core_model_8'] = ' Times';
+$lang['lang_plugin_lottery_core_model_9'] = ' melengkapkan tugas poster';
+$lang['lang_plugin_lottery_core_model_10'] = ' Hadiah';
+$lang['lang_plugin_lottery_core_model_11'] = ' Times';
+$lang['lang_plugin_lottery_core_model_12'] = ' melengkapkan tugas poster';
+$lang['lang_plugin_lottery_core_model_13'] = ' Hadiah';
+$lang['lang_plugin_lottery_core_model_14'] = ' Times';
+$lang['lang_plugin_lottery_core_model_15'] = ' Nama aktiviti';
+$lang['lang_plugin_lottery_core_model_16'] = ' Klik untuk menarik';
+$lang['lang_plugin_lottery_core_model_17'] = ' tahniah atas bernasib baik anda menarik peluang';
+$lang['lang_plugin_lottery_core_model_18'] = ' tahniah atas bernasib baik anda menarik peluang';
+$lang['lang_plugin_lottery_core_model_19'] = ' Mendapatkan peluang loteri';
+$lang['lang_plugin_lottery_core_model_20'] = ' Tahniah atas peluang anda untuk menarik!! ';
+$lang['lang_plugin_lottery_core_model_21'] = ' disyorkan sapu kod perhatian mata';
+$lang['lang_plugin_lottery_core_model_22'] = ' Tugas aktiviti rujukan Anugerah';
+$lang['lang_plugin_lottery_core_model_23'] = ' Ganjaran yang disyorkan';
+$lang['lang_plugin_lottery_core_model_24'] = ' Ganjaran yang disyorkan';
+$lang['lang_plugin_lottery_core_model_25'] = ' Ganjaran yang disyorkan';
+$lang['lang_plugin_lottery_core_model_26'] = ' mata';
+$lang['lang_plugin_lottery_core_model_27'] = ' Bonus';
+$lang['lang_plugin_lottery_core_model_28'] = ' Yuan';
+$lang['lang_plugin_lottery_core_model_29'] = ' Sampul merah';
+$lang['lang_plugin_lottery_core_model_30'] = ' Yuan';
+$lang['lang_plugin_lottery_core_model_31'] = ' Istimewa';
+$lang['lang_plugin_lottery_core_model_32'] = ' yang';
+$lang['lang_plugin_lottery_core_model_33'] = ' Kupon';
+$lang['lang_plugin_lottery_core_model_34'] = ' kira-kira';
+?>

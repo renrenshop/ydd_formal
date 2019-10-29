@@ -1,0 +1,20 @@
+<div class="fui-navbar">
+
+    <a href="{php echo mobileUrl('seckill')}" class="external nav-item {if $_W['routes'] == 'seckill'}active{/if}">
+        <span class="icon icon-home"></span>
+        <span class="label">{php echo $lang['lang_plugin_seckill_template_mobile_default__menu_0']}</span>
+    </a>
+    <a href="{php echo mobileUrl('member/cart')}" class="external nav-item" id="menucart">
+        <span class="icon icon-cart"></span>
+        <span class="label">{php echo $lang['lang_plugin_seckill_template_mobile_default__menu_1']}</span>
+        {if $cartcount>0}<span class="badge">{$cartcount}</span>{/if}
+    </a>
+    <a href="{php echo mobileUrl('order')}" class="external nav-item">
+        <span class="icon icon-order1"></span>
+        <span class="label">{php echo $lang['lang_plugin_seckill_template_mobile_default__menu_2']}</span>
+    </a>
+    <a href="{php echo mobileUrl()}" class="external nav-item">
+        <span class="icon icon-back"></span>
+        <span class="label">{php echo $lang['lang_plugin_seckill_template_mobile_default__menu_3']}</span>
+    </a>
+</div>

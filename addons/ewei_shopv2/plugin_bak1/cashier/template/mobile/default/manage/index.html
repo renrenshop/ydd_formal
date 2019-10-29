@@ -1,0 +1,47 @@
+{template '_header'}
+<script>document.title = "{$_W['cashieruser']['title']}"; </script>
+<link href="../addons/ewei_shopv2/plugin/cashier/static/css/mobile.css" rel="stylesheet" type="text/css"/>
+<div class="fui-page fui-page-current">
+    <div class="fui-header">
+        <div class="title">{php echo $lang['lang_plugin_cashier_template_mobile_default_manage_index_0']}</div>
+    </div>
+
+    <div class="fui-content" >
+        <div class="block-1">
+            <p class="title">{php echo $lang['lang_plugin_cashier_template_mobile_default_manage_index_1']}</p>
+            <p class="price">{$today}</p>
+        </div>
+
+        <div class="fui-block-group col-3" style='margin-top:0; overflow: hidden;'>
+            <a class="fui-block-child external">
+                <div class="icon text-yellow"><i class="icon icon-money"></i></div>
+                <div class="title" style="font-size:.7rem;">{php echo $lang['lang_plugin_cashier_template_mobile_default_manage_index_2']}</div>
+                <div class="text"  style="font-size:.7rem;padding-top:.2rem;"><span>{$total}</span> {php echo $lang['lang_plugin_cashier_template_mobile_default_manage_index_3']}</div>
+            </a>
+            <a class="fui-block-child external">
+                <div class="icon text-orange"><i class="icon icon-manageorder"></i></div>
+                <div class="title" style="font-size:.7rem;">{php echo $lang['lang_plugin_cashier_template_mobile_default_manage_index_4']}</div>
+                <div class="text" style="font-size:.7rem;padding-top:.2rem;"><span>{$month}</span> {php echo $lang['lang_plugin_cashier_template_mobile_default_manage_index_5']}</div>
+            </a>
+
+            <a class="fui-block-child external">
+                <div class="icon text-cancel"><i class="icon icon-manageorder"></i></div>
+                <div class="title" style="font-size:.7rem;">{php echo $lang['lang_plugin_cashier_template_mobile_default_manage_index_6']}</div>
+                <div class="text" style="font-size:.7rem;padding-top:.2rem;"><span>{$week}</span> {php echo $lang['lang_plugin_cashier_template_mobile_default_manage_index_7']}</div>
+            </a>
+
+            <a class="fui-block-child external" href="{php echo mobileUrl('cashier/manage/detail',array('cashierid'=>$_W['cashierid']))}">
+                <div class="icon text-blue"><i class="icon icon-process"></i></div>
+                <div class="title" style="font-size:.7rem;">{php echo $lang['lang_plugin_cashier_template_mobile_default_manage_index_8']}</div>
+                <div class="text" style="font-size:.7rem;padding-top:.2rem;"></div>
+            </a>
+
+            <a class="fui-block-child external" href="{php echo mobileUrl('cashier',array('cashierid'=>$_W['cashierid']))}">
+                <div class="icon text-red"><i class="icon icon-post"></i></div>
+                <div class="title" style="font-size:.7rem;">{php echo $lang['lang_plugin_cashier_template_mobile_default_manage_index_9']}</div>
+                <div class="text" style="font-size:.7rem;padding-top:.2rem;"></div>
+            </a>
+        </div>
+    </div>
+</div>
+{template '_footer'}

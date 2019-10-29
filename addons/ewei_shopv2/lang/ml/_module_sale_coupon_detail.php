@@ -1,0 +1,31 @@
+<?php
+$lang['lang_module_sale_coupon_detail_0'] = ' Penuh';
+$lang['lang_module_sale_coupon_detail_1'] = ' Meta yang disediakan';
+$lang['lang_module_sale_coupon_detail_2'] = ' Tiada had jumlah';
+$lang['lang_module_sale_coupon_detail_3'] = ' Cas penuh';
+$lang['lang_module_sale_coupon_detail_4'] = ' Meta yang disediakan';
+$lang['lang_module_sale_coupon_detail_5'] = ' Tiada had jumlah';
+$lang['lang_module_sale_coupon_detail_6'] = ' Penuh';
+$lang['lang_module_sale_coupon_detail_7'] = ' Meta yang disediakan';
+$lang['lang_module_sale_coupon_detail_8'] = ' Tiada had jumlah';
+$lang['lang_module_sale_coupon_detail_9'] = ' RM';
+$lang['lang_module_sale_coupon_detail_10'] = ' Lipat';
+$lang['lang_module_sale_coupon_detail_11'] = ' Baki Yuan';
+$lang['lang_module_sale_coupon_detail_12'] = ' mata';
+$lang['lang_module_sale_coupon_detail_13'] = ' Sampul surat Meta';
+$lang['lang_module_sale_coupon_detail_14'] = ' Paras normal';
+$lang['lang_module_sale_coupon_detail_15'] = ' Paras normal';
+$lang['lang_module_sale_coupon_detail_16'] = ' Paras normal';
+$lang['lang_module_sale_coupon_detail_17'] = ' Paras normal';
+$lang['lang_module_sale_coupon_detail_18'] = ' tidak boleh';
+$lang['lang_module_sale_coupon_detail_19'] = ' Kupon tidak mencukupi kiraan';
+$lang['lang_module_sale_coupon_detail_20'] = ' anda telah melebihi';
+$lang['lang_module_sale_coupon_detail_21'] = ' Nombor had';
+$lang['lang_module_sale_coupon_detail_22'] = ' Mata Ganjaran anda akan tidak cukup mampu untuk';
+$lang['lang_module_sale_coupon_detail_23'] = ' Persekitaran bebas-Mikro-Amanah';
+$lang['lang_module_sale_coupon_detail_24'] = ' tidak membuka Surat mikro pembayaran';
+$lang['lang_module_sale_coupon_detail_25'] = ' Nombor Resit berkupon';
+$lang['lang_module_sale_coupon_detail_26'] = ' Mikro-Surat pembayaran parameter ralat';
+$lang['lang_module_sale_coupon_detail_27'] = ' Perintah yang tidak dijumpai';
+$lang['lang_module_sale_coupon_detail_28'] = ' Pembayaran tidak berjaya';
+?>

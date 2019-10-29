@@ -1,0 +1,33 @@
+<?php
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_0'] = '累積的な招待状';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_1'] = 'スキャンの人々またはポスターを見る';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_2'] = 'ボーナスポイント';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_3'] = '量賞';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_4'] = 'ボーナスボーナス';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_5'] = 'クーポン特典';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_6'] = '特別オファー賞';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_7'] = 'ターゲット番号がないです。';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_8'] = '報酬';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_9'] = '報酬';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_10'] = '上の考慮事項';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_11'] = 'メモ';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_12'] = '今ピックアップ';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_13'] = '私はもう一度見てみましょう';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_14'] = 'お祝いの言葉';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_15'] = '選ぶ';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_16'] = 'タスクに成功しました';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_17'] = 'タスクポスターを表示する公開数に戻ってください。';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_18'] = ' [Ok]';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_19'] = '非常に申し訳ありませんが';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_20'] = 'このタスクを拾うことはできません。';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_21'] = 'タスクの種類が同じ';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_22'] = ' [Ok] を私は知っている。';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_23'] = '正常に収集';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_24'] = 'お祝いの言葉';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_25'] = '選ぶ';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_26'] = 'タスクに成功しました';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_27'] = 'ピックアップに失敗しました';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_28'] = '受け取ることができません。';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_29'] = 'タスク情報が見つからない';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_30'] = 'タスクの情報がありませんが見つかった';
+?>

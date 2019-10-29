@@ -1,0 +1,33 @@
+<?php
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_0'] = '累计邀请';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_1'] = '人扫描或关注海报';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_2'] = '积分奖励';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_3'] = '金额奖励';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_4'] = '红包奖励';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_5'] = '优惠券奖励';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_6'] = '特价商品奖励';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_7'] = '无目标人数';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_8'] = '无奖励';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_9'] = '无奖励';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_10'] = '注意事项';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_11'] = '暂无说明';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_12'] = '立即领取';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_13'] = '我再看看';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_14'] = '恭喜您';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_15'] = '领取';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_16'] = '任务成功';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_17'] = '请返回公众号查看您的任务海报';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_18'] = '好的';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_19'] = '很遗憾';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_20'] = '您无法领取该任务';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_21'] = '您已经领取了相同类型的任务';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_22'] = '好的，我知道了';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_23'] = '领取成功';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_24'] = '恭喜您';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_25'] = '领取';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_26'] = '任务成功';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_27'] = '领取失败';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_28'] = '不能领取';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_29'] = '未查到此任务信息';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_30'] = '未查到任务信息';
+?>

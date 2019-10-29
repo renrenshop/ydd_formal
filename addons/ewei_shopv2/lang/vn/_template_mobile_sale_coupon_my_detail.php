@@ -1,0 +1,36 @@
+<?php
+$lang['lang_template_mobile_sale_coupon_my_detail_0'] = ' Thông tin chi tiết';
+$lang['lang_template_mobile_sale_coupon_my_detail_1'] = ' Đứng lại';
+$lang['lang_template_mobile_sale_coupon_my_detail_2'] = ' Cân bằng nhân dân tệ';
+$lang['lang_template_mobile_sale_coupon_my_detail_3'] = ' điểm';
+$lang['lang_template_mobile_sale_coupon_my_detail_4'] = ' Meta phong bì';
+$lang['lang_template_mobile_sale_coupon_my_detail_5'] = ' giá trị vĩnh viễn';
+$lang['lang_template_mobile_sale_coupon_my_detail_6'] = ' có nghĩa là';
+$lang['lang_template_mobile_sale_coupon_my_detail_7'] = ' ngày';
+$lang['lang_template_mobile_sale_coupon_my_detail_8'] = ' Ngày hợp lệ';
+$lang['lang_template_mobile_sale_coupon_my_detail_9'] = ' Sử dụng cửa hàng';
+$lang['lang_template_mobile_sale_coupon_my_detail_10'] = ' Giới hạn mua hàng';
+$lang['lang_template_mobile_sale_coupon_my_detail_11'] = ' Lưu trữ các mục';
+$lang['lang_template_mobile_sale_coupon_my_detail_12'] = ' Hướng dẫn sử dụng';
+$lang['lang_template_mobile_sale_coupon_my_detail_13'] = ' Hết hạn ';
+$lang['lang_template_mobile_sale_coupon_my_detail_14'] = ' giá trị vĩnh viễn';
+$lang['lang_template_mobile_sale_coupon_my_detail_15'] = ' có nghĩa là';
+$lang['lang_template_mobile_sale_coupon_my_detail_16'] = ' ngày';
+$lang['lang_template_mobile_sale_coupon_my_detail_17'] = ' Ngày hợp lệ';
+$lang['lang_template_mobile_sale_coupon_my_detail_18'] = ' Thời hạn hiệu lực';
+$lang['lang_template_mobile_sale_coupon_my_detail_19'] = ' Giới hạn mua hàng';
+$lang['lang_template_mobile_sale_coupon_my_detail_20'] = ' Lưu trữ các mục';
+$lang['lang_template_mobile_sale_coupon_my_detail_21'] = ' Giới hạn sử dụng';
+$lang['lang_template_mobile_sale_coupon_my_detail_22'] = ' Coupon này chỉ có thể được sử dụng tại quầy thanh toán.';
+$lang['lang_template_mobile_sale_coupon_my_detail_23'] = ' không cho phép việc sử dụng cung cấp quảng cáo cùng một lúc';
+$lang['lang_template_mobile_sale_coupon_my_detail_24'] = ' không cho phép sử dụng đồng thời với thành viên giảm giá';
+$lang['lang_template_mobile_sale_coupon_my_detail_25'] = ' không cho phép đồng thời các chương trình khuyến mãi và giảm giá thành viên';
+$lang['lang_template_mobile_sale_coupon_my_detail_26'] = ' cho phép các mục sau đây được sử dụng';
+$lang['lang_template_mobile_sale_coupon_my_detail_27'] = ' cho phép các loại sau đây của hàng hoá được sử dụng';
+$lang['lang_template_mobile_sale_coupon_my_detail_28'] = ' Không có';
+$lang['lang_template_mobile_sale_coupon_my_detail_29'] = ' sử dụng';
+$lang['lang_template_mobile_sale_coupon_my_detail_30'] = ' Hết hạn';
+$lang['lang_template_mobile_sale_coupon_my_detail_31'] = ' đi tới khoản mục bây giờ sử dụng';
+$lang['lang_template_mobile_sale_coupon_my_detail_32'] = ' Nạp tiền bây giờ';
+$lang['lang_template_mobile_sale_coupon_my_detail_33'] = ' trở về phiếu giảm giá của tôi';
+?>

@@ -1,0 +1,36 @@
+<?php
+$lang['lang_template_mobile_sale_coupon_my_detail_0'] = '詳細';
+$lang['lang_template_mobile_sale_coupon_my_detail_1'] = 'スタンドバック';
+$lang['lang_template_mobile_sale_coupon_my_detail_2'] = '元バランス';
+$lang['lang_template_mobile_sale_coupon_my_detail_3'] = 'ポイント';
+$lang['lang_template_mobile_sale_coupon_my_detail_4'] = 'メタ封筒';
+$lang['lang_template_mobile_sale_coupon_my_detail_5'] = '永久的に有効です';
+$lang['lang_template_mobile_sale_coupon_my_detail_6'] = 'つまり';
+$lang['lang_template_mobile_sale_coupon_my_detail_7'] = '日';
+$lang['lang_template_mobile_sale_coupon_my_detail_8'] = '有効な日';
+$lang['lang_template_mobile_sale_coupon_my_detail_9'] = '使用店';
+$lang['lang_template_mobile_sale_coupon_my_detail_10'] = '購入制限';
+$lang['lang_template_mobile_sale_coupon_my_detail_11'] = 'ストアアイテム';
+$lang['lang_template_mobile_sale_coupon_my_detail_12'] = '使い方';
+$lang['lang_template_mobile_sale_coupon_my_detail_13'] = '有効期限';
+$lang['lang_template_mobile_sale_coupon_my_detail_14'] = '永久的に有効です';
+$lang['lang_template_mobile_sale_coupon_my_detail_15'] = 'つまり';
+$lang['lang_template_mobile_sale_coupon_my_detail_16'] = '日';
+$lang['lang_template_mobile_sale_coupon_my_detail_17'] = '有効な日';
+$lang['lang_template_mobile_sale_coupon_my_detail_18'] = '有効期間';
+$lang['lang_template_mobile_sale_coupon_my_detail_19'] = '購入制限';
+$lang['lang_template_mobile_sale_coupon_my_detail_20'] = 'ストアアイテム';
+$lang['lang_template_mobile_sale_coupon_my_detail_21'] = '使用制限';
+$lang['lang_template_mobile_sale_coupon_my_detail_22'] = 'このクーポン券は、チェックアウトカウンターでのみ使用できます。';
+$lang['lang_template_mobile_sale_coupon_my_detail_23'] = '同時にプロモーションの使用を許可しません。';
+$lang['lang_template_mobile_sale_coupon_my_detail_24'] = '会員割引との併用はできません。';
+$lang['lang_template_mobile_sale_coupon_my_detail_25'] = '昇進の提供と同時に会員割引の使用を許可しません。';
+$lang['lang_template_mobile_sale_coupon_my_detail_26'] = '次の項目を使用します。';
+$lang['lang_template_mobile_sale_coupon_my_detail_27'] = '以下の商品のカテゴリを許可するを使用します。';
+$lang['lang_template_mobile_sale_coupon_my_detail_28'] = 'どれも';
+$lang['lang_template_mobile_sale_coupon_my_detail_29'] = '使用';
+$lang['lang_template_mobile_sale_coupon_my_detail_30'] = '期限切れ';
+$lang['lang_template_mobile_sale_coupon_my_detail_31'] = '使用する現在の項目に移動します。';
+$lang['lang_template_mobile_sale_coupon_my_detail_32'] = '今充電';
+$lang['lang_template_mobile_sale_coupon_my_detail_33'] = '私のクーポンを返す';
+?>

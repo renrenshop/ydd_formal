@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_bargain_template_mobile_default_detail_0'] = ' Mặc cả mục thông tin chi tiết';
+$lang['lang_plugin_bargain_template_mobile_default_detail_1'] = ' không khởi động';
+$lang['lang_plugin_bargain_template_mobile_default_detail_2'] = ' đóng cửa';
+$lang['lang_plugin_bargain_template_mobile_default_detail_3'] = ' còn lại';
+$lang['lang_plugin_bargain_template_mobile_default_detail_4'] = ' ngày';
+$lang['lang_plugin_bargain_template_mobile_default_detail_5'] = ' giờ';
+$lang['lang_plugin_bargain_template_mobile_default_detail_6'] = ' phút';
+$lang['lang_plugin_bargain_template_mobile_default_detail_7'] = ' giây';
+$lang['lang_plugin_bargain_template_mobile_default_detail_8'] = ' Mặc cả mục thông tin chi tiết';
+$lang['lang_plugin_bargain_template_mobile_default_detail_9'] = ' Rớt giá :';
+$lang['lang_plugin_bargain_template_mobile_default_detail_10'] = ' Giá gốc:';
+$lang['lang_plugin_bargain_template_mobile_default_detail_11'] = ' Giá gốc:';
+$lang['lang_plugin_bargain_template_mobile_default_detail_12'] = ' những người tham gia';
+$lang['lang_plugin_bargain_template_mobile_default_detail_13'] = ' quy tắc';
+$lang['lang_plugin_bargain_template_mobile_default_detail_14'] = ' Mặc cả quá trình';
+$lang['lang_plugin_bargain_template_mobile_default_detail_15'] = ' Chọn đúng mục';
+$lang['lang_plugin_bargain_template_mobile_default_detail_16'] = ' mời bạn bè đến món hời';
+$lang['lang_plugin_bargain_template_mobile_default_detail_17'] = ' thanh toán sau khi cắt để giá thấp nhất';
+$lang['lang_plugin_bargain_template_mobile_default_detail_18'] = ' Thông tin chi tiết văn bản';
+$lang['lang_plugin_bargain_template_mobile_default_detail_19'] = ' Trang chủ';
+$lang['lang_plugin_bargain_template_mobile_default_detail_20'] = ' Mua giá gốc';
+$lang['lang_plugin_bargain_template_mobile_default_detail_21'] = ' bạn đã khởi xướng một món hời cho sản phẩm này.';
+$lang['lang_plugin_bargain_template_mobile_default_detail_22'] = ' bạn có muốn xem nó bây giờ? ';
+$lang['lang_plugin_bargain_template_mobile_default_detail_23'] = ' Mặc cả Mẹo';
+$lang['lang_plugin_bargain_template_mobile_default_detail_24'] = ' Bargain bây giờ';
+$lang['lang_plugin_bargain_template_mobile_default_detail_25'] = ' không khởi động';
+$lang['lang_plugin_bargain_template_mobile_default_detail_26'] = ' đóng cửa';
+$lang['lang_plugin_bargain_template_mobile_default_detail_27'] = ' Không đủ hàng tồn kho';
+$lang['lang_plugin_bargain_template_mobile_default_detail_28'] = ' của tôi';
+?>

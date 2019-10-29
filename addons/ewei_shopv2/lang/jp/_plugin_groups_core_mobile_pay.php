@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_groups_core_mobile_pay_0'] = ' オーダーが見つかりません! ';
+$lang['lang_plugin_groups_core_mobile_pay_1'] = ' この活動が切れて、他の商品または取引先担当者のビジネスを参照してください! ';
+$lang['lang_plugin_groups_core_mobile_pay_2'] = ' 棚下';
+$lang['lang_plugin_groups_core_mobile_pay_3'] = ' 在庫不足';
+$lang['lang_plugin_groups_core_mobile_pay_4'] = ' 、その他の商品を参照か商人に問い合わせてください、このアクティビティの期限が切れている! ';
+$lang['lang_plugin_groups_core_mobile_pay_5'] = ' このアクティビティが終了したその他の商品を参照してくださいしたり、加盟店にお問い合わせください! ';
+$lang['lang_plugin_groups_core_mobile_pay_6'] = ' このアクティビティは、正常にされている組織、その他の商品または取引先担当者のビジネスを参照してください! ';
+$lang['lang_plugin_groups_core_mobile_pay_7'] = ' 注文';
+$lang['lang_plugin_groups_core_mobile_pay_8'] = ' パラメーターエラー';
+$lang['lang_plugin_groups_core_mobile_pay_9'] = ' パラメーターエラー';
+$lang['lang_plugin_groups_core_mobile_pay_10'] = ' 注文が存在しません。';
+$lang['lang_plugin_groups_core_mobile_pay_11'] = ' パラメーターエラー';
+$lang['lang_plugin_groups_core_mobile_pay_12'] = ' 製品が存在しません。';
+$lang['lang_plugin_groups_core_mobile_pay_13'] = ' 製品が存在しません。';
+$lang['lang_plugin_groups_core_mobile_pay_14'] = ' 発見した支払いはありません。';
+$lang['lang_plugin_groups_core_mobile_pay_15'] = ' 発見した支払いはありません。';
+$lang['lang_plugin_groups_core_mobile_pay_16'] = ' 決済エラー';
+$lang['lang_plugin_groups_core_mobile_pay_17'] = ' 再試行';
+$lang['lang_plugin_groups_core_mobile_pay_18'] = ' 決済エラー';
+$lang['lang_plugin_groups_core_mobile_pay_19'] = ' 再試行';
+$lang['lang_plugin_groups_core_mobile_pay_20'] = ' 残高不足';
+$lang['lang_plugin_groups_core_mobile_pay_21'] = ' 充電';
+$lang['lang_plugin_groups_core_mobile_pay_22'] = ' 消費';
+$lang['lang_plugin_groups_core_mobile_pay_23'] = ' 決済エラー';
+$lang['lang_plugin_groups_core_mobile_pay_24'] = ' 再試行';
+$lang['lang_plugin_groups_core_mobile_pay_25'] = ' 決済エラー';
+$lang['lang_plugin_groups_core_mobile_pay_26'] = ' 再試行';
+?>

@@ -1,0 +1,1155 @@
+2019-10-01 00:21:18 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ffb9862d4c99]]></ToUserName>
+<FromUserName><![CDATA[o3Omm1TgW4M7zjJiWa8idQmgq7K8]]></FromUserName>
+<CreateTime>1569860478</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2019-10-01 00:21:19 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ffb9862d4c99',
+    'fromusername' => 'o3Omm1TgW4M7zjJiWa8idQmgq7K8',
+    'createtime' => '1569860478',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'o3Omm1TgW4M7zjJiWa8idQmgq7K8',
+    'to' => 'gh_ffb9862d4c99',
+    'time' => '1569860478',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2019-10-01 00:21:19 response :
+------------
+
+2019-10-01 00:21:28 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ffb9862d4c99]]></ToUserName>
+<FromUserName><![CDATA[o3Omm1TgW4M7zjJiWa8idQmgq7K8]]></FromUserName>
+<CreateTime>1569860488</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>464065743</MenuId>
+</xml>
+
+2019-10-01 00:21:28 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ffb9862d4c99',
+    'fromusername' => 'o3Omm1TgW4M7zjJiWa8idQmgq7K8',
+    'createtime' => '1569860488',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '464065743',
+    'from' => 'o3Omm1TgW4M7zjJiWa8idQmgq7K8',
+    'to' => 'gh_ffb9862d4c99',
+    'time' => '1569860488',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 00:21:28 response :
+------------
+
+2019-10-01 00:22:11 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ffb9862d4c99]]></ToUserName>
+<FromUserName><![CDATA[o3Omm1TgW4M7zjJiWa8idQmgq7K8]]></FromUserName>
+<CreateTime>1569860531</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[Hello ]]></Content>
+<MsgId>22475000372979169</MsgId>
+</xml>
+
+2019-10-01 00:22:11 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ffb9862d4c99',
+    'fromusername' => 'o3Omm1TgW4M7zjJiWa8idQmgq7K8',
+    'createtime' => '1569860531',
+    'msgtype' => 'text',
+    'content' => 'Hello ',
+    'msgid' => '22475000372979169',
+    'from' => 'o3Omm1TgW4M7zjJiWa8idQmgq7K8',
+    'to' => 'gh_ffb9862d4c99',
+    'time' => '1569860531',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2019-10-01 00:22:11 response :
+------------
+
+2019-10-01 09:48:16 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ffb9862d4c99]]></ToUserName>
+<FromUserName><![CDATA[o3Omm1bD0McZV2eMtBlRJU7_ujrE]]></FromUserName>
+<CreateTime>1569894496</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>464065743</MenuId>
+</xml>
+
+2019-10-01 09:48:16 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ffb9862d4c99',
+    'fromusername' => 'o3Omm1bD0McZV2eMtBlRJU7_ujrE',
+    'createtime' => '1569894496',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '464065743',
+    'from' => 'o3Omm1bD0McZV2eMtBlRJU7_ujrE',
+    'to' => 'gh_ffb9862d4c99',
+    'time' => '1569894496',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 09:48:16 response :
+------------
+
+2019-10-01 09:48:47 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569894526</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 09:48:47 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569894526',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569894526',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 09:48:47 response :
+------------
+
+2019-10-01 11:22:34 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569900154</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 11:22:34 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569900154',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569900154',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 11:22:34 response :
+------------
+
+2019-10-01 11:25:25 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569900325</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 11:25:25 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569900325',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569900325',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 11:25:25 response :
+------------
+
+2019-10-01 11:26:00 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569900359</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 11:26:00 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569900359',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569900359',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 11:26:00 response :
+------------
+
+2019-10-01 11:28:58 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569900538</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 11:28:58 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569900538',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569900538',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 11:28:58 response :
+------------
+
+2019-10-01 11:41:44 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569901303</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 11:41:44 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569901303',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569901303',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 11:41:44 response :
+------------
+
+2019-10-01 11:50:49 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569901849</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 11:50:49 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569901849',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569901849',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 11:50:49 response :
+------------
+
+2019-10-01 11:51:06 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569901866</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 11:51:06 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569901866',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569901866',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 11:51:06 response :
+------------
+
+2019-10-01 12:22:02 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569903722</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 12:22:02 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569903722',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569903722',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 12:22:02 response :
+------------
+
+2019-10-01 12:22:38 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ffb9862d4c99]]></ToUserName>
+<FromUserName><![CDATA[o3Omm1bD0McZV2eMtBlRJU7_ujrE]]></FromUserName>
+<CreateTime>1569903758</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>464065743</MenuId>
+</xml>
+
+2019-10-01 12:22:38 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ffb9862d4c99',
+    'fromusername' => 'o3Omm1bD0McZV2eMtBlRJU7_ujrE',
+    'createtime' => '1569903758',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '464065743',
+    'from' => 'o3Omm1bD0McZV2eMtBlRJU7_ujrE',
+    'to' => 'gh_ffb9862d4c99',
+    'time' => '1569903758',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 12:22:38 response :
+------------
+
+2019-10-01 12:22:47 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ffb9862d4c99]]></ToUserName>
+<FromUserName><![CDATA[o3Omm1bD0McZV2eMtBlRJU7_ujrE]]></FromUserName>
+<CreateTime>1569903767</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=member]]></EventKey>
+<MenuId>464065743</MenuId>
+</xml>
+
+2019-10-01 12:22:47 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ffb9862d4c99',
+    'fromusername' => 'o3Omm1bD0McZV2eMtBlRJU7_ujrE',
+    'createtime' => '1569903767',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=member',
+    'menuid' => '464065743',
+    'from' => 'o3Omm1bD0McZV2eMtBlRJU7_ujrE',
+    'to' => 'gh_ffb9862d4c99',
+    'time' => '1569903767',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=member',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 12:22:47 response :
+------------
+
+2019-10-01 12:22:54 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ffb9862d4c99]]></ToUserName>
+<FromUserName><![CDATA[o3Omm1bD0McZV2eMtBlRJU7_ujrE]]></FromUserName>
+<CreateTime>1569903774</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=member]]></EventKey>
+<MenuId>464065743</MenuId>
+</xml>
+
+2019-10-01 12:22:54 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ffb9862d4c99',
+    'fromusername' => 'o3Omm1bD0McZV2eMtBlRJU7_ujrE',
+    'createtime' => '1569903774',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=member',
+    'menuid' => '464065743',
+    'from' => 'o3Omm1bD0McZV2eMtBlRJU7_ujrE',
+    'to' => 'gh_ffb9862d4c99',
+    'time' => '1569903774',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=member',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 12:22:54 response :
+------------
+
+2019-10-01 12:27:13 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569904033</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 12:27:13 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569904033',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569904033',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 12:27:13 response :
+------------
+
+2019-10-01 12:33:07 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569904387</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 12:33:07 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569904387',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569904387',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 12:33:07 response :
+------------
+
+2019-10-01 12:33:56 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569904436</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 12:33:56 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569904436',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569904436',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 12:33:56 response :
+------------
+
+2019-10-01 14:04:37 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1Frd3PAIXX3qzWYKncNQ3C4]]></FromUserName>
+<CreateTime>1569909877</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 14:04:37 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1Frd3PAIXX3qzWYKncNQ3C4',
+    'createtime' => '1569909877',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1Frd3PAIXX3qzWYKncNQ3C4',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569909877',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 14:04:37 response :
+------------
+
+2019-10-01 14:06:14 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ffb9862d4c99]]></ToUserName>
+<FromUserName><![CDATA[o3Omm1Y071XuXcs8tlHPSQHk5i0k]]></FromUserName>
+<CreateTime>1569909974</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=member]]></EventKey>
+<MenuId>464065743</MenuId>
+</xml>
+
+2019-10-01 14:06:14 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ffb9862d4c99',
+    'fromusername' => 'o3Omm1Y071XuXcs8tlHPSQHk5i0k',
+    'createtime' => '1569909974',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=member',
+    'menuid' => '464065743',
+    'from' => 'o3Omm1Y071XuXcs8tlHPSQHk5i0k',
+    'to' => 'gh_ffb9862d4c99',
+    'time' => '1569909974',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=member',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 14:06:14 response :
+------------
+
+2019-10-01 16:05:46 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569917146</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 16:05:46 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569917146',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569917146',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 16:05:46 response :
+------------
+
+2019-10-01 16:15:32 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569917732</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 16:15:32 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569917732',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569917732',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 16:15:32 response :
+------------
+
+2019-10-01 16:43:43 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569919423</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 16:43:43 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569919423',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569919423',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 16:43:43 response :
+------------
+
+2019-10-01 17:12:28 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569921147</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 17:12:28 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569921147',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569921147',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 17:12:28 response :
+------------
+
+2019-10-01 17:13:04 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569921184</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 17:13:04 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569921184',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569921184',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 17:13:04 response :
+------------
+
+2019-10-01 17:14:04 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569921243</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 17:14:04 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569921243',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569921243',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 17:14:04 response :
+------------
+
+2019-10-01 17:25:27 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569921927</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 17:25:27 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569921927',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569921927',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 17:25:27 response :
+------------
+
+2019-10-01 17:35:25 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AAArS1ecPyECSUy54TYDXs]]></FromUserName>
+<CreateTime>1569922524</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>430893925</MenuId>
+</xml>
+
+2019-10-01 17:35:25 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'createtime' => '1569922524',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '430893925',
+    'from' => 'o7hDG1AAArS1ecPyECSUy54TYDXs',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1569922524',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=5&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2019-10-01 17:35:25 response :
+------------
+

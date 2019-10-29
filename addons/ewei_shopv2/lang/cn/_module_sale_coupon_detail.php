@@ -1,0 +1,31 @@
+<?php
+$lang['lang_module_sale_coupon_detail_0'] = '满';
+$lang['lang_module_sale_coupon_detail_1'] = '元可用';
+$lang['lang_module_sale_coupon_detail_2'] = '无金额门槛';
+$lang['lang_module_sale_coupon_detail_3'] = '充值满';
+$lang['lang_module_sale_coupon_detail_4'] = '元可用';
+$lang['lang_module_sale_coupon_detail_5'] = '无金额门槛';
+$lang['lang_module_sale_coupon_detail_6'] = '满';
+$lang['lang_module_sale_coupon_detail_7'] = '元可用';
+$lang['lang_module_sale_coupon_detail_8'] = '无金额门槛';
+$lang['lang_module_sale_coupon_detail_9'] = 'RM';
+$lang['lang_module_sale_coupon_detail_10'] = '折';
+$lang['lang_module_sale_coupon_detail_11'] = '元余额';
+$lang['lang_module_sale_coupon_detail_12'] = '积分';
+$lang['lang_module_sale_coupon_detail_13'] = '元红包';
+$lang['lang_module_sale_coupon_detail_14'] = '普通等级';
+$lang['lang_module_sale_coupon_detail_15'] = '普通等级';
+$lang['lang_module_sale_coupon_detail_16'] = '普通等级';
+$lang['lang_module_sale_coupon_detail_17'] = '普通等级';
+$lang['lang_module_sale_coupon_detail_18'] = '无法';
+$lang['lang_module_sale_coupon_detail_19'] = '优惠券数量不足';
+$lang['lang_module_sale_coupon_detail_20'] = '您已超出';
+$lang['lang_module_sale_coupon_detail_21'] = '次数限制';
+$lang['lang_module_sale_coupon_detail_22'] = '您的积分不足，无法';
+$lang['lang_module_sale_coupon_detail_23'] = '非微信环境';
+$lang['lang_module_sale_coupon_detail_24'] = '未开启微信支付';
+$lang['lang_module_sale_coupon_detail_25'] = '优惠券领取单号';
+$lang['lang_module_sale_coupon_detail_26'] = '微信支付参数错误';
+$lang['lang_module_sale_coupon_detail_27'] = '订单未找到';
+$lang['lang_module_sale_coupon_detail_28'] = '支付未成功';
+?>

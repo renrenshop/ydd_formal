@@ -1,0 +1,417 @@
+{template '_header'}
+<style type="text/css">
+.fui-navbar ~ .fui-content, .fui-content.navbar{padding-bottom:0;}
+</style>
+<div class='fui-page order-detail-page'>
+	<div class="fui-header">
+		<div class="fui-header-left">
+			<a class="back" href="{php echo mobileUrl('order')}"></a>
+		</div>
+		<div class="title">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_0']}</div>
+		<div class="fui-header-right" onclick="location.href='{php echo mobileUrl('groups/orders')}'">
+			<span class="icon icon-order" style="font-size:1.1rem;"></span>
+		</div>
+	</div>
+	<div class='fui-content navbar'>
+		<div class='fui-list-group result-list'>
+			<div class='fui-list order-status'>
+				<div class='fui-list-inner'>
+					<div class='title'>
+						{if empty($order['status'])}
+						{if $order['paytype']==3}
+						{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_1']}
+						{else}
+						{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_2']}
+						{/if}
+						{elseif $order['status']==1}
+						{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_3']}
+						{elseif $order['status']==2}
+						{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_4']}
+						{elseif $order['status']==3}
+						{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_5']}
+						{elseif $order['status']==-1}
+						{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_6']}
+						{/if}
+						{if $order['refundstate'] > 0}
+						({if $order['status'] ==1}{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_7']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_8']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_9']})
+						{/if}
+					</div>
+					<div class='text'>{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_10']}({php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_11']}): {php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_12']} {php echo ($order['price'] - $order['creditmoney'] + $order['freight']);}<span></div>
+				</div>
+				<div class='fui-list-media'>
+					{if empty($order['status'])}
+					{if $order['paytype']==3}
+					<i class='icon icon-deliver'></i>
+					{else}
+					<i class='icon icon-information'></i>
+					{/if}
+					{elseif $order['status']==1}
+					<i class='icon icon-money'></i>
+					{elseif $order['status']==2}
+					<i class='icon icon-deliver'></i>
+					{elseif $order['status']==3}
+					<i class='icon icon-check'></i>
+					{elseif $order['status']==-1}
+					<i class='icon icon-roundclose'></i>
+					{/if}
+
+				</div>
+			</div>
+		</div>
+
+		{if !empty($address)}
+		<div class='fui-list-group' style='margin-top:5px;'>
+			{if $order['status'] > 1}
+			<a href="{php echo mobileUrl('groups/orders/express',array('id'=>$order['id']))}">
+				<div class='fui-list'>
+					<div class='fui-list-media'><i class='icon icon-deliver'></i></div>
+					<div class='fui-list-inner'>
+						{if empty($express)}
+						<div class='text'><span>{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_13']}:{$order['expresscom']}</span></div>
+						<div class='text'><span>{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_14']}:{$order['expresssn']}</span></div>
+						{else}
+						<div class='text'><span {if $express && strexists($express['step'],$lang['lang_plugin_groups_template_mobile_default_orders_detail_15'])}class='text-danger'{/if}>{$express['step']}</span></div>
+						<div class='text'><span {if $express && strexists($express['step'],$lang['lang_plugin_groups_template_mobile_default_orders_detail_16'])}class='text-danger'{/if}>{$express['time']}</span></div>
+						{/if}
+					</div>
+					<div class='fui-list-angle'><span class='angle'></span></div>
+				</div>
+			</a>
+			{/if}
+
+			<div class='fui-list'>
+				<div class='fui-list-media'><i class='icon icon-location'></i></div>
+				<div class='fui-list-inner'>
+					<div class='title'>{$address['realname']} {$address['mobile']}</div>
+					<div class='text'>{$address['province']}{$address['city']}{$address['area']} {$address['address']}</div>
+				</div>
+			</div>
+		</div>
+		{/if}
+		{if !empty($carrier) ||!empty($store)}
+
+		<div class='fui-list-group' style='margin-top:5px;'>
+
+			<div class='fui-list'>
+				<div class='fui-list-media'><i class='icon icon-person2'></i></div>
+				<div class='fui-list-inner'>
+					<div class='title'>{$carrier['carrier_realname']} {$carrier['carrier_mobile']}</div>
+				</div>
+			</div>
+
+			{if !empty($store)}
+
+
+			<div  class="fui-list store-item" >
+				<div class="fui-list-media">
+					<i class='icon icon-shop'></i>
+				</div>
+				<div class="fui-list-inner store-inner">
+					<div class="title"> <span class='storename'>{$store['storename']}</span></div>
+					<div class="text">
+						<span class='realname'>{$store['realname']}</span> <span class='mobile'>{$store['mobile']}</span>
+					</div>
+					<div class="text">
+						<span class='address'>{$store['address']}</span>
+					</div>
+				</div>
+				<div class="fui-list-angle ">
+					{if !empty($store['tel'])}<a href="tel:{$store['tel']}" class='external '><i class=' icon icon-phone' style='color:green'></i></a>{/if}
+					<a href="{php echo mobileUrl('store/map',array('id'=>$store['id']))}" class='external' ><i class='icon icon-location' style='color:#f90'></i></a>
+				</div>
+			</div>
+
+			{/if}
+		</div>
+		{/if}
+
+<div class="fui-list-group goods-list-group">
+	<div class="fui-list-group-title"><i class="icon icon-shop"></i> {$_W['shopset']['shop']['name']}</div>
+	<a href="{php echo mobileUrl('groups/goods',array('id'=>$good['id']))}" class="external">
+		<div class="fui-list goods-list">
+			<div class="fui-list-media">
+				<img src="{php echo tomedia($good['thumb'])}" alt="{$goods['title']}" class="round" onerror="this.src='../addons/ewei_shopv2/static/images/nopic100.jpg'">
+			</div>
+			<div class="fui-list-inner">
+				<div class="text goodstitle">{$good['title']}</div>
+					{if !empty($good['optionid'])}<div class='subtitle'>{$good['optiontitle']}</div>{/if}
+			</div>
+			<div class='fui-list-angle'>
+				{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_17']} <span class='marketprice'>{if $order['is_team'] == 1}{$good['groupsprice']}{else}{$good['singleprice']}{/if}/{if $good['units']}{$good['goodsnum']}{$good['units']}{else}1{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_18']}{/if}
+				<br/>   x 1</span>
+			</div>
+		</div>
+	</a>
+</div>
+
+
+		{if !empty($order['virtual']) && !empty($order['virtual_str'])}
+		<div class='fui-according-group'>
+			<div class='fui-according expanded'>
+				<div class='fui-according-header'>
+					<i class='icon icon-productfeatures'></i>
+					<span class="text">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_19']}</span>
+					<span class="remark"></span>
+				</div>
+				<div class="fui-according-content">
+					<div class='content-block'>
+						{$order['virtual_str']}
+					</div>
+				</div>
+
+			</div></div>
+		{/if}
+
+		{if !empty($order['isvirtualsend']) && !empty($order['virtualsend_info'])}
+		<div class='fui-according-group'>
+			<div class='fui-according expanded'>
+				<div class='fui-according-header'>
+					<i class='icon icon-productfeatures'></i>
+					<span class="text">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_20']}</span>
+					<span class="remark"></span>
+				</div>
+				<div class="fui-according-content">
+					<div class='content-block'>
+						{$order['virtualsend_info']}
+					</div>
+				</div>
+
+			</div></div>
+		{/if}
+
+		{if $order['isverify']==1 && $order['status'] > 0 && ($order['success'] == 1 || $order['is_team'] == 0)}
+
+		<div class='fui-according-group expanded verify-container' data-verifytype="{$order['verifytype']}" data-orderid="{$order['id']}">
+			<div class='fui-according'>
+				<div class='fui-according-header'>
+
+					<i class='icon icon-list'></i>
+
+
+					<span class="text">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_21']}</span>
+					<span class="remark"><div class="badge">1</div></span>
+				</div>
+				<div class="fui-according-content verifycode-container">
+
+					<div class='fui-cell-group'>
+						<div class='fui-cell verify-cell' data-verifycode="{$v['verifycode']}">
+							<div class='fui-cell-label' style='width:auto'>
+								{$order['verifycode']}
+							</div>
+							<div class='fui-cell-info'></div>
+							<div class='fui-cell-remark noremark'>
+								{if $verify['isverify']}
+								<div class='fui-label fui-label-danger' >{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_22']}</div>
+								{else}
+								{if $order['verifytype']==1}
+									{if $verifynum == 0}
+										<div class='fui-label fui-label-danger' >{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_23']}</div>
+									{else}
+										<div class='fui-label fui-label-default' >{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_24']}{php echo $verifynum} {php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_25']}</div>
+									{/if}
+								{else}
+								<div class='fui-label fui-label-default' >{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_26']}</div>
+								{/if}
+								{/if}
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+
+		{/if}
+
+		{if !empty($stores)}
+		<script language='javascript' src='https://api.map.baidu.com/api?v=2.0&ak=ZQiFErjQB7inrGpx27M1GR5w3TxZ64k7&s=1'></script>
+		<div class='fui-according-group'>
+			<div class='fui-according'>
+				<div class='fui-according-header'>
+					<i class='icon icon-shop'></i>
+					<span class="text">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_27']}</span>
+					<span class="remark"><div class="badge">{php echo count($stores)}</div></span>
+				</div>
+				<div class="fui-according-content store-container">
+					{loop $stores $item}
+					<div  class="fui-list store-item"
+
+						  data-lng="{php echo floatval($item['lng'])}"
+						  data-lat="{php echo floatval($item['lat'])}">
+						<div class="fui-list-media">
+							<i class='icon icon-shop'></i>
+						</div>
+						<div class="fui-list-inner store-inner">
+							<div class="title"> <span class='storename'>{$item['storename']}</span></div>
+							<div class="text">
+								<span class='realname'>{$item['realname']}</span> <span class='mobile'>{$item['mobile']}</span>
+							</div>
+							<div class="text">
+								<span class='address'>{$item['address']}</span>
+							</div>
+							<div class="text location" style="color:green;display:none">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_28']}...</div>
+						</div>
+						<div class="fui-list-angle ">
+							{if !empty($item['tel'])}<a href="tel:{$item['tel']}" class='external '><i class=' icon icon-phone' style='color:green'></i></a>{/if}
+							<a href="{php echo mobileUrl('store/map',array('id'=>$item['id']))}" class='external' ><i class='icon icon-location' style='color:#f90'></i></a>
+						</div>
+					</div>
+					{/loop}
+				</div>
+
+				<div id="nearStore" style="display:none">
+
+					<div class='fui-list store-item'  id='nearStoreHtml'></div>
+				</div>
+			</div></div>
+		{/if}
+
+
+
+
+		<div class='fui-cell-group price-cell-group'>
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_29']}</div>
+				<div class="fui-cell-info"></div>
+				<div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_30']} {php echo number_format($order['price']+$order['discount'],2)}</div>
+			</div>
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_31']}</div>
+				<div class="fui-cell-info"></div>
+				<div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_32']} {$order['freight']}</div>
+			</div>
+			{if $order['discount'] > 0}
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_33']}</div>
+				<div class="fui-cell-info"></div>
+				<div class="fui-cell-remark noremark">
+					- {php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_34']} {php echo number_format($order['discount'],2)}
+				</div>
+			</div>
+			{/if}
+			{if $order['discountprice']>0}
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_35']}</div>
+				<div class="fui-cell-info"></div>
+				<div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_36']} {$order['discountprice']}</div>
+			</div>
+			{/if}
+			{if $order['isdiscountprice']>0}
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_37']}</div>
+				<div class="fui-cell-info"></div>
+				<div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_38']} {$order['isdiscountprice']}</div>
+			</div>
+			{/if}
+			{if $order['creditmoney']>0}
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_39']}</div>
+				<div class="fui-cell-info"></div>
+				<div class="fui-cell-remark noremark">- {php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_40']} {$order['creditmoney']}</div>
+			</div>
+			{/if}
+			{if $order['deductcredit2']>0}
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_41']}</div>
+				<div class="fui-cell-info"></div>
+				<div class="fui-cell-remark noremark">-{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_42']} {$order['deductcredit2']}</div>
+			</div>
+			{/if}
+			<div class="fui-cell">
+				<div class="fui-cell-label" style='width:auto;'>{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_43']}({php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_44']})</div>
+				<div class="fui-cell-info"></div>
+				<div class="fui-cell-remark noremark"><span class='text-danger'>{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_45']} <span style='font-size:.8rem'>{php echo number_format(($order['price'] - $order['creditmoney'] + $order['freight']),2)}</span></span></div>
+			</div>
+		</div>
+
+		<div class="fui-cell-group info-cell-group">
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_46']}:</div>
+				<div class="fui-cell-info">{$order['orderno']}</div>
+			</div>
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_47']}:</div>
+				<div class="fui-cell-info">{php echo date('Y-m-d H:i:s', $order['createtime'])}</div>
+			</div>
+			{if $order['status']>=1}
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_48']}: </div>
+				<div class="fui-cell-info">{php echo date('Y-m-d H:i:s', $order['paytime'])}</div>
+			</div>
+			{/if}
+			{if $order['status']>=2}
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_49']}: </div>
+				<div class="fui-cell-info">{php echo date('Y-m-d H:i:s', $order['sendtime'])}</div>
+			</div>
+			{/if}
+			{if $order['status']==3}
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_50']}: </div>
+				<div class="fui-cell-info">{php echo date('Y-m-d H:i:s', $order['finishtime'])}</div>
+			</div>
+			{/if}
+		</div>
+
+
+	</div>
+
+	{if $order['canverify']}
+	{template 'order/verify'}
+	{/if}
+
+	<div class='fui-footer'>
+		{if $order['status']==0}
+			<div class="btn btn-default btn-default-o order-cancel">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_51']}
+				<select data-orderid="{$order['id']}">
+
+					<option value="">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_52']}</option>
+					<option value="{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_53']}">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_54']}</option>
+					<option value="{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_55']}">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_56']}</option>
+					<option value="{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_57']}">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_58']}</option>
+					<option value="{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_59']}">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_60']}</option>
+				</select>
+			</div>
+			<a class="btn btn-danger" href="{php echo mobileUrl('groups/pay',array('orderid' => $order['id'],'teamid' => $order['teamid']));}">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_61']}</a>
+		{/if}
+		{if $order['isverify']==1 && $order['status'] > 0 && ($order['success'] == 1 || $order['is_team']==0) && $verifynum > 0}
+		<div class="btn btn-default btn-default-o pull-left order-verify" data-orderid="{$order['id']}" data-verifytype="{$order['verifytype']}" style="margin-left:.5rem;" >
+			<i class="icon icon-qrcode"></i>
+			<span>{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_62']}</span>
+		</div>
+		{/if}
+
+		{if $order['status']==3 || $order['status']==-1}
+		<div class="btn btn-default btn-default-o order-delete" data-orderid="{$order['id']}">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_63']}</div>
+		{/if}
+
+
+		{if $order['status']==3 && $order['iscomment']==1}
+		<!--<a class="btn btn-default btn-default-o" href="{php echo mobileUrl('order/comment',array('id'=>$order['id']))}">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_64']}</a>-->
+		{/if}
+		{if $order['status']==3 && $order['iscomment']==0}
+		<!--<a class="btn btn-default btn-default-o" href="{php echo mobileUrl('order/comment',array('id'=>$order['id']))}">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_65']}</a>-->
+		{/if}
+		{if $order['status']==2}
+		<div class="btn btn-default btn-default-o order-finish" data-orderid="{$order['id']}">{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_66']}</div>
+		{/if}
+		{if $order['status']>0}
+		<a class="external btn btn-warning" href="{php echo mobileUrl('groups/refund',array('orderid'=>$order['id'],'teamid'=>$order['teamid']))}">
+			{if $order['status'] ==1}{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_67']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_68']}{/if}{if !empty($order['refundstate'])}{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_69']}{/if}
+		</a>
+		{/if}
+		{if $order['refundstate'] > 0 && $refund['refundstatus']!=5}
+		<a class='btn btn-default-o btn-cancel'>{php echo $lang['lang_plugin_groups_template_mobile_default_orders_detail_70']}</a>
+		{/if}
+	</div>
+	<script language='javascript'>
+		require(['../addons/ewei_shopv2/plugin/groups/static/js/orderdetail.js'], function (modal) {
+		modal.init({orderid: "{$order['id']}",teamid: "{$order['teamid']}",fromDetail:true});
+	});
+	</script>
+	{if com('verify')}
+	{template 'groups/orders/verify'}
+	{/if}
+</div>
+{template '_footer'}

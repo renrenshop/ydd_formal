@@ -1,0 +1,33 @@
+<?php
+$lang['lang_plugin_sign_core_mobile_index_0'] = ' không mở';
+$lang['lang_plugin_sign_core_mobile_index_1'] = ' không nhận được thông tin người dùng';
+$lang['lang_plugin_sign_core_mobile_index_2'] = ' Yêu cầu có lỗi';
+$lang['lang_plugin_sign_core_mobile_index_3'] = ' không mở';
+$lang['lang_plugin_sign_core_mobile_index_4'] = ' tháng hiện tại ít hơn tháng';
+$lang['lang_plugin_sign_core_mobile_index_5'] = ' đã';
+$lang['lang_plugin_sign_core_mobile_index_6'] = ' không lặp lại';
+$lang['lang_plugin_sign_core_mobile_index_7'] = ' Oh';
+$lang['lang_plugin_sign_core_mobile_index_8'] = ' ngày là lớn hơn ngày hiện tại';
+$lang['lang_plugin_sign_core_mobile_index_9'] = ' Hàng ngày';
+$lang['lang_plugin_sign_core_mobile_index_10'] = ' Đầu tiên';
+$lang['lang_plugin_sign_core_mobile_index_11'] = ' thất bại';
+$lang['lang_plugin_sign_core_mobile_index_12'] = ' của bạn';
+$lang['lang_plugin_sign_core_mobile_index_13'] = ' Không đủ';
+$lang['lang_plugin_sign_core_mobile_index_14'] = ' không thể';
+$lang['lang_plugin_sign_core_mobile_index_15'] = ' Khấu trừ';
+$lang['lang_plugin_sign_core_mobile_index_16'] = ' thất bại';
+$lang['lang_plugin_sign_core_mobile_index_17'] = ' của bạn';
+$lang['lang_plugin_sign_core_mobile_index_18'] = ' Không đủ';
+$lang['lang_plugin_sign_core_mobile_index_19'] = ' không thể';
+$lang['lang_plugin_sign_core_mobile_index_20'] = ' Khấu trừ';
+$lang['lang_plugin_sign_core_mobile_index_21'] = ' thành công';
+$lang['lang_plugin_sign_core_mobile_index_22'] = ' Yêu cầu có lỗi';
+$lang['lang_plugin_sign_core_mobile_index_23'] = ' Yêu cầu tham số lỗi';
+$lang['lang_plugin_sign_core_mobile_index_24'] = ' không mở';
+$lang['lang_plugin_sign_core_mobile_index_25'] = ' Đã nhận được giải thưởng này';
+$lang['lang_plugin_sign_core_mobile_index_26'] = ' xin vui lòng không lặp lại các bộ sưu tập';
+$lang['lang_plugin_sign_core_mobile_index_27'] = ' Liên tục';
+$lang['lang_plugin_sign_core_mobile_index_28'] = ' Tất cả';
+$lang['lang_plugin_sign_core_mobile_index_29'] = ' ngày nhận được khen thưởng';
+$lang['lang_plugin_sign_core_mobile_index_30'] = ' Thu thập thành công';
+?>

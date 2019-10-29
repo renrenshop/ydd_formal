@@ -1,0 +1,92 @@
+{template '_header'}
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/sns/template/mobile/default/images/common.css"/>
+<style type="text/css">
+    .sns-content-info{max-height:4rem;line-height: 1rem;overflow: hidden;}
+    .sns-card-show{padding:0 0.5rem 0.5rem;height:1.5rem;display: block;font-style: normal;color:#0290be;font-size:0.7rem;}
+</style>
+<div class='fui-page fui-page-current  fui-page-current sns-board-page'>
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_sns_template_mobile_default_board_best_0']}</div>
+        <div class="fui-header-right btn-edit">&nbsp;</div>
+    </div>
+    <div class="fui-content navbar">
+
+
+
+        <div class="container"></div>
+        <div class="empty" style="display:none;"><i class="icon icon-creditlevel" style="font-size:4rem;color:#ccc;"></i> <br/>{php echo $lang['lang_plugin_sns_template_mobile_default_board_best_1']}</div>
+        <div class='infinite-loading'><span class='fui-preloader'></span><span class='text'> {php echo $lang['lang_plugin_sns_template_mobile_default_board_best_2']}...</span></div>
+    </div>
+
+
+    <script language='javascript'>
+        require(['../addons/ewei_shopv2/plugin/sns/static/js/board_best.js'], function (modal) {
+            modal.init({ bid: {$board['id']}});
+        });
+    </script>
+
+</div>
+
+
+
+</div>
+<!--{php echo $lang['lang_plugin_sns_template_mobile_default_board_best_3']}start-->
+<div id="sns-board-complain-page" class='fui-page sns-board-reply-page'>
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back">{php echo $lang['lang_plugin_sns_template_mobile_default_board_best_4']}</a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_sns_template_mobile_default_board_best_5']}</div>
+        <div class="fui-header-right"></div>
+    </div>
+    <div class="fui-content navbar">
+        <div class="fui-cell-group" style="margin-top:0;">
+            <div class="complain-title">
+                {php echo $lang['lang_plugin_sns_template_mobile_default_board_best_6']}<span id="post_member"></span>{php echo $lang['lang_plugin_sns_template_mobile_default_board_best_7']}<span class="complain-type-span"></span>
+            </div>
+            <input type="hidden" id="complain_type" name="complain_type" value="">
+            <div class="complain-type">
+                <p>{php echo $lang['lang_plugin_sns_template_mobile_default_board_best_8']}</p>
+                {loop $catelist $item}
+                <span class="fui-lg-1 fui-md-2 fui-sm-3 fui-xs-4"><a href="javascript:void(0);" data-type="{$item['id']}">{$item['name']}</a></span>
+                {/loop}
+                <span class="fui-lg-1 fui-md-2 fui-sm-3 fui-xs-4"><a href="javascript:void(0);" data-type="-1">{php echo $lang['lang_plugin_sns_template_mobile_default_board_best_9']}</a></span>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-info">
+                    <textarea placeholder="{php echo $lang['lang_plugin_sns_template_mobile_default_board_best_10']} 10-500{php echo $lang['lang_plugin_sns_template_mobile_default_board_best_11']}" rows="8" id="complain_text"></textarea>
+                </div>
+            </div>
+            <div class="fui-cell reply-func-cell">
+                <div class="fui-cell-info post-func">
+                    <i class="icon icon-pic" id="complain-pic"></i>
+                </div>
+            </div>
+
+            {if empty($board['noimage'])}
+            <div class='fui-cell complain-image'>
+                <div class='fui-cell-info'>
+                    <ul class="fui-images fui-images-md"></ul>
+                    <div class="fui-uploader fui-uploader-md"
+                         data-max="{if $set['imagesnum']==0}5{else if $set['imagesnum'] > 0}{$set['imagesnum']}{/if}"
+                         data-count="0">
+                        <input type="file" name='complainimg[]' id='complainimg{$g['id']}' multiple="" accept="image/*" >
+                    </div>
+                </div>
+            </div>
+            {/if}
+        </div>
+        <a href="javascript:void(0);" class="btn btn-sns-submit" id="btnCompSend">{php echo $lang['lang_plugin_sns_template_mobile_default_board_best_12']}</a>
+    </div>
+</div>
+<!--{php echo $lang['lang_plugin_sns_template_mobile_default_board_best_13']}end-->
+
+{template 'sns/board/board_item'}
+
+
+{php $this->footerMenus()}
+{template '_footer'}

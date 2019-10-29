@@ -1,0 +1,86 @@
+2019-09-19 15:11:38 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1JXtecB43RJ5IDdIog4-0O8]]></FromUserName>
+<CreateTime>1568877098</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2019-09-19 15:11:41 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1JXtecB43RJ5IDdIog4-0O8]]></FromUserName>
+<CreateTime>1568877101</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2019-09-19 15:11:43 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1JXtecB43RJ5IDdIog4-0O8',
+    'createtime' => '1568877101',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'o7hDG1JXtecB43RJ5IDdIog4-0O8',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1568877101',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2019-09-19 15:11:43 response :
+------------
+
+2019-09-19 15:59:52 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1AHPCOgPkvo2Yn5Y76n9LCY]]></FromUserName>
+<CreateTime>1568879992</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[tes]]></Content>
+<MsgId>22460959639600003</MsgId>
+</xml>
+
+2019-09-19 15:59:53 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1AHPCOgPkvo2Yn5Y76n9LCY',
+    'createtime' => '1568879992',
+    'msgtype' => 'text',
+    'content' => 'tes',
+    'msgid' => '22460959639600003',
+    'from' => 'o7hDG1AHPCOgPkvo2Yn5Y76n9LCY',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1568879992',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2019-09-19 15:59:53 response :
+------------
+

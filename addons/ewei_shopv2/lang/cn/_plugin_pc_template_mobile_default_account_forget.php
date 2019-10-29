@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_account_forget_0'] = '，欢迎来';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_1'] = '还不是本站会员？立即';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_2'] = '登陆';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_3'] = '立即注册';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_4'] = '立即找回';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_5'] = '手机号：';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_6'] = '您的手机号码';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_7'] = '验证码：';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_8'] = '位验证码';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_9'] = '获取验证码';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_10'] = '点击';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_11'] = '发送短信验证';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_12'] = '，并将您手机短信所接收到的“';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_13'] = '位动态码”输入到上方短信验证，再提交。';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_14'] = '设置密码：';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_15'] = '个大小写英文字母、符号或数字';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_16'] = '确认密码：';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_17'] = '请重新输入登录密码';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_18'] = '立即注册';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_19'] = '立即找回';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_20'] = '忘记密码';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_21'] = '立即注册';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_22'] = '注册之后您可以';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_23'] = '购买商品支付订单';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_24'] = '收藏商品关注店铺';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_25'] = '安全交易诚信无忧';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_26'] = '积分获取优惠购物';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_27'] = '会员等级享受特权';
+$lang['lang_plugin_pc_template_mobile_default_account_forget_28'] = '评价晒单站外分享';
+?>

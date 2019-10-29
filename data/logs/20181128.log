@@ -1,0 +1,77 @@
+2018-11-28 16:19:33 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_beb5adfd77ba]]></ToUserName>
+<FromUserName><![CDATA[o22qy1YpZonCmM2F-xEmxZ7u4u94]]></FromUserName>
+<CreateTime>1543393172</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2018-11-28 16:19:33 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_beb5adfd77ba',
+    'fromusername' => 'o22qy1YpZonCmM2F-xEmxZ7u4u94',
+    'createtime' => '1543393172',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'o22qy1YpZonCmM2F-xEmxZ7u4u94',
+    'to' => 'gh_beb5adfd77ba',
+    'time' => '1543393172',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2018-11-28 16:19:33 response :
+------------
+
+2018-11-28 16:19:35 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_beb5adfd77ba]]></ToUserName>
+<FromUserName><![CDATA[o22qy1YpZonCmM2F-xEmxZ7u4u94]]></FromUserName>
+<CreateTime>1543393175</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://ydd.gzchujiao.com/app/index.php?i=1&c=entry&m=ewei_shopv2&do=mobile]]></EventKey>
+<MenuId>462400649</MenuId>
+</xml>
+
+2018-11-28 16:19:35 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_beb5adfd77ba',
+    'fromusername' => 'o22qy1YpZonCmM2F-xEmxZ7u4u94',
+    'createtime' => '1543393175',
+    'msgtype' => 'event',
+    'event' => 'VIEW',
+    'eventkey' => 'http://ydd.gzchujiao.com/app/index.php?i=1&c=entry&m=ewei_shopv2&do=mobile',
+    'menuid' => '462400649',
+    'from' => 'o22qy1YpZonCmM2F-xEmxZ7u4u94',
+    'to' => 'gh_beb5adfd77ba',
+    'time' => '1543393175',
+    'type' => 'text',
+    'content' => 'http://ydd.gzchujiao.com/app/index.php?i=1&c=entry&m=ewei_shopv2&do=mobile',
+    'redirection' => true,
+    'source' => 'VIEW',
+  ),
+)
+
+2018-11-28 16:19:35 response :
+------------
+

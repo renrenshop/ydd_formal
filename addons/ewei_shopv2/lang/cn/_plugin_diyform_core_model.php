@@ -1,0 +1,32 @@
+<?php
+$lang['lang_plugin_diyform_core_model_0'] = '单行文本';
+$lang['lang_plugin_diyform_core_model_1'] = '多行文本';
+$lang['lang_plugin_diyform_core_model_2'] = '下拉框';
+$lang['lang_plugin_diyform_core_model_3'] = '多选框';
+$lang['lang_plugin_diyform_core_model_4'] = '图片';
+$lang['lang_plugin_diyform_core_model_5'] = '身份证号码';
+$lang['lang_plugin_diyform_core_model_6'] = '日期';
+$lang['lang_plugin_diyform_core_model_7'] = '日期范围';
+$lang['lang_plugin_diyform_core_model_8'] = '城市';
+$lang['lang_plugin_diyform_core_model_9'] = '确认文本';
+$lang['lang_plugin_diyform_core_model_10'] = '时间';
+$lang['lang_plugin_diyform_core_model_11'] = '时间范围';
+$lang['lang_plugin_diyform_core_model_12'] = '提示文本';
+$lang['lang_plugin_diyform_core_model_13'] = '自定义';
+$lang['lang_plugin_diyform_core_model_14'] = '姓名';
+$lang['lang_plugin_diyform_core_model_15'] = '电话';
+$lang['lang_plugin_diyform_core_model_16'] = '微信号';
+$lang['lang_plugin_diyform_core_model_17'] = '填写当天';
+$lang['lang_plugin_diyform_core_model_18'] = '特定日期';
+$lang['lang_plugin_diyform_core_model_19'] = '请选择省份';
+$lang['lang_plugin_diyform_core_model_20'] = '请选择城市';
+$lang['lang_plugin_diyform_core_model_21'] = '请填写';
+$lang['lang_plugin_diyform_core_model_22'] = '请选择';
+$lang['lang_plugin_diyform_core_model_23'] = '请选择';
+$lang['lang_plugin_diyform_core_model_24'] = '请选择';
+$lang['lang_plugin_diyform_core_model_25'] = '请选择省份';
+$lang['lang_plugin_diyform_core_model_26'] = '请选择城市';
+$lang['lang_plugin_diyform_core_model_27'] = '请选择区域';
+$lang['lang_plugin_diyform_core_model_28'] = '请选择';
+$lang['lang_plugin_diyform_core_model_29'] = '请输入';
+?>

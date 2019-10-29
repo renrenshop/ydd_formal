@@ -1,0 +1,34 @@
+<?php
+$lang['lang_plugin_cashier_template_mobile_default_register_0'] = ' ứng dụng của bạn đã được miễn nhiệm:';
+$lang['lang_plugin_cashier_template_mobile_default_register_1'] = ' Bạn cũng có thể sửa đổi các thông tin để gửi lại.';
+$lang['lang_plugin_cashier_template_mobile_default_register_2'] = ' bạn đã gửi thông tin, xin vui lòng chờ đợi để chúng tôi liên lạc với bạn';
+$lang['lang_plugin_cashier_template_mobile_default_register_3'] = ' Bạn cũng có thể sửa đổi các thông tin để gửi lại.';
+$lang['lang_plugin_cashier_template_mobile_default_register_4'] = ' Tên nhân viên thu ngân';
+$lang['lang_plugin_cashier_template_mobile_default_register_5'] = ' Tên nhân viên thu ngân';
+$lang['lang_plugin_cashier_template_mobile_default_register_6'] = ' Tiền mặt đăng ký địa chỉ';
+$lang['lang_plugin_cashier_template_mobile_default_register_7'] = ' Địa chỉ liên hệ';
+$lang['lang_plugin_cashier_template_mobile_default_register_8'] = ' Lời chào của bạn';
+$lang['lang_plugin_cashier_template_mobile_default_register_9'] = ' Số điện thoại';
+$lang['lang_plugin_cashier_template_mobile_default_register_10'] = ' số điện thoại của bạn';
+$lang['lang_plugin_cashier_template_mobile_default_register_11'] = ' xin vui lòng điền vào mẫu liên hệ một cách cẩn thận, đảm bảo rằng chúng tôi có thể liên lạc với bạn càng sớm càng tốt';
+$lang['lang_plugin_cashier_template_mobile_default_register_12'] = ' ID trước';
+$lang['lang_plugin_cashier_template_mobile_default_register_13'] = ' ID trở lại';
+$lang['lang_plugin_cashier_template_mobile_default_register_14'] = ' Tên người dùng đăng nhập';
+$lang['lang_plugin_cashier_template_mobile_default_register_15'] = ' Nền đăng nhập tên người dùng';
+$lang['lang_plugin_cashier_template_mobile_default_register_16'] = ' Mật khẩu đăng nhập';
+$lang['lang_plugin_cashier_template_mobile_default_register_17'] = ' nếu nó đã được lấp đầy trong';
+$lang['lang_plugin_cashier_template_mobile_default_register_18'] = ' Bỏ trống không thay đổi';
+$lang['lang_plugin_cashier_template_mobile_default_register_19'] = ' xin vui lòng điền vào mẫu liên hệ một cách cẩn thận, đảm bảo rằng chúng tôi có thể liên lạc với bạn càng sớm càng tốt';
+$lang['lang_plugin_cashier_template_mobile_default_register_20'] = ' giới thiệu';
+$lang['lang_plugin_cashier_template_mobile_default_register_21'] = ' Nền đăng nhập tên người dùng';
+$lang['lang_plugin_cashier_template_mobile_default_register_22'] = ' Khuyến khích người điện thoại';
+$lang['lang_plugin_cashier_template_mobile_default_register_23'] = ' Nền đăng nhập mật khẩu';
+$lang['lang_plugin_cashier_template_mobile_default_register_24'] = ' xin vui lòng điền vào mẫu liên hệ một cách cẩn thận, đảm bảo rằng chúng tôi có thể liên lạc với bạn càng sớm càng tốt';
+$lang['lang_plugin_cashier_template_mobile_default_register_25'] = ' tôi đã đọc và hiểu.';
+$lang['lang_plugin_cashier_template_mobile_default_register_26'] = ' Yêu cầu thỏa thuận';
+$lang['lang_plugin_cashier_template_mobile_default_register_27'] = ' . ';
+$lang['lang_plugin_cashier_template_mobile_default_register_28'] = ' được phê chuẩn thông qua';
+$lang['lang_plugin_cashier_template_mobile_default_register_29'] = ' Đăng ký ngay';
+$lang['lang_plugin_cashier_template_mobile_default_register_30'] = ' Gửi yêu cầu';
+$lang['lang_plugin_cashier_template_mobile_default_register_31'] = ' Tôi đã đọc';
+?>

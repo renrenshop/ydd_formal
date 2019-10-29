@@ -1,0 +1,31 @@
+<?php
+$lang['lang_module_sale_coupon_detail_0'] = ' 完全';
+$lang['lang_module_sale_coupon_detail_1'] = ' 利用可能なメタ';
+$lang['lang_module_sale_coupon_detail_2'] = ' 量しきい値なし';
+$lang['lang_module_sale_coupon_detail_3'] = ' フル充電';
+$lang['lang_module_sale_coupon_detail_4'] = ' 利用可能なメタ';
+$lang['lang_module_sale_coupon_detail_5'] = ' 量しきい値なし';
+$lang['lang_module_sale_coupon_detail_6'] = ' 完全';
+$lang['lang_module_sale_coupon_detail_7'] = ' 利用可能なメタ';
+$lang['lang_module_sale_coupon_detail_8'] = ' 量しきい値なし';
+$lang['lang_module_sale_coupon_detail_9'] = ' ¥ 価';
+$lang['lang_module_sale_coupon_detail_10'] = ' フォールド';
+$lang['lang_module_sale_coupon_detail_11'] = ' 元バランス';
+$lang['lang_module_sale_coupon_detail_12'] = ' ポイント';
+$lang['lang_module_sale_coupon_detail_13'] = ' メタ封筒';
+$lang['lang_module_sale_coupon_detail_14'] = ' 通常のレベル';
+$lang['lang_module_sale_coupon_detail_15'] = ' 通常のレベル';
+$lang['lang_module_sale_coupon_detail_16'] = ' 通常のレベル';
+$lang['lang_module_sale_coupon_detail_17'] = ' 通常のレベル';
+$lang['lang_module_sale_coupon_detail_18'] = ' できません。';
+$lang['lang_module_sale_coupon_detail_19'] = ' 不十分なクーポン数';
+$lang['lang_module_sale_coupon_detail_20'] = ' 超えました';
+$lang['lang_module_sale_coupon_detail_21'] = ' 制限の番号';
+$lang['lang_module_sale_coupon_detail_22'] = ' あなたのポイントは、十分にすることができます。';
+$lang['lang_module_sale_coupon_detail_23'] = ' 非-マイクロ-信頼された環境';
+$lang['lang_module_sale_coupon_detail_24'] = ' マイクロ文字の支払いを開けません';
+$lang['lang_module_sale_coupon_detail_25'] = ' クーポン受付番号';
+$lang['lang_module_sale_coupon_detail_26'] = ' マイクロ文字のパラメーターの支払の間違い';
+$lang['lang_module_sale_coupon_detail_27'] = ' 注文が見つかりません';
+$lang['lang_module_sale_coupon_detail_28'] = ' お支払いの失敗';
+?>

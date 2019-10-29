@@ -1,0 +1,94 @@
+{template '_header'}
+{template 'commission/common'}
+<div class="fui-page fui-page-current page-commission-shares">
+    {if is_h5app()}
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_0']}</div>
+        <div class="fui-header-right"></div>
+    </div>
+    {/if}
+    <div class="fui-content">
+        {if !empty($goods)}
+        <div class="fui-list-group">
+            <div class="fui-list">
+                <div class="fui-list-media">
+                    <i class="icon icon-money"></i>
+                </div>
+                <div class="fui-list-inner">
+                    <div class="row">
+                        <div class="row-text">{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_1']}{php echo $this->set['texts']['commission1']} <span class='text-danger'>{$commission}</span> {php echo $this->set['texts']['yuan']}
+                        </div>
+                    </div>
+                    <div class="subtitle">{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_2']} <span>{$goods['sales']}</span> {php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_3']}</div>
+                </div>
+            </div>
+        </div>
+        {/if}
+        <!-- {php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_4']} {php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_5']} -->
+        <div class="img" id='posterimg'>
+	    <div class='fui-cell-group'>
+		<div class='fui-cell'>
+		    <div class='fui-cell-info text-center'><div class="fui-preloader"></div><br/>{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_6']}...</div>
+		</div>
+	    </div>
+	    <img src="" style="display:none;" />
+        </div>
+        <div class="fui-title"><i class="icon icon-smile"></i> {if empty($set['qrcode']) || (!empty($set['qrcode'])&&empty($set['qrcode_title']))}{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_7']}{else}{$set['qrcode_title']}{/if}</div>
+        <div class="fui-list-group">
+
+            {if empty($set['qrcode']) || (!empty($set['qrcode'])&&empty($set['qrcode_content']))}
+            <div class="fui-list">
+                <div class="fui-list-media">
+                    {php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_8']}
+                </div>
+                <div class="fui-list-inner">
+                    <div class="subtitle">{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_9']}</div>
+                </div>
+            </div>
+            <div class="fui-list">
+                <div class="fui-list-media">
+                    {php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_10']}
+                </div>
+                <div class="fui-list-inner">
+                    <div class="subtitle">{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_11']}{if $this->set['become_child']==1}{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_12']}{/if}{if $this->set['become_child']==2}{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_13']}{/if}{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_14']}, {php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_15']}{php echo $this->set['texts']['commission1']}{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_16']}
+                    </div>
+                </div>
+            </div>
+
+            <div class="fui-list">
+                <div class="fui-list-media">
+                    {php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_17']}
+                </div>
+                <div class="fui-list-inner">
+                    <div class="subtitle">{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_18']}{php echo $this->set['texts']['center']}{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_19']}{php echo $this->set['texts']['mydown']}{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_20']}{php echo $this->set['texts']['order']}{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_21']}{php echo $this->set['texts']['commission']}{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_22']}{php echo $this->set['texts']['withdraw']}{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_23']}
+                    </div>
+                </div>
+            </div>
+            {else}
+
+            <div class="fui-list">
+                <div class="fui-list-inner">
+                    <div class="subtitle" style="text-indent: 2em;">{$set['qrcode_content']}</div>
+                </div>
+            </div>
+            {/if}
+            <div class="fui-list">
+                <div class="fui-card">
+                    <div class="fui-card-content">
+                        {php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_24']}{if empty($set['qrcode']) || (!empty($set['qrcode'])&&empty($set['qrcode_remark']))}{php echo $lang['lang_plugin_commission_template_mobile_default_qrcode_25']}{else}{$set['qrcode_remark']}{/if}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script language='javascript'>
+		require(['../addons/ewei_shopv2/plugin/commission/static/js/qrcode.js'], function (modal) {
+			modal.init({goodsid: {php echo intval($_GPC['goodsid'])}});
+		});
+	</script>
+{template '_footer'}

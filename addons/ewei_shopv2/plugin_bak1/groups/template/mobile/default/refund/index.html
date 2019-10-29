@@ -1,0 +1,283 @@
+{template '_header'}
+<div class='fui-page {if empty($order['refundstate'])}fui-page-current{/if}' id='page-refund-edit' >
+<div class="fui-header">
+    <div class="fui-header-left">
+        <a class="back" href="{php echo mobileUrl('groups/orders')}"></a>
+    </div>
+    <div class="title">{if $order['status']==1}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_0']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_1']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_2']}</div>
+    <div class="fui-header-right">&nbsp;</div>
+</div>
+<div class='fui-content margin navbar'>
+    <div class="fui-cell-group">
+        <div class="fui-cell">
+            <div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_3']}</div>
+            <div class="fui-cell-info">
+
+                <select id="rtype">
+                    {if $order['status']==2 || $order['status']==3}
+                    <option value="1" {if $refund['rtype']=='1'}selected{/if}>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_4']}</option>
+                    <option value="2" {if $refund['rtype']=='2'}selected{/if}>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_5']}</option>
+                    {/if}
+                    <option value="0" {if $refund['rtype']=='0'}selected{/if}>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_6']}({php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_7']})</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="fui-cell">
+            <div class="fui-cell-label"><span class="re-g">{if $refund['rtype']=='2'}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_8']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_9']}{/if}</span>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_10']}</div>
+            <div class="fui-cell-info">
+
+                <select id="reason">
+                    <option value="{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_11']}" {if $refund['reason']==$lang['lang_plugin_groups_template_mobile_default_refund_index_12']}selected{/if}>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_13']}</option>
+                    <option value="{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_14']}" {if $refund['reason']==$lang['lang_plugin_groups_template_mobile_default_refund_index_15']}selected{/if}>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_16']}</option>
+                    <option value="{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_17']}/{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_18']}" {if $refund['reason']==$lang['lang_plugin_groups_template_mobile_default_refund_index_19']}/{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_20']}selected{/if}>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_21']}/{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_22']}</option>
+                    <option value="{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_23']}" {if $refund['reason']==$lang['lang_plugin_groups_template_mobile_default_refund_index_24']}selected{/if}>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_25']}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="fui-cell">
+            <div class="fui-cell-label"><span class="re-g">{if $refund['rtype']=='2'}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_26']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_27']}{/if}</span>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_28']}</div>
+            <div class="fui-cell-info">
+                <input type="text" id="content" class='fui-input' placeholder="{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_29']}" value="{$refund['content']}"/>
+            </div>
+        </div>
+
+        <div class="fui-cell" {if $refund['rtype']=='2'}style="display:none;"{/if}>
+            <div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_30']}</div>
+            <div class="fui-cell-info">
+                <input type="text" id="price" class='fui-input' value="{php echo number_format($show_price,2)}" />
+            </div>
+        </div>
+        <div class="fui-cell">
+            <div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_31']}</div>
+            <div class="fui-cell-info">
+
+                <ul class="fui-images fui-images-sm" id="images">
+
+                    {loop $refund['images'] $k $v}
+                    <input type="hidden" name="images[]" value="{$v}" />
+                    <li style="background-image:url({php echo tomedia($v)})" class="image image-sm" data-filename="{$v}"><span class="image-remove"><i class="icon icon-roundclose"></i></span></li>
+                    {/loop}
+
+
+                </ul>
+                <div class="fui-uploader fui-uploader-sm refund-container-uploader" {if count($refund['images'])==5}style='display:none'{/if}
+                    data-name="images[]"
+                    data-max="5"
+                    data-count="{php echo count($refund['images'])}">
+                    <input type="file" name='imgFile0' id='imgFile0' multiple="" accept="image/*" >
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class='fui-title r-group'  {if $refund['rtype']=='2'}style="display:none;"{/if}>
+    {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_32']}:{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_33']} <span class='text-danger'>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_34']} {php echo number_format($order['refundprice'],2)}</span>
+    </div>
+</div>
+<div class='fui-footer text-right'>
+    <a class='btn btn-danger btn-submit'>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_35']}</a>
+    <a class="btn btn-default btn-default-o back">{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_36']}</a>
+</div>
+</div>
+
+<div class='fui-page  {if !empty($order['refundstate'])}fui-page-current{/if}' id='page-refund-info'>
+<div class="fui-header">
+    <div class="fui-header-left">
+        <a class="back" href="{php echo mobileUrl('groups/orders')}"></a>
+    </div>
+    <div class="title">{if $order['status']==1}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_37']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_38']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_39']}</div>
+    <div class="fui-header-right">&nbsp;</div>
+</div>
+<div class='fui-content margin navbar'>
+    <div class='fui-according-group'>
+        <div class='fui-according expanded'>
+            <div class='fui-according-header'>
+                <i class='icon icon-info'></i>
+					<span class="text">{if $refund['refundstatus']==0}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_40']}{if $order['status']==1}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_41']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_42']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_43']}{/if}
+						{if $refund['refundstatus']>=1}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_44']}{if $order['status']==1}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_45']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_46']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_47']}{/if}
+					</span>
+
+                <div class='remark'></div>
+            </div>
+            <div class='fui-according-content'>
+                <div class='content-block' style='font-size:.7rem;padding:.5rem .8rem'>
+                    {if $refund['rtype']==0}
+                    {if $refund['refundstatus']==0}
+                    {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_48']} <br>1{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_49']}<br>2{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_50']}
+                    {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_51']}
+                    {/if}
+                    {elseif $refund['rtype']==1}
+                    {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_52']}<br>1{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_53']}<br>2{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_54']}<br>3{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_55']}<br>4{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_56']}
+                    {elseif $refund['rtype']==2}
+                    {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_57']}<br>1{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_58']}<br>2{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_59']}<br>3{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_60']}<br>4{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_61']}
+                    {/if}
+                </div>
+            </div>
+        </div>
+    </div>
+    {if $refund['refundstatus']>=1}
+
+    {if !empty($refund['refundaddress'])}
+    <div class="fui-list-group" style='margin-top:5px;'>
+        <div class="fui-list-group-title"><i class='icon icon-location'></i> {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_62']}</div>
+        <div class="fui-list">
+            <div class="fui-list-media"></div>
+            <div class="fui-list-inner">
+                <div class='text'>{$refund['refundaddress']['province']}{$refund['refundaddress']['city']}{$refund['refundaddress']['area']} {$refund['refundaddress']['address']}</div>
+                <div class='subtitle'>{$refund['refundaddress']['name']} {$refund['refundaddress']['mobile']} {$refund['refundaddress']['tel']}</div>
+            </div>
+        </div>
+        {if !empty($refund['message'])}
+        <div class="fui-list-group-title"><i class='icon icon-message'></i> {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_63']}</div>
+        <div class="fui-list">
+            <div class="fui-list-media"></div>
+            <div class="fui-list-inner">
+                <div class='text'><span class='text-danger'>{$refund['message']}</span></div>
+
+            </div>
+        </div>
+        {/if}
+
+
+
+    </div>
+    {/if}
+
+    {if $refund['rtype']==1 || $refund['rtype']==2}
+
+    <div class="fui-cell-group">
+
+        <a class="fui-cell {if $refund['refundstatus']==1}fui-cell-click{/if}" {if $refund['refundstatus']==2}href='#page-refund-express'{/if}>
+        <div class="fui-cell-label">{if $refund['rtype']==1}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_64']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_65']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_66']}</div>
+        <div class='fui-cell-info'></div>
+        <div class='fui-cell-remark  {if $refund['status']!=3}noremark{/if}'>
+        {if $refund['status']==3}
+        {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_67']}
+        {elseif $refund['status']==4}
+        {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_68']}
+        {elseif $refund['status']==5}
+        {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_69']}
+        {/if}</div>
+    </a>
+
+    {if !empty($refund['rexpresssn'])}
+    <div class="fui-cell">
+        <div class="fui-cell-label">{if $refund['rtype']==1}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_70']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_71']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_72']}</div>
+        <div class='fui-cell-info'>{$refund['rexpresscom']}</div>
+    </div>
+    <div class="fui-cell">
+        <div class="fui-cell-label">{if $refund['rtype']==1}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_73']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_74']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_75']}</div>
+        <div class='fui-cell-info'>{$refund['rexpresssn']}</div>
+    </div>
+    {/if}
+</div>
+{/if}
+
+{/if}
+
+<div class="fui-cell-group">
+    <div class='fui-cell-title'>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_76']}</div>
+    <div class="fui-cell">
+        <div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_77']}</div>
+        <div class="fui-cell-info">
+            {if $refund['rtype']==0}
+            {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_78']}
+            {elseif $refund['rtype']==1}
+            {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_79']}
+            {else}
+            {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_80']}{/if}
+        </div>
+    </div>
+    <div class="fui-cell">
+        <div class="fui-cell-label">{if $refund['rtype']=='2'}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_81']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_82']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_83']}</div>
+        <div class="fui-cell-info">{$refund['reason']}</div>
+    </div>
+    <div class="fui-cell">
+        <div class="fui-cell-label">{if $refund['rtype']=='2'}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_84']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_85']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_86']}</div>
+        <div class="fui-cell-info">{if empty($refund['content'])}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_87']}{else}{$refund['content']} {/if}</div>
+    </div>
+    {if $refund['applyprice']>0}
+    <div class="fui-cell">
+        <div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_88']}</div>
+        <div class="fui-cell-info">{php echo number_format($refund['applyprice'],2)} {php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_89']}</div>
+    </div>
+    {/if}
+
+    <div class="fui-cell">
+        <div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_90']}</div>
+        <div class="fui-cell-info">{php echo date('Y-m-d H:i',$refund['applytime'])}</div>
+    </div>
+
+</div>
+
+
+</div>
+<div class='fui-footer text-right'>
+    {if $refund['refundstatus']!=5}
+        <a class='btn btn-default-o btn-cancel'>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_91']}{if $order['refundstatus']==1}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_92']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_93']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_94']}</a>
+    {/if}
+
+    {if $refund['rtype']==2 && $refund['refundstatus']==5}
+    <div class="btn btn-danger btn-receive">{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_95']}</div>
+    <a external data-nocache="true" href="{php echo mobileUrl('groups/refund/refundexpress',array('orderid'=>$order['id'], 'express'=>$refund['rexpress'], 'expresscom'=>$refund['rexpresscom'],'expresssn'=>$refund['rexpresssn']))}">
+        <div class="btn btn-primary">{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_96']}</div>
+    </a>
+    {/if}
+
+    {if $refund['refundstatus']==3 || $refund['refundstatus']==4}
+    <a data-nocache="true" class="btn btn-primary" href='#page-refund-express'>{if empty($refund['express'])}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_97']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_98']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_99']}</a>
+    {/if}
+    {if $refund['refundstatus']==0}
+    <a data-nocache="true" class='btn btn-danger btn-edit' href='#page-refund-edit'>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_100']}{if $order['status']==1}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_101']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_102']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_103']}</a>
+    {/if}
+</div>
+</div>
+
+<div class='fui-page' id='page-refund-express'>
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back" href="{php echo mobileUrl('groups/orders')}"></a>
+        </div>
+        <div class="title">{if $order['status']==1}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_104']}{else}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_105']}{/if}{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_106']}</div>
+        <div class="fui-header-right">&nbsp;</div>
+    </div>
+    <div class='fui-content margin'>
+        <input type='hidden' id='express_old' value="{$refund['express']}"/>
+        <input type="hidden" name="expresscom" id="expresscom" value="{$refund['expresscom']}">
+        <div class="fui-cell-group">
+            <div class='fui-cell-title'>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_107']}</div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_108']}</div>
+                <div class="fui-cell-info"><select id="express" name="express">
+                    <option value="" data-name="{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_109']}">{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_110']}</option>
+
+                    {loop $express_list $value}
+                    <option value="{$value['express']}" data-name="{$value['name']}">{$value['name']}</option>
+                    {/loop}
+                </select></div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_111']}</div>
+                <div class="fui-cell-info"><input type="text" id="expresssn" class='fui-input' value="{$refund['expresssn']}" max="50"/></div>
+            </div>
+        </div>
+
+    </div>
+    <div class='fui-footer text-right'>
+        <div class="btn btn-danger" id='express_submit'>{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_112']}</div>
+        <a class="btn btn-default btn-default-o back">{php echo $lang['lang_plugin_groups_template_mobile_default_refund_index_113']}</a>
+    </div>
+
+
+
+
+    <script language='javascript'>
+        require(['../addons/ewei_shopv2/plugin/groups/static/js/refund.js'], function (modal) {
+            modal.init({orderid: "{$order['id']}",teamid: "{$order['teamid']}",refundid:"{$refundid}"});
+        });
+
+    </script>
+</div>
+{template '_footer'}

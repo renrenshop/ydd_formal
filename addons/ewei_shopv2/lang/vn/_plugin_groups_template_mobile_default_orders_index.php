@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_groups_template_mobile_default_orders_index_0'] = ' Đơn hàng của tôi';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_1'] = ' Tất cả';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_2'] = ' Đang chờ xử lý thanh toán';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_3'] = ' Để có được vận chuyển';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_4'] = ' Phân phối đang chờ giải quyết';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_5'] = ' hoàn thành';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_6'] = ' Tải đơn đặt hàng';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_7'] = ' không có lệnh tạm thời .';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_8'] = ' Số thứ tự';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_9'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_10'] = ' miếng';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_11'] = ' Vận chuyển hàng hóa';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_12'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_13'] = ' Nhân dân tệ';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_14'] = ' Tất cả';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_15'] = ' Khoản mục';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_16'] = ' Tất cả';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_17'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_18'] = ' Nhân dân tệ';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_19'] = ' Hủy bỏ đơn đặt hàng';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_20'] = ' không hủy bỏ';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_21'] = ' Tôi không muốn mua nó';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_22'] = ' Tôi không muốn mua nó';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_23'] = ' thông tin điền vào lỗi, tái pat';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_24'] = ' thông tin điền vào lỗi, tái pat';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_25'] = ' cuộc họp với các thành phố';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_26'] = ' cuộc họp với các thành phố';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_27'] = ' Các lý do khác';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_28'] = ' Các lý do khác';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_29'] = ' phải trả tiền';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_30'] = ' Xóa lệnh';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_31'] = ' Xác nhận hóa đơn';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_32'] = ' Tôi muốn sử dụng';
+?>

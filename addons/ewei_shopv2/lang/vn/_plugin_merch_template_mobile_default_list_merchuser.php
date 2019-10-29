@@ -1,0 +1,34 @@
+<?php
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_0'] = ' Tất cả các thương gia';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_1'] = ' Tìm kiếm';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_2'] = ' Nhập một từ khóa';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_3'] = ' gần';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_4'] = ' Phân loại';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_5'] = ' Sắp xếp thông minh';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_6'] = ' gần';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_7'] = ' gần';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_8'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_9'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_10'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_11'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_12'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_13'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_14'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_15'] = ' m';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_16'] = ' trên mét';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_17'] = ' trên mét';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_18'] = ' Phân loại tất cả';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_19'] = ' Phân loại tất cả';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_20'] = ' Khoảng cách gần nhất';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_21'] = ' Khoảng cách gần nhất';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_22'] = ' Mới định cư';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_23'] = ' Mới định cư';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_24'] = ' Khuyến khích các doanh nghiệp';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_25'] = ' Không có thương nhân tạm thời';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_26'] = ' Đi lang thang xung quanh';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_27'] = ' Đang nạp';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_28'] = ' Địa chỉ';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_29'] = ' Điện thoại';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_30'] = ' Phân loại';
+$lang['lang_plugin_merch_template_mobile_default_list_merchuser_31'] = ' Khoảng cách từ bạn';
+?>

@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_pc_core_mobile_order_index_0'] = ' Trang chủ';
+$lang['lang_plugin_pc_core_mobile_order_index_1'] = ' Mall của tôi';
+$lang['lang_plugin_pc_core_mobile_order_index_2'] = ' Đặt hàng giao dịch';
+$lang['lang_plugin_pc_core_mobile_order_index_3'] = ' Danh sách đặt hàng';
+$lang['lang_plugin_pc_core_mobile_order_index_4'] = ' Thùng rác';
+$lang['lang_plugin_pc_core_mobile_order_index_5'] = ' Hoàn lại tiền';
+$lang['lang_plugin_pc_core_mobile_order_index_6'] = ' trả lại khoản tiền hoàn lại';
+$lang['lang_plugin_pc_core_mobile_order_index_7'] = ' Trao đổi';
+$lang['lang_plugin_pc_core_mobile_order_index_8'] = ' hủy bỏ';
+$lang['lang_plugin_pc_core_mobile_order_index_9'] = ' Để có được vận chuyển';
+$lang['lang_plugin_pc_core_mobile_order_index_10'] = ' Đang chờ xử lý thanh toán';
+$lang['lang_plugin_pc_core_mobile_order_index_11'] = ' sử dụng';
+$lang['lang_plugin_pc_core_mobile_order_index_12'] = ' Để là lấy';
+$lang['lang_plugin_pc_core_mobile_order_index_13'] = ' Để có được vận chuyển';
+$lang['lang_plugin_pc_core_mobile_order_index_14'] = ' Phân phối đang chờ giải quyết';
+$lang['lang_plugin_pc_core_mobile_order_index_15'] = ' hoàn thành';
+$lang['lang_plugin_pc_core_mobile_order_index_16'] = ' Để đánh giá';
+$lang['lang_plugin_pc_core_mobile_order_index_17'] = ' hoàn thành';
+$lang['lang_plugin_pc_core_mobile_order_index_18'] = ' Giao dịch hoàn thành';
+$lang['lang_plugin_pc_core_mobile_order_index_19'] = ' Để ';
+$lang['lang_plugin_pc_core_mobile_order_index_20'] = ' Trang chủ';
+$lang['lang_plugin_pc_core_mobile_order_index_21'] = ' Mall của tôi';
+$lang['lang_plugin_pc_core_mobile_order_index_22'] = ' Đặt hàng giao dịch';
+$lang['lang_plugin_pc_core_mobile_order_index_23'] = ' Thông tin chi tiết đơn đặt hàng';
+$lang['lang_plugin_pc_core_mobile_order_index_24'] = ' Danh sách đặt hàng';
+$lang['lang_plugin_pc_core_mobile_order_index_25'] = ' Thông tin chi tiết đơn đặt hàng';
+$lang['lang_plugin_pc_core_mobile_order_index_26'] = ' Đơn đặt hàng đã bị xóa';
+$lang['lang_plugin_pc_core_mobile_order_index_27'] = ' trật tự là không một chuyển phát nhanh dưới hình thức, không thể xem thông tin hậu cần';
+$lang['lang_plugin_pc_core_mobile_order_index_28'] = ' Hàng không chuyển, không thể xem thông tin hậu cần';
+?>

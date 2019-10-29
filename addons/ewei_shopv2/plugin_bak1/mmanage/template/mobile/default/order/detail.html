@@ -1,0 +1,632 @@
+{template 'mmanage/common'}
+
+<div class='fui-page fui-page-current order-detail-page'>
+    <div class="fui-header fui-header-success">
+        <div class="fui-header-left">
+            <a class="back btn-back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_0']}</div>
+        <div class="fui-header-right"></div>
+    </div>
+    <div class='fui-content navbar'>
+
+        <div class="fui-list-group result-list nomargin">
+            <div class="fui-list order-status">
+                <div class="fui-list-inner">
+                    <div class="title">
+                        {if $item['status'] == 0}
+                        {if $item['paytype']==3}
+                            {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_1']}
+                        {else}
+                            {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_2']}
+                        {/if}
+                        {elseif $item['status'] == 1}
+                            {if $item['isverify'] == 1}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_3']}
+                            {else if empty($item['addressid'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_4']}
+                            {else}
+                                {if $item['sendtype'] > 0}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_5']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_6']}{/if}
+                            {/if}
+                        {elseif $item['status'] == 2}
+                            {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_7']}
+                        {elseif $item['status'] == 3}
+                            {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_8']}
+                        {elseif $item['status'] == -1}
+                            {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_9']}
+                        {/if}
+                    </div>
+                    <div class="text">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_10']}({php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_11']}): {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_12']} {php echo price_format($item['price'])}<span></span></div>
+                </div>
+                <div class="fui-list-media">
+                    <i class="icon icon-money"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="fui-cell-group info-cell-group" style="table-layout:fixed;">
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_13']}:</div>
+                <div class="fui-cell-info"></div>
+                <div class="fui-cell-remark noremark black">{$item['ordersn']}</div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_14']}:</div>
+                <div class="fui-cell-info"></div>
+                <div class="fui-cell-remark noremark">
+                    {if $item['status'] == 0}
+                        {if $item['paytype']==3}
+                            <span class="fui-label fui-label-default round">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_15']}</span>
+                        {else}
+                            <span class="fui-label fui-label-default round">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_16']}</span>
+                        {/if}
+                    {elseif $item['status'] == 1}
+                        <span class="fui-label fui-label-danger round">
+                            {if $item['isverify'] == 1}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_17']}
+                            {else if empty($item['addressid'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_18']}
+                            {else}
+                                {if $item['sendtype'] > 0}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_19']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_20']}{/if}
+                            {/if}
+                        </span>
+                    {elseif $item['status'] == 2}
+                        <span class="fui-label fui-label-warning round">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_21']}</span>
+                    {elseif $item['status'] == 3}
+                        <span class="fui-label fui-label-success round">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_22']}</span>
+                    {elseif $item['status'] == -1}
+                        <span class="text-default round">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_23']}</span>
+                    {/if}
+                </div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_24']}:</div>
+                <div class="fui-cell-info"></div>
+                <div class="fui-cell-remark noremark">
+                    {if $item['paytype'] == 0}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_25']}
+                    {elseif $item['paytype'] == 1}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_26']}
+                    {elseif $item['paytype'] == 11}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_27']}
+                    {elseif $item['paytype'] == 21}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_28']}
+                    {elseif $item['paytype'] == 22}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_29']}
+                    {elseif $item['paytype'] == 23}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_30']}
+                    {elseif $item['paytype'] == 3}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_31']}{/if}
+                </div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_32']}:</div>
+                <div class="fui-cell-info"></div>
+                <div class="fui-cell-remark noremark black">
+                    {if $item['isverify'] == 1}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_33']}
+                    {elseif !empty($item['addressid'])}
+                        {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_34']}{if !empty($dispatch['dispatchname'])}({$dispatch['dispatchname']}){/if}
+                    {elseif !empty($item['isvirtualsend']) || !empty($item['virtual'])}
+                        {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_35']}{if !empty($item['isvirtualsend'])}({php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_36']}){else}({php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_37']}){/if}
+                    {elseif $item['dispatchtype']}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_38']}
+                    {else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_39']}
+                    {/if}
+                </div>
+            </div>
+            {if $item['isverify']==1}
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_40']}:</div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark noremark black">
+                        {if $item['verifytype']==0}
+                        {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_41']}
+                        {elseif $item['verifytype']==1}
+                        {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_42']}
+                        {elseif $item['verifytype']==2}
+                        {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_43']}
+                        {/if}
+                    </div>
+                </div>
+                {if $item['verifytype']==0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_44']}:</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark black">{$item['verifycode']}</div>
+                    </div>
+                    {if $item['verified']}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_45']}:</div>
+                            <div class="fui-cell-info"></div>
+                            <div class="fui-cell-remark noremark black">{php echo date('Y-m-d H:i:s', $item['verifytime'])}</div>
+                        </div>
+                        {if !empty($saler)}
+                            <div class="fui-cell">
+                                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_46']}:</div>
+                                <div class="fui-cell-info"></div>
+                                <div class="fui-cell-remark noremark black">{$saler['nickname']}({$saler['salername']})</div>
+                            </div>
+                        {/if}
+                        {if !empty($store)}
+                            <div class="fui-cell">
+                                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_47']}:</div>
+                                <div class="fui-cell-info"></div>
+                                <div class="fui-cell-remark noremark black">{$store['storename']}</div>
+                            </div>
+                        {/if}
+                    {/if}
+                {/if}
+            {/if}
+        </div>
+
+        {if $item['verifytype']==1}
+            <div class="fui-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-info"><i class="icon icon-dingdan"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_48']}</div>
+                </div>
+            </div>
+            <div class="fui-list-group nomargin">
+                {loop $verifyinfo $v}
+                    <div class="fui-list">
+                        <div class="fui-list-inner">
+                            <div class="subtitle">
+                                <div class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_49']}: {$v['salername']}/{$v['nickname']}</div>
+                                <div class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_50']}: {$v['storename']}</div>
+                            </div>
+                            <div class="subtitle">
+                                <div class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_51']}: {php echo date('Y-m-d H:i',$v['verifytime'])}</div>
+                            </div>
+                        </div>
+                    </div>
+                {/loop}
+            </div>
+        {elseif $item['verifytype']==2}
+            <div class="fui-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-info"><i class="icon icon-dingdan"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_52']}: {$item['verifycode']}</div>
+                </div>
+            </div>
+            <div class="fui-list-group nomargin">
+                {loop $verifyinfo $v}
+                    {if $v['verified']}
+                        <div class="fui-list">
+                            <div class="fui-list-inner">
+                                <div class="subtitle">
+                                    <div class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_53']}: {$v['verifycode']}</div>
+                                    <div class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_54']}: {$v['storename']}</div>
+                                </div>
+                                <div class="subtitle">
+                                    <div class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_55']}: {$v['salername']}/{$v['nickname']}</div>
+                                    <div class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_56']}: {php echo date('Y-m-d H:i',$v['verifytime'])}</div>
+                                </div>
+                            </div>
+                        </div>
+                    {/if}
+                {/loop}
+            </div>
+        {/if}
+
+        {if empty($order_goods)}
+            {if !empty($item['expresssn']) && $item['status']>=2 && !empty($item['addressid'])}
+                <div class="fui-cell-group ">
+                    <div class="fui-cell">
+                        <div class="fui-cell-info"><i class="icon icon-location"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_57']}</div>
+                        <a class="fui-cell-remark" data-nocache="true" href="{php echo mobileUrl('mmanage/order/express')}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_58']}</a>
+                    </div>
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_59']}: </div>
+                        <div class="fui-cell-info">{if empty($item['expresscom'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_60']}{else}{$item['expresscom']}{/if}</div>
+                        <a class="fui-cell-remark text-success" data-nocache="true" href="{php echo mobileUrl('mmanage/order/op/changeexpress', array('id'=>$item['id']))}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_61']}</a>
+                    </div>
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_62']}: </div>
+                        <div class="fui-cell-info newline">{$item['expresssn']}</div>
+                    </div>
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_63']}: </div>
+                        <div class="fui-cell-info">{php echo date('Y-m-d H:i:s', $item['sendtime'])}</div>
+                    </div>
+                </div>
+            {/if}
+        {else}
+            {loop $order_goods $index $og}
+                <div class="fui-cell-group">
+                    <div class="fui-cell">
+                        <div class="fui-cell-info"><i class="icon icon-gifts"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_64']} - <span class="text-danger">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_65']}{php echo chr($index+65)}</span></div>
+                        <a class="fui-cell-remark" data-nocache="true" href="{php echo mobileUrl('mmanage/order/express', array('express'=>$og['express'], 'expresssn'=>$og['expresssn']))}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_66']}</a>
+                    </div>
+                    {loop $og['goods'] $g}
+                        <a class="fui-list" data-nocache="true" href="{php echo mobileUrl('mmanage/goods/edit', array('id'=>$g['id']))}">
+                            <div class="fui-list-media">
+                                <img src="{php echo tomedia($g['thumb'])}" class="round small"/>
+                            </div>
+                            <div class="fui-list-inner">
+                                <div class="subtitle">{$g['title']}</div>
+                            </div>
+                            <div class="angle"></div>
+                        </a>
+                    {/loop}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_67']}</div>
+                        <div class="fui-cell-info">{if empty($og['expresscom'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_68']}{else}{$og['expresscom']}{/if}</div>
+                        <a class="fui-cell-remark" data-nocache="true" href="{php echo mobileUrl('mmanage/order/op/changeexpress', array('id'=>$item['id']))}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_69']}</a>
+                    </div>
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_70']}</div>
+                        <div class="fui-cell-info newline">{$og['expresssn']}</div>
+                    </div>
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_71']}</div>
+                        <div class="fui-cell-info">{php echo date('Y-m-d H:i:s', $og['sendtime'])}</div>
+                    </div>
+                </div>
+            {/loop}
+        {/if}
+
+        <div class="fui-cell-group">
+            <div class="fui-cell">
+                <div class="fui-cell-info"><i class="icon icon-location"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_72']}</div>
+                {if !empty($item['addressid'])}
+                    {ifp 'order.op.changeaddress'}
+                        <a class="fui-cell-remark text-success" data-nocache="true" href="{php echo mobileUrl('mmanage/order/op/changeaddress', array('id'=>$item['id']))}">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_73']}</a>
+                    {/if}
+                {/if}
+            </div>
+        </div>
+        <div class="fui-cell-group nomargin">
+            {if !empty($item['addressid'])}
+                <div class="fui-cell">
+                    <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_74']}: </div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark noremark black">{$user['realname']}</div>
+                </div>
+                <div class="fui-cell">
+                    <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_75']}: </div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark noremark black">{$user['mobile']}</div>
+                </div>
+                <div class="fui-cell">
+                    <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_76']}: </div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark noremark black">{$user['address']}</div>
+                </div>
+                {if !empty($item['remark'])}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_77']}: </div>
+                        <div class="fui-cell-info text-danger newline">{$item['remark']}</div>
+                    </div>
+                {/if}
+            {elseif $item['isverify']==1 || !empty($item['virtual']) ||!empty($item['isvirtual'])}
+                {if $item['status']>=2 && !empty($item['virtual']) }
+                    <div class="fui-cell">
+                        <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_78']}: </div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark black">{php echo str_replace("\n","<br/>", $item['virtual_str'])}</div>
+                    </div>
+                    <div class="fui-cell">
+                        <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_79']}: </div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark black">{$user['carrier_realname']}, {$user['carrier_mobile']}</div>
+                    </div>
+                {/if}
+            {else}
+                <div class="fui-cell">
+                    <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_80']}: </div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark noremark black">{$item['verifycode']}</div>
+                </div>
+                <div class="fui-cell">
+                    <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_81']}: </div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark noremark black">{$user['carrier_realname']} {$user['carrier_mobile']}</div>
+                </div>
+                <div class="fui-cell">
+                    <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_82']}: </div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark noremark black">{$user['address']},  {$user['realname']}, {$user['mobile']}</div>
+                </div>
+            {/if}
+        </div>
+
+        {if !empty($item['invoicename'])}
+            <div class="fui-cell-group info-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_83']}:</div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark noremark black">{$item['invoicename']}</div>
+                </div>
+            </div>
+        {/if}
+
+        <div class="fui-cell-group">
+            <div class="fui-cell">
+                <div class="fui-cell-info"><i class="icon icon-card"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_84']}</div>
+            </div>
+        </div>
+        <div class="fui-list-group nomargin">
+            <a class="fui-list" href="{php echo mobileUrl('mmanage/member/detail', array('id'=>$member['id']))}" data-nocache="true">
+                <div class="fui-list-media">
+                    <img src="{$member['avatar']}" class="round">
+                </div>
+                <div class="fui-list-inner">
+                    <div class="title">{php echo empty($member['nickname'])?"{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_85']}":$member['nickname']} {if !empty($member['realname'])}<small>({$member['realname']})</small>{/if}</div>
+                    <div class="subtitle">
+                        <div class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_86']}: {php echo empty($member['mobile'])?"{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_87']}":$member['mobile']}</div>
+                        <div class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_88']}: {php echo empty($member['weixin'])?"{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_89']}":$member['weixin']}</div>
+                    </div>
+                </div>
+                <div class="angle"></div>
+            </a>
+        </div>
+
+        <!-- {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_90']} -->
+        {if !empty($item['goods'])}
+            <div class="fui-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-info"><i class="icon icon-gifts"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_91']}</div>
+                    <div class="fui-cell-remark noremark"><small>({php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_92']}: {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_93']})</small></div>
+                </div>
+            </div>
+            <div class="fui-list-group goods-list-group nomargin">
+                {loop $item['goods'] $og}
+                    <div class="fui-list goods-list check-param" data-action="diyform-goods-{$og['id']}">
+                        <a class="fui-list-media" href="{php echo mobileUrl('mmanage/goods/edit', array('id'=>$g['id']))}">
+                            <img src="{php echo tomedia($og['thumb'])}" class="round" onerror="this.src='../addons/ewei_shopv2/static/images/nopic100.jpg';" />
+                        </a>
+                        <div class="fui-list-inner">
+                            <div class="title">
+                                {if !empty($og['diyformdata']) && $og['diyformdata'] != 'false'}<span class="fui-label fui-label-warning round">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_94']}</span>{/if}
+                                {if $goods['seckill_task']}<span class="fui-label fui-label-danger round">{$goods['seckill_task']['tag']}</span>{if $goods['seckill_room']}<span class="fui-label fui-label-primary">{php echo $goods['seckill_room']['tag']?:$goods['seckill_room']['title']}</span>{/if}{/if}
+                                {if !empty($goods['invoice'])}<label class='fui-label fui-label-success round'>{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_95']}</label>{/if}
+                                {$og['title']}</div>
+                            <div class="text goodstitle">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_96']}: {$og['optionname']} {if !empty($og['goodssn'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_97']}: {$og['goodssn']}{/if} {if !empty($og['productsn'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_98']}: {$og['productsn']}{/if}</div>
+                            <div class="subtitle">
+                                <div class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_99']}/{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_100']}: {$og['marketprice']}x{$og['total']}</div>
+                                <div class="total half text-right">{if $item['ispackage']}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_101']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_102']}/{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_103']}{/if}: {if $item['ispackage']}&yen;{php echo price_format($og['marketprice'])}{else}{php echo price_format($og['orderprice'])}/{php echo price_format($og['realprice'])}{/if}</div>
+                            </div>
+                        </div>
+                    </div>
+                {/loop}
+            </div>
+        {/if}
+
+        <!-- {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_104']} -->
+        <div class="fui-cell-group">
+            <div class="fui-cell">
+                <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_105']}</div>
+                <div class="fui-cell-info"></div>
+                <div class="fui-cell-remark noremark black">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_106']}{php echo price_format($item['goodsprice'] )}</div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_107']}</div>
+                <div class="fui-cell-info"></div>
+                <div class="fui-cell-remark noremark black">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_108']}{php echo price_format($item['olddispatchprice'])}</div>
+            </div>
+            {if !$item['ispackage']}
+                {if $item['taskdiscountprice']>0 }
+                    <div class="fui-cell">
+                        <div class="fui-cell-label auto gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_109']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark black">-{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_110']}{php echo price_format($item['taskdiscountprice'])}</div>
+                    </div>
+                {/if}
+                {if $item['lotterydiscountprice']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label auto gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_111']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark black">-{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_112']}{php echo price_format($item['lotterydiscountprice'])}</div>
+                    </div>
+                {/if}
+                {if $item['discountprice']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_113']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark black">-{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_114']}{php echo price_format($item['discountprice'])}</div>
+                    </div>
+                {/if}
+                {if $item['deductprice']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_115']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark black">-{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_116']}{php echo price_format($item['deductprice'])}</div>
+                    </div>
+                {/if}
+                {if $item['deductenough']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label auto gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_117']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark black">-{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_118']}{php echo price_format($item['deductenough'])}</div>
+                    </div>
+                {/if}
+                {if $item['merchdeductenough']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label auto gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_119']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark black">-{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_120']}{php echo price_format($item['merchdeductenough'])}</div>
+                    </div>
+                {/if}
+                {if $item['couponprice']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_121']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark black">-{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_122']}{php echo price_format($item['couponprice'])}</div>
+                    </div>
+                {/if}
+                {if $item['isdiscountprice']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_123']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark black">-{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_124']}{php echo price_format($item['isdiscountprice'])}</div>
+                    </div>
+                {/if}
+                {if $item['buyagainprice']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label auto gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_125']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark black">-{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_126']}{php echo price_format($item['buyagainprice'])}</div>
+                    </div>
+                {/if}
+                {if $item['seckilldiscountprice']>0}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_127']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark black">-{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_128']}{php echo price_format($item['seckilldiscountprice'])}</div>
+                    </div>
+                {/if}
+            {/if}
+            {if intval($item['changeprice'])!=0}
+                <div class="fui-cell">
+                    <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_129']}</div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark black">
+                        <span style='{if 0<$item['changeprice']}color:green{else}color:red{/if}'>{if 0<$item['changeprice']}+{else}-{/if}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_130']}{php echo number_format(abs($item['changeprice']),2)}</span>
+                    </div>
+                </div>
+            {/if}
+            {if intval($item['changedispatchprice'])!=0}
+                <div class="fui-cell">
+                    <div class="fui-cell-label gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_131']}</div>
+                    <div class="fui-cell-info"></div>
+                    <div class="fui-cell-remark black">
+                        <span style='{if 0<$item['changedispatchprice']}color:green{else}color:red{/if}'>{if 0<$item['changedispatchprice']}+{else}-{/if}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_132']}{php echo abs($item['changedispatchprice'])}</span>
+                    </div>
+                </div>
+            {/if}
+            <div class="fui-cell">
+                <div class="fui-cell-label auto gray">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_133']}({php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_134']})</div>
+                <div class="fui-cell-info"></div>
+                <div class="fui-cell-remark noremark black">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_135']}{php echo price_format($item['price'])}</div>
+            </div>
+        </div>
+
+        {if !empty($coupon)}
+            <div class="fui-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-info"><i class="icon icon-gifts"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_136']}: {$coupon['couponname']}</div>
+                </div>
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_137']}</div>
+                    <div class="fui-cell-info">
+                        {if $coupon['backtype']==0}
+                        {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_138']} {$coupon['deduct']} {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_139']}
+                        {else if $coupon['backtype']==1}
+                        {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_140']} {$coupon['discount']} {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_141']}
+                        {else if $coupon['backtype']==2}
+                        {if $coupon['backmoney']>0}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_142']} {$coupon['backmoney']} {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_143']}{/if}
+                        {if $coupon['backcredit']>0}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_144']} {$coupon['backcredit']} {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_145']}{/if}
+                        {if $coupon['backredpack']>0}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_146']} {$coupon['backredpack']} {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_147']}{/if}
+                        {/if}
+                    </div>
+                </div>
+                {if $coupon['backtype']==2}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_148']}</div>
+                        <div class="fui-cell-info">
+                            {if $item['backwhen']==0}
+                            {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_149']}({php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_150']})
+                            {else if $item['backwhen']==1}
+                            {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_151']}({php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_152']})
+                            {else}
+                            {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_153']}
+                            {/if}
+                        </div>
+                    </div>
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_154']}</div>
+                        <div class="fui-cell-info">{if empty($coupon['back'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_155']}{else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_156']}{/if}</div>
+                    </div>
+                    {if !empty($coupon['back'])}
+                        <div class="fui-cell">
+                            <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_157']}</div>
+                            <div class="fui-cell-info">{php echo date('Y-m-d H:i',$coupon['backtime'])}</div>
+                        </div>
+                    {/if}
+                {/if}
+            </div>
+        {/if}
+
+        <div class="fui-cell-group info-cell-group" style="table-layout:fixed;">
+            {if $item['status']>=0}
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_158']}:</div>
+                    <div class="fui-cell-info">{php echo date("Y-m-d H:i:d", $item['createtime'])}</div>
+                </div>
+            {/if}
+            {if $item['status']>=1}
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_159']}: </div>
+                    <div class="fui-cell-info">{php echo date("Y-m-d H:i:d", $item['paytime'])}</div>
+                </div>
+            {/if}
+            {if $item['status']>=2 || ($item['status']==1 && $item['sendtype'] > 0)}
+                <div class="fui-cell">
+                    <div class="fui-cell-label">
+                        {if $item['isverify'] == 1}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_160']}
+                        {elseif !empty($item['addressid'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_161']}
+                        {elseif !empty($item['isvirtualsend']) || !empty($item['virtual'])}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_162']}
+                        {else}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_163']}
+                        {/if}: </div>
+                    <div class="fui-cell-info">{if 2<=$item['status'] || ($item['status']==1 && $item['sendtype'] > 0)}{php echo date('Y-m-d H:i:s',$item['sendtime'])}{/if}</div>
+                </div>
+            {/if}
+            {if $item['status']>=3}
+                <div class="fui-cell">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_164']}: </div>
+                    <div class="fui-cell-info">{php echo date("Y-m-d H:i:d", $item['finishtime'])}</div>
+                </div>
+            {/if}
+        </div>
+
+        {if p('commission') && count($agents)>0}
+            <div class="fui-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-info"><i class="icon icon-group"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_165']}</div>
+                </div>
+            </div>
+            <div class="fui-list-group nomargin">
+                {loop $agents $key $value}
+                    <a class="fui-list" href="{php echo mobileUrl('mmanage/member/detail', array('id'=>$value['id']))}" data-nocache="true">
+                        <div class="fui-list-media round">
+                            <img src="{php echo tomedia($value['avatar'])}" class="round" />
+                            <div class="title">{php echo $key+1}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_166']}</div>
+                        </div>
+                        <div class="fui-list-inner">
+                            <div class="title">
+                                <span class="total">{php echo empty($value['nickname'])?"{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_167']}":$value['nickname']}{if !empty($value['realname'])}({$value['realname']}){/if}</span>
+                            </div>
+                            <div class="subtitle">
+                                <span class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_168']}: {$value['commission']}{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_169']}</span>
+                                <span class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_170']}: {php echo empty($value['mobile'])?"{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_171']}":$value['mobile']}</span>
+                            </div>
+                        </div>
+                        <div class="angle"></div>
+                    </a>
+                {/loop}
+            </div>
+        {/if}
+
+        {if !empty($order_fields) && !empty($order_data)}
+            <div class="fui-cell-group">
+                <div class="fui-cell">
+                    <div class="fui-cell-info"><i class="icon icon-form"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_172']}</div>
+                </div>
+                {php $datas = $order_data}
+                {loop $order_fields $key $value}
+                    <div class="fui-cell">
+                        <div class="fui-cell-label">{php echo $value['tp_name']}</div>
+                        <div class="fui-cell-info"></div>
+                        <div class="fui-cell-remark noremark">{template 'diyform/mdiyform'}</div>
+                    </div>
+                {/loop}
+            </div>
+        {/if}
+
+        <div class="fui-title center">{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_173']}PC{php echo $lang['lang_plugin_mmanage_template_mobile_default_order_detail_174']}</div>
+    </div>
+
+    {template 'mmanage/_tpl/order_params'}
+
+    <script language="javascript">
+        require(['../addons/ewei_shopv2/plugin/mmanage/static/js/order-detail.js'],function(modal){
+            modal.initDetail();
+        });
+    </script>
+
+    {if $item['merchid'] == 0 && $item['ismerch'] == 0}
+    <style>.fui-navbar{display: none;}.fui-navbar.params{display: block;}</style>
+        <div class="fui-footer order-detail">
+            {template 'mmanage/order/ops'}
+        </div>
+    {/if}
+
+</div>
+{php $this->footerMenus(null, $texts)}
+{template '_footer'}

@@ -1,0 +1,32 @@
+<?php
+$lang['lang_template_mobile_member_notice_0'] = ' Cài đặt tin nhắn nhắc nhở';
+$lang['lang_template_mobile_member_notice_1'] = ' Lớp học đặt hàng';
+$lang['lang_template_mobile_member_notice_2'] = ' Thông tin đặt hàng';
+$lang['lang_template_mobile_member_notice_3'] = ' Tự đặt hàng';
+$lang['lang_template_mobile_member_notice_4'] = ' Hủy bỏ đơn đặt hàng';
+$lang['lang_template_mobile_member_notice_5'] = ' Mua hàng thành công';
+$lang['lang_template_mobile_member_notice_6'] = ' Vấn đề đặt hàng';
+$lang['lang_template_mobile_member_notice_7'] = ' Biên lai đơn đặt hàng';
+$lang['lang_template_mobile_member_notice_8'] = ' Hoàn lại tiền yêu cầu';
+$lang['lang_template_mobile_member_notice_9'] = ' Hoàn trả lại sự tiến bộ';
+$lang['lang_template_mobile_member_notice_10'] = ' Hoàn trả kết quả';
+$lang['lang_template_mobile_member_notice_11'] = ' Khoản tiền hoàn lại không thành công';
+$lang['lang_template_mobile_member_notice_12'] = ' thành viên lớp học';
+$lang['lang_template_mobile_member_notice_13'] = ' thành viên nâng cấp';
+$lang['lang_template_mobile_member_notice_14'] = ' Nạp tiền cho lớp học';
+$lang['lang_template_mobile_member_notice_15'] = ' Nạp tiền thành công';
+$lang['lang_template_mobile_member_notice_16'] = ' top-up hoàn';
+$lang['lang_template_mobile_member_notice_17'] = ' đề cập đến lớp';
+$lang['lang_template_mobile_member_notice_18'] = ' Gửi đơn đăng ký';
+$lang['lang_template_mobile_member_notice_19'] = ' đề cập đến thành công';
+$lang['lang_template_mobile_member_notice_20'] = ' đề cập đến thất bại';
+$lang['lang_template_mobile_member_notice_21'] = ' Phân phối các lớp học';
+$lang['lang_template_mobile_member_notice_22'] = ' trở thành';
+$lang['lang_template_mobile_member_notice_23'] = ' cấp độ cao';
+$lang['lang_template_mobile_member_notice_24'] = ' Mới';
+$lang['lang_template_mobile_member_notice_25'] = ' Thanh toán';
+$lang['lang_template_mobile_member_notice_26'] = ' Biên lai';
+$lang['lang_template_mobile_member_notice_27'] = ' Gửi đơn đăng ký';
+$lang['lang_template_mobile_member_notice_28'] = ' đề cập đến xử lý';
+$lang['lang_template_mobile_member_notice_29'] = ' Merchant chơi tiền bạc';
+?>

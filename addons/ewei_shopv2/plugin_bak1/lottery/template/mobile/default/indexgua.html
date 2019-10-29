@@ -1,0 +1,229 @@
+{template '_header'}
+<script>document.title = "{$lottery['lottery_title']}"; </script>
+
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/lottery/static/style/mobilegua.css?{php echo time();}" />
+
+<div class='fui-page  fui-page-current'>
+
+    <div class="fui-content lottery-content">
+        {if !empty($lottery) }
+        <div class="lottery-title">
+            <marquee direction=left scrollamount=6 style="color: #ffffff;background: #000000;opacity: 0.7;">
+                {if !empty($log)}
+
+                {loop $log $key $value}
+                {if !empty($value['lottery_data'])}
+                {php $value['lottery_data']=unserialize($value['lottery_data'])}
+                {if isset($value['lottery_data']['credit'])}
+                {php $reward_name=$lang['lang_plugin_lottery_template_mobile_default_indexgua_0'];}
+                {elseif isset($value['lottery_data']['money'])}
+                {php $reward_name=$lang['lang_plugin_lottery_template_mobile_default_indexgua_1'];}
+                {elseif isset($value['lottery_data']['bribery'])}
+                {php $reward_name=$lang['lang_plugin_lottery_template_mobile_default_indexgua_2'];}
+                {elseif isset($value['lottery_data']['goods'])}
+                {php $reward_name=$lang['lang_plugin_lottery_template_mobile_default_indexgua_3'];}
+                {elseif isset($value['lottery_data']['coupon'])}
+                {php $reward_name=$lang['lang_plugin_lottery_template_mobile_default_indexgua_4'];}
+                {/if}
+                {$value['nickname']}[{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_5']}{$reward_name},{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_6']}:{php echo date('Y-m-d',$value['addtime']);}]
+                {/if}
+                {/loop}
+
+                {else}
+                {php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_7']}...
+                {/if}
+            </marquee>
+        </div>
+        <style>
+            .lottery-content{
+                background: url("{$lottery['lottery_banner']}");
+                background-size: 100% 100%;
+            }
+        </style>
+
+        <div class="lottery" >
+            <div class="result">
+                <span class="result-span" id="result_span"></span>
+            </div>
+            <div class="inner">
+                <img class="gua-img" id="gua-img" src="../addons/ewei_shopv2/plugin/lottery/static/images/gua2.png">
+            </div>
+        </div>
+
+        <div class="lottery_footer">
+            <img class="lottery_memberhead" src="{$member['avatar']}">
+            <p>{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_8']}:<span id="left_changes" style="color: #ff3f4b">{php echo intval($has_changes);}</span>{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_9']}</p>
+            <div class="lottery_row">
+                <div class="lottery_col_6">
+                    <a class="btn btn-danger" href="{php echo mobileUrl('lottery/index/lottery_reward',array('id'=>$lottery['lottery_id']),true);}" style="width: 6rem;">{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_10']}</a>
+                </div>
+                <div class="lottery_col_6">
+                    <a class="btn btn-primary" href="{php echo mobileUrl('lottery/index/myreward',array(),true);}" style="background-color: #13afbe;border-color: #13afbe;">{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_11']}</a>
+                </div>
+            </div>
+        </div>
+
+        {else}
+            <p class="text-white text-center" style="font-size: 2.5rem;">{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_12']}</p>
+        {/if}
+    </div>
+
+</div>
+
+<div id="model" style="display: none;">
+    <div class="task-model">
+        <div class="task-model-content" ><h4 id="model-title">{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_13']}!{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_14']}**{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_15']}!!</h4></div>
+        <div class="task-model-footer task-btn-close">{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_16']}</div>
+    </div>
+</div>
+
+<div id="failmodel" style="display: none;">
+    <div class="task-model">
+        <div class="task-model-faile-content" ><h4 id="model-failtitle">{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_17']}!{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_18']}!!</h4></div>
+        <div class="task-model-footer task-btn-close">{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_19']}</div>
+    </div>
+</div>
+{if !empty($lottery) }
+<script type="text/javascript" src="../addons/ewei_shopv2/plugin/lottery/static/js/jquery.eraser.js"></script>
+<script type="text/javascript">
+    var is_login = {php echo empty($_W['openid'])?0:1;};
+    require(['../addons/ewei_shopv2/plugin/lottery/static/js/index.js'],function(modal){modal.init({changes:{php echo intval($has_changes);},is_login:is_login,id:{$lottery['lottery_id']},toast:'{$lottery['lottery_cannot']}'});});
+    function tabInfo(obj) {
+        var tab_id = $(obj).data('value');
+        if(tab_id=='rewardinfo'){
+            $('#lotteryinfo').hide();
+            $('#myreward').hide();
+            $('a[data-value="lotteryinfo"]').removeClass('active');
+            $('a[data-value="myreward"]').removeClass('active');
+            $(obj).addClass('active')
+            $('#rewardinfo').show();
+        }
+        if(tab_id=='lotteryinfo'){
+            $('#rewardinfo').hide();
+            $('#myreward').hide();
+            $('a[data-value="rewardinfo"]').removeClass('active');
+            $('a[data-value="myreward"]').removeClass('active');
+            $(obj).addClass('active');
+            $('#lotteryinfo').show();
+        }
+        if(tab_id=='myreward'){
+            $('#rewardinfo').hide();
+            $('#lotteryinfo').hide();
+            $('a[data-value="rewardinfo"]').removeClass('active');
+            $('a[data-value="lotteryinfo"]').removeClass('active');
+            $(obj).addClass('active');
+            $('#myreward').show();
+        }
+    }
+    $(document).ready(function () {
+        var haschanges = {php echo intval($has_changes);};
+
+        {if !empty($has_changes)}
+        $('#gua-img').eraser({
+            completeRatio: 0.5,
+            completeFunction: function (p) {
+
+                if(haschanges<=0){
+
+                    $('#model-failtitle').html('{$lottery['lottery_cannot']}');
+                    taskget = new FoxUIModal({
+                        content: $('#failmodel').html(),
+                        extraClass: 'picker-modal',
+                        maskClick: function () {
+                            taskget.close();
+                        }
+                    });
+                    taskget.container.find('.task-btn-close').click(function () {
+                        taskget.close();
+                    });
+                    taskget.show();
+                    return false;
+                }
+                haschanges--;
+                $('#left_changes').html(haschanges);
+                $.post('{php echo mobileUrl("lottery/index/getreward");}',{lottery:{$lottery['lottery_id']}},function (data) {
+                    console.log(data);
+                    if(data.status==1){
+                        if(data.is_reward){
+                            //{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_20']}
+                            $('#result_span').html('{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_21']}');
+                            $.post('{php echo mobileUrl("lottery/index/reward");}',{reward:data.id,lottery:{$lottery['lottery_id']}},function (res) {
+                                if(res.status==1){
+                                    $('#model-title').html(res.info);
+                                    taskget = new FoxUIModal({
+                                        content: $('#model').html(),
+                                        extraClass: 'picker-modal',
+                                        maskClick: function () {
+                                            window.location.reload();
+                                        }
+                                    });
+                                    taskget.container.find('.task-btn-close').click(function () {
+                                        window.location.reload();
+                                    });
+                                    taskget.show();
+                                }else{
+                                    $('#model-failtitle').html(res.info);
+                                    taskget = new FoxUIModal({
+                                        content: $('#failmodel').html(),
+                                        extraClass: 'picker-modal',
+                                        maskClick: function () {
+                                            window.location.reload();
+                                        }
+                                    });
+                                    taskget.container.find('.task-btn-close').click(function () {
+                                        window.location.reload();
+                                    });
+                                    taskget.show();
+                                }
+                                return;
+                            },'json');
+                        }else{
+                            //{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_22']}
+                            $('#result_span').html('{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_23']}');
+                            $('#model-failtitle').html(data.info);
+                            taskget = new FoxUIModal({
+                                content: $('#failmodel').html(),
+                                extraClass: 'picker-modal',
+                                maskClick: function () {
+                                    window.location.reload();
+                                }
+                            });
+                            taskget.container.find('.task-btn-close').click(function () {
+                                window.location.reload();
+                            });
+                            taskget.show();
+                            return ;
+                        }
+
+                    }else{
+                        $('#result_span').html('{php echo $lang['lang_plugin_lottery_template_mobile_default_indexgua_24']}');
+                        $('#model-failtitle').html('{$lottery['lottery_cannot']}');
+                        taskget = new FoxUIModal({
+                            content: $('#failmodel').html(),
+                            extraClass: 'picker-modal',
+                            maskClick: function () {
+                                window.location.reload();
+                            }
+                        });
+                        taskget.container.find('.task-btn-close').click(function () {
+                            window.location.reload();
+                        });
+                        taskget.show();
+                        return false;
+                    }
+                },'json');
+            }
+        });
+
+
+
+        {/if}
+
+        
+
+    });
+
+</script>
+{/if}
+{template '_footer'}
+

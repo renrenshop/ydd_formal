@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_groups_core_mobile_pay_0'] = '订单未找到！';
+$lang['lang_plugin_groups_core_mobile_pay_1'] = '该活动已失效，请浏览其他商品或联系商家！';
+$lang['lang_plugin_groups_core_mobile_pay_2'] = '已下架';
+$lang['lang_plugin_groups_core_mobile_pay_3'] = '库存不足';
+$lang['lang_plugin_groups_core_mobile_pay_4'] = '该活动已过期，请浏览其他商品或联系商家！';
+$lang['lang_plugin_groups_core_mobile_pay_5'] = '该活动已结束，请浏览其他商品或联系商家！';
+$lang['lang_plugin_groups_core_mobile_pay_6'] = '该活动已成功组团，请浏览其他商品或联系商家！';
+$lang['lang_plugin_groups_core_mobile_pay_7'] = '订单';
+$lang['lang_plugin_groups_core_mobile_pay_8'] = '参数错误';
+$lang['lang_plugin_groups_core_mobile_pay_9'] = '参数错误';
+$lang['lang_plugin_groups_core_mobile_pay_10'] = '订单不存在';
+$lang['lang_plugin_groups_core_mobile_pay_11'] = '参数错误';
+$lang['lang_plugin_groups_core_mobile_pay_12'] = '商品不存在';
+$lang['lang_plugin_groups_core_mobile_pay_13'] = '商品不存在';
+$lang['lang_plugin_groups_core_mobile_pay_14'] = '未找到支付方式';
+$lang['lang_plugin_groups_core_mobile_pay_15'] = '未找到支付方式';
+$lang['lang_plugin_groups_core_mobile_pay_16'] = '支付出错';
+$lang['lang_plugin_groups_core_mobile_pay_17'] = '请重试';
+$lang['lang_plugin_groups_core_mobile_pay_18'] = '支付出错';
+$lang['lang_plugin_groups_core_mobile_pay_19'] = '请重试';
+$lang['lang_plugin_groups_core_mobile_pay_20'] = '余额不足';
+$lang['lang_plugin_groups_core_mobile_pay_21'] = '请充值';
+$lang['lang_plugin_groups_core_mobile_pay_22'] = '消费';
+$lang['lang_plugin_groups_core_mobile_pay_23'] = '支付出错';
+$lang['lang_plugin_groups_core_mobile_pay_24'] = '请重试';
+$lang['lang_plugin_groups_core_mobile_pay_25'] = '支付出错';
+$lang['lang_plugin_groups_core_mobile_pay_26'] = '请重试';
+?>

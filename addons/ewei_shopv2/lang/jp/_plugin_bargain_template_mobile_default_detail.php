@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_bargain_template_mobile_default_detail_0'] = ' バーゲン商品詳細';
+$lang['lang_plugin_bargain_template_mobile_default_detail_1'] = ' 開始されていません';
+$lang['lang_plugin_bargain_template_mobile_default_detail_2'] = ' 閉鎖';
+$lang['lang_plugin_bargain_template_mobile_default_detail_3'] = ' 残り';
+$lang['lang_plugin_bargain_template_mobile_default_detail_4'] = ' 日';
+$lang['lang_plugin_bargain_template_mobile_default_detail_5'] = ' 時間';
+$lang['lang_plugin_bargain_template_mobile_default_detail_6'] = ' 分';
+$lang['lang_plugin_bargain_template_mobile_default_detail_7'] = ' 秒';
+$lang['lang_plugin_bargain_template_mobile_default_detail_8'] = ' バーゲン商品詳細';
+$lang['lang_plugin_bargain_template_mobile_default_detail_9'] = ' 最下の価格:';
+$lang['lang_plugin_bargain_template_mobile_default_detail_10'] = ' 元の価格:';
+$lang['lang_plugin_bargain_template_mobile_default_detail_11'] = ' 元の価格:';
+$lang['lang_plugin_bargain_template_mobile_default_detail_12'] = ' 関係者';
+$lang['lang_plugin_bargain_template_mobile_default_detail_13'] = ' ルール';
+$lang['lang_plugin_bargain_template_mobile_default_detail_14'] = ' 交渉プロセス';
+$lang['lang_plugin_bargain_template_mobile_default_detail_15'] = ' 右の項目を選択します。';
+$lang['lang_plugin_bargain_template_mobile_default_detail_16'] = ' バーゲンに友達を招待';
+$lang['lang_plugin_bargain_template_mobile_default_detail_17'] = ' 最低価格を切断後に支払う';
+$lang['lang_plugin_bargain_template_mobile_default_detail_18'] = ' テキストの詳細';
+$lang['lang_plugin_bargain_template_mobile_default_detail_19'] = ' ホーム';
+$lang['lang_plugin_bargain_template_mobile_default_detail_20'] = ' 元の価格購入';
+$lang['lang_plugin_bargain_template_mobile_default_detail_21'] = ' この製品の交渉活動を既に開始した。';
+$lang['lang_plugin_bargain_template_mobile_default_detail_22'] = ' 今すぐ表示しますか? ';
+$lang['lang_plugin_bargain_template_mobile_default_detail_23'] = ' バーゲンのヒント';
+$lang['lang_plugin_bargain_template_mobile_default_detail_24'] = ' 今バーゲン';
+$lang['lang_plugin_bargain_template_mobile_default_detail_25'] = ' 開始されていません';
+$lang['lang_plugin_bargain_template_mobile_default_detail_26'] = ' 閉鎖';
+$lang['lang_plugin_bargain_template_mobile_default_detail_27'] = ' 在庫不足';
+$lang['lang_plugin_bargain_template_mobile_default_detail_28'] = ' 私';
+?>

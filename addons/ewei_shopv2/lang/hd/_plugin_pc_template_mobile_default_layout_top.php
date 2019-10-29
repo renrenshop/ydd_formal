@@ -1,0 +1,33 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_layout_top_0'] = 'मुझे';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_1'] = 'वास्तविकनाम:';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_2'] = 'फ़ोननंबर:';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_3'] = 'अभीलॉगऑनकरें';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_4'] = 'खरीदारीकीटोकरी';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_5'] = 'शीर्ष';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_6'] = 'उत्पादतुलना';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_7'] = 'छुपाएं';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_8'] = 'मेरीखरीदारीकीटोकरी';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_9'] = 'छुपाएं';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_10'] = 'नमस्ते';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_11'] = 'वापसस्वागतहै,';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_12'] = 'घर';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_13'] = 'घर';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_14'] = 'बाहरनिकलें';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_15'] = ', आपकास्वागतहै';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_16'] = 'घर';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_17'] = 'घर';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_18'] = 'मॉल';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_19'] = 'मेंसाइनइनकरें';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_20'] = 'नि: शुल्कपंजीकरण';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_21'] = 'मेरेआदेश';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_22'] = 'लंबितभुगतानआदेश';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_23'] = 'पुष्टिकेलिएरसीद';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_24'] = 'पूरालेनदेन';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_25'] = 'मेरेपसंदीदा';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_26'] = 'ग्राहकसेवा';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_27'] = 'वापसऊपर';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_28'] = 'साइडबारसामग्रीक्षेत्रकोऐनिमेटकरना';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_29'] = 'सही';
+$lang['lang_plugin_pc_template_mobile_default_layout_top_30'] = 'उपयोगकर्ताजानकारी';
+?>

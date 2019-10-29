@@ -1,0 +1,114 @@
+{template '_header'}
+<div class='fui-page  fui-page-current'>
+    <div class="fui-header">
+	<div class="fui-header-left">
+	    &nbsp;
+	</div>
+	<div class="title">{php echo $lang['lang_template_mobile_verify_page_0']}</div> 
+	<div class="fui-header-right">&nbsp;</div>
+    </div>
+    <div class='fui-content navbar'>
+	
+	  {if !empty($store)}
+
+	<div class='fui-list-group' >
+  
+	  
+	    <div class='fui-list'>
+		<div class='fui-list-media'><i class='icon icon-shop'></i></div>
+		<div class='fui-list-inner'>
+		    <div class='title'>{$store['storename']}</div>
+		</div>
+	    </div>
+	  
+	</div>
+	{/if}
+<div class='fui-list-group' >
+  
+	  
+	    <div class='fui-list'>
+		<div class='fui-list-media'><img src='{$member['avatar']}' /></div>
+		<div class='fui-list-inner'>
+		    <div class='title'>{$saler['salername']}</div>
+		    <div class='text'>{$member['nickname']}</div>
+		</div>
+	    </div>
+	  
+	</div>
+	
+	
+	<div class='fui-cell-group'>
+	    <div class='fui-cell-title'>{php echo $lang['lang_template_mobile_verify_page_1']}</div>
+	    <div class='fui-cell'>
+		
+		<div class='fui-cell-info'>
+		       <input type='text' class='fui-input' id='verifycode' placeholder='{php echo $lang['lang_template_mobile_verify_page_2']}'/>
+		</div>
+		<div class='fui-cell-remark noremark'>
+		       <div class='btn btn-danger btn-sm btn-search'>{php echo $lang['lang_template_mobile_verify_page_3']}</div>
+		</div>
+	    </div>
+	</div>
+	<div id='container'></div>
+	
+  
+    </div>
+    <div class='fui-footer' style='display:none'>
+	<div class="btn btn-danger order-verify block" data-orderid="{$order['id']}" data-verifytype="{$order['verifytype']}">
+	    <i class="icon icon-check"></i> 
+	    <span>{php echo $lang['lang_template_mobile_verify_page_4']}</span>
+	</div>
+
+    </div>
+    
+    <script id='tpl_container' type='text/html'>
+	
+	<div class='fui-list-group'>
+	    <div class='fui-list order-status'>
+		<div class='fui-list-inner'>
+		    <div class='title'><%order.ordersn%></div>
+		    <div class='text'>{php echo $lang['lang_template_mobile_verify_page_5']}: {php echo $lang['lang_template_mobile_verify_page_6']}<%order.price%><span></div>
+		</div>
+	    </div>
+	</div>
+    
+	<div class='fui-list-group' >
+	    <div class='fui-list'>
+		<div class='fui-list-media'><i class='icon icon-person2'></i></div>
+		<div class='fui-list-inner'>
+		    <div class='title'><%carrier.carrier_realname%> <%carrier.carrier_mobile%></div>
+		</div>
+	    </div>
+	</div>
+    
+    
+	<div class="fui-list-group goods-list-group">  
+	    <div class="fui-list-group-title"><i class="icon icon-shop"></i><%shop.name%></div>
+ 
+	   <%each allgoods as g%>
+	    <a href="{php echo mobileUrl('goods/detail')}&id=<%g.goodsid%>">
+
+		<div class="fui-list goods-list">
+		    <div class="fui-list-media">
+			<img src="<%g.thumb%>" class="round">
+		    </div>
+		    <div class="fui-list-inner">
+			<div class="text goodstitle"><%g.title%></div>
+		    <%if g.optionid!='0'%><div class='subtitle'><%g.optiontitle%></div><%/if%>
+
+		    </div>
+		    <div class='fui-list-angle'>
+			{php echo $lang['lang_template_mobile_verify_page_7']}<span class='marketprice'><%g.price%><br/>   x<%g.total%>
+		    </div>
+		</div>
+	    </a>
+	    <%/each%>
+	</div>
+    
+    </script>
+    
+    <script language='javascript'>require(['biz/verify/page'], function (modal) {
+                modal.init();
+            });</script>
+</div>
+{template '_footer'}

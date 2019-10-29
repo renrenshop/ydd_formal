@@ -1,0 +1,20 @@
+<style type="text/css">
+    .time-container .time-slide { color:{$diyitem['style']['color']}; }
+    .seckill-page .swiper-slide.time-slide.current { color:{$diyitem['style']['selectedcolor']};background:{$diyitem['style']['selectedbgcolor']} }
+</style>
+<div class="swiper-container time-container" style="background:{$diyitem['style']['bgcolor']};margin-top:{$diyitem['style']['margintop']}px">
+    <div class="swiper-wrapper">
+        {loop $times $key $time}
+        <div class="swiper-slide time-slide {if $time['status']==0 || $timeindex==$key}current{/if} time-slide-{$time['id']}" data-index="{$key}">
+            <span class="time">{$time['time']}:00</span>
+            <span class="text">
+                        {if $time['status']==0}
+                        {php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_seckill_times_0']}
+                        {elseif $time['status']==1}
+                        {php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_seckill_times_1']}
+                        {else}
+                        {php echo $lang['lang_plugin_diypage_template_mobile_default_template_tpl_seckill_times_2']}{/if}</span>
+        </div>
+        {/loop}
+    </div>
+</div>

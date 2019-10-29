@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_app_core_mobile_order_pay_0'] = ' perintah-perintah';
+$lang['lang_plugin_app_core_mobile_order_pay_1'] = ' Bawah rak';
+$lang['lang_plugin_app_core_mobile_order_pay_2'] = ' keping';
+$lang['lang_plugin_app_core_mobile_order_pay_3'] = ' Memulakan jualan';
+$lang['lang_plugin_app_core_mobile_order_pay_4'] = ' satu had masa pembelian';
+$lang['lang_plugin_app_core_mobile_order_pay_5'] = ' Had pembelian';
+$lang['lang_plugin_app_core_mobile_order_pay_6'] = ' had beli masa belum mencapai';
+$lang['lang_plugin_app_core_mobile_order_pay_7'] = ' had masa yang telah dibeli';
+$lang['lang_plugin_app_core_mobile_order_pay_8'] = ' tahap keahlian anda tidak boleh dibeli';
+$lang['lang_plugin_app_core_mobile_order_pay_9'] = ' Kumpulan Keahlian anda tidak boleh dibeli';
+$lang['lang_plugin_app_core_mobile_order_pay_10'] = ' Inventori yang tidak mencukupi';
+$lang['lang_plugin_app_core_mobile_order_pay_11'] = ' Inventori yang tidak mencukupi';
+$lang['lang_plugin_app_core_mobile_order_pay_12'] = ' Penghantaran terbuka kepada pembayaran';
+$lang['lang_plugin_app_core_mobile_order_pay_13'] = ' Pembayaran baki terbuka';
+$lang['lang_plugin_app_core_mobile_order_pay_14'] = ' Jumlah ralat';
+$lang['lang_plugin_app_core_mobile_order_pay_15'] = ' Baki yang mencukupi';
+$lang['lang_plugin_app_core_mobile_order_pay_16'] = ' Cas semula';
+$lang['lang_plugin_app_core_mobile_order_pay_17'] = ' penggunaan';
+$lang['lang_plugin_app_core_mobile_order_pay_18'] = ' tidak membuka Surat mikro pembayaran';
+$lang['lang_plugin_app_core_mobile_order_pay_19'] = ' pakej anda bersedia';
+$lang['lang_plugin_app_core_mobile_order_pay_20'] = ' anda boleh memilih pilihan daripada titik kutip.';
+$lang['lang_plugin_app_core_mobile_order_pay_21'] = ' boleh anda gunakan di kedai terpakai.';
+$lang['lang_plugin_app_core_mobile_order_pay_22'] = ' perkara yang anda beli telah dihantar secara automatik';
+$lang['lang_plugin_app_core_mobile_order_pay_23'] = ' perkara yang anda beli telah dihantar secara automatik';
+$lang['lang_plugin_app_core_mobile_order_pay_24'] = ' anda bayar berjaya';
+$lang['lang_plugin_app_core_mobile_order_pay_25'] = ' Perintah pengemukaan bayaran';
+$lang['lang_plugin_app_core_mobile_order_pay_26'] = ' Perintah pembayaran berjaya';
+$lang['lang_plugin_app_core_mobile_order_pay_27'] = ' untuk membayar';
+$lang['lang_plugin_app_core_mobile_order_pay_28'] = ' Sebenar pembayaran';
+?>

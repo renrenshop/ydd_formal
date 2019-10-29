@@ -1,0 +1,233 @@
+{template '_header'}
+{template 'abonus/common'}
+<script>document.title = "{php echo $this->set['texts']['become']}"; </script>
+<div class='fui-page fui-page-current page-abonus-register'>
+    {if is_h5app()}
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_abonus_template_mobile_default_register_0']}</div>
+        <div class="fui-header-right"></div>
+    </div>
+    {/if}
+    <div class='fui-content'>
+        <img style='width:100%;position: relative' src="{if empty($set['regbg'])}../addons/ewei_shopv2/plugin/abonus/template/mobile/default/static/images/bg.png{else}{php echo tomedia($set['regbg'])}{/if}" />
+        {if empty($set['become'])}
+        <div class='content-empty' >
+            <i class='icon icon-money text-warning'></i>
+            <br/><span class="text-default">{if empty($set['noregdesc'])}
+			{php echo $lang['lang_plugin_abonus_template_mobile_default_register_1']}
+			{else}
+			{$set['noregdesc']}
+			{/if}
+			<br/>
+
+		</span>
+            <br/><a class="btn btn-warning" href="{php echo mobileUrl()}">{php echo $lang['lang_plugin_abonus_template_mobile_default_register_2']}</a>
+        </div>
+
+        {else}
+
+
+        {if $member['aagentblack']}
+        <div class='content-empty' >
+            <i class='icon icon-info text-danger'></i>
+            <br/><span class="text-danger">{php echo $lang['lang_plugin_abonus_template_mobile_default_register_3']}</span>
+            <br/><a class="btn btn-danger" href="{php echo mobileUrl()}">{php echo $lang['lang_plugin_abonus_template_mobile_default_register_4']}</a>
+        </div>
+
+        {else}
+
+        {if $member['aagentstatus']==1 && $member['isaagent']==1}
+        <div class='content-info'>
+            <i class='icon icon-roundcheck text-success'></i>
+            <br/><span class="text-success">{php echo $lang['lang_plugin_abonus_template_mobile_default_register_5']}</span>
+            <br/><a class="btn btn-danger" href="{php echo mobileUrl()}">{php echo $lang['lang_plugin_abonus_template_mobile_default_register_6']}</a>
+        </div>
+        {/if}
+        {if $member['aagentstatus']==0 && $member['isaagent']==1}
+        <div class='content-info' >
+            <i class='icon icon-time'></i>
+            <br/><span class="">{php echo $lang['lang_plugin_abonus_template_mobile_default_register_7']}!</span>
+            <br/><a class="btn btn-danger" href="{php echo mobileUrl()}">{php echo $lang['lang_plugin_abonus_template_mobile_default_register_8']}</a>
+        </div>
+        {/if}
+
+
+        {if empty($member['aagentstatus']) &&  empty($member['isaagent']) && $set['become']=='1'}
+        <div class="fui-cell-group" style='margin-top:0'>
+            <div class="fui-cell-title">
+                {php echo $lang['lang_plugin_abonus_template_mobile_default_register_9']}<span class='text-danger'>{$_W['shopset']['shop']['name']}</span>{php echo $lang['lang_plugin_abonus_template_mobile_default_register_10']}
+            </div>
+
+            {if $template_flag}
+
+            {template 'diyform/formfields'}
+
+            {else}
+
+            <div class='fui-cell must'>
+                <div class='fui-cell-label'>{php echo $lang['lang_plugin_abonus_template_mobile_default_register_11']}</div>
+                <div class='fui-cell-info'><input type="text" class='fui-input' id='realname' placeholder="{php echo $lang['lang_plugin_abonus_template_mobile_default_register_12']}" value="{$member['realname']}" /></div>
+            </div>
+
+            <div class='fui-cell must'>
+                <div class='fui-cell-label'>{php echo $lang['lang_plugin_abonus_template_mobile_default_register_13']}</div>
+                <div class='fui-cell-info'><input type="tel" class='fui-input' id='mobile' placeholder="{php echo $lang['lang_plugin_abonus_template_mobile_default_register_14']}" value="{$member['mobile']}" /></div>
+            </div>
+
+            <div class='fui-cell'>
+                <div class='fui-cell-label'>{php echo $lang['lang_plugin_abonus_template_mobile_default_register_15']}</div>
+                <div class='fui-cell-info'><input type="text" class='fui-input' id='weixin' placeholder="{php echo $lang['lang_plugin_abonus_template_mobile_default_register_16']}" value="{$member['weixin']}" /></div>
+            </div>
+
+            <div class='fui-cell'>
+                <div class='fui-cell-label'>{php echo $lang['lang_plugin_abonus_template_mobile_default_register_17']}</div>
+                <div class='fui-cell-info'>
+                    <label class="radio-inline">
+                        <input type="radio" class='fui-radio fui-radio-warning' name='aagenttype' value='1'/> {php echo $lang['lang_plugin_abonus_template_mobile_default_register_18']}
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" class='fui-radio fui-radio-warning' name='aagenttype'  value="2"/> {php echo $lang['lang_plugin_abonus_template_mobile_default_register_19']}
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" class='fui-radio fui-radio-warning' name='aagenttype'  value="3"/> {php echo $lang['lang_plugin_abonus_template_mobile_default_register_20']}
+                    </label>
+                </div>
+            </div>
+
+            <div class='fui-cell' id="div_province" style="display:none;">
+                <div class='fui-cell-label'>{php echo $lang['lang_plugin_abonus_template_mobile_default_register_21']}</div>
+                <div class='fui-cell-info'>
+                    <input type="text" class='fui-input' id="citypicker1" placeholder="{php echo $lang['lang_plugin_abonus_template_mobile_default_register_22']}"  readonly/>
+                </div>
+            </div>
+
+            <div class='fui-cell' id="div_city"  style="display:none;">
+                <div class='fui-cell-label'>{php echo $lang['lang_plugin_abonus_template_mobile_default_register_23']}</div>
+                <div class='fui-cell-info'>
+                    <input type="text" class='fui-input' id="citypicker2" placeholder="{php echo $lang['lang_plugin_abonus_template_mobile_default_register_24']}"  readonly/>
+                </div>
+            </div>
+
+            <div class='fui-cell' id="div_area"  style="display:none;">
+                <div class='fui-cell-label'>{php echo $lang['lang_plugin_abonus_template_mobile_default_register_25']}</div>
+                <div class='fui-cell-info'>
+                    <input type="text" class='fui-input' id="citypicker3" placeholder="{php echo $lang['lang_plugin_abonus_template_mobile_default_register_26']}"  readonly/>
+                </div>
+            </div>
+
+
+            {/if}
+
+            {if $set['open_protocol'] == 1}
+            <div class="fui-cell-group">
+                <div class="fui-cell small ">
+                    <div class="fui-cell-info">
+
+                        <label class="checkbox-inline">
+                            <input type="checkbox" class="fui-checkbox-primary" id="agree" {if !empty($reg)}checked{/if}/> {php echo $lang['lang_plugin_abonus_template_mobile_default_register_27']}<a id="btn-apply" style="color:#337ab7;">{php echo $lang['lang_plugin_abonus_template_mobile_default_register_28']}{$apply_set['applytitle']}{php echo $lang['lang_plugin_abonus_template_mobile_default_register_29']}</a>{php echo $lang['lang_plugin_abonus_template_mobile_default_register_30']}
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pop-apply-hidden" style="display: none;">
+                <div class="verify-pop pop">
+                    <div class="close"><i class="icon icon-roundclose"></i></div>
+                    <div class="qrcode">
+                        <div class="inner">
+                            <div class="title">{$set['applytitle']}</div>
+                            <div class="text">{$set['applycontent']}</div>
+                        </div>
+                        <div class="inner-btn" style="padding: 0.5rem;">
+                            <div class="btn btn-warning" style="width: 100%; margin: 0;">{php echo $lang['lang_plugin_abonus_template_mobile_default_register_31']}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/if}
+
+
+        </div>
+        <div class='btn btn-warning block btn-submit'>{php echo $lang['lang_plugin_abonus_template_mobile_default_register_32']}{php echo $this->set['texts']['agent']}</div>
+
+
+        <div class='fui-list-group vip-group'>
+
+            {if empty($set['register_bottom'])}
+
+            <div class='fui-list'>
+                <div class='fui-list-media '><i class='icon icon-vip'></i></div>
+                <div class='fui-list-inner'>
+                    <div class='subtitle'>{php echo $this->set['texts']['agent']}{php echo $lang['lang_plugin_abonus_template_mobile_default_register_33']}</div>
+                </div>
+            </div>
+
+            <div class='fui-list'>
+                <div class='fui-list-media'><i class='icon icon-shengfen text-danger'></i></div>
+                <div class='fui-list-inner'>
+                    <div class='subtitle'>{php echo $lang['lang_plugin_abonus_template_mobile_default_register_34']}{php echo $this->set['texts']['bonus']}</div>
+                    <div class='text'>{php echo $lang['lang_plugin_abonus_template_mobile_default_register_35']}{php echo $this->set['texts']['agent']}{php echo $lang['lang_plugin_abonus_template_mobile_default_register_36']}{php echo $this->set['texts']['bonus']}{php echo $lang['lang_plugin_abonus_template_mobile_default_register_37']}</div>
+                </div>
+            </div>
+            {else if $set['register_bottom'] == 1}
+
+                {if !empty($set['register_bottom_title1']) || !empty($set['register_bottom_content1'])}
+                <div class='fui-list'>
+                    <div class='fui-list-media '><i class='icon icon-vip'></i></div>
+                    <div class='fui-list-inner'>
+                        <div class='subtitle'>{$set['register_bottom_title1']}</div>
+                        <div class='text'>{$set['register_bottom_content1']}</div>
+                    </div>
+                </div>
+                {/if}
+
+                {if !empty($set['register_bottom_title2']) || !empty($set['register_bottom_content2'])}
+                <div class='fui-list'>
+                    <div class='fui-list-media '><i class='icon icon-shengfen text-danger'></i></div>
+                    <div class='fui-list-inner'>
+                        <div class='subtitle'>{$set['register_bottom_title2']}</div>
+                        <div class='text'>{$set['register_bottom_content2']}</div>
+                    </div>
+                </div>
+                {/if}
+
+                {if !empty($set['register_bottom_remark'])}
+                <div class='fui-list'>
+                    <div class='fui-list-inner'>
+                        <div class='text'>{$set['register_bottom_remark']}</div>
+                    </div>
+                </div>
+                {/if}
+
+            {else if $set['register_bottom'] == 2}
+            <div class="row">
+                {$set['register_bottom_content']}
+            </div>
+            {/if}
+        </div>
+
+
+
+
+        {/if}
+
+        {/if}
+
+        {/if}
+
+
+
+    </div>
+    <script language="javascript">
+        require(['../addons/ewei_shopv2/plugin/abonus/static/js/register.js'], function (modal) {
+            modal.init({php echo json_encode($apply_set)});
+
+        })
+    </script>
+</div>
+{template '_footer'}

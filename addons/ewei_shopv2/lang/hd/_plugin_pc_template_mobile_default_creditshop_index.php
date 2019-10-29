@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_0'] = 'वर्तमानरेटिंग:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_1'] = 'आमसदस्य';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_2'] = 'मिनट';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_3'] = 'मेरेअंक';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_4'] = 'शीट';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_5'] = 'उपलब्धवाउचर';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_6'] = 'एक';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_7'] = 'आइटमरिडीम';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_8'] = 'रिकॉर्डरिडीम';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_9'] = 'अभीलॉगऑनकरें';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_10'] = 'सदस्यताजानकारीकेबारेमेंऔरजानें';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_11'] = 'दुकानवाउचर';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_12'] = 'दुकानवाउचरमालखरीदनेकेलिएमुद्रामेंअधिकलागतप्रभावी';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_13'] = 'भुनाएंउपहार';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_14'] = 'मूल्यकेलिएधनउपहारअंककाउपयोगकरभुनायाजासकताहै';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_15'] = 'सदस्यलॉगिन';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_16'] = 'सूचीपृष्ठविज्ञापनबिटकेमध्यमेंइंगित';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_17'] = 'मोचनवाउचर';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_18'] = 'Exchange';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_19'] = 'अधिक';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_20'] = 'कीजरूरतहै';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_21'] = 'अंक';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_22'] = 'अभीरिडीम';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_23'] = 'भौतिकविनिमय';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_24'] = 'भौतिकविनिमय';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_25'] = 'अधिक';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_26'] = 'रिडीम:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_27'] = 'अंक';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_index_28'] = 'अभीरिडीम';
+?>

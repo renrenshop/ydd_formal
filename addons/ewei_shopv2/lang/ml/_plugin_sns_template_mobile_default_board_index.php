@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_sns_template_mobile_default_board_index_0'] = ' Topik-topik';
+$lang['lang_plugin_sns_template_mobile_default_board_index_1'] = ' Likes Say';
+$lang['lang_plugin_sns_template_mobile_default_board_index_2'] = ' Berkenaan';
+$lang['lang_plugin_sns_template_mobile_default_board_index_3'] = ' Likes Say';
+$lang['lang_plugin_sns_template_mobile_default_board_index_4'] = ' tidak boleh log';
+$lang['lang_plugin_sns_template_mobile_default_board_index_5'] = ' Utama';
+$lang['lang_plugin_sns_template_mobile_default_board_index_6'] = ' Intipati kawasan';
+$lang['lang_plugin_sns_template_mobile_default_board_index_7'] = ' Seksyen-seksyen berkaitan';
+$lang['lang_plugin_sns_template_mobile_default_board_index_8'] = ' Melekit';
+$lang['lang_plugin_sns_template_mobile_default_board_index_9'] = ' tiada tajuk buat masa ini';
+$lang['lang_plugin_sns_template_mobile_default_board_index_10'] = ' Memuatkan';
+$lang['lang_plugin_sns_template_mobile_default_board_index_11'] = ' Membatalkan';
+$lang['lang_plugin_sns_template_mobile_default_board_index_12'] = ' Tajuk Post';
+$lang['lang_plugin_sns_template_mobile_default_board_index_13'] = ' kapsyen';
+$lang['lang_plugin_sns_template_mobile_default_board_index_14'] = ' kata-kata';
+$lang['lang_plugin_sns_template_mobile_default_board_index_15'] = ' kandungan';
+$lang['lang_plugin_sns_template_mobile_default_board_index_16'] = ' kata-kata';
+$lang['lang_plugin_sns_template_mobile_default_board_index_17'] = ' Menerbitkan';
+$lang['lang_plugin_sns_template_mobile_default_board_index_18'] = ' aduan';
+$lang['lang_plugin_sns_template_mobile_default_board_index_19'] = ' Membatalkan';
+$lang['lang_plugin_sns_template_mobile_default_board_index_20'] = ' aduan';
+$lang['lang_plugin_sns_template_mobile_default_board_index_21'] = ' Apa yang saya ingin mengadu tentang adalah';
+$lang['lang_plugin_sns_template_mobile_default_board_index_22'] = ' ';
+$lang['lang_plugin_sns_template_mobile_default_board_index_23'] = ' Sila pilih kategori aduan:';
+$lang['lang_plugin_sns_template_mobile_default_board_index_24'] = ' lain-lain';
+$lang['lang_plugin_sns_template_mobile_default_board_index_25'] = ' kandungan';
+$lang['lang_plugin_sns_template_mobile_default_board_index_26'] = ' kata-kata';
+$lang['lang_plugin_sns_template_mobile_default_board_index_27'] = ' Mengemukakan';
+$lang['lang_plugin_sns_template_mobile_default_board_index_28'] = ' aduan';
+?>

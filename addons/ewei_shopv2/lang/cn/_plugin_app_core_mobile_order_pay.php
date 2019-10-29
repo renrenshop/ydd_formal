@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_app_core_mobile_order_pay_0'] = '订单';
+$lang['lang_plugin_app_core_mobile_order_pay_1'] = '已下架';
+$lang['lang_plugin_app_core_mobile_order_pay_2'] = '件';
+$lang['lang_plugin_app_core_mobile_order_pay_3'] = '起售';
+$lang['lang_plugin_app_core_mobile_order_pay_4'] = '一次限购';
+$lang['lang_plugin_app_core_mobile_order_pay_5'] = '最多限购';
+$lang['lang_plugin_app_core_mobile_order_pay_6'] = '限购时间未到';
+$lang['lang_plugin_app_core_mobile_order_pay_7'] = '限购时间已过';
+$lang['lang_plugin_app_core_mobile_order_pay_8'] = '您的会员等级无法购买';
+$lang['lang_plugin_app_core_mobile_order_pay_9'] = '您所在会员组无法购买';
+$lang['lang_plugin_app_core_mobile_order_pay_10'] = '库存不足';
+$lang['lang_plugin_app_core_mobile_order_pay_11'] = '库存不足';
+$lang['lang_plugin_app_core_mobile_order_pay_12'] = '未开启货到付款';
+$lang['lang_plugin_app_core_mobile_order_pay_13'] = '未开启余额支付';
+$lang['lang_plugin_app_core_mobile_order_pay_14'] = '金额错误';
+$lang['lang_plugin_app_core_mobile_order_pay_15'] = '余额不足';
+$lang['lang_plugin_app_core_mobile_order_pay_16'] = '请充值';
+$lang['lang_plugin_app_core_mobile_order_pay_17'] = '消费';
+$lang['lang_plugin_app_core_mobile_order_pay_18'] = '未开启微信支付';
+$lang['lang_plugin_app_core_mobile_order_pay_19'] = '您的包裹整装待发';
+$lang['lang_plugin_app_core_mobile_order_pay_20'] = '您可以到您选择的自提点取货了';
+$lang['lang_plugin_app_core_mobile_order_pay_21'] = '您可以到适用门店去使用了';
+$lang['lang_plugin_app_core_mobile_order_pay_22'] = '您购买的商品已自动发货';
+$lang['lang_plugin_app_core_mobile_order_pay_23'] = '您购买的商品已自动发货';
+$lang['lang_plugin_app_core_mobile_order_pay_24'] = '您已经支付成功';
+$lang['lang_plugin_app_core_mobile_order_pay_25'] = '订单提交支付';
+$lang['lang_plugin_app_core_mobile_order_pay_26'] = '订单支付成功';
+$lang['lang_plugin_app_core_mobile_order_pay_27'] = '需到付';
+$lang['lang_plugin_app_core_mobile_order_pay_28'] = '实付金额';
+?>

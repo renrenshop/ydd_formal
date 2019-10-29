@@ -1,0 +1,36 @@
+<?php
+$lang['lang_plugin_exchange_template_mobile_default_common_0'] = ' ศูนย์แลก';
+$lang['lang_plugin_exchange_template_mobile_default_common_1'] = ' ศูนย์แลก';
+$lang['lang_plugin_exchange_template_mobile_default_common_2'] = ' แลกรหัส';
+$lang['lang_plugin_exchange_template_mobile_default_common_3'] = ' รหัสแลกเปลี่ยนนี้มีการสอบถาม';
+$lang['lang_plugin_exchange_template_mobile_default_common_4'] = ' ครั้ง';
+$lang['lang_plugin_exchange_template_mobile_default_common_5'] = ' ป้อนรหัสของคุณแลกเปลี่ยน';
+$lang['lang_plugin_exchange_template_mobile_default_common_6'] = ' อัตราแลกเปลี่ยนดุล';
+$lang['lang_plugin_exchange_template_mobile_default_common_7'] = ' นละ:';
+$lang['lang_plugin_exchange_template_mobile_default_common_8'] = ' หยวน';
+$lang['lang_plugin_exchange_template_mobile_default_common_9'] = ' อัตราแลกเปลี่ยน';
+$lang['lang_plugin_exchange_template_mobile_default_common_10'] = ' แลก';
+$lang['lang_plugin_exchange_template_mobile_default_common_11'] = ' นละ:';
+$lang['lang_plugin_exchange_template_mobile_default_common_12'] = ' หยวน';
+$lang['lang_plugin_exchange_template_mobile_default_common_13'] = ' อัตราแลกเปลี่ยน';
+$lang['lang_plugin_exchange_template_mobile_default_common_14'] = ' แลกคูปอง';
+$lang['lang_plugin_exchange_template_mobile_default_common_15'] = ' นละ:';
+$lang['lang_plugin_exchange_template_mobile_default_common_16'] = ' หยวน';
+$lang['lang_plugin_exchange_template_mobile_default_common_17'] = ' อัตราแลกเปลี่ยน';
+$lang['lang_plugin_exchange_template_mobile_default_common_18'] = ' ไถ่ถอนแดงซอง';
+$lang['lang_plugin_exchange_template_mobile_default_common_19'] = ' นละ:';
+$lang['lang_plugin_exchange_template_mobile_default_common_20'] = ' หยวน';
+$lang['lang_plugin_exchange_template_mobile_default_common_21'] = ' อัตราแลกเปลี่ยน';
+$lang['lang_plugin_exchange_template_mobile_default_common_22'] = ' แลกเปลี่ยนสินค้า';
+$lang['lang_plugin_exchange_template_mobile_default_common_23'] = ' นละ:';
+$lang['lang_plugin_exchange_template_mobile_default_common_24'] = ' หยวน';
+$lang['lang_plugin_exchange_template_mobile_default_common_25'] = ' อัตราแลกเปลี่ยน';
+$lang['lang_plugin_exchange_template_mobile_default_common_26'] = ' แลกรับทันที';
+$lang['lang_plugin_exchange_template_mobile_default_common_27'] = ' กลับไปใส่รหัสแลกเปลี่ยน';
+$lang['lang_plugin_exchange_template_mobile_default_common_28'] = ' ศูนย์แลก';
+$lang['lang_plugin_exchange_template_mobile_default_common_29'] = ' กฎการแลกเปลี่ยน';
+$lang['lang_plugin_exchange_template_mobile_default_common_30'] = ' แสดงความยินดี แลกเปลี่ยนความสำเร็จ ';
+$lang['lang_plugin_exchange_template_mobile_default_common_31'] = ' ตกลง';
+$lang['lang_plugin_exchange_template_mobile_default_common_32'] = ' ฉันขอโทษ แลกรหัสหมดอายุ ';
+$lang['lang_plugin_exchange_template_mobile_default_common_33'] = ' ทราบ';
+?>

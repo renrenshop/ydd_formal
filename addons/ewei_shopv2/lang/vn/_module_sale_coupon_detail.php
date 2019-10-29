@@ -1,0 +1,31 @@
+<?php
+$lang['lang_module_sale_coupon_detail_0'] = ' Đầy đủ';
+$lang['lang_module_sale_coupon_detail_1'] = ' Meta có sẵn';
+$lang['lang_module_sale_coupon_detail_2'] = ' Không có số tiền ngưỡng';
+$lang['lang_module_sale_coupon_detail_3'] = ' Sạc đầy đủ';
+$lang['lang_module_sale_coupon_detail_4'] = ' Meta có sẵn';
+$lang['lang_module_sale_coupon_detail_5'] = ' Không có số tiền ngưỡng';
+$lang['lang_module_sale_coupon_detail_6'] = ' Đầy đủ';
+$lang['lang_module_sale_coupon_detail_7'] = ' Meta có sẵn';
+$lang['lang_module_sale_coupon_detail_8'] = ' Không có số tiền ngưỡng';
+$lang['lang_module_sale_coupon_detail_9'] = ' RM';
+$lang['lang_module_sale_coupon_detail_10'] = ' Gấp';
+$lang['lang_module_sale_coupon_detail_11'] = ' Cân bằng nhân dân tệ';
+$lang['lang_module_sale_coupon_detail_12'] = ' điểm';
+$lang['lang_module_sale_coupon_detail_13'] = ' Meta phong bì';
+$lang['lang_module_sale_coupon_detail_14'] = ' Mức độ bình thường';
+$lang['lang_module_sale_coupon_detail_15'] = ' Mức độ bình thường';
+$lang['lang_module_sale_coupon_detail_16'] = ' Mức độ bình thường';
+$lang['lang_module_sale_coupon_detail_17'] = ' Mức độ bình thường';
+$lang['lang_module_sale_coupon_detail_18'] = ' không thể';
+$lang['lang_module_sale_coupon_detail_19'] = ' Phiếu giảm giá không đủ số lượng';
+$lang['lang_module_sale_coupon_detail_20'] = ' bạn đã vượt quá';
+$lang['lang_module_sale_coupon_detail_21'] = ' Số lượng giới hạn';
+$lang['lang_module_sale_coupon_detail_22'] = ' điểm của bạn là không đủ để có thể';
+$lang['lang_module_sale_coupon_detail_23'] = ' Môi trường phòng không-micro-trust';
+$lang['lang_module_sale_coupon_detail_24'] = ' không mở thư vi thanh toán';
+$lang['lang_module_sale_coupon_detail_25'] = ' Khi nhận phiếu giảm giá';
+$lang['lang_module_sale_coupon_detail_26'] = ' Micro-thư gửi thanh toán thông số lỗi';
+$lang['lang_module_sale_coupon_detail_27'] = ' Lệnh không được tìm thấy';
+$lang['lang_module_sale_coupon_detail_28'] = ' Thanh toán không thành công';
+?>

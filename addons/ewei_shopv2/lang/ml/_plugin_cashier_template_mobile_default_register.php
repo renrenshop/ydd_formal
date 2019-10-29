@@ -1,0 +1,34 @@
+<?php
+$lang['lang_plugin_cashier_template_mobile_default_register_0'] = ' permohonan anda telah ditolak:';
+$lang['lang_plugin_cashier_template_mobile_default_register_1'] = ' Anda juga boleh mengubah suai maklumat untuk menghantar semula.';
+$lang['lang_plugin_cashier_template_mobile_default_register_2'] = ' anda telah menghantar maklumat tersebut, sila tunggu untuk kami menghubungi anda';
+$lang['lang_plugin_cashier_template_mobile_default_register_3'] = ' Anda juga boleh mengubah suai maklumat untuk menghantar semula.';
+$lang['lang_plugin_cashier_template_mobile_default_register_4'] = ' Nama juruwang';
+$lang['lang_plugin_cashier_template_mobile_default_register_5'] = ' Nama juruwang';
+$lang['lang_plugin_cashier_template_mobile_default_register_6'] = ' Alamat Daftar tunai';
+$lang['lang_plugin_cashier_template_mobile_default_register_7'] = ' Orang hubungan';
+$lang['lang_plugin_cashier_template_mobile_default_register_8'] = ' Berkat anda';
+$lang['lang_plugin_cashier_template_mobile_default_register_9'] = ' Nombor telefon';
+$lang['lang_plugin_cashier_template_mobile_default_register_10'] = ' nombor telefon anda';
+$lang['lang_plugin_cashier_template_mobile_default_register_11'] = ' Sila isi borang dengan berhati-hati, menjamin bahawa kami boleh menghubungi anda secepat mungkin';
+$lang['lang_plugin_cashier_template_mobile_default_register_12'] = ' ID Penyambut';
+$lang['lang_plugin_cashier_template_mobile_default_register_13'] = ' ID kembali';
+$lang['lang_plugin_cashier_template_mobile_default_register_14'] = ' Nama pengguna log masuk';
+$lang['lang_plugin_cashier_template_mobile_default_register_15'] = ' Nama pengguna log masuk latar belakang';
+$lang['lang_plugin_cashier_template_mobile_default_register_16'] = ' Kata laluan log masuk';
+$lang['lang_plugin_cashier_template_mobile_default_register_17'] = ' jika ia sudah diisi dalam';
+$lang['lang_plugin_cashier_template_mobile_default_register_18'] = ' Tinggalkan kosong tidak berubah';
+$lang['lang_plugin_cashier_template_mobile_default_register_19'] = ' Sila isi borang dengan berhati-hati, menjamin bahawa kami boleh menghubungi anda secepat mungkin';
+$lang['lang_plugin_cashier_template_mobile_default_register_20'] = ' perujuk';
+$lang['lang_plugin_cashier_template_mobile_default_register_21'] = ' Nama pengguna log masuk latar belakang';
+$lang['lang_plugin_cashier_template_mobile_default_register_22'] = ' Disyorkan telefon orang';
+$lang['lang_plugin_cashier_template_mobile_default_register_23'] = ' Latar belakang log masuk kata laluan';
+$lang['lang_plugin_cashier_template_mobile_default_register_24'] = ' Sila isi borang dengan berhati-hati, menjamin bahawa kami boleh menghubungi anda secepat mungkin';
+$lang['lang_plugin_cashier_template_mobile_default_register_25'] = ' saya telah membaca dan memahami.';
+$lang['lang_plugin_cashier_template_mobile_default_register_26'] = ' Meminta perjanjian';
+$lang['lang_plugin_cashier_template_mobile_default_register_27'] = ' . ';
+$lang['lang_plugin_cashier_template_mobile_default_register_28'] = ' diluluskan melalui';
+$lang['lang_plugin_cashier_template_mobile_default_register_29'] = ' Mohon sekarang';
+$lang['lang_plugin_cashier_template_mobile_default_register_30'] = ' Menghantar semula permintaan';
+$lang['lang_plugin_cashier_template_mobile_default_register_31'] = ' Saya telah membaca';
+?>

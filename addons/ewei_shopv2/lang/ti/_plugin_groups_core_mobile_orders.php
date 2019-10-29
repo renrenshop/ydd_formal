@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_groups_core_mobile_orders_0'] = ' สั่งเป็น courier ใช่ ไม่สามารถดูข้อมูลของโลจิสติกส์';
+$lang['lang_plugin_groups_core_mobile_orders_1'] = ' สั่งซื้อจัดส่งไม่ได้ ไม่สามารถดูข้อมูลของโลจิสติกส์';
+$lang['lang_plugin_groups_core_mobile_orders_2'] = ' ไม่พบใบสั่ง';
+$lang['lang_plugin_groups_core_mobile_orders_3'] = ' ไม่สามารถยกเลิกใบสั่ง';
+$lang['lang_plugin_groups_core_mobile_orders_4'] = ' ไม่พบใบสั่ง';
+$lang['lang_plugin_groups_core_mobile_orders_5'] = ' ไม่สามารถลบ';
+$lang['lang_plugin_groups_core_mobile_orders_6'] = ' ยกเลิก';
+$lang['lang_plugin_groups_core_mobile_orders_7'] = ' การชำระเงินที่ค้างอยู่';
+$lang['lang_plugin_groups_core_mobile_orders_8'] = ' รอจัดส่ง';
+$lang['lang_plugin_groups_core_mobile_orders_9'] = ' จ่าย';
+$lang['lang_plugin_groups_core_mobile_orders_10'] = ' รอจัดส่ง';
+$lang['lang_plugin_groups_core_mobile_orders_11'] = ' เสร็จสมบูรณ์';
+$lang['lang_plugin_groups_core_mobile_orders_12'] = ' คุณเลือกสินค้าที่ได้รับชั้น กรุณาเรียกดูผลิตภัณฑ์อื่น ๆ หรือติดต่อธุรกิจ ';
+$lang['lang_plugin_groups_core_mobile_orders_13'] = ' ถ้าคุณต้องการซื้อผลิตภัณฑ์นี้ คุณต้องสนใจหมายเลขสาธารณะของเรา คลิก "ตกลง" แล้ว ซื้อมัน';
+$lang['lang_plugin_groups_core_mobile_orders_14'] = ' คุณมาถึงขีดจำกัดการซื้อสำหรับสินค้านี้ โปรดเรียกดูสินค้าอื่น ๆ หรือติดต่อผู้ค้า ';
+$lang['lang_plugin_groups_core_mobile_orders_15'] = ' การสั่งซื้อมีอยู่แล้ว กรุณาทำการชำระเงินโดยเร็วที่สุด ';
+$lang['lang_plugin_groups_core_mobile_orders_16'] = ' ที่คุณได้เข้าร่วมในกองทหาร กรุณารอสักครู่จนสะกดซื้อ ';
+$lang['lang_plugin_groups_core_mobile_orders_17'] = ' กลุ่มได้ถึงขีดจำกัดการ กรุณาเรียกดูสินค้าอื่น ๆ หรือติดต่อธุรกิจ ';
+$lang['lang_plugin_groups_core_mobile_orders_18'] = ' กิจกรรมนี้ได้หมดอายุแล้ว กรุณาเรียกดูสินค้าอื่น ๆ หรือติดต่อผู้ค้า ';
+$lang['lang_plugin_groups_core_mobile_orders_19'] = ' กิจกรรมนี้ได้สิ้นสุดลง กรุณาเรียกดูสินค้าอื่น ๆ หรือติดต่อผู้ค้า ';
+$lang['lang_plugin_groups_core_mobile_orders_20'] = ' กิจกรรมนี้ได้รับเรียบร้อยแล้วกรุณาจัด เรียกดูสินค้าหรือติดต่อธุรกิจอื่น ๆ ';
+$lang['lang_plugin_groups_core_mobile_orders_21'] = ' โทรศัพท์ติดต่อหรือติดต่อไม่ว่างเปล่า ';
+$lang['lang_plugin_groups_core_mobile_orders_22'] = ' ที่อยู่ไม่พบ';
+$lang['lang_plugin_groups_core_mobile_orders_23'] = ' ที่อยู่โปรดเลือกข้อมูลจังหวัด';
+$lang['lang_plugin_groups_core_mobile_orders_24'] = ' ไม่สามารถสร้างใบสั่ง ';
+$lang['lang_plugin_groups_core_mobile_orders_25'] = ' ไม่พบใบสั่ง';
+$lang['lang_plugin_groups_core_mobile_orders_26'] = ' สั่งซื้อไม่สามารถยืนยันการรับ';
+?>

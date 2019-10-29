@@ -1,0 +1,6 @@
+[2019-10-22 11:13:23] info  /app/index.php?i=4&c=entry&m=ewei_shopv2&do=mobile&r=account.verifycode mobile=0129189338; imgcode=0; temp=sms_reg; 
+mobile=0060129189338; code=66713; time=2019-10-22 11:13:23; 
+[2019-10-22 11:22:14] info  /app/index.php?i=4&c=entry&m=ewei_shopv2&do=mobile&r=account.verifycode mobile=0129189338; imgcode=0; temp=sms_reg; 
+mobile=0060129189338; code=42442; time=2019-10-22 11:22:14; 
+[2019-10-22 11:25:36] info  /app/index.php?i=4&c=entry&m=ewei_shopv2&do=mobile&r=account.verifycode mobile=129189338; imgcode=0; temp=sms_reg; 
+mobile=0060129189338; code=24482; time=2019-10-22 11:25:36; 

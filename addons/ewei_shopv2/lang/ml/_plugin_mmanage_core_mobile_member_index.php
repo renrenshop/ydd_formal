@@ -1,0 +1,30 @@
+<?php
+$lang['lang_plugin_mmanage_core_mobile_member_index_0'] = ' awda tidak mempunyai kebenaran untuk beroperasi';
+$lang['lang_plugin_mmanage_core_mobile_member_index_1'] = ' Ahli-ahli biasa';
+$lang['lang_plugin_mmanage_core_mobile_member_index_2'] = ' tidak dikumpulkan';
+$lang['lang_plugin_mmanage_core_mobile_member_index_3'] = ' awda tidak mempunyai kebenaran untuk beroperasi';
+$lang['lang_plugin_mmanage_core_mobile_member_index_4'] = ' ahli yang tidak hadir';
+$lang['lang_plugin_mmanage_core_mobile_member_index_5'] = ' ahli yang tidak hadir';
+$lang['lang_plugin_mmanage_core_mobile_member_index_6'] = ' Sila isi nombor telefon sebelum membuka pengikat.';
+$lang['lang_plugin_mmanage_core_mobile_member_index_7'] = ' Nombor telefon ini terikat kepada pengguna lain';
+$lang['lang_plugin_mmanage_core_mobile_member_index_8'] = ' Setkan kata laluan untuk pengguna sebelum membuka pengikat';
+$lang['lang_plugin_mmanage_core_mobile_member_index_9'] = ' Audit Reseller';
+$lang['lang_plugin_mmanage_core_mobile_member_index_10'] = ' Maklumat wakil jualan';
+$lang['lang_plugin_mmanage_core_mobile_member_index_11'] = ' Reseller ubah suai';
+$lang['lang_plugin_mmanage_core_mobile_member_index_12'] = ' Maklumat wakil jualan';
+$lang['lang_plugin_mmanage_core_mobile_member_index_13'] = ' Ubahsuai maklumat keahlian';
+$lang['lang_plugin_mmanage_core_mobile_member_index_14'] = ' Maklumat keahlian';
+$lang['lang_plugin_mmanage_core_mobile_member_index_15'] = ' Sebarang urus niaga dibuat';
+$lang['lang_plugin_mmanage_core_mobile_member_index_16'] = ' Paras normal';
+$lang['lang_plugin_mmanage_core_mobile_member_index_17'] = ' Ahli-ahli biasa';
+$lang['lang_plugin_mmanage_core_mobile_member_index_18'] = ' tidak dikumpulkan';
+$lang['lang_plugin_mmanage_core_mobile_member_index_19'] = ' Pengesetan sistem';
+$lang['lang_plugin_mmanage_core_mobile_member_index_20'] = ' Tentera dilarang';
+$lang['lang_plugin_mmanage_core_mobile_member_index_21'] = ' Memaksa terbuka';
+$lang['lang_plugin_mmanage_core_mobile_member_index_22'] = ' Menyediakan senarai hitam';
+$lang['lang_plugin_mmanage_core_mobile_member_index_23'] = ' Maklumat pengguna';
+$lang['lang_plugin_mmanage_core_mobile_member_index_24'] = ' senarai hitam';
+$lang['lang_plugin_mmanage_core_mobile_member_index_25'] = ' Maklumat pengguna';
+$lang['lang_plugin_mmanage_core_mobile_member_index_26'] = ' Menghapuskan ahli';
+$lang['lang_plugin_mmanage_core_mobile_member_index_27'] = ' Maklumat keahlian';
+?>

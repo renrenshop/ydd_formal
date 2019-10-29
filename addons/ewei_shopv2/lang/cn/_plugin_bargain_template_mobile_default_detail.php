@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_bargain_template_mobile_default_detail_0'] = '砍价商品详情';
+$lang['lang_plugin_bargain_template_mobile_default_detail_1'] = '未开始';
+$lang['lang_plugin_bargain_template_mobile_default_detail_2'] = '已结束';
+$lang['lang_plugin_bargain_template_mobile_default_detail_3'] = '剩余';
+$lang['lang_plugin_bargain_template_mobile_default_detail_4'] = '天';
+$lang['lang_plugin_bargain_template_mobile_default_detail_5'] = '小时';
+$lang['lang_plugin_bargain_template_mobile_default_detail_6'] = '分';
+$lang['lang_plugin_bargain_template_mobile_default_detail_7'] = '秒';
+$lang['lang_plugin_bargain_template_mobile_default_detail_8'] = '砍价商品详情';
+$lang['lang_plugin_bargain_template_mobile_default_detail_9'] = '底价：';
+$lang['lang_plugin_bargain_template_mobile_default_detail_10'] = '原价：';
+$lang['lang_plugin_bargain_template_mobile_default_detail_11'] = '原价：';
+$lang['lang_plugin_bargain_template_mobile_default_detail_12'] = '人参与';
+$lang['lang_plugin_bargain_template_mobile_default_detail_13'] = '规则';
+$lang['lang_plugin_bargain_template_mobile_default_detail_14'] = '砍价流程';
+$lang['lang_plugin_bargain_template_mobile_default_detail_15'] = '选择心仪商品';
+$lang['lang_plugin_bargain_template_mobile_default_detail_16'] = '邀请好友砍价';
+$lang['lang_plugin_bargain_template_mobile_default_detail_17'] = '砍到最低价后支付';
+$lang['lang_plugin_bargain_template_mobile_default_detail_18'] = '图文详情';
+$lang['lang_plugin_bargain_template_mobile_default_detail_19'] = '首页';
+$lang['lang_plugin_bargain_template_mobile_default_detail_20'] = '原价购买';
+$lang['lang_plugin_bargain_template_mobile_default_detail_21'] = '您已经发起过一次本商品的砍价活动';
+$lang['lang_plugin_bargain_template_mobile_default_detail_22'] = '是否立即查看？';
+$lang['lang_plugin_bargain_template_mobile_default_detail_23'] = '砍价提示';
+$lang['lang_plugin_bargain_template_mobile_default_detail_24'] = '立即砍价';
+$lang['lang_plugin_bargain_template_mobile_default_detail_25'] = '尚未开始';
+$lang['lang_plugin_bargain_template_mobile_default_detail_26'] = '已经结束';
+$lang['lang_plugin_bargain_template_mobile_default_detail_27'] = '库存不足';
+$lang['lang_plugin_bargain_template_mobile_default_detail_28'] = '我的';
+?>

@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_groups_template_mobile_default_orders_index_0'] = ' สั่งซื้อของฉัน';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_1'] = ' ทั้งหมด';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_2'] = ' การชำระเงินที่ค้างอยู่';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_3'] = ' รอจัดส่ง';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_4'] = ' รอจัดส่ง';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_5'] = ' เสร็จสมบูรณ์';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_6'] = ' โหลดใบสั่ง';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_7'] = ' ไม่มีใบสั่งชั่วคราว';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_8'] = ' หมายเลขใบสั่ง';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_9'] = 'ต้น';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_10'] = ' ชิ้น';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_11'] = ' ค่าขนส่ง';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_12'] = 'ต้น';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_13'] = ' หยวน';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_14'] = ' รวม';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_15'] = ' รายการ';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_16'] = ' รวม';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_17'] = 'ต้น';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_18'] = ' หยวน';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_19'] = ' ยกเลิกใบสั่ง';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_20'] = ' ไม่ยกเลิก';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_21'] = ' ไม่อยากซื้อมัน';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_22'] = ' ไม่อยากซื้อมัน';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_23'] = ' ข้อมูลที่กรอกผิดพลาด ตบเบา ๆ อีกครั้ง';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_24'] = ' ข้อมูลที่กรอกผิดพลาด ตบเบา ๆ อีกครั้ง';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_25'] = ' ประชุมกับเมือง';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_26'] = ' ประชุมกับเมือง';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_27'] = ' เหตุผลอื่น ๆ';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_28'] = ' เหตุผลอื่น ๆ';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_29'] = ' การชำระเงิน';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_30'] = ' ลบใบสั่ง';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_31'] = ' ยืนยันการรับ';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_32'] = ' ต้องการใช้';
+?>

@@ -1,0 +1,116 @@
+{template '_header'}
+
+<div class='fui-page  fui-page-current'>
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back"></a>
+        </div>
+        <div class="title">{$_W['shopset']['trade']['moneytext']}{php echo $lang['lang_template_mobile_member_withdraw_0']}</div>
+        <div class="fui-header-right">&nbsp;</div>
+    </div>
+    <div class='fui-content navbar' >
+        <div class='fui-cell-group fui-cell-group-o'>
+
+            <div class='fui-cell-title'>
+                <div class='fui-cell-info' style='color:#999'>{php echo $lang['lang_template_mobile_member_withdraw_1']}: {php echo $lang['lang_template_mobile_member_withdraw_2']}<span id='current'>{php echo number_format($credit,2)}</span> <a id='btn-all' class='text-primary external' href='#'>{php echo $lang['lang_template_mobile_member_withdraw_3']}</a></div>
+            </div>
+
+
+            <div class='fui-cell-title'>{php echo $lang['lang_template_mobile_member_withdraw_4']}
+                {if floatval($set['withdrawmoney'])>0}
+                <small>{php echo $lang['lang_template_mobile_member_withdraw_5']}: <span class='text-danger'>{php echo $lang['lang_template_mobile_member_withdraw_6']}{php echo number_format($set['withdrawmoney'],2)}</span></small>
+                {/if}
+            </div>
+            <div class='fui-cell'>
+                <div class='fui-cell-label big' style='width:auto;'>{php echo $lang['lang_template_mobile_member_withdraw_7']}</div>
+                <div class='fui-cell-info'><input type='number' class='fui-input' id='money' style='font-size:1.2rem;' ></div>
+            </div>
+
+            <div class="fui-cell">
+                <div class="fui-cell-label" style="width: 120px;"><span class="re-g">{php echo $lang['lang_template_mobile_member_withdraw_8']}</span></div>
+                <div class="fui-cell-info">
+
+                    <select id="applytype">
+                        {loop $type_array $key $value}
+                        <option value="{$key}" {if !empty($value['checked'])}selected{/if}>{$value['title']}</option>
+                        {/loop}
+                    </select>
+                </div>
+                <div class="fui-cell-remark"></div>
+            </div>
+
+            {if !empty($type_array[2]) || !empty($type_array[3])}
+            <div class="fui-cell ab-group" {if empty($type_array[2]['checked']) || empty($type_array[3]['checked']) }style="display: none;"{/if}>
+                <div class="fui-cell-label" style="width: 120px;">{php echo $lang['lang_template_mobile_member_withdraw_9']}</div>
+                <div class="fui-cell-info"><input type="text" id="realname" name="realname" class='fui-input' value="{$last_data['realname']}" max="25"/></div>
+            </div>
+            {/if}
+
+            {if !empty($type_array[2])}
+            <div class="fui-cell alipay-group" {if empty($type_array[2]['checked'])}style="display: none;"{/if}>
+                <div class="fui-cell-label" style="width: 120px;">{php echo $lang['lang_template_mobile_member_withdraw_10']}</div>
+                <div class="fui-cell-info"><input type="text" id="alipay" name="alipay" class='fui-input' value="{$last_data['alipay']}" max="25"/></div>
+                </div>
+
+                    <div class="fui-cell alipay-group" {if empty($type_array[2]['checked'])}style="display: none;"{/if}>
+                    <div class="fui-cell-label" style="width: 120px;">{php echo $lang['lang_template_mobile_member_withdraw_11']}</div>
+                    <div class="fui-cell-info"><input type="text" id="alipay1" name="alipay1" class='fui-input' value="{$last_data['alipay']}" max="25"/></div>
+                </div>
+            {/if}
+
+            {if !empty($type_array[3])}
+                <div class="fui-cell bank-group" {if empty($type_array[3]['checked'])}style="display: none;"{/if}>
+                    <div class="fui-cell-label" style="width: 120px;"><span class="re-g">{php echo $lang['lang_template_mobile_member_withdraw_12']}</span></div>
+                    <div class="fui-cell-info">
+
+                        <select id="bankname">
+                            {loop $banklist $key $value}
+                            <option value="{$bankname}" {if !empty($last_data) && $last_data['bankname'] == $value['bankname']}selected{/if}>{$value['bankname']}</option>
+                            {/loop}
+                        </select>
+                    </div>
+                    <div class="fui-cell-remark"></div>
+                </div>
+
+                <div class="fui-cell bank-group" {if empty($type_array[3]['checked'])}style="display: none;"{/if}>
+                <div class="fui-cell-label" style="width: 120px;">{php echo $lang['lang_template_mobile_member_withdraw_13']}</div>
+                <div class="fui-cell-info"><input type="text" id="bankcard" name="bankcard" class='fui-input' value="{$last_data['bankcard']}" max="25"/></div>
+                </div>
+
+                <div class="fui-cell bank-group" {if empty($type_array[3]['checked'])}style="display: none;"{/if}>
+                    <div class="fui-cell-label" style="width: 120px;">{php echo $lang['lang_template_mobile_member_withdraw_14']}</div>
+                    <div class="fui-cell-info"><input type="text" id="bankcard1" name="bankcard1`" class='fui-input' value="{$last_data['bankcard']}" max="25"/></div>
+                </div>
+            {/if}
+
+            {if !empty($withdrawcharge)}
+            <div class='fui-cell-title'>{php echo $lang['lang_template_mobile_member_withdraw_15']} {$withdrawcharge}%</div>
+            {/if}
+
+            {if !empty($withdrawend)}
+            <div class='fui-cell-title'>{php echo $lang['lang_template_mobile_member_withdraw_16']}{$withdrawbegin}{php echo $lang['lang_template_mobile_member_withdraw_17']}{$withdrawend}{php echo $lang['lang_template_mobile_member_withdraw_18']}</div>
+            {/if}
+
+            <div class='fui-cell-title charge-group' style="display: none;">{php echo $lang['lang_template_mobile_member_withdraw_19']} {php echo $lang['lang_template_mobile_member_withdraw_20']}<span class='text-danger' id='deductionmoney'></span>
+            </div>
+
+            <div class='fui-cell-title charge-group' style="display: none;">{php echo $lang['lang_template_mobile_member_withdraw_21']} {php echo $lang['lang_template_mobile_member_withdraw_22']}<span class='text-danger' id='realmoney'></span>
+            </div>
+        </div>
+
+        <a id='btn-next' class='btn btn-success block disabled '>{php echo $lang['lang_template_mobile_member_withdraw_23']}</a>
+
+    </div>
+    <script language='javascript'>
+        require(['biz/member/withdraw'], function (modal) {
+            modal.init({
+                withdrawcharge:{php echo floatval($withdrawcharge)},
+                withdrawbegin:{php echo floatval($withdrawbegin)},
+                withdrawend:{php echo floatval($withdrawend)},
+                min:{php echo floatval($set['withdrawmoney'])},
+                max:{php echo floatval($credit)},
+            });
+        });
+    </script>
+</div>
+{template '_footer'}

@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_groups_core_mobile_pay_0'] = ' Lệnh không được tìm thấy! ';
+$lang['lang_plugin_groups_core_mobile_pay_1'] = ' Hoạt động này đã hết hạn, xin vui lòng duyệt kinh doanh hàng hóa hoặc tiếp xúc khác! ';
+$lang['lang_plugin_groups_core_mobile_pay_2'] = ' Xuống kệ';
+$lang['lang_plugin_groups_core_mobile_pay_3'] = ' Không đủ hàng tồn kho';
+$lang['lang_plugin_groups_core_mobile_pay_4'] = ' Hoạt động này đã hết hạn, xin vui lòng duyệt qua hàng hóa khác hoặc liên hệ với các thương gia! ';
+$lang['lang_plugin_groups_core_mobile_pay_5'] = ' Hoạt động này đã kết thúc, xin vui lòng duyệt qua hàng hóa khác hoặc liên hệ với các thương gia! ';
+$lang['lang_plugin_groups_core_mobile_pay_6'] = ' Hoạt động này đã thành công tổ chức, xin vui lòng duyệt kinh doanh hàng hóa hoặc tiếp xúc khác! ';
+$lang['lang_plugin_groups_core_mobile_pay_7'] = ' đơn đặt hàng';
+$lang['lang_plugin_groups_core_mobile_pay_8'] = ' tham số lỗi';
+$lang['lang_plugin_groups_core_mobile_pay_9'] = ' tham số lỗi';
+$lang['lang_plugin_groups_core_mobile_pay_10'] = ' đặt hàng không tồn tại';
+$lang['lang_plugin_groups_core_mobile_pay_11'] = ' tham số lỗi';
+$lang['lang_plugin_groups_core_mobile_pay_12'] = ' sản phẩm không tồn tại';
+$lang['lang_plugin_groups_core_mobile_pay_13'] = ' sản phẩm không tồn tại';
+$lang['lang_plugin_groups_core_mobile_pay_14'] = ' Không thanh toán được tìm thấy';
+$lang['lang_plugin_groups_core_mobile_pay_15'] = ' Không thanh toán được tìm thấy';
+$lang['lang_plugin_groups_core_mobile_pay_16'] = ' Thanh toán lỗi';
+$lang['lang_plugin_groups_core_mobile_pay_17'] = ' Thử lại';
+$lang['lang_plugin_groups_core_mobile_pay_18'] = ' Thanh toán lỗi';
+$lang['lang_plugin_groups_core_mobile_pay_19'] = ' Thử lại';
+$lang['lang_plugin_groups_core_mobile_pay_20'] = ' Không đủ số dư';
+$lang['lang_plugin_groups_core_mobile_pay_21'] = ' Nạp tiền';
+$lang['lang_plugin_groups_core_mobile_pay_22'] = ' tiêu thụ';
+$lang['lang_plugin_groups_core_mobile_pay_23'] = ' Thanh toán lỗi';
+$lang['lang_plugin_groups_core_mobile_pay_24'] = ' Thử lại';
+$lang['lang_plugin_groups_core_mobile_pay_25'] = ' Thanh toán lỗi';
+$lang['lang_plugin_groups_core_mobile_pay_26'] = ' Thử lại';
+?>

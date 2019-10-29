@@ -1,0 +1,194 @@
+{template '_header'}
+{if !empty($taskinfo)}
+<script>document.title = "{$taskinfo['title']}"; </script>
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/task/static/style/common.css" />
+
+<div class='fui-page  fui-page-current task-detail-page' id="taskinfo">
+
+    <div class="fui-content">
+        <div class="detail-head">
+            {if !empty($taskinfo['poster_banner']) }
+            <img src="{$taskinfo['poster_banner']}" />
+            {else}
+            <img src="../addons/ewei_shopv2/plugin/task/static/images/detail-head.jpg" />
+            {/if}
+            <div class="signal-detail-main">
+                <div class="detail-sub red">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_0']}</div>
+                <div class="signal-detail-title"><i class="icon icon-form"></i> {$taskinfo['title']}</div>
+                <div class="signal-detail-text">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_1']}{$taskinfo['needcount']}{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_2']}</div>
+            </div>
+        </div>
+
+        <div class="detail-list-title"><i class="icon icon-recharge"></i> {php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_3']}</div>
+        <div class="detail-list signal">
+            {php $count=1;}
+            {if $taskinfo['reward_data']['rec']['credit']>0}
+            <div class="list-item">
+                <div class="inner">
+                    <div class="reward-info"><i class="icon icon-jifen"></i> {php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_4']} <span class="big">{$taskinfo['reward_data']['rec']['credit']} <small>({php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_5']})</small></span></div>
+                </div>
+                <div class="status orange">
+                    <div class="text">
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_6']}</p>
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_7']}</p>
+                        <p>{$count}</p>
+                    </div>
+                </div>
+            </div>
+            {php $count++;}
+            {/if}
+            {if $taskinfo['reward_data']['rec']['money']['num']>0}
+            <div class="list-item">
+                <div class="inner">
+                    <div class="reward-info"><i class="icon icon-recharge"></i> {php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_8']} <span class="big">{$taskinfo['reward_data']['rec']['money']['num']} <small>({php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_9']})</small></span></div>
+                </div>
+                <div class="status orange">
+                    <div class="text">
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_10']}</p>
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_11']}</p>
+                        <p>{$count}</p>
+                    </div>
+                </div>
+            </div>
+            {php $count++;}
+            {/if}
+
+            {if $taskinfo['reward_data']['rec']['bribery']>0}
+            <div class="list-item">
+                <div class="inner">
+                    <div class="reward-info"><i class="icon icon-pay"></i> {php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_12']} <span class="big">{$taskinfo['reward_data']['rec']['bribery']} <small>({php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_13']})</small></span></div>
+                </div>
+                <div class="status orange">
+                    <div class="text">
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_14']}</p>
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_15']}</p>
+                        <p>{$count}</p>
+                    </div>
+                </div>
+            </div>
+            {php $count++;}
+            {/if}
+
+            {if $taskinfo['reward_data']['rec']['coupon']['total']>0}
+            <div class="list-item">
+                <div class="inner">
+                    <div class="reward-info"><i class="icon icon-goods"></i> {php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_16']} <span class="big">{$taskinfo['reward_data']['rec']['coupon']['total']}{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_17']}</span></div>
+                </div>
+                <div class="status orange">
+                    <div class="text">
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_18']}</p>
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_19']}</p>
+                        <p>{$count}</p>
+                    </div>
+                </div>
+            </div>
+            {php $count++;}
+            {/if}
+
+            {if count($taskinfo['reward_data']['rec']['goods'])>0}
+            <div class="list-item">
+                <div class="inner">
+                    <div class="reward-info"><i class="icon icon-goods"></i> {php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_20']} <span class="big">{php echo count($taskinfo['reward_data']['rec']['goods']);}{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_21']}</span></div>
+                </div>
+                <div class="status orange">
+                    <div class="text">
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_22']}</p>
+                        <p>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_23']}</p>
+                        <p>{$count}</p>
+                    </div>
+                </div>
+            </div>
+            {php $count++;}
+            {/if}
+        </div>
+        <div class="detail-list-title"><i class="icon icon-information"></i> {$res['taskinfotitle']}</div>
+
+        <div class="detail-text">{if !empty($res['taskinfo'])}{php $ranktaskinfo = unserialize($res['taskinfo']); echo htmlspecialchars_decode($ranktaskinfo);}{else}{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_24']}{/if}</div>
+
+    </div>
+
+    <div class="fui-footer task-detail-btns">
+
+        <div class="btn full gettask" data-value="{$taskinfo['keyword']}" data-title="{$taskinfo['title']}">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_25']}</div>
+        <div class="btn" onclick="history.back(-1);">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_26']}</div>
+    </div>
+
+</div>
+
+
+<div id="model" style="display: none;">
+<div class="task-model">
+    <div class="task-model-content" ><h4 id="model-title">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_27']}!{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_28']}**{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_29']}!!</h4><p>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_30']}</p></div>
+    <div class="task-model-footer task-btn-close">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_31']}</div>
+</div>
+</div>
+<div id="failmodel" style="display: none;">
+    <div class="task-model">
+        <div class="task-model-faile-content" ><h4>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_32']}!{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_33']}!!</h4><p>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_34']}</p></div>
+        <div class="task-model-footer task-btn-close">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_35']}</div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.gettask').click(function () {
+
+        var is_get = {$is_get};
+        if(is_get==1){
+            var keyword = $(this).data('value');
+            var title = $(this).data('title');
+            $.get("{php echo mobileUrl('task/index/gettask',array(),true);}&content="+keyword,function (data) {
+                if(data.status){
+                    //{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_36']}
+                    $('#model-title').html('{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_37']}!{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_38']}'+title+'{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_39']}!!');
+                    taskget = new FoxUIModal({
+                        content: $('#model').html(),
+                        extraClass: 'picker-modal',
+                        maskClick: function () {
+                            taskget.close();
+                        }
+                    });
+                    taskget.container.find('.task-btn-close').click(function () {
+                        taskget.close();
+                    });
+                    taskget.show();
+                }else{
+                    //{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_40']}model-fail-title
+                    taskget = new FoxUIModal({
+                        content: $('#failmodel').html(),
+                        extraClass: 'picker-modal',
+                        maskClick: function () {
+                            taskget.close()
+                        }
+                    });
+                    taskget.container.find('.task-btn-close').click(function () {
+                        taskget.close()
+                    });
+                    taskget.show();
+                }
+            },'json');
+        }else{
+            //{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_41']}
+            taskget = new FoxUIModal({
+                content: $('#failmodel').html(),
+                extraClass: 'picker-modal',
+                maskClick: function () {
+                    taskget.close()
+                }
+            });
+            taskget.container.find('.task-btn-close').click(function () {
+                taskget.close()
+            });
+            taskget.show();
+        }
+    });
+
+</script>
+{else}
+<script>document.title = '{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_42']}'; </script>
+<div class='fui-page  fui-page-current'>
+    <div class="fui-content ">
+        <h3 class="text-center">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo_43']}</h3>
+    </div>
+</div>
+{/if}
+
+{template '_footer'}

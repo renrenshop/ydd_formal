@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_groups_core_mobile_orders_0'] = 'आदेशएक्सप्रेसनहीं, रसदजानकारीदेखनेमेंअसमर्थ';
+$lang['lang_plugin_groups_core_mobile_orders_1'] = 'आदेशनहींभेजदिया, रसदजानकारीदेखनेमेंअसमर्थ';
+$lang['lang_plugin_groups_core_mobile_orders_2'] = 'आदेशनहींमिला';
+$lang['lang_plugin_groups_core_mobile_orders_3'] = 'ऑर्डररद्दनहींकियाजासकता';
+$lang['lang_plugin_groups_core_mobile_orders_4'] = 'आदेशनहींमिला';
+$lang['lang_plugin_groups_core_mobile_orders_5'] = 'हटानहींसकता';
+$lang['lang_plugin_groups_core_mobile_orders_6'] = 'रद्दकियागया';
+$lang['lang_plugin_groups_core_mobile_orders_7'] = 'भुगतानलंबित';
+$lang['lang_plugin_groups_core_mobile_orders_8'] = 'भेजदियाजाए';
+$lang['lang_plugin_groups_core_mobile_orders_9'] = 'भुगतानकिया';
+$lang['lang_plugin_groups_core_mobile_orders_10'] = 'लंबितवितरण';
+$lang['lang_plugin_groups_core_mobile_orders_11'] = 'पूर्ण';
+$lang['lang_plugin_groups_core_mobile_orders_12'] = 'आपउत्पादअलमारियोंगयाहैचुनाहै, अन्यउत्पादोंयासंपर्कव्यापारब्राउज़करें! ';
+$lang['lang_plugin_groups_core_mobile_orders_13'] = 'यदिआपइसआइटमकोखरीदनेकेलिएचाहतेहैं, तोआपहमारेसार्वजनिकसंख्यापरध्यानदेनेकीजरूरतहैऔरइसेफिरसेखरीदनेकेलिए "ठीक" परक्लिककरें।';
+$lang['lang_plugin_groups_core_mobile_orders_14'] = 'आपइसमदकेलिएखरीदसीमातकपहुंचचुकेहैं, अन्यमालब्राउज़करेंयाव्यापारीसेसंपर्ककरें! ';
+$lang['lang_plugin_groups_core_mobile_orders_15'] = 'अपनेआदेशपहलेसेहीमौजूदहै, जितनीजल्दीहोसकेभुगतानपूराकरें! ';
+$lang['lang_plugin_groups_core_mobile_orders_16'] = 'आपरेजिमेंटमेंभागलियाहै, तोकृपयाखरीदकेलिएजादूकेअंततकइंतजार! ';
+$lang['lang_plugin_groups_core_mobile_orders_17'] = 'समूहएकऊपरीसीमातकपहुंचगयाहै, अंयवस्तुओंयासंपर्कव्यापारब्राउज़करें! ';
+$lang['lang_plugin_groups_core_mobile_orders_18'] = 'इसगतिविधिकीअवधिसमाप्तहोगईहै, कृपयाअन्यमालब्राउज़याव्यापारीसेसंपर्ककरें! ';
+$lang['lang_plugin_groups_core_mobile_orders_19'] = 'यहगतिविधिसमाप्तहोगयाहै, अन्यमालब्राउज़करेंयाव्यापारीसेसंपर्ककरें! ';
+$lang['lang_plugin_groups_core_mobile_orders_20'] = 'इसगतिविधिकोसफलतापूर्वकआयोजितकियागयाहै, अंयमालयासंपर्कव्यापारब्राउज़करें! ';
+$lang['lang_plugin_groups_core_mobile_orders_21'] = 'संपर्कयासंपर्कफोनखालीनहींहोसकता! ';
+$lang['lang_plugin_groups_core_mobile_orders_22'] = 'कोईपतानहींमिला';
+$lang['lang_plugin_groups_core_mobile_orders_23'] = 'पताप्रांतीयजानकारीकाचयनकरें';
+$lang['lang_plugin_groups_core_mobile_orders_24'] = 'ऑर्डरजनरेटकरनेमेंविफलरहा! ';
+$lang['lang_plugin_groups_core_mobile_orders_25'] = 'आदेशनहींमिला';
+$lang['lang_plugin_groups_core_mobile_orders_26'] = 'आदेशप्राप्तिकीपुष्टिनहींकरसकता';
+?>

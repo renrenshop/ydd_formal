@@ -1,0 +1,33 @@
+<?php
+$lang['lang_plugin_sign_core_mobile_index_0'] = '열지';
+$lang['lang_plugin_sign_core_mobile_index_1'] = '사용자정보를가져오는데실패';
+$lang['lang_plugin_sign_core_mobile_index_2'] = '잘못된요청';
+$lang['lang_plugin_sign_core_mobile_index_3'] = '열지';
+$lang['lang_plugin_sign_core_mobile_index_4'] = '달보다는더적은현재달';
+$lang['lang_plugin_sign_core_mobile_index_5'] = '이미';
+$lang['lang_plugin_sign_core_mobile_index_6'] = '반복되지않습니다,';
+$lang['lang_plugin_sign_core_mobile_index_7'] = '오오';
+$lang['lang_plugin_sign_core_mobile_index_8'] = '날짜는현재날짜보다큰';
+$lang['lang_plugin_sign_core_mobile_index_9'] = '매일';
+$lang['lang_plugin_sign_core_mobile_index_10'] = '첫번째';
+$lang['lang_plugin_sign_core_mobile_index_11'] = '실패';
+$lang['lang_plugin_sign_core_mobile_index_12'] = '당신';
+$lang['lang_plugin_sign_core_mobile_index_13'] = '부족한';
+$lang['lang_plugin_sign_core_mobile_index_14'] = '수없습니다';
+$lang['lang_plugin_sign_core_mobile_index_15'] = '공제';
+$lang['lang_plugin_sign_core_mobile_index_16'] = '실패';
+$lang['lang_plugin_sign_core_mobile_index_17'] = '당신';
+$lang['lang_plugin_sign_core_mobile_index_18'] = '부족한';
+$lang['lang_plugin_sign_core_mobile_index_19'] = '수없습니다';
+$lang['lang_plugin_sign_core_mobile_index_20'] = '공제';
+$lang['lang_plugin_sign_core_mobile_index_21'] = '성공';
+$lang['lang_plugin_sign_core_mobile_index_22'] = '잘못된요청';
+$lang['lang_plugin_sign_core_mobile_index_23'] = '요청매개변수오류';
+$lang['lang_plugin_sign_core_mobile_index_24'] = '열지';
+$lang['lang_plugin_sign_core_mobile_index_25'] = '이상을받은';
+$lang['lang_plugin_sign_core_mobile_index_26'] = '컬렉션을반복하지않습니다';
+$lang['lang_plugin_sign_core_mobile_index_27'] = '연속';
+$lang['lang_plugin_sign_core_mobile_index_28'] = '총';
+$lang['lang_plugin_sign_core_mobile_index_29'] = '일보상받을';
+$lang['lang_plugin_sign_core_mobile_index_30'] = '성공적으로수집';
+?>

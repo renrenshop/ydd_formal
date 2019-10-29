@@ -1,0 +1,37 @@
+<?php
+$lang['lang_plugin_lottery_core_model_0'] = ' 보너스만료되었습니다';
+$lang['lang_plugin_lottery_core_model_1'] = ' 전체소비';
+$lang['lang_plugin_lottery_core_model_2'] = ' 위안';
+$lang['lang_plugin_lottery_core_model_3'] = ' 선물';
+$lang['lang_plugin_lottery_core_model_4'] = ' 시간';
+$lang['lang_plugin_lottery_core_model_5'] = ' 체크- 전체기능';
+$lang['lang_plugin_lottery_core_model_6'] = ' 일';
+$lang['lang_plugin_lottery_core_model_7'] = ' 선물';
+$lang['lang_plugin_lottery_core_model_8'] = ' 시간';
+$lang['lang_plugin_lottery_core_model_9'] = ' 포스터작업완료';
+$lang['lang_plugin_lottery_core_model_10'] = ' 선물';
+$lang['lang_plugin_lottery_core_model_11'] = ' 시간';
+$lang['lang_plugin_lottery_core_model_12'] = ' 포스터작업완료';
+$lang['lang_plugin_lottery_core_model_13'] = ' 선물';
+$lang['lang_plugin_lottery_core_model_14'] = ' 시간';
+$lang['lang_plugin_lottery_core_model_15'] = ' 활동이름';
+$lang['lang_plugin_lottery_core_model_16'] = ' 그리기를클릭하십시오';
+$lang['lang_plugin_lottery_core_model_17'] = ' 당신의행운에축하그릴기회';
+$lang['lang_plugin_lottery_core_model_18'] = ' 당신의행운에축하그릴기회';
+$lang['lang_plugin_lottery_core_model_19'] = ' 추첨기회를얻을';
+$lang['lang_plugin_lottery_core_model_20'] = ' 를그릴기회에축하! ';
+$lang['lang_plugin_lottery_core_model_21'] = ' 권장청소코드관심포인트';
+$lang['lang_plugin_lottery_core_model_22'] = ' 작업활동추천시상식';
+$lang['lang_plugin_lottery_core_model_23'] = ' 보상을권장';
+$lang['lang_plugin_lottery_core_model_24'] = ' 보상을권장';
+$lang['lang_plugin_lottery_core_model_25'] = ' 보상을권장';
+$lang['lang_plugin_lottery_core_model_26'] = ' 포인트';
+$lang['lang_plugin_lottery_core_model_27'] = ' 보너스';
+$lang['lang_plugin_lottery_core_model_28'] = ' 위안';
+$lang['lang_plugin_lottery_core_model_29'] = ' 빨간봉투';
+$lang['lang_plugin_lottery_core_model_30'] = ' 위안';
+$lang['lang_plugin_lottery_core_model_31'] = ' 특가상품';
+$lang['lang_plugin_lottery_core_model_32'] = ' 는';
+$lang['lang_plugin_lottery_core_model_33'] = ' 쿠폰';
+$lang['lang_plugin_lottery_core_model_34'] = ' 시트';
+?>

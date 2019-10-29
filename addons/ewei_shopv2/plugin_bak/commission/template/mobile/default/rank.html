@@ -1,0 +1,71 @@
+{template '_header'}
+<link rel="stylesheet" href="../addons/ewei_shopv2/template/mobile/default/static/css/rank.css">
+<div class="fui-page fui-page-current page-rank orange" style="overflow:auto;">
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back"></a>
+        </div>
+        <div class="title">{$commission_title}{php echo $lang['lang_plugin_commission_template_mobile_default_rank_0']}</div>
+        <div class="fui-header-right">&nbsp;</div>
+    </div>
+    <div class='fui-content navbar'>
+        <div class="rankhead">
+        <div class="head">
+            <div class="child">
+                <!--<span>{$user['seven']}</span>-->
+                <!--<p class="text">{php echo $lang['lang_plugin_commission_template_mobile_default_rank_1']}{$_W['shopset']['trade']['credittext']}</p>-->
+            </div>
+            <div class="child gold">
+                <span>{php echo ($user['paiming']>=$commission_rank['num'] || empty($user['paiming']) ) ? $lang['lang_plugin_commission_template_mobile_default_rank_2'] : $user['paiming']}</span>
+                <p class="text">{php echo $lang['lang_plugin_commission_template_mobile_default_rank_3']}</p>
+            </div>
+            <div class="child">
+                <span>{$user['commission_total']}</span>
+                <p class="text">{$commission_title}</p>
+            </div>
+        </div>
+        <div class="title">{$commission_title}{php echo $lang['lang_plugin_commission_template_mobile_default_rank_4']}{if $commission_rank['type'] == '0'}{php echo $lang['lang_plugin_commission_template_mobile_default_rank_5']}{else}{php echo $lang['lang_plugin_commission_template_mobile_default_rank_6']}{/if}({php echo $lang['lang_plugin_commission_template_mobile_default_rank_7']}{$commission_rank['num']}{php echo $lang['lang_plugin_commission_template_mobile_default_rank_8']})</div>
+    </div>
+<div class="rankline">
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="center"></div>
+</div>
+<div class="ranklist">
+    <div class="main">
+        <div class="line title">
+            <div class="col">{php echo $lang['lang_plugin_commission_template_mobile_default_rank_9']}</div>
+            <div class="col">{php echo $lang['lang_plugin_commission_template_mobile_default_rank_10']}</div>
+            <div class="col">{$commission_title}</div>
+        </div>
+
+        <div id="container" ></div>
+        <a id="btn-more" class="btn btn-danger block">{php echo $lang['lang_plugin_commission_template_mobile_default_rank_11']}</a>
+
+
+
+    </div>
+    {template '_copyright'}
+</div>
+<script id="tpl_list" type="text/html">
+     <%each list as row,index%>
+
+     <div class="line">
+         <div class="col<% if ((page+index)<4) %> icon-<%page+index%><%/if%>"><% if ((page+index)>3) %><%page+index%><%/if%></div>
+         <div class="col">
+             <div class="face"><img src="<%row.avatar%>" /></div>
+             <div class="name"><%row.nickname%></div>
+         </div>
+         <div class="col index-1"><%row.commission_total%></div>
+     </div>
+    <%/each%>
+</script>
+    <script language='javascript'>
+        require(['../addons/ewei_shopv2/plugin/commission/static/js/rank.js'], function (modal) {
+            modal.init();
+        });
+    </script>
+    </div>
+</div>
+{php $this->footerMenus()}
+{template '_footer'}

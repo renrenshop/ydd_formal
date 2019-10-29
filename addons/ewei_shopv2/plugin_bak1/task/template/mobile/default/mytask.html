@@ -1,0 +1,335 @@
+{template '_header'}
+<style type="text/css">
+    .icon {
+        width: 1em; height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+    }
+</style>
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/task/static/style/taskplugin.css?v={php echo time();}">
+<link href="../addons/ewei_shopv2/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+<script src="//at.alicdn.com/t/font_oh9791m92cjfko6r.js"></script>
+
+<div class="fui-page fui-page-current">
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_task_template_mobile_default_mytask_0']}</div>
+        <div class="fui-header-right"></div>
+    </div>
+
+    <div class="fui-content mytask-page">
+        <div class="fui-tab fui-tab-danger">
+            <a href=""></a>
+            <a href="" class="active" onclick="$('a[class=\'active\']').removeClass('active');$(this).addClass('active');$('.zt').hide();$('.ing').show();">{php echo $lang['lang_plugin_task_template_mobile_default_mytask_1']}</a>
+            <a href=""></a>
+            <a href="" onclick="$('a[class=\'active\']').removeClass('active');$(this).addClass('active');$('.zt').hide();$('.com').show();">{php echo $lang['lang_plugin_task_template_mobile_default_mytask_2']}</a>
+            <a href=""></a>
+            <a href="" onclick="$('a[class=\'active\']').removeClass('active');$(this).addClass('active');$('.zt').hide();$('.fail').show();">{php echo $lang['lang_plugin_task_template_mobile_default_mytask_3']}</a>
+            <a href=""></a>
+        </div>
+        <div class="zt ing">
+        {loop $poster[1] $k $v}
+        <div class="my-item" data-id="p{$v['join_id']}" data-status="0">
+            <div class="my-title">
+                <div class="my-logo"><img src="{php echo tomedia($v['logo']);}" alt="" width="100%" height="100%"></div>
+                <div class="my-right">
+                    <div class="my-task-title">{$v['title']}</div>
+                    <div class="blank"></div>
+                    <div class="my-task-time">{php echo date('Y-m-d',$v['pickuptime']);}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_4']}{php echo date('Y-m-d',$v['endtime']);}</div>
+                </div>
+            </div>
+            <div class="my-status">
+                <div class="my-icon">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-time"></use>
+                    </svg>
+                </div>
+                <div class="my-statustext">{php echo $lang['lang_plugin_task_template_mobile_default_mytask_5']}</div>
+                <div class="my-detail">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-unfold"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        {php $thisreward = unserialize($poster[0][0]['require_data']);}
+        <div id="detailp{$v['join_id']}" style="display: none">
+            {loop $thisreward['rec'] $rk $rv}
+            <div class="my-require">
+                <div class="my-require-title">
+                    {php echo $lang['lang_plugin_task_template_mobile_default_mytask_6']}{$v['needcount']}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_7']}
+                </div>
+                <div class="my-reward">
+                    <div class="reward-title">
+                        {if $rk == 'credit'}{$rv}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_8']}
+                        {elseif $rk == 'bribery'}{$rv}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_9']}
+                        {elseif $rk == 'goods'}{php echo count($rv)}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_10']}
+                        {elseif $rk == 'money'}{$rv['num']}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_11']}{/if}
+                    </div>
+                </div>
+            </div>
+            {/loop}
+        </div>
+
+        {/loop}
+        {loop $dolist $k $v}
+        <div class="my-item" data-id="{$v['id']}" data-status="0">
+            <div class="my-title">
+                <div class="my-logo"><img src="{php echo tomedia($v['logo']);}" alt="" width="100%" height="100%"></div>
+                <div class="my-right">
+                    <div class="my-task-title">{$v['title']}</div>
+                    <div class="blank"></div>
+                    <div class="my-task-time">{php echo date('Y-m-d',$v['pickuptime']);}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_12']}{php echo date('Y-m-d',$v['endtime']);}</div>
+                </div>
+            </div>
+            <div class="my-status">
+                <div class="my-icon">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-time"></use>
+                    </svg>
+                </div>
+                <div class="my-statustext">{php echo $lang['lang_plugin_task_template_mobile_default_mytask_13']}</div>
+                <div class="my-detail">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-unfold"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+            <div id="detail{$v['id']}" style="display: none">
+                <div class="my-require">
+                    {php $require = unserialize($v['require_data']);$reward = unserialize($v['reward_data']);}
+                    {loop $require $ek $ev}
+                    <div class="my-require-title">
+                        {php echo $lang['lang_plugin_task_template_mobile_default_mytask_14']}{php echo $this->model->returnName($ek);}{$ev['verb']}{$ev['num']}{$ev['unit']}
+                    </div>
+                    {/loop}
+                    {loop $reward $rk $rv}
+                    {if $rk == 'balance' && $rv>0}
+                    <div class="my-require-title">
+                        {$rv}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_15']}
+                    </div>
+                    {/if}
+                    {if $rk == 'score' && $rv>0}
+                    <div class="my-require-title">
+                        {$rv}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_16']}
+                    </div>
+                    {/if}
+                    {if $rk == 'redpacket' && $rv>0}
+                    <div class="my-require-title">
+                        {$rv}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_17']}
+                    </div>
+                    {/if}
+                    {if $rk == 'goods'}
+                    {loop $rv $k $v}
+                    <div class="my-require-title" style="overflow: hidden;" >
+                        {$v['name']}
+                    </div>
+                    {/loop}
+                    {/if}
+                    {if $rk == 'coupon'}
+                    <div class="my-require-title">
+                        {$rv['num']}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_18']}
+                    </div>
+                    {/if}
+                    {/loop}
+                </div>
+            </div>
+        {/loop}
+        </div>
+        <div class="zt com" style="display: none">
+        {loop $poster[2] $k $v}
+        <div class="my-item" data-id="p{$v['join_id']}" data-status="0">
+            <div class="my-title">
+                <div class="my-logo"><img src="{php echo tomedia($v['logo']);}" alt="" width="100%" height="100%"></div>
+                <div class="my-right">
+                    <div class="my-task-title">{$v['title']}</div>
+                    <div class="blank"></div>
+                    <div class="my-task-time">{php echo date('Y-m-d',$v['pickuptime']);}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_19']}{php echo date('Y-m-d',$v['endtime']);}</div>
+                </div>
+            </div>
+            <div class="my-status">
+                <div class="my-icon" style="color: #26ca74">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wancheng"></use>
+                    </svg>
+                </div>
+                <div class="my-statustext" style="color: #26ca74">{php echo $lang['lang_plugin_task_template_mobile_default_mytask_20']}</div>
+                <div class="my-detail">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-unfold"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+            {php $thisreward = unserialize($poster[0][0]['reward_data']);}
+            <div id="detailp{$v['join_id']}" style="display: none">
+                {loop $thisreward['rec'] $rk $rv}
+                <div class="my-require">
+                    <div class="my-require-title">
+                        {php echo $lang['lang_plugin_task_template_mobile_default_mytask_21']}{$v['needcount']}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_22']}
+                        <div class="my-getreward" onclick="FoxUI.alert('{php echo $lang['lang_plugin_task_template_mobile_default_mytask_23']}','{php echo $lang['lang_plugin_task_template_mobile_default_mytask_24']}')">{php echo $lang['lang_plugin_task_template_mobile_default_mytask_25']}</div>
+                    </div>
+                    <div class="my-reward">
+                        <div class="reward-title">
+                            {if $rk == 'credit'}{$rv}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_26']}
+                            {elseif $rk == 'bribery'}{$rv}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_27']}
+                            {elseif $rk == 'goods'}{php echo count($rv)}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_28']}
+                            {elseif $rk == 'money'}{$rv['num']}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_29']}{/if}
+                        </div>
+                    </div>
+                </div>
+                {/loop}
+            </div>
+        {/loop}
+        {loop $donelist $k $v}
+        <div class="my-item" data-id="{$v['id']}" data-status="0">
+            <div class="my-title">
+                <div class="my-logo"><img src="{php echo tomedia($v['logo']);}" alt="" width="100%" height="100%"></div>
+                <div class="my-right">
+                    <div class="my-task-title">{$v['title']}</div>
+                    <div class="blank"></div>
+                    <div class="my-task-time">{php echo date('Y-m-d',$v['pickuptime']);}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_30']}{php echo date('Y-m-d',$v['endtime']);}</div>
+                </div>
+            </div>
+            <div class="my-status">
+                <div class="my-icon" style="color: #26ca74">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wancheng"></use>
+                    </svg>
+                </div>
+                <div class="my-statustext" style="color: #26ca74">{php echo $lang['lang_plugin_task_template_mobile_default_mytask_31']}</div>
+                <div class="my-detail">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-unfold"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+            <div id="detail{$v['id']}" style="display: none">
+                <div class="my-require">
+                    {php $require = unserialize($v['require_data']);$reward = unserialize($v['rewarded']);}
+                    {loop $require $ek $ev}
+                    <div class="my-require-title">
+                        {php echo $lang['lang_plugin_task_template_mobile_default_mytask_32']}{php echo $this->model->returnName($ek);}{$ev['verb']}{$ev['num']}{$ev['unit']}
+                        <div class="my-getreward" onclick="FoxUI.alert('{php echo $lang['lang_plugin_task_template_mobile_default_mytask_33']}','{php echo $lang['lang_plugin_task_template_mobile_default_mytask_34']}')">{php echo $lang['lang_plugin_task_template_mobile_default_mytask_35']}</div>
+                    </div>
+                    {/loop}
+                    {loop $reward $rk $rv}
+                    {if $rk == 'balance' && $rv>0}
+                    <div class="my-require-title">
+                        {$rv}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_36']}
+                    </div>
+                    {/if}
+                    {if $rk == 'score' && $rv>0}
+                    <div class="my-require-title">
+                        {$rv}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_37']}
+                    </div>
+                    {/if}
+                    {if $rk == 'redpacket' && $rv>0}
+                    <div class="my-require-title">
+                        {$rv}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_38']}
+                    </div>
+                    {/if}
+                    {if $rk == 'goods'}
+                    {loop $rv $k $v}
+                    <div class="my-require-title" style="overflow: hidden;" >
+                        <a href="{php echo mobileUrl('goods.detail',array('id'=>$v['id']));}" style="color: #999">{$v['name']}</a>
+                    </div>
+                    {/loop}
+                    {/if}
+                    {if $rk == 'coupon'}
+                    <div class="my-require-title">
+                        {$rv['num']}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_39']}
+                    </div>
+                    {/if}
+                    {/loop}
+                </div>
+            </div>
+            {/loop}
+        </div>
+        <div class="zt fail"  style="display: none">
+            {loop $poster[3] $k $v}
+            <div class="my-item" data-id="p{$v['join_id']}" data-status="0">
+                <div class="my-title">
+                    <div class="my-logo"><img src="{php echo tomedia($v['logo']);}" alt="" width="100%" height="100%"></div>
+                    <div class="my-right">
+                        <div class="my-task-title">{$v['title']}</div>
+                        <div class="blank"></div>
+                        <div class="my-task-time">{php echo date('Y-m-d',$v['pickuptime']);}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_40']}{php echo date('Y-m-d',$v['endtime']);}</div>
+                    </div>
+                </div>
+                <div class="my-status">
+                    <div class="my-icon" style="color: #ccc">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-failure"></use>
+                        </svg>
+                    </div>
+                    <div class="my-statustext" style="color: #ccc">{php echo $lang['lang_plugin_task_template_mobile_default_mytask_41']}</div>
+                    <div class="my-detail">
+                    </div>
+                </div>
+            </div>
+            {/loop}
+            {loop $fail $k $v}
+            <div class="my-item" data-id="{$v['id']}" data-status="0">
+                <div class="my-title">
+                    <div class="my-logo"><img src="{php echo tomedia($v['logo']);}" alt="" width="100%" height="100%"></div>
+                    <div class="my-right">
+                        <div class="my-task-title">{$v['title']}</div>
+                        <div class="blank"></div>
+                        <div class="my-task-time">{php echo date('Y-m-d',$v['pickuptime']);}{php echo $lang['lang_plugin_task_template_mobile_default_mytask_42']}{php echo date('Y-m-d',$v['endtime']);}</div>
+                    </div>
+                </div>
+                <div class="my-status">
+                    <div class="my-icon" style="color: #ccc">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-failure"></use>
+                        </svg>
+                    </div>
+                    <div class="my-statustext" style="color: #ccc">{php echo $lang['lang_plugin_task_template_mobile_default_mytask_43']}</div>
+                    <div class="my-detail">
+                    </div>
+                </div>
+            </div>
+            {/loop}
+        </div>
+        <div class="task-footer"></div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.my-item').click(function () {
+            var status = $(this).attr('data-status');
+            var id = $(this).attr('data-id');
+            if (status == '1'){
+                $('#detail'+id).fadeOut();
+                $(this).attr('data-status','0');
+            }else{
+                $('#detail'+id).fadeIn();
+                $(this).attr('data-status','1');
+            }
+        });
+    });
+    
+    function getReward(id) {
+        $.ajax({
+            url:'{php echo mobileUrl("task.getreward");}',
+            type:'post',
+            data:{id:id},
+            success:function (data) {
+                var json = JSON.parse(data);
+                if (json.status == 1){
+                    FoxUI.alert(json.result.message);
+                }else{
+                    FoxUI.alert('{php echo $lang['lang_plugin_task_template_mobile_default_mytask_44']}');
+                }
+            }
+        });
+    }
+</script>
+{template '_footer'}

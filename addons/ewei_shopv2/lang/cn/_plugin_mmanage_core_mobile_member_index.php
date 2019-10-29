@@ -1,0 +1,30 @@
+<?php
+$lang['lang_plugin_mmanage_core_mobile_member_index_0'] = '您无操作权限';
+$lang['lang_plugin_mmanage_core_mobile_member_index_1'] = '普通会员';
+$lang['lang_plugin_mmanage_core_mobile_member_index_2'] = '未分组';
+$lang['lang_plugin_mmanage_core_mobile_member_index_3'] = '您无操作权限';
+$lang['lang_plugin_mmanage_core_mobile_member_index_4'] = '会员不存在';
+$lang['lang_plugin_mmanage_core_mobile_member_index_5'] = '会员不存在';
+$lang['lang_plugin_mmanage_core_mobile_member_index_6'] = '开启绑定前请填写手机号';
+$lang['lang_plugin_mmanage_core_mobile_member_index_7'] = '此手机号已绑定其他用户';
+$lang['lang_plugin_mmanage_core_mobile_member_index_8'] = '开启绑定前请为用户设置密码';
+$lang['lang_plugin_mmanage_core_mobile_member_index_9'] = '审核分销商';
+$lang['lang_plugin_mmanage_core_mobile_member_index_10'] = '分销商信息';
+$lang['lang_plugin_mmanage_core_mobile_member_index_11'] = '修改分销商';
+$lang['lang_plugin_mmanage_core_mobile_member_index_12'] = '分销商信息';
+$lang['lang_plugin_mmanage_core_mobile_member_index_13'] = '修改会员资料';
+$lang['lang_plugin_mmanage_core_mobile_member_index_14'] = '会员信息';
+$lang['lang_plugin_mmanage_core_mobile_member_index_15'] = '无任何交易';
+$lang['lang_plugin_mmanage_core_mobile_member_index_16'] = '普通等级';
+$lang['lang_plugin_mmanage_core_mobile_member_index_17'] = '普通会员';
+$lang['lang_plugin_mmanage_core_mobile_member_index_18'] = '未分组';
+$lang['lang_plugin_mmanage_core_mobile_member_index_19'] = '系统设置';
+$lang['lang_plugin_mmanage_core_mobile_member_index_20'] = '强制禁止';
+$lang['lang_plugin_mmanage_core_mobile_member_index_21'] = '强制开启';
+$lang['lang_plugin_mmanage_core_mobile_member_index_22'] = '设置黑名单';
+$lang['lang_plugin_mmanage_core_mobile_member_index_23'] = '用户信息';
+$lang['lang_plugin_mmanage_core_mobile_member_index_24'] = '取消黑名单';
+$lang['lang_plugin_mmanage_core_mobile_member_index_25'] = '用户信息';
+$lang['lang_plugin_mmanage_core_mobile_member_index_26'] = '删除会员';
+$lang['lang_plugin_mmanage_core_mobile_member_index_27'] = '会员信息';
+?>

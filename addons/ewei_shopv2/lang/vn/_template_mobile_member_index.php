@@ -1,0 +1,34 @@
+<?php
+$lang['lang_template_mobile_member_index_0'] = ' Thành viên Trung tâm';
+$lang['lang_template_mobile_member_index_1'] = ' Nạp tiền';
+$lang['lang_template_mobile_member_index_2'] = ' Phổ biến các thành viên';
+$lang['lang_template_mobile_member_index_3'] = ' Trao đổi';
+$lang['lang_template_mobile_member_index_4'] = ' liên kết điện thoại số';
+$lang['lang_template_mobile_member_index_5'] = ' Nếu bạn đã đăng ký thành viên bằng số điện thoại hoặc nếu bạn muốn đi mua sắm qua micro-thư, xin vui lòng liên kết số điện thoại của bạn.';
+$lang['lang_template_mobile_member_index_6'] = ' người dùng hiện thời là ràng buộc để các nhà điều hành, bạn có thể quản lý các trung tâm mua sắm bằng điện thoại';
+$lang['lang_template_mobile_member_index_7'] = ' Đơn hàng của tôi';
+$lang['lang_template_mobile_member_index_8'] = ' Xem tất cả các đơn đặt hàng';
+$lang['lang_template_mobile_member_index_9'] = ' Đang chờ xử lý thanh toán';
+$lang['lang_template_mobile_member_index_10'] = ' Để có được vận chuyển';
+$lang['lang_template_mobile_member_index_11'] = ' Phân phối đang chờ giải quyết';
+$lang['lang_template_mobile_member_index_12'] = ' trở về';
+$lang['lang_template_mobile_member_index_13'] = ' Nhiệm vụ trung tâm';
+$lang['lang_template_mobile_member_index_14'] = ' nhận phiếu giảm giá';
+$lang['lang_template_mobile_member_index_15'] = ' tôi phiếu giảm giá';
+$lang['lang_template_mobile_member_index_16'] = ' Xếp hàng quay lại danh sách';
+$lang['lang_template_mobile_member_index_17'] = ' Xếp hạng';
+$lang['lang_template_mobile_member_index_18'] = ' Người tiêu dùng xếp hạng';
+$lang['lang_template_mobile_member_index_19'] = ' giỏ hàng mua sắm';
+$lang['lang_template_mobile_member_index_20'] = ' mối quan tâm của tôi';
+$lang['lang_template_mobile_member_index_21'] = ' dấu chân của tôi';
+$lang['lang_template_mobile_member_index_22'] = ' Cài đặt tin nhắn nhắc nhở';
+$lang['lang_template_mobile_member_index_23'] = ' trở về đầy đủ của tôi';
+$lang['lang_template_mobile_member_index_24'] = ' đề cập đến bây giờ';
+$lang['lang_template_mobile_member_index_25'] = ' Thông tin chi tiết';
+$lang['lang_template_mobile_member_index_26'] = ' Nạp hồ sơ';
+$lang['lang_template_mobile_member_index_27'] = ' Địa chỉ giao hàng quản lý';
+$lang['lang_template_mobile_member_index_28'] = ' Trung tâm trợ giúp';
+$lang['lang_template_mobile_member_index_29'] = ' Thay đổi mật khẩu';
+$lang['lang_template_mobile_member_index_30'] = ' Lối ra đăng nhập';
+$lang['lang_template_mobile_member_index_31'] = ' Tôi đã đọc';
+?>

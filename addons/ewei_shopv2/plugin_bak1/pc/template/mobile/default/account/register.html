@@ -1,0 +1,155 @@
+<html lang="zh"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{if empty($this->merch_user)}{$_W['shopset']['shop']['name']}{else}{php echo $this->merch_user['merchname']}{/if}</title>
+    <style type="text/css">
+        body {
+            _behavior: url(/addons/ewei_shopv2/plugin/pc/template/web/static/css/csshover.htc);
+        }
+    </style>
+    <link href="/addons/ewei_shopv2/plugin/pc/template/web/static/css/base.css" rel="stylesheet" type="text/css">
+    <link href="/addons/ewei_shopv2/plugin/pc/template/web/static/css/home_header.css" rel="stylesheet" type="text/css">
+    <link href="/addons/ewei_shopv2/plugin/pc/template/web/static/css/member_login.css" rel="stylesheet" type="text/css">
+    <link href="/addons/ewei_shopv2/plugin/pc/template/web/static/font/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../addons/ewei_shopv2/plugin/pc/template/mobile/default/static/css/foxui.css" rel="stylesheet" type="text/css">
+    <!--[if IE 7]>
+    <link rel="stylesheet" href="/addons/ewei_shopv2/plugin/pc/template/web/static/font/font-awesome/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/addons/ewei_shopv2/plugin/pc/template/web/static/js/html5shiv.js"></script>
+    <script src="/addons/ewei_shopv2/plugin/pc/template/web/static/js/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        var COOKIE_PRE = 'COOKIE_PRE';
+        var _CHARSET = 'utf-8';
+        var SITEURL = '/web/web.php?i=1';
+        var SHOP_SITE_URL = '/web/web.php?i=1';
+        var RESOURCE_SITE_URL = '/addons/ewei_shopv2/plugin/pc/template/web/static';
+        var RESOURCE_SITE_URL = '/addons/ewei_shopv2/plugin/pc/template/web/static';
+        var SHOP_TEMPLATES_URL = '/addons/ewei_shopv2/plugin/pc/template/web/static';
+    </script>
+    <script src="/addons/ewei_shopv2/plugin/pc/template/web/static/js/jquery.js"></script>
+    <script src="/addons/ewei_shopv2/plugin/pc/template/web/static/js/jquery-ui/jquery.ui.js"></script>
+    <script src="/addons/ewei_shopv2/plugin/pc/template/web/static/js/common.js"></script>
+    <script src="/addons/ewei_shopv2/plugin/pc/template/web/static/js/jquery.validation.min.js"></script>
+
+    <script src="{php echo EWEI_SHOPV2_LOCAL}static/js/require.js"></script>
+    <script src="{php echo EWEI_SHOPV2_LOCAL}static/js/myconfig-app.js"></script>
+    <script language="javascript">require(['core'], function (modal){modal.init({siteUrl: "{$_W['siteroot']}",baseUrl: "{php echo mobileUrl('ROUTES')}"})});</script>
+</head>
+<body>
+<div class="header-wrap">
+    <header class="public-head-layout wrapper">
+        <h1 class="site-logo"><a href="{php echo mobileUrl('pc')}"><img src="{php echo tomedia($_W['shopset']['shop']['pc_logo'])}" class="pngFix"></a></h1>
+        <div class="nc-regist-now">
+                    <span class="avatar">
+                        <img src="/addons/ewei_shopv2/plugin/pc/template/web/static/images/default_user_portrait.gif">
+                    </span>
+            <span>Hi{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_0']}                        <br>
+                        {php echo $lang['lang_plugin_pc_template_mobile_default_account_register_1']}                        <a title="" href="{php echo mobileUrl('pc.account.login')}" class="register">
+                            {php echo $lang['lang_plugin_pc_template_mobile_default_account_register_2']}</a>
+                    </span>
+        </div>
+    </header>
+</div>
+<!-- PublicHeadLayout End -->
+<div id="append_parent"></div>
+<div id="ajaxwaitid"></div>
+<div class="nc-register-bg">
+    <div class="nc-register-box">
+        <div class="nc-register-layout">
+            <div class="left">
+                <div class="nc-register-mode">
+                    <ul class="tabs-nav">
+                        <li>
+                            <a href="" class="tabulous_active">{if empty($type)}{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_3']}{else}{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_4']}{/if}<i></i></a>
+                        </li>
+                    </ul>
+                    <div id="tabs_container" class="tabs-container" style="height: 387px;">
+                        <div id="default" class="tabs-content" style="position: absolute; top: 0px;">
+                            <form id="register_form" class="nc-login-form" method="post" action="">
+                           <dl>
+                                <dt>{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_5']}</dt>
+                                <dd>
+                                    <input type="tel" class="text" name="mobile" id="mobile" placeholder="{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_6']}" value="{php echo trim($_GPC['mobile'])}" maxlength="11" />
+                                </dd>
+                            </dl>
+                                <div class="code-div">
+                                    <dl>
+                                        <dt>{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_7']}</dt>
+                                        <dd>
+                                            <input type="tel" class="text w120" name="verifycode" id="verifycode" placeholder="5{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_8']}"/>
+                                            </dd>
+                                    </dl>
+                                    <span>
+                                            <a  id="btnCode" style="display: block;">{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_9']}</a>
+
+                                        </span>
+                                </div>
+                                <div class="tiptext" id="sms_text">{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_10']}<span><a href="javascript:void(0);"><i class="icon-mobile-phone"></i>{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_11']}</a></span>{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_12']}5{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_13']}
+                                </div>
+
+                                <dl>
+                                    <dt>{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_14']}</dt>
+                                    <dd>
+                                        <input type="password" class="text"  name="pwd" id="pwd" placeholder="6-20{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_15']}" value=""/>
+                                        </dd>
+                                </dl>
+                                <dl>
+                                    <dt>{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_16']}</dt>
+                                    <dd>
+                                        <input type="password" class="text"  name="pwd1" id="pwd1" placeholder="{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_17']}" value=""/>
+                                        </dd>
+                                </dl>
+
+
+                                <div class="submit-div">
+                                    <div class="submit" id="btnSubmit" style="text-align:center;line-height: 42px;">{if empty($type)}{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_18']}{else}{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_19']}{/if}</div>
+                                    {if empty($type)}
+                                    <a href="{php echo mobileUrl('pc.account.forget')}" class="account-login-link  external ">{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_20']} </a>
+                                    {else}
+                                    <a href="{php echo mobileUrl('pc.account.register')}" class="account-login-link  external ">{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_21']} </a>
+                                    {/if}
+
+                                </div>
+                                <input type="hidden" value="" name="ref_url">
+                                <input name="nchash" type="hidden" value="58181794">
+                                <input type="hidden" name="form_submit" value="ok">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="reister-after">
+                    <h4>{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_22']}</h4>
+                    <ol>
+                        <li class="ico01"><i></i>{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_23']}</li>
+                        <li class="ico02"><i></i>{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_24']}</li>
+                        <li class="ico03"><i></i>{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_25']}</li>
+                        <li class="ico04"><i></i>{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_26']}</li>
+                        <li class="ico05"><i></i>{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_27']}</li>
+                        <li class="ico06"><i></i>{php echo $lang['lang_plugin_pc_template_mobile_default_account_register_28']}</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    #footer{position:fixed;bottom:0px;}
+</style>
+
+<div id="footer" class="wrapper">
+    <p>{php echo get_menus(1)}</p>
+    <br/>
+    {php show_copyright()}
+</div>
+<script language='javascript'>
+    require(['../addons/ewei_shopv2/plugin/pc/biz/member/account.js'], function (modal) {
+        modal.initRf({backurl:'{$backurl}', type: {php echo intval($type)}, endtime: {php echo intval($endtime)}});
+    });
+</script>
+</body></html>

@@ -1,0 +1,38 @@
+2019-07-14 15:30:09 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ffb9862d4c99]]></ToUserName>
+<FromUserName><![CDATA[o3Omm1f3tfJLKKmFhmuEFKU_AiZI]]></FromUserName>
+<CreateTime>1563089409</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[Hi]]></Content>
+<MsgId>22378061074926326</MsgId>
+</xml>
+
+2019-07-14 15:30:09 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ffb9862d4c99',
+    'fromusername' => 'o3Omm1f3tfJLKKmFhmuEFKU_AiZI',
+    'createtime' => '1563089409',
+    'msgtype' => 'text',
+    'content' => 'Hi',
+    'msgid' => '22378061074926326',
+    'from' => 'o3Omm1f3tfJLKKmFhmuEFKU_AiZI',
+    'to' => 'gh_ffb9862d4c99',
+    'time' => '1563089409',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2019-07-14 15:30:09 response :
+------------
+

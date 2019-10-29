@@ -1,0 +1,33 @@
+<?php
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_0'] = '누적초대';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_1'] = '사람들은스캔또는포스터를보고';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_2'] = '보너스포인트';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_3'] = '금액상';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_4'] = '보너스보너스';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_5'] = '쿠폰보상';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_6'] = '특별제공상';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_7'] = '대상번호';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_8'] = '아니보상';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_9'] = '아니보상';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_10'] = '고려사항';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_11'] = '아니메모';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_12'] = '지금데리러';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_13'] = '보자나다시';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_14'] = '축하';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_15'] = '선택';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_16'] = '작업성공';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_17'] = '보려면작업포스터공개번호를보내주십시오';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_18'] = '확인';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_19'] = '매우죄송합니다';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_20'] = '이작업을선택할수없습니다';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_21'] = '동일한유형의작업을받은';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_22'] = '좋아, 난.';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_23'] = '성공적으로수집';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_24'] = '축하';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_25'] = '선택';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_26'] = '작업성공';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_27'] = '선택실패';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_28'] = '받을수없습니다';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_29'] = '작업정보를찾을수없습니다';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_30'] = '작업정보발견';
+?>

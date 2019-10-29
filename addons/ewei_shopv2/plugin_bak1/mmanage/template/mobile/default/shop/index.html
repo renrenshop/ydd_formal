@@ -1,0 +1,62 @@
+{template 'mmanage/common'}
+
+<div class='fui-page fui-page-current'>
+    <div class="fui-header fui-header-success">
+        <div class="fui-header-left">
+            <a class="back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_shop_index_0']}</div>
+        <div class="fui-header-right"></div>
+    </div>
+    <div class='fui-content navbar'>
+
+        <div class="fui-list-group">
+            <div class="fui-list">
+                <input type="file"  name="file-shoplogo" id="file-shoplogo" />
+                <input type="hidden" id="shoplogo" value="{$shopset['shop']['logo']}" />
+                <div class="fui-list-inner">
+                    <div class="title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_shop_index_1']}logo</div>
+                </div>
+                <div class="fui-list-media">
+                    <img src="{php echo tomedia($shopset['shop']['logo'])}" class="round" id="showlogo" />
+                </div>
+            </div>
+        </div>
+
+        <div class="fui-cell-group">
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_shop_index_2']}</div>
+                <div class="fui-cell-info">
+                    <input type="text" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_shop_index_3']}" class="fui-input" value="{$shopset['shop']['name']}" id="shopname" />
+                </div>
+            </div>
+            <div class="fui-cell fui-cell-textarea">
+                <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_shop_index_4']}</div>
+                <div class="fui-cell-info">
+                    <textarea rows="3" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_shop_index_5']}" id="shopdesc">{$shopset['shop']['description']}</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="fui-cell-group fui-cell-click">
+            <div class="fui-cell noactive">
+                <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_shop_index_6']}</div>
+                <div class="fui-cell-info">
+                    <input type="checkbox" class="fui-switch fui-switch-small fui-switch-success pull-right" {if !empty($shopset['shop']['close'])}checked=""{/if} id="shopclose" />
+                </div>
+            </div>
+        </div>
+
+        {ifp 'sysset.shop.edit'}
+            <div class="btn btn-success block" id="btn-submit">{php echo $lang['lang_plugin_mmanage_template_mobile_default_shop_index_7']}</div>
+        {/if}
+    </div>
+
+    <script language="javascript">
+        require(['../addons/ewei_shopv2/plugin/mmanage/static/js/base.js'],function(modal){
+            modal.initShop();
+        });
+    </script>
+</div>
+{php $this->footerMenus(null, $texts)}
+{template '_footer'}

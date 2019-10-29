@@ -1,0 +1,34 @@
+<?php
+$lang['lang_template_mobile_member_index_0'] = 'メンバーセンター';
+$lang['lang_template_mobile_member_index_1'] = '充電';
+$lang['lang_template_mobile_member_index_2'] = '共通のメンバー';
+$lang['lang_template_mobile_member_index_3'] = ' Exchange';
+$lang['lang_template_mobile_member_index_4'] = '電話番号をバインド';
+$lang['lang_template_mobile_member_index_5'] = 'かどうかは、電話番号で会員の登録を持っているまたはマイクロメールには、買い物に行くしたい場合は、あなたの電話番号をバインドしてください。。';
+$lang['lang_template_mobile_member_index_6'] = '現在のユーザーがオペレーターにバインドされている、電話でモールを管理することができます。';
+$lang['lang_template_mobile_member_index_7'] = '私の注文';
+$lang['lang_template_mobile_member_index_8'] = 'すべての注文を表示';
+$lang['lang_template_mobile_member_index_9'] = '保留中の支払い';
+$lang['lang_template_mobile_member_index_10'] = '出荷するには';
+$lang['lang_template_mobile_member_index_11'] = '保留中の配信';
+$lang['lang_template_mobile_member_index_12'] = '返します';
+$lang['lang_template_mobile_member_index_13'] = 'タスクセンター';
+$lang['lang_template_mobile_member_index_14'] = 'クーポンを受け取る';
+$lang['lang_template_mobile_member_index_15'] = '私のクーポン';
+$lang['lang_template_mobile_member_index_16'] = 'キュー一覧に戻る';
+$lang['lang_template_mobile_member_index_17'] = 'ランク';
+$lang['lang_template_mobile_member_index_18'] = '消費者ランキング';
+$lang['lang_template_mobile_member_index_19'] = '私のショッピングカート';
+$lang['lang_template_mobile_member_index_20'] = '私の懸念';
+$lang['lang_template_mobile_member_index_21'] = '私の足跡';
+$lang['lang_template_mobile_member_index_22'] = 'メッセージアラームの設定';
+$lang['lang_template_mobile_member_index_23'] = '完全帰国';
+$lang['lang_template_mobile_member_index_24'] = '今言及';
+$lang['lang_template_mobile_member_index_25'] = '詳細';
+$lang['lang_template_mobile_member_index_26'] = 'レコードを充電';
+$lang['lang_template_mobile_member_index_27'] = '配送先住所の管理';
+$lang['lang_template_mobile_member_index_28'] = 'ヘルプセンター';
+$lang['lang_template_mobile_member_index_29'] = 'パスワードを変更';
+$lang['lang_template_mobile_member_index_30'] = '出口ログイン';
+$lang['lang_template_mobile_member_index_31'] = '私が読んだ';
+?>

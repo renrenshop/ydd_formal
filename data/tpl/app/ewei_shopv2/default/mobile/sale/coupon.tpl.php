@@ -1,0 +1,134 @@
+<?php defined('IN_IA') or exit('Access Denied');?>
+<?php if (file_exists('/www/wwwroot/fxv2_d/addons/ewei_shopv2/lang/'.$_W['lang_type'].'/_template_mobile_sale_coupon_index.php')){include('/www/wwwroot/fxv2_d/addons/ewei_shopv2/lang/'.$_W['lang_type'].'/_template_mobile_sale_coupon_index.php');}?>
+<?php (!empty($this) && $this instanceof WeModuleSite) ? (include $this->template('_header', TEMPLATE_INCLUDEPATH)) : (include template('_header', TEMPLATE_INCLUDEPATH));?>
+
+<link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/template/mobile/default/static/css/coupon-new.css?v=2017030310125">
+
+<script src="../addons/ewei_shopv2/static/js/app/biz/sale/coupon/circle-progress.js"></script>
+<link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/template/mobile/default/static/css/coupon.css?v=2.0.0">
+<div class='fui-page fui-page-current'>
+	<div class="fui-header">
+		<div class="fui-header-left">
+			<a class="back"></a>
+		</div>
+		<div class="title"><?php  echo $lang['lang_template_mobile_sale_coupon_index_0']?></div>
+		<div class="fui-header-right">
+			<a href="<?php  echo mobileUrl('sale/coupon/my')?>" class="external">
+				<i class="icon icon-person2"></i>
+			</a>
+		</div>
+	</div>
+	<div class='fui-content coupon-index-bg'>
+
+		<?php  if(!empty($advs)) { ?>
+			<div class='fui-swipe' data-transition="500" data-gap="1"> 
+			    <div class='fui-swipe-wrapper'>
+					<?php  if(is_array($advs)) { foreach($advs as $adv) { ?>
+						<a class='fui-swipe-item' href="<?php  if(!empty($adv['url'])) { ?><?php  echo $adv['url'];?><?php  } else { ?>javascript:;<?php  } ?>"><img src="<?php  echo tomedia($adv['img'])?>" /></a>
+					<?php  } } ?>
+			    </div>
+			    <div class='fui-swipe-page'></div>
+			</div>
+		<?php  } ?>
+
+		<div class="fui-tab-scroll">
+			<div class='container'>
+				<span class='item on' data-cateid=""><?php  echo $lang['lang_template_mobile_sale_coupon_index_1']?></span>
+					<?php  if(is_array($category)) { foreach($category as $item) { ?>
+						<span class='item' data-cateid="<?php  echo $item['id'];?>"><?php  echo $item['name'];?></span>
+					<?php  } } ?>
+			</div>
+		</div>
+		
+		<div class="fui-message fui-message-popup in content-empty" style="display: none; margin-top: 0; padding-top: 0; position: relative; height: auto; background: none;">
+				<div class="icon ">
+					<i class="icon icon-information"></i>
+				</div>
+				<div class="content"><?php  echo $lang['lang_template_mobile_sale_coupon_index_2']?>~</div>
+		</div>
+
+		<div id='container' class="coupon-container coupon-index-list">
+		</div>
+
+		<div class='infinite-loading' style="text-align: center; color: #666;">
+	    	<span class='fui-preloader'></span>
+	    	<span class='text'> <?php  echo $lang['lang_template_mobile_sale_coupon_index_4']?>...</span>
+	    </div>
+		<?php (!empty($this) && $this instanceof WeModuleSite) ? (include $this->template('_copyright', TEMPLATE_INCLUDEPATH)) : (include template('_copyright', TEMPLATE_INCLUDEPATH));?>
+	</div>
+	<script id='tpl_list_coupon' type='text/html'>
+		<%each list as coupon index%>
+			<% if coupon.isdisa =='1'%>
+				<a class="coupon-item gray"  href="javascript:;" >
+			<%else%>
+				<% if coupon.contype =='1'%>
+					<a  href="javascript:;" onclick="addCard('<%=coupon.card_id%>')" class="coupon-item <%coupon.color%>">
+				<% else coupon.contype =='2'%>
+					<a href="<?php  echo mobileUrl('sale/coupon/detail')?>&id=<%coupon.id%>" class="coupon-item <%coupon.color%>">
+				<% /if %>
+			<%/if%>
+				<div class="coupon-dots">
+					<i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+				</div>
+				<div class="coupon-type" <% if coupon.settitlecolor ==1 %>style="background:<%coupon.titlecolor%>"<%/if%>><%coupon.tagtitle%></div>
+				<div class="coupon-left">
+					<div class="title"><%=coupon.title3%></div>
+					<div class="subtitle"><%=coupon.title2%></div>
+				</div>
+				<div class="coupon-right">
+					<div class="title"><%coupon.couponname%></div>
+					<div class="subtitle"><%=coupon.title5%></div>
+					<div class="subtitle light"><%if coupon.t>0%><?php  echo $lang['lang_template_mobile_sale_coupon_index_5']?><%coupon.t%>/<%coupon.last%><?php  echo $lang['lang_template_mobile_sale_coupon_index_6']?><%/if%></div>
+					<div class="usetime">
+						<div class="text"><%=coupon.title4%></div>
+						<div class="usebtn"><% if coupon.isdisa =='1'%><?php  echo $lang['lang_template_mobile_sale_coupon_index_7']?><%else%><?php  echo $lang['lang_template_mobile_sale_coupon_index_8']?><%/if%></div>
+					</div>
+				</div>
+			</a>
+		<%/each%>
+	</script>
+	<script  language='javascript'>
+		require(['biz/sale/coupon/common'], function (modal) {modal.init();});
+
+
+		function addCard(card_id) {
+
+			var data = {'openid': '<?php  echo $openid;?>', 'card_id': card_id};
+			$.ajax({
+				url: "<?php  echo mobileUrl('sale/coupon/getsignature')?>",
+				data: data,
+				cache: false
+			}).done(function (result) {
+				var data = jQuery.parseJSON(result);
+				if (data.status == 1) {
+					wx.addCard({
+						cardList: [
+							{
+								cardId: card_id,
+								cardExt: '{"code":"", "openid": "<?php  echo $openid;?>","timestamp": "' + data.result.timestamp + '", "nonce_str":"' + data.result.nonce_str + '", "signature":"' + data.result.signature + '"}'
+							}
+						],
+						success: function (res) {
+							$.ajax({
+								url: "<?php  echo mobileUrl('sale/coupon/updateQuantity')?>",
+								data: res,
+								cache: false
+							}).done(function (result) {
+
+							});
+							//alert('<?php  echo $lang['lang_template_mobile_sale_coupon_index_9']?>' + JSON.stringify(res.cardList));
+						},
+						cancel: function (res) {
+							//alert(JSON.stringify(res))
+						}
+					});
+				} else {
+					alert("<?php  echo $lang['lang_template_mobile_sale_coupon_index_10']?>,<?php  echo $lang['lang_template_mobile_sale_coupon_index_11']?>!");
+					alert(data.result.message);
+				}
+			});
+		}
+
+	</script>
+</div>
+<?php (!empty($this) && $this instanceof WeModuleSite) ? (include $this->template('_footer', TEMPLATE_INCLUDEPATH)) : (include template('_footer', TEMPLATE_INCLUDEPATH));?>

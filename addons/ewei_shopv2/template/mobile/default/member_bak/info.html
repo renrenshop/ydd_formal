@@ -1,0 +1,89 @@
+{template '_header'}
+<div class='fui-page  fui-page-current'>
+    <div class="fui-header">
+		<div class="fui-header-left">
+			<a class="back" onclick='location.back()'></a>
+		</div>
+		<div class="title">{php echo $lang['lang_template_mobile_member_info_0']}</div> 
+		<div class="fui-header-right">&nbsp;</div>
+	</div>
+
+	<div class='fui-content' style='margin-top:5px;'>
+
+		<div class="fui-list-group">
+			<a class="fui-list" href="{php echo mobileUrl('member/info/face')}" data-nocache="true">
+				<div class="fui-list-media">
+					<img class="round avatar" src="{php echo tomedia($member['avatar'])}" />
+				</div>
+				<div class="fui-list-inner">
+					<div class="title nickname">{$member['nickname']}</div>
+				</div>
+				<div class="fui-list-angle">
+					<div class="angle"></div>
+				</div>
+			</a>
+		</div>
+
+		{if !empty($wapset['open'])}
+		<div class="fui-cell-group">
+			<div class="fui-cell must">
+				<div class="fui-cell-label">{php echo $lang['lang_template_mobile_member_info_1']}</div>
+				<div class="fui-cell-info">{if empty($member['mobile'])}{php echo $lang['lang_template_mobile_member_info_2']}{else}{$member['mobile']}{/if}{if !empty($member['mobileverify'])}({php echo $lang['lang_template_mobile_member_info_3']}){/if}</div>
+				<a class="fui-cell-remark external" href="{php echo mobileUrl('member/bind')}">{if empty($member['mobile'])}{php echo $lang['lang_template_mobile_member_info_4']}{else}{php echo $lang['lang_template_mobile_member_info_5']}{/if}</a>
+			</div>
+		</div>
+		{/if}
+
+		{if empty($template_flag)}
+			 
+		<div class="fui-cell-group">
+			<div class="fui-cell must ">
+				<div class="fui-cell-label ">{php echo $lang['lang_template_mobile_member_info_17']}</div>
+				<div class="fui-cell-info"><input type="text" class='fui-input' id='company' name='company' placeholder="{php echo $lang['lang_template_mobile_member_info_18']}"  value="{$member['company']}" /></div>
+			</div>
+
+			<div class="fui-cell must ">
+				<div class="fui-cell-label ">{php echo $lang['lang_template_mobile_member_info_6']}</div>
+				<div class="fui-cell-info"><input type="text" class='fui-input' id='realname' name='realname' placeholder="{php echo $lang['lang_template_mobile_member_info_7']}"  value="{$member['realname']}" /></div>
+			</div>
+
+			{if empty($wapset['open'])}
+				<div class="fui-cell must">
+					<div class="fui-cell-label">{php echo $lang['lang_template_mobile_member_info_8']}</div>
+					<div class="fui-cell-info"><input type="text" class='fui-input' id='mobile' name='mobile' placeholder="{php echo $lang['lang_template_mobile_member_info_9']}"  value="{$member['mobile']}" /></div>
+				</div>
+			{/if}
+			
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_template_mobile_member_info_10']}</div>
+				<div class="fui-cell-info"><input type="text"  class='fui-input'  id='weixin' name='weixin' placeholder="{php echo $lang['lang_template_mobile_member_info_11']}"  value="{$member['weixin']}" /></div>
+			</div>
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $lang['lang_template_mobile_member_info_12']}</div>
+				<div class="fui-cell-info"><input type="text"  class='fui-input'  id='birthday' name='birthday' placeholder="{php echo $lang['lang_template_mobile_member_info_13']}"  value="{$member['birthday']}" readonly/></div>
+			</div>
+			<div class="fui-cell">
+				<div class="fui-cell-label ">{php echo $lang['lang_template_mobile_member_info_14']}</div>
+				<div class="fui-cell-info"><input type="text"  class='fui-input'  id='country' name='country' placeholder="{php echo $lang['lang_template_mobile_member_info_15']}"  value="{$member['province']}"/></div>
+			</div>
+		 
+		</div>
+		{else}
+		   {template 'diyform/formfields'}
+		{/if}
+		<a href='#' id='btn-submit' class='btn btn-success block'>{php echo $lang['lang_template_mobile_member_info_16']}</a>
+	</div>
+	<script language='javascript'>
+		require(['biz/member/info'], function (modal) {
+		  	modal.init({
+			    new_area:{php echo $new_area},
+			    returnurl:"{php echo $returnurl}",
+			    template_flag: {php echo intval($template_flag)},
+				wapopen: {php echo intval($wapset['open'])}
+			});
+	});
+</script>
+
+</div>
+{template '_footer'}
+

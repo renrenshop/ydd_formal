@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_sns_template_mobile_default_board_index_0'] = 'トピック';
+$lang['lang_plugin_sns_template_mobile_default_board_index_1'] = '懸念';
+$lang['lang_plugin_sns_template_mobile_default_board_index_2'] = '関係';
+$lang['lang_plugin_sns_template_mobile_default_board_index_3'] = '懸念';
+$lang['lang_plugin_sns_template_mobile_default_board_index_4'] = 'ログオンしていません。';
+$lang['lang_plugin_sns_template_mobile_default_board_index_5'] = 'ホーム';
+$lang['lang_plugin_sns_template_mobile_default_board_index_6'] = '本質エリア';
+$lang['lang_plugin_sns_template_mobile_default_board_index_7'] = '関連するセクション';
+$lang['lang_plugin_sns_template_mobile_default_board_index_8'] = '粘着性があります。';
+$lang['lang_plugin_sns_template_mobile_default_board_index_9'] = '現時点ではトピックがありません。';
+$lang['lang_plugin_sns_template_mobile_default_board_index_10'] = '読み込み';
+$lang['lang_plugin_sns_template_mobile_default_board_index_11'] = 'キャンセル';
+$lang['lang_plugin_sns_template_mobile_default_board_index_12'] = 'トピックを投稿';
+$lang['lang_plugin_sns_template_mobile_default_board_index_13'] = 'キャプション';
+$lang['lang_plugin_sns_template_mobile_default_board_index_14'] = '言葉';
+$lang['lang_plugin_sns_template_mobile_default_board_index_15'] = 'コンテンツ';
+$lang['lang_plugin_sns_template_mobile_default_board_index_16'] = '言葉';
+$lang['lang_plugin_sns_template_mobile_default_board_index_17'] = '発行';
+$lang['lang_plugin_sns_template_mobile_default_board_index_18'] = '苦情';
+$lang['lang_plugin_sns_template_mobile_default_board_index_19'] = 'キャンセル';
+$lang['lang_plugin_sns_template_mobile_default_board_index_20'] = '苦情';
+$lang['lang_plugin_sns_template_mobile_default_board_index_21'] = '私が文句を言うしたいです。';
+$lang['lang_plugin_sns_template_mobile_default_board_index_22'] = '';
+$lang['lang_plugin_sns_template_mobile_default_board_index_23'] = '苦情カテゴリを選択してください:';
+$lang['lang_plugin_sns_template_mobile_default_board_index_24'] = 'その他';
+$lang['lang_plugin_sns_template_mobile_default_board_index_25'] = 'コンテンツ';
+$lang['lang_plugin_sns_template_mobile_default_board_index_26'] = '言葉';
+$lang['lang_plugin_sns_template_mobile_default_board_index_27'] = '提出';
+$lang['lang_plugin_sns_template_mobile_default_board_index_28'] = '苦情';
+?>

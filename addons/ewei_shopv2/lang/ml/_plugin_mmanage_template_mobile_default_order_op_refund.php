@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_0'] = ' Hak mengendalikan';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_1'] = ' Perlindungan hak-hak Status';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_2'] = ' menunggu pelanggan untuk memulangkan barang-barang';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_3'] = ' Maklumat perlindungan hak';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_4'] = ' Jenis hak';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_5'] = ' Membayar balik jumlah';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_6'] = ' Yuan';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_7'] = ' kembali kredit';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_8'] = ' yang';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_9'] = ' sebab-sebab hak';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_10'] = ' Kenyataan hak';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_11'] = ' Nombor hak';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_12'] = ' Nombor pesanan';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_13'] = ' Jumlah perintah';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_14'] = ' RM';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_15'] = ' Pembeli';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_16'] = ' Masa pembayaran';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_17'] = ' Kaedah pembayaran';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_18'] = ' Tidak dibayar';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_19'] = ' Imbangan pembayaran';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_20'] = ' Latar belakang bayaran';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_21'] = ' Pembayaran mikro-huruf';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_22'] = ' Alipay bayaran';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_23'] = ' UnionPay bayaran';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_24'] = ' Penghantaran kepada pembayaran';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_25'] = ' kembali';
+$lang['lang_plugin_mmanage_template_mobile_default_order_op_refund_26'] = ' pemprosesan';
+?>

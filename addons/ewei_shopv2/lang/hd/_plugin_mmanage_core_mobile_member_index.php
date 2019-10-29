@@ -1,0 +1,30 @@
+<?php
+$lang['lang_plugin_mmanage_core_mobile_member_index_0'] = 'आपकेपासकार्यकरनेकीअनुमतिनहींहै';
+$lang['lang_plugin_mmanage_core_mobile_member_index_1'] = 'आमसदस्य';
+$lang['lang_plugin_mmanage_core_mobile_member_index_2'] = 'समूहीकृतनहीं';
+$lang['lang_plugin_mmanage_core_mobile_member_index_3'] = 'आपकेपासकार्यकरनेकीअनुमतिनहींहै';
+$lang['lang_plugin_mmanage_core_mobile_member_index_4'] = 'सदस्यमौजूदनहीं';
+$lang['lang_plugin_mmanage_core_mobile_member_index_5'] = 'सदस्यमौजूदनहीं';
+$lang['lang_plugin_mmanage_core_mobile_member_index_6'] = 'कृपयाबाइंडिंगखोलनेसेपहलेफ़ोननंबरभरें।';
+$lang['lang_plugin_mmanage_core_mobile_member_index_7'] = 'यहफ़ोननंबरकिसीअंयउपयोगकर्तासेबाउंडहै';
+$lang['lang_plugin_mmanage_core_mobile_member_index_8'] = 'बाइंडिंगखोलनेसेपहलेउपयोगकर्ताकेलिएपासवर्डसेटकरें';
+$lang['lang_plugin_mmanage_core_mobile_member_index_9'] = 'लेखापरीक्षापुनर्विक्रेता';
+$lang['lang_plugin_mmanage_core_mobile_member_index_10'] = 'पुनर्विक्रेताजानकारी';
+$lang['lang_plugin_mmanage_core_mobile_member_index_11'] = 'पुनर्विक्रेतासंशोधितकरें';
+$lang['lang_plugin_mmanage_core_mobile_member_index_12'] = 'पुनर्विक्रेताजानकारी';
+$lang['lang_plugin_mmanage_core_mobile_member_index_13'] = 'सदस्यताजानकारीसंशोधितकरें';
+$lang['lang_plugin_mmanage_core_mobile_member_index_14'] = 'सदस्यताकीजानकारी';
+$lang['lang_plugin_mmanage_core_mobile_member_index_15'] = 'कोईलेन-देननहीं';
+$lang['lang_plugin_mmanage_core_mobile_member_index_16'] = 'सामांयस्तर';
+$lang['lang_plugin_mmanage_core_mobile_member_index_17'] = 'आमसदस्य';
+$lang['lang_plugin_mmanage_core_mobile_member_index_18'] = 'समूहीकृतनहीं';
+$lang['lang_plugin_mmanage_core_mobile_member_index_19'] = 'सिस्टमसेटिंग्स';
+$lang['lang_plugin_mmanage_core_mobile_member_index_20'] = 'सेनानिषिद्ध';
+$lang['lang_plugin_mmanage_core_mobile_member_index_21'] = 'बलखुला';
+$lang['lang_plugin_mmanage_core_mobile_member_index_22'] = 'ब्लैकलिस्टसेटकरें';
+$lang['lang_plugin_mmanage_core_mobile_member_index_23'] = 'उपयोगकर्ताजानकारी';
+$lang['lang_plugin_mmanage_core_mobile_member_index_24'] = 'ब्लैकलिस्ट';
+$lang['lang_plugin_mmanage_core_mobile_member_index_25'] = 'उपयोगकर्ताजानकारी';
+$lang['lang_plugin_mmanage_core_mobile_member_index_26'] = 'सदस्यहटाएं';
+$lang['lang_plugin_mmanage_core_mobile_member_index_27'] = 'सदस्यताकीजानकारी';
+?>

@@ -1,0 +1,75 @@
+2019-09-01 16:20:08 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1G_sWjVMphmL3V5E5mQSI00]]></FromUserName>
+<CreateTime>1567326008</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2019-09-01 16:20:08 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1G_sWjVMphmL3V5E5mQSI00',
+    'createtime' => '1567326008',
+    'msgtype' => 'event',
+    'event' => 'subscribe',
+    'eventkey' => '',
+    'from' => 'o7hDG1G_sWjVMphmL3V5E5mQSI00',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1567326008',
+    'type' => 'text',
+    'redirection' => true,
+    'source' => 'subscribe',
+  ),
+)
+
+2019-09-01 16:20:08 response :
+------------
+
+2019-09-01 16:20:55 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_ef6cc75b76ac]]></ToUserName>
+<FromUserName><![CDATA[o7hDG1G_sWjVMphmL3V5E5mQSI00]]></FromUserName>
+<CreateTime>1567326054</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[猫和老鼠的宝箱]]></Content>
+<MsgId>22438715563155703</MsgId>
+</xml>
+
+2019-09-01 16:20:55 params :
+------------
+String:
+array (
+  'rule' => -2,
+  'module' => '',
+  'message' => 
+  array (
+    'tousername' => 'gh_ef6cc75b76ac',
+    'fromusername' => 'o7hDG1G_sWjVMphmL3V5E5mQSI00',
+    'createtime' => '1567326054',
+    'msgtype' => 'text',
+    'content' => '猫和老鼠的宝箱',
+    'msgid' => '22438715563155703',
+    'from' => 'o7hDG1G_sWjVMphmL3V5E5mQSI00',
+    'to' => 'gh_ef6cc75b76ac',
+    'time' => '1567326054',
+    'type' => 'text',
+    'event' => NULL,
+    'redirection' => false,
+    'source' => NULL,
+  ),
+)
+
+2019-09-01 16:20:55 response :
+------------
+

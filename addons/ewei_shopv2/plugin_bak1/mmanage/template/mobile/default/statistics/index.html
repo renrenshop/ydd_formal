@@ -1,0 +1,50 @@
+{template 'mmanage/common'}
+
+<div class='fui-page fui-page-current'>
+    <div class="fui-header fui-header-success">
+        <div class="fui-header-left">
+            <a class="back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_0']}</div>
+        <div class="fui-header-right">
+            <a class="btn-more">{php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_1']}</a>
+        </div>
+    </div>
+    <!-- {php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_2']}tab -->
+    <div id="tab" class="fui-tab fui-tab-success fixed">
+        <a data-tab="tab" class="external active" data-status="">{php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_3']}</a>
+        <a data-tab="tab0" class="external " data-status="0">{php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_4']}</a>
+        <a data-tab="tab0" class="external " data-status="0">{php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_5']}</a>
+        <a data-tab="tab0" class="external " data-status="0">{php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_6']}</a>
+    </div>
+    <div class='fui-content navbar'>
+
+        <div class="fui-tab-o fui-tab-success auto">
+            <a class="active" data-type="0">{php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_7']}</a>
+            <a data-type="1">{php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_8']}</a>
+        </div>
+
+        <div class="fui-panel">
+            <div class="fui-panel-header">
+                {php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_9']}148089.47{php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_10']} {php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_11']}126758.81 (2017{php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_12']}2{php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_13']})
+            </div>
+            <div class="fui-panel-body">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="head-menu-mask"></div>
+    <div class="head-menu">
+        <a><i class="icon icon-process"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_14']}</a>
+        <a><i class="icon icon-rank"></i> {php echo $lang['lang_plugin_mmanage_template_mobile_default_statistics_index_15']}</a>
+    </div>
+
+    <script type="text/javascript" src="../addons/ewei_shopv2/plugin/mmanage/static/js/init.js?v={php echo time()}"></script>
+</div>
+{php $this->footerMenus(null, $texts)}
+{template '_footer'}

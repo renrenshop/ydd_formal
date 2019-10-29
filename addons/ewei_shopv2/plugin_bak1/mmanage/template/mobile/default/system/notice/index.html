@@ -1,0 +1,32 @@
+{template 'mmanage/common'}
+
+<div class='fui-page fui-page-current'>
+    <div class="fui-header fui-header-success">
+        <div class="fui-header-left">
+            <a class="back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_system_notice_index_0']}</div>
+        <div class="fui-header-right"></div>
+    </div>
+    <div class='fui-content navbar'>
+
+
+        {if empty($notice)}
+            <div class="fui-title center">{php echo $lang['lang_plugin_mmanage_template_mobile_default_system_notice_index_1']}</div>
+        {else}
+            <div class="fui-cell-group">
+                {loop $notice $item}
+                    <a class="fui-cell" data-nocache="true" href="{php echo mobileUrl('mmanage/system/notice/detail', array('id'=>$item['id']))}">
+                        <div class="fui-cell-info">
+                            <div class="text">{$item['title']}</div>
+                        </div>
+                        <div class="fui-cell-remark"></div>
+                    </a>
+                {/loop}
+            </div>
+        {/if}
+
+    </div>
+</div>
+{php $this->footerMenus(null, $texts)}
+{template '_footer'}

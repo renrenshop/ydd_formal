@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_groups_core_mobile_pay_0'] = ' 순서를찾을수없습니다! ';
+$lang['lang_plugin_groups_core_mobile_pay_1'] = ' 가이활동만료, 다른상품또는연락처사업을하시기바랍니다! ';
+$lang['lang_plugin_groups_core_mobile_pay_2'] = ' 선반아래';
+$lang['lang_plugin_groups_core_mobile_pay_3'] = ' 부족재고';
+$lang['lang_plugin_groups_core_mobile_pay_4'] = ' 가이활동만료, 다른상품을검색하거나가맹점문의! ';
+$lang['lang_plugin_groups_core_mobile_pay_5'] = ' 가이활동종료, 다른상품을검색하거나가맹점문의! ';
+$lang['lang_plugin_groups_core_mobile_pay_6'] = ' 가이작업은성공적으로되었습니다다른상품또는연락처사업을하시기바랍니다! ';
+$lang['lang_plugin_groups_core_mobile_pay_7'] = ' 주문';
+$lang['lang_plugin_groups_core_mobile_pay_8'] = ' 매개변수오류';
+$lang['lang_plugin_groups_core_mobile_pay_9'] = ' 매개변수오류';
+$lang['lang_plugin_groups_core_mobile_pay_10'] = ' 순서는존재하지않습니다';
+$lang['lang_plugin_groups_core_mobile_pay_11'] = ' 매개변수오류';
+$lang['lang_plugin_groups_core_mobile_pay_12'] = ' 제품존재하지않습니다';
+$lang['lang_plugin_groups_core_mobile_pay_13'] = ' 제품존재하지않습니다';
+$lang['lang_plugin_groups_core_mobile_pay_14'] = ' 발견지불';
+$lang['lang_plugin_groups_core_mobile_pay_15'] = ' 발견지불';
+$lang['lang_plugin_groups_core_mobile_pay_16'] = ' 결제오류';
+$lang['lang_plugin_groups_core_mobile_pay_17'] = ' 다시시도';
+$lang['lang_plugin_groups_core_mobile_pay_18'] = ' 결제오류';
+$lang['lang_plugin_groups_core_mobile_pay_19'] = ' 다시시도';
+$lang['lang_plugin_groups_core_mobile_pay_20'] = ' 부족한균형';
+$lang['lang_plugin_groups_core_mobile_pay_21'] = ' 충전';
+$lang['lang_plugin_groups_core_mobile_pay_22'] = ' 소비';
+$lang['lang_plugin_groups_core_mobile_pay_23'] = ' 결제오류';
+$lang['lang_plugin_groups_core_mobile_pay_24'] = ' 다시시도';
+$lang['lang_plugin_groups_core_mobile_pay_25'] = ' 결제오류';
+$lang['lang_plugin_groups_core_mobile_pay_26'] = ' 다시시도';
+?>

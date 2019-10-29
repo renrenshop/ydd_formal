@@ -1,0 +1,28 @@
+{template '_header'}
+<script>document.title = "{php echo $lang['lang_plugin_lottery_template_mobile_default_goodslist_0']}"; </script>
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/task/static/style/goods.css" />
+<div class="fui-goods-group container" >
+    {if !empty($goodslist)}
+    {loop $goodslist $key $value}
+        <a href="{php echo mobileUrl('goods/detail',array('id'=>$value['id'],'log_id'=>$value['log_id']),true);}" class="fui-list">
+            <div class="fui-list-media">
+                <img src="{$value['thumb']}" class="round" style="height: 2.5rem;">
+            </div>
+            <div class="fui-list-inner">
+                <div class="row">
+                    <div class="row-text">{$value['title']}</div>
+                </div>
+                <div class="subtitle">
+                    <span class="text">{php echo $lang['lang_plugin_lottery_template_mobile_default_goodslist_1']}:{$value['marketprice']}{php echo $lang['lang_plugin_lottery_template_mobile_default_goodslist_2']}<span class="oldprice">{php echo $lang['lang_plugin_lottery_template_mobile_default_goodslist_3']}:{$value['oldprice']}{php echo $lang['lang_plugin_lottery_template_mobile_default_goodslist_4']}</span></span>
+                    <span class="text">{php echo $lang['lang_plugin_lottery_template_mobile_default_goodslist_5']}:{$value['total']}</span>
+                </div>
+            </div>
+        </a>
+
+    {/loop}
+    {else}
+    <div class="text-center" >{php echo $lang['lang_plugin_lottery_template_mobile_default_goodslist_6']}</div>
+    {/if}
+</div>
+
+{template '_footer'}

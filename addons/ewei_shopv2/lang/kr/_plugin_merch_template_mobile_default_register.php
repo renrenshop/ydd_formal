@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_merch_template_mobile_default_register_0'] = ' 응용프로그램을기각했다:';
+$lang['lang_plugin_merch_template_mobile_default_register_1'] = ' 다시전송하는정보를수정할수도있습니다 .';
+$lang['lang_plugin_merch_template_mobile_default_register_2'] = ' 당신이정보를제출, 당신에게연락하게우리를위해기다려주세요';
+$lang['lang_plugin_merch_template_mobile_default_register_3'] = ' 다시전송하는정보를수정할수도있습니다 .';
+$lang['lang_plugin_merch_template_mobile_default_register_4'] = ' 판매자이름';
+$lang['lang_plugin_merch_template_mobile_default_register_5'] = ' 판매자이름';
+$lang['lang_plugin_merch_template_mobile_default_register_6'] = ' 주요프로젝트';
+$lang['lang_plugin_merch_template_mobile_default_register_7'] = ' 신발, 모자등';
+$lang['lang_plugin_merch_template_mobile_default_register_8'] = ' 화장품, 등';
+$lang['lang_plugin_merch_template_mobile_default_register_9'] = ' 간략한소개';
+$lang['lang_plugin_merch_template_mobile_default_register_10'] = ' 가맹점에대한간단한소개';
+$lang['lang_plugin_merch_template_mobile_default_register_11'] = ' 연락처';
+$lang['lang_plugin_merch_template_mobile_default_register_12'] = ' 당신의인사말';
+$lang['lang_plugin_merch_template_mobile_default_register_13'] = ' 전화번호';
+$lang['lang_plugin_merch_template_mobile_default_register_14'] = ' 귀하의전화번호';
+$lang['lang_plugin_merch_template_mobile_default_register_15'] = ' 하시기바랍니다문의양식을신중하게,에우리가최대한빨리당신에게연락수보장';
+$lang['lang_plugin_merch_template_mobile_default_register_16'] = ' 계좌번호';
+$lang['lang_plugin_merch_template_mobile_default_register_17'] = ' 계좌번호';
+$lang['lang_plugin_merch_template_mobile_default_register_18'] = ' 암호';
+$lang['lang_plugin_merch_template_mobile_default_register_19'] = ' 암호';
+$lang['lang_plugin_merch_template_mobile_default_register_20'] = ' 여러상인배경에로그온';
+$lang['lang_plugin_merch_template_mobile_default_register_21'] = ' 신중하게입력해주십시오';
+$lang['lang_plugin_merch_template_mobile_default_register_22'] = ' 내가읽었고이해했습니다.';
+$lang['lang_plugin_merch_template_mobile_default_register_23'] = ' ';
+$lang['lang_plugin_merch_template_mobile_default_register_24'] = ' ';
+$lang['lang_plugin_merch_template_mobile_default_register_25'] = ' 입니다. ';
+$lang['lang_plugin_merch_template_mobile_default_register_26'] = ' 지금신청';
+$lang['lang_plugin_merch_template_mobile_default_register_27'] = ' 요청을다시제출';
+$lang['lang_plugin_merch_template_mobile_default_register_28'] = ' 내가읽은';
+?>

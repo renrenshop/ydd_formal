@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_0'] = 'अंक';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_1'] = 'बोनस';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_2'] = 'लाललिफाफे';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_3'] = 'स्पेशल';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_4'] = 'कूपन';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_5'] = 'निकालें';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_6'] = 'समय';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_7'] = 'कोईजीतरिकॉर्ड';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_8'] = 'अबआरेखितकरना';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_9'] = 'जुआशेषकीसंख्या';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_10'] = 'बार';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_11'] = 'इनामकाविवरण';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_12'] = 'मेरीजीतकारिकॉर्ड';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_13'] = 'निष्क्रिय';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_14'] = 'बधाई';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_15'] = 'उठाओ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_16'] = 'कार्यसफल';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_17'] = 'ठीक';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_18'] = 'बहुतखेद';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_19'] = 'आपयहकार्यनहींउठासकते';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_20'] = 'ठीकहै, मुझेपताहै।';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_21'] = 'पुरस्कार';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_22'] = 'सफलतापूर्वकएकत्रितकरें';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_23'] = 'कोईपुरस्कार';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_24'] = 'जहांवर्तमानमेंघुमानेकेलिए';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_25'] = 'कुलकितनेस्थानहैं';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_26'] = '';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_27'] = ', काउपयोगकर';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_28'] = 'स्पष्ट';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_29'] = 'आरंभिकरोटेशनगति';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_30'] = 'घुमावोंकीसंख्या';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_31'] = 'मूलसमयघुमाएं: वहयहहैकिआपकोलॉटरीमेंप्रवेशकरनेसेपहलेकितनीबारघुमनेकीआवश्यकताहै?';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_32'] = 'जीतनेकीस्थिति';
+?>

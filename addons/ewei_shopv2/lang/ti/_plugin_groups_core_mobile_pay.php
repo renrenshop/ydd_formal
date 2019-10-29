@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_groups_core_mobile_pay_0'] = ' ที่สั่งซื้อไม่พบ ';
+$lang['lang_plugin_groups_core_mobile_pay_1'] = ' กิจกรรมนี้ได้หมดอายุแล้ว กรุณาเรียกดูสินค้าหรือติดต่อธุรกิจอื่น ๆ ';
+$lang['lang_plugin_groups_core_mobile_pay_2'] = ' ลงชั้น';
+$lang['lang_plugin_groups_core_mobile_pay_3'] = ' สินค้าคงคลังไม่เพียงพอ';
+$lang['lang_plugin_groups_core_mobile_pay_4'] = ' กิจกรรมนี้ได้หมดอายุแล้ว กรุณาเรียกดูสินค้าอื่น ๆ หรือติดต่อผู้ค้า ';
+$lang['lang_plugin_groups_core_mobile_pay_5'] = ' กิจกรรมนี้ได้สิ้นสุดลง กรุณาเรียกดูสินค้าอื่น ๆ หรือติดต่อผู้ค้า ';
+$lang['lang_plugin_groups_core_mobile_pay_6'] = ' กิจกรรมนี้ได้รับเรียบร้อยแล้วกรุณาจัด เรียกดูสินค้าหรือติดต่อธุรกิจอื่น ๆ ';
+$lang['lang_plugin_groups_core_mobile_pay_7'] = ' ใบสั่ง';
+$lang['lang_plugin_groups_core_mobile_pay_8'] = ' พารามิเตอร์ข้อผิดพลาด';
+$lang['lang_plugin_groups_core_mobile_pay_9'] = ' พารามิเตอร์ข้อผิดพลาด';
+$lang['lang_plugin_groups_core_mobile_pay_10'] = ' ไม่มีใบสั่ง';
+$lang['lang_plugin_groups_core_mobile_pay_11'] = ' พารามิเตอร์ข้อผิดพลาด';
+$lang['lang_plugin_groups_core_mobile_pay_12'] = ' สินค้าไม่มีอยู่';
+$lang['lang_plugin_groups_core_mobile_pay_13'] = ' สินค้าไม่มีอยู่';
+$lang['lang_plugin_groups_core_mobile_pay_14'] = ' ไม่พบการชำระเงิน';
+$lang['lang_plugin_groups_core_mobile_pay_15'] = ' ไม่พบการชำระเงิน';
+$lang['lang_plugin_groups_core_mobile_pay_16'] = ' ข้อผิดพลาดการชำระเงิน';
+$lang['lang_plugin_groups_core_mobile_pay_17'] = ' ลองอีกครั้ง';
+$lang['lang_plugin_groups_core_mobile_pay_18'] = ' ข้อผิดพลาดการชำระเงิน';
+$lang['lang_plugin_groups_core_mobile_pay_19'] = ' ลองอีกครั้ง';
+$lang['lang_plugin_groups_core_mobile_pay_20'] = ' ยอดดุลไม่เพียงพอ';
+$lang['lang_plugin_groups_core_mobile_pay_21'] = ' ชาร์จ';
+$lang['lang_plugin_groups_core_mobile_pay_22'] = ' ปริมาณการใช้';
+$lang['lang_plugin_groups_core_mobile_pay_23'] = ' ข้อผิดพลาดการชำระเงิน';
+$lang['lang_plugin_groups_core_mobile_pay_24'] = ' ลองอีกครั้ง';
+$lang['lang_plugin_groups_core_mobile_pay_25'] = ' ข้อผิดพลาดการชำระเงิน';
+$lang['lang_plugin_groups_core_mobile_pay_26'] = ' ลองอีกครั้ง';
+?>

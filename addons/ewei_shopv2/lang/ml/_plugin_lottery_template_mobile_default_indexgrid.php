@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_0'] = ' mata';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_1'] = ' Bonus';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_2'] = ' Sampul merah';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_3'] = ' Istimewa';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_4'] = ' Kupon';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_5'] = ' Cabutan';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_6'] = ' Masa';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_7'] = ' tiada rekod kemenangan';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_8'] = ' Menarik sekarang';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_9'] = ' Bilangan cabutan bertuah yang tinggal';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_10'] = ' Times';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_11'] = ' Penerangan ganjaran';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_12'] = ' Rekod kemenangan saya';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_13'] = ' Tidak aktif';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_14'] = ' Tahniah';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_15'] = ' Memilih';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_16'] = ' Tugas yang berjaya';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_17'] = ' OK';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_18'] = ' minta maaf';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_19'] = ' Anda tidak boleh mengambil tugas ini';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_20'] = ' OK, saya tahu.';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_21'] = ' Hadiah-hadiah';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_22'] = ' Berjaya mengumpul';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_23'] = ' Mata Ganjaran tidak';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_24'] = ' di mana untuk memutar kini';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_25'] = ' Berapa banyak lokasi yang terdapat secara keseluruhan';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_26'] = ' ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_27'] = ' menggunakan';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_28'] = ' Jelas';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_29'] = ' Giliran awal kelajuan';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_30'] = ' Bilangan putaran';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_31'] = ' Putar asas times: itulah, berapa kali anda perlu putar sekurang-kurangnya sebelum memasuki loteri?';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_32'] = ' Memenangi jawatan';
+?>

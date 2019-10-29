@@ -1,0 +1,59 @@
+{template 'pc/layout/_header'}
+<div class="nch-breadcrumb-layout">
+    <div class="nch-breadcrumb wrapper"><i class="icon-home"></i>
+        <span><a href="/web/web.php?i=1">{php echo $lang['lang_plugin_pc_template_mobile_default_member_bind_0']}</a></span><span class="arrow">></span>
+        <span>{php echo $lang['lang_plugin_pc_template_mobile_default_member_bind_1']}</span>
+    </div>
+</div>
+<div class="ncm-container">
+    {template 'pc/layout/member/left-layout'}
+    <div class="right-layout">
+        <div class="wrap">
+            {template 'pc/layout/member/tabmenu'}
+
+            <div class='fui-content' style='margin-top:5px;'>
+
+                <div class="fui-cell-group">
+
+                    <div class="fui-cell must">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_member_bind_2']}</div>
+                        <div class="fui-cell-info"><input type="tel" class='fui-input' id='mobile' name='mobile'
+                                                          placeholder="{php echo $lang['lang_plugin_pc_template_mobile_default_member_bind_3']}" value="{$member['mobile']}"
+                                                          maxlength="11"/></div>
+                    </div>
+
+                    <div class="fui-cell must">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_member_bind_4']}</div>
+                        <div class="fui-cell-info"><input type="tel" class='fui-input' id='verifycode' name='verifycode'
+                                                          placeholder="5{php echo $lang['lang_plugin_pc_template_mobile_default_member_bind_5']}" value="" maxlength="5"/></div>
+                        <div class="fui-cell-remark noremark"><a class="btn btn-default btn-default-o btn-sm"
+                                                                 id="btnCode">{php echo $lang['lang_plugin_pc_template_mobile_default_member_bind_6']}</a></div>
+                    </div>
+                    <div class="fui-cell must">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_member_bind_7']}</div>
+                        <div class="fui-cell-info"><input type="password" class='fui-input' id='pwd' name='pwd'
+                                                          placeholder="{php echo $lang['lang_plugin_pc_template_mobile_default_member_bind_8']}" value=""/></div>
+                    </div>
+                    <div class="fui-cell must">
+                        <div class="fui-cell-label">{php echo $lang['lang_plugin_pc_template_mobile_default_member_bind_9']}</div>
+                        <div class="fui-cell-info"><input type="password" class='fui-input' id='pwd1' name='pwd1'
+                                                          placeholder="{php echo $lang['lang_plugin_pc_template_mobile_default_member_bind_10']}" value=""/></div>
+                    </div>
+
+                </div>
+
+                <a href='#' id='btnSubmit' class='btn btn-success block'>{php echo $lang['lang_plugin_pc_template_mobile_default_member_bind_11']}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script language='javascript'>
+    require(['../addons/ewei_shopv2/plugin/pc/biz/member/account.js'], function (modal) {
+        modal.initBind({
+            endtime: {php echo intval($endtime)},
+            backurl: "{$_GPC['backurl']}"
+        });
+    });
+</script>
+{template 'pc/layout/_footer'}

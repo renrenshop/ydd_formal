@@ -1,0 +1,20 @@
+<?php
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_0'] = '每期详情';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_1'] = '未开始';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_2'] = '进行中';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_3'] = '已完成';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_4'] = '服务次数';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_5'] = '第';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_6'] = '期/共';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_7'] = '期';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_8'] = '收货日期';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_9'] = '收货地址';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_10'] = '物流信息';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_11'] = '未发货';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_12'] = '修改收货日期';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_13'] = '顺延收货';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_14'] = '修改地址';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_15'] = '修改地址';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_16'] = '确认收货';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_17'] = '取消';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_18'] = '修改';

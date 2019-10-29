@@ -1,0 +1,117 @@
+{template '_header'}
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/groups/template/mobile/default/css/style.css" />
+<style type="text/css">
+.order_goods_img img {border: 1px solid rgb(215, 215, 215); border-image: none; width: 60px; height: 60px; display: block;}
+.order_goods_price i {font-size: 9px;}
+.order_goods_grab .order_goods_grab_txt {background: 0px 0px rgb(238, 51, 17); padding: 2px 3px; border-radius: 2px; color: rgb(255, 255, 255); display: inline-block;}
+.tuan_g_price b {font-size: 18px; font-weight: 400; margin-right: 2px; margin-left: 5px;}
+.tuan_g_price span {vertical-align: 1px;}
+.order_status {height: 30px; color: rgb(221, 0, 0); line-height: 40px; float: left;}
+.order_btn a {border-radius: 3px; width: 80px; height: 30px; text-align: center; color: rgb(255, 255, 255); line-height: 30px; margin-left: 5px; float: left; background-color: rgb(75, 75, 75); -webkit-border-radius: 3px;
+}
+#container{margin:0;background: none;}
+.fui-list-angle span.text-danger{color: #ef4f4f;}
+</style>
+<div class='fui-page order-list-page'>
+    <div class="fui-header">
+	<div class="fui-header-left">
+	    <a class="back" href="{php echo mobileUrl('order')}"></a>
+	</div>
+	<div class="title">{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_0']}</div>
+	<div class="fui-header-right">&nbsp;</div>
+    </div>
+	<div class="fui-tab fui-tab-danger" id="tab">
+		<a class="active" data-tab='success'>{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_1']}</a>
+		<a href="javascript:void(0)" data-tab='success0'>{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_2']}</a>
+		<a href="javascript:void(0)" data-tab='success1'>{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_3']}</a>
+	</div>
+    <div class='fui-content navbar order-list' style="padding-bottom:0;">
+		<div class='fui-content-inner'>
+			<div class='content-loading'>
+				<span class='fui-preloader'></span>
+				<span class='text'>{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_4']}...</span>
+			</div>
+			<div class='content-empty'>
+				<i class='icon icon-lights'></i><br/>{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_5']}
+			</div>
+			<div class="fui-according-group" id="container"></div>
+		</div>
+    </div>
+	<script id='tpl_groups_team_list' type='text/html'>
+		<%each list as order%>
+		<div class='lynn_order_item'>
+			<a href="{php echo mobileUrl('groups/team/detail');}&orderid=<%order.id%>&teamid=<%order.teamid%>" class="external">
+				<div class='lynn_order_title'>
+					{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_6']}: <%order.orderno%>
+					<span class="order_status" style="float:right;">
+						<%if order.itemnum == order.groupnum%>
+							{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_7']}
+						<%else%>
+							<%if order.success == 1%>
+							{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_8']}
+							<%else%>
+								<%if order.lasttime >0%>
+									<%if order.status==0%>
+										{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_9']}
+									<%else if order.itemnum < order.groupnum%>
+										<%if order.status > 0%>
+										{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_10']}
+										<%else%>
+										{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_11']}
+										<%/if%>
+									<%/if%>
+								<%else%>
+									{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_12']}
+								<%/if%>
+							<%/if%>
+						<%/if%>
+					</span>
+				</div>
+				<div class="fui-list lynn_order_list">
+					<div class="fui-list-media">
+						<img src="<%order.thumb%>" class="round">
+					</div>
+					<div class="fui-list-inner">
+						<div class="lynn_order_list_title"><%order.title%></div>
+						<div class="lynn_order_list_subtitle"></div>
+					</div>
+					<div class='fui-list-angle'>
+						<span class='marketprice text-danger'>{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_13']} <%order.groupsprice%></span>/<%if order.units%><%order.goodsnum%><%order.units%><%else%>1{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_14']}<%/if%><br/>
+						x1
+					</div>
+					<div style="position: absolute;right: 4rem;top:3px;width:3rem;height: 3rem;z-index: 999;">
+						<%if order.itemnum >= order.groupnum%>
+						<img  alt="" width="100%" height="100%" src="/addons/ewei_shopv2/plugin/groups/template/mobile/default/images/success.png"/>
+						<%else%>
+						<%if order.success < 0%>
+						<img  alt="" width="100%" height="100%" src="/addons/ewei_shopv2/plugin/groups/template/mobile/default/images/fail.png"/>
+						<%/if%>
+						<%/if%>
+					</div>
+				</div>
+				<div class='lynn_order_price'>
+					<span class='status'>
+						{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_15']}: <span class='text-danger'>{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_16']} <%order.freight%></span>{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_17']}, {php echo $lang['lang_plugin_groups_template_mobile_default_team_index_18']} <span class='text-danger'>1</span> {php echo $lang['lang_plugin_groups_template_mobile_default_team_index_19']}
+						{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_20']}: <span class='text-danger'>{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_21']} <%order.amount%></span>{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_22']}
+					</span>
+				</div>
+			</a>
+			<div class='lynn_order_bottom'>
+				<span class="status">
+				<%if order.status == 3 || order.status == -1%>
+					<a class="lynn_btn lynn_btn_danger" href="{php echo mobileUrl('groups/goods');}&id=<%order.goodid%>">{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_23']}</a>
+				<%/if%>
+					<a class="external lynn_btn lynn_btn_danger" href="{php echo mobileUrl('groups/team/detail');}&orderid=<%order.id%>&teamid=<%order.teamid%>">{php echo $lang['lang_plugin_groups_template_mobile_default_team_index_24']}</a>
+				</span>
+			</div>
+		</div>
+		<%/each%>
+	</script>
+	<script language='javascript'>
+		require(['../addons/ewei_shopv2/plugin/groups/static/js/team.js'], function (modal) {
+			modal.init({fromDetail:false});
+		});
+	</script>
+</div>
+{php $this->footerMenus()}
+{template '_footer'}

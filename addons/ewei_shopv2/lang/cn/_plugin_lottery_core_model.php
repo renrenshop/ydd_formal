@@ -1,0 +1,37 @@
+<?php
+$lang['lang_plugin_lottery_core_model_0'] = '奖励已经过期';
+$lang['lang_plugin_lottery_core_model_1'] = '消费满';
+$lang['lang_plugin_lottery_core_model_2'] = '元';
+$lang['lang_plugin_lottery_core_model_3'] = '赠';
+$lang['lang_plugin_lottery_core_model_4'] = '次';
+$lang['lang_plugin_lottery_core_model_5'] = '签到满';
+$lang['lang_plugin_lottery_core_model_6'] = '天';
+$lang['lang_plugin_lottery_core_model_7'] = '赠';
+$lang['lang_plugin_lottery_core_model_8'] = '次';
+$lang['lang_plugin_lottery_core_model_9'] = '完成任务海报';
+$lang['lang_plugin_lottery_core_model_10'] = '赠';
+$lang['lang_plugin_lottery_core_model_11'] = '次';
+$lang['lang_plugin_lottery_core_model_12'] = '完成任务海报';
+$lang['lang_plugin_lottery_core_model_13'] = '赠';
+$lang['lang_plugin_lottery_core_model_14'] = '次';
+$lang['lang_plugin_lottery_core_model_15'] = '活动名称';
+$lang['lang_plugin_lottery_core_model_16'] = '点击去抽奖';
+$lang['lang_plugin_lottery_core_model_17'] = '恭喜您获得抽奖机会';
+$lang['lang_plugin_lottery_core_model_18'] = '恭喜您获得抽奖机会';
+$lang['lang_plugin_lottery_core_model_19'] = '获得抽奖机会';
+$lang['lang_plugin_lottery_core_model_20'] = '恭喜您获得抽奖机会！！';
+$lang['lang_plugin_lottery_core_model_21'] = '推荐扫码关注积分';
+$lang['lang_plugin_lottery_core_model_22'] = '任务活动推荐奖励';
+$lang['lang_plugin_lottery_core_model_23'] = '推荐奖励';
+$lang['lang_plugin_lottery_core_model_24'] = '推荐奖励';
+$lang['lang_plugin_lottery_core_model_25'] = '推荐奖励';
+$lang['lang_plugin_lottery_core_model_26'] = '积分';
+$lang['lang_plugin_lottery_core_model_27'] = '奖金';
+$lang['lang_plugin_lottery_core_model_28'] = '元';
+$lang['lang_plugin_lottery_core_model_29'] = '红包';
+$lang['lang_plugin_lottery_core_model_30'] = '元';
+$lang['lang_plugin_lottery_core_model_31'] = '特惠商品';
+$lang['lang_plugin_lottery_core_model_32'] = '个';
+$lang['lang_plugin_lottery_core_model_33'] = '优惠券';
+$lang['lang_plugin_lottery_core_model_34'] = '张';
+?>

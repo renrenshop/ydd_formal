@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_groups_template_mobile_default_orders_index_0'] = ' 내주문';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_1'] = ' 모든';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_2'] = ' 보류중인지불';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_3'] = ' 출하수';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_4'] = ' 보류중인배달';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_5'] = ' 완료';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_6'] = ' 로드순서';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_7'] = ' 일시적으로주문이들어오지입니다않습니다 .';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_8'] = ' 주문번호';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_9'] = '엔';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_10'] = ' 조각';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_11'] = ' 화물';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_12'] = '엔';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_13'] = ' 위안';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_14'] = ' 총';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_15'] = ' 항목';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_16'] = ' 총';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_17'] = '엔';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_18'] = ' 위안';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_19'] = ' 주문취소';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_20'] = ' 취소되지않은';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_21'] = ' 내가그것을구매하고싶지않아';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_22'] = ' 내가그것을구매하고싶지않아';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_23'] = ' 정보오류에, 다시두드려';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_24'] = ' 정보오류에, 다시두드려';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_25'] = ' 도시회의';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_26'] = ' 도시회의';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_27'] = ' 다른이유';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_28'] = ' 다른이유';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_29'] = ' 지불';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_30'] = ' 주문삭제';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_31'] = ' 영수증을확인';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_32'] = ' 사용하고싶습니다';
+?>

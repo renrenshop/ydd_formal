@@ -1,0 +1,61 @@
+{if !empty($advaward['order'])}
+    <div class="advaward">
+        <div class="title" style=" font-size: 0.7rem; color: #888;">
+            <span class="text"><i class="icon icon-goods1"></i> {php echo $lang['lang_plugin_sign_template_mobile_default_advaward_0']}{$set['textsign']}{php echo $lang['lang_plugin_sign_template_mobile_default_advaward_1']}</span>
+            <span class="subtitle">{php echo $lang['lang_plugin_sign_template_mobile_default_advaward_2']}{$set['textsign']}{php echo $lang['lang_plugin_sign_template_mobile_default_advaward_3']}</span>
+        </div>
+        <div class="body">
+            <div class="award">
+                <div class="award-body">
+                    {loop $advaward['order'] $item}
+                        {if !empty($item['credit']) && !empty($item['day']) && $item['credit']>0}
+                            <div class="item">
+                                <div class="goods">+{$item['credit']}<br>{$set['textcredit']}</div>
+                                <div class="iconn {if !empty($item['candraw'])}candraw{/if}"><i class="icon icon-check"></i> </div>
+                                <div class="days {if !empty($item['candraw'])}candraw{/if}">{$item['day']}{php echo $lang['lang_plugin_sign_template_mobile_default_advaward_4']}</div>
+                                {if !empty($item['drawed'])}
+                                    <div class="text">{php echo $lang['lang_plugin_sign_template_mobile_default_advaward_5']}</div>
+                                {elseif !empty($item['candraw'])}
+                                    <div class="text candraw" data-type="1" data-day="{$item['day']}">{php echo $lang['lang_plugin_sign_template_mobile_default_advaward_6']}</div>
+                                {else}
+                                    <div class="text">{php echo $lang['lang_plugin_sign_template_mobile_default_advaward_7']}</div>
+                                {/if}
+                            </div>
+                        {/if}
+                    {/loop}
+                </div>
+            </div>
+        </div>
+    </div>
+{/if}
+
+{if !empty($advaward['sum'])}
+    <div class="advaward">
+        <div class="title" style=" font-size: 0.7rem; color: #888;">
+            <span class="text"><i class="icon icon-magic"></i> {$set['textsign']}{php echo $lang['lang_plugin_sign_template_mobile_default_advaward_8']}</span>
+            <span class="subtitle">{$set['textsign']}{php echo $lang['lang_plugin_sign_template_mobile_default_advaward_9']}</span>
+        </div>
+        <div class="body">
+            <div class="award">
+                <div class="award-body">
+                    {loop $advaward['sum'] $item}
+                        {if !empty($item['credit']) && !empty($item['day']) && $item['credit']>0}
+                            <div class="item">
+                                <div class="goods">+{$item['credit']}<br>{$set['textcredit']}</div>
+                                <div class="iconn {if !empty($item['candraw'])}candraw{/if}"><i class="icon icon-check"></i> </div>
+                                <div class="days {if !empty($item['candraw'])}candraw{/if}">{$item['day']}{php echo $lang['lang_plugin_sign_template_mobile_default_advaward_10']}</div>
+                                {if !empty($item['drawed'])}
+                                    <div class="text">{php echo $lang['lang_plugin_sign_template_mobile_default_advaward_11']}</div>
+                                {elseif !empty($item['candraw'])}
+                                    <div class="text candraw" data-type="2" data-day="{$item['day']}">{php echo $lang['lang_plugin_sign_template_mobile_default_advaward_12']}</div>
+                                {else}
+                                    <div class="text">{php echo $lang['lang_plugin_sign_template_mobile_default_advaward_13']}</div>
+                                {/if}
+                            </div>
+                        {/if}
+                    {/loop}
+                </div>
+            </div>
+        </div>
+    </div>
+{/if}

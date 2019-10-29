@@ -1,0 +1,37 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_goods_index_0'] = '最近浏览';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_1'] = '¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_2'] = '全部浏览历史';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_3'] = '排序方式：';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_4'] = '默认排序';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_5'] = '默认';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_6'] = '点击按销量从高到低排序';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_7'] = '销量';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_8'] = '点击按价格从高到低排序';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_9'] = '价格';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_10'] = '最低价';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_11'] = '最高价';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_12'] = '确定';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_13'] = '新品上市';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_14'] = '热卖商品';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_15'] = '推荐商品';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_16'] = '促销商品';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_17'] = '商品列表循环';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_18'] = '限时折扣';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_19'] = '商城价：¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_20'] = '¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_21'] = '市场价：¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_22'] = '¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_23'] = '很满意';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_24'] = '很满意';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_25'] = '很满意';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_26'] = '很满意';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_27'] = '很满意';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_28'] = '很满意';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_29'] = '商品销量';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_30'] = '首页';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_31'] = '上一页';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_32'] = '下一页';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_33'] = '末页';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_34'] = '猜你喜欢';
+?>

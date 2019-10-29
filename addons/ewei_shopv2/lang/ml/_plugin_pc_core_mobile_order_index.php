@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_pc_core_mobile_order_index_0'] = ' Utama';
+$lang['lang_plugin_pc_core_mobile_order_index_1'] = ' Pusat membeli-belah saya';
+$lang['lang_plugin_pc_core_mobile_order_index_2'] = ' Perintah transaksi';
+$lang['lang_plugin_pc_core_mobile_order_index_3'] = ' Senarai pesanan';
+$lang['lang_plugin_pc_core_mobile_order_index_4'] = ' Tong kitar semula';
+$lang['lang_plugin_pc_core_mobile_order_index_5'] = ' Membayar balik';
+$lang['lang_plugin_pc_core_mobile_order_index_6'] = ' pulangan balik';
+$lang['lang_plugin_pc_core_mobile_order_index_7'] = ' Pertukaran';
+$lang['lang_plugin_pc_core_mobile_order_index_8'] = ' dibatalkan';
+$lang['lang_plugin_pc_core_mobile_order_index_9'] = ' Untuk Dihantar';
+$lang['lang_plugin_pc_core_mobile_order_index_10'] = ' Untuk Dibayar';
+$lang['lang_plugin_pc_core_mobile_order_index_11'] = ' dalam penggunaan';
+$lang['lang_plugin_pc_core_mobile_order_index_12'] = ' Perlu diambil';
+$lang['lang_plugin_pc_core_mobile_order_index_13'] = ' Untuk Dihantar';
+$lang['lang_plugin_pc_core_mobile_order_index_14'] = ' Untuk Diterima';
+$lang['lang_plugin_pc_core_mobile_order_index_15'] = ' siap dibina';
+$lang['lang_plugin_pc_core_mobile_order_index_16'] = ' Untuk menilai';
+$lang['lang_plugin_pc_core_mobile_order_index_17'] = ' siap dibina';
+$lang['lang_plugin_pc_core_mobile_order_index_18'] = ' Urus niaga yang lengkap';
+$lang['lang_plugin_pc_core_mobile_order_index_19'] = ' Kepada ';
+$lang['lang_plugin_pc_core_mobile_order_index_20'] = ' Utama';
+$lang['lang_plugin_pc_core_mobile_order_index_21'] = ' Pusat membeli-belah saya';
+$lang['lang_plugin_pc_core_mobile_order_index_22'] = ' Perintah transaksi';
+$lang['lang_plugin_pc_core_mobile_order_index_23'] = ' Butir-butir pesanan';
+$lang['lang_plugin_pc_core_mobile_order_index_24'] = ' Senarai pesanan';
+$lang['lang_plugin_pc_core_mobile_order_index_25'] = ' Butir-butir pesanan';
+$lang['lang_plugin_pc_core_mobile_order_index_26'] = ' Perintah telah dihapuskan';
+$lang['lang_plugin_pc_core_mobile_order_index_27'] = ' Perintah tidak Daftar, dapat lihat maklumat logistik';
+$lang['lang_plugin_pc_core_mobile_order_index_28'] = ' Pesanan tidak dihantar, tidak boleh melihat maklumat logistik';
+?>

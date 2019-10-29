@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_bargain_template_mobile_default_detail_0'] = ' Tawar-menawar butir-butir perkara';
+$lang['lang_plugin_bargain_template_mobile_default_detail_1'] = ' tidak dimulakan';
+$lang['lang_plugin_bargain_template_mobile_default_detail_2'] = ' ditutup';
+$lang['lang_plugin_bargain_template_mobile_default_detail_3'] = ' baki';
+$lang['lang_plugin_bargain_template_mobile_default_detail_4'] = ' hari';
+$lang['lang_plugin_bargain_template_mobile_default_detail_5'] = ' jam';
+$lang['lang_plugin_bargain_template_mobile_default_detail_6'] = ' minit';
+$lang['lang_plugin_bargain_template_mobile_default_detail_7'] = ' saat';
+$lang['lang_plugin_bargain_template_mobile_default_detail_8'] = ' Tawar-menawar butir-butir perkara';
+$lang['lang_plugin_bargain_template_mobile_default_detail_9'] = ' Harga bawah :';
+$lang['lang_plugin_bargain_template_mobile_default_detail_10'] = ' Harga asal:';
+$lang['lang_plugin_bargain_template_mobile_default_detail_11'] = ' Harga asal:';
+$lang['lang_plugin_bargain_template_mobile_default_detail_12'] = ' orang-orang yang terlibat';
+$lang['lang_plugin_bargain_template_mobile_default_detail_13'] = ' kaedah-kaedah';
+$lang['lang_plugin_bargain_template_mobile_default_detail_14'] = ' Proses tawar-menawar';
+$lang['lang_plugin_bargain_template_mobile_default_detail_15'] = ' Memilih betul item';
+$lang['lang_plugin_bargain_template_mobile_default_detail_16'] = ' menjemput rakan-rakan untuk tawar-menawar';
+$lang['lang_plugin_bargain_template_mobile_default_detail_17'] = ' bayar selepas pemotongan untuk harga terendah';
+$lang['lang_plugin_bargain_template_mobile_default_detail_18'] = ' Butir-butir teks';
+$lang['lang_plugin_bargain_template_mobile_default_detail_19'] = ' Utama';
+$lang['lang_plugin_bargain_template_mobile_default_detail_20'] = ' Harga pembelian asal';
+$lang['lang_plugin_bargain_template_mobile_default_detail_21'] = ' anda telah memulakan tawar-menawar untuk produk ini.';
+$lang['lang_plugin_bargain_template_mobile_default_detail_22'] = ' Adakah anda mahu melihatnya sekarang? ';
+$lang['lang_plugin_bargain_template_mobile_default_detail_23'] = ' Tawar-menawar Petua';
+$lang['lang_plugin_bargain_template_mobile_default_detail_24'] = ' Tawar-menawar sekarang';
+$lang['lang_plugin_bargain_template_mobile_default_detail_25'] = ' tidak dimulakan';
+$lang['lang_plugin_bargain_template_mobile_default_detail_26'] = ' ditutup';
+$lang['lang_plugin_bargain_template_mobile_default_detail_27'] = ' Inventori yang tidak mencukupi';
+$lang['lang_plugin_bargain_template_mobile_default_detail_28'] = ' saya';
+?>

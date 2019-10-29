@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_groups_template_mobile_default_orders_index_0'] = ' 私の注文';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_1'] = ' すべて';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_2'] = ' 保留中の支払い';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_3'] = ' 保留中の配信';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_4'] = ' 保留中の配信';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_5'] = ' 完成品';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_6'] = ' 命令の読み込み';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_7'] = ' 一時的に注文はなし。';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_8'] = ' 注文番号';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_9'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_10'] = ' 個セット';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_11'] = ' 貨物';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_12'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_13'] = ' 元';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_14'] = ' 合計';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_15'] = ' アイテム';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_16'] = ' 合計';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_17'] = '¥';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_18'] = ' 元';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_19'] = ' 注文をキャンセル';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_20'] = ' キャンセルされません。';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_21'] = ' 私はそれを買いたいと思わない';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_22'] = ' 私はそれを買いたいと思わない';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_23'] = ' 情報入力エラー、再パット';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_24'] = ' 情報入力エラー、再パット';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_25'] = ' 都市との出会い';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_26'] = ' 都市との出会い';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_27'] = ' その他の理由';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_28'] = ' その他の理由';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_29'] = ' 支払う';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_30'] = ' 注文の削除';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_31'] = ' 領収書の確認';
+$lang['lang_plugin_groups_template_mobile_default_orders_index_32'] = ' 使用したいです。';
+?>

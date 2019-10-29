@@ -1,0 +1,74 @@
+{template 'mmanage/common'}
+
+<div class='fui-page fui-page-current'>
+    <div class="fui-header fui-header-success">
+        <div class="fui-header-left">
+            <a class="back btn-back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_0']}</div>
+        <div class="fui-header-right"></div>
+    </div>
+    <div class='fui-content navbar'>
+
+        <input type="hidden" id="mid" value="{$member['id']}" />
+        <input type="hidden" id="changetype" value="0" />
+        <input type="hidden" id="type" value="{$type}" />
+
+        {ifp 'finance.recharge.credit1&finance.recharge.credit2'}
+            <div class="fui-tab-o fui-tab-success" id="tab">
+                <a {if empty($type)}class="active"{/if} data-type="0">{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_1']}</a>
+                <a {if !empty($type)}class="active"{/if} data-type="1">{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_2']}</a>
+            </div>
+        {/if}
+
+        <div class="fui-list-group">
+            <div class="fui-list">
+                <div class="fui-list-media external">
+                    <img src="{$member['avatar']}" class="round">
+                </div>
+                <div class="fui-list-inner">
+                    <div class="title" id="nickname">{php echo empty($member['nickname'])?"{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_3']}":$member['nickname']}</div>
+                    <div class="subtitle">
+                        <span class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_4']}: {$member['credit2']}</span>
+                        <span class="total half">{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_5']}: {$member['credit1']}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fui-cell-group">
+            <div class="fui-cell check-param" data-action="changetype">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_6']}</div>
+                <div class="fui-cell-info">{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_7']}<span class="credit_text">{php echo $type==1?"{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_8']}":"{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_9']}"}</span></div>
+                <div class="fui-cell-remark"></div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_10']}</div>
+                <div class="fui-cell-info">
+                    <input type="number" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_11']}" class="fui-input" id="num">
+                </div>
+            </div>
+            <div class="fui-cell fui-cell-textarea">
+                <div class="fui-cell-label ">{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_12']}</div>
+                <div class="fui-cell-info">
+                    <textarea rows="3" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_13']}" id="remark"></textarea>
+                </div>
+            </div>
+        </div>
+
+        {ifp 'finance.recharge.credit1|finance.recharge.credit2'}
+            <div class="btn btn-success indent" id="btn-submit">{php echo $lang['lang_plugin_mmanage_template_mobile_default_finance_recharge_14']}</div>
+        {/if}
+
+    </div>
+
+    {template 'mmanage/_tpl/recharge_params'}
+
+    <script language="javascript">
+        require(['../addons/ewei_shopv2/plugin/mmanage/static/js/recharge.js'],function(modal){
+            modal.initRecharge();
+        });
+    </script>
+
+</div>
+{php $this->footerMenus(null, $texts)}
+{template '_footer'}

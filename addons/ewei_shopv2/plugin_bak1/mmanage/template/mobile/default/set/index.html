@@ -1,0 +1,83 @@
+{template 'mmanage/common'}
+
+<div class='fui-page fui-page-current'>
+    <div class="fui-header fui-header-success">
+        <div class="fui-header-left">
+            <a class="back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_0']}</div>
+        <div class="fui-header-right"></div>
+    </div>
+    <div class='fui-content navbar'>
+
+        {if !empty($member)}
+            <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_1']}</div>
+            <div class="fui-list-group">
+                <a class="fui-list external" href="{php echo mobileUrl('member')}">
+                    <div class="fui-list-media external">
+                        <img src="{$member['avatar']}" class="round">
+                    </div>
+                    <div class="fui-list-inner">
+                        <div class="title">{$member['nickname']}</div>
+                        <div class="subtitle">
+                            {if $member['bindrole']}
+                                <span class="fui-label fui-label-success">{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_2']}</span>
+                            {else}
+                                <span class="fui-label fui-label-default">{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_3']}</span>
+                            {/if}
+                        </div>
+                    </div>
+                    <div class="angle"></div>
+                </a>
+            </div>
+        {/if}
+
+        <div class="fui-title">{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_4']}</div>
+        <div class="fui-cell-group">
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_5']}</div>
+                <div class="fui-cell-info">{$roleuser['username']}</div>
+                <div class="fui-cell-remark noremark">{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_6']}</div>
+            </div>
+        </div>
+        <div class="fui-cell-group">
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_7']}</div>
+                <div class="fui-cell-info">
+                    <input type="text" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_8']}" class="fui-input" value="{$roleuser['realname']}" id="realname" />
+                </div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_9']}</div>
+                <div class="fui-cell-info">
+                    <input type="tel" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_10']}" class="fui-input" value="{$roleuser['mobile']}" maxlength="11" id="mobile" />
+                </div>
+            </div>
+        </div>
+
+        <div class="fui-cell-group">
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_11']}</div>
+                <div class="fui-cell-info">
+                    <input type="password" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_12']}({php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_13']})" class="fui-input" id="password" />
+                </div>
+            </div>
+            <div class="fui-cell">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_14']}</div>
+                <div class="fui-cell-info">
+                    <input type="password" placeholder="{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_15']}" class="fui-input" id="password2" />
+                </div>
+            </div>
+        </div>
+
+        <div class="btn btn-success block" id="btn-submit">{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_16']}</div>
+        <div class="btn btn-danger block" id="btn-logout">{php echo $lang['lang_plugin_mmanage_template_mobile_default_set_index_17']}</div>
+    </div>
+    <script language="javascript">
+        require(['../addons/ewei_shopv2/plugin/mmanage/static/js/base.js'],function(modal){
+            modal.initPerson();
+        });
+    </script>
+</div>
+{php $this->footerMenus(null, $texts)}
+{template '_footer'}

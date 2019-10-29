@@ -1,0 +1,43 @@
+<?php
+$lang['lang_plugin_groups_template_mobile_default_team_detail_0'] = 'रेजिमेंटविवरण';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_1'] = 'समूहसफलता';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_2'] = 'किसीसमूहकेलिएप्रतीक्षाकररहाहै';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_3'] = 'समूहखरीदविफलता';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_4'] = 'समूहमूल्य:¥';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_5'] = 'मोहरे';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_6'] = 'शेषपहेली';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_7'] = 'दूरीकेसाथशुरू';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_8'] = 'दिन';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_9'] = 'घंटे';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_10'] = 'मिनट';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_11'] = 'सेकंड';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_12'] = ', बुरा';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_13'] = 'व्यक्ति';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_14'] = 'टीममेंशामिलहोनेकेलिएमित्रोंकोआमंत्रितकरें! ';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_15'] = 'समूहखरीदबंद';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_16'] = 'समूहविवरण';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_17'] = 'उत्पादविवरण';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_18'] = 'सभीसमूहविवरणदेखें';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_19'] = 'ओपनरेजीमेंट';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_20'] = 'अनाम';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_21'] = 'भागलेनेवालेसमूह';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_22'] = 'कोईउत्पादविवरणनहीं';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_23'] = 'समूहप्ले';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_24'] = 'विवरणदेखें';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_25'] = 'काचयनकरें';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_26'] = 'पसंदीदाआइटम';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_27'] = 'किसीसमूहकेलिएभुगतानकरना';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_28'] = 'यासहभागियोंकासमूह';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_29'] = 'मित्रोंकोआमंत्रितकरें';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_30'] = 'समूहभुगतान';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_31'] = 'पहुंचीलोगोंकीसंख्या';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_32'] = 'समूहखरीदसफलता';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_33'] = 'समूहखरीदसफलरहा';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_34'] = 'समूहखरीदसफलरहा';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_35'] = 'अभीसमूहमेंशामिलहोनेकेलिएमित्रोंकोआमंत्रितकरें.';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_36'] = 'मैंरेजिमेंटसेजुड़नाचाहताहूं';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_37'] = 'इसमिशनकीसमयसीमासमाप्तहोगईहै';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_38'] = 'घर';
+$lang['lang_plugin_groups_template_mobile_default_team_detail_39'] = 'गतिविधिसमाप्त';
+?>
+ 

@@ -1,0 +1,37 @@
+<?php
+$lang['lang_plugin_lottery_core_model_0'] = ' 賞の期限が切れています。';
+$lang['lang_plugin_lottery_core_model_1'] = ' 完全消費';
+$lang['lang_plugin_lottery_core_model_2'] = ' 元';
+$lang['lang_plugin_lottery_core_model_3'] = ' ギフト';
+$lang['lang_plugin_lottery_core_model_4'] = ' 回';
+$lang['lang_plugin_lottery_core_model_5'] = ' チェック-インフル';
+$lang['lang_plugin_lottery_core_model_6'] = ' 日';
+$lang['lang_plugin_lottery_core_model_7'] = ' ギフト';
+$lang['lang_plugin_lottery_core_model_8'] = ' 回';
+$lang['lang_plugin_lottery_core_model_9'] = ' 完了タスクのポスター';
+$lang['lang_plugin_lottery_core_model_10'] = ' ギフト';
+$lang['lang_plugin_lottery_core_model_11'] = ' 回';
+$lang['lang_plugin_lottery_core_model_12'] = ' 完了タスクのポスター';
+$lang['lang_plugin_lottery_core_model_13'] = ' ギフト';
+$lang['lang_plugin_lottery_core_model_14'] = ' 回';
+$lang['lang_plugin_lottery_core_model_15'] = ' アクティビティ名';
+$lang['lang_plugin_lottery_core_model_16'] = ' 描画するをクリックして';
+$lang['lang_plugin_lottery_core_model_17'] = ' おめでとうあなたの幸運な機会を描画';
+$lang['lang_plugin_lottery_core_model_18'] = ' おめでとうあなたの幸運な機会を描画';
+$lang['lang_plugin_lottery_core_model_19'] = ' 抽選機会を得る';
+$lang['lang_plugin_lottery_core_model_20'] = ' おめでとうを描画するあなたのチャンス! ';
+$lang['lang_plugin_lottery_core_model_21'] = ' 掃引コード注意ポイントをお勧めします';
+$lang['lang_plugin_lottery_core_model_22'] = ' タスク活動紹介賞';
+$lang['lang_plugin_lottery_core_model_23'] = ' 報酬をお勧めします';
+$lang['lang_plugin_lottery_core_model_24'] = ' 報酬をお勧めします';
+$lang['lang_plugin_lottery_core_model_25'] = ' 報酬をお勧めします';
+$lang['lang_plugin_lottery_core_model_26'] = ' ポイント';
+$lang['lang_plugin_lottery_core_model_27'] = ' ボーナス';
+$lang['lang_plugin_lottery_core_model_28'] = ' 元';
+$lang['lang_plugin_lottery_core_model_29'] = ' 赤い封筒';
+$lang['lang_plugin_lottery_core_model_30'] = ' 元';
+$lang['lang_plugin_lottery_core_model_31'] = ' スペシャル';
+$lang['lang_plugin_lottery_core_model_32'] = ' 、';
+$lang['lang_plugin_lottery_core_model_33'] = ' クーポン';
+$lang['lang_plugin_lottery_core_model_34'] = ' シート';
+?>

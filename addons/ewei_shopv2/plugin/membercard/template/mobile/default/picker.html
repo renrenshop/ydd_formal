@@ -1,0 +1,44 @@
+<script id="tpl_cards" type="text/html">
+	<!--<div class='card-list-modal in'></div>-->
+	<div class='card-list-group in'>
+		<div class='card-list-title'>{php echo $this->lang['_plugin_membercard_core_mobile_index_1']}</div>
+		<div class='card-list-cancel'>
+			<div class='text'>{php echo $this->lang['_plugin_membercard_core_mobile_index_2']}</div>
+			<div class='btn-card-cancel icon '><i class="icon icon-wancheng"></i></div>
+		</div>
+		<div class='card-list-content card-picker'>
+			<%each cards as card%>
+			<div class='item <%card.card_style%>'>
+				<div  class='iconselect'  data-cardnname="<%card.name%>"  data-cardprice="<%card.price%>" data-cardid="<%card.id%>"><i class="icon icon-roundcheckfill"></i></div>
+				<i class="iconbg icon icon-huangguan-line"></i>
+				<div class='content'>
+					<div class='title'><i class="icon icon-huangguan"></i><%card.name%></div>
+					<%if card.expire_time==-1%>
+					<div class='date'>{php echo $this->lang['_plugin_membercard_core_mobile_index_3']}</div>
+					<%else%>
+					<div class='date'>{php echo $this->lang['_plugin_membercard_core_mobile_index_4']}：<% card.expire_time%></div>
+					<%/if%>
+					<div class='tip'>
+						<%if card.member_discount>0%>
+						<div class='tip-item'><% card.discount_rate %>折</div>
+						<%/if%>
+						<%if card.shipping==1%>
+						<div class='tip-item'>{php echo $this->lang['_plugin_membercard_core_mobile_index_5']}</div>
+						<%/if%>
+						<%if card.is_card_coupon||card.is_month_coupon%>
+						<div class='tip-item'>{php echo $this->lang['_plugin_membercard_core_mobile_index_6']}</div>
+						<%/if%>
+						<%if card.is_card_points%>
+						<div class='tip-item'>{php echo $this->lang['_plugin_membercard_core_mobile_index_7']}</div>
+						<%/if%>
+
+					</div>
+				</div>
+			</div>
+			<%/each%>
+			<div class="fui-loading empty">
+				<div class="text" style="background: #fff;">{php echo $this->lang['_plugin_membercard_core_mobile_index_8']}</div>
+			</div>
+		</div>
+	</div>
+</script>

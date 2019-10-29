@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_0'] = ' Quản lý đặt hàng';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_1'] = ' Thêm';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_2'] = ' Đầu trang';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_3'] = ' Quyền yêu cầu bồi thường';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_4'] = ' Quyền hoàn chỉnh';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_5'] = ' Để có được vận chuyển';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_6'] = ' Đang chờ xử lý thanh toán';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_7'] = ' Phân phối đang chờ giải quyết';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_8'] = ' hoàn thành';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_9'] = ' đóng cửa';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_10'] = ' Hộp tìm kiếm';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_11'] = ' Số thứ tự';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_12'] = ' Thông tin thành viên';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_13'] = ' Thông tin người nhận';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_14'] = ' Thông tin địa chỉ';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_15'] = ' Nhận số';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_16'] = ' Tên sản phẩm';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_17'] = ' Mã hóa hàng hóa';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_18'] = ' Write-off thư ký';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_19'] = ' Write-off Store';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_20'] = ' Tên người bán';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_21'] = ' Nhập một từ khóa';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_22'] = ' Tìm kiếm';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_23'] = ' Danh sách đặt hàng';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_24'] = ' tải nhiều';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_25'] = ' Không có dữ liệu';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_26'] = ' không có thêm.';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_27'] = ' Trật tự bình thường';
+$lang['lang_plugin_mmanage_template_mobile_default_order_index_28'] = ' Hoạt động các đơn đặt hàng';
+?>

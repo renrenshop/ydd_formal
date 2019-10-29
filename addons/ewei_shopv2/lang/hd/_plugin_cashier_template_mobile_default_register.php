@@ -1,0 +1,34 @@
+<?php
+$lang['lang_plugin_cashier_template_mobile_default_register_0'] = 'आपकाआवेदनखारिजकरदियागया:';
+$lang['lang_plugin_cashier_template_mobile_default_register_1'] = 'आपपुनःसबमिटकरनेकेलिएभीजानकारीसंशोधितकरसकतेहैं।';
+$lang['lang_plugin_cashier_template_mobile_default_register_2'] = 'आपनेजानकारीसबमिटकीहै, कृपयाहमसेसंपर्ककरनेकेलिएप्रतीक्षाकरें';
+$lang['lang_plugin_cashier_template_mobile_default_register_3'] = 'आपपुनःसबमिटकरनेकेलिएभीजानकारीसंशोधितकरसकतेहैं।';
+$lang['lang_plugin_cashier_template_mobile_default_register_4'] = 'कैशियरकानाम';
+$lang['lang_plugin_cashier_template_mobile_default_register_5'] = 'कैशियरकानाम';
+$lang['lang_plugin_cashier_template_mobile_default_register_6'] = 'रोकड़पंजीकापता';
+$lang['lang_plugin_cashier_template_mobile_default_register_7'] = 'संपर्क';
+$lang['lang_plugin_cashier_template_mobile_default_register_8'] = 'आपकाअभिवादन';
+$lang['lang_plugin_cashier_template_mobile_default_register_9'] = 'फ़ोननंबर';
+$lang['lang_plugin_cashier_template_mobile_default_register_10'] = 'आपकाफ़ोननंबर';
+$lang['lang_plugin_cashier_template_mobile_default_register_11'] = 'कृपयासंपर्कफ़ॉर्मसावधानीसेभरें, गारंटीहैकिहमजितनीजल्दीहोसकेआपसेसंपर्ककरसकतेहैं';
+$lang['lang_plugin_cashier_template_mobile_default_register_12'] = 'ID सामने';
+$lang['lang_plugin_cashier_template_mobile_default_register_13'] = 'ID वापस';
+$lang['lang_plugin_cashier_template_mobile_default_register_14'] = 'लॉगऑनउपयोगकर्तानाम';
+$lang['lang_plugin_cashier_template_mobile_default_register_15'] = 'पृष्ठभूमिलॉगऑनउपयोगकर्तानाम';
+$lang['lang_plugin_cashier_template_mobile_default_register_16'] = 'लॉगऑनपासवर्ड';
+$lang['lang_plugin_cashier_template_mobile_default_register_17'] = 'यदियहपहलेसेहीभराहै';
+$lang['lang_plugin_cashier_template_mobile_default_register_18'] = 'रिक्तछोड़ें';
+$lang['lang_plugin_cashier_template_mobile_default_register_19'] = 'कृपयासंपर्कफ़ॉर्ममेंसावधानीसेभरें, गारंटीहैकिहमजितनीजल्दीहोसकेआपसेसंपर्ककरसकतेहैं';
+$lang['lang_plugin_cashier_template_mobile_default_register_20'] = 'संदर्भ';
+$lang['lang_plugin_cashier_template_mobile_default_register_21'] = 'पृष्ठभूमिलॉगऑनउपयोगकर्तानाम';
+$lang['lang_plugin_cashier_template_mobile_default_register_22'] = 'अनुशंसितव्यक्तिफ़ोन';
+$lang['lang_plugin_cashier_template_mobile_default_register_23'] = 'पृष्ठभूमिलॉगऑनपासवर्ड';
+$lang['lang_plugin_cashier_template_mobile_default_register_24'] = 'कृपयासंपर्कफ़ॉर्मसावधानीसेभरें, गारंटीहैकिहमजितनीजल्दीहोसकेआपसेसंपर्ककरसकतेहैं';
+$lang['lang_plugin_cashier_template_mobile_default_register_25'] = 'मैंनेपढ़ाहैऔरसमझाहै।';
+$lang['lang_plugin_cashier_template_mobile_default_register_26'] = 'अनुरोधअनुबंध';
+$lang['lang_plugin_cashier_template_mobile_default_register_27'] = '. ';
+$lang['lang_plugin_cashier_template_mobile_default_register_28'] = 'केमाध्यमसेअनुमोदित';
+$lang['lang_plugin_cashier_template_mobile_default_register_29'] = 'अभीलागूकरें';
+$lang['lang_plugin_cashier_template_mobile_default_register_30'] = 'पुनःसबमिटकरेंअनुरोध';
+$lang['lang_plugin_cashier_template_mobile_default_register_31'] = 'मैंनेपढ़ाहै';
+?>

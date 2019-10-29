@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_groups_core_mobile_orders_0'] = '订单非快递单，无法查看物流信息';
+$lang['lang_plugin_groups_core_mobile_orders_1'] = '订单未发货，无法查看物流信息';
+$lang['lang_plugin_groups_core_mobile_orders_2'] = '订单未找到';
+$lang['lang_plugin_groups_core_mobile_orders_3'] = '订单不能取消';
+$lang['lang_plugin_groups_core_mobile_orders_4'] = '订单未找到';
+$lang['lang_plugin_groups_core_mobile_orders_5'] = '无法删除';
+$lang['lang_plugin_groups_core_mobile_orders_6'] = '已取消';
+$lang['lang_plugin_groups_core_mobile_orders_7'] = '待付款';
+$lang['lang_plugin_groups_core_mobile_orders_8'] = '待发货';
+$lang['lang_plugin_groups_core_mobile_orders_9'] = '已付款';
+$lang['lang_plugin_groups_core_mobile_orders_10'] = '待收货';
+$lang['lang_plugin_groups_core_mobile_orders_11'] = '已完成';
+$lang['lang_plugin_groups_core_mobile_orders_12'] = '您选择的商品已经下架，请浏览其他商品或联系商家！';
+$lang['lang_plugin_groups_core_mobile_orders_13'] = '如果您想要购买此商品，需要您关注我们的公众号，点击【确定】关注后再来购买吧';
+$lang['lang_plugin_groups_core_mobile_orders_14'] = '您已到达此商品购买上限，请浏览其他商品或联系商家！';
+$lang['lang_plugin_groups_core_mobile_orders_15'] = '您的订单已存在，请尽快完成支付！';
+$lang['lang_plugin_groups_core_mobile_orders_16'] = '您已经参与了该团，请等待拼团结束后再进行购买！';
+$lang['lang_plugin_groups_core_mobile_orders_17'] = '该团人数已达上限，请浏览其他商品或联系商家！';
+$lang['lang_plugin_groups_core_mobile_orders_18'] = '该活动已过期，请浏览其他商品或联系商家！';
+$lang['lang_plugin_groups_core_mobile_orders_19'] = '该活动已结束，请浏览其他商品或联系商家！';
+$lang['lang_plugin_groups_core_mobile_orders_20'] = '该活动已成功组团，请浏览其他商品或联系商家！';
+$lang['lang_plugin_groups_core_mobile_orders_21'] = '联系人或联系电话不能为空！';
+$lang['lang_plugin_groups_core_mobile_orders_22'] = '未找到地址';
+$lang['lang_plugin_groups_core_mobile_orders_23'] = '地址请选择省市信息';
+$lang['lang_plugin_groups_core_mobile_orders_24'] = '生成订单失败！';
+$lang['lang_plugin_groups_core_mobile_orders_25'] = '订单未找到';
+$lang['lang_plugin_groups_core_mobile_orders_26'] = '订单不能确认收货';
+?>

@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_groups_core_mobile_orders_0'] = ' 순서는아닙니다택배양식, 물류정보를볼수없습니다.';
+$lang['lang_plugin_groups_core_mobile_orders_1'] = ' 주문하지출하, 물류정보를볼수없습니다.';
+$lang['lang_plugin_groups_core_mobile_orders_2'] = ' 순서를찾을수없습니다';
+$lang['lang_plugin_groups_core_mobile_orders_3'] = ' 주문취소할수없습니다';
+$lang['lang_plugin_groups_core_mobile_orders_4'] = ' 순서를찾을수없습니다';
+$lang['lang_plugin_groups_core_mobile_orders_5'] = ' 삭제할수없습니다';
+$lang['lang_plugin_groups_core_mobile_orders_6'] = ' 취소';
+$lang['lang_plugin_groups_core_mobile_orders_7'] = ' 보류중인지불';
+$lang['lang_plugin_groups_core_mobile_orders_8'] = ' 출하수';
+$lang['lang_plugin_groups_core_mobile_orders_9'] = ' 지불';
+$lang['lang_plugin_groups_core_mobile_orders_10'] = ' 보류중인배달';
+$lang['lang_plugin_groups_core_mobile_orders_11'] = ' 완료';
+$lang['lang_plugin_groups_core_mobile_orders_12'] = ' 제품선택선반되었습니다, 그리고다른제품검색하거나비즈니스에게연락! ';
+$lang['lang_plugin_groups_core_mobile_orders_13'] = ' 우리의공공수주의하고 "확인"을다시구매를해야이항목을구입하려는경우.';
+$lang['lang_plugin_groups_core_mobile_orders_14'] = ' 이항목에대한구매제한에도달했습니다, 다른상품을검색하거나가맹점문의! ';
+$lang['lang_plugin_groups_core_mobile_orders_15'] = ' 이미주문, 지불가능한한빨리완료하시기바랍니다! ';
+$lang['lang_plugin_groups_core_mobile_orders_16'] = ' 당신은구매주문의끝날때까지기다려주세요연대에참여! ';
+$lang['lang_plugin_groups_core_mobile_orders_17'] = ' 그룹상한값에도달했습니다, 다른상품을검색하거나비즈니스에게연락! ';
+$lang['lang_plugin_groups_core_mobile_orders_18'] = ' 가이활동만료, 다른상품을검색하거나가맹점문의! ';
+$lang['lang_plugin_groups_core_mobile_orders_19'] = ' 가이활동종료, 다른상품을검색하거나가맹점문의! ';
+$lang['lang_plugin_groups_core_mobile_orders_20'] = ' 가이작업은성공적으로되었습니다다른상품또는연락처사업을하시기바랍니다! ';
+$lang['lang_plugin_groups_core_mobile_orders_21'] = ' 연락처또는문의전화는비어있을수없습니다! ';
+$lang['lang_plugin_groups_core_mobile_orders_22'] = ' 주소를찾을수없음';
+$lang['lang_plugin_groups_core_mobile_orders_23'] = ' 지방정보를선택하십시오주소';
+$lang['lang_plugin_groups_core_mobile_orders_24'] = ' 순서를생성하지못했습니다! ';
+$lang['lang_plugin_groups_core_mobile_orders_25'] = ' 순서를찾을수없습니다';
+$lang['lang_plugin_groups_core_mobile_orders_26'] = ' 주문접수를확인할수없습니다';
+?>

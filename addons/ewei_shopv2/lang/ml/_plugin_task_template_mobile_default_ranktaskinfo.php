@@ -1,0 +1,33 @@
+<?php
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_0'] = ' Jemputan kumulatif';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_1'] = ' orang imbasan atau menonton poster';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_2'] = ' Mata "bonus"';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_3'] = ' Jumlah Anugerah';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_4'] = ' Bonus Bonus ';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_5'] = ' Ganjaran kupon';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_6'] = ' Anugerah tawaran istimewa';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_7'] = ' Tiada nombor sasaran';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_8'] = ' Mata Ganjaran tidak';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_9'] = ' Mata Ganjaran tidak';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_10'] = ' Pertimbangan';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_11'] = ' Tiada Nota';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_12'] = ' Angkat sekarang';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_13'] = ' Saya akan melihat lagi';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_14'] = ' Tahniah';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_15'] = ' Memilih';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_16'] = ' Tugas yang berjaya';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_17'] = ' Sila kembalikan ke awam nombor untuk melihat poster tugas anda';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_18'] = ' OK';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_19'] = ' minta maaf';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_20'] = ' Anda tidak boleh mengambil tugas ini';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_21'] = ' anda telah menerima jenis tugas yang sama';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_22'] = ' OK, saya tahu.';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_23'] = ' Berjaya mengumpul';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_24'] = ' Tahniah';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_25'] = ' Memilih';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_26'] = ' Tugas yang berjaya';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_27'] = ' Menjemput gagal';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_28'] = ' tidak boleh menerima';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_29'] = ' Maklumat tugas tidak ditemui';
+$lang['lang_plugin_task_template_mobile_default_ranktaskinfo_30'] = ' Maklumat tugas tidak didapati';
+?>

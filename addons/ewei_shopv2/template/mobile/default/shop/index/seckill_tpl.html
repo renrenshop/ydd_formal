@@ -1,0 +1,34 @@
+<div class="seckill-title">
+    <div class="seckill-text">
+        <span class="title" style="color:#f02b2b;font-weight: bold;">{$seckillinfo['tag']}</span>
+        <span class="title">{$seckillinfo['time']}{php echo $lang['lang_template_mobile_shop_index_seckill_tpl_0']}</span>
+        <div class="killtime" data-toggle="timer" data-timer="{$seckillinfo['endtime']}|.time-hour|.time-min|.time-sec|" data-timer-callback="">
+            <span class="item time-hour">--</span>:<span class="item time-min">--</span>:<span class="item time-sec">--</span>
+        </div>
+    </div>
+    <div class="seckill-remark">{php echo $lang['lang_template_mobile_shop_index_seckill_tpl_1']}</div>
+</div>
+<div class="seckill-goods swiper-container">
+    <div class="swiper-wrapper">
+        {loop $seckillinfo['goods'] $g}
+        <div class="item swiper-slide" style="margin-right:.5rem;">
+            <div class="thumb">
+                <img src="{$g['thumb']}" />
+            </div>
+            <div class="marketprice">&yen;{$g['price']}</div>
+            <div class="productprice">&yen;{$g['marketprice']}</div>
+        </div>
+        {/loop}
+        {if count($seckillinfo['goods'])>=4}
+        <div class="item last-item swiper-slide">
+            <i class="icon icon-left"></i>
+            <div class="inner">
+                <p>{php echo $lang['lang_template_mobile_shop_index_seckill_tpl_2']}</p>
+                <p>{php echo $lang['lang_template_mobile_shop_index_seckill_tpl_3']}</p>
+                <p>{php echo $lang['lang_template_mobile_shop_index_seckill_tpl_4']}</p>
+                <p>{php echo $lang['lang_template_mobile_shop_index_seckill_tpl_5']}</p>
+            </div>
+        </div>
+        {/if}
+    </div>
+</div>

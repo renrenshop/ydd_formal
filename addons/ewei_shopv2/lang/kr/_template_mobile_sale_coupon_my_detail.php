@@ -1,0 +1,36 @@
+<?php
+$lang['lang_template_mobile_sale_coupon_my_detail_0'] = '세부정보';
+$lang['lang_template_mobile_sale_coupon_my_detail_1'] = '서서뒤로';
+$lang['lang_template_mobile_sale_coupon_my_detail_2'] = '위안균형';
+$lang['lang_template_mobile_sale_coupon_my_detail_3'] = '포인트';
+$lang['lang_template_mobile_sale_coupon_my_detail_4'] = '메타봉투';
+$lang['lang_template_mobile_sale_coupon_my_detail_5'] = '영구적으로유효';
+$lang['lang_template_mobile_sale_coupon_my_detail_6'] = '즉';
+$lang['lang_template_mobile_sale_coupon_my_detail_7'] = '일';
+$lang['lang_template_mobile_sale_coupon_my_detail_8'] = '유효한일';
+$lang['lang_template_mobile_sale_coupon_my_detail_9'] = '사용이';
+$lang['lang_template_mobile_sale_coupon_my_detail_10'] = '도구입';
+$lang['lang_template_mobile_sale_coupon_my_detail_11'] = '저장소항목';
+$lang['lang_template_mobile_sale_coupon_my_detail_12'] = '사용지침';
+$lang['lang_template_mobile_sale_coupon_my_detail_13'] = '만료';
+$lang['lang_template_mobile_sale_coupon_my_detail_14'] = '영구적으로유효';
+$lang['lang_template_mobile_sale_coupon_my_detail_15'] = '즉';
+$lang['lang_template_mobile_sale_coupon_my_detail_16'] = '일';
+$lang['lang_template_mobile_sale_coupon_my_detail_17'] = '유효한일';
+$lang['lang_template_mobile_sale_coupon_my_detail_18'] = '유효기간';
+$lang['lang_template_mobile_sale_coupon_my_detail_19'] = '도구입';
+$lang['lang_template_mobile_sale_coupon_my_detail_20'] = '저장소항목';
+$lang['lang_template_mobile_sale_coupon_my_detail_21'] = '사용제한';
+$lang['lang_template_mobile_sale_coupon_my_detail_22'] = '이쿠폰체크아웃카운터에만사용할수있습니다.';
+$lang['lang_template_mobile_sale_coupon_my_detail_23'] = '동시에프로모션을제공의사용을허용하지않습니다';
+$lang['lang_template_mobile_sale_coupon_my_detail_24'] = '회원할인과동시사용을허용하지않습니다';
+$lang['lang_template_mobile_sale_coupon_my_detail_25'] = '동시프로모션및회원할인을허용하지않습니다';
+$lang['lang_template_mobile_sale_coupon_my_detail_26'] = '다음항목을사용할수';
+$lang['lang_template_mobile_sale_coupon_my_detail_27'] = '사용될수있도록상품의다음과같은범주';
+$lang['lang_template_mobile_sale_coupon_my_detail_28'] = '없음';
+$lang['lang_template_mobile_sale_coupon_my_detail_29'] = '사용';
+$lang['lang_template_mobile_sale_coupon_my_detail_30'] = '만료';
+$lang['lang_template_mobile_sale_coupon_my_detail_31'] = '지금사용하는항목으로이동';
+$lang['lang_template_mobile_sale_coupon_my_detail_32'] = '지금충전';
+$lang['lang_template_mobile_sale_coupon_my_detail_33'] = '내쿠폰을반환';
+?>

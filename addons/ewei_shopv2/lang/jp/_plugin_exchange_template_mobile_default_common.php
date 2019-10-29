@@ -1,0 +1,36 @@
+<?php
+$lang['lang_plugin_exchange_template_mobile_default_common_0'] = ' 償還センター';
+$lang['lang_plugin_exchange_template_mobile_default_common_1'] = ' 償還センター';
+$lang['lang_plugin_exchange_template_mobile_default_common_2'] = ' コードを交換';
+$lang['lang_plugin_exchange_template_mobile_default_common_3'] = ' この exchange コードの照会';
+$lang['lang_plugin_exchange_template_mobile_default_common_4'] = ' 回';
+$lang['lang_plugin_exchange_template_mobile_default_common_5'] = ' 交換コードを入力';
+$lang['lang_plugin_exchange_template_mobile_default_common_6'] = ' バランス交換';
+$lang['lang_plugin_exchange_template_mobile_default_common_7'] = ' 額面価格:';
+$lang['lang_plugin_exchange_template_mobile_default_common_8'] = ' 元';
+$lang['lang_plugin_exchange_template_mobile_default_common_9'] = ' Exchange';
+$lang['lang_plugin_exchange_template_mobile_default_common_10'] = ' 交換';
+$lang['lang_plugin_exchange_template_mobile_default_common_11'] = ' 額面価格:';
+$lang['lang_plugin_exchange_template_mobile_default_common_12'] = ' 元';
+$lang['lang_plugin_exchange_template_mobile_default_common_13'] = ' Exchange';
+$lang['lang_plugin_exchange_template_mobile_default_common_14'] = ' クーポン償還';
+$lang['lang_plugin_exchange_template_mobile_default_common_15'] = ' 額面価格:';
+$lang['lang_plugin_exchange_template_mobile_default_common_16'] = ' 元';
+$lang['lang_plugin_exchange_template_mobile_default_common_17'] = ' Exchange';
+$lang['lang_plugin_exchange_template_mobile_default_common_18'] = ' 赤い封筒償還';
+$lang['lang_plugin_exchange_template_mobile_default_common_19'] = ' 額面価格:';
+$lang['lang_plugin_exchange_template_mobile_default_common_20'] = ' 元';
+$lang['lang_plugin_exchange_template_mobile_default_common_21'] = ' Exchange';
+$lang['lang_plugin_exchange_template_mobile_default_common_22'] = ' 商品取引所';
+$lang['lang_plugin_exchange_template_mobile_default_common_23'] = ' 額面価格:';
+$lang['lang_plugin_exchange_template_mobile_default_common_24'] = ' 元';
+$lang['lang_plugin_exchange_template_mobile_default_common_25'] = ' Exchange';
+$lang['lang_plugin_exchange_template_mobile_default_common_26'] = ' 今すぐ交換';
+$lang['lang_plugin_exchange_template_mobile_default_common_27'] = ' 交換コードを再入力に戻る';
+$lang['lang_plugin_exchange_template_mobile_default_common_28'] = ' 償還センター';
+$lang['lang_plugin_exchange_template_mobile_default_common_29'] = ' 交換のルール';
+$lang['lang_plugin_exchange_template_mobile_default_common_30'] = ' おめでとうございます。交換成功! ';
+$lang['lang_plugin_exchange_template_mobile_default_common_31'] = ' [Ok]';
+$lang['lang_plugin_exchange_template_mobile_default_common_32'] = ' ごめんなさい! 交換コードが切れています! ';
+$lang['lang_plugin_exchange_template_mobile_default_common_33'] = ' 知っています。';
+?>

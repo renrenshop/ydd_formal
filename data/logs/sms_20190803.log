@@ -1,0 +1,8 @@
+[2019-08-03 01:00:43] option  /app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=account.verifycode mobile=01115933019; imgcode=0; temp=sms_reg; 
+keyid=LTAI2k5XCMFE8oJS; keysecret=MFJ2rnF1RQj5AmB7wZ6PTshGKgWOXw; phonenumbers=00601115933019; signname=e加店; templatecode=SMS_157277478; templateparam={"code":"[\u9a8c\u8bc1\u7801]"}; 
+[2019-08-03 01:00:43] result  /app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=account.verifycode mobile=01115933019; imgcode=0; temp=sms_reg; 
+Message=OK; RequestId=C297B51C-54E1-49AE-853F-8E9C57CB32B0; BizId=702109964765243180^0; Code=OK; 
+[2019-08-03 01:02:16] option  /app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=account.verifycode mobile=01115933019; imgcode=0; temp=sms_reg; 
+keyid=LTAI2k5XCMFE8oJS; keysecret=MFJ2rnF1RQj5AmB7wZ6PTshGKgWOXw; phonenumbers=00601115933019; signname=e加店; templatecode=SMS_157277478; templateparam={"code":"[\u9a8c\u8bc1\u7801]"}; 
+[2019-08-03 01:02:16] result  /app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=account.verifycode mobile=01115933019; imgcode=0; temp=sms_reg; 
+Message=OK; RequestId=9BB3681E-38EB-4694-A630-1B0A018ACBAA; BizId=378200764765336420^0; Code=OK; 

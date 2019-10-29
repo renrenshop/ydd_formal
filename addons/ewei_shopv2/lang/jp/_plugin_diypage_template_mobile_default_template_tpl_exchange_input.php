@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_0'] = ' 償還センター';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_1'] = ' コードを交換';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_2'] = ' この exchange コードの照会';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_3'] = ' 回';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_4'] = ' 交換コードを入力';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_5'] = ' バランス交換';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_6'] = ' 額面価格:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_7'] = ' 元';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_8'] = ' Exchange';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_9'] = ' 交換';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_10'] = ' 額面価格:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_11'] = ' 元';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_12'] = ' Exchange';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_13'] = ' クーポン償還';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_14'] = ' 額面価格:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_15'] = ' 元';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_16'] = ' Exchange';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_17'] = ' 赤い封筒償還';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_18'] = ' 額面価格:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_19'] = ' 元';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_20'] = ' Exchange';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_21'] = ' 商品取引所';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_22'] = ' 額面価格:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_23'] = ' 元';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_24'] = ' Exchange';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_25'] = ' 今すぐ交換';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_26'] = ' 交換コードを再入力に戻る';
+?>

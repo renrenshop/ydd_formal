@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_0'] = ' Trung tâm cứu chuộc';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_1'] = ' Sử dụng mã';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_2'] = ' Mã trao đổi này đã được truy vấn';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_3'] = ' Thời gian';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_4'] = ' Nhập mã Exchange của bạn';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_5'] = ' Trao đổi số dư';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_6'] = ' mệnh giá:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_7'] = ' Nhân dân tệ';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_8'] = ' Trao đổi';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_9'] = ' Đổi thưởng';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_10'] = ' mệnh giá:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_11'] = ' Nhân dân tệ';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_12'] = ' Trao đổi';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_13'] = ' Phiếu giảm giá cứu chuộc';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_14'] = ' mệnh giá:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_15'] = ' Nhân dân tệ';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_16'] = ' Trao đổi';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_17'] = ' Phong bì màu đỏ cứu chuộc';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_18'] = ' mệnh giá:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_19'] = ' Nhân dân tệ';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_20'] = ' Trao đổi';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_21'] = ' Sở giao dịch hàng';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_22'] = ' mệnh giá:';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_23'] = ' Nhân dân tệ';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_24'] = ' Trao đổi';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_25'] = ' Đổi thưởng bây giờ';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_26'] = ' Trở về để nhập lại trao đổi mã';
+?>

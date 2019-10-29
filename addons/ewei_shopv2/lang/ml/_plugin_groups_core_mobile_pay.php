@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_groups_core_mobile_pay_0'] = ' Perintah yang tidak dijumpai! ';
+$lang['lang_plugin_groups_core_mobile_pay_1'] = ' Aktiviti ini telah tamat tempoh, sila layari perniagaan barangan atau kenalan lain! ';
+$lang['lang_plugin_groups_core_mobile_pay_2'] = ' Bawah rak';
+$lang['lang_plugin_groups_core_mobile_pay_3'] = ' Inventori yang tidak mencukupi';
+$lang['lang_plugin_groups_core_mobile_pay_4'] = ' Aktiviti ini telah tamat tempoh, sila layari barangan lain atau hubungi Saudagar! ';
+$lang['lang_plugin_groups_core_mobile_pay_5'] = ' Aktiviti ini telah berakhir, sila layari barangan lain atau hubungi Saudagar! ';
+$lang['lang_plugin_groups_core_mobile_pay_6'] = ' Aktiviti telah berjaya dianjurkan, sila layari perniagaan barangan atau kenalan lain! ';
+$lang['lang_plugin_groups_core_mobile_pay_7'] = ' perintah-perintah';
+$lang['lang_plugin_groups_core_mobile_pay_8'] = ' parameter ralat';
+$lang['lang_plugin_groups_core_mobile_pay_9'] = ' parameter ralat';
+$lang['lang_plugin_groups_core_mobile_pay_10'] = ' perintah tidak wujud';
+$lang['lang_plugin_groups_core_mobile_pay_11'] = ' parameter ralat';
+$lang['lang_plugin_groups_core_mobile_pay_12'] = ' produk tidak wujud';
+$lang['lang_plugin_groups_core_mobile_pay_13'] = ' produk tidak wujud';
+$lang['lang_plugin_groups_core_mobile_pay_14'] = ' Tiada bayaran yang ditemui';
+$lang['lang_plugin_groups_core_mobile_pay_15'] = ' Tiada bayaran yang ditemui';
+$lang['lang_plugin_groups_core_mobile_pay_16'] = ' Ralat pembayaran';
+$lang['lang_plugin_groups_core_mobile_pay_17'] = ' Cuba lagi';
+$lang['lang_plugin_groups_core_mobile_pay_18'] = ' Ralat pembayaran';
+$lang['lang_plugin_groups_core_mobile_pay_19'] = ' Cuba lagi';
+$lang['lang_plugin_groups_core_mobile_pay_20'] = ' Baki yang mencukupi';
+$lang['lang_plugin_groups_core_mobile_pay_21'] = ' Cas semula';
+$lang['lang_plugin_groups_core_mobile_pay_22'] = ' penggunaan';
+$lang['lang_plugin_groups_core_mobile_pay_23'] = ' Ralat pembayaran';
+$lang['lang_plugin_groups_core_mobile_pay_24'] = ' Cuba lagi';
+$lang['lang_plugin_groups_core_mobile_pay_25'] = ' Ralat pembayaran';
+$lang['lang_plugin_groups_core_mobile_pay_26'] = ' Cuba lagi';
+?>

@@ -1,0 +1,32 @@
+<?php
+$lang['lang_template_mobile_member_notice_0'] = 'संदेशअनुस्मारकसेटिंग';
+$lang['lang_template_mobile_member_notice_1'] = 'क्रमवर्ग';
+$lang['lang_template_mobile_member_notice_2'] = 'ऑर्डरसबमिशन';
+$lang['lang_template_mobile_member_notice_3'] = 'स्वआदेश';
+$lang['lang_template_mobile_member_notice_4'] = 'आदेशरद्द';
+$lang['lang_template_mobile_member_notice_5'] = 'खरीदसफलता';
+$lang['lang_template_mobile_member_notice_6'] = 'आदेशजारी';
+$lang['lang_template_mobile_member_notice_7'] = 'आदेशप्राप्ति';
+$lang['lang_template_mobile_member_notice_8'] = 'धनवापसीकाअनुरोध';
+$lang['lang_template_mobile_member_notice_9'] = 'धनवापसीकीप्रगति';
+$lang['lang_template_mobile_member_notice_10'] = 'धनवापसीकेपरिणाम';
+$lang['lang_template_mobile_member_notice_11'] = 'धनवापसीविफल';
+$lang['lang_template_mobile_member_notice_12'] = 'सदस्यवर्ग';
+$lang['lang_template_mobile_member_notice_13'] = 'सदस्यनवीनीकरण';
+$lang['lang_template_mobile_member_notice_14'] = 'रिचार्जवर्ग';
+$lang['lang_template_mobile_member_notice_15'] = 'रिचार्जसफल';
+$lang['lang_template_mobile_member_notice_16'] = 'ऊपर-ऊपरधनवापसी';
+$lang['lang_template_mobile_member_notice_17'] = 'उल्लेखकक्षा';
+$lang['lang_template_mobile_member_notice_18'] = 'आवेदनजमाकरें';
+$lang['lang_template_mobile_member_notice_19'] = 'उल्लेखसफलता';
+$lang['lang_template_mobile_member_notice_20'] = 'उल्लेखअसफल';
+$lang['lang_template_mobile_member_notice_21'] = 'वितरणकक्षाएं';
+$lang['lang_template_mobile_member_notice_22'] = 'बनें';
+$lang['lang_template_mobile_member_notice_23'] = 'स्तरऊंचाई';
+$lang['lang_template_mobile_member_notice_24'] = 'नई';
+$lang['lang_template_mobile_member_notice_25'] = 'भुगतान';
+$lang['lang_template_mobile_member_notice_26'] = 'रक्कम';
+$lang['lang_template_mobile_member_notice_27'] = 'आवेदनजमाकरें';
+$lang['lang_template_mobile_member_notice_28'] = 'उल्लेखप्रसंस्करण';
+$lang['lang_template_mobile_member_notice_29'] = 'व्यापारीचलाएंपैसे';
+?>

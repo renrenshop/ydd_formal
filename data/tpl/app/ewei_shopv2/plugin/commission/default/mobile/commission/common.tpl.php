@@ -1,0 +1,3 @@
+<?php defined('IN_IA') or exit('Access Denied');?>
+<?php if (file_exists('/www/wwwroot/fxv2_d/addons/ewei_shopv2/lang/'.$_W['lang_type'].'/_plugin_commission_template_mobile_default_common.php')){include('/www/wwwroot/fxv2_d/addons/ewei_shopv2/lang/'.$_W['lang_type'].'/_plugin_commission_template_mobile_default_common.php');}?>
+<link href="../addons/ewei_shopv2/plugin/commission/template/mobile/default/static/css/style.css?v=201610090000" rel="stylesheet">

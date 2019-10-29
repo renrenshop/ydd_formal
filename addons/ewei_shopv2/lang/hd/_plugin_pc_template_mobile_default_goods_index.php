@@ -1,0 +1,37 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_goods_index_0'] = 'हालहीमेंब्राउज़िंग';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_1'] = ' ¥ ';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_2'] = 'सभीब्राउज़िंगइतिहास';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_3'] = 'क्रमबद्धकरें:';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_4'] = 'डिफ़ॉल्टसॉर्ट';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_5'] = 'डिफ़ॉल्ट';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_6'] = 'विक्रयद्वाराउच्चसेंयूनतकऑर्डरकरनेकेलिएक्लिककरें';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_7'] = 'बिक्री';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_8'] = 'मूल्यसेकमकरनेकेलिएउच्चसेआदेशकेलिएक्लिककरें';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_9'] = 'मूल्य';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_10'] = 'निंनतममूल्य';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_11'] = 'उच्चतममूल्य';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_12'] = 'ठीक';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_13'] = 'नईप्रविष्टियां';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_14'] = 'गर्मउत्पाद';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_15'] = 'अनुशंसितआइटम';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_16'] = 'प्रचारात्मकआइटम';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_17'] = 'कमोडिटीसूचीलूप';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_18'] = 'सीमितसीमाछूट';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_19'] = 'मॉलमूल्य:¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_20'] = ' ¥ ';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_21'] = 'बाजारमूल्य:¥';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_22'] = ' ¥ ';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_23'] = 'बहुतसंतुष्ट';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_24'] = 'बहुतसंतुष्ट';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_25'] = 'बहुतसंतुष्ट';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_26'] = 'बहुतसंतुष्ट';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_27'] = 'बहुतसंतुष्ट';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_28'] = 'बहुतसंतुष्ट';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_29'] = 'पण्यवस्तुकीबिक्री';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_30'] = 'घर';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_31'] = 'पिछला';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_32'] = 'अगला';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_33'] = 'अंतिमपृष्ठ';
+$lang['lang_plugin_pc_template_mobile_default_goods_index_34'] = 'आपकीतरहलगताहै';
+?>

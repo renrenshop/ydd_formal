@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_0'] = ' 포인트';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_1'] = ' 보너스';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_2'] = ' 빨간봉투';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_3'] = ' 특가상품';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_4'] = ' 쿠폰';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_5'] = ' 추출';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_6'] = ' 시간';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_7'] = ' 우승기록';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_8'] = ' 지금그리기';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_9'] = ' 남은경품수';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_10'] = ' 시간';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_11'] = ' 보상설명';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_12'] = ' 내우승기록';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_13'] = ' 비활성';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_14'] = ' 축하';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_15'] = ' 선택';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_16'] = ' 작업성공';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_17'] = ' 확인';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_18'] = ' 매우죄송합니다';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_19'] = ' 이작업을선택할수없습니다';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_20'] = ' 좋아, 난.';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_21'] = ' 경품';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_22'] = ' 성공적으로수집';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_23'] = ' 아니보상';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_24'] = ' 위치를현재회전';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_25'] = ' 얼마나많은위치는총';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_26'] = ' ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_27'] = ' 사용하여,';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_28'] = ' 지우기';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_29'] = ' 초기회전속도';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_30'] = ' 회전수';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_31'] = ' 기본번회전: 즉, 얼마나많은시간당신은필요가복권에들어가기전에적어도회전?';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_32'] = ' 우승위치';
+?>

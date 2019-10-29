@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_groups_core_mobile_orders_0'] = ' perintah itu tidak kurier borang, dapat lihat maklumat logistik';
+$lang['lang_plugin_groups_core_mobile_orders_1'] = ' Pesanan tidak dihantar, tidak boleh melihat maklumat logistik';
+$lang['lang_plugin_groups_core_mobile_orders_2'] = ' Perintah yang tidak dijumpai';
+$lang['lang_plugin_groups_core_mobile_orders_3'] = ' pesanan tidak boleh dibatalkan';
+$lang['lang_plugin_groups_core_mobile_orders_4'] = ' Perintah yang tidak dijumpai';
+$lang['lang_plugin_groups_core_mobile_orders_5'] = ' Tidak dapat menghapuskan';
+$lang['lang_plugin_groups_core_mobile_orders_6'] = ' dibatalkan';
+$lang['lang_plugin_groups_core_mobile_orders_7'] = ' Untuk Dibayar';
+$lang['lang_plugin_groups_core_mobile_orders_8'] = ' Untuk Dihantar';
+$lang['lang_plugin_groups_core_mobile_orders_9'] = ' dibayar';
+$lang['lang_plugin_groups_core_mobile_orders_10'] = ' Untuk Diterima';
+$lang['lang_plugin_groups_core_mobile_orders_11'] = ' siap dibina';
+$lang['lang_plugin_groups_core_mobile_orders_12'] = ' anda telah memilih produk telah rak-rak, sila layari produk lain atau hubungi perniagaan! ';
+$lang['lang_plugin_groups_core_mobile_orders_13'] = ' Jika anda ingin membeli item ini, anda perlu memberi perhatian kepada kami nombor awam dan klik "OK" untuk membelinya lagi.';
+$lang['lang_plugin_groups_core_mobile_orders_14'] = ' anda telah mencapai had belian untuk item ini, sila layari barangan lain atau hubungi Saudagar! ';
+$lang['lang_plugin_groups_core_mobile_orders_15'] = ' pesanan anda sudah ada, Sila lengkapkan pembayaran secepat mungkin! ';
+$lang['lang_plugin_groups_core_mobile_orders_16'] = ' engkau menyertai Rejimen itu, sila tunggu sehingga ke penghujung ejaan untuk membeli! ';
+$lang['lang_plugin_groups_core_mobile_orders_17'] = ' Kumpulan telah mencapai had, sila layari barangan lain atau hubungi perniagaan! ';
+$lang['lang_plugin_groups_core_mobile_orders_18'] = ' Aktiviti ini telah tamat tempoh, sila layari barangan lain atau hubungi Saudagar! ';
+$lang['lang_plugin_groups_core_mobile_orders_19'] = ' Aktiviti ini telah berakhir, sila layari barangan lain atau hubungi Saudagar! ';
+$lang['lang_plugin_groups_core_mobile_orders_20'] = ' Aktiviti telah berjaya dianjurkan, sila layari perniagaan barangan atau kenalan lain! ';
+$lang['lang_plugin_groups_core_mobile_orders_21'] = ' Hubungan atau hubungi telefon tidak boleh kosong! ';
+$lang['lang_plugin_groups_core_mobile_orders_22'] = ' Tiada alamat dijumpai';
+$lang['lang_plugin_groups_core_mobile_orders_23'] = ' Alamat Sila pilih maklumat Negeri';
+$lang['lang_plugin_groups_core_mobile_orders_24'] = ' gagal untuk menjana perintah! ';
+$lang['lang_plugin_groups_core_mobile_orders_25'] = ' Perintah yang tidak dijumpai';
+$lang['lang_plugin_groups_core_mobile_orders_26'] = ' pesanan tidak dapat mengesahkan penerimaan';
+?>

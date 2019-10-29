@@ -1,0 +1,150 @@
+{template '_header'}
+<style type="text/css">
+    .icon {
+        width: 1em; height: 1em;
+        vertical-align: -0.15em;
+        fill: currentColor;
+        overflow: hidden;
+    }
+</style>
+<script src="//at.alicdn.com/t/font_oh9791m92cjfko6r.js"></script>
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/task/static/style/taskplugin.css?v={php echo time();}">
+<link href="../addons/ewei_shopv2/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+<div class="fui-page fui-page-current">
+    <div class="fui-header">
+        <div class="fui-header-left">
+            <a class="back"></a>
+        </div>
+        <div class="title">{php echo $lang['lang_plugin_task_template_mobile_default_index_0']}</div>
+        <div class="fui-header-right"></div>
+    </div>
+    <div class="fui-content task-bg">
+        <div class="task-head">
+            <span class="task-font">{php echo $lang['lang_plugin_task_template_mobile_default_index_1']} {php echo $lang['lang_plugin_task_template_mobile_default_index_2']}</span>
+            <span class="task-font-s">{php echo $lang['lang_plugin_task_template_mobile_default_index_3']}</span>
+        </div>
+        <div class="task-mylist">
+            <a href="{php echo mobileUrl('task/mytask');}">
+                <div class="task-mybtn">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-liebiao"></use>
+                    </svg>
+                    {php echo $lang['lang_plugin_task_template_mobile_default_index_4']}
+            </div>
+            </a>
+        </div>
+        <div class="task-list task-list1">
+            <div class="task-list-type-content">
+                <div class="task-list-type"></div>
+                <div class="task-list-type task-active task-click1">{php echo $lang['lang_plugin_task_template_mobile_default_index_5']}</div>
+                <div class="task-list-type"></div>
+                <div class="task-list-type task-click2">{php echo $lang['lang_plugin_task_template_mobile_default_index_6']}</div>
+                <div class="task-list-type"></div>
+            </div>
+            {loop $poster[0] $k $v}
+            <a href="{php echo mobileUrl('task.detail',array('id'=>$v['id'],'poster'=>1));}">
+                <div class="task-item" data-id="{$v['id']}">
+                    <div class="task-item-logo">
+                        <img src="{php echo tomedia($v['titleicon']);}" alt="" width="100%" height="100%">
+                    </div>
+                    <div class="task-item-right">
+                        <div class="task-item-top">
+                            <div class="task-item-title" onclick="location.href='{php echo mobileUrl('task.detail',array('id'=>$v['id'],'poster'=>1));}'">{$v['title']}</div>
+                            <div class="task-item-pickup-p" data-id="{$v['keyword']}" id="pickup">{php echo $lang['lang_plugin_task_template_mobile_default_index_7']}</div>
+                            <div class="task-item-shadow"></div>
+                        </div>
+                        <div class="task-item-desc">{php echo htmlspecialchars_decode($v['explain']);}</div>
+                    </div>
+                </div>
+            </a>
+            {/loop}
+            {loop $list1 $k $v}
+            <a href="{php echo mobileUrl('task.detail',array('id'=>$v['id']));}">
+            <div class="task-item" data-id="{$v['id']}">
+                <div class="task-item-logo"><img src="{php echo tomedia($v['logo']);}" alt="" width="100%" height="100%"></div>
+                <div class="task-item-right">
+                    <div class="task-item-top">
+                        <div class="task-item-title" onclick="location.href='{php echo mobileUrl('task.detail',array('id'=>$v['id']));}'">{$v['title']}</div>
+                        <div class="task-item-pickup" data-id="{$v['id']}">{php echo $lang['lang_plugin_task_template_mobile_default_index_8']}</div>
+                        <div class="task-item-shadow"></div>
+                    </div>
+                    <div class="task-item-desc">{php echo htmlspecialchars_decode($v['explain']);}</div>
+                </div>
+            </div>
+            </a>
+            {/loop}
+        </div>
+        <div class="task-list task-list2" style="display: none">
+            <div class="task-list-type-content">
+                <div class="task-list-type"></div>
+                <div class="task-list-type task-click1">{php echo $lang['lang_plugin_task_template_mobile_default_index_9']}</div>
+                <div class="task-list-type"></div>
+                <div class="task-list-type task-active">{php echo $lang['lang_plugin_task_template_mobile_default_index_10']}</div>
+                <div class="task-list-type"></div>
+            </div>
+            {loop $list2 $k $v}
+            <a href="{php echo mobileUrl('task.detail',array('id'=>$v['id']));}">
+            <div class="task-item" data-id="{$v['id']}">
+                <div class="task-item-logo"><img src="{php echo tomedia($v['logo']);}" alt="" width="100%" height="100%"></div>
+                <div class="task-item-right">
+                    <div class="task-item-top">
+                        <div class="task-item-title">{$v['title']}</div>
+                        <div class="task-item-pickup" data-id="{$v['id']}">{php echo $lang['lang_plugin_task_template_mobile_default_index_11']}</div>
+                        <div class="task-item-shadow"></div>
+                    </div>
+                    <div class="task-item-desc">{php echo htmlspecialchars_decode($v['explain']);}</div>
+                </div>
+            </div>
+                </a>
+            {/loop}
+        </div>
+        <div class="task-footer"></div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.task-click2').click(function () {
+            $(".task-list1").hide();
+            $(".task-list2").show();
+        });
+        $('.task-click1').click(function () {
+            $(".task-list2").hide();
+            $(".task-list1").show();
+        });
+        $(".task-item-pickup").click(function () {
+            var id = $(this).attr('data-id');
+            if (id == '0') return;
+            $.ajax({
+                url:"{php echo mobileUrl('task/newtask');}",
+                type:'post',
+                data:{id:id},
+                success:function (data) {
+                    var json = JSON.parse(data);
+                    if(json.status){
+                        FoxUI.alert('{php echo $lang['lang_plugin_task_template_mobile_default_index_12']}','{php echo $lang['lang_plugin_task_template_mobile_default_index_13']}');
+                    }else{
+                        FoxUI.alert(json.result.message,'{php echo $lang['lang_plugin_task_template_mobile_default_index_14']}');
+                    }
+                }
+            });
+            return;
+        });
+        $('#pickup').click(function () {
+            var content = $(this).attr('data-id');
+            $.ajax({
+                url:"{php echo mobileUrl('task/gettask');}",
+                type:'post',
+                data:{content:content},
+                success:function (data) {
+                    var json = JSON.parse(data);
+                    if(json.status){
+                        FoxUI.alert('{php echo $lang['lang_plugin_task_template_mobile_default_index_15']}','{php echo $lang['lang_plugin_task_template_mobile_default_index_16']}');
+                    }else{
+                        FoxUI.alert(json.result.message,'{php echo $lang['lang_plugin_task_template_mobile_default_index_17']}');
+                    }
+                }
+            });
+        });
+    })
+</script>
+{template '_footer'}

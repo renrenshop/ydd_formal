@@ -1,0 +1,32 @@
+<?php
+$lang['lang_plugin_diyform_core_model_0'] = ' ข้อความบรรทัดเดียว';
+$lang['lang_plugin_diyform_core_model_1'] = ' ข้อความหลายบรรทัด';
+$lang['lang_plugin_diyform_core_model_2'] = ' หล่นลงกล่อง';
+$lang['lang_plugin_diyform_core_model_3'] = ' หลายตัวอักษรวิ่ง';
+$lang['lang_plugin_diyform_core_model_4'] = ' รูปภาพ';
+$lang['lang_plugin_diyform_core_model_5'] = ' หมายเลข ID';
+$lang['lang_plugin_diyform_core_model_6'] = ' วัน';
+$lang['lang_plugin_diyform_core_model_7'] = ' ช่วงวัน';
+$lang['lang_plugin_diyform_core_model_8'] = ' เมือง';
+$lang['lang_plugin_diyform_core_model_9'] = ' ยืนยันข้อความ';
+$lang['lang_plugin_diyform_core_model_10'] = ' เวลา';
+$lang['lang_plugin_diyform_core_model_11'] = ' ช่วงเวลา';
+$lang['lang_plugin_diyform_core_model_12'] = ' คำแนะนำข้อความ';
+$lang['lang_plugin_diyform_core_model_13'] = ' แบบกำหนดเอง';
+$lang['lang_plugin_diyform_core_model_14'] = ' ชื่อ';
+$lang['lang_plugin_diyform_core_model_15'] = ' โทรศัพท์';
+$lang['lang_plugin_diyform_core_model_16'] = ' ไมโครสัญญาณ';
+$lang['lang_plugin_diyform_core_model_17'] = ' กรอกวันที่';
+$lang['lang_plugin_diyform_core_model_18'] = ' วันที่ระบุ';
+$lang['lang_plugin_diyform_core_model_19'] = ' เลือกจังหวัด';
+$lang['lang_plugin_diyform_core_model_20'] = ' เลือกเมือง';
+$lang['lang_plugin_diyform_core_model_21'] = ' กรุณากรอกข้อมูล';
+$lang['lang_plugin_diyform_core_model_22'] = ' กรุณาเลือก';
+$lang['lang_plugin_diyform_core_model_23'] = ' กรุณาเลือก';
+$lang['lang_plugin_diyform_core_model_24'] = ' กรุณาเลือก';
+$lang['lang_plugin_diyform_core_model_25'] = ' เลือกจังหวัด';
+$lang['lang_plugin_diyform_core_model_26'] = ' เลือกเมือง';
+$lang['lang_plugin_diyform_core_model_27'] = ' เลือกโซน';
+$lang['lang_plugin_diyform_core_model_28'] = ' กรุณาเลือก';
+$lang['lang_plugin_diyform_core_model_29'] = ' ป้อน';
+?>

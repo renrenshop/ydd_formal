@@ -1,0 +1,32 @@
+<?php
+$lang['lang_template_mobile_member_notice_0'] = 'メッセージアラームの設定';
+$lang['lang_template_mobile_member_notice_1'] = ' Order クラス';
+$lang['lang_template_mobile_member_notice_2'] = '注文書の送信';
+$lang['lang_template_mobile_member_notice_3'] = 'セルフオーダー';
+$lang['lang_template_mobile_member_notice_4'] = '注文のキャンセル';
+$lang['lang_template_mobile_member_notice_5'] = '購入成功';
+$lang['lang_template_mobile_member_notice_6'] = '順序の問題';
+$lang['lang_template_mobile_member_notice_7'] = '受注';
+$lang['lang_template_mobile_member_notice_8'] = '払い戻しのリクエスト';
+$lang['lang_template_mobile_member_notice_9'] = '進行状況を返金';
+$lang['lang_template_mobile_member_notice_10'] = '結果を返金';
+$lang['lang_template_mobile_member_notice_11'] = '払い戻しができませんでした。';
+$lang['lang_template_mobile_member_notice_12'] = 'メンバークラス';
+$lang['lang_template_mobile_member_notice_13'] = 'メンバーのアップグレード';
+$lang['lang_template_mobile_member_notice_14'] = 'クラスを充電';
+$lang['lang_template_mobile_member_notice_15'] = '充電成功';
+$lang['lang_template_mobile_member_notice_16'] = 'トップアップ払い戻し';
+$lang['lang_template_mobile_member_notice_17'] = 'クラスを言及';
+$lang['lang_template_mobile_member_notice_18'] = '申請書を提出';
+$lang['lang_template_mobile_member_notice_19'] = '成功を言及';
+$lang['lang_template_mobile_member_notice_20'] = '言及に失敗しました';
+$lang['lang_template_mobile_member_notice_21'] = '配布クラス';
+$lang['lang_template_mobile_member_notice_22'] = 'なります。';
+$lang['lang_template_mobile_member_notice_23'] = 'レベルの高さ';
+$lang['lang_template_mobile_member_notice_24'] = '新しい';
+$lang['lang_template_mobile_member_notice_25'] = 'お支払い';
+$lang['lang_template_mobile_member_notice_26'] = '領収書';
+$lang['lang_template_mobile_member_notice_27'] = '申請書を提出';
+$lang['lang_template_mobile_member_notice_28'] = '処理に言及';
+$lang['lang_template_mobile_member_notice_29'] = '商人はお金を再生';
+?>

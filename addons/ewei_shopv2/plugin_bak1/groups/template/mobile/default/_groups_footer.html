@@ -1,0 +1,19 @@
+<div class="fui-navbar" style="z-index: 10;">
+	<a href="{php echo mobileUrl('groups')}" class="external nav-item {if $_GPC['r']=='groups'}active{/if}">
+		<span class="icon icon-home"></span>
+		<span class="label">{php echo $lang['lang_plugin_groups_template_mobile_default__groups_footer_0']}</span>
+	</a>
+	<a href="{php echo mobileUrl('groups/category')}" class="external nav-item {if $_GPC['r']=='groups.category'}active{/if}">
+		<span class="icon icon-list"></span>
+		<span class="label">{php echo $lang['lang_plugin_groups_template_mobile_default__groups_footer_1']}</span>
+	</a>
+	<a href="{php echo mobileUrl('groups/orders')}" class="external nav-item {if $_GPC['r']=='groups.orders'}active{/if}">
+		<span class="icon icon-order"></span>
+		<span class="label">{php echo $lang['lang_plugin_groups_template_mobile_default__groups_footer_2']}</span>
+	</a>
+	<a href="{php echo mobileUrl('groups/team')}" class="external nav-item {if $_GPC['r']=='groups.team'}active{/if}">
+		<span class="icon icon-group"></span>
+		<span class="label">{php echo $lang['lang_plugin_groups_template_mobile_default__groups_footer_3']}</span>
+	</a>
+</div>
+

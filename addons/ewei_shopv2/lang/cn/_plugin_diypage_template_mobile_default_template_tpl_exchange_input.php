@@ -1,0 +1,29 @@
+<?php
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_0'] = '兑换中心';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_1'] = '兑换码';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_2'] = '此兑换码已查询';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_3'] = '次';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_4'] = '请输入兑换码';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_5'] = '余额兑换';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_6'] = '面值：';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_7'] = '元';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_8'] = '兑换';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_9'] = '积分兑换';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_10'] = '面值：';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_11'] = '元';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_12'] = '兑换';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_13'] = '优惠券兑换';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_14'] = '面值：';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_15'] = '元';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_16'] = '兑换';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_17'] = '红包兑换';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_18'] = '面值：';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_19'] = '元';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_20'] = '兑换';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_21'] = '商品兑换';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_22'] = '面值：';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_23'] = '元';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_24'] = '兑换';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_25'] = '立即兑换';
+$lang['lang_plugin_diypage_template_mobile_default_template_tpl_exchange_input_26'] = '返回重新输入兑换码';
+?>

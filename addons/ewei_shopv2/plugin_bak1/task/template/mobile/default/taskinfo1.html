@@ -1,0 +1,198 @@
+{template '_header'}
+{if !empty($taskinfo)}
+<script>document.title = "{$taskinfo['title']}"; </script>
+
+<style>
+
+    .task-detail {
+        background: #ffffff;
+        padding-bottom: 4rem;
+    }
+
+    .task-detail-title {
+        height: auto;
+        padding: 0.5rem 1rem;
+        background: #edf6ff;
+        font-size: 0.8rem;
+    }
+
+    .task-detail-title i {
+        color: #3b9bff;
+    }
+
+    .task-detail-info {
+        padding: 0.3rem 2.2rem 0.5rem;
+    }
+
+    .task-detail-info .line {
+        font-size: 0.75rem;
+        color: #555;
+        line-height: 1.2rem;
+        position: relative;
+    }
+
+    .task-detail-info .line:before {
+        position: absolute;
+        left: -0.7rem;
+        top: 0.4rem;
+        content: "";
+        height: 0.4rem;
+        width: 0.4rem;
+        border-radius: 0.4rem;
+        background: #fe9900;
+    }
+
+    .task-detail-info .line-l {
+        color: #888;
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+        position: relative;
+        padding-left: 0.5rem;
+    }
+
+    .task-detail-info .line-l:before {
+        position: absolute;
+        left: -0.7rem;
+        top: 0.4rem;
+        content: "";
+        height: 0.4rem;
+        width: 0.4rem;
+        border-radius: 0.4rem;
+        background: #cacaca;
+        z-index: 2;
+    }
+
+    .task-detail-info .line-l.active {
+        color: #3b9bff;
+    }
+
+    .task-detail-info .line-l.active:before {
+        background: #3b9bff;
+        border: 1px solid #a1cfff;
+        left: -0.75rem;
+        top: 0.35rem;
+    }
+
+    .task-detail-info .line-l:after {
+        position: absolute;
+        top: 0.55rem;
+        left: -0.57rem;
+        content: "";
+        height: 100%;
+        width: 0.15rem;
+        background: #cacaca;
+        z-index: 1;
+    }
+
+    .task-detail-info .line-l:last-child:after {
+        background: none;
+    }
+
+    .task-detail-info .line-l.active span {
+        color: #ef5948;
+    }
+
+    .task-detail-info .line-l.active .icon-selected {
+        position: absolute;
+        top: 0;
+        left: -0.25rem;
+        font-size: 0.8rem;
+    }
+
+    .task-detail-btns {
+        height: 3.2rem;
+        padding: 0.67rem 1rem;
+        background: #dfefff;
+        text-align: center;
+        box-shadow: none;
+    }
+
+    .task-detail-btns .btn {
+        height: 1.8rem;
+        line-height: 1.75rem;
+        border-radius: 1rem;
+        padding: 0 0.8rem;
+        color: #3b9bff;
+        border-color: #3b9bff;
+        margin: 0 0.5rem;
+    }
+
+    .task-detail-btns .btn.full {
+        background: #3b9bff;
+        color: #fff;
+    }
+
+</style>
+
+<div class='fui-page  fui-page-current'>
+
+
+    <div class="fui-content task-detail">
+
+        <div class="task-detail-title">
+            <i class="icon icon-operation"></i>
+            <span>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_0']}</span>
+        </div>
+
+        <div class="task-detail-info">
+            <div class="line">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_1']}{$taskinfo['needcount']}</div>
+        </div>
+
+        <div class="task-detail-title">
+            <i class="icon icon-recharge"></i>
+            <span>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_2']}</span>
+        </div>
+
+        <div class="task-detail-info">
+            <div class="line-l active"><i class="icon icon-selected"></i>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_3']}
+                {if $taskinfo['reward_data']['rec']['credit']>0}{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_4']}<span>{$taskinfo['reward_data']['rec']['credit']}</span>{/if}
+                {if $taskinfo['reward_data']['rec']['money']['num']>0}{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_5']}<span>{$taskinfo['reward_data']['rec']['money']['num']}</span>{/if}
+                {if $taskinfo['reward_data']['rec']['bribery']>0}{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_6']}<span>{$taskinfo['reward_data']['rec']['bribery']}</span>{/if}
+                {if $taskinfo['reward_data']['rec']['coupon']['total']>0}{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_7']}<span>{$taskinfo['reward_data']['rec']['coupon']['total']}</span>{/if}
+                {if count($taskinfo['reward_data']['rec']['goods'])>0}{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_8']}<span>{php echo count($taskinfo['reward_data']['rec']['goods']);}</span>{/if}
+            </div>
+        </div>
+
+        <div class="task-detail-title">
+            <i class="icon icon-information"></i>
+            <span>{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_9']}</span>
+        </div>
+
+        <div class="task-detail-info">
+            <div class="line">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_10']}{php echo date('Y-m-d',$taskinfo['timestart']);} - {php echo date('Y-m-d',$taskinfo['timeend']);}</div>
+            <div class="line" style="margin-top: 0.5rem">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_11']}{if !empty($res['taskinfo'])}{php $taskinfo = unserialize($res['taskinfo']); echo htmlspecialchars_decode($taskinfo);}{else}{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_12']}{/if}</div>
+        </div>
+
+    </div>
+
+    <div class="fui-footer task-detail-btns">
+        <div class="btn full gettask" data-value="{$taskinfo['keyword']}">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_13']}</div>
+        <div class="btn" onclick="history.back(-1);">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_14']}</div>
+    </div>
+
+
+</div>
+
+<script type="text/javascript">
+    $('.gettask').click(function () {
+        var keyword = $(this).data('value');
+        $.get("{php echo mobileUrl('task/index/gettask',array(),true);}&content="+keyword,function (data) {
+            if(data.status){
+                FoxUI.message.success('{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_15']}','{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_16']}~~',function(){
+                });
+            }else{
+                FoxUI.toast.show('{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_17']}~');
+            }
+        },'json');
+    });
+</script>
+{else}
+<script>document.title = '{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_18']}'; </script>
+<div class='fui-page  fui-page-current'>
+    <div class="fui-content ">
+        <h3 class="text-center">{php echo $lang['lang_plugin_task_template_mobile_default_taskinfo1_19']}</h3>
+    </div>
+</div>
+{/if}
+
+{template '_footer'}

@@ -1,0 +1,37 @@
+<?php
+$lang['lang_plugin_lottery_core_model_0'] = 'पुरस्कारकीसमयसीमासमाप्तहोगईहै';
+$lang['lang_plugin_lottery_core_model_1'] = 'उपभोगपूर्ण';
+$lang['lang_plugin_lottery_core_model_2'] = 'युआन';
+$lang['lang_plugin_lottery_core_model_3'] = 'उपहार';
+$lang['lang_plugin_lottery_core_model_4'] = 'बार';
+$lang['lang_plugin_lottery_core_model_5'] = 'चेक- इन्सपूर्ण';
+$lang['lang_plugin_lottery_core_model_6'] = 'दिन';
+$lang['lang_plugin_lottery_core_model_7'] = 'उपहार';
+$lang['lang_plugin_lottery_core_model_8'] = 'बार';
+$lang['lang_plugin_lottery_core_model_9'] = 'एककार्यपोस्टरपूराकरना';
+$lang['lang_plugin_lottery_core_model_10'] = 'उपहार';
+$lang['lang_plugin_lottery_core_model_11'] = 'बार';
+$lang['lang_plugin_lottery_core_model_12'] = 'एककार्यपोस्टरपूराकरना';
+$lang['lang_plugin_lottery_core_model_13'] = 'उपहार';
+$lang['lang_plugin_lottery_core_model_14'] = 'बार';
+$lang['lang_plugin_lottery_core_model_15'] = 'गतिविधिनाम';
+$lang['lang_plugin_lottery_core_model_16'] = 'आरेखितकरनेकेलिएक्लिककरें';
+$lang['lang_plugin_lottery_core_model_17'] = 'अपनेलकीड्राकेअवसरपरबधाई';
+$lang['lang_plugin_lottery_core_model_18'] = 'अपनेलकीड्राकेअवसरपरबधाई';
+$lang['lang_plugin_lottery_core_model_19'] = 'लॉटरीकेअवसरपाएं';
+$lang['lang_plugin_lottery_core_model_20'] = 'आकर्षितकरनेकेलिएअपनेमौकापरबधाई! ';
+$lang['lang_plugin_lottery_core_model_21'] = 'अनुशंसितस्वीपकोडध्यानबिंदुओं';
+$lang['lang_plugin_lottery_core_model_22'] = 'कार्यगतिविधिरेफ़रलपुरस्कार';
+$lang['lang_plugin_lottery_core_model_23'] = 'अनुशंसितपुरस्कार';
+$lang['lang_plugin_lottery_core_model_24'] = 'अनुशंसितपुरस्कार';
+$lang['lang_plugin_lottery_core_model_25'] = 'अनुशंसितपुरस्कार';
+$lang['lang_plugin_lottery_core_model_26'] = 'अंक';
+$lang['lang_plugin_lottery_core_model_27'] = 'बोनस';
+$lang['lang_plugin_lottery_core_model_28'] = 'युआन';
+$lang['lang_plugin_lottery_core_model_29'] = 'लाललिफाफे';
+$lang['lang_plugin_lottery_core_model_30'] = 'युआन';
+$lang['lang_plugin_lottery_core_model_31'] = 'स्पेशल';
+$lang['lang_plugin_lottery_core_model_32'] = 'एक';
+$lang['lang_plugin_lottery_core_model_33'] = 'कूपन';
+$lang['lang_plugin_lottery_core_model_34'] = 'शीट';
+?>

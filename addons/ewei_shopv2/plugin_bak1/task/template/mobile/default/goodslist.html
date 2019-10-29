@@ -1,0 +1,59 @@
+{template '_header'}
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/task/static/style/goods.css" />
+{if $taskinfo['task_type']==1}
+<div class="fui-goods-group container" >
+    {if !empty($goodslist)}
+    {loop $goodslist $goodsid $value}
+        <a href="{php echo mobileUrl('goods/detail',array('id'=>$goodsid,'join_id'=>$taskinfo['join_id']),true);}" class="fui-list">
+            <div class="fui-list-media">
+                <img src="{$value['thumb']}" class="round" style="height: 2.5rem;">
+            </div>
+            <div class="fui-list-inner">
+                <div class="row">
+                    <div class="row-text">{$value['title']}</div>
+                </div>
+                <div class="subtitle">
+                    <span class="text">{php echo $lang['lang_plugin_task_template_mobile_default_goodslist_0']}:{$value['marketprice']}{php echo $lang['lang_plugin_task_template_mobile_default_goodslist_1']}<span class="oldprice">{php echo $lang['lang_plugin_task_template_mobile_default_goodslist_2']}:{$value['oldprice']}{php echo $lang['lang_plugin_task_template_mobile_default_goodslist_3']}</span></span>
+                    <span class="text">{php echo $lang['lang_plugin_task_template_mobile_default_goodslist_4']}:{$value['total']}</span>
+                </div>
+            </div>
+        </a>
+
+    {/loop}
+    {else}
+    <div class="text-center" >{php echo $lang['lang_plugin_task_template_mobile_default_goodslist_5']}</div>
+    {/if}
+</div>
+{elseif $taskinfo['task_type']==2}
+    {if !empty($goodslist)}
+<div class="fui-list-group container" >
+    {loop $goodslist $rank $val}
+        {loop $val $goodsid $value}
+                <a href="{php echo mobileUrl('goods/detail',array('id'=>$goodsid,'join_id'=>$taskinfo['join_id'],'rank'=>$rank),true);}" class="fui-list">
+                    <div class="fui-list-media">
+                        <img src="{$value['thumb']}" class="round" style="height: 2.5rem;">
+                    </div>
+                    <div class="fui-list-inner {if empty($value['total'])}nosale{/if}">
+                        <div class="row " style="margin-bottom: 1rem;">
+                            <div class="row-text">{$value['title']}</div>
+                        </div>
+                        <div class="subtitle">
+                            <span class="text">{php echo $lang['lang_plugin_task_template_mobile_default_goodslist_6']}:{$value['marketprice']}{php echo $lang['lang_plugin_task_template_mobile_default_goodslist_7']}<span class="oldprice">{php echo $lang['lang_plugin_task_template_mobile_default_goodslist_8']}:{$value['oldprice']}{php echo $lang['lang_plugin_task_template_mobile_default_goodslist_9']}</span></span>
+                            <span class="text">{php echo $lang['lang_plugin_task_template_mobile_default_goodslist_10']}:{$value['total']}</span>
+                        </div>
+                    </div>
+                </a>
+        {/loop}
+    {/loop}
+</div>
+    {else}
+    <div class="text-center" >{php echo $lang['lang_plugin_task_template_mobile_default_goodslist_11']}</div>
+    {/if}
+{else}
+    <div class="fui-goods-group container" >
+        <div class="fui-goods-item" >
+            <div class="text-center" >{php echo $lang['lang_plugin_task_template_mobile_default_goodslist_12']}</div>
+        </div>
+    </div>
+{/if}
+{template '_footer'}

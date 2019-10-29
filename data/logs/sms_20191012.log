@@ -1,0 +1,4 @@
+[2019-10-12 13:22:41] option  /app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=account.verifycode mobile=0129189338; imgcode=0; temp=sms_reg; 
+keyid=LTAI2k5XCMFE8oJS; keysecret=MFJ2rnF1RQj5AmB7wZ6PTshGKgWOXw; phonenumbers=0060129189338; signname=e加店; templatecode=SMS_157277478; templateparam={"code":"[\u9a8c\u8bc1\u7801]"}; 
+[2019-10-12 13:22:41] result  /app/index.php?i=3&c=entry&m=ewei_shopv2&do=mobile&r=account.verifycode mobile=0129189338; imgcode=0; temp=sms_reg; 
+Message=OK; RequestId=90279B0E-CC46-4095-B964-9CEC33C408D6; BizId=174518070857762011^0; Code=OK; 

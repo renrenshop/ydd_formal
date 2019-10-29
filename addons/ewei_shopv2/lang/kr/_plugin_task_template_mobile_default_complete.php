@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_task_template_mobile_default_complete_0'] = '완료';
+$lang['lang_plugin_task_template_mobile_default_complete_1'] = '누적초대';
+$lang['lang_plugin_task_template_mobile_default_complete_2'] = '사람들은스캔또는포스터를보고';
+$lang['lang_plugin_task_template_mobile_default_complete_3'] = '작업보상';
+$lang['lang_plugin_task_template_mobile_default_complete_4'] = '보너스포인트';
+$lang['lang_plugin_task_template_mobile_default_complete_5'] = '포인트';
+$lang['lang_plugin_task_template_mobile_default_complete_6'] = '발행';
+$lang['lang_plugin_task_template_mobile_default_complete_7'] = '수상';
+$lang['lang_plugin_task_template_mobile_default_complete_8'] = '여기';
+$lang['lang_plugin_task_template_mobile_default_complete_9'] = '균형보너스';
+$lang['lang_plugin_task_template_mobile_default_complete_10'] = '위안';
+$lang['lang_plugin_task_template_mobile_default_complete_11'] = '발행';
+$lang['lang_plugin_task_template_mobile_default_complete_12'] = '수상';
+$lang['lang_plugin_task_template_mobile_default_complete_13'] = '여기';
+$lang['lang_plugin_task_template_mobile_default_complete_14'] = '보너스보너스';
+$lang['lang_plugin_task_template_mobile_default_complete_15'] = '위안';
+$lang['lang_plugin_task_template_mobile_default_complete_16'] = '발행';
+$lang['lang_plugin_task_template_mobile_default_complete_17'] = '수상';
+$lang['lang_plugin_task_template_mobile_default_complete_18'] = '여기';
+$lang['lang_plugin_task_template_mobile_default_complete_19'] = '쿠폰보상';
+$lang['lang_plugin_task_template_mobile_default_complete_20'] = '쿠폰';
+$lang['lang_plugin_task_template_mobile_default_complete_21'] = '발행';
+$lang['lang_plugin_task_template_mobile_default_complete_22'] = '수상';
+$lang['lang_plugin_task_template_mobile_default_complete_23'] = '여기';
+$lang['lang_plugin_task_template_mobile_default_complete_24'] = '우선상품보상';
+$lang['lang_plugin_task_template_mobile_default_complete_25'] = '특가상품';
+$lang['lang_plugin_task_template_mobile_default_complete_26'] = '칼라';
+$lang['lang_plugin_task_template_mobile_default_complete_27'] = '인출';
+$lang['lang_plugin_task_template_mobile_default_complete_28'] = '수상';
+$lang['lang_plugin_task_template_mobile_default_complete_29'] = '여기';
+$lang['lang_plugin_task_template_mobile_default_complete_30'] = '아니메모';
+$lang['lang_plugin_task_template_mobile_default_complete_31'] = '작업정보를찾을수없습니다';
+$lang['lang_plugin_task_template_mobile_default_complete_32'] = '작업정보발견';
+?>

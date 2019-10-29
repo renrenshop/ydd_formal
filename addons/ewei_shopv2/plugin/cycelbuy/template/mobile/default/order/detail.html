@@ -1,0 +1,613 @@
+{template '_header'}
+
+{if !is_h5app()}
+<style>
+	.fui-header .title {
+		background: #fff;
+	}
+</style>
+{/if}
+
+<style>
+
+	.order_detail .fui-list-inner .title.has-address {
+		font-size: .7rem;
+		line-height: 1.2rem;
+		height: 1.2rem;
+		display: block;
+	}
+	.order_detail .fui-list-inner .text{
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	.order_detail .fui-list:before{
+		border: 0;
+	}
+	.order_detail .fui-list_title{
+		position: relative;
+		display: flex;
+		align-items: center;
+		line-height: normal;
+	}
+	/*.order_detail .fui-list_title:before{*/
+	/*content: " ";*/
+	/*position: absolute;*/
+	/*left: 0.5rem;*/
+	/*right: 0.5rem;*/
+	/*bottom: 0;*/
+	/*height: 1px;*/
+	/*border-top: 1px solid #ebebeb;*/
+	/*color: #D9D9D9;*/
+	/*-webkit-transform-origin: 0 0;*/
+	/*-ms-transform-origin: 0 0;*/
+	/*transform-origin: 0 0;*/
+	/*-webkit-transform: scaleY(0.5);*/
+	/*-ms-transform: scaleY(0.5);*/
+	/*transform: scaleY(0.5);*/
+	/*}*/
+	.order_detail  .lineblock {
+		position: relative;
+		overflow: hidden;
+	}
+
+	.order_detail  .lineblock:before {
+		content: "";
+		position: absolute;
+		left: .5rem;
+		top: 0;
+		right: .5rem;
+		height: 1px;
+		border-top: 1px solid #ebebeb;
+		-webkit-transform-origin: 0 100%;
+		-ms-transform-origin: 0 100%;
+		transform-origin: 0 100%;
+		-webkit-transform: scaleY(0.5);
+		-ms-transform: scaleY(0.5);
+		transform: scaleY(0.5);
+	}
+	.refuse_reason{
+		padding: 0.5rem;
+		background: #fdfce5;
+		/*background: #fff;*/
+		color: #999;
+		font-size: 0.7rem;
+		line-height: 1rem
+	}
+
+
+	/*周期购*/
+
+	.cyclebuy-group{
+		margin-top: 0;
+		position: relative;
+	}
+	.cyclebuy-group .fui-cell .fui-cell-remark{
+		color: #ff5555;
+	}
+	.cyclebuy-group .fui-cell .fui-cell-label{
+		width: 100%;
+	}
+	.fui-cell-group.cyclebuy-group .fui-cell .fui-cell-remark:after{
+		color: #ff5555 ;
+		border-color: #ff5555;
+	}
+	.fui-cell-group.cyclebuy-group:before{
+		content: " ";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0px;
+		height: 1px;
+		border-top: 1px solid #ebebeb !important;
+		color: #D9D9D9;
+		-webkit-transform-origin: 0 0;
+		-ms-transform-origin: 0 0;
+		transform-origin: 0 0;
+		-webkit-transform: scaleY(0.5);
+		-ms-transform: scaleY(0.5);
+		transform: scaleY(0.5);
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/template/mobile/default/static/css/orderdetail.css?v=2.0.0">
+
+<div class="fui-page cav order_detail">
+
+	<div class="fui-header">
+		<div class="fui-header-left">
+			<a class="back" id="btn-back"></a>
+		</div>
+		<div class="title">
+			{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_0']}
+		</div>
+		<div class="fui-header-right"></div>
+	</div>
+
+	<div class="fui-content navbar">
+
+		<!--状态-->
+		<div class="order_detail_header">
+			<div class="order_detail_ststus">
+				<div style="font-size: 0.85rem;">
+					{if empty($order['status'])}
+					{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_1']}
+					{elseif $order['status']==1}
+					{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_2']}
+					{elseif $order['status']==2 && $order['refundid'] ==0}
+					{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_3']}
+					{elseif $order['status']==3}
+					{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_4']}
+					{elseif $order['status']==-1}
+					{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_5']}
+					{/if}
+
+					{if $order['refundstate'] > 0}
+					({if $order['status'] ==1}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_6']}{else}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_7']}{/if}中)
+					{/if}
+
+					{if  $order['refundid'] !=0}
+					{if  $refund['status']==-1 }{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_8']}{/if}{if $order['status'] ==1}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_9']}{else}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_10']}{/if}
+					{/if}
+				</div>
+				<div>{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_11']}：{if $order['ispackage']}({php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_12']}){/if}
+					RM{$order['goodsprice']}</div>
+			</div>
+		</div>
+
+		<!--周期购进度 start-->
+		<div class="fui-cell-group cyclebuy-group">
+			<div class="fui-cell">
+				<div class="fui-cell-icon"><i class="icon icon-xiangmuzhouqi" style="color: #ff5555"></i></div>
+				<div class="fui-cell-info">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_13']}</div>
+				<a href="{php echo mobileUrl('cycelbuy/order/cycledetail',array('id'=>$order['id']))}" class="fui-cell-remark" data-nocache="true">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_14']}{$cycelUnderway['count']}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_15']}</a>
+			</div>
+		</div>
+		{loop $cycelData $index $row}
+			{if $index == $period_index}
+				<div class="fui-cell-group noborder cyclebuy-group">
+					<div class="fui-cell" style="padding: 0.3rem 0.5rem !important;">
+						<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_16']}{php echo $index+1}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_80']}：{if $row['status'] == 0}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_17']}{elseif $row['status'] == 1}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_18']}{elseif $row['status'] == 2}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_19']}{/if}</div>
+					</div>
+					<div class="fui-cell" style="padding: 0.3rem 0.5rem !important;">
+						<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_20']}：{if $row['status'] == 0}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_21']}{else}{$row['expresscom']}{$row['expresssn']}{/if}</div>
+					</div>
+					<div class="fui-cell" style="padding: 0.3rem 0.5rem !important;">
+						<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_22']}：{php echo date('Y-m-d',$row['receipttime'])}</div>
+					</div>
+				</div>
+			{/if}
+		{/loop}
+		<!--周期购进度 end-->
+
+		{if  $order['refundid'] !=0}
+		<div class="refuse_reason">
+			{if strlen($refund['reply']) > 0 && $refund['status']==-1 }{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_23']}：{$refund['reply']}{/if}
+		</div>
+		{/if}
+
+		{if $order['canverify']&&$order['status']!=-1&&$order['status']!=0}
+		<div class="code_box">
+			<div class="img_box order_detail_code">
+				<img  src="{$qrcodeimg}" alt="">
+			</div>
+			<div class="cav_code">{$verifycode}</div>
+		</div>
+		{/if}
+
+
+		<!--商品信息-->
+		<div class="fui-list-group">
+			{if empty($order['isnewstore'])}
+			<div class="fui-list_title"><i class="icon icon-dianpu1" style="margin-right: 0.25rem;"></i>{$shopname}</div>
+			{/if}
+
+			{php $i=0;}
+			{loop $goods $g}
+			<a class="fui-list" href="{if empty($order['isnewstore'])}{php echo mobileUrl('goods/detail',array('id'=>$g['goodsid']))}{else}{php echo mobileUrl('newstore/goods/detail',array('id'=>$g['goodsid'],'storeid'=>$order['storeid']))}{/if}">
+				<div class="fui-list-media">
+					<img src="{php echo tomedia($g['thumb'])}"/>
+				</div>
+				<div class="fui-list-inner">
+					<div class="title">{if $g['seckill_task']}<span class="fui-label fui-label-danger">{$g['seckill_task']['tag']}</span>{/if}{$g['title']}</div>
+					{if !empty($g['optionid'])}<div class="subtitle">{if !empty($sortStr)}{$sortStr}{else}{$g['optiontitle']}{/if}</div>{/if}
+
+					{if $g['status']==2}
+					<div class="subtitle">
+						<label class="fui-label fui-label-danger">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_24']}</label>
+					</div>
+					{/if}
+				</div>
+				<div class="fui-list-angle" style="margin-right: 0">
+					<div style="color: #000">RM{php echo number_format($g['price']/$g['total'],2)}</div>
+					<div class="num">x{$g['total']}</div>
+				</div>
+			</a>
+			{if !empty($g['fullbackgoods'])}
+			<div class="fui-cell-group" {if $g['fullbackgoods']['minallfullbackallprice']<=0 && $g['fullbackgoods']['minallfullbackallratio']<=0}display: none;{/if}>
+			<a href="{php echo mobileUrl('member/fullback')}"  class="fui-cell">
+				<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_25']}</div>
+				<div class="fui-cell-info">
+
+				</div>
+				<div class="fui-cell-remark">
+					<i class="icon icon-rechargefill" style="color: #ff6462;"></i>
+					{if $g['fullbackgoods']['type']>0}
+					{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_28']}  {php echo price_format($g['fullbackgoods']['minallfullbackallratio'],2)}%  ， {php echo price_format($g['fullbackgoods']['fullbackratio'],2)}% /{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_26']}，{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_27']}  {$g['fullbackgoods']['day']}  {php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_26']}
+					{else}
+					{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_28']} RM{php echo price_format($g['fullbackgoods']['minallfullbackallprice'],2)}，RM{php echo price_format($g['fullbackgoods']['fullbackprice'],2)}/{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_26']}，{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_27']} {$g['fullbackgoods']['day']} {php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_26']}
+					{/if}
+				</div>
+			</a>
+		</div>
+		{/if}
+
+		{if !empty($g['diyformdata']) && $g['diyformdata'] != 'false'}
+		<div class="fui-cell-group noborder">
+			{php $datas = $g['diyformdata']}
+			{loop $g['diyformfields'] $key $value}
+			<div class="fui-cell">
+				<div class="fui-cell-label">{php echo $value['tp_name']}</div>
+				<div class="fui-cell-info">
+
+				</div>
+				<div class="fui-cell-remark noremark">
+					{template 'diyform/mdiyform'}
+				</div>
+			</div>
+			{/loop}
+		</div>
+		{/if}
+		{php $i++;}
+		{/loop}
+	</div>
+
+
+
+	<!--商品小计-->
+	<div class="fui-cell-group noborder">
+		<div class="fui-cell">
+			<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_29']}</div>
+			<div class="fui-cell-info">
+				{if $order['ispackage']}({php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_30']}){/if}
+			</div>
+			<div class="fui-cell-remark noremark">
+				RM{$order['goodsprice']}
+			</div>
+		</div>
+		{if empty($order['isnewstore']) && empty($order['city_express_state'])}
+		<div class="fui-cell">
+			<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_31']}</div>
+			<div class="fui-cell-info">
+
+			</div>
+			<div class="fui-cell-remark noremark">
+				RM{$order['dispatchprice']}
+			</div>
+		</div>
+		{else}
+		<div class="fui-cell">
+			<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_32']}</div>
+			<div class="fui-cell-info">
+
+			</div>
+			<div class="fui-cell-remark noremark">
+				RM{$order['dispatchprice']}
+			</div>
+		</div>
+		{/if}
+
+		{if !empty($order['lotterydiscountprice']) && $order['lotterydiscountprice']>0}
+		<div class="fui-cell">
+			<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_33']}</div>
+			<div class="fui-cell-info">
+
+			</div>
+			<div class="fui-cell-remark noremark">
+				- RM{$order['lotterydiscountprice']}
+			</div>
+		</div>
+		{/if}
+
+		{if !$order['ispackage']}
+		{if $order['deductenough']>0}
+		<div class="fui-cell">
+			<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_34']}</div>
+			<div class="fui-cell-info">
+
+			</div>
+			<div class="fui-cell-remark noremark">
+				-RM{$order['deductenough']}
+			</div>
+		</div>
+		{/if}
+
+		{if $order['couponprice']>0}
+		<div class="fui-cell">
+			<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_35']}</div>
+			<div class="fui-cell-info">
+
+			</div>
+			<div class="fui-cell-remark noremark">
+				-RM{$order['couponprice']}
+			</div>
+		</div>
+		{/if}
+
+		{if $order['buyagainprice']>0}
+		<div class="fui-cell">
+			<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_36']}</div>
+			<div class="fui-cell-info">
+
+			</div>
+			<div class="fui-cell-remark noremark">
+				-RM{$order['buyagainprice']}
+			</div>
+		</div>
+		{/if}
+
+		{if $order['discountprice']>0}
+		<div class="fui-cell">
+			<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_37']}</div>
+			<div class="fui-cell-info">
+
+			</div>
+			<div class="fui-cell-remark noremark">
+				-RM{$order['discountprice']}
+			</div>
+		</div>
+		{/if}
+
+		{if $order['isdiscountprice']>0}
+		<div class="fui-cell">
+			<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_38']}</div>
+			<div class="fui-cell-info">
+
+			</div>
+			<div class="fui-cell-remark noremark">
+				-RM{$order['isdiscountprice']}
+			</div>
+		</div>
+		{/if}
+		{if $order['deductprice']>0}
+		<div class="fui-cell">
+			<div class="fui-cell-label">{$_W['shopset']['trade']['credittext']}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_39']}</div>
+			<div class="fui-cell-info">
+
+			</div>
+			<div class="fui-cell-remark noremark">
+				-RM{$order['deductprice']}
+			</div>
+		</div>
+		{/if}
+
+		{if $order['deductcredit2']>0}
+		<div class="fui-cell">
+			<div class="fui-cell-label">{$_W['shopset']['trade']['moneytext']}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_39']}</div>
+			<div class="fui-cell-info">
+
+			</div>
+			<div class="fui-cell-remark noremark">
+				-RM{$order['deductcredit2']}
+			</div>
+		</div>
+		{/if}
+
+		{if $order['seckilldiscountprice']>0}
+		<div class="fui-cell">
+			<div class="fui-cell-label">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_40']}</div>
+			<div class="fui-cell-info">
+
+			</div>
+			<div class="fui-cell-remark noremark">
+				-RM{$order['seckilldiscountprice']}
+			</div>
+		</div>
+		{/if}
+		{/if}
+
+		<div class="fui-cell">
+			<div class="fui-cell-label" style="width: 6rem;">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_41']}{if empty($order['isnewstore'])}({php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_42']}){/if}</div>
+			<div class="fui-cell-info">
+
+			</div>
+			<div class="fui-cell-remark noremark text-danger">
+						 <span style='font-size:.75rem'>RM{$order['price']}
+			</div>
+		</div>
+	</div>
+    {if $order['remark']}
+    <div class="fui-cell-group noborder order-info">
+        <div class="fui-cell">
+            <div class="fui-cell-info">
+                <span style="margin-right: 0.7rem;">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_43']}</span>{$order['remark']}
+            </div>
+            <div class="fui-cell-remark noremark">
+            </div>
+        </div>
+    </div>
+    {/if}
+	<div class="fui-cell-group noborder order-info">
+		<div class="fui-cell">
+			<div class="fui-cell-info">
+				<span style="margin-right: 0.7rem;">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_44']}</span>{$order['ordersn']}
+			</div>
+			<div class="fui-cell-remark noremark">
+
+			</div>
+		</div>
+		<div class="fui-cell">
+			<div class="fui-cell-info">
+				<span style="margin-right:0.7rem;">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_45']}</span>{php echo date('Y-m-d H:i:s', $order['createtime'])}
+			</div>
+			<div class="fui-cell-remark noremark">
+
+			</div>
+		</div>
+		{if $order['status']>=1 && $order['paytime'] > 0}
+		<div class="fui-cell">
+			<div class="fui-cell-info">
+				<span style="margin-right: 0.7rem;">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_46']}</span>{php echo date('Y-m-d H:i:s', $order['paytime'])}
+			</div>
+			<div class="fui-cell-remark noremark">
+
+			</div>
+		</div>
+		{/if}
+		{if !$isonlyverifygood}
+		{if $order['status']>=2 || ($order['status']>=1 && $order['sendtype']>0)}
+		<div class="fui-cell">
+			<div class="fui-cell-info">
+				<span style="margin-right: 0.7rem;">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_47']}</span>{php echo date('Y-m-d H:i:s', $order['sendtime'])}
+			</div>
+			<div class="fui-cell-remark noremark">
+
+			</div>
+		</div>
+		{/if}
+		{/if}
+
+		{if $order['status']==3}
+		<div class="fui-cell">
+			<div class="fui-cell-info">
+				<span style="margin-right: 0.7rem;">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_48']}</span>{php echo date('Y-m-d H:i:s', $order['createtime'])}
+			</div>
+			<div class="fui-cell-remark noremark">
+
+			</div>
+		</div>
+		{/if}
+	</div>
+
+
+	{if $order['invoicename']}
+	{php $invoice_info = m('sale')->parseInvoiceInfo($order['invoicename'])}
+	<div class="fui-cell-group noborder order-info">
+		{if $invoice_info['title']}
+		<div class="fui-cell">
+			<div class="fui-cell-info">
+				<span style="margin-right: 0.7rem;">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_49']}</span>{php echo $invoice_info['entity']}?{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_50']}:{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_51']}}
+			</div>
+			<div class="fui-cell-remark noremark">
+			</div>
+		</div>
+		{/if}
+		{if $invoice_info['title']}
+		<div class="fui-cell">
+			<div class="fui-cell-info">
+				<span style="margin-right: 0.7rem;">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_52']}</span>{php echo $invoice_info['company']}?{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_53']}:{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_54']}}
+			</div>
+			<div class="fui-cell-remark noremark">
+			</div>
+		</div>
+		{/if}
+		<div class="fui-cell">
+			<div class="fui-cell-info">
+				<span style="margin-right: 0.7rem;">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_55']}</span>
+				{if $invoice_info['title']}{$invoice_info['title']}{else}{$order['invoicename']}{/if}
+			</div>
+			<div class="fui-cell-remark noremark">
+			</div>
+		</div>
+		{if $invoice_info['number']}
+		<div class="fui-cell">
+			<div class="fui-cell-info">
+				<span style="margin-right: 0.7rem;">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_56']}</span>{$invoice_info['number']}
+			</div>
+			<div class="fui-cell-remark noremark">
+			</div>
+		</div>
+		{/if}
+	</div>
+	{/if}
+</div>
+<div class="fui-footer" style="text-align: right;">
+	{if $order['invoice_img']}
+	<a class="btn btn-sm btn-default-o" href="{php echo tomedia($order['invoice_img'])}">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_57']}</a>
+	{/if}
+	{if $order['userdeleted']==0}
+	{if $order['status']==0}
+	<div class="btn btn-sm btn-default-o order-cancel">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_58']}
+		<select data-orderid="{$order['id']}">
+
+			<option value="">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_59']}</option>
+			<option value="我不想买了">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_60']}</option>
+			<option value="信息填写错误，重新拍">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_61']}</option>
+			<option value="同城见面交易">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_62']}</option>
+			<option value="其他原因">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_63']}</option>
+		</select>
+	</div>
+	{if is_mobile()}
+	{if $order['paytype']!=3}
+	{if $order['paytype']!=3 && empty($ispeerpay)}
+	<a class="btn btn-sm btn-default-o"  href="{php echo mobileUrl('order/pay',array('id'=>$order['id']))}">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_64']}</a>
+	{else}
+	<a class="btn btn-sm btn-default-o"  href="{php echo mobileUrl('order/pay/peerpayshare',array('id'=>$order['id']))}">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_65']}</a>
+	{/if}
+	{/if}
+	{/if}
+	{/if}
+
+	{if $order['status']==3 || $order['status']==-1}
+	<div class="btn btn-sm btn-default-o order-delete" data-orderid="{$order['id']}">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_66']}</div>
+	{/if}
+
+
+	{if $order['status']==3 && $order['iscomment']==1}
+	<a class="btn btn-sm btn-default-o" href="{php echo mobileUrl('order/comment',array('id'=>$order['id']))}">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_67']}</a>
+	{/if}
+	{if $order['status']==3 && $order['iscomment']==0 && empty($_W['shopset']['trade']['closecomment'])}
+	<a class="btn btn-sm btn-default-o" href="{php echo mobileUrl('order/comment',array('id'=>$order['id']))}">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_68']}</a>
+	{/if}
+
+	{if !empty($activity)&& empty($order['refundstate']) &&$order['status']>0}
+	{if $order['isshare'] == 0}
+	<a data-nocache="true" class="btn btn-sm btn-default-o" href="{php echo mobileUrl('sale/sendticket/share/unclaimed',array('orderid'=>$order['id'],'money'=>$order['price']))}">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_69']}</a>
+	{/if}
+	{/if}
+
+	{if $order['canrefund'] && $norStart == 1 && $order['status'] ==1}
+
+	<a data-nocache="true" class="btn btn-sm btn-default-o" href="{php echo mobileUrl('order/refund',array('id'=>$order['id']))}">{if !empty($order['refundstate'])}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_70']}{/if}{if $order['status'] ==1}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_71']}{else}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_72']}{/if}{if !empty($order['refundstate'])}{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_73']}{/if}</a>
+	{/if}
+
+	{if $order['refundstate'] > 0 && $refund['status']!=5}
+	<a class='btn btn-sm btn-default-o btn-cancel'>{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_74']}</a>
+	{/if}
+	{else if $order['userdeleted']==1}
+	<div class="btn btn-sm btn-default-o order-deleted" data-orderid="{$order['id']}">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_75']}</div>
+
+	<div class="btn btn-sm btn-default-o order-recover" data-orderid="{$order['id']}">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_76']}</div>
+	{/if}
+</div>
+
+
+{if $order['canverify']}
+<div class="mask">
+	<div class="code_box">
+		<p>{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_77']}</p>
+		<div class="img_box">
+			<img class="qrimg" src="{$qrcodeimg}"/>
+		</div>
+		<div class="cav_code">{$verifycode}</div>
+		<div class="error">
+			<p style="padding: 0 1.3rem">{php echo $this->lang['lang_plugin_cycelbuy_core_mobile_order_detail_78']}</p>
+		</div>
+	</div>
+</div>
+{/if}
+
+</div>
+
+<script type="text/javascript">
+    $('.order_detail_code').click(function(){
+        $('.mask').css({display:'block'})
+    })
+    $('.mask').click(function(){
+        $(this).css({display:'none'})
+    })
+    require(['biz/order/detail'], function (modal) {
+        FoxUI.according.init();
+        modal.init({orderid: "{$orderid}",fromDetail:true});
+    });
+</script>
+{template '_footer'}

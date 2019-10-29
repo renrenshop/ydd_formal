@@ -1,0 +1,33 @@
+<div class="fui-navbar">
+
+    <a href="{if empty($_GPC['merchid'])}{php echo mobileUrl()}{else}{php echo mobileUrl('merch')}{/if}" class="external nav-item">
+        <span class="icon icon-home"></span>
+        <span class="label">{php echo $lang['lang_plugin_merch_template_mobile_default__menu_0']}</span>
+    </a>
+    {if intval($_W['shopset']['category']['level'])!=-1}
+    <a href="{php echo mobileUrl('shop/category')}" class="external nav-item {if $_W['routes']=='shop.category'}active{/if}" >
+        <span class="icon icon-list"></span>
+        <span class="label">{php echo $lang['lang_plugin_merch_template_mobile_default__menu_1']}</span>
+    </a>
+    {else}
+    <a href="{php echo mobileUrl('goods')}" class="external nav-item {if $_W['routes']=='goods'}active{/if}" >
+        <span class="icon icon-list"></span>
+        <span class="label">{php echo $lang['lang_plugin_merch_template_mobile_default__menu_2']}</span>
+    </a>
+    {/if}
+
+    <a href="{php echo mobileUrl('member/cart')}" class="external nav-item {if $_W['routes']=='member.cart'}active{/if}" id="menucart">
+        <span class="icon icon-cart"></span>
+        <span class="label">{php echo $lang['lang_plugin_merch_template_mobile_default__menu_3']}</span>
+        {if $cartcount>0}<span class="badge">{$cartcount}</span>{/if}
+    </a>
+    <a href="{php echo mobileUrl('member')}" class="external nav-item  {if $_W['routes']=='member'}active{/if}">
+        <span class="icon icon-person2"></span>
+        <span class="label">{php echo $lang['lang_plugin_merch_template_mobile_default__menu_4']}</span>
+    </a>
+
+    <a href="{php echo mobileUrl('', array('merchid' => -1))}" class="external nav-item">
+        <span class="icon icon-back"></span>
+        <span class="label">{php echo $lang['lang_plugin_merch_template_mobile_default__menu_5']}</span>
+    </a>
+</div>

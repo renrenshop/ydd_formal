@@ -1,0 +1,213 @@
+{template '_header'}
+<style>
+    .page-cashier-register .regbg {
+        width:100%;
+    }
+    .page-cashier-register .fui-navbar {
+        background:rgba(0,0,0,0)
+    }
+    .page-cashier-register .fui-navbar:before {
+        display:none;
+    }
+    .page-cashier-register .fui-navbar .btn {
+        border:none;
+    }
+    .page-cashier-register .fui-navbar .btn-reg {
+        width:10%; background:rgba(0,0,0,0.5);
+    }
+    .fui-modal,
+    .verify-pop {
+        position: fixed;
+    }
+
+    .verify-pop .qrcode {
+        width: 250px;
+        margin-left: -125px;
+        border-radius: 0.5rem;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .verify-pop.pop .qrcode {
+        width: 70%;
+        height: 15rem;
+        margin-left: -35%;
+        overflow: hidden;
+        display: block;
+    }
+
+    .verify-pop.pop .qrcode .inner {
+        padding: 0.5rem;
+        height: 12rem;
+    }
+
+    .verify-pop.pop .qrcode .inner .title {
+        text-align: center;
+        font-size: 1rem;
+        height: 1.5rem;
+    }
+
+    .verify-pop.pop .qrcode .inner .text {
+        width: 100%;
+        word-wrap: break-word;
+        font-size: 0.7rem;
+        color: #666;
+        line-height: 1rem;
+        height: 10rem;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .verify-pop.pop .qrcode .inner .text img {
+        max-width: 100%;
+    }
+</style>
+<div class="fui-page page-cashier-register">
+    <div class="fui-content">
+
+        <img class="regbg" src="{if empty($set['regbg'])}../addons/ewei_shopv2/plugin/cashier/template/mobile/default/static/images/regbg.png{else}{php echo tomedia($set['regbg'])}{/if}"/>
+
+        {if !empty($user)}
+
+            {if $user['status']==-1}
+
+            <div class="fui-alert fui-alert-danger">
+                <p>{php echo $lang['lang_plugin_cashier_template_mobile_default_register_0']}</p>
+                <p>{$reason}</p>
+                <p>{php echo $lang['lang_plugin_cashier_template_mobile_default_register_1']}</p>
+            </div>
+
+            {else}
+            <div class="fui-alert fui-alert-warning">
+                <p>{php echo $lang['lang_plugin_cashier_template_mobile_default_register_2']}!</p>
+                <p>{php echo $lang['lang_plugin_cashier_template_mobile_default_register_3']}</p>
+            </div>
+            {/if}
+        {/if}
+        <form id="cashierForm">
+        <div class="fui-cell-group">
+            <div class="fui-cell must ">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_cashier_template_mobile_default_register_4']}</div>
+                <div class="fui-cell-info"><input type="text" name="title" class="fui-input" id="title" placeholder="{php echo $lang['lang_plugin_cashier_template_mobile_default_register_5']}" value="{$user['title']}"/></div>
+            </div>
+            <div class="fui-cell ">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_cashier_template_mobile_default_register_6']}</div>
+                <div class="fui-cell-info"><textarea name="address" id="address">{$user['address']}</textarea></div>
+            </div>
+
+        </div>
+        <div class="fui-cell-group">
+            <div class="fui-cell must ">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_cashier_template_mobile_default_register_7']}</div>
+                <div class="fui-cell-info"><input type="text" name="name" class="fui-input" id="name" placeholder="{php echo $lang['lang_plugin_cashier_template_mobile_default_register_8']}" value="{$user['name']}"></div>
+            </div>
+
+            <div class="fui-cell must ">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_cashier_template_mobile_default_register_9']}</div>
+                <div class="fui-cell-info"><input type="tel" name="mobile" class="fui-input" id="mobile" placeholder="{php echo $lang['lang_plugin_cashier_template_mobile_default_register_10']}" value="{$user['mobile']}"/></div>
+            </div>
+            <div class="fui-cell-tip">{php echo $lang['lang_plugin_cashier_template_mobile_default_register_11']}~</div>
+            <input type="hidden" name="idcard1" value="{$user['idcard1']}">
+            <div class='fui-cell'>
+                <div class='fui-cell-label'>{php echo $lang['lang_plugin_cashier_template_mobile_default_register_12']}</div>
+                <div class='fui-cell-info'>
+                    <ul class="fui-images fui-images-sm"></ul>
+                    <div class="fui-uploader fui-uploader-sm" data-max="1" data-count="1" data-name="idcard1">
+                        <input type="file" id='fileName1' name="fileName1" multiple="" accept="image/jpg,image/jpeg,image/png,image/gif" >
+                    </div>
+                </div>
+            </div>
+
+            <input type="hidden" name="idcard2" value="{$user['idcard2']}">
+            <div class='fui-cell'>
+                <div class='fui-cell-label'>{php echo $lang['lang_plugin_cashier_template_mobile_default_register_13']}</div>
+                <div class='fui-cell-info'>
+                    <ul class="fui-images fui-images-sm"></ul>
+                    <div class="fui-uploader fui-uploader-sm" data-max="1" data-count="1" data-name="idcard2">
+                        <input type="file" id='fileName2' name="fileName2" multiple="" accept="image/jpg,image/jpeg,image/png,image/gif" >
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="fui-cell-group">
+            <div class="fui-cell must ">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_cashier_template_mobile_default_register_14']}</div>
+                <div class="fui-cell-info"><input type="text" name="username" class="fui-input" id="username" placeholder="{php echo $lang['lang_plugin_cashier_template_mobile_default_register_15']}" value="{$user['username']}"></div>
+            </div>
+
+            <div class="fui-cell must ">
+                <div class="fui-cell-label">{php echo $lang['lang_plugin_cashier_template_mobile_default_register_16']}</div>
+                <div class="fui-cell-info"><input type="password" name="password" class="fui-input" id="password" placeholder="{php echo $lang['lang_plugin_cashier_template_mobile_default_register_17']},{php echo $lang['lang_plugin_cashier_template_mobile_default_register_18']}" value=""/></div>
+            </div>
+            <div class="fui-cell-tip">{php echo $lang['lang_plugin_cashier_template_mobile_default_register_19']}~</div>
+
+        </div>
+
+            <div class="fui-cell-group">
+                <div class="fui-cell ">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_cashier_template_mobile_default_register_20']}</div>
+                    <div class="fui-cell-info"><input type="text" name="referrer" class="fui-input" id="referrer" placeholder="{php echo $lang['lang_plugin_cashier_template_mobile_default_register_21']}" value="{$user['referrer']}"></div>
+                </div>
+
+                <div class="fui-cell ">
+                    <div class="fui-cell-label">{php echo $lang['lang_plugin_cashier_template_mobile_default_register_22']}</div>
+                    <div class="fui-cell-info"><input type="tel" name="referrermobile" class="fui-input" id="referrermobile" placeholder="{php echo $lang['lang_plugin_cashier_template_mobile_default_register_23']}" value="{$user['referrermobile']}"/></div>
+                </div>
+                <div class="fui-cell-tip">{php echo $lang['lang_plugin_cashier_template_mobile_default_register_24']}~</div>
+
+            </div>
+
+                {if $template_flag}
+
+                {template 'diyform/formfields'}
+
+                {/if}
+
+
+                {if intval($set['applycontent']) == 1}
+                <div class="fui-cell-group">
+                    <div class="fui-cell small ">
+                        <div class="fui-cell-info">
+
+                            <label class="checkbox-inline">
+                                <input type="checkbox" class="fui-checkbox-primary" id="agree" {if !empty($user)}checked{/if}/> {php echo $lang['lang_plugin_cashier_template_mobile_default_register_25']}<a id="btn-apply" style="color:#337ab7;">{php echo $lang['lang_plugin_cashier_template_mobile_default_register_26']}</a>{php echo $lang['lang_plugin_cashier_template_mobile_default_register_27']}
+                            </label>
+
+                        </div>
+                    </div>
+
+                </div>
+                {/if}
+
+        </form>
+            {if $user['status']==1}
+                <a class="btn btn-default block disabled"> {php echo $lang['lang_plugin_cashier_template_mobile_default_register_28']}</a>
+            {else}
+                <a class="btn btn-warning btn-submit block"> {if empty($user)}{php echo $lang['lang_plugin_cashier_template_mobile_default_register_29']}{else}{php echo $lang['lang_plugin_cashier_template_mobile_default_register_30']}{/if}</a>
+            {/if}
+        <div class="pop-apply-hidden" style="display: none;">
+            <div class="verify-pop pop">
+                <div class="close"><i class="icon icon-roundclose"></i></div>
+                <div class="qrcode">
+                    <div class="inner">
+                        <div class="title">{$set['applytitle']}</div>
+                        <div class="text">{$set['applycontent']}</div>
+                    </div>
+                    <div class="inner-btn" style="padding: 0.5rem">
+                        <div class="btn btn-warning" style="width: 100%; margin: 0">{php echo $lang['lang_plugin_cashier_template_mobile_default_register_31']}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script language="javascript">
+        require(['../addons/ewei_shopv2/plugin/cashier/static/js/register.js'], function (modal) {
+            modal.init({applycontent:{php echo intval($set['applycontent'])}});
+        })
+    </script>
+</div>
+{template '_footer'}

@@ -1,0 +1,25 @@
+{template '_header'}
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/groups/template/mobile/default/css/style.css" />
+<div class='fui-page order-list-page'>
+	<div class="fui-header">
+		<div class="fui-header-left">
+			<a class="back" href="{php echo mobileUrl('order')}"></a>
+		</div>
+		<div class="title">{php echo $lang['lang_plugin_groups_template_mobile_default_team_rules_0']}</div>
+		<div class="fui-header-right">&nbsp;</div>
+	</div>
+	<div class='fui-content' style="padding-bottom:0;top:2.2rem;">
+		{if !is_mobile()}<div class="pcshop-index">{/if}
+		<dl class="lynn_team_rules">
+			<dt>{php echo $lang['lang_plugin_groups_template_mobile_default_team_rules_1']}</dt>
+			<dd class="lynn_team_rules_dd">
+				1 {php echo $lang['lang_plugin_groups_template_mobile_default_team_rules_2']} 2 {php echo $lang['lang_plugin_groups_template_mobile_default_team_rules_3']} 3 {php echo $lang['lang_plugin_groups_template_mobile_default_team_rules_4']} 4 {php echo $lang['lang_plugin_groups_template_mobile_default_team_rules_5']}
+			</dd>
+			<dd class="lynn_team_rules_content">
+				{php echo htmlspecialchars_decode($set['rules'])}
+			</dd>
+		</dl>
+		{if !is_mobile()}</div>{/if}
+	</div>
+</div>
+{template '_footer'}

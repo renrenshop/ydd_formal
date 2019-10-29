@@ -1,0 +1,20 @@
+<?php
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_0'] = 'Details of each issue';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_1'] = 'has not started';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_2'] = 'processing';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_3'] = 'completed';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_4'] = 'Number of services';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_5'] = 'First';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_6'] = 'Period / total';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_7'] = 'period';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_8'] = 'Receipt date';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_9'] = 'Shipping address';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_10'] = 'Logistics information';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_11'] = 'Not shipped';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_12'] = 'Modify receipt date';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_13'] = 'Delay receipt';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_14'] = 'Change address';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_15'] = 'Change address';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_16'] = 'Confirm receipt';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_17'] = 'cancel';
+$lang['_plugin_cycelbuy_core_mobile_order_cycledetail_18'] = 'modify';

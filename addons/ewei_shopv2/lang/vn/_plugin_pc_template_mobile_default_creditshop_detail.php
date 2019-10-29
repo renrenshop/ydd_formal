@@ -1,0 +1,32 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_0'] = ' Sản phẩm';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_1'] = ' Phiếu giảm giá';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_2'] = ' Cân bằng';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_3'] = ' Phong bì màu đỏ';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_4'] = ' Ban đầu';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_5'] = ' Giá:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_6'] = ' Yêu cầu điểm:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_7'] = ' Giá trị cứu chuộc:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_8'] = ' từ ngày cứu chuộc';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_9'] = ' để';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_10'] = ' chỉ:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_11'] = ' Bản sao';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_12'] = ' tham gia';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_13'] = ' Thời gian';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_14'] = ' bưu chính';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_15'] = ' Nhân dân tệ';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_16'] = ' Trọn gói';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_17'] = ' Chọn một đặc điểm kỹ thuật';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_18'] = ' Chọn một đặc điểm kỹ thuật';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_19'] = ' Vẽ bây giờ';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_20'] = ' Đổi thưởng bây giờ';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_21'] = ' Mall cung cấp';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_22'] = ' Quà tặng số:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_23'] = ' Thêm thời gian:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_24'] = ' Lượt truy cập:';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_25'] = ' Chuộc lại hồ sơ';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_26'] = ' Không có sự tham gia kỷ lục! ';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_27'] = ' Quà tặng phổ biến';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_28'] = ' Giới thiệu quà';
+$lang['lang_plugin_pc_template_mobile_default_creditshop_detail_29'] = ' Không có thông tin chi tiết sản phẩm';
+?>

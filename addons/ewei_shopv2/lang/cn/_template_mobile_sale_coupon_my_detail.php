@@ -1,0 +1,36 @@
+<?php
+$lang['lang_template_mobile_sale_coupon_my_detail_0'] = '详情';
+$lang['lang_template_mobile_sale_coupon_my_detail_1'] = '立返';
+$lang['lang_template_mobile_sale_coupon_my_detail_2'] = '元余额';
+$lang['lang_template_mobile_sale_coupon_my_detail_3'] = '积分';
+$lang['lang_template_mobile_sale_coupon_my_detail_4'] = '元红包';
+$lang['lang_template_mobile_sale_coupon_my_detail_5'] = '永久有效';
+$lang['lang_template_mobile_sale_coupon_my_detail_6'] = '即';
+$lang['lang_template_mobile_sale_coupon_my_detail_7'] = '日内';
+$lang['lang_template_mobile_sale_coupon_my_detail_8'] = '天有效';
+$lang['lang_template_mobile_sale_coupon_my_detail_9'] = '使用商铺';
+$lang['lang_template_mobile_sale_coupon_my_detail_10'] = '限购';
+$lang['lang_template_mobile_sale_coupon_my_detail_11'] = '店铺商品';
+$lang['lang_template_mobile_sale_coupon_my_detail_12'] = '使用说明';
+$lang['lang_template_mobile_sale_coupon_my_detail_13'] = '有效期限';
+$lang['lang_template_mobile_sale_coupon_my_detail_14'] = '永久有效';
+$lang['lang_template_mobile_sale_coupon_my_detail_15'] = '即';
+$lang['lang_template_mobile_sale_coupon_my_detail_16'] = '日内';
+$lang['lang_template_mobile_sale_coupon_my_detail_17'] = '天有效';
+$lang['lang_template_mobile_sale_coupon_my_detail_18'] = '有效期';
+$lang['lang_template_mobile_sale_coupon_my_detail_19'] = '限购';
+$lang['lang_template_mobile_sale_coupon_my_detail_20'] = '店铺商品';
+$lang['lang_template_mobile_sale_coupon_my_detail_21'] = '使用限制';
+$lang['lang_template_mobile_sale_coupon_my_detail_22'] = '本优惠卷只能在收银台中使用';
+$lang['lang_template_mobile_sale_coupon_my_detail_23'] = '不允许与促销优惠同时使用';
+$lang['lang_template_mobile_sale_coupon_my_detail_24'] = '不允许与会员折扣同时使用';
+$lang['lang_template_mobile_sale_coupon_my_detail_25'] = '不允许与促销优惠和会员折扣同时使用';
+$lang['lang_template_mobile_sale_coupon_my_detail_26'] = '允许以下商品使用';
+$lang['lang_template_mobile_sale_coupon_my_detail_27'] = '允许以下商品分类使用';
+$lang['lang_template_mobile_sale_coupon_my_detail_28'] = '无';
+$lang['lang_template_mobile_sale_coupon_my_detail_29'] = '已使用';
+$lang['lang_template_mobile_sale_coupon_my_detail_30'] = '已过期';
+$lang['lang_template_mobile_sale_coupon_my_detail_31'] = '立即去选商品使用';
+$lang['lang_template_mobile_sale_coupon_my_detail_32'] = '立即去充值';
+$lang['lang_template_mobile_sale_coupon_my_detail_33'] = '返回我的优惠卷';
+?>

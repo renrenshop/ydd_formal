@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_merch_template_mobile_default_register_0'] = ' ถูกไล่โปรแกรมประยุกต์ของคุณ:';
+$lang['lang_plugin_merch_template_mobile_default_register_1'] = ' นอกจากนี้คุณยังสามารถแก้ไขข้อมูลที่ต้องการส่งอีกครั้ง';
+$lang['lang_plugin_merch_template_mobile_default_register_2'] = ' คุณได้ส่งข้อมูล กรุณารอเราติดต่อคุณ';
+$lang['lang_plugin_merch_template_mobile_default_register_3'] = ' นอกจากนี้คุณยังสามารถแก้ไขข้อมูลที่ต้องการส่งอีกครั้ง';
+$lang['lang_plugin_merch_template_mobile_default_register_4'] = ' ชื่อร้านค้า';
+$lang['lang_plugin_merch_template_mobile_default_register_5'] = ' ชื่อร้านค้า';
+$lang['lang_plugin_merch_template_mobile_default_register_6'] = ' โครงการหลัก';
+$lang['lang_plugin_merch_template_mobile_default_register_7'] = ' เช่นรองเท้าและหมวก';
+$lang['lang_plugin_merch_template_mobile_default_register_8'] = ' เครื่องสำอาง ฯลฯ';
+$lang['lang_plugin_merch_template_mobile_default_register_9'] = ' แนะนำโดยย่อ';
+$lang['lang_plugin_merch_template_mobile_default_register_10'] = ' แนะนำร้านค้าง่าย';
+$lang['lang_plugin_merch_template_mobile_default_register_11'] = ' ติดต่อ';
+$lang['lang_plugin_merch_template_mobile_default_register_12'] = ' ทักทายคุณ';
+$lang['lang_plugin_merch_template_mobile_default_register_13'] = ' หมายเลขโทรศัพท์';
+$lang['lang_plugin_merch_template_mobile_default_register_14'] = ' หมายเลขโทรศัพท์';
+$lang['lang_plugin_merch_template_mobile_default_register_15'] = ' กรุณากรอกข้อมูลในแบบฟอร์มอย่างรอบคอบ รับประกันได้ว่า เราสามารถติดต่อคุณโดยเร็วที่สุด';
+$lang['lang_plugin_merch_template_mobile_default_register_16'] = ' หมายเลขบัญชี';
+$lang['lang_plugin_merch_template_mobile_default_register_17'] = ' หมายเลขบัญชี';
+$lang['lang_plugin_merch_template_mobile_default_register_18'] = ' รหัสผ่าน';
+$lang['lang_plugin_merch_template_mobile_default_register_19'] = ' รหัสผ่าน';
+$lang['lang_plugin_merch_template_mobile_default_register_20'] = ' เข้าสู่ระบบหลังร้านค้าหลายแห่ง';
+$lang['lang_plugin_merch_template_mobile_default_register_21'] = ' กรุณากรอกข้อมูลอย่างระมัดระวัง';
+$lang['lang_plugin_merch_template_mobile_default_register_22'] = ' ผมเคยอ่าน และเข้าใจ';
+$lang['lang_plugin_merch_template_mobile_default_register_23'] = ' ';
+$lang['lang_plugin_merch_template_mobile_default_register_24'] = ' ';
+$lang['lang_plugin_merch_template_mobile_default_register_25'] = ' ';
+$lang['lang_plugin_merch_template_mobile_default_register_26'] = ' สมัครตอนนี้';
+$lang['lang_plugin_merch_template_mobile_default_register_27'] = ' ส่งคำขอใหม่';
+$lang['lang_plugin_merch_template_mobile_default_register_28'] = ' ผมได้อ่าน';
+?>

@@ -1,0 +1,208 @@
+{template '_header'}
+
+<link rel="stylesheet" type="text/css" href="../addons/ewei_shopv2/template/mobile/default/static/css/coupon-new.css?v=2017030310125">
+<div class="fui-page">
+
+	<div class="fui-header">
+		<div class="fui-header-left">
+			<a class="back" href="{php echo mobileUrl('sale/coupon')}"></a>
+		</div>
+		<div class="title">{php echo $lang['lang_template_mobile_sale_coupon_detail_0']}</div>
+		<div class="fui-header-left"></div>
+	</div>
+
+	<div class="fui-content navbar coupon-page">
+
+		<div class="coupon-detail {$coupon['color']}">
+			<div class="detail-dots"></div>
+			<div class="detail-head">
+				<div class="inner">
+					<div class="title">
+						<div class="text">{$coupon['couponname']}</div>
+					</div>
+
+
+					{if $coupon['backtype']==2}
+					<div class="childs">
+						<div class="child">
+							<div class="subtitle"> {$coupon['title2']}</div>
+							<div class="bigtitle">{php echo $lang['lang_template_mobile_sale_coupon_detail_1']}</div>
+						</div>
+						<div class="child">
+							{if !empty($coupon['backmoney']) && $coupon['backmoney'] > 0}
+								<div class="subtitle"><span class="bold">{$coupon['backmoney']}</span> <span class="threetitle">{php echo $lang['lang_template_mobile_sale_coupon_detail_2']}</span></div>
+							{/if}
+							{if !empty($coupon['backcredit']) && $coupon['backcredit'] > 0}
+								<div class="subtitle"><span class="bold">{$coupon['backcredit']}</span> <span class="threetitle">{php echo $lang['lang_template_mobile_sale_coupon_detail_3']}</span></div>
+							{/if}
+							{if !empty($coupon['backredpack']) && $coupon['backredpack'] > 0}
+								<div class="subtitle"><span class="bold">{$coupon['backredpack']}</span> <span class="threetitle">{php echo $lang['lang_template_mobile_sale_coupon_detail_4']}</span></div>
+							{/if}
+						</div>
+					</div>
+
+					{else}
+						<div class="bigtitle"> {$coupon['title3']}</div>
+						<div class="subtitle"> {$coupon['title2']}</div>
+					{/if}
+
+					<div class="usetime">
+						<div class="text">{php echo $lang['lang_template_mobile_sale_coupon_detail_5']}:{if $coupon['timestr']=='0'}
+							{php echo $lang['lang_template_mobile_sale_coupon_detail_6']}
+							{else}
+							{if $coupon['timestr']=='1'}
+							{php echo $lang['lang_template_mobile_sale_coupon_detail_7']}{$coupon['gettypestr']}{php echo $lang['lang_template_mobile_sale_coupon_detail_8']} {$coupon['timedays']} {php echo $lang['lang_template_mobile_sale_coupon_detail_9']}
+							{else}
+							{php echo $lang['lang_template_mobile_sale_coupon_detail_10']} {$coupon['timestr']}
+							{/if}
+							{/if}</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="detail-body">
+				{if $coupon['money'] > 0||$coupon['credit']>0}
+				<div class="block">
+					<div class="title">{php echo $lang['lang_template_mobile_sale_coupon_detail_11']}</div>
+					{if $coupon['money'] > 0}
+					<div class="text dot">{php echo $lang['lang_template_mobile_sale_coupon_detail_12']}:{$coupon['money']}</div>
+					{/if}
+					{if $coupon['credit'] > 0}
+					<div class="text dot">{php echo $lang['lang_template_mobile_sale_coupon_detail_13']}:{$coupon['credit']}</div>
+					{/if}
+				</div>
+				{/if}
+
+				<div class="block">
+
+					{if !empty($coupon['merchname'])}
+					<div class="title">{php echo $lang['lang_template_mobile_sale_coupon_detail_14']}</div>
+					<div class="text dot">{php echo $lang['lang_template_mobile_sale_coupon_detail_15']}[{$coupon['merchname']}]{php echo $lang['lang_template_mobile_sale_coupon_detail_16']}</div>
+					{/if}
+					<div class="title">{php echo $lang['lang_template_mobile_sale_coupon_detail_17']}</div>
+					<div class="text">
+						{if empty($coupon['descnoset'])}
+							{if empty($coupon['coupontype'])}
+								{php echo htmlspecialchars_decode($set['consumedesc'])}
+							{else}
+								{php echo htmlspecialchars_decode($set['rechargedesc'])}
+							{/if}
+						{else}
+							{$coupon['desc']}
+						{/if}
+					</div>
+				</div>
+
+				<div class="block">
+					<div class="title">{php echo $lang['lang_template_mobile_sale_coupon_detail_18']}</div>
+					{if $coupon['islimitlevel']=='1'}
+						<div class="text dot">{php echo $lang['lang_template_mobile_sale_coupon_detail_19']}:</div>
+						{if !empty($coupon['limitmemberlevels'])|| $coupon['limitmemberlevels']==='0'}
+						<div class="text dot">	{php echo $lang['lang_template_mobile_sale_coupon_detail_20']}:  {$meblvname}
+							{loop $level1 $l1}
+								{$l1['levelname']}
+							{/loop}
+						</div>
+						{/if}
+						{if (!empty($coupon['limitagentlevels']) || $coupon['limitagentlevels']==='0')&&$hascommission}
+							<div class="text dot">		{$leveltitle2}:
+								{if in_array("0",$limitagentlevels)}
+								{$commissionname}
+								{/if}
+								{loop $level2 $l2}
+								{$l2['levelname']}
+								{/loop}
+							</div>
+						{/if}
+						{if (!empty($coupon['limitpartnerlevels']) || $coupon['limitpartnerlevels']==='0')&&$hasglobonus}
+							<div class="text dot">	{$leveltitle3}:  {$globonuname}
+								{loop $level3 $l3}
+								{$l3['levelname']}
+								{/loop}
+							</div>
+						{/if}
+						{if (!empty($coupon['limitaagentlevels']) || $coupon['limitaagentlevels']==='0')&&$hasabonus}
+							<div class="text dot">	{$leveltitle4}:  {$abonuname}
+								{loop $level4 $l4}
+								{$l4['levelname']}
+								{/loop}
+							</div>
+						{/if}
+					{/if}
+					{if $coupon['islimitlevel']=='0'}
+						<div class="text dot">{php echo $lang['lang_template_mobile_sale_coupon_detail_21']}</div>
+					{/if}
+				</div>
+				<div class="block">
+					<div class="title">{php echo $lang['lang_template_mobile_sale_coupon_detail_22']}</div>
+					<div class="text dot">
+
+
+						{if $coupon['timestr']=='0'}
+						{php echo $lang['lang_template_mobile_sale_coupon_detail_23']}
+						{else}
+						{if $coupon['timestr']=='1'}
+						{php echo $lang['lang_template_mobile_sale_coupon_detail_24']}{$coupon['gettypestr']}{php echo $lang['lang_template_mobile_sale_coupon_detail_25']} {$coupon['timedays']} {php echo $lang['lang_template_mobile_sale_coupon_detail_26']}
+						{else}
+						{php echo $lang['lang_template_mobile_sale_coupon_detail_27']} {$coupon['timestr']}
+						{/if}
+						{/if}
+						{if !empty($coupon['merchname'])}
+						{php echo $lang['lang_template_mobile_sale_coupon_detail_28']}[{$coupon['merchname']}]{php echo $lang['lang_template_mobile_sale_coupon_detail_29']}
+						{/if}</div>
+				</div>
+				<div class="block">
+					<div class="title">{php echo $lang['lang_template_mobile_sale_coupon_detail_30']}</div>
+					{if $coupon['coupontype']=='2'}
+						<div class="text dot">{php echo $lang['lang_template_mobile_sale_coupon_detail_31']}</div>
+					{/if}
+
+					{if $coupon['limitdiscounttype']=='1'}
+						<div class="text dot">{php echo $lang['lang_template_mobile_sale_coupon_detail_32']}</div>
+					{elseif $coupon['limitdiscounttype']=='2'}
+						<div class="text dot">{php echo $lang['lang_template_mobile_sale_coupon_detail_33']}</div>
+					{elseif $coupon['limitdiscounttype']=='3'}
+						<div class="text dot">{php echo $lang['lang_template_mobile_sale_coupon_detail_34']}</div>
+					{/if}
+					{if $coupon['limitgoodtype']=='1'}
+					<div class="text dot">{php echo $lang['lang_template_mobile_sale_coupon_detail_35']}:</div>
+						{loop $goods $g}
+							<div class="text">{$g['title']}</div>
+						{/loop}
+					{/if}
+					{if $coupon['limitgoodcatetype']=='1'}
+						<div class="text dot">{php echo $lang['lang_template_mobile_sale_coupon_detail_36']}:</div>
+						<div class="text">
+							{loop $category $c}
+							{$c['name']}&nbsp;
+							{/loop}
+						</div>
+					{/if}
+					{if $coupon['limitgoodtype']=='0'&& $coupon['limitgoodcatetype']=='0'&&$coupon['limitdiscounttype']=='0'&&$coupon['coupontype']!='2'}
+						<div class="text dot">{php echo $lang['lang_template_mobile_sale_coupon_detail_37']}</div>
+					{/if}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fui-navbar">
+		{if $coupon['canget']===false}
+		<div class="nav-item btn btn-gray" >{php echo $lang['lang_template_mobile_sale_coupon_detail_38']}{$coupon['gettypestr']}{php echo $lang['lang_template_mobile_sale_coupon_detail_39']}</div>
+		{elseif $pass}
+		<div class="nav-item btn btn-{$coupon['color']}"  id="btncoupon">{php echo $lang['lang_template_mobile_sale_coupon_detail_40']}{$coupon['gettypestr']}</div>
+		{else}
+		<div class="nav-item btn btn-gray">{php echo $lang['lang_template_mobile_sale_coupon_detail_41']}{$coupon['gettypestr']}{php echo $lang['lang_template_mobile_sale_coupon_detail_42']}</div>
+		{/if}
+	</div>
+</div>
+
+
+
+<script language='javascript'>
+	require(['biz/sale/coupon/detail'], function (modal) {
+		modal.init({coupon: {php echo json_encode($coupon)}});
+	});
+</script>
+{template '_footer'}

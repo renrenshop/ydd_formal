@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_merch_template_mobile_default_register_0'] = '您的申请被驳回：';
+$lang['lang_plugin_merch_template_mobile_default_register_1'] = '您也可以修改信息重新提交';
+$lang['lang_plugin_merch_template_mobile_default_register_2'] = '您已经提交了信息，请等待我们联系您';
+$lang['lang_plugin_merch_template_mobile_default_register_3'] = '您也可以修改信息重新提交';
+$lang['lang_plugin_merch_template_mobile_default_register_4'] = '商户名称';
+$lang['lang_plugin_merch_template_mobile_default_register_5'] = '商户名称';
+$lang['lang_plugin_merch_template_mobile_default_register_6'] = '主营项目';
+$lang['lang_plugin_merch_template_mobile_default_register_7'] = '例如鞋帽';
+$lang['lang_plugin_merch_template_mobile_default_register_8'] = '化妆品等';
+$lang['lang_plugin_merch_template_mobile_default_register_9'] = '简单介绍';
+$lang['lang_plugin_merch_template_mobile_default_register_10'] = '简单介绍下商户';
+$lang['lang_plugin_merch_template_mobile_default_register_11'] = '联系人';
+$lang['lang_plugin_merch_template_mobile_default_register_12'] = '您的称呼';
+$lang['lang_plugin_merch_template_mobile_default_register_13'] = '手机号';
+$lang['lang_plugin_merch_template_mobile_default_register_14'] = '您的手机号';
+$lang['lang_plugin_merch_template_mobile_default_register_15'] = '请仔细填写联系方式，保证我们能尽快联系到您';
+$lang['lang_plugin_merch_template_mobile_default_register_16'] = '帐号';
+$lang['lang_plugin_merch_template_mobile_default_register_17'] = '帐号';
+$lang['lang_plugin_merch_template_mobile_default_register_18'] = '密码';
+$lang['lang_plugin_merch_template_mobile_default_register_19'] = '密码';
+$lang['lang_plugin_merch_template_mobile_default_register_20'] = '用于登录多商户后台';
+$lang['lang_plugin_merch_template_mobile_default_register_21'] = '请认真填写';
+$lang['lang_plugin_merch_template_mobile_default_register_22'] = '我已经阅读并了解了';
+$lang['lang_plugin_merch_template_mobile_default_register_23'] = '【';
+$lang['lang_plugin_merch_template_mobile_default_register_24'] = '】';
+$lang['lang_plugin_merch_template_mobile_default_register_25'] = '。';
+$lang['lang_plugin_merch_template_mobile_default_register_26'] = '立即申请入驻';
+$lang['lang_plugin_merch_template_mobile_default_register_27'] = '重新提交申请';
+$lang['lang_plugin_merch_template_mobile_default_register_28'] = '我已阅读';
+?>

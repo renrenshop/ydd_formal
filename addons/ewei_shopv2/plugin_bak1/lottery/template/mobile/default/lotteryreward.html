@@ -1,0 +1,47 @@
+{template '_header'}
+<script>document.title = "{php echo $lang['lang_plugin_lottery_template_mobile_default_lotteryreward_0']}"; </script>
+
+<link rel="stylesheet" href="../addons/ewei_shopv2/plugin/lottery/static/style/lotteryreward.css?{php echo time();}" />
+
+<div class='fui-page  fui-page-current'>
+
+    <div class="fui-content">
+
+        <div class="lottery-head">
+            <img src="../addons/ewei_shopv2/plugin/lottery/static/images/lottery_banner.png" style="height: 10rem;width: 100%;">
+        </div>
+        <div class="lottery-title"><span class="title-left">{php echo $lang['lang_plugin_lottery_template_mobile_default_lotteryreward_1']}</span></div>
+        <div class="lottery-content">
+            {if !empty($reward)}
+            {loop $reward $rank $value}
+            {if !empty($value['reward'])}
+            {if isset($value['reward']['credit'])}
+            <p class="reward-item"><span class="item-left">{$value['title']}</span><span class="item-center">{php echo $lang['lang_plugin_lottery_template_mobile_default_lotteryreward_2']}</span><span class="item-right">{$value['reward']['credit']}</span></p>
+            {elseif isset($value['reward']['bribery'])}
+            <p class="reward-item"><span class="item-left">{$value['title']}</span><span class="item-center">{php echo $lang['lang_plugin_lottery_template_mobile_default_lotteryreward_3']}</span><span class="item-right">{$value['reward']['bribery']['num']}{php echo $lang['lang_plugin_lottery_template_mobile_default_lotteryreward_4']}</span></p>
+            {elseif isset($value['reward']['money'])}
+            <p class="reward-item"><span class="item-left">{$value['title']}</span><span class="item-center">{if $value['reward']['money']['type']==0}{php echo $lang['lang_plugin_lottery_template_mobile_default_lotteryreward_5']}{else}{php echo $lang['lang_plugin_lottery_template_mobile_default_lotteryreward_6']}{/if}{php echo $lang['lang_plugin_lottery_template_mobile_default_lotteryreward_7']}</span><span class="item-right">{$value['reward']['money']['num']}{php echo $lang['lang_plugin_lottery_template_mobile_default_lotteryreward_8']}</span></p>
+            {elseif isset($value['reward']['goods'])}
+
+            {loop $value['reward']['goods'] $key $val}
+            <p class="reward-item"><span class="item-left">{$value['title']}</span><span class="item-center">{php echo $lang['lang_plugin_lottery_template_mobile_default_lotteryreward_9']}</span><span class="item-right">{$value['reward']['goods'][$key]['title']}</span></p>
+            {/loop}
+
+            {elseif isset($value['reward']['coupon'])}
+            {loop $value['reward']['coupon'] $key $val}
+            <p class="reward-item"><span class="item-left">{$value['title']}</span><span class="item-center">{$value['reward']['coupon'][$key]['couponname']}</span><span class="item-right">{$value['reward']['coupon'][$key]['couponnum']}{php echo $lang['lang_plugin_lottery_template_mobile_default_lotteryreward_10']}</span></p>
+            {/loop}
+            {/if}
+            {else}
+            <p class="reward-item"><span class="item-left">{$value['title']}</span><span class="item-center">{php echo $lang['lang_plugin_lottery_template_mobile_default_lotteryreward_11']}</span><span class="item-right"></span></p>
+            {/if}
+            {/loop}
+            {/if}
+        </div>
+
+    </div>
+
+</div>
+
+{template '_footer'}
+

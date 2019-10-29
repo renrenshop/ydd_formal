@@ -1,0 +1,31 @@
+<?php
+$lang['lang_plugin_pc_template_mobile_default_account_register_0'] = ' 歓迎する、';
+$lang['lang_plugin_pc_template_mobile_default_account_register_1'] = ' は、このサイトのメンバーではありませんか。すぐに';
+$lang['lang_plugin_pc_template_mobile_default_account_register_2'] = ' 上のログ';
+$lang['lang_plugin_pc_template_mobile_default_account_register_3'] = ' 今すぐ登録';
+$lang['lang_plugin_pc_template_mobile_default_account_register_4'] = ' 今すぐ検索';
+$lang['lang_plugin_pc_template_mobile_default_account_register_5'] = ' 電話番号:';
+$lang['lang_plugin_pc_template_mobile_default_account_register_6'] = ' あなたの電話番号';
+$lang['lang_plugin_pc_template_mobile_default_account_register_7'] = ' Authenticode コード:';
+$lang['lang_plugin_pc_template_mobile_default_account_register_8'] = ' Authenticode のビット';
+$lang['lang_plugin_pc_template_mobile_default_account_register_9'] = ' キャプチャを取得';
+$lang['lang_plugin_pc_template_mobile_default_account_register_10'] = ' クリックして';
+$lang['lang_plugin_pc_template_mobile_default_account_register_11'] = ' SMS 認証を送信';
+$lang['lang_plugin_pc_template_mobile_default_account_register_12'] = ' 、あなたの携帯電話のメッセージが表示されると「';
+$lang['lang_plugin_pc_template_mobile_default_account_register_13'] = ' ビットダイナミックコード入力 SMS を送信する前に検証します。';
+$lang['lang_plugin_pc_template_mobile_default_account_register_14'] = ' パスワードを設定:';
+$lang['lang_plugin_pc_template_mobile_default_account_register_15'] = ' 大文字と小文字、記号、または数字';
+$lang['lang_plugin_pc_template_mobile_default_account_register_16'] = ' パスワードの確認:';
+$lang['lang_plugin_pc_template_mobile_default_account_register_17'] = ' ログインパスワードの再入力';
+$lang['lang_plugin_pc_template_mobile_default_account_register_18'] = ' 今すぐ登録';
+$lang['lang_plugin_pc_template_mobile_default_account_register_19'] = ' 今すぐ検索';
+$lang['lang_plugin_pc_template_mobile_default_account_register_20'] = ' パスワードを忘れた場合';
+$lang['lang_plugin_pc_template_mobile_default_account_register_21'] = ' 今すぐ登録';
+$lang['lang_plugin_pc_template_mobile_default_account_register_22'] = ' 登録することができます。';
+$lang['lang_plugin_pc_template_mobile_default_account_register_23'] = ' 注文を支払う商品を購入します。';
+$lang['lang_plugin_pc_template_mobile_default_account_register_24'] = ' 注目ショップの製品を収集';
+$lang['lang_plugin_pc_template_mobile_default_account_register_25'] = ' 心配ないトランザクションの整合性を確保';
+$lang['lang_plugin_pc_template_mobile_default_account_register_26'] = ' 優待ショッピングクレジットを取得';
+$lang['lang_plugin_pc_template_mobile_default_account_register_27'] = ' 会員特権特権';
+$lang['lang_plugin_pc_template_mobile_default_account_register_28'] = ' 評価共有外太陽スタンド';
+?>

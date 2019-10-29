@@ -1,0 +1,36 @@
+<?php
+$lang['lang_module_order_pay_alipay_0'] = '支付出现错误，请重试';
+$lang['lang_module_order_pay_alipay_1'] = '支付出现错误，请重试';
+$lang['lang_module_order_pay_alipay_2'] = '未开启支付宝支付';
+$lang['lang_module_order_pay_alipay_3'] = '请返回微信查看支付状态';
+$lang['lang_module_order_pay_alipay_4'] = '支付成功';
+$lang['lang_module_order_pay_alipay_5'] = '请返回商城查看支付状态';
+$lang['lang_module_order_pay_alipay_6'] = '支付成功';
+$lang['lang_module_order_pay_alipay_7'] = '支付出现错误，请重试';
+$lang['lang_module_order_pay_alipay_8'] = '支付验证失败';
+$lang['lang_module_order_pay_alipay_9'] = '支付出现错误，请重试';
+$lang['lang_module_order_pay_alipay_10'] = '支付验证失败';
+$lang['lang_module_order_pay_alipay_11'] = '支付出现错误，请重试';
+$lang['lang_module_order_pay_alipay_12'] = '请返回微信查看支付状态';
+$lang['lang_module_order_pay_alipay_13'] = '支付成功';
+$lang['lang_module_order_pay_alipay_14'] = '请返回商城查看支付状态';
+$lang['lang_module_order_pay_alipay_15'] = '支付成功';
+$lang['lang_module_order_pay_alipay_16'] = '支付出现错误，请重试';
+$lang['lang_module_order_pay_alipay_17'] = '支付出现错误，请重试';
+$lang['lang_module_order_pay_alipay_18'] = '支付出现错误，请重试';
+$lang['lang_module_order_pay_alipay_19'] = '支付出现错误，请重试';
+$lang['lang_module_order_pay_alipay_20'] = '支付验证失败';
+$lang['lang_module_order_pay_alipay_21'] = '支付出现错误，请重试';
+$lang['lang_module_order_pay_alipay_22'] = '未开启支付宝支付';
+$lang['lang_module_order_pay_alipay_23'] = '请返回微信查看支付状态';
+$lang['lang_module_order_pay_alipay_24'] = '支付成功';
+$lang['lang_module_order_pay_alipay_25'] = '请返回商城查看支付状态';
+$lang['lang_module_order_pay_alipay_26'] = '支付成功';
+$lang['lang_module_order_pay_alipay_27'] = '支付出现错误，请重试';
+$lang['lang_module_order_pay_alipay_28'] = '支付验证失败';
+$lang['lang_module_order_pay_alipay_29'] = '会员充值';
+$lang['lang_module_order_pay_alipay_30'] = '请返回微信查看支付状态';
+$lang['lang_module_order_pay_alipay_31'] = '支付成功';
+$lang['lang_module_order_pay_alipay_32'] = '请返回商城查看支付状态';
+$lang['lang_module_order_pay_alipay_33'] = '支付成功';
+?>

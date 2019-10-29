@@ -1,0 +1,35 @@
+<?php
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_0'] = ' ポイント';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_1'] = ' ボーナス';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_2'] = ' 赤い封筒';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_3'] = ' スペシャル';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_4'] = ' クーポン';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_5'] = ' 抽出';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_6'] = ' 時間';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_7'] = ' 受賞したレコードがありません。';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_8'] = ' 今を描く';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_9'] = ' 残りの懸賞数';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_10'] = ' 回';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_11'] = ' 報酬の説明';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_12'] = ' 私の受賞記録';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_13'] = ' 非アクティブ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_14'] = ' お祝いの言葉';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_15'] = ' 選ぶ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_16'] = ' タスクに成功しました';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_17'] = ' [Ok]';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_18'] = ' 非常に申し訳ありませんが';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_19'] = ' このタスクを拾うことはできません。';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_20'] = ' [Ok] を私は知っている。';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_21'] = ' 賞品';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_22'] = ' 正常に収集';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_23'] = ' 報酬';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_24'] = ' どこ現在を回転させる';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_25'] = ' 合計でどのように多くの場所があります。';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_26'] = ' ';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_27'] = ' 使用して、';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_28'] = ' 明確です';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_29'] = ' 初期回転速度';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_30'] = ' 回転数';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_31'] = ' 基本的な回を回転: つまり、宝くじに入る前に、少なくとも回転する回数が必要ですか?';
+$lang['lang_plugin_lottery_template_mobile_default_indexgrid_32'] = ' 位置を獲得';
+?>
