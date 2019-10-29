@@ -25,7 +25,9 @@ class Index_EweiShopV2Page extends MobileLoginPage
 		$trade = m("common")->getSysset("trade");
 		$merchdata = $this->merchData();
 		extract($merchdata);
-		if( $is_openmerch == 1 ) 
+		echo '<pre>';
+		print_r($lang);die;
+		if( $is_openmerch == 1 )
 		{
 			include($this->template("merch/order/index"));
 		}
