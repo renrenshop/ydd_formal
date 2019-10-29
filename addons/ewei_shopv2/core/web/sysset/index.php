@@ -449,6 +449,7 @@ class Index_EweiShopV2Page extends WebPage
 		global $_W;
 		global $_GPC;
 
+		
         $pay_type = [
             array("name"=>"AliPay","type"=>"ALIPAY_CN","img"=>"alipay.png"),
             array("name"=>"WechatPay(China)","type"=>"WECHATPAY_CN","img"=>"wechat.png"),
