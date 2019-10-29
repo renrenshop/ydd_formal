@@ -26,7 +26,7 @@ class Index_EweiShopV2Page extends MobileLoginPage
 		$merchdata = $this->merchData();
 		extract($merchdata);
 		echo '<pre>';
-		print_r($lang);die;
+		print_r($lang['lang_template_mobile_order_index_4']);die;
 		if( $is_openmerch == 1 )
 		{
 			include($this->template("merch/order/index"));
